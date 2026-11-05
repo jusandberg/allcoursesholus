@@ -1,0 +1,288 @@
+/* Final Nutrition Studies layer: one compact hōlus. system across every view. */
+body.course-nutrition {
+  --nutrition-rail: 1040px;
+  --nutrition-radius: 20px;
+}
+
+body.course-nutrition #unit-status { display: none !important; }
+
+body.course-nutrition main {
+  max-width: var(--nutrition-rail) !important;
+  padding: 48px 24px 72px !important;
+}
+
+body.course-nutrition h1,
+body.course-nutrition h2,
+body.course-nutrition h3,
+body.course-nutrition .score {
+  font-family: Manrope, Arial, sans-serif !important;
+}
+
+body.course-nutrition h2 {
+  color: var(--holus-ink) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.04em !important;
+}
+
+body.course-nutrition button:not(.option):not(.book-choice):not(.book-number):not(.tool-card) {
+  border-color: var(--holus-line);
+  border-radius: 999px;
+  background: var(--holus-white);
+  color: var(--holus-ink);
+}
+
+body.course-nutrition button:not(.option):not(.book-choice):not(.book-number):not(.tool-card):hover {
+  border-color: var(--holus-sage);
+  background: var(--holus-mist);
+}
+
+body.course-nutrition button.primary,
+body.course-nutrition button.active {
+  border-color: var(--holus-ink) !important;
+  background: var(--holus-ink) !important;
+  color: #fff !important;
+}
+
+/* Course chrome */
+body.course-nutrition > header nav {
+  gap: 22px !important;
+}
+
+body.course-nutrition .unitbar {
+  gap: 0 !important;
+}
+
+body.course-nutrition .unitbar select {
+  width: min(460px, 100%);
+}
+
+/* Overview */
+body.course-nutrition .hero {
+  min-height: 430px !important;
+  grid-template-columns: minmax(0, 1.2fr) minmax(270px, .8fr) !important;
+  gap: 54px !important;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--holus-line);
+}
+
+body.course-nutrition .hero h1 {
+  max-width: 720px;
+  margin: 18px 0 20px !important;
+  font-size: clamp(3rem, 5.8vw, 5.45rem) !important;
+}
+
+body.course-nutrition .hero .actions { margin-bottom: 0; }
+body.course-nutrition .art { height: 350px !important; }
+
+body.course-nutrition .book-overview-tools { margin-top: 22px; }
+
+body.course-nutrition details.mastery,
+body.course-nutrition .book-overview-tools + details.card {
+  border-radius: 16px !important;
+}
+
+body.course-nutrition .grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px !important;
+  margin-top: 22px !important;
+}
+
+body.course-nutrition .grid > .card {
+  min-height: 190px;
+  padding: 22px !important;
+}
+
+body.course-nutrition .grid > .card h3 {
+  margin: 14px 0 8px;
+  font: 800 1.08rem/1.28 Manrope, Arial, sans-serif !important;
+  letter-spacing: -.025em !important;
+}
+
+body.course-nutrition .grid > .card p {
+  margin: 0 0 12px;
+  font-size: .9rem;
+  line-height: 1.52;
+}
+
+body.course-nutrition .courseintro {
+  margin: 32px 0 0;
+  padding-top: 30px;
+  border-top: 1px solid var(--holus-line);
+}
+
+body.course-nutrition .courseintro > h2 {
+  margin: 5px 0 16px;
+  font-size: clamp(1.6rem, 3vw, 2.25rem) !important;
+}
+
+body.course-nutrition .courseintro .unitgrid {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+body.course-nutrition .courseintro .unitcard {
+  min-height: 142px;
+  padding: 14px !important;
+  border-radius: 14px !important;
+}
+
+body.course-nutrition .courseintro .unitcard p { margin: 5px 0; }
+body.course-nutrition .courseintro .unitcard b { font-size: .88rem !important; }
+body.course-nutrition .courseintro .unitcard small { font-size: .62rem !important; }
+body.course-nutrition .courseintro .unitcard button { padding: 7px 9px !important; font-size: .7rem; }
+
+/* Lesson reader */
+body.course-nutrition .study { max-width: 920px; }
+body.course-nutrition .study > .article {
+  padding: clamp(26px, 4vw, 42px) !important;
+  border: 1px solid var(--holus-line) !important;
+  border-radius: var(--nutrition-radius) !important;
+}
+
+body.course-nutrition .article > h2 {
+  margin: 10px 0 20px;
+  font-size: clamp(2rem, 4vw, 3.35rem) !important;
+  line-height: 1 !important;
+}
+
+body.course-nutrition .lesson-index { margin-bottom: 16px; }
+body.course-nutrition .lesson-memory { margin: 16px 0; }
+
+/* Flashcards */
+body.course-nutrition #app > .eyebrow + h2 {
+  margin: 10px 0 8px;
+  font-size: clamp(2.15rem, 4.8vw, 4rem) !important;
+  line-height: 1.02 !important;
+}
+
+body.course-nutrition .flash {
+  min-height: 220px;
+  max-width: 900px;
+  margin: 20px auto 0;
+  padding: 30px;
+  border: 1px solid var(--holus-line);
+  border-radius: var(--nutrition-radius);
+}
+
+body.course-nutrition .flash h2 {
+  margin: 0 0 20px;
+  font-size: clamp(1.8rem, 4vw, 3rem) !important;
+}
+
+/* Calculators: tile catalogue above a full-width workspace, matching Learn. */
+body.course-nutrition .study-tools { max-width: 960px; margin: 0 auto; }
+body.course-nutrition .tool-workspace-head { display: block !important; }
+body.course-nutrition .tools-shell { display: block; }
+body.course-nutrition .tool-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  max-height: none;
+  margin: 0 0 14px;
+  padding: 0;
+  overflow: visible;
+}
+
+body.course-nutrition .tool-card {
+  grid-template-columns: 36px minmax(0, 1fr);
+  min-height: 80px;
+  padding: 12px;
+}
+
+body.course-nutrition .tool-card-mark { width: 36px; height: 36px; }
+body.course-nutrition .tool-workspace { width: 100%; }
+
+/* Book questions */
+body.course-nutrition .book-questions { max-width: 960px; margin: 0 auto; }
+body.course-nutrition .book-number-panel[open] .book-number-heading { padding-bottom: 14px; border-bottom: 1px solid var(--book-line); }
+body.course-nutrition .book-question-card { max-width: 960px; }
+
+/* Molecule atlas */
+body.course-nutrition .molecule-atlas { max-width: 960px; margin: 0 auto; }
+
+/* Remove legacy warm accents from local learning tools. */
+body.course-nutrition .fat-calc-fields select,
+body.course-nutrition .fat-calc-fields input {
+  border-color: var(--holus-line);
+  border-radius: 12px;
+}
+
+body.course-nutrition .fat-calc-fields select:focus-visible {
+  outline-color: var(--holus-sage);
+}
+
+@media (max-width: 980px) {
+  body.course-nutrition .courseintro .unitgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  body.course-nutrition .tool-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 800px) {
+  html { scroll-padding-top: 162px; }
+  body.course-nutrition > header {
+    height: 104px !important;
+    gap: 4px;
+    padding: 10px 16px 4px !important;
+  }
+  body.course-nutrition > header nav {
+    gap: 10px !important;
+    padding-bottom: 0 !important;
+    scrollbar-width: none;
+  }
+  body.course-nutrition > header nav::-webkit-scrollbar { display: none; }
+  body.course-nutrition > header nav button { min-height: 40px; font-size: .72rem !important; }
+  body.course-nutrition .unitbar {
+    top: 104px !important;
+    min-height: 58px;
+    padding: 6px 16px !important;
+  }
+  body.course-nutrition main { padding: 26px 16px 56px !important; }
+  body.course-nutrition .hero {
+    min-height: 0 !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding-bottom: 24px;
+  }
+  body.course-nutrition .hero h1 { font-size: clamp(2.45rem, 11vw, 3.8rem) !important; }
+  body.course-nutrition .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.course-nutrition .grid > .card { min-height: 0; }
+  body.course-nutrition .courseintro .unitgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.course-nutrition .tool-catalog { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
+  body.course-nutrition .tool-card { min-width: 0; width: 100%; }
+  body.course-nutrition .book-hero { grid-template-columns: 1fr; gap: 20px; }
+  body.course-nutrition .book-number-panel { margin: 12px 0; }
+}
+
+@media (max-width: 560px) {
+  html { scroll-padding-top: 198px; }
+  body.course-nutrition > header {
+    height: 134px !important;
+    padding: 8px 16px 6px !important;
+  }
+  body.course-nutrition > header nav {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0 8px !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+  body.course-nutrition > header nav button {
+    width: 100%;
+    min-height: 32px !important;
+    padding: 4px 2px !important;
+    font-size: .68rem !important;
+    text-align: center;
+  }
+  body.course-nutrition .unitbar { top: 134px !important; }
+  body.course-nutrition .grid,
+  body.course-nutrition .tool-catalog { grid-template-columns: 1fr; }
+  body.course-nutrition .courseintro .unitgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.course-nutrition .courseintro .unitcard { min-height: 132px; }
+  body.course-nutrition .book-totals div { padding: 11px 8px; }
+  body.course-nutrition .book-totals dt { font-size: .52rem; letter-spacing: .08em; }
+  body.course-nutrition .book-totals dd { font-size: 1.4rem; }
+  body.course-nutrition .book-mode-shell { margin-top: 14px; }
+  body.course-nutrition .book-question-card { margin-top: 14px; }
+  body.course-nutrition .atlas-hero { grid-template-columns: 1fr; padding-bottom: 34px; }
+  body.course-nutrition .atlas-hero::after { display: none; }
+}

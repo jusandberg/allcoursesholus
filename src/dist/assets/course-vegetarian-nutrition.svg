@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vegetarian nutrition evidence compass</title>
+  <desc id="desc">A balanced plant food plate with leaves, beans, seeds and an evidence compass.</desc>
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f6ed"/>
+      <stop offset="1" stop-color="#dce6d2"/>
+    </linearGradient>
+  </defs>
+  <circle cx="160" cy="180" r="145" fill="none" stroke="#c7d2c4"/>
+  <circle cx="160" cy="180" r="116" fill="url(#plate)" stroke="#71836d" stroke-width="3"/>
+  <path d="M160 65v230M45 180h230" fill="none" stroke="#71836d" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M160 180 78 98a116 116 0 0 1 164 0Z" fill="#d8dfc8" stroke="#71836d" stroke-width="2"/>
+  <path d="M160 180 78 262a116 116 0 0 1 0-164Z" fill="#edf0e7" stroke="#71836d" stroke-width="2"/>
+  <path d="M160 180 242 98a116 116 0 0 1 0 164Z" fill="#cdd9c5" stroke="#71836d" stroke-width="2"/>
+  <path d="M160 180 242 262a116 116 0 0 1-164 0Z" fill="#e6dccf" stroke="#71836d" stroke-width="2"/>
+  <g fill="#4b5d49">
+    <path d="M116 103c22 3 36 17 38 43-25-2-39-16-38-43Z"/>
+    <path d="M151 145c-2-26 9-44 31-54 7 24-3 44-31 54Z"/>
+  </g>
+  <path d="M120 106c15 12 25 25 31 39m29-50c-12 15-21 31-29 50" fill="none" stroke="#eef2ed" stroke-width="2" stroke-linecap="round"/>
+  <g fill="#c26f4f" stroke="#7d4a3a" stroke-width="1.5">
+    <path d="M199 132c12-9 27 5 18 17-8 10-25 7-27-6-1-5 2-8 9-11Z"/>
+    <path d="M221 160c11-8 25 4 17 15-7 10-23 8-26-4-1-4 2-8 9-11Z"/>
+    <path d="M197 180c11-8 25 5 16 16-8 9-23 6-25-6-1-4 2-7 9-10Z"/>
+  </g>
+  <g fill="#71836d">
+    <ellipse cx="107" cy="207" rx="7" ry="14" transform="rotate(-34 107 207)"/>
+    <ellipse cx="129" cy="227" rx="7" ry="14" transform="rotate(28 129 227)"/>
+    <ellipse cx="93" cy="236" rx="7" ry="14" transform="rotate(14 93 236)"/>
+  </g>
+  <g fill="#b89b73">
+    <circle cx="178" cy="230" r="6"/><circle cx="194" cy="245" r="5"/><circle cx="213" cy="224" r="6"/><circle cx="221" cy="249" r="4"/><circle cx="181" cy="261" r="4"/>
+  </g>
+  <g transform="translate(160 180)">
+    <circle r="39" fill="#243341" stroke="#f4f6ed" stroke-width="6"/>
+    <circle r="28" fill="#f4f6ed"/>
+    <path d="m0-22 7 16-7 6-7-6Z" fill="#c26f4f"/>
+    <path d="m0 22-7-16 7-6 7 6Z" fill="#71836d"/>
+    <circle r="5" fill="#243341"/>
+  </g>
+</svg>

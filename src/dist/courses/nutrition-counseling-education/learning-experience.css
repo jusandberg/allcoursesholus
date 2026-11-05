@@ -1,0 +1,95 @@
+/* L&D layer: orient, teach, apply, check, reflect and consolidate. */
+.learning-launch{max-width:1120px}
+.learning-launch-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:clamp(24px,5vw,64px);align-items:center;padding:clamp(30px,6vw,68px) 0 42px;border-bottom:1px solid var(--holus-line)}
+.learning-launch-hero h1{max-width:760px;margin:10px 0 20px;font-size:clamp(2.8rem,6.8vw,5.8rem);line-height:.95;letter-spacing:-.065em}
+.learning-launch-hero .lede{max-width:720px;font-size:1.08rem;line-height:1.7;color:var(--holus-muted)}
+.learning-meta{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0}
+.learning-meta span{padding:8px 12px;border:1px solid var(--holus-line);border-radius:999px;background:var(--holus-white);color:var(--holus-sage-deep);font:700 .76rem/1.2 Manrope,Arial,sans-serif}
+.learning-launch-card{padding:28px;border:1px solid var(--holus-line);border-radius:24px;background:var(--holus-mist)}
+.learning-launch-card>span{display:block;margin-bottom:10px;color:var(--holus-sage-deep);font:800 .65rem/1.2 Manrope,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+.learning-launch-card strong{display:block;font:800 clamp(1.35rem,2.5vw,2rem)/1.2 Manrope,Arial,sans-serif;letter-spacing:-.035em}
+.learning-launch-card p{margin:14px 0 0;color:var(--holus-muted);line-height:1.65}
+.learning-outcomes{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:36px;padding:42px 0}
+.learning-outcomes h2,.learning-modules h2{margin:8px 0 14px;font-size:clamp(1.9rem,3.8vw,3rem)}
+.learning-outcomes ol{display:grid;gap:12px;margin:0;padding:0;counter-reset:outcome;list-style:none}
+.learning-outcomes li{counter-increment:outcome;display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;padding:15px 16px;border:1px solid var(--holus-line);border-radius:15px;background:var(--holus-white);line-height:1.55}
+.learning-outcomes li:before{content:counter(outcome);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--holus-sage-light);color:var(--holus-ink);font:800 .76rem Manrope,Arial,sans-serif}
+.learning-rhythm{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:24px}
+.learning-rhythm span{padding:12px 8px;border-radius:12px;background:var(--holus-mist);text-align:center;font:800 .7rem Manrope,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.learning-modules{padding:38px 0 52px;border-top:1px solid var(--holus-line)}
+.learning-module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.learning-module-card{padding:22px;border:1px solid var(--holus-line);border-radius:18px;background:var(--holus-white)}
+.learning-module-card b{display:block;margin-bottom:7px;color:var(--holus-sage-deep);font:800 .65rem Manrope,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.learning-module-card strong{display:block;font:800 1.08rem/1.3 Manrope,Arial,sans-serif}
+.learning-module-card p{margin:10px 0 0;color:var(--holus-muted);font-size:.9rem;line-height:1.58}
+.learning-launch-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.journey-view{max-width:1120px}
+.journey-hero{align-items:center;padding-bottom:22px;border-bottom:1px solid var(--holus-line)}
+.journey-hero h1{font-size:clamp(2rem,4.4vw,3.6rem)}
+.journey-progress{padding:14px 16px;border:1px solid var(--holus-line);border-radius:14px;background:var(--holus-cloud)}
+.journey-progress progress{accent-color:var(--holus-sage-deep)}
+.journey-map{grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px}
+.journey-map button{min-height:112px;padding:16px;border-color:var(--holus-line);border-radius:17px;color:var(--holus-ink)}
+.journey-map button span{background:var(--holus-mist);color:var(--holus-sage-deep)}
+.journey-map button small{font-size:.82rem;line-height:1.35}
+.journey-map button b{display:block;color:var(--holus-sage);font:800 .62rem Manrope,Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase}
+.journey-map button em{margin-top:auto;color:var(--holus-muted);font-size:.72rem;font-style:normal}
+.journey-map button.active{border-color:var(--holus-ink);background:var(--holus-ink);color:#fff}
+.journey-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.journey-grid-integrated{grid-template-columns:1fr;gap:18px}
+.journey-grid-integrated .journey-teach{padding:clamp(22px,4vw,44px)}
+.journey-knowledge{display:grid;gap:18px}
+.journey-knowledge-section{min-width:0;padding:clamp(18px,3vw,30px);border:1px solid var(--holus-line);border-radius:18px;background:var(--holus-cloud);overflow:hidden}
+.journey-knowledge-section>h3{max-width:800px;margin:7px 0 20px;font-size:clamp(1.3rem,2.5vw,1.8rem);line-height:1.25;letter-spacing:-.025em}
+.journey-knowledge-body{min-width:0;max-width:920px;color:var(--holus-ink);font-size:1rem;line-height:1.75;overflow-wrap:anywhere}
+.journey-knowledge-body>p,.journey-knowledge-body>ol,.journey-knowledge-body>ul,.journey-knowledge-body>blockquote{max-width:78ch}
+.journey-knowledge-body p{margin:0 0 16px}
+.journey-knowledge-body h4{margin:26px 0 9px;font-size:1.08rem;line-height:1.4}
+.journey-knowledge-body li{margin:0 0 9px}
+.journey-knowledge-body a{color:var(--holus-sage-deep);text-underline-offset:3px;overflow-wrap:anywhere}
+.journey-knowledge-body .table-scroll{width:100%;max-width:100%;box-sizing:border-box;margin:22px 0;overflow-x:auto;border-radius:12px}
+.journey-knowledge-body .study-table{min-width:560px;margin:0;background:#fff}
+.journey-apply-column{min-width:0;max-width:920px;width:100%;margin:0 auto}
+.journey-retrieval>p{margin-top:0;color:var(--holus-muted);line-height:1.6}
+.journey-teach,.journey-activity,.journey-practice{border-color:var(--holus-line);box-shadow:none}
+.journey-teach{background:var(--holus-white)}
+.journey-activity{background:var(--holus-mist)}
+.journey-module-label{display:inline-flex;margin-bottom:10px;padding:7px 10px;border-radius:999px;background:var(--holus-mist);color:var(--holus-sage-deep);font:800 .68rem Manrope,Arial,sans-serif}
+.journey-essential{margin:0 0 24px;padding:18px 20px;border-left:4px solid var(--holus-sage);border-radius:0 14px 14px 0;background:var(--holus-mist)}
+.journey-essential span{display:block;margin-bottom:5px;color:var(--holus-sage-deep);font:800 .62rem Manrope,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.journey-essential strong{font:800 1.03rem/1.45 Manrope,Arial,sans-serif}
+.journey-takeaway{color:var(--holus-sage-deep);border-top-color:var(--holus-line)}
+.journey-option,.journey-explore button{border-color:var(--holus-line);background:var(--holus-white);color:var(--holus-ink)}
+.journey-option.chosen,.journey-explore button.chosen{border-color:var(--holus-sage-deep);background:var(--holus-white)}
+.journey-feedback{border-left-color:var(--holus-sage);background:var(--holus-white)}
+.journey-confidence{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px;padding:16px 18px;border:1px solid var(--holus-line);border-radius:15px;background:var(--holus-cloud)}
+.journey-confidence strong{font:800 .92rem Manrope,Arial,sans-serif}
+.journey-confidence>div{display:flex;flex-wrap:wrap;gap:8px}
+.journey-confidence button{min-height:42px;padding:9px 13px;border:1px solid var(--holus-line);border-radius:999px;background:#fff;cursor:pointer}
+.journey-confidence button[aria-pressed=true]{border-color:var(--holus-ink);background:var(--holus-ink);color:#fff}
+.learning-recap{margin-bottom:26px}
+.learning-recap-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:18px}
+.learning-recap-grid article{padding:16px;border:1px solid var(--holus-line);border-radius:15px;background:#fff}
+.learning-recap-grid b{display:grid;place-items:center;width:27px;height:27px;margin-bottom:10px;border-radius:50%;background:var(--holus-sage-light);font-size:.72rem}
+.learning-recap-grid p{margin:0;font-size:.86rem;line-height:1.55}
+.learning-application{margin:28px 0;padding:clamp(20px,3vw,30px);border:1px solid var(--holus-line);border-radius:20px;background:var(--holus-white)}
+.learning-application h3{font-size:clamp(1.35rem,2.8vw,2rem);margin:7px 0 12px}
+.learning-application>.scenario{font-size:1.02rem;line-height:1.7;color:var(--holus-muted)}
+.learning-application-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.learning-application details{border:1px solid var(--holus-line);border-radius:14px;background:var(--holus-cloud)}
+.learning-application summary{cursor:pointer;padding:15px;font-weight:800;list-style:none}
+.learning-application details>div{padding:0 15px 15px}
+.learning-application li{margin-bottom:9px;line-height:1.55;font-size:.9rem}
+.journey-practice{background:var(--holus-cloud)}
+.journey-view .primary{background:var(--holus-ink)!important;border-color:var(--holus-ink)!important}
+.journey-view .secondary{border-color:var(--holus-line);color:var(--holus-ink)}
+@media(max-width:800px){
+  .journey-grid{grid-template-columns:1fr}
+  .learning-launch-hero,.learning-outcomes{grid-template-columns:1fr}
+  .learning-launch-hero h1{font-size:clamp(2.7rem,12vw,4.2rem)}
+  .learning-module-grid,.learning-recap-grid,.learning-application-grid{grid-template-columns:1fr}
+  .learning-rhythm{grid-template-columns:repeat(2,1fr)}
+  .journey-map{display:flex;overflow-x:auto;scroll-snap-type:x proximity}
+  .journey-map button{flex:0 0 190px;scroll-snap-align:start}
+  .journey-confidence{align-items:flex-start;flex-direction:column}
+}

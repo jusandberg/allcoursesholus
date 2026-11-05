@@ -1,0 +1,318 @@
+.molecule-atlas {
+  --atlas-clay: var(--holus-sage-deep, #4b5d49);
+  --atlas-blue: var(--holus-ink, #243341);
+  --atlas-gold: var(--holus-sage, #71836d);
+  --atlas-cream: var(--holus-cloud, #f7f8f6);
+  color: var(--holus-ink, #243341);
+}
+
+.atlas-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+  align-items: end;
+  gap: clamp(32px, 6vw, 86px);
+  padding: 12px 0 46px;
+  border-bottom: 1px solid var(--holus-line, #dfe4de);
+  overflow: hidden;
+}
+
+.atlas-hero::after {
+  content: "";
+  width: min(31vw, 330px);
+  aspect-ratio: 1;
+  justify-self: end;
+  border: 1px solid var(--holus-sage-light, #c7d2c4);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, transparent 0 25%, var(--holus-mist, #eef2ed) 25.5% 37%, transparent 37.5% 52%, rgba(199, 210, 196, .55) 52.5% 66%, transparent 66.5%),
+    var(--holus-cloud, #f7f8f6);
+}
+
+.atlas-hero h1 {
+  max-width: 780px;
+  margin: 18px 0 24px;
+  font: 800 clamp(2.8rem, 6.4vw, 5.8rem)/.94 Manrope, Arial, sans-serif !important;
+  letter-spacing: -.07em !important;
+}
+
+.atlas-lede {
+  max-width: 690px;
+  margin: 0;
+  color: var(--holus-muted, #596166);
+  font-size: 1.05rem;
+}
+
+.atlas-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.atlas-jump a,
+.atlas-unit-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--holus-ink, #243341) !important;
+  font: 700 .78rem/1 Inter, Arial, sans-serif;
+  text-decoration: none;
+}
+
+.atlas-jump a:hover,
+.atlas-unit-link:hover {
+  border-color: var(--holus-sage, #71836d);
+  background: var(--holus-mist, #eef2ed);
+}
+
+.atlas-primer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin: 34px 0 54px;
+  overflow: hidden;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 22px;
+  background: var(--holus-line, #dfe4de);
+}
+
+.atlas-primer div {
+  min-width: 0;
+  padding: 22px;
+  background: var(--holus-cloud, #f7f8f6);
+}
+
+.atlas-primer span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--holus-sage-deep, #4b5d49);
+  font: 800 .66rem/1.25 Manrope, Arial, sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.atlas-primer strong {
+  display: block;
+  font: 800 1rem/1.35 Manrope, Arial, sans-serif;
+  letter-spacing: -.02em;
+}
+
+.atlas-entry {
+  display: grid;
+  grid-template-columns: minmax(280px, .82fr) minmax(0, 1.18fr);
+  gap: clamp(32px, 6vw, 74px);
+  align-items: center;
+  padding: 52px 0;
+  border-top: 1px solid var(--holus-line, #dfe4de);
+  scroll-margin-top: 185px;
+}
+
+.atlas-entry:nth-of-type(even) .atlas-copy { order: 2; }
+.atlas-entry:nth-of-type(even) .molecule-figure { order: 1; }
+
+.atlas-tag,
+.atlas-formula {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font: 800 .65rem/1 Manrope, Arial, sans-serif;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.atlas-tag {
+  color: var(--holus-sage-deep, #4b5d49);
+  background: var(--holus-mist, #eef2ed);
+}
+
+.atlas-formula {
+  margin-left: 6px;
+  color: var(--holus-ink, #243341);
+  border: 1px solid var(--holus-line, #dfe4de);
+  background: #fff;
+  letter-spacing: .05em;
+  text-transform: none;
+}
+
+.atlas-copy h2 {
+  margin: 18px 0 16px;
+  font: 800 clamp(2.35rem, 4.6vw, 4.4rem)/.96 Manrope, Arial, sans-serif !important;
+  letter-spacing: -.055em !important;
+}
+
+.atlas-copy > p {
+  color: var(--holus-muted, #596166);
+}
+
+.atlas-notes {
+  padding: 0;
+  margin: 28px 0;
+  list-style: none;
+  border-top: 1px solid var(--holus-line, #dfe4de);
+}
+
+.atlas-notes li {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--holus-line, #dfe4de);
+  color: var(--holus-muted, #596166);
+}
+
+.atlas-notes strong {
+  color: var(--holus-ink, #243341);
+  font: 800 .72rem/1.5 Manrope, Arial, sans-serif;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.atlas-unit-link {
+  cursor: pointer;
+}
+
+.molecule-figure {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(18px, 3.2vw, 34px);
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 20px;
+  background: var(--atlas-cream);
+}
+
+.molecule-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 430px;
+  overflow: visible;
+}
+
+.molecule-figure .bond,
+.molecule-figure .guide,
+.molecule-figure .highlight {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.molecule-figure .bond { stroke: var(--holus-ink, #243341); stroke-width: 3; }
+.molecule-figure .guide { stroke: var(--holus-sage-light, #c7d2c4); stroke-width: 1.5; }
+.molecule-figure .highlight { stroke: var(--atlas-gold); stroke-width: 11; opacity: .23; }
+.molecule-figure .oxygen { fill: var(--atlas-clay); }
+.molecule-figure .nitrogen { fill: var(--atlas-blue); }
+.molecule-figure .carbon { fill: var(--holus-ink, #243341); }
+.molecule-figure .annot { fill: var(--holus-sage-deep, #4b5d49); }
+.molecule-figure .minor { fill: var(--holus-muted, #596166); }
+.molecule-figure text { font-family: Inter, Arial, sans-serif; font-size: 18px; font-weight: 600; }
+.molecule-figure .atom { font-family: Manrope, Arial, sans-serif; font-size: 22px; font-weight: 800; paint-order: stroke; stroke: var(--atlas-cream); stroke-width: 8px; stroke-linejoin: round; }
+.molecule-figure .tiny { font-size: 14px; font-weight: 700; letter-spacing: .02em; }
+
+.molecule-figure figcaption {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(75, 93, 73, .18);
+  color: var(--holus-muted, #596166);
+  font-size: .88rem;
+}
+
+.molecule-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 16px;
+  margin-top: 12px;
+  color: var(--holus-sage-deep, #4b5d49);
+  font-size: .76rem;
+}
+
+.atlas-model-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  margin-top: 38px;
+  padding: 24px;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-left: 5px solid var(--holus-sage, #71836d);
+  border-radius: 18px;
+  background: var(--holus-cloud, #f7f8f6);
+}
+
+.atlas-model-note b {
+  font: 800 .75rem/1.5 Manrope, Arial, sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.atlas-model-note p { margin: 0; color: var(--holus-muted, #596166); }
+
+.lesson-atlas-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin: 22px 0 30px;
+  padding: 18px 20px;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 16px;
+  background: var(--holus-cloud, #f7f8f6);
+}
+
+.lesson-atlas-link p { margin: 4px 0 0; color: var(--holus-muted, #596166); font-size: .9rem; }
+.lesson-atlas-link button { flex: 0 0 auto; min-height: 44px; white-space: nowrap; }
+
+.lesson-atlas-link.lesson-molecule-visual {
+  display: grid;
+  grid-template-columns: minmax(210px, .68fr) minmax(0, 1.32fr);
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  background: var(--holus-cloud, #f7f8f6);
+}
+
+.lesson-molecule-visual > div:first-child { align-self: center; }
+.lesson-molecule-visual > div:first-child strong { display: block; margin-top: 8px; font: 800 1.22rem/1.25 Manrope, Arial, sans-serif; }
+.lesson-molecule-visual .molecule-figure { padding: 16px; border-radius: 18px; background: var(--atlas-cream); }
+.lesson-molecule-visual .molecule-figure svg { max-height: 320px; }
+.lesson-molecule-visual .molecule-figure figcaption { margin-top: 12px; padding-top: 12px; font-size: .8rem; }
+.lesson-molecule-visual .molecule-legend { font-size: .7rem; }
+
+@media (max-width: 850px) {
+  .atlas-hero { grid-template-columns: 1fr; padding-bottom: 50px; }
+  .atlas-hero::after { display: none; }
+  .atlas-primer { grid-template-columns: 1fr; }
+  .atlas-entry { grid-template-columns: 1fr; padding: 54px 0; }
+  .atlas-entry:nth-of-type(even) .atlas-copy,
+  .atlas-entry:nth-of-type(even) .molecule-figure { order: initial; }
+  .atlas-copy { max-width: 720px; }
+}
+
+@media (max-width: 520px) {
+  .atlas-hero h1 { font-size: clamp(3rem, 16vw, 4.4rem) !important; }
+  .atlas-jump a { flex: 1 1 120px; }
+  .atlas-primer { margin: 30px 0 54px; }
+  .atlas-entry { scroll-margin-top: 150px; }
+  .molecule-figure { padding: 12px; border-radius: 18px; }
+  .molecule-figure text { font-size: 24px; }
+  .molecule-figure .atom { font-size: 30px; stroke-width: 10px; }
+  .molecule-figure .tiny { font-size: 18px; }
+  .molecule-figure .tiny.minor-label { display: none; }
+  .molecule-figure figcaption { margin: 14px 6px 0; }
+  .molecule-legend { margin: 10px 6px 4px; font-size: .74rem; }
+  .atlas-notes li { grid-template-columns: 1fr; gap: 3px; }
+  .atlas-unit-link { width: 100%; }
+  .atlas-model-note { grid-template-columns: 1fr; }
+  .lesson-atlas-link { display: block; }
+  .lesson-atlas-link button { width: 100%; margin-top: 14px; white-space: normal; }
+  .lesson-atlas-link.lesson-molecule-visual { display: grid; grid-template-columns: 1fr; padding: 14px; }
+  .lesson-molecule-visual .molecule-figure { padding: 10px; }
+}
+

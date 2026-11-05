@@ -1,0 +1,98 @@
+.sidekick-panel {
+  background: linear-gradient(145deg, #f0f3ef 0%, #fff 72%);
+  border-style: solid;
+}
+
+.starter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0 6px;
+}
+
+.starter-row button {
+  min-height: 40px;
+  padding: 8px 12px;
+}
+
+.sidekick-empty {
+  margin-top: 22px;
+  padding: 17px 18px;
+  border: 1px dashed #b9c5ba;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.sidekick-result {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid #cad4cb;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px #2433410a;
+}
+
+.sidekick-result:focus {
+  outline: none;
+}
+
+.sidekick-result:focus-visible {
+  outline: 3px solid #c19532;
+}
+
+.sidekick-result h3 {
+  letter-spacing: -.02em;
+}
+
+.sidekick-match .answer {
+  margin-top: 14px;
+}
+
+.sidekick-related {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.sidekick-related summary {
+  font-size: 13px;
+}
+
+.sidekick-related div {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.sidekick-related h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.sidekick-related p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.sidekick-prompts {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.sidekick-prompts li {
+  margin: 8px 0;
+}
+
+.chatgpt-handoff {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.chatgpt-handoff summary {
+  font-size: 14px;
+}
+
+.chatgpt-handoff .export-area {
+  padding-top: 4px;
+}

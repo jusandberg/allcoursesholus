@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" role="img" aria-labelledby="title desc">
+  <title id="title">Nutrition counselling conversation</title>
+  <desc id="desc">Two overlapping conversation shapes connected by a sprouting leaf</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8faf6"/>
+      <stop offset="1" stop-color="#dfe8dc"/>
+    </linearGradient>
+  </defs>
+  <path d="M54 51h166c20 0 36 16 36 36v55c0 20-16 36-36 36h-71l-42 35 9-35H54c-20 0-36-16-36-36V87c0-20 16-36 36-36Z" fill="url(#paper)" stroke="#4b5d49" stroke-width="3"/>
+  <path d="M151 105h155c20 0 36 16 36 36v48c0 20-16 36-36 36h-48l8 31-38-31h-77c-20 0-36-16-36-36v-48c0-20 16-36 36-36Z" fill="#243341" stroke="#243341" stroke-width="3"/>
+  <circle cx="77" cy="115" r="9" fill="#71836d"/>
+  <circle cx="109" cy="115" r="9" fill="#71836d" opacity=".78"/>
+  <circle cx="141" cy="115" r="9" fill="#71836d" opacity=".55"/>
+  <path d="M202 185c-16-31-8-57 21-75 6 34-2 58-21 75Z" fill="#c7d2c4"/>
+  <path d="M203 185c21-28 46-35 74-20-22 24-46 31-74 20Z" fill="#71836d"/>
+  <path d="M202 185c5-24 17-46 35-64M202 185c19-8 38-12 57-12" fill="none" stroke="#f7f8f6" stroke-linecap="round" stroke-width="3"/>
+  <circle cx="301" cy="151" r="7" fill="#c7d2c4"/>
+  <circle cx="301" cy="178" r="7" fill="#c7d2c4" opacity=".72"/>
+  <circle cx="301" cy="205" r="7" fill="#c7d2c4" opacity=".46"/>
+</svg>

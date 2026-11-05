@@ -1,0 +1,110 @@
+.fat-roadmap {
+  margin: 24px 0 36px;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 24px;
+  background: var(--holus-cloud, #f7f8f6);
+  color: var(--holus-ink, #243341);
+}
+
+.fat-roadmap .eyebrow { color: var(--holus-sage-deep, #4b5d49) !important; }
+.fat-roadmap h2 { margin: 8px 0 10px; color: var(--holus-ink, #243341) !important; font: 800 clamp(1.75rem, 3.6vw, 2.8rem)/1.04 Manrope, Arial, sans-serif !important; letter-spacing: -.045em !important; }
+.fat-roadmap > p { max-width: 760px; margin: 0; color: var(--holus-muted, #596166); }
+
+.fat-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.fat-roadmap-card {
+  display: flex;
+  min-height: 170px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 17px;
+  background: var(--holus-white, #fff);
+}
+
+.fat-roadmap-card span { color: var(--holus-sage-deep, #4b5d49); font: 800 .65rem/1.3 Manrope, Arial, sans-serif; letter-spacing: .13em; text-transform: uppercase; }
+.fat-roadmap-card strong { margin: 12px 0 8px; color: var(--holus-ink, #243341); font: 800 1.05rem/1.25 Manrope, Arial, sans-serif; }
+.fat-roadmap-card p { flex: 1; margin: 0; color: var(--holus-muted, #596166); font-size: .86rem; }
+.fat-roadmap-card button { margin-top: 16px; border-color: var(--holus-line, #dfe4de) !important; color: var(--holus-ink, #243341) !important; }
+.fat-roadmap-card button:hover { background: var(--holus-mist, #eef2ed) !important; color: var(--holus-ink, #243341) !important; }
+
+.fat-lesson-orientation {
+  margin: 18px 0 28px;
+  padding: clamp(20px, 3vw, 28px);
+  border-radius: 18px;
+  border: 1px solid var(--holus-sage-light, #c7d2c4);
+  background: var(--holus-mist, #eef2ed);
+  color: var(--holus-ink, #243341);
+}
+
+.fat-lesson-orientation .eyebrow { color: var(--holus-sage-deep, #4b5d49) !important; }
+.fat-lesson-orientation h3 { margin: 9px 0 10px !important; color: var(--holus-ink, #243341) !important; font: 800 clamp(1.35rem, 2.8vw, 1.9rem)/1.1 Manrope, Arial, sans-serif !important; letter-spacing: -.03em !important; }
+.fat-lesson-orientation p { margin: 0; color: var(--holus-muted, #596166); }
+
+.fat-study-route {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 0 0 28px;
+  overflow: hidden;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 14px;
+  background: var(--holus-line, #dfe4de);
+}
+
+.fat-study-route div { padding: 13px 14px; background: var(--holus-cloud, #f7f8f6); color: var(--holus-muted, #596166); font-size: .78rem; }
+.fat-study-route b { display: block; margin-bottom: 3px; color: var(--holus-sage-deep, #4b5d49); font: 800 .65rem/1 Manrope, Arial, sans-serif; letter-spacing: .08em; }
+
+.fat-learning-tools {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 34px 0 28px;
+}
+
+.fat-tool {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--holus-line, #dfe4de);
+  border-radius: 16px;
+  background: var(--holus-cloud, #f7f8f6);
+}
+
+.fat-tool .eyebrow { margin-bottom: 9px; }
+.fat-tool strong { display: block; font: 800 1rem/1.35 Manrope, Arial, sans-serif; color: var(--holus-ink, #243341); }
+.fat-tool p { margin: 9px 0 0; color: var(--holus-muted, #596166); font-size: .88rem; }
+.fat-tool details { margin-top: 12px; }
+.fat-tool summary { cursor: pointer; color: var(--holus-sage-deep, #4b5d49); font-weight: 700; }
+.fat-tool details[open] summary { margin-bottom: 8px; }
+
+.fat-core-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 18px;
+  color: var(--holus-sage-deep, #4b5d49);
+  font: 800 .67rem/1 Manrope, Arial, sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.fat-core-divider::after { content: ""; height: 1px; flex: 1; background: var(--holus-line, #dfe4de); }
+
+@media (max-width: 760px) {
+  .fat-roadmap-grid,
+  .fat-learning-tools { grid-template-columns: 1fr; }
+  .fat-roadmap-card { min-height: 0; }
+  .fat-study-route { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 420px) {
+  .fat-study-route { grid-template-columns: 1fr; }
+}
+

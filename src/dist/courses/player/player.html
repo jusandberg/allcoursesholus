@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#16212b">
+<title>Lesson · hōlus. study</title>
+<link rel="icon" href="../../assets/holus-favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="player.css">
+</head>
+<body>
+<div class="hp dark-mode" id="hp">
+  <header class="hp-top">
+    <a class="hp-close" id="close" href="../../index.html" aria-label="Close lesson and return to course">×</a>
+    <div class="hp-bar" role="progressbar" aria-label="Lesson progress"><i id="bar"></i></div>
+    <div class="hp-xp" id="xp" aria-label="Experience points"></div>
+  </header>
+  <main class="hp-stage" id="stage"></main>
+  <nav class="hp-dock" aria-label="Lesson navigation"><div class="row"><button class="hp-btn ghost" id="back" type="button">Back</button><button class="hp-btn primary" id="next" type="button">Begin</button></div></nav>
+  <p class="sr" id="live" aria-live="polite"></p>
+</div>
+<script src="adapters.js"></script>
+<script src="player.js"></script>
+</body>
+</html>

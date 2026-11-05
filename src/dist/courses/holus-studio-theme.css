@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;400;600;700;800&display=swap');
+
+:root{
+  --holus-ink:#243341;
+  --holus-ink-deep:#18232d;
+  --holus-sage-deep:#4b5d49;
+  --holus-sage:#71836d;
+  --holus-sage-light:#c7d2c4;
+  --holus-mist:#eef2ed;
+  --holus-cloud:#f7f8f6;
+  --holus-white:#fff;
+  --holus-muted:#596166;
+  --holus-line:#dfe4de;
+  --holus-radius:24px;
+  --holus-shadow:0 22px 60px rgba(36,51,65,.09);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:168px}
+body.holus-studio{
+  --paper:var(--holus-white);--card:var(--holus-white);--ink:var(--holus-ink);--muted:var(--holus-muted);--line:var(--holus-line);
+  --brand:var(--holus-ink);--link:var(--holus-sage-deep);--hero:var(--holus-mist);--deep:var(--holus-ink);--deep2:var(--holus-sage-deep);
+  --foam:var(--holus-cloud);--bg:var(--holus-cloud);--bg-2:var(--holus-mist);--panel:var(--holus-white);--panel-edge:var(--holus-line);
+  --ink-soft:var(--holus-muted);--sage:var(--holus-sage);--sage-deep:var(--holus-sage-deep);--gold:var(--holus-sage);--gold-deep:var(--holus-sage-deep);
+  --deep:var(--holus-ink);--deep2:var(--holus-ink-deep);--teal:var(--holus-sage-deep);--aqua:var(--holus-sage);--mineral:var(--holus-sage-deep);
+  --protein:var(--holus-sage-deep);--proteinLight:var(--holus-mist);--vita:var(--holus-sage-deep);--vitaLight:var(--holus-mist);--mineral4:var(--holus-sage-deep);--mineral4Light:var(--holus-mist);
+  --food6:var(--holus-sage-deep);--food6Light:var(--holus-mist);--mid:var(--holus-sage-deep);--midLight:var(--holus-mist);--supp5:var(--holus-sage-deep);--supp5Light:var(--holus-mist);
+  --diet7:var(--holus-sage-deep);--diet7Light:var(--holus-mist);--env8:var(--holus-sage-deep);--env8Light:var(--holus-mist);--diet9:var(--holus-sage-deep);--diet9Light:var(--holus-mist);
+  --perf11:var(--holus-sage-deep);--perf11Light:var(--holus-mist);--final:var(--holus-sage-deep);--finalLight:var(--holus-mist);--cond12:var(--holus-sage-deep);--cond12Light:var(--holus-mist);--detox13:var(--holus-sage-deep);--detox13Light:var(--holus-mist);
+  margin:0!important;background:var(--holus-white)!important;background-image:none!important;color:var(--holus-ink)!important;
+  font:400 16px/1.68 Inter,Arial,sans-serif!important;-webkit-font-smoothing:antialiased;
+}
+body.holus-studio h1,body.holus-studio h2,body.holus-studio h3,body.holus-studio h4,
+body.holus-studio .section-title,body.holus-studio .section-label,body.holus-studio .side-brand,body.holus-studio .bt,body.holus-studio .brand{
+  font-family:Manrope,Arial,sans-serif!important;color:var(--holus-ink);letter-spacing:-.035em;
+}
+body.holus-studio a{color:var(--holus-sage-deep)}
+body.holus-studio button,body.holus-studio input,body.holus-studio select,body.holus-studio textarea{font-family:Inter,Arial,sans-serif}
+body.holus-studio button:focus-visible,body.holus-studio a:focus-visible,body.holus-studio select:focus-visible,body.holus-studio input:focus-visible,body.holus-studio textarea:focus-visible{outline:3px solid var(--holus-sage)!important;outline-offset:4px}
+
+/* Shared Hōlus course chrome */
+.course-studio-header{height:94px;padding:0 clamp(24px,5vw,72px);display:flex;align-items:center;justify-content:space-between;gap:30px;background:rgba(255,255,255,.94);border-bottom:1px solid var(--holus-line);position:sticky;top:0;z-index:900;backdrop-filter:blur(16px)}
+.studio-brand{display:flex;flex-direction:column;text-decoration:none!important;line-height:1!important;color:var(--holus-ink)!important}
+.studio-wordmark{font:300 2.1rem/1 Manrope,Arial,sans-serif;letter-spacing:-.065em}
+.studio-brand small{margin-top:7px;color:var(--holus-sage-deep);font:800 .56rem/1 Manrope,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.course-studio-header nav{display:flex;align-items:center;gap:26px}
+.course-studio-header nav button{padding:8px 0!important;border:0!important;border-bottom:1px solid transparent!important;border-radius:0!important;background:transparent!important;color:var(--holus-ink)!important;font:700 .76rem Manrope,Arial,sans-serif!important;cursor:pointer}
+.course-studio-header nav button:hover{border-bottom-color:var(--holus-sage)!important;color:var(--holus-sage-deep)!important}
+.course-studio-unitbar{min-height:68px;padding:10px clamp(24px,5vw,72px);display:flex;align-items:center;gap:22px;background:var(--holus-cloud);border-bottom:1px solid var(--holus-line);position:sticky;top:94px;z-index:850}
+.course-studio-unitbar>div{display:flex;align-items:baseline;gap:13px;min-width:0}
+.course-studio-unitbar small{font:800 .63rem Manrope,Arial,sans-serif;color:var(--holus-sage);text-transform:uppercase;letter-spacing:.15em}
+.course-studio-unitbar strong{font:700 .86rem Manrope,Arial,sans-serif;color:var(--holus-ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.studio-unit-button{min-width:205px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:11px 15px!important;border:1px solid var(--holus-line)!important;border-radius:999px!important;background:var(--holus-white)!important;color:var(--holus-ink)!important;font:700 .76rem Manrope,Arial,sans-serif!important;cursor:pointer}
+.studio-unit-button:hover{border-color:var(--holus-sage-light)!important;background:var(--holus-mist)!important}.studio-unit-button b{font-size:16px;color:var(--holus-sage)}
+.course-studio-drawer{display:block!important;position:fixed!important;left:0!important;top:0!important;width:min(380px,90vw)!important;height:100vh!important;z-index:1001!important;padding:34px 20px 60px!important;background:var(--holus-white)!important;border-right:1px solid var(--holus-line)!important;overflow-y:auto!important;transform:translateX(-105%)!important;transition:transform .24s ease!important;box-shadow:22px 0 65px rgba(36,51,65,.14)!important}
+.studio-drawer-open .course-studio-drawer{transform:translateX(0)!important}.course-studio-scrim{display:none;position:fixed;inset:0;z-index:1000;border:0;background:rgba(24,35,45,.38);cursor:pointer}.studio-drawer-open .course-studio-scrim{display:block}
+
+/* Course-specific hero illustration shared across the rebuilt apps */
+.studio-course-art{position:absolute;right:clamp(30px,7vw,105px);top:50%;transform:translateY(-50%);width:min(34vw,390px);aspect-ratio:1;display:grid;place-items:center;background:var(--holus-mist);border-radius:50% 50% 44% 56% / 55% 45% 55% 45%;overflow:hidden;z-index:1}
+.studio-course-art span,.studio-course-art:before{content:"";position:absolute;border:1px solid var(--holus-sage-light);border-radius:50%}.studio-course-art span{width:70%;height:70%}.studio-course-art:before{width:92%;height:92%;opacity:.55}.studio-course-art img{position:relative;z-index:2;width:58%;max-height:58%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(36,51,65,.10))}
+
+/* Shared editorial lesson components */
+body.holus-studio .kicker,body.holus-studio .cite,body.holus-studio .eyebrow,body.holus-studio .section-tag,body.holus-studio .no{
+  color:var(--holus-sage-deep)!important;font:800 .68rem/1.25 Manrope,Arial,sans-serif!important;letter-spacing:.16em!important;text-transform:uppercase!important;
+}
+body.holus-studio .card,body.holus-studio .article,body.holus-studio .study-card,body.holus-studio .quiz-card,body.holus-studio .ucard{
+  background:var(--holus-white)!important;border:1px solid var(--holus-line)!important;border-radius:var(--holus-radius)!important;box-shadow:none!important;
+}
+body.holus-studio .card:hover,body.holus-studio .ucard:hover{border-color:var(--holus-sage-light)!important;box-shadow:var(--holus-shadow)!important}
+body.holus-studio .callout,body.holus-studio .example,body.holus-studio .mnem,body.holus-studio .notice{background:var(--holus-mist)!important;border-color:var(--holus-sage)!important;color:var(--holus-ink)!important;border-radius:14px!important;box-shadow:none!important}
+body.holus-studio .btn,body.holus-studio .primary,body.holus-studio button.primary{background:var(--holus-ink)!important;border-color:var(--holus-ink)!important;color:#fff!important;border-radius:999px!important;font-weight:700!important}
+body.holus-studio .btn:hover,body.holus-studio .primary:hover{background:var(--holus-sage-deep)!important;border-color:var(--holus-sage-deep)!important}
+body.holus-studio .btn.ghost,body.holus-studio button.ghost{background:transparent!important;border-color:var(--holus-line)!important;color:var(--holus-ink)!important}
+
+/* One overview language across all four courses */
+.studio-native-overview{max-width:1180px;margin:0 auto;padding:0 clamp(24px,5vw,70px) 110px}
+.studio-overview-intro{position:relative;min-height:580px;display:flex;align-items:center;border-bottom:1px solid var(--holus-line);overflow:hidden}
+.studio-overview-intro>div:first-child{position:relative;z-index:2;width:min(660px,58%)}
+.studio-overview-kicker{margin:0 0 22px;color:var(--holus-sage-deep);font:800 .68rem/1.25 Manrope,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.studio-overview-intro h1{margin:0 0 28px;color:var(--holus-ink);font:800 clamp(3.5rem,6.5vw,6.4rem)/.94 Manrope,Arial,sans-serif;letter-spacing:-.065em}
+.studio-overview-lede{max-width:610px;margin:0;color:var(--holus-muted);font-size:1.06rem}
+.studio-overview-heading{display:flex;align-items:end;justify-content:space-between;gap:36px;padding:68px 0 28px}
+.studio-overview-heading h2{margin:7px 0 0;font:800 clamp(2rem,4vw,3.4rem)/1 Manrope,Arial,sans-serif;letter-spacing:-.05em}
+.studio-overview-heading>p{max-width:330px;margin:0;color:var(--holus-muted);text-align:right}
+body.course-natural .studio-unit-grid,body.course-sports .ugrid,body.course-nutrition .unitgrid,body.course-staying .chapter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:18px}
+body.course-natural .studio-unit-card,body.course-sports .ucard,body.course-nutrition .unitcard,body.course-staying .chapter-tile{appearance:none;display:flex;min-height:220px;flex-direction:column;align-items:flex-start;gap:10px;padding:26px!important;text-align:left;text-decoration:none;background:var(--holus-white)!important;border:1px solid var(--holus-line)!important;border-radius:22px!important;color:var(--holus-ink)!important;box-shadow:none!important;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+body.course-natural .studio-unit-card:hover,body.course-sports .ucard:hover,body.course-nutrition .unitcard:hover,body.course-staying .chapter-tile:hover{transform:translateY(-3px);border-color:var(--holus-sage-light)!important;box-shadow:var(--holus-shadow)!important}
+body.course-natural .studio-unit-meta,body.course-natural .studio-unit-progress,body.course-sports .ucard .no,body.course-sports .ucard .meta,body.course-nutrition .unitcard .eyebrow,body.course-nutrition .unitcard small,body.course-staying .chapter-number{color:var(--holus-sage-deep)!important;font:800 .67rem/1.35 Manrope,Arial,sans-serif!important;letter-spacing:.12em;text-transform:uppercase}
+body.course-natural .studio-unit-card strong,body.course-sports .ucard h3,body.course-nutrition .unitcard b,body.course-staying .chapter-tile strong{margin:0;font:800 1.08rem/1.28 Manrope,Arial,sans-serif!important;letter-spacing:-.025em;color:var(--holus-ink)!important}
+body.course-natural .studio-unit-card small,body.course-sports .ucard p,body.course-staying .chapter-tile small{flex:1;color:var(--holus-muted)!important;font:400 .9rem/1.55 Inter,Arial,sans-serif!important}
+body.course-natural .studio-unit-progress{width:100%;margin-top:auto;padding-top:14px;border-top:1px solid var(--holus-line);letter-spacing:.04em;text-transform:none}
+body.course-nutrition .unitcard button{align-self:flex-start;margin-top:auto!important}
+body.course-staying .chapter-groups{display:grid;gap:48px;margin:46px 0}
+body.course-staying .chapter-group .section-label{margin-bottom:18px!important}
+
+/* Natural Health */
+body.course-natural .app-shell{display:block!important;background:var(--holus-white)}body.course-natural .main-area{width:100%!important;background:var(--holus-white)}body.course-natural .sidebar-toggle{display:none!important}
+body.course-natural.studio-overview-active .unit-panel{display:none!important}
+body.course-natural .course-studio-drawer{color:var(--holus-ink)!important}body.course-natural .side-brand{color:var(--holus-ink)!important;font:800 1.05rem/1.2 Manrope,Arial,sans-serif!important}body.course-natural .side-brand span{color:var(--holus-sage)!important;font-family:Manrope,Arial,sans-serif!important;letter-spacing:.14em}
+body.course-natural .unit-head,body.course-natural .lesson-item{color:var(--holus-muted)!important;border-radius:12px!important}body.course-natural .unit-head:hover,body.course-natural .lesson-item:hover{background:var(--holus-mist)!important;color:var(--holus-ink)!important}body.course-natural .unit-head.active,body.course-natural .lesson-item.active{background:var(--holus-ink)!important;color:#fff!important}
+body.course-natural .unit-head .u-title{color:inherit!important;font-family:Manrope,Arial,sans-serif!important}body.course-natural .unit-head .u-badge{background:var(--holus-mist)!important;color:var(--holus-sage-deep)!important}body.course-natural .unit-head.active .u-badge{background:#fff!important;color:var(--holus-ink)!important}body.course-natural .lesson-item .ldot{background:var(--holus-sage-light)!important}body.course-natural .lesson-item.done .ldot{background:var(--holus-sage-deep)!important}body.course-natural .u-progress-track{background:var(--holus-line)!important}body.course-natural .u-progress-fill{background:var(--holus-sage)!important}
+body.course-natural .hero,body.course-natural .protein-hero,body.course-natural .vita-hero,body.course-natural .mineral4-hero,body.course-natural .supp5-hero,body.course-natural .food6-hero,body.course-natural .mid-hero,body.course-natural .diet7-hero,body.course-natural .env8-hero,body.course-natural .diet9-hero,body.course-natural .perf11-hero,body.course-natural .cond12-hero,body.course-natural .detox13-hero,body.course-natural .final-hero{position:relative;background:var(--holus-white)!important;color:var(--holus-ink)!important;border-bottom:1px solid var(--holus-line);min-height:610px;padding:105px clamp(24px,7vw,110px)!important;display:flex;align-items:center;overflow:hidden}
+body.course-natural .hero-inner{width:min(1180px,100%);max-width:1180px!important;margin:auto!important;padding-right:min(38vw,460px);position:relative;z-index:2}
+body.course-natural .hero:before{display:none!important}
+body.course-natural .hero h1{color:var(--holus-ink)!important;font:800 clamp(3.6rem,7vw,6.8rem)/.95 Manrope,Arial,sans-serif!important;letter-spacing:-.065em!important;max-width:820px;margin:24px 0!important}
+body.course-natural .hero p{color:var(--holus-muted)!important;max-width:650px;font-size:1.06rem}
+body.course-natural .wrap,body.course-natural .section-wrap{max-width:1040px!important;margin:0 auto!important;padding-left:30px!important;padding-right:30px!important}
+body.course-natural .unit-panel>.wrap>section,body.course-natural .content-section,body.course-natural .section-block{border-color:var(--holus-line)!important;scroll-margin-top:180px}
+body.course-natural .unit-panel>.wrap>section{padding-top:76px!important;padding-bottom:76px!important}
+body.course-natural .progress-shell{margin-top:38px!important}body.course-natural .gauge-label,body.course-natural [class*="-hero"] .gauge-label{color:var(--holus-sage-deep)!important}body.course-natural .gauge-sub{color:var(--holus-muted)!important}body.course-natural .droplet-gauge path{stroke:var(--holus-sage)!important}body.course-natural .droplet-gauge rect{fill:var(--holus-sage)!important}
+body.course-natural .big-idea{background:var(--holus-mist)!important;border-left-color:var(--holus-sage)!important;border-radius:14px!important;padding:22px 24px!important}body.course-natural .mark-btn{border-color:var(--holus-sage-deep)!important;color:var(--holus-sage-deep)!important;border-radius:999px!important;font-family:Inter,Arial,sans-serif!important}body.course-natural .mark-btn:hover,body.course-natural .mark-btn.done{background:var(--holus-ink)!important;border-color:var(--holus-ink)!important;color:#fff!important}body.course-natural .center-pill{background:var(--holus-ink)!important;font-family:Manrope,Arial,sans-serif!important}body.course-natural .pin{border-color:var(--holus-sage-light)!important;color:var(--holus-ink)!important;background:var(--holus-white)!important}
+
+/* Sports & Fitness */
+body.course-sports .shell{display:block!important;background:var(--holus-white)}body.course-sports main{max-width:1180px!important;margin:0 auto!important;padding:0 clamp(24px,5vw,70px) 100px!important}
+body.course-sports .bt{font:800 1.05rem/1.15 Manrope,Arial,sans-serif!important}body.course-sports .bs{color:var(--holus-sage)!important}body.course-sports #nav a,body.course-sports #nav button{color:var(--holus-muted)!important;border-radius:12px!important}body.course-sports #nav a:hover,body.course-sports #nav button:hover{background:var(--holus-mist)!important;color:var(--holus-ink)!important}body.course-sports #nav .active,body.course-sports #nav .on{background:var(--holus-ink)!important;color:#fff!important}
+body.course-sports .hero{position:relative;background:var(--holus-white)!important;color:var(--holus-ink)!important;border:0!important;border-bottom:1px solid var(--holus-line)!important;border-radius:0!important;padding:105px min(38vw,460px) 80px 0!important;margin:0!important;min-height:610px;overflow:hidden}
+body.course-sports .hero h1{font:800 clamp(3.6rem,7vw,6.8rem)/.95 Manrope,Arial,sans-serif!important;letter-spacing:-.065em!important;color:var(--holus-ink)!important;max-width:820px;margin:24px 0!important}body.course-sports .hero .lede,body.course-sports .hero .fine,body.course-sports .hero .cite{color:var(--holus-muted)!important}body.course-sports .hero .stats,body.course-sports .hero .stats div,body.course-sports .hero .stats strong{color:var(--holus-ink)!important}body.course-sports .hero .btn{background:var(--holus-ink)!important;color:#fff!important;border-color:var(--holus-ink)!important}
+body.course-sports .chip{border-color:var(--holus-sage-light)!important;color:var(--holus-sage-deep)!important;background:var(--holus-white)!important}body.course-sports .chip:hover{background:var(--holus-mist)!important}
+body.course-sports .ucard{padding:26px!important;transition:transform .2s,box-shadow .2s,border-color .2s}body.course-sports .ucard:hover{transform:translateY(-3px)}
+
+/* Staying Healthy */
+body.course-staying .app{display:block!important;background:var(--holus-white)}body.course-staying main{max-width:1120px!important;margin:0 auto!important;padding:90px clamp(24px,6vw,86px) 115px!important}
+body.course-staying .brand{color:var(--holus-ink)!important;font:800 1.05rem/1.2 Manrope,Arial,sans-serif!important}body.course-staying .brand small{color:var(--holus-sage)!important;font-family:Manrope,Arial,sans-serif!important;letter-spacing:.14em}body.course-staying .part-label{color:var(--holus-sage)!important;font-family:Manrope,Arial,sans-serif!important}body.course-staying .nav-item{color:var(--holus-muted)!important;border-radius:12px!important}body.course-staying .nav-item:hover{background:var(--holus-mist)!important;color:var(--holus-ink)!important}body.course-staying .nav-item.active{background:var(--holus-ink)!important;color:#fff!important}
+body.course-staying .section.active{position:relative;min-height:600px}body.course-staying .section.active>.studio-course-art{top:160px;right:0}body.course-staying .section.active>.eyebrow,body.course-staying .section.active>h1,body.course-staying .section.active>.sub{max-width:620px;padding-right:0;margin-right:min(38vw,430px)}
+body.course-staying .section>h1{font:800 clamp(3.5rem,7vw,6.6rem)/.95 Manrope,Arial,sans-serif!important;letter-spacing:-.065em!important;color:var(--holus-ink)!important;margin:24px 0!important}body.course-staying .sub{color:var(--holus-muted)!important;font-size:1.05rem!important}body.course-staying .card{padding:clamp(26px,4vw,44px)!important;margin-bottom:24px!important}body.course-staying .section-label{font:800 1.1rem Manrope,Arial,sans-serif!important;color:var(--holus-ink)!important}
+
+/* Nutrition Studies — replace the old screenshot design */
+body.course-nutrition{background:var(--holus-white)!important}
+body.course-nutrition>header{height:94px!important;padding:0 clamp(24px,5vw,72px)!important;background:rgba(255,255,255,.94)!important;border-bottom:1px solid var(--holus-line)!important;position:sticky!important;top:0!important;z-index:900!important;backdrop-filter:blur(16px)}
+body.course-nutrition>header .brand{display:flex;flex-direction:column;font-family:Manrope,Arial,sans-serif!important;line-height:1!important;letter-spacing:0!important}body.course-nutrition>header .brand>a{font:300 2.1rem/1 Manrope,Arial,sans-serif!important;letter-spacing:-.065em!important;color:var(--holus-ink)!important}body.course-nutrition>header .brand span{margin-top:7px;color:var(--holus-sage-deep)!important;font:800 .56rem/1 Manrope,Arial,sans-serif!important;letter-spacing:.18em!important;text-transform:uppercase}
+body.course-nutrition>header nav{gap:26px!important}body.course-nutrition>header nav button{padding:8px 0!important;border:0!important;border-bottom:1px solid transparent!important;border-radius:0!important;background:transparent!important;color:var(--holus-ink)!important;font:700 .76rem Manrope,Arial,sans-serif!important}body.course-nutrition>header nav button:hover{border-bottom-color:var(--holus-sage)!important}body.course-nutrition>header nav button.active{background:transparent!important;color:var(--holus-sage-deep)!important;border-bottom-color:var(--holus-sage-deep)!important}
+body.course-nutrition .unitbar{min-height:68px!important;padding:10px clamp(24px,5vw,72px)!important;background:var(--holus-cloud)!important;border-bottom:1px solid var(--holus-line)!important;position:sticky!important;top:94px!important;z-index:850!important}body.course-nutrition .unitbar label{font:800 .63rem Manrope,Arial,sans-serif!important;color:var(--holus-sage)!important;text-transform:uppercase;letter-spacing:.15em}body.course-nutrition .unitbar select{min-width:320px;padding:11px 42px 11px 16px!important;border:1px solid var(--holus-line)!important;border-radius:999px!important;background:var(--holus-white)!important;color:var(--holus-ink)!important;font:700 .76rem Inter,Arial,sans-serif!important}
+body.course-nutrition main{max-width:1180px!important;padding:80px 24px 110px!important}body.course-nutrition .hero{position:relative;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr)!important;gap:70px!important;min-height:540px!important;align-items:center!important}body.course-nutrition .hero h1{font:800 clamp(3.6rem,7vw,6.8rem)/.95 Manrope,Arial,sans-serif!important;letter-spacing:-.065em!important;color:var(--holus-ink)!important;margin:24px 0!important}body.course-nutrition .hero p{color:var(--holus-muted)!important}body.course-nutrition .art{height:430px!important;background:var(--holus-mist)!important;border-radius:50% 50% 44% 56% / 55% 45% 55% 45%!important;overflow:hidden!important}body.course-nutrition .art:before,body.course-nutrition .art:after{content:"";position:absolute;border:1px solid var(--holus-sage-light);border-radius:50%}body.course-nutrition .art:before{width:68%;height:68%}body.course-nutrition .art:after{width:90%;height:90%;opacity:.55}body.course-nutrition .art .orb{width:62%!important;height:62%!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:url('../assets/course-nutrition-studies.svg') center/contain no-repeat!important;font-size:0!important;transform:none!important;z-index:2!important}
+body.course-nutrition .grid{gap:20px!important}body.course-nutrition .card{padding:30px!important}body.course-nutrition .article{padding:clamp(28px,4vw,50px)!important;border-radius:var(--holus-radius)!important}body.course-nutrition .flash{background:var(--holus-mist)!important;border:1px solid var(--holus-line)!important;border-radius:var(--holus-radius)!important}body.course-nutrition .option{border-radius:14px!important;border-color:var(--holus-line)!important}
+body.course-nutrition .study{display:block!important;max-width:980px;margin:0 auto}
+body.course-nutrition .study>.article{width:100%;max-width:none!important}
+body.course-nutrition .lesson-index{margin:0 0 24px;background:var(--holus-cloud);border:1px solid var(--holus-line);border-radius:18px;overflow:hidden}
+body.course-nutrition .lesson-index summary{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:18px;padding:18px 54px 18px 22px;cursor:pointer;list-style:none;color:var(--holus-ink)}
+body.course-nutrition .lesson-index summary::-webkit-details-marker{display:none}
+body.course-nutrition .lesson-index summary:after{content:'+';position:absolute;right:22px;color:var(--holus-sage-deep);font:600 1.25rem/1 Manrope,Arial,sans-serif}
+body.course-nutrition .lesson-index[open] summary{border-bottom:1px solid var(--holus-line)}body.course-nutrition .lesson-index[open] summary:after{content:'−'}
+body.course-nutrition .lesson-index summary span{font:800 .77rem/1.2 Manrope,Arial,sans-serif;letter-spacing:.02em}
+body.course-nutrition .lesson-index summary small{min-width:0;overflow:hidden;color:var(--holus-muted);font-size:.82rem;white-space:nowrap;text-overflow:ellipsis}
+body.course-nutrition .lesson-index .sidebar{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;padding:16px!important;overflow:visible!important}
+body.course-nutrition .lesson-index .sidebar button{width:100%;min-width:0!important;margin:0!important;padding:13px 14px!important;text-align:left;border:1px solid var(--holus-line)!important;border-radius:12px!important;background:var(--holus-white)!important;color:var(--holus-ink)!important}
+body.course-nutrition .lesson-index .sidebar button:hover{border-color:var(--holus-sage-light)!important;background:var(--holus-mist)!important}body.course-nutrition .lesson-index .sidebar button.active{border-color:var(--holus-ink)!important;background:var(--holus-ink)!important;color:#fff!important}
+
+@media(max-width:900px){
+  .studio-course-art{position:relative;right:auto;top:auto;transform:none;width:min(430px,90%);margin:30px auto 0;order:-1}
+  .studio-overview-intro{display:grid;align-content:center;padding:55px 0}.studio-overview-intro>div:first-child{width:100%;max-width:760px}.studio-overview-intro .studio-course-art{margin-bottom:35px}
+  body.course-natural .hero{display:grid!important;padding-top:65px!important}body.course-natural .hero-inner{padding-right:0!important}
+  body.course-sports .hero{padding-right:0!important;display:grid!important}
+  body.course-staying .section.active>.studio-course-art{position:relative;top:auto;right:auto;margin-bottom:40px}body.course-staying .section.active>.eyebrow,body.course-staying .section.active>h1,body.course-staying .section.active>.sub{margin-right:0!important;max-width:760px!important}
+  body.course-nutrition .hero{grid-template-columns:1fr!important}.course-studio-header nav{gap:16px}
+}
+@media(max-width:700px){
+  html{scroll-padding-top:138px}.course-studio-header{height:76px;padding:0 18px}.studio-wordmark{font-size:1.85rem}.course-studio-header nav{max-width:64vw;overflow-x:auto;gap:15px}.course-studio-header nav button{white-space:nowrap;font-size:.7rem!important}.course-studio-unitbar{top:76px;padding:8px 18px;min-height:60px}.course-studio-unitbar>div{display:none}.studio-unit-button{width:100%;min-width:0}
+  .studio-native-overview{padding:0 18px 80px}.studio-overview-intro{min-height:auto;padding:46px 0 54px}.studio-overview-intro h1{font-size:clamp(2.8rem,13vw,4.5rem)}.studio-overview-heading{display:block;padding-top:48px}.studio-overview-heading>p{margin-top:14px;text-align:left}.studio-overview-intro .studio-course-art{width:min(320px,90%)}
+  body.course-natural .studio-unit-grid,body.course-sports .ugrid,body.course-nutrition .unitgrid,body.course-staying .chapter-grid{grid-template-columns:1fr}
+  body.course-natural .studio-unit-card,body.course-sports .ucard,body.course-nutrition .unitcard,body.course-staying .chapter-tile{min-height:0}
+  body.course-nutrition .lesson-index summary{grid-template-columns:1fr;gap:5px}body.course-nutrition .lesson-index .sidebar{grid-template-columns:1fr}
+  body.course-natural .hero,body.course-sports .hero{min-height:auto;padding:55px 20px!important}body.course-natural .hero h1,body.course-sports .hero h1,body.course-staying .section>h1,body.course-nutrition .hero h1{font-size:clamp(2.8rem,13vw,4.5rem)!important}
+  body.course-natural .section-wrap,body.course-sports main,body.course-staying main,body.course-nutrition main{padding-left:18px!important;padding-right:18px!important}
+  body.course-nutrition>header{height:76px!important;padding:0 18px!important}body.course-nutrition>header .brand span{display:none}body.course-nutrition>header nav{max-width:70vw;overflow-x:auto;gap:15px!important}body.course-nutrition>header nav button{white-space:nowrap;font-size:.7rem!important}body.course-nutrition .unitbar{top:76px!important;padding:8px 18px!important}body.course-nutrition .unitbar label,body.course-nutrition #unit-status{display:none!important}body.course-nutrition .unitbar select{width:100%!important;min-width:0!important}body.course-nutrition .art{height:320px!important}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Phone layout: keep course navigation in its own row, never over the lesson. */
+@media (max-width:800px){
+  html{scroll-padding-top:188px}
+  body.holus-studio{overflow-wrap:break-word}
+  body.holus-studio main,body.holus-studio .main-area,
+  body.holus-studio .hero>*,body.holus-studio .grid>*,
+  body.holus-studio .studio-overview-intro>*{min-width:0}
+  .course-studio-header,body.course-nutrition>header{
+    display:flex!important;flex-direction:column;align-items:stretch!important;
+    justify-content:center;gap:8px;height:116px!important;padding:12px 16px 6px!important;
+  }
+  .studio-brand,body.course-nutrition>header .brand{align-self:flex-start;flex:none}
+  .studio-wordmark,body.course-nutrition>header .brand>a{font-size:1.85rem!important}
+  .studio-brand small,body.course-nutrition>header .brand span{display:none!important}
+  .course-studio-header nav,body.course-nutrition>header nav{
+    display:flex;flex-wrap:nowrap!important;flex:none;gap:18px!important;
+    width:100%;max-width:none!important;min-width:0;margin:0!important;
+    padding:0 0 4px!important;overflow-x:auto;overscroll-behavior-x:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+  .course-studio-header nav button,body.course-nutrition>header nav button{
+    flex:0 0 auto;min-height:44px;padding:8px 2px!important;
+    white-space:nowrap;font-size:.8rem!important;
+  }
+  .course-studio-unitbar,body.course-nutrition .unitbar{
+    top:116px!important;display:flex!important;min-height:64px;
+    padding:8px 16px!important;gap:0;
+  }
+  .course-studio-unitbar>div,body.course-nutrition .unitbar label,
+  body.course-nutrition #unit-status{display:none!important}
+  .studio-unit-button,body.course-nutrition .unitbar select{
+    width:100%!important;min-width:0!important;max-width:100%;min-height:46px;
+    font-size:16px!important;
+  }
+  .course-studio-drawer{height:100dvh!important;max-height:100dvh;padding-bottom:max(30px,env(safe-area-inset-bottom))!important;overscroll-behavior:contain}
+  .studio-native-overview{padding:0 16px 56px}
+  .studio-overview-intro{min-height:0;padding:32px 0 40px;gap:20px}
+  .studio-overview-intro>div:first-child{width:100%}
+  .studio-overview-intro h1,
+  body.course-natural .hero h1,body.course-natural [class$="-hero"] h1,
+  body.course-sports .hero h1,body.course-staying .section>h1,
+  body.course-nutrition .hero h1{
+    font-size:clamp(2rem,9vw,3.2rem)!important;line-height:1.08!important;
+    letter-spacing:-.04em!important;overflow-wrap:break-word;
+  }
+  .studio-course-art,.studio-overview-intro .studio-course-art{
+    width:min(240px,75%);margin:12px auto 20px;order:0;
+  }
+  body.course-natural .hero,body.course-natural [class$="-hero"]{
+    min-height:0;display:block!important;padding:32px 16px!important;
+  }
+  body.course-natural .hero-inner{width:100%;padding-right:0!important}
+  body.course-natural .wrap,body.course-natural .section-wrap{
+    width:100%!important;padding-left:16px!important;padding-right:16px!important;
+  }
+  body.course-natural .unit-panel>.wrap>section{padding-top:36px!important;padding-bottom:36px!important}
+  body.course-sports main,body.course-staying main,body.course-nutrition main{
+    padding-left:16px!important;padding-right:16px!important;padding-bottom:60px!important;
+  }
+  body.course-staying main,body.course-nutrition main{padding-top:30px!important}
+  body.course-sports .hero{min-height:0;padding:32px 0!important}
+  body.course-staying .section.active{min-height:0}
+  body.course-staying .section.active>.studio-course-art{width:min(220px,70%);margin:0 auto 26px}
+  body.course-nutrition .hero{min-height:0!important;gap:24px!important}
+  body.course-nutrition .card,body.course-nutrition .article,
+  body.course-staying .card{padding:20px 16px!important;border-radius:18px!important}
+  body.course-nutrition .lesson-index .sidebar{margin:0!important}
+  body.course-natural .studio-unit-grid,body.course-sports .ugrid,
+  body.course-nutrition .unitgrid,body.course-staying .chapter-grid{grid-template-columns:minmax(0,1fr)!important}
+  body.holus-studio img,body.holus-studio svg,body.holus-studio canvas{max-width:100%}
+  body.holus-studio input,body.holus-studio textarea,body.holus-studio select{max-width:100%;font-size:16px}
+  body.holus-studio .article table,body.course-staying .card table{display:block;max-width:100%;overflow-x:auto}
+  body.course-staying .term-row{grid-template-columns:minmax(0,1fr);gap:8px}
+  body.holus-studio .actions{flex-wrap:wrap}
+  body.holus-studio .actions button{min-height:44px}
+}
+
+/* Memory aids live with their lesson, not behind a tab or a disclosure. */
+.lesson-memory{margin:20px 0;padding:20px 22px;border:1px solid var(--holus-sage-light);border-left:5px solid var(--holus-sage-deep);border-radius:14px;background:var(--holus-mist)}
+.lesson-memory .eyebrow{margin-bottom:9px}
+.lesson-memory strong{display:block;font:800 1.08rem/1.45 Manrope,Arial,sans-serif;color:var(--holus-ink)}
+.lesson-memory p{margin:9px 0 0;color:var(--holus-muted);font-size:.94rem}
+body.course-nutrition .lesson-atlas-link.lesson-molecule-visual{display:block;padding:0;border:0;background:transparent}
+body.course-nutrition .lesson-molecule-visual .molecule-figure{width:100%}
+body.course-nutrition .lesson-molecule-visual .molecule-figure svg{max-height:430px}
+.fat-learning-tools{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:760px){.fat-learning-tools{grid-template-columns:1fr}.lesson-memory{padding:18px 16px}}
+
+/* Lesson-local fat-energy practice; responsive and keyboard accessible. */
+.fat-calculator h3{margin-top:12px}.fat-calc-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.fat-calc-fields label{min-width:0}.fat-calc-fields select,.fat-calc-fields input{display:block;width:100%;min-width:0;font:inherit;padding:12px;border:1px solid #bacab8;border-radius:8px;background:#fff;color:inherit}.fat-calc-fields select:focus-visible{outline:3px solid #ae6b35;outline-offset:3px}.fat-calc-result{font-weight:650;overflow-wrap:anywhere}.fat-calculator .muted{font-size:14px}@media(max-width:800px){.fat-calc-fields{grid-template-columns:1fr}.fat-calculator .actions button{width:100%}.fat-calc-fields input,.fat-calc-fields select{font-size:16px}}
+
+/* Shared lesson player: one focused section at a time across legacy courses. */
+.studio-step-enabled>section[hidden]{display:none!important}
+.studio-step-player{display:grid;gap:13px;margin:28px 0 22px;padding:18px;border:1px solid var(--holus-line);border-radius:20px;background:rgba(255,255,255,.96);box-shadow:0 16px 45px rgba(28,45,39,.07)}
+.studio-step-summary{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:0 2px}
+.studio-step-summary>div{min-width:0}.studio-step-summary span{display:block;margin-bottom:4px;color:var(--holus-sage-deep);font:800 .62rem/1.25 Manrope,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}.studio-step-summary strong{display:block;overflow:hidden;color:var(--holus-ink);font:800 clamp(1rem,1.8vw,1.25rem)/1.3 Manrope,Arial,sans-serif;text-overflow:ellipsis;white-space:nowrap}.studio-step-summary>b{flex:none;color:var(--holus-muted);font:700 .76rem/1.3 Inter,Arial,sans-serif}
+.studio-step-rail{display:flex;gap:8px;padding:2px 1px 7px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none}
+.studio-step-rail::-webkit-scrollbar{display:none}
+.studio-step-rail button{display:flex;flex:0 0 auto;align-items:center;gap:8px;max-width:280px;min-height:42px;padding:9px 13px;border:1px solid var(--holus-line);border-radius:999px;background:var(--holus-white);color:var(--holus-ink);font:700 .78rem/1.2 Inter,Arial,sans-serif;white-space:nowrap;cursor:pointer;scroll-snap-align:start}
+.studio-step-rail button span{display:grid;flex:none;place-items:center;width:23px;height:23px;border-radius:50%;background:var(--holus-mist);color:var(--holus-sage-deep);font:800 .65rem/1 Manrope,Arial,sans-serif}.studio-step-rail button:hover{border-color:var(--holus-sage-light);background:var(--holus-mist)}.studio-step-rail button.active{border-color:var(--holus-ink);background:var(--holus-ink);color:#fff}.studio-step-rail button.active span{background:var(--holus-sage-light);color:var(--holus-ink)}
+.studio-step-pager{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding-top:3px}.studio-step-pager>span{color:var(--holus-muted);font:700 .76rem Inter,Arial,sans-serif}.studio-step-pager button{min-height:42px;padding:9px 14px;border:1px solid var(--holus-ink);border-radius:11px;background:transparent;color:var(--holus-ink);font:700 .82rem Inter,Arial,sans-serif;cursor:pointer}.studio-step-pager button:first-child{justify-self:start}.studio-step-pager button:last-child{justify-self:end;background:var(--holus-ink);color:#fff}.studio-step-pager button:hover:not(:disabled){background:var(--holus-sage-deep);border-color:var(--holus-sage-deep);color:#fff}.studio-step-pager button:disabled{opacity:.32;cursor:default}
+body.course-natural.studio-step-active .unit-panel.active>.hero,body.course-sports.studio-step-active main>.hero{min-height:330px!important;padding-top:50px!important;padding-bottom:45px!important}
+body.course-natural.studio-step-active .unit-panel.active>.hero h1,body.course-sports.studio-step-active main>.hero h1{font-size:clamp(2.7rem,5vw,4.7rem)!important;line-height:.98!important}
+body.course-natural .studio-step-enabled>section:not([hidden]),body.course-sports .studio-step-enabled>section:not([hidden]){min-height:430px;margin:0!important;padding:clamp(26px,4vw,44px)!important;border:1px solid var(--holus-line)!important;border-radius:22px!important;background:var(--holus-white)!important;box-shadow:0 14px 40px rgba(28,45,39,.055)}
+body.course-sports .studio-step-enabled>section:not([hidden]){display:block!important}
+.course-studio-header nav button.active{border-bottom-color:var(--holus-sage-deep)!important;color:var(--holus-sage-deep)!important}
+
+@media(max-width:800px){
+  .studio-step-player{margin:18px 0;padding:14px;border-radius:17px}.studio-step-summary{align-items:flex-start}.studio-step-summary strong{max-width:70vw;font-size:.98rem}.studio-step-summary>b{padding-top:2px}.studio-step-rail button{max-width:240px;min-height:44px}.studio-step-pager{grid-template-columns:1fr auto 1fr}.studio-step-pager button{min-width:0;padding:9px 11px}
+  body.course-natural.studio-step-active .unit-panel.active>.hero,body.course-sports.studio-step-active main>.hero{min-height:0!important;padding-top:28px!important;padding-bottom:28px!important}
+  body.course-natural .studio-step-enabled>section:not([hidden]),body.course-sports .studio-step-enabled>section:not([hidden]){min-height:0;padding:24px 16px!important;border-radius:18px!important}
+}
+
+/* Keep every course overview compact; editorial scale should not become a full-page gate. */
+@media(min-width:901px){
+  .studio-overview-intro{min-height:390px;padding:46px 0 54px}
+  .studio-overview-intro h1{font-size:clamp(3rem,5.2vw,4.8rem)}
+  .studio-overview-intro .studio-course-art{width:min(360px,34vw)}
+  body.course-sports .hero{min-height:420px;padding-top:62px!important;padding-bottom:58px!important}
+  body.course-sports .hero h1{font-size:clamp(3rem,5.2vw,4.8rem)!important}
+  body.course-staying .section.active{min-height:420px}
+  body.course-staying .section>h1{font-size:clamp(3rem,5.2vw,4.8rem)!important}
+  body.course-nutrition main{padding-top:46px!important}
+  body.course-nutrition .hero{min-height:390px!important;gap:48px!important}
+  body.course-nutrition .hero h1{font-size:clamp(3rem,5.2vw,4.8rem)!important}
+  body.course-nutrition .art{height:300px!important}
+}
+
+/* Phone reading mode: chrome belongs to the document, never over the lesson.
+   Do not reserve a desktop sticky offset after an in-app browser resizes. */
+@media (max-width:800px){
+  html:root{scroll-padding-top:16px}
+  body.holus-studio .course-studio-header,body.holus-studio.course-nutrition>header{
+    position:relative!important;top:auto!important;height:auto!important;min-height:96px;
+    padding:10px 16px 0!important;gap:4px;backdrop-filter:none;
+  }
+  .studio-brand,body.course-nutrition>header .brand{min-height:36px;justify-content:center}
+  .course-studio-header nav,body.course-nutrition>header nav{gap:18px!important;padding-bottom:0!important}
+  .course-studio-header nav button,body.course-nutrition>header nav button{font-size:.75rem!important}
+  body.holus-studio .course-studio-unitbar,body.holus-studio.course-nutrition .unitbar{
+    position:relative!important;top:auto!important;min-height:60px;flex-wrap:nowrap;
+    padding:7px 16px!important;
+  }
+  .course-studio-unitbar>label{display:none}
+  .course-studio-unitbar select{width:100%!important;min-width:0!important;min-height:44px;font-size:16px}
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#243341">
+  <link rel="icon" href="assets/holus-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="course-system.css">
+  <title>Course · hōlus. study</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="index.html" aria-label="Hōlus Study home">hōlus<span>.</span></a>
+    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> All courses</a>
+  </header>
+
+  <main id="course-app" aria-live="polite">
+    <section class="course-hero">
+      <div class="hero-copy">
+        <p class="eyebrow" id="course-number"></p>
+        <h1 id="course-title"></h1>
+        <p class="hero-intro" id="course-intro"></p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#full-course">Enter the complete course</a>
+          <a class="text-link" id="original-link" href="#">Open full-screen <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><img id="course-image" src="" alt=""></div>
+    </section>
+
+    <nav class="study-nav" aria-label="Course study sections">
+      <a href="#full-course">Complete course</a><a href="#teachable">Study companion</a><a href="#flashcards">Flashcards</a><a href="#mnemonic">Mnemonic</a><a href="#practice-lens">In practice</a><a href="#case-study">Case study</a><a href="#key-concepts">Key concepts</a><a href="#practice">Practice</a><a href="#quiz">Quiz</a>
+    </nav>
+
+    <section class="full-course-section" id="full-course">
+      <div class="full-course-heading">
+        <div><div class="section-kicker">Complete source course</div><h2>All lessons and activities, preserved</h2></div>
+        <p>This is the complete original course—not a summary. Every lesson, explanation and original learning activity remains available here.</p>
+      </div>
+      <div class="preservation-note"><strong>Nothing has been trimmed.</strong><span>The consistent study companion begins after the complete course.</span></div>
+      <div class="course-frame-wrap"><iframe id="original-frame" title="Complete original course content" loading="eager"></iframe></div>
+      <div class="frame-footer"><p>Prefer more room to study?</p><a id="frame-open-link" class="secondary-button" href="#">Open the complete course full-screen <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="lesson-section teachable" id="teachable">
+      <div class="section-kicker">Study companion · 01 · Teachable moment</div>
+      <div class="section-grid"><div><h2 id="teachable-title"></h2><div id="teachable-copy" class="prose"></div></div><blockquote id="teachable-quote"></blockquote></div>
+    </section>
+
+    <section class="lesson-section" id="flashcards">
+      <div class="section-heading"><div><div class="section-kicker">02 · Recall</div><h2>Flashcards</h2></div><p>Try to answer before revealing the reverse side.</p></div>
+      <div class="flashcard-grid" id="flashcard-grid"></div>
+    </section>
+
+    <section class="lesson-section mnemonic-section" id="mnemonic">
+      <div class="section-kicker">03 · Memory aid</div>
+      <div class="mnemonic-layout"><div><p class="mnemonic-word" id="mnemonic-word"></p><h2 id="mnemonic-title"></h2><p id="mnemonic-note"></p></div><ol id="mnemonic-list"></ol></div>
+    </section>
+
+    <section class="lesson-section" id="good-to-know">
+      <div class="section-heading"><div><div class="section-kicker">04 · Context</div><h2>Good to know</h2></div><p>Useful nuance that makes the core idea more accurate.</p></div>
+      <div class="note-grid" id="good-grid"></div>
+    </section>
+
+    <section class="practitioner-section" id="practice-lens">
+      <div class="section-kicker light">05 · Practitioner lens</div>
+      <div class="practitioner-grid"><div><h2>In practice as a nutritionist</h2><p id="practitioner-intro"></p></div><ol id="practitioner-steps"></ol></div>
+    </section>
+
+    <section class="lesson-section" id="case-study">
+      <div class="section-kicker">06 · Apply it</div>
+      <div class="case-card"><div class="case-label">Case study</div><h2 id="case-title"></h2><p id="case-scenario"></p><div class="case-question"><strong>Think it through</strong><p id="case-prompt"></p></div><button class="secondary-button" id="case-reveal" type="button" aria-expanded="false">Reveal a thoughtful approach</button><div class="case-answer" id="case-answer" hidden></div></div>
+    </section>
+
+    <section class="lesson-section" id="key-concepts">
+      <div class="section-heading"><div><div class="section-kicker">07 · Distil</div><h2>Most important concepts</h2></div><p>The ideas worth carrying into your next study session.</p></div>
+      <div class="concept-list" id="concept-list"></div>
+    </section>
+
+    <section class="lesson-section practice-section" id="practice">
+      <div class="section-heading"><div><div class="section-kicker">08 · Retrieval practice</div><h2>12 practice questions</h2></div><p>Answer in your own words, then compare with the guide.</p></div>
+      <div class="practice-list" id="practice-list"></div>
+    </section>
+
+    <section class="lesson-section quiz-section" id="quiz">
+      <div class="quiz-intro"><div class="section-kicker light">09 · Check your learning</div><h2>Course quiz</h2><p>Choose one answer for each question. You’ll receive a score and explanations when you submit.</p></div>
+      <form id="quiz-form"><div id="quiz-list"></div><button class="quiz-button" type="submit">Score my quiz</button></form>
+      <div id="quiz-result" class="quiz-result" hidden aria-live="polite"></div>
+    </section>
+
+    <section class="continue-section"><p>Continue learning</p><h2>Ready for the complete course?</h2><a id="continue-link" class="primary-button" href="#">Open the full original material <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer><a class="wordmark" href="index.html">hōlus<span>.</span></a><p>Study deeply. Practise thoughtfully. Keep growing.</p></footer>
+  <script src="course-system.js"></script>
+</body>
+</html>

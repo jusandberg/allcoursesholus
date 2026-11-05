@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Connected anatomy illustration</title>
+  <desc id="desc">An abstract human figure with a brain, lungs, heart, digestive tract and branching body systems.</desc>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ed"/>
+      <stop offset="1" stop-color="#d7dfd3"/>
+    </linearGradient>
+  </defs>
+  <circle cx="160" cy="180" r="145" fill="none" stroke="#c7d2c4"/>
+  <circle cx="160" cy="180" r="115" fill="none" stroke="#71836d" stroke-opacity=".38"/>
+  <path d="M160 26c-28 0-49 22-49 50 0 18 9 34 24 43l-9 26-38 25 20 120 20-4 9-67h46l9 67 20 4 20-120-38-25-9-26c15-9 24-25 24-43 0-28-21-50-49-50Z" fill="url(#body)" stroke="#4b5d49" stroke-width="3"/>
+  <path d="M139 56c6-13 34-14 42 0 9 15-3 34-21 34s-30-19-21-34Z" fill="#d9dfca" stroke="#71836d" stroke-width="2"/>
+  <path d="M159 48v43M143 61c10 3 23 3 34 0M145 75c9-4 21-4 30 0" fill="none" stroke="#71836d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M153 126c-22-18-45 1-39 26 5 19 25 30 39 34v-60ZM167 126c22-18 45 1 39 26-5 19-25 30-39 34v-60Z" fill="#c7d2c4" stroke="#4b5d49" stroke-width="2"/>
+  <path d="M160 111v87M160 143l-20-11M160 151l21-12" fill="none" stroke="#4b5d49" stroke-width="3" stroke-linecap="round"/>
+  <path d="M160 170c-12-20-34-2-23 16 8 13 23 20 23 20s15-7 23-20c11-18-11-36-23-16Z" fill="#b86f57" stroke="#7d4a3a" stroke-width="2"/>
+  <path d="M137 216c17-14 47-13 51 8 3 16-10 22-22 24-12 2-12 16 1 17 14 1 21 8 15 20-8 15-41 13-48-5-6-15 5-23 16-25 11-2 12-15 0-18-10-3-21-9-13-21Z" fill="none" stroke="#71836d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M126 145 95 186m99-41 31 41M137 218l-24 65m70-65 24 65" fill="none" stroke="#4b5d49" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#243341">
+    <circle cx="95" cy="186" r="5"/><circle cx="225" cy="186" r="5"/><circle cx="113" cy="283" r="5"/><circle cx="207" cy="283" r="5"/>
+  </g>
+  <g fill="none" stroke="#71836d" stroke-width="2">
+    <path d="M95 186 53 158M225 186l42-28M113 283l-35 31M207 283l35 31"/>
+  </g>
+</svg>

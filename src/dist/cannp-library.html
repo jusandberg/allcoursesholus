@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#243341">
+  <title>CANNP Knowledge &amp; Practice Library · hōlus. study</title>
+  <meta name="description" content="A searchable, evidence-checked study library for CANNP The Voice, Volume 16, Issues 1–3.">
+  <link rel="icon" href="assets/holus-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cannp-library.css?v=2">
+  <link rel="stylesheet" href="cannp-study.css?v=1">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to library</a>
+  <header class="site-head">
+    <nav class="wrap nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Return to hōlus study home"><span class="wordmark">hōlus.</span><span class="descriptor">study collection</span></a>
+      <div class="nav-links">
+        <button class="view-tab is-active" type="button" data-cannp-view-button="overview" aria-pressed="true">Overview</button>
+        <button class="view-tab" type="button" data-cannp-view-button="study" aria-pressed="false">Learn</button>
+        <button class="view-tab" type="button" data-cannp-view-button="practice" aria-pressed="false">Practice</button>
+        <button class="view-tab" type="button" data-cannp-view-button="library" aria-pressed="false">Topic index</button>
+        <button class="view-tab" type="button" data-cannp-view-button="evidence" aria-pressed="false">Evidence</button>
+        <button class="view-tab" type="button" data-cannp-view-button="pdfs" aria-pressed="false">PDFs</button>
+        <a class="nav-pill" href="index.html">All courses <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="library-hero" data-cannp-view="overview">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">CANNP · The Voice · Volume 16</p>
+          <h1>Knowledge for practice,<br><em>kept in perspective.</em></h1>
+          <p class="hero-lede">A practical reading companion for Issues 1–3: nutrition science, client conversations, ethical practice-building, useful tools and the context each claim needs.</p>
+          <div class="hero-actions"><button class="primary" type="button" data-cannp-view-link="study">Start guided learning <span aria-hidden="true">→</span></button><button class="text-link" type="button" data-cannp-view-link="pdfs">View original PDFs</button></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="volume-mark"><span>VOLUME</span><strong>16</strong><small>ISSUES 01—03</small></div>
+          <i class="orbit orbit-a"></i><i class="orbit orbit-b"></i><i class="orbit orbit-c"></i>
+        </div>
+      </div>
+      <div class="wrap trust-strip" aria-label="Source review status">
+        <div><strong>24 / 24</strong><span>newsletter pages reviewed</span></div>
+        <div><strong>3 issues</strong><span>mapped page by page</span></div>
+        <div><strong>Checked Oct 21, 2026</strong><span>primary research + guidance</span></div>
+        <div><strong>Your progress</strong><span id="saved-summary">saved on this device</span></div>
+      </div>
+    </section>
+
+    <section class="cannp-study-section section" id="study" data-cannp-view="study" hidden>
+      <div class="wrap">
+        <header class="cannp-study-intro">
+          <div><p class="eyebrow">Guided learning · Volume 16</p><h2>Study one idea at a time.</h2></div>
+          <p>Each article is paced like your courses: understand the claim, see the evidence boundary, connect it to practice, then retrieve the three ideas worth keeping. All 24 substantial notes and their sources remain here.</p>
+        </header>
+        <nav class="study-route-jumps" aria-label="Choose a CANNP learning route">
+          <button class="is-active" type="button" data-cannp-study-jump="all" aria-pressed="true">Complete route</button>
+          <button type="button" data-cannp-study-jump="16-1" aria-pressed="false">Issue 16-1</button>
+          <button type="button" data-cannp-study-jump="16-2" aria-pressed="false">Issue 16-2</button>
+          <button type="button" data-cannp-study-jump="16-3" aria-pressed="false">Issue 16-3</button>
+          <button class="route-pdf-link" type="button" data-cannp-view-link="pdfs">Original PDFs ↗</button>
+        </nav>
+        <div class="cannp-study-shell">
+          <div class="cannp-study-toolbar" aria-label="CANNP study controls">
+            <label class="cannp-study-field" for="cannp-study-select"><span>Choose your route</span><select id="cannp-study-select"><option value="all">All Volume 16 topics · 24</option></select></label>
+            <div class="cannp-study-progress-wrap"><span>Overall completion · saved on this device</span><div class="cannp-study-progress" id="cannp-study-progress"></div></div>
+            <div class="cannp-study-toolbar-actions"><button id="cannp-study-mark" type="button" aria-pressed="false">Mark complete</button><a id="cannp-study-pdf" href="#cannp-pdfs">Choose an original PDF ↓</a></div>
+          </div>
+          <div class="cannp-study-player" id="cannp-study-player" aria-live="polite"></div>
+          <div class="cannp-study-pager" aria-label="Learning moment navigation"><button id="cannp-study-back" type="button">← Previous</button><button id="cannp-study-next" type="button">Next moment →</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="priority-section" id="priority" data-cannp-view="overview">
+      <div class="wrap priority-grid">
+        <div class="priority-title"><p class="eyebrow light">What should I know first?</p><h2>Six ideas worth carrying into every consultation.</h2><p>These are the highest-priority ideas across the three issues—not a substitute for the full notes below.</p></div>
+        <ol class="priority-list">
+          <li><span>01</span><div><strong>Pattern before promise.</strong><p>Food processing, meal timing and macronutrient labels are useful lenses, but no single label tells the whole health story.</p></div></li>
+          <li><span>02</span><div><strong>Ask before you advise.</strong><p>When a client struggles, explore barriers, preferences, readiness and plan fit instead of assuming a knowledge or discipline problem.</p></div></li>
+          <li><span>03</span><div><strong>Match the claim to the design.</strong><p>A cohort can identify an association; a short trial can test a narrow outcome. Neither answers every clinical question.</p></div></li>
+          <li><span>04</span><div><strong>Scope is an active skill.</strong><p>Membership, a webinar, a symptom tool or laboratory access never replaces competence, consent, collaboration or referral.</p></div></li>
+          <li><span>05</span><div><strong>Make progress visible.</strong><p>Track energy, confidence, symptoms, skills and follow-through—not only weight—and be clear that subjective ratings are not diagnoses.</p></div></li>
+          <li><span>06</span><div><strong>Build the system before the extras.</strong><p>A reliable intake, interaction screen, referral path, documentation rhythm and follow-up process come before more services.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="issues-section section" id="issues" data-cannp-view="overview">
+      <div class="wrap">
+        <header class="section-head"><div><p class="eyebrow">The source set</p><h2>Three issues, three practice lenses.</h2></div><p>Open the original PDFs at any time. Dates and member announcements are preserved as historical records unless current availability was independently confirmed.</p></header>
+        <div class="issue-grid">
+          <article class="issue-card"><div class="issue-no">16—1</div><p class="issue-theme">Professional foundations</p><h3>Relationships, routines and careful interpretation</h3><p>Referral practice, time protection, community visibility, travel basics and four research snapshots.</p><ul><li>Minimally processed vs ultra-processed diets</li><li>Time-restricted eating and visceral fat</li><li>Fruit, vegetables and mortality</li><li>Melittin as preclinical research</li></ul><div class="issue-foot"><span>8 pages · reviewed</span><div class="issue-actions"><button type="button" data-cannp-view-link="study" data-cannp-study-jump="16-1">Study issue →</button><a href="https://cannp.ca/wp-content/uploads/2026/03/new-design-issue-16-1.pdf" target="_blank" rel="noopener">View PDF ↗</a></div></div></article>
+          <article class="issue-card featured"><div class="issue-no">16—2</div><p class="issue-theme">Client-centred practice</p><h3>Difficult conversations and workable systems</h3><p>Curiosity, validation, boundaries, productivity and evidence that needs careful wording.</p><ul><li>UPF and blood-lipid associations</li><li>Intermittent fasting review</li><li>Polyphenols and telomeres</li><li>Healthy patterns and longevity genes</li></ul><div class="issue-foot"><span>8 pages · reviewed</span><div class="issue-actions"><button type="button" data-cannp-view-link="study" data-cannp-study-jump="16-2">Study issue →</button><a href="https://cannp.ca/wp-content/uploads/2026/08/new-design-issue-16-2.pdf" target="_blank" rel="noopener">View PDF ↗</a></div></div></article>
+          <article class="issue-card"><div class="issue-no">16—3</div><p class="issue-theme">Sustainable change</p><h3>Flexible behaviour and sustainable services</h3><p>Client barriers, label education, reusable services and four nutrition-science summaries.</p><ul><li>Eating-window timing</li><li>UPF and diabetes risk</li><li>Low-carb replacement foods</li><li>Controlled-feeding evidence</li></ul><div class="integrity-note"><strong>Source note</strong> Cover contents and two PDF link overlays are incorrect; this library maps the actual pages and printed research URLs.</div><div class="issue-foot"><span>8 pages · reviewed</span><div class="issue-actions"><button type="button" data-cannp-view-link="study" data-cannp-study-jump="16-3">Study issue →</button><a href="https://cannp.ca/wp-content/uploads/2026/09/new-design-issue-16-3.pdf" target="_blank" rel="noopener">View PDF ↗</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pdf-section section" id="cannp-pdfs" data-cannp-view="pdfs" hidden>
+      <div class="wrap">
+        <header class="section-head"><div><p class="eyebrow">Original source shelf</p><h2>Read the digest first. Open the PDF when you want the page.</h2></div><p>The guided notes are your learning route; these are the complete source issues for checking layout, wording and neighbouring articles.</p></header>
+        <div class="pdf-grid">
+          <article class="pdf-card"><div class="pdf-cover" aria-hidden="true"><span>THE VOICE</span><strong>16—1</strong><small>8 pages</small></div><div><p class="issue-theme">Professional foundations</p><h3>Issue 16-1</h3><p>Referral practice, time protection, community visibility, travel basics and four nutrition-research snapshots.</p><div class="pdf-actions"><button type="button" data-cannp-view-link="study" data-cannp-study-jump="16-1">Study 16-1 →</button><a href="https://cannp.ca/wp-content/uploads/2026/03/new-design-issue-16-1.pdf" target="_blank" rel="noopener">View original PDF ↗</a></div></div></article>
+          <article class="pdf-card"><div class="pdf-cover dark" aria-hidden="true"><span>THE VOICE</span><strong>16—2</strong><small>8 pages</small></div><div><p class="issue-theme">Client-centred practice</p><h3>Issue 16-2</h3><p>Difficult conversations, client-centred language, workable systems and careful evidence interpretation.</p><div class="pdf-actions"><button type="button" data-cannp-view-link="study" data-cannp-study-jump="16-2">Study 16-2 →</button><a href="https://cannp.ca/wp-content/uploads/2026/08/new-design-issue-16-2.pdf" target="_blank" rel="noopener">View original PDF ↗</a></div></div></article>
+          <article class="pdf-card"><div class="pdf-cover clay" aria-hidden="true"><span>THE VOICE</span><strong>16—3</strong><small>8 pages</small></div><div><p class="issue-theme">Sustainable change</p><h3>Issue 16-3</h3><p>Flexible behaviour, label education, service models and nutrition-science summaries.</p><div class="integrity-note"><strong>Source integrity</strong> The cover contents and two PDF link overlays are incorrect. Use this library’s page map and the printed research URLs.</div><div class="pdf-actions"><button type="button" data-cannp-view-link="study" data-cannp-study-jump="16-3">Study 16-3 →</button><a href="https://cannp.ca/wp-content/uploads/2026/09/new-design-issue-16-3.pdf" target="_blank" rel="noopener">View original PDF ↗</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="library-section section" id="library" data-cannp-view="library" hidden>
+      <div class="wrap">
+        <header class="section-head"><div><p class="eyebrow">Searchable topic index</p><h2>Study by question, not by page order.</h2></div><p>Each note separates what the newsletter says, what the wider evidence can support and what you can responsibly apply.</p></header>
+        <div class="study-tools" aria-label="Library search and filters">
+          <label class="search-box"><span class="sr-only">Search library topics</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg><input id="topic-search" type="search" placeholder="Search a topic, study, skill or issue…" autocomplete="off"></label>
+          <div class="filters" id="topic-filters" aria-label="Filter by category">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All topics</button>
+            <button class="filter" type="button" data-filter="science" aria-pressed="false">Nutrition science</button>
+            <button class="filter" type="button" data-filter="counselling" aria-pressed="false">Client counselling</button>
+            <button class="filter" type="button" data-filter="business" aria-pressed="false">Practice &amp; business</button>
+            <button class="filter" type="button" data-filter="resources" aria-pressed="false">Resources &amp; tools</button>
+            <button class="filter" type="button" data-filter="news" aria-pressed="false">Association news</button>
+            <button class="filter" type="button" data-filter="lifestyle" aria-pressed="false">Lifestyle &amp; travel</button>
+          </div>
+          <div class="result-line"><span id="result-count" aria-live="polite"></span><button id="clear-topic-tools" type="button">Clear search &amp; filters</button></div>
+        </div>
+        <div class="topic-grid" id="topic-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><strong>No topic matches that search.</strong><p>Try a broader word such as “fasting,” “referral,” “travel” or “barriers.”</p></div>
+      </div>
+    </section>
+
+    <section class="toolkit-section section" id="toolkit" data-cannp-view="practice" hidden>
+      <div class="wrap toolkit-layout">
+        <div class="toolkit-intro"><p class="eyebrow light">Client-counselling toolkit</p><h2>Language that keeps the client in the conversation.</h2><p>Use these as adaptable prompts, not a script to perform. Listen to the answer before deciding what comes next.</p><div class="scope-box"><span>Scope cue</span><p>“That question sits outside my training. I’d like you to discuss it with your physician, pharmacist or another appropriately regulated provider.”</p></div></div>
+        <div class="script-list">
+          <article><span>When follow-through is hard</span><blockquote>“What has made this difficult?”</blockquote><p>Find the barrier before changing the recommendation.</p></article>
+          <article><span>When the plan does not fit</span><blockquote>“What would make it easier?”</blockquote><p>Invite context: time, cost, culture, symptoms, confidence or enjoyment.</p></article>
+          <article><span>When confidence is low</span><blockquote>“What is one change you feel confident trying this week?”</blockquote><p>Scale the experiment until success feels plausible.</p></article>
+          <article><span>When priorities drift</span><blockquote>“Would it be okay if we revisit what matters most to you?”</blockquote><p>Return to the client’s own reason for change.</p></article>
+          <article><span>When you disagree</span><blockquote>“Can you tell me more about that?”</blockquote><p>Curiosity creates room for correction without defensiveness.</p></article>
+          <article><span>When emotion arrives</span><blockquote>“That sounds really discouraging. We can pause.”</blockquote><p>Validation is not agreement; it is recognition of the experience.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="evidence-section section" id="evidence" data-cannp-view="evidence" hidden>
+      <div class="wrap">
+        <header class="section-head"><div><p class="eyebrow">Evidence check · October 21, 2026</p><h2>Read the claim. Then read its boundary.</h2></div><p>Labels apply to the specific claim shown—not to an entire article, person or practice approach.</p></header>
+        <div class="label-key" aria-label="Evidence label key"><span class="supported">Supported</span><span class="limited">Promising but limited</span><span class="association">Association only</span><span class="opinion">Opinion / practice suggestion</span><span class="verify">Requires verification</span><span class="unsupported">Not supported as stated</span></div>
+        <div class="evidence-grid" id="evidence-grid"></div>
+      </div>
+    </section>
+
+    <section class="practice-section section" id="practice" data-cannp-view="practice" hidden>
+      <div class="wrap practice-grid">
+        <div><p class="eyebrow">Practice-building reference</p><h2>Build a practice that is clear, useful and honest about the work.</h2><p class="section-copy">The business articles are suggestions, not promises. Count preparation, administration, follow-up, privacy obligations and costs whenever you evaluate a service.</p></div>
+        <ol class="practice-path">
+          <li><span>01</span><div><h3>Foundation</h3><p>Define scope, intake, consent, privacy, documentation, interaction screening and referral paths.</p></div></li>
+          <li><span>02</span><div><h3>Workflow</h3><p>Batch administration, protect focused work, use templates appropriately and leave 10–15 minute appointment buffers.</p></div></li>
+          <li><span>03</span><div><h3>Useful visibility</h3><p>Offer accurate education, community talks and memorable follow-ups without diagnosing or implying endorsement.</p></div></li>
+          <li><span>04</span><div><h3>Service design</h3><p>Describe the components and support included in a program. Never guarantee a health result or insurer reimbursement.</p></div></li>
+          <li><span>05</span><div><h3>Measurement</h3><p>Track revenue per total hour, retention and recurring work alongside quality, boundaries and client experience.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="resources-section section" id="resources" data-cannp-view="evidence" hidden>
+      <div class="wrap">
+        <header class="section-head"><div><p class="eyebrow">Resource directory</p><h2>Know what a tool can—and cannot—do.</h2></div><p>Member-only paths are recorded exactly where the issues place them. “Access” never means diagnostic authority, competency or endorsement.</p></header>
+        <div class="resource-tools"><label><span class="sr-only">Search resources</span><input id="resource-search" type="search" placeholder="Search resources, tools, books or kits…"></label><select id="resource-filter" aria-label="Filter resources"><option value="all">All resource types</option><option value="member">CANNP member resources</option><option value="public">Public tools &amp; websites</option><option value="book">Member-reviewed books</option></select></div>
+        <div class="resource-grid" id="resource-grid"></div>
+        <p class="resource-empty" id="resource-empty" hidden>No resources match that search.</p>
+      </div>
+    </section>
+
+    <section class="news-section section" id="news" data-cannp-view="evidence" hidden>
+      <div class="wrap news-layout">
+        <div><p class="eyebrow light">Historical news vs current opportunity</p><h2>Announcements stay dated until verified.</h2><p>The newsletters list webinars, member programs and planned benefits. Because the public CANNP site did not expose all member details, this library does not convert them into “available now” claims.</p><a href="https://cannp.ca/member-hub/the-voice/" target="_blank" rel="noopener">Check The Voice archive ↗</a></div>
+        <div class="timeline" id="news-timeline"></div>
+      </div>
+    </section>
+
+    <section class="remember-section section" id="remember" data-cannp-view="practice" hidden>
+      <div class="wrap">
+        <header class="section-head"><div><p class="eyebrow">10 things to remember</p><h2>Your one-page mental model.</h2></div><p>Read this before returning to the longer notes, then use the recall prompts to test what stayed with you.</p></header>
+        <ol class="ten-list">
+          <li><span>01</span><p>Ultra-processed food is a useful research category, but foods and dietary patterns within it are heterogeneous.</p></li>
+          <li><span>02</span><p>One short controlled trial can show causation under its conditions; it cannot prove a lifetime outcome.</p></li>
+          <li><span>03</span><p>Relative risk is not a percentage-point change in one client’s absolute risk.</p></li>
+          <li><span>04</span><p>A non-significant result is not proof that two approaches are equivalent.</p></li>
+          <li><span>05</span><p>“Low carbohydrate” is incomplete until you know what replaces the carbohydrate.</p></li>
+          <li><span>06</span><p>Five daily fruit-and-vegetable servings was an observed mortality plateau—not a maximum or individual prescription.</p></li>
+          <li><span>07</span><p>Cell and animal findings can be promising without being a human treatment recommendation.</p></li>
+          <li><span>08</span><p>Listening, validation and collaborative experiments usually teach you more than the label “non-compliant.”</p></li>
+          <li><span>09</span><p>A database warning signals a risk to investigate; it does not diagnose a nutrient deficiency.</p></li>
+          <li><span>10</span><p>Membership benefits, tools and testimonials do not expand scope or establish clinical effectiveness.</p></li>
+        </ol>
+        <div class="learning-grid">
+          <section class="recall-panel"><div class="panel-head"><p class="eyebrow">Recall prompts</p><h3>Can you explain it without looking?</h3></div><div id="recall-list"></div></section>
+          <section class="action-panel"><div class="panel-head"><p class="eyebrow">Personal action checklist</p><h3>Turn reading into a small practice system.</h3></div><div id="action-list"></div><button class="reset-actions" id="reset-actions" type="button">Reset checklist</button></section>
+        </div>
+      </div>
+    </section>
+
+    <section class="reference-section section" id="reference" data-cannp-view="evidence" hidden>
+      <div class="wrap reference-grid">
+        <section><p class="eyebrow">Glossary</p><h2>Research and practice language.</h2><div class="glossary" id="glossary"></div></section>
+        <section><p class="eyebrow">Source coverage</p><h2>Where every page landed.</h2><p class="coverage-note">Issue 16-3 has a stale cover contents list; the table below maps its actual pages.</p><div class="table-wrap"><table><thead><tr><th>Source</th><th>What it contains</th><th>Library location</th></tr></thead><tbody id="coverage-body"></tbody></table></div></section>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap foot"><div class="brand"><span class="wordmark">hōlus.</span><span class="descriptor">study collection</span></div><p>Learning reference—not medical advice.<br>Newsletter summaries are paraphrased for private study.</p><a href="index.html">Return to the four-course collection ↑</a></div></footer>
+  <script src="cannp-library.js?v=2"></script>
+  <script src="cannp-study.js?v=1"></script>
+</body>
+</html>

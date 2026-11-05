@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Staying Healthy with Nutrition · hōlus.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#101b14; --bg-2:#182a1e; --panel:#f7f2e4; --panel-edge:#e2d5ac;
+  --ink:#241f16; --ink-soft:#5a5340; --gold:#b8862f; --gold-deep:#8f6a24;
+  --sage:#3f6b4a; --sage-deep:#2b4a34; --rust:#9c4530; --teal:#2f6f66; --cream-2:#efe6cc;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  background-image:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(184,134,47,0.10), transparent 60%),
+    radial-gradient(ellipse 700px 600px at 100% 20%, rgba(63,107,74,0.18), transparent 60%);
+  color:var(--ink); font-family:'Source Sans 3', sans-serif; min-height:100vh;
+}
+.app{ display:grid; grid-template-columns:270px 1fr; min-height:100vh; }
+@media (max-width: 860px){ .app{grid-template-columns:1fr;} .sidebar{position:static; height:auto;} }
+
+.sidebar{
+  background:linear-gradient(180deg, var(--bg-2), var(--bg));
+  border-right:1px solid rgba(184,134,47,0.25);
+  padding:26px 14px 26px 18px; position:sticky; top:0; height:100vh; overflow-y:auto;
+}
+.brand{ color:var(--cream-2); font-family:'Fraunces', serif; font-size:1.0rem; line-height:1.3; margin-bottom:2px; }
+.brand small{ display:block; color:#8fa38f; font-size:0.68rem; margin-top:5px; letter-spacing:0.04em; }
+.part-label{ margin:20px 0 6px 8px; font-size:0.7rem; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; font-weight:700; }
+.part-label:first-of-type{ margin-top:22px; }
+.nav-item{
+  display:block; width:100%; text-align:left; background:none; border:none;
+  color:#cdd8c9; padding:8px 10px; border-radius:6px; cursor:pointer;
+  font-family:'Source Sans 3', sans-serif; font-size:0.86rem; margin-bottom:2px; transition:background 0.15s, color 0.15s;
+}
+.nav-item:hover{ background:rgba(184,134,47,0.13); color:#fff; }
+.nav-item.active{ background:rgba(184,134,47,0.22); color:#fff; }
+
+main{ padding:40px 46px 100px; max-width:880px; }
+@media (max-width:600px){ main{padding:22px 18px 80px;} }
+
+.section{ display:none; }
+.section.active{ display:block; animation:fadein 0.3s ease; }
+@keyframes fadein{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+.eyebrow{ color:var(--gold); font-family:'Fraunces', serif; font-style:italic; font-size:0.95rem; margin-bottom:6px; }
+h1{ font-family:'Fraunces', serif; font-weight:600; font-size:2.0rem; color:#fff; margin:0 0 8px; line-height:1.15; }
+.sub{ color:#a9c0ad; font-size:1rem; margin:0 0 26px; max-width:64ch; }
+
+.card{ background:var(--panel); border:1px solid var(--panel-edge); border-radius:4px; padding:24px 26px; margin-bottom:22px; box-shadow:0 10px 26px rgba(0,0,0,0.25); }
+.section-label{ font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem; color:var(--sage-deep); margin:0 0 12px; display:flex; align-items:center; gap:10px; }
+.section-label .rule{ flex:1; height:1px; background:var(--panel-edge); }
+.hint{ font-size:0.9rem; color:var(--ink-soft); line-height:1.55; margin:0 0 4px; }
+.hint em{ color:var(--gold-deep); font-style:normal; font-weight:600; }
+
+textarea, input[type=text]{
+  width:100%; border:1px solid var(--panel-edge); border-radius:5px; background:#fffdf7;
+  font-family:'Source Sans 3', sans-serif; font-size:0.92rem; color:var(--ink); padding:10px 12px;
+  resize:vertical;
+}
+textarea{ min-height:90px; line-height:1.5; }
+textarea:focus, input[type=text]:focus{ outline:2px solid var(--gold); outline-offset:1px; }
+label.field-label{ display:block; font-weight:700; font-size:0.85rem; color:var(--sage-deep); margin:14px 0 6px; }
+label.field-label:first-of-type{ margin-top:0; }
+
+.term-row{ display:grid; grid-template-columns:1fr 2fr auto; gap:8px; margin-bottom:8px; align-items:start; }
+.term-row input, .term-row textarea{ min-height:auto; }
+.term-row button{ background:transparent; border:1px solid var(--rust); color:var(--rust); border-radius:5px; padding:6px 10px; cursor:pointer; font-size:0.8rem; }
+.add-term-btn{ background:transparent; border:1px dashed var(--panel-edge); color:var(--ink-soft); border-radius:5px; padding:8px 14px; cursor:pointer; font-size:0.85rem; margin-top:4px; }
+.add-term-btn:hover{ background:#fff6e2; }
+
+.btn{ background:var(--gold); color:#241f16; border:none; padding:11px 22px; border-radius:5px; font-weight:700; font-size:0.9rem; cursor:pointer; font-family:'Source Sans 3', sans-serif; transition:background 0.15s; }
+.btn:hover{ background:var(--gold-deep); color:#fff; }
+.btn.ghost{ background:transparent; border:1px solid var(--panel-edge); color:var(--ink); }
+
+.top-actions{ display:flex; gap:12px; margin-bottom:26px; flex-wrap:wrap; }
+.top-actions .btn, .top-actions .btn.ghost{ padding:10px 18px; font-size:0.85rem; }
+.top-actions .btn.ghost{ border-color:rgba(184,134,47,0.5); color:var(--cream-2); }
+
+.notice{ background:linear-gradient(135deg, #2b4a34, #1e3527); border:1px solid rgba(184,134,47,0.4); border-radius:4px; padding:20px 24px; margin-bottom:24px; color:#eef3ea; font-size:0.92rem; line-height:1.6; }
+.notice strong{ color:var(--gold); }
+
+.chapter-groups{ display:grid; gap:30px; margin-top:8px; }
+.chapter-group{ min-width:0; }
+.chapter-group .section-label{ margin-bottom:14px; }
+.chapter-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.chapter-tile{
+  appearance:none; width:100%; min-height:190px; display:flex; flex-direction:column;
+  align-items:flex-start; text-align:left; gap:9px; padding:22px; cursor:pointer;
+  background:var(--holus-white, var(--panel)); border:1px solid var(--holus-line, var(--panel-edge));
+  border-radius:18px; color:var(--holus-ink, var(--ink));
+  font-family:'Source Sans 3', sans-serif; box-shadow:0 9px 26px rgba(22,58,54,0.06);
+  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.chapter-tile:hover{ transform:translateY(-3px); border-color:var(--holus-sage, var(--sage)); box-shadow:0 16px 34px rgba(22,58,54,0.11); }
+.chapter-tile:focus-visible{ outline:3px solid var(--holus-sage-light, var(--gold)); outline-offset:3px; }
+.chapter-tile-top{ width:100%; display:flex; justify-content:space-between; align-items:center; }
+.chapter-number{ color:var(--holus-sage, var(--sage)); font-size:.72rem; font-weight:700; letter-spacing:.14em; }
+.chapter-arrow{ color:var(--holus-sage, var(--sage)); font-size:1.15rem; transition:transform .2s ease; }
+.chapter-tile:hover .chapter-arrow{ transform:translateX(4px); }
+.chapter-tile strong{ font-family:Manrope,'Source Sans 3',sans-serif; font-size:1.04rem; line-height:1.25; }
+.chapter-tile small{ color:var(--holus-muted, var(--ink-soft)); font-size:.86rem; line-height:1.5; }
+@media (max-width:680px){ .chapter-grid{ grid-template-columns:1fr; } .chapter-tile{ min-height:0; } }
+
+footer.note{ color:#83937f; font-size:0.78rem; margin-top:20px; text-align:center; }
+</style>
+<link rel="stylesheet" href="holus-studio-theme.css?v=4">
+</head>
+<body class="holus-studio course-staying">
+<div class="app">
+  <nav class="sidebar">
+    <div class="brand">Staying Healthy<br>with Nutrition
+      <small>READING COMPANION</small>
+    </div>
+    <div id="navList"></div>
+  </nav>
+  <main id="mainArea"></main>
+</div>
+
+<script>
+/* ================= DATA ================= */
+/* This structure reflects the book's publicly known 4-part organization
+   (from publisher/author descriptions), not the verbatim table of contents —
+   confirm exact chapter order/numbering against your own copy. */
+const TOPICS = [
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"water", title:"Water", hint:"Fluid balance, hydration needs, water quality/filtration \u2014 usually the opening building-block chapter." },
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"carbs", title:"Carbohydrates", hint:"Simple vs. complex carbs, fibre, sugar metabolism, glycemic concepts." },
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"protein", title:"Proteins", hint:"Amino acids, complete/incomplete protein, protein needs across the lifespan." },
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"fats", title:"Fats & Oils", hint:"Saturated/unsaturated fats, essential fatty acids, cholesterol, trans fats." },
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"vitamins", title:"Vitamins", hint:"Fat- vs. water-soluble vitamins, functions, deficiency/excess \u2014 often the largest chapter in the book." },
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"minerals", title:"Minerals", hint:"Macrominerals and trace minerals, electrolyte balance, mineral-vitamin interactions." },
+  { part:1, partLabel:"Part I \u2014 Nutrition Basics: The Building Blocks", id:"othernutrients", title:"Other Nutrients & Food Factors", hint:"Phytochemicals, antioxidants, enzymes, fibre, and other non-classical nutrients." },
+
+  { part:2, partLabel:"Part II \u2014 Foods and Diets", id:"foodgroups", title:"Food Groups", hint:"Grains, legumes, vegetables, fruits, nuts & seeds, dairy, meat/poultry/eggs, fish & seafood, sweeteners, spices, beverages \u2014 covered group by group." },
+  { part:2, partLabel:"Part II \u2014 Foods and Diets", id:"worlddiets", title:"Diets Around the World", hint:"Comparative look at vegetarian/vegan and other global dietary patterns, their strengths and gaps." },
+  { part:2, partLabel:"Part II \u2014 Foods and Diets", id:"environment", title:"Environment & Nutrition", hint:"Food additives, industrial chemicals, food irradiation, electro-pollution, and other ecological/health issues affecting food quality." },
+
+  { part:3, partLabel:"Part III \u2014 The Ideal Diet", id:"assessment", title:"Building a Healthy Diet", hint:"Bringing Parts I & II together \u2014 practical, common-sense guidance for constructing a personal diet." },
+  { part:3, partLabel:"Part III \u2014 The Ideal Diet", id:"idealdiet", title:"The Ideal Diet (Seasonal Plan)", hint:"A seasonally based, naturally structured, lifelong eating plan \u2014 the book's central practical framework." },
+
+  { part:4, partLabel:"Part IV \u2014 Life-Stage & Condition-Specific Programs", id:"lifestages", title:"Nutrition Through Life Stages", hint:"Infancy through aging \u2014 nutrient needs and programs tailored to each stage of life." },
+  { part:4, partLabel:"Part IV \u2014 Life-Stage & Condition-Specific Programs", id:"specialprograms", title:"Special Diet & Supplement Programs", hint:"~32 targeted protocols \u2014 fatigue, weight management, mood disorders (anxiety, ADHD, depression), viral illness, menopause, bone loss, cancer support, detox, and more." }
+];
+
+const PARTS = [...new Set(TOPICS.map(t=>t.part))].map(p => ({
+  part:p, label: TOPICS.find(t=>t.part===p).partLabel
+}));
+
+/* ================= RENDER ================= */
+const navList = document.getElementById('navList');
+const mainArea = document.getElementById('mainArea');
+
+function buildNav(){
+  navList.innerHTML = '';
+  const overviewBtn = document.createElement('button');
+  overviewBtn.className = 'nav-item';
+  overviewBtn.dataset.id = 'overview';
+  overviewBtn.textContent = 'Overview';
+  overviewBtn.onclick = () => showSection('overview');
+  navList.appendChild(overviewBtn);
+
+  PARTS.forEach(p => {
+    const label = document.createElement('div');
+    label.className = 'part-label';
+    label.textContent = p.label.split('\u2014')[0].trim();
+    navList.appendChild(label);
+    TOPICS.filter(t => t.part === p.part).forEach(t => {
+      const btn = document.createElement('button');
+      btn.className = 'nav-item';
+      btn.dataset.id = t.id;
+      btn.textContent = t.title;
+      btn.onclick = () => showSection(t.id);
+      navList.appendChild(btn);
+    });
+  });
+}
+
+function renderOverview(){
+  const groups = PARTS.map(part => {
+    const tiles = TOPICS.filter(t => t.part === part.part).map(t => {
+      const chapterNumber = TOPICS.indexOf(t) + 1;
+      return `
+        <button type="button" class="chapter-tile" onclick="showSection('${t.id}')">
+          <span class="chapter-tile-top">
+            <span class="chapter-number">CHAPTER ${String(chapterNumber).padStart(2, '0')}</span>
+            <span class="chapter-arrow" aria-hidden="true">&rarr;</span>
+          </span>
+          <strong>${t.title}</strong>
+          <small>${t.hint}</small>
+        </button>
+      `;
+    }).join('');
+    return `
+      <section class="chapter-group" aria-labelledby="part-${part.part}">
+        <div class="section-label" id="part-${part.part}">${part.label}<div class="rule"></div></div>
+        <div class="chapter-grid">${tiles}</div>
+      </section>
+    `;
+  }).join('');
+  return `
+    <div class="eyebrow">Reading Companion</div>
+    <h1>Staying Healthy with Nutrition</h1>
+    <p class="sub">Elson M. Haas, MD &amp; Buck Levin, PhD, RD \u2014 a fill-in-as-you-read companion built around the book's known structure.</p>
+
+    <div class="notice">
+      <strong>Source note:</strong> A reading-and-notes companion, not a textbook summary. Topic headings follow the book's publicly described structure; exact chapter content has not been supplied. Confirm chapter order against your edition.
+    </div>
+
+    <div class="top-actions">
+      <button class="btn" onclick="exportNotes()">Export All My Notes</button>
+      <button class="btn ghost" onclick="clearAllNotes()">Clear All Fields</button>
+    </div>
+
+    <div class="chapter-groups" aria-label="Course chapters">
+      ${groups}
+    </div>
+    <footer class="note">Structure based on publicly available descriptions of "Staying Healthy with Nutrition, rev" (Haas &amp; Levin). Confirm exact chapter order against your own copy \u2014 editions can vary slightly.</footer>
+  `;
+}
+
+function renderTopic(t){
+  return `
+    <div class="eyebrow">${t.partLabel}</div>
+    <h1>${t.title}</h1>
+    <p class="sub hint">${t.hint}</p>
+
+    <div class="top-actions">
+      <button class="btn ghost" onclick="showSection('overview')">\u2190 Back to Overview</button>
+      <button class="btn" onclick="exportNotes()">Export All My Notes</button>
+    </div>
+
+    <div class="card">
+      <div class="section-label">My Key Takeaways<div class="rule"></div></div>
+
+      <textarea data-topic="${t.id}" data-field="takeaways" placeholder="e.g. Water makes up ~X% of the body; dehydration signs to watch for; how much is 'enough'..." style="min-height:140px;"></textarea>
+    </div>
+
+    <div class="card">
+      <div class="section-label">New Terms &amp; Definitions<div class="rule"></div></div>
+      <p class="hint">Build your own glossary as unfamiliar terms come up.</p>
+      <div id="terms-${t.id}"></div>
+      <button class="add-term-btn" onclick="addTermRow('${t.id}')">+ Add a term</button>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Questions to Revisit<div class="rule"></div></div>
+      <p class="hint">Anything confusing, contradictory, or worth asking your instructor \u2014 park it here.</p>
+      <textarea data-topic="${t.id}" data-field="questions" placeholder="e.g. How does this reconcile with what Lesson 3 of NHF said about..."></textarea>
+    </div>
+
+    <div class="card">
+      <div class="section-label">In Practice<div class="rule"></div></div>
+      <p class="hint">Once you've read the chapter, note one way this could show up with a real client \u2014 keeps the reading connected to your future practice.</p>
+      <textarea data-topic="${t.id}" data-field="practice" placeholder="e.g. A client with X symptom \u2014 what would I look at first from this chapter?"></textarea>
+    </div>
+  `;
+}
+
+function showSection(id){
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.toggle('active', b.dataset.id === id));
+  let html;
+  if(id === 'overview'){
+    html = renderOverview();
+  } else {
+    const t = TOPICS.find(x => x.id === id);
+    html = renderTopic(t);
+  }
+  const viewClass = id === 'overview' ? 'overview-view' : 'chapter-view';
+  mainArea.innerHTML = `<div class="section active ${viewClass}">${html}</div>`;
+  if(id !== 'overview'){
+    restoreTopicFields(id);
+  }
+  window.scrollTo({top:0, behavior:'instant'});
+}
+
+/* ================= TERM ROWS ================= */
+function addTermRow(topicId, termVal, defVal){
+  const container = document.getElementById(`terms-${topicId}`);
+  const row = document.createElement('div');
+  row.className = 'term-row';
+  row.innerHTML = `
+    <input type="text" placeholder="Term" class="term-input" value="${termVal ? termVal.replace(/"/g,'&quot;') : ''}">
+    <textarea placeholder="Definition / note" style="min-height:38px;" class="def-input">${defVal || ''}</textarea>
+    <button type="button" onclick="this.parentElement.remove()">Remove</button>
+  `;
+  container.appendChild(row);
+}
+
+/* ================= STATE (in-memory only, per session) ================= */
+const NOTES_STATE = {}; // topicId -> {takeaways, questions, practice, terms:[{term,def}]}
+
+function saveCurrentTopicFields(topicId){
+  const takeaways = document.querySelector(`textarea[data-topic="${topicId}"][data-field="takeaways"]`);
+  const questions = document.querySelector(`textarea[data-topic="${topicId}"][data-field="questions"]`);
+  const practice = document.querySelector(`textarea[data-topic="${topicId}"][data-field="practice"]`);
+  const terms = [];
+  document.querySelectorAll(`#terms-${topicId} .term-row`).forEach(row => {
+    const term = row.querySelector('.term-input').value;
+    const def = row.querySelector('.def-input').value;
+    if(term || def) terms.push({term, def});
+  });
+  NOTES_STATE[topicId] = {
+    takeaways: takeaways ? takeaways.value : '',
+    questions: questions ? questions.value : '',
+    practice: practice ? practice.value : '',
+    terms
+  };
+}
+
+function restoreTopicFields(topicId){
+  const state = NOTES_STATE[topicId];
+  if(!state) return;
+  const takeaways = document.querySelector(`textarea[data-topic="${topicId}"][data-field="takeaways"]`);
+  const questions = document.querySelector(`textarea[data-topic="${topicId}"][data-field="questions"]`);
+  const practice = document.querySelector(`textarea[data-topic="${topicId}"][data-field="practice"]`);
+  if(takeaways) takeaways.value = state.takeaways || '';
+  if(questions) questions.value = state.questions || '';
+  if(practice) practice.value = state.practice || '';
+  (state.terms || []).forEach(t => addTermRow(topicId, t.term, t.def));
+}
+
+// wrap showSection to save previous topic before navigating away
+const _origShowSection = showSection;
+let CURRENT_TOPIC = null;
+showSection = function(id){
+  if(CURRENT_TOPIC && CURRENT_TOPIC !== 'overview'){
+    saveCurrentTopicFields(CURRENT_TOPIC);
+  }
+  CURRENT_TOPIC = id;
+  _origShowSection(id);
+};
+
+/* ================= EXPORT / CLEAR ================= */
+function exportNotes(){
+  if(CURRENT_TOPIC && CURRENT_TOPIC !== 'overview'){
+    saveCurrentTopicFields(CURRENT_TOPIC);
+  }
+  let out = `STAYING HEALTHY WITH NUTRITION — MY READING NOTES\n`;
+  out += `Elson Haas & Buck Levin — exported ${new Date().toLocaleDateString()}\n`;
+  out += `${'='.repeat(60)}\n\n`;
+  TOPICS.forEach(t => {
+    const s = NOTES_STATE[t.id];
+    const hasContent = s && (s.takeaways || s.questions || s.practice || (s.terms && s.terms.length));
+    if(!hasContent) return;
+    out += `${t.partLabel}\n${t.title}\n${'-'.repeat(t.title.length)}\n\n`;
+    if(s.takeaways) out += `KEY TAKEAWAYS:\n${s.takeaways}\n\n`;
+    if(s.terms && s.terms.length){
+      out += `NEW TERMS:\n`;
+      s.terms.forEach(term => { if(term.term || term.def) out += `- ${term.term}: ${term.def}\n`; });
+      out += `\n`;
+    }
+    if(s.questions) out += `QUESTIONS TO REVISIT:\n${s.questions}\n\n`;
+    if(s.practice) out += `IN PRACTICE:\n${s.practice}\n\n`;
+    out += `\n`;
+  });
+  if(out.split('\n').length < 6){
+    out += `(No notes added yet — start filling in a chapter page, then export again.)\n`;
+  }
+  const blob = new Blob([out], {type:'text/plain'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'staying-healthy-with-nutrition-notes.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function clearAllNotes(){
+  if(!confirm('Clear all notes on all chapter pages? This cannot be undone (export first if you want to keep them).')) return;
+  Object.keys(NOTES_STATE).forEach(k => delete NOTES_STATE[k]);
+  if(CURRENT_TOPIC && CURRENT_TOPIC !== 'overview'){
+    showSection(CURRENT_TOPIC);
+  }
+}
+
+buildNav();
+showSection('overview');
+</script>
+<script src="course-studio-shell.js"></script>
+</body>
+</html>

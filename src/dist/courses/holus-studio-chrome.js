@@ -1,0 +1,1 @@
+(()=>{if(document.querySelector('.holus-home-link'))return;const a=document.createElement('a');a.className='holus-home-link';a.href=location.pathname.includes('/nutrition-studies/')?'../../index.html':'../index.html';a.setAttribute('aria-label','Return to all Hōlus study courses');a.innerHTML='<b>hōlus.</b><span>all courses</span>';document.body.appendChild(a)})();
