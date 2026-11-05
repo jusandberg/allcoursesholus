@@ -1,5 +1,5 @@
 const {chromium}=require('playwright');const fs=require('fs');const path=require('path');
-const D='/tmp/claude-0/hub/dist/courses/';const OUT='/tmp/claude-0/hub/dist/courses/player/data/';fs.mkdirSync(OUT,{recursive:true});
+const D=path.join(__dirname,'..','dist','courses')+'/';const OUT=path.join(D,'player','data')+'/';fs.mkdirSync(OUT,{recursive:true});
 const pad=n=>String(n).padStart(2,'0');
 const opts=o=>(o||[]).map(x=>typeof x==='string'?{label:x}:{label:x.label||x.text||'',correct:!!x.correct,feedback:x.feedback||''});
 function fromModules(L){const steps=[];

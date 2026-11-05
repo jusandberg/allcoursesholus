@@ -1,5 +1,7 @@
 import re,os
-P='/tmp/claude-0/hub/dist/courses/player/'
+SRC=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT=os.path.dirname(SRC)
+P=os.path.join(SRC,'dist','courses','player')+'/'
 css=open(P+'player.css').read();js=open(P+'player.js').read();ad=open(P+'adapters.js').read()
 data=''.join('<script>'+open(P+'data/'+i+'.js').read()+'</script>\n' for i in ['nh','ns','sf','sh','nc','ap','vn'])
 
@@ -95,8 +97,6 @@ html,body{{background:#16212b}}
 <script>window.HOLUS_ROUTED=true;</script>
 <script>{js}</script>
 '''
-open('/tmp/claude-0/hub/holus-lesson-player.html','w').write(html)
 full='<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'+html.replace('</style>','</style>\n</head>\n<body>',1)+'\n</body>\n</html>\n'
-os.makedirs('/mnt/user-data/outputs',exist_ok=True)
-open('/mnt/user-data/outputs/holus-study.html','w').write(full)
+open(os.path.join(ROOT,'index.html'),'w').write(full)
 print(len(html))

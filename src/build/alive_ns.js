@@ -1,10 +1,10 @@
 // Rebuilds the Nutrition: Studies and Applications course (data/ns.js) from Juliana's real course page (alive-academy.html)
 // and her official lesson tests (officialQuizNPool). Lesson 10 comes from build/ns10.json (checked answers, not an official key).
-const {chromium}=require('playwright');const fs=require('fs');
-const OUT='/tmp/claude-0/hub/dist/courses/player/data/ns.js';
+const {chromium}=require('playwright');const fs=require('fs');const path=require('path');const SRC=path.join(__dirname,'..');
+const OUT=path.join(SRC,'dist','courses','player','data','ns.js');
 (async()=>{
 const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage();
-await p.goto('file:///tmp/claude-0/hub/dist/courses/alive-academy.html');await p.waitForTimeout(1500);
+await p.goto('file://'+path.join(SRC,'dist','courses','alive-academy.html'));await p.waitForTimeout(1500);
 const data=await p.evaluate(()=>{
   const T=e=>(e?e.textContent:'').replace(/\s+/g,' ').trim();
   const out={};
@@ -55,7 +55,7 @@ const nice=t=>t.replace(/^Unit \d+ · /,'').replace(/ [+&] /g,' and ').replace('
 const lessons=[];
 for(let n=1;n<=13;n++){
   if(data[n]){const U=data[n];lessons.push({n,title:nice(U.title),kicker:'Lesson '+n+' of your course, with your official Lesson '+n+' Test.',steps:U.steps,flashcards:U.flashcards,quiz:U.quiz,perStepChapter:false});}
-  else if(n===10){const L10=JSON.parse(fs.readFileSync('/tmp/claude-0/hub/build/ns10.json','utf8'));lessons.push({n,title:L10.title,kicker:L10.kicker,steps:[{id:'ns10-0',chapter:'Lesson 10',title:L10.title,html:L10.html}],flashcards:[],quiz:L10.quiz});}
+  else if(n===10){const L10=JSON.parse(fs.readFileSync(path.join(SRC,'build','ns10.json'),'utf8'));lessons.push({n,title:L10.title,kicker:L10.kicker,steps:[{id:'ns10-0',chapter:'Lesson 10',title:L10.title,html:L10.html}],flashcards:[],quiz:L10.quiz});}
 }
 const course={id:'ns',num:2,name:'Nutrition: Studies and Applications',area:'Nutrition science',lessons};
 fs.writeFileSync(OUT,'window.HOLUS_DATA=window.HOLUS_DATA||{};window.HOLUS_DATA["ns"]='+JSON.stringify(course).replace(/<\/script/gi,'<\\/script')+';\n');
