@@ -1,0 +1,175 @@
+{
+  "lesson": 11,
+  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 1: Preparing to Meet Your Clients",
+  "kicker": "Lesson 11 of your course, built from Chapter 1 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l11-b1",
+      "title": "Counselling and education",
+      "teach": [
+        "Nutrition education and nutrition counselling share the same aim: helping people choose foods that support their health. The difference is who the work is shaped around. Nutrition education is designed around the needs of a group or community. Nutrition counselling is shaped around one client and is built on a working partnership between the counsellor and that client.",
+        "In counselling, you pay attention to the client's experience, feelings, thoughts and behaviour, and you respond on purpose: to acknowledge, to explore or to gently challenge. Your job is to increase knowledge, influence motivation and help the client build the skills they need to change how they eat."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A Nutritionist runs a six-week cooking class for a community centre. Which kind of work is this mainly?",
+        "options": [
+          {"label": "Nutrition education", "correct": true, "feedback": "Yes. The class is planned around the needs of a group, which is what makes it education."},
+          {"label": "Nutrition counselling", "correct": false, "feedback": "Counselling is shaped around one client and their own goals. A class for a community is education."},
+          {"label": "Neither", "correct": false, "feedback": "It is nutrition education: learning experiences planned for a group."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b2",
+      "title": "What shapes food choices",
+      "teach": [
+        "Before you can help someone change, you need to understand why they eat the way they do. Many forces pull on food choices at once, and they often compete. Taste is generally seen as the strongest one. Taste preferences can change with age, a move or illness, which is good news for anyone trying to change their diet.",
+        "Other influences include habit, health concerns, nutrition knowledge, convenience and time, culture and religion, the people we eat with, advertising and what is around us, money and access, how much variety is on offer, and stress or mood. People with more nutrition knowledge tend to eat better and lose more weight in weight-loss programs, so teaching still matters. Advice also lands better when it stresses that healthy food tastes good and is easy to fit in."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each situation with the main influence on the food choice.",
+        "categories": ["Social influences", "Economics", "Culture and religion", "Convenience and time"],
+        "items": [
+          {"label": "He orders wings because his friends always do after the game.", "category": 0, "feedback": "Eating with friends shapes what and how much we eat."},
+          {"label": "She buys most of her groceries at the dollar store near the bus stop.", "category": 1, "feedback": "Income and transportation affect which stores and foods are within reach."},
+          {"label": "Her family never eats pork.", "category": 2, "feedback": "Religion and culture define which foods are acceptable."},
+          {"label": "He picks up takeout most nights because he has twenty minutes to make dinner.", "category": 3, "feedback": "Little time pushes people toward quick, ready-made food."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b3",
+      "title": "What makes an effective counsellor",
+      "teach": [
+        "The relationship between counsellor and client is the main driver of change. Clients who succeed often say the relationship was the most important part of their care.",
+        "From a review of the counselling research, Okun named seven qualities that matter most: knowledge, self-awareness, ethical integrity, congruence, honesty, the ability to communicate, and awareness of gender and culture. Nutrition counselling writers add a sense of humour, flexibility, optimism, respect for others and empathy. Congruence means what you say matches who you are and how you act, including your body language. No one has all of these perfectly. They are qualities to keep working on."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A client describes an unusual eating habit. The counsellor says “I see” calmly, but her face shows shock. Which quality is missing?",
+        "options": [
+          {"label": "Congruence", "correct": true, "feedback": "Right. Her words and her body language don't match, so she isn't congruent."},
+          {"label": "Knowledge", "correct": false, "feedback": "Knowledge is about what she knows. The problem here is the mismatch between her words and her face."},
+          {"label": "Flexibility", "correct": false, "feedback": "Flexibility is about pace and expectations. The problem is that her words and her face don't match."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b4",
+      "title": "Know yourself first",
+      "teach": [
+        "Your personality is one of the main tools you bring to counselling, so it helps to know it well. Ask yourself honestly why you want to help. Counsellors who need to feel in control tend to lecture and stop listening. Counsellors who need to be liked may avoid hard topics and do too much for the client, so the client never learns new skills.",
+        "Your worldview, the outlook you get from your culture and life, shapes how you see health, illness and food. Culture is the shared history of racial, ethnic, religious or other social groups, such as gender, age, occupation or income level. Everyone belongs to several groups, so no two people share exactly the same culture. Knowing your own values and biases helps keep them from leaking into your sessions."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which counsellor message is most likely to help the client?",
+        "options": [
+          {"label": "“I want you to like me.”", "correct": false, "feedback": "A counsellor who needs approval tends to avoid difficult issues, so real change doesn't happen."},
+          {"label": "“I am here to help you.”", "correct": true, "feedback": "Yes. The focus stays on the client, not on the counsellor's own needs."},
+          {"label": "“Just do what I tell you.”", "correct": false, "feedback": "A counsellor who needs control tends to dictate and stops listening."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b5",
+      "title": "Understanding your client",
+      "teach": [
+        "Clients come with their own personality, culture, health problems, worries and expectations. Learn about the cultures your clients come from, but remember that what is true of a group is only a generality. It may or may not fit the person in front of you. Avoid stereotyping.",
+        "Timing matters too. Someone who has just been given a serious diagnosis may be in shock, angry or in denial, and not ready for detailed diet advice. Self-sufficiency is often a goal, but not always: some clients prefer a more guided role, and some need ongoing support. Asking for help can also make people feel vulnerable or less capable, so explain clearly why you are there and what the work involves."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "You read that people from a certain culture prefer formal greetings. What should you do with that information?",
+        "options": [
+          {"label": "Use it as background, and watch how this client actually prefers to be treated.", "correct": true, "feedback": "Yes. Group traits are generalities that may or may not fit the individual."},
+          {"label": "Treat every client from that culture formally, no matter what.", "correct": false, "feedback": "That is stereotyping. People take on all, some or none of the habits of a culture they seem to belong to."},
+          {"label": "Ignore it, since culture doesn't affect counselling.", "correct": false, "feedback": "Culture shapes how clients see health, food and professionals, so it is worth learning about."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b6",
+      "title": "Two phases of the helping relationship",
+      "teach": [
+        "The helping relationship has two phases. In the first, you build the relationship: rapport, empathy and trust. The goals are to learn about the problem from the client's point of view, find their strengths and help them explore.",
+        "In the second phase, you help the client pick specific behaviours to change and plan realistic ways to change them. Skipping the first phase is a common mistake. Without it, you may end up solving the wrong problem, and the plan is unlikely to work."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Sort each task into the phase it belongs to.",
+        "categories": ["Phase 1: building the relationship", "Phase 2: facilitating positive action"],
+        "items": [
+          {"label": "Learning about the problem from the client's point of view", "category": 0, "feedback": "This is the focus of the first phase."},
+          {"label": "Exploring the client's strengths", "category": 0, "feedback": "Finding strengths is part of building the relationship."},
+          {"label": "Choosing specific behaviours to change", "category": 1, "feedback": "This comes once the relationship and the problem are clear."},
+          {"label": "Designing realistic behaviour change strategies", "category": 1, "feedback": "Planning the change belongs to the second phase."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b7",
+      "title": "Why “everything will be fine” falls flat",
+      "teach": [
+        "Telling a client that everything will be fine sounds kind, but it has no basis yet. It brushes aside how they feel, and any comfort it gives fades because nothing has been solved. It can also sound patronizing, as if you are above them.",
+        "In the textbook's example, a fitness counsellor named Joe weighs his new client Lilly, decides she needs to lose 20 pounds, and signs her up for classes before she can finish a sentence. She came for more energy and stamina. Real reassurance comes from explaining your role, looking for possible solutions together and explaining how the program works."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Lilly says she gets tired quickly and wants more stamina. What would be a better first response from Joe?",
+        "options": [
+          {"label": "“Tell me more about when you feel tired and what you'd like to be able to do.”", "correct": true, "feedback": "Yes. This learns about the problem from her point of view before planning anything."},
+          {"label": "“Don't worry, everything will be fine. Let's get you on the scale.”", "correct": false, "feedback": "Empty reassurance brushes past her concern, and the scale wasn't what she came for."},
+          {"label": "“Take some power bars home. They're great for beginners.”", "correct": false, "feedback": "This jumps to a solution before understanding her goals."}
+        ]
+      }
+    },
+    {
+      "id": "l11-b8",
+      "title": "Issues for new counsellors",
+      "teach": [
+        "New counsellors often worry about whether they know enough. That worry can lead to vague answers on controversial topics, like a politician who won't take a stand. If you don't know, say you will look into it. If the evidence is still mixed, share the pros and cons fairly.",
+        "Another trap is picking only one role. The expert gives answers that clients follow for a while without working out how to make change fit their life. The empathizer listens so much that the client gets little direction. Effective counsellors learn to combine the two. Confidence grows with experience."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A client asks whether high-protein diets are a good way to lose weight, and you haven't looked into it. What should you say?",
+        "options": [
+          {"label": "“Some people say they lose weight on them.”", "correct": false, "feedback": "This dodges the question without taking a stand or giving useful information."},
+          {"label": "“I haven't looked into that closely. I'll review it and tell you what I find, including the pros and cons.”", "correct": true, "feedback": "Yes. You are honest about what you know and commit to giving balanced information."},
+          {"label": "“They don't work. Next question.”", "correct": false, "feedback": "Giving a firm answer you haven't checked isn't honest or balanced."}
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {"front": "Nutrition education", "back": "Learning experiences planned for a group or community to help people choose foods and habits that support health."},
+    {"front": "Nutrition counselling", "back": "A supportive, collaborative process with one client to set food, nutrition and activity priorities, goals and a personal action plan."},
+    {"front": "Most important influence on food choices", "back": "Taste (sensory appeal)."},
+    {"front": "Advice is more likely to work when it stresses…", "back": "The good taste of wholesome foods and convenient ways to include them in the diet."},
+    {"front": "Okun's seven counsellor qualities", "back": "Knowledge, self-awareness, ethical integrity, congruence, honesty, ability to communicate, and gender and culture awareness."},
+    {"front": "Congruence", "back": "No contradiction between who the counsellor is, what they say and how they act, including body language."},
+    {"front": "Two counsellor needs that can harm counselling", "back": "A need for power or control (leads to dictating) and a need for approval (leads to avoiding hard issues and doing too much for the client)."},
+    {"front": "Worldview", "back": "A cultural outlook: the basic beliefs a group holds about reality, which shape views on health, illness and food."},
+    {"front": "Culture", "back": "The shared history of racial, ethnic, religious or other social groups, including their thoughts, customs, beliefs, values and institutions."},
+    {"front": "Cultural values", "back": "The principles or standards that members of a cultural group share."},
+    {"front": "Phase 1 of the helping relationship", "back": "Building the relationship: rapport, empathy and trust. Learn about the problem from the client's point of view and explore strengths."},
+    {"front": "Phase 2 of the helping relationship", "back": "Facilitating positive action: choose specific behaviours to change and plan realistic strategies."},
+    {"front": "Why not say “everything will be fine”?", "back": "It has no basis, brushes aside the client's feelings and can sound patronizing. Reassure by explaining your role, finding solutions and explaining the program."},
+    {"front": "Three issues for new counsellors", "back": "Worrying about competence, giving vague answers on controversial topics, and relying on only the expert role or only the empathizer role."}
+  ],
+  "quiz": [
+    {"q": "_______________ has been defined as “any set of learning experiences designed to facilitate the voluntary adoption of eating and other nutrition-related behaviours conducive to health and well-being.”", "o": ["Nutrition education", "Nutrition counselling", "Nutrition culture", "Nutrition behaviour"], "a": 0, "e": "Checked answer, not from an official key. This describes nutrition education, which is planned around the needs of a group."},
+    {"q": "Nutrition professionals work to", "o": ["increase knowledge.", "influence motivations.", "guide development of skills required for dietary behaviour change.", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. Chapter 1 lists all three as part of the job."},
+    {"q": "Those with ______________ are more likely to have better quality diets and lose more weight in weight loss programs.", "o": ["more money", "higher levels of knowledge", "strong willpower", "All of the above"], "a": 1, "e": "Checked answer, not from an official key. The textbook says people with more nutrition knowledge tend to have better diets and lose more weight."},
+    {"q": "Consumers are more likely to respond to healthful food messages if the advice stresses", "o": ["the good taste of wholesome foods.", "convenient ways to include wholesome foods in the diet.", "the low cost of wholesome foods.", "All of the above", "A and B"], "a": 4, "e": "Checked answer, not from an official key. The textbook names good taste and convenient ways to include wholesome foods. It doesn't mention cost."},
+    {"q": "A counsellor’s personality", "o": ["is one of the principle tools of the helping process.", "plays a minor role in the helping process.", "is not relevant to the helping process."], "a": 0, "e": "Checked answer, not from an official key. The textbook calls personality one of the main tools of the helping process."},
+    {"q": "People from all cultures appreciate a friendly, open health care professional.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. Many North Americans do, but people from some cultures find it uncomfortable and may even see it as a sign of incompetence."},
+    {"q": "“Culture” is the shared history of _____________ groups.", "o": ["racial", "gender", "religious", "occupational", "Any of the above"], "a": 4, "e": "Checked answer, not from an official key. Culture comes from racial, ethnic, religious or other social groups, and social groups include gender and occupation."},
+    {"q": "The characteristics of a cultural group", "o": ["apply to all people within that group.", "are generalities that may or may not apply to individuals within that group."], "a": 1, "e": "Checked answer, not from an official key. Group traits are generalities. Assuming they fit everyone is stereotyping."},
+    {"q": "Promoting self-sufficiency is always a main goal of nutrition counselling.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. It is often a goal, but for some clients it needs to change. Some prefer a guided role or need ongoing support."},
+    {"q": "What is the focus of the first phase of the counselling process?", "o": ["Helping clients identify specific behaviours to alter", "Designing realistic behavior change strategies", "Learning about the nature of the problem from the client’s viewpoint", "All of the above"], "a": 2, "e": "Checked answer, not from an official key. The first phase builds the relationship and learns about the problem from the client's view. Choosing behaviours and planning strategies come in the second phase."}
+  ]
+}

@@ -15,12 +15,15 @@ function fromModules(L){const steps=[];
       steps.push({id:mod.id+'-match',title:'Match it: '+(v.title||mod.title),teach:[],act:{type:'sort',variant:'match',prompt:'Drag each term onto what it describes.',categories:v.items.map(it=>it.detail||it.text),items:ord.map(i=>its[i])}});}
   });return steps;}
 function write(id,course){fs.writeFileSync(OUT+id+'.js','window.HOLUS_DATA=window.HOLUS_DATA||{};window.HOLUS_DATA['+JSON.stringify(id)+']='+JSON.stringify(course).replace(/<\/script/gi,'<\\/script')+';\n');console.log(id,course.lessons.length,'lessons',(fs.statSync(OUT+id+'.js').size/1024|0)+'KB');}
+// Lessons rebuilt from the Nutrition Counseling textbook live in build/nc-book/lNN.json and replace the older general lessons.
+function ncBook(L){const f=path.join(__dirname,'nc-book','l'+L.n+'.json');if(!fs.existsSync(f))return L;const B=JSON.parse(fs.readFileSync(f,'utf8'));
+ return {...L,kicker:B.kicker||L.kicker,perStepChapter:true,steps:B.steps.map(s=>({id:s.id,chapter:s.title,title:s.title,teach:s.teach,act:s.act.type==='choice'?{...s.act,options:opts(s.act.options)}:s.act})),flashcards:B.flashcards,quiz:B.quiz};}
 (async()=>{
  // NC
  global.window={};eval(fs.readFileSync(D+'nutrition-counseling-education/interactive-content.js','utf8'));
  const J=window.NC_JOURNEYS;
  write('nc',{id:'nc',num:5,name:'Nutritional Counselling',area:'Counselling practice',lessons:Object.keys(J).sort((a,b)=>+a.split('-')[1]-+b.split('-')[1]).map(k=>{const L=J[k];return {n:+k.split('-')[1],title:L.title,kicker:L.kicker,perStepChapter:true,
-   steps:L.steps.map(s=>{const act={type:s.type,prompt:s.prompt};if(s.type==='choice')act.options=opts(s.options);if(s.type==='sort'){act.categories=s.categories;act.items=s.items;}if(s.type==='explore')act.panels=s.panels;if(s.type==='number')Object.assign(act,{answer:s.answer,tolerance:s.tolerance,unit:s.unit,explanation:s.explanation});return {id:s.id,chapter:s.title,title:s.title,teach:s.teach||[],act};}),flashcards:[],quiz:[]};})});
+   steps:L.steps.map(s=>{const act={type:s.type,prompt:s.prompt};if(s.type==='choice')act.options=opts(s.options);if(s.type==='sort'){act.categories=s.categories;act.items=s.items;}if(s.type==='explore')act.panels=s.panels;if(s.type==='number')Object.assign(act,{answer:s.answer,tolerance:s.tolerance,unit:s.unit,explanation:s.explanation});return {id:s.id,chapter:s.title,title:s.title,teach:s.teach||[],act};}),flashcards:[],quiz:[]};}).map(ncBook)});
  for(const [id,dir,G,num,name,area] of [['ap','anatomy-physiology','AP_LEARNING',6,'Anatomy & Physiology','Body systems'],['vn','vegetarian-nutrition','VN_LEARNING',7,'Vegetarian Nutrition','Evidence-informed practice']]){
    global.window={};for(const f of fs.readdirSync(D+dir+'/learning').sort())if(f.startsWith('lesson'))eval(fs.readFileSync(D+dir+'/learning/'+f,'utf8'));
    const g=window[G];
