@@ -352,7 +352,7 @@
       "e": "Checked answer, not from an official key. The textbook advises drinking to thirst rather than a set number of glasses."
     },
     {
-      "q": "Use the following information for questions 8-10:\nA young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat would the best advice be for this woman?",
+      "q": "Use the following information for questions 8-10:\n\nA young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat would the best advice be for this woman?",
       "o": [
         "Allow your baby to nurse on one breast only until it is completely empty.",
         "Allow us to evaluate you while you are nursing your baby and see what you are doing.",
@@ -364,7 +364,7 @@
       "e": "Checked answer, not from an official key. Less certain: emptying one breast gives the baby more hindmilk, and watching a feed checks the latch. Stopping breastfeeding isn't called for. Check this one against your graded result."
     },
     {
-      "q": "\n\nWhat is likely happening to this baby and causing the diarrhea?",
+      "q": "A young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat is likely happening to this baby and causing the diarrhea?",
       "o": [
         "The baby is not latched on properly.",
         "The mother is not producing enough breast milk.",
@@ -376,7 +376,7 @@
       "e": "Checked answer, not from an official key. Switching breasts early gives lots of low-fat foremilk, which can cause gas, colic and loose stools."
     },
     {
-      "q": "\n\nAfter looking at her diet, what changes could you suggest to help with the baby’s colic?",
+      "q": "A young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nAfter looking at her diet, what changes could you suggest to help with the baby’s colic?",
       "o": [
         "Eliminate all fruit except canned fruit",
         "Eliminate nuts",
