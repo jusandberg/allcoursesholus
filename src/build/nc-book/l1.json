@@ -1,195 +1,616 @@
 {
-  "lesson": 1,
-  "book": "Nutrition Through the Life Cycle (Brown), Chapter 1: Nutrition Basics",
-  "kicker": "Lesson 1 of your course, built from Chapter 1 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
-  "steps": [
-    {
-      "id": "l1-b1",
-      "title": "Ten ideas that run through the course",
-      "teach": [
-        "Chapter 1 sets out ten nutrition principles that come up again at every life stage. Food is a basic human need. Food supplies energy, nutrients and other substances we need to grow and stay healthy. Nutrition problems start inside cells. Too little and too much of a nutrient can both cause harm, and the body has ways of coping with ups and downs in intake.",
-        "Malnutrition can come from a poor diet, from disease or genes, or from a mix of these. Some groups are at higher risk than others. Poor nutrition can help set up chronic disease. Healthy eating patterns are built on adequacy, variety and balance. And no single food is simply good or bad: what matters is how it fits into the whole diet."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "A very active teenager who has already eaten well today has ice cream after practice. How does the chapter see this?",
-        "options": [
-          {"label": "Ice cream is a bad food, so it should be avoided.", "correct": false, "feedback": "The chapter's tenth principle is that there are no good or bad foods. It depends on the whole diet."},
-          {"label": "It can fit well, because her nutrient needs are met and she needs the extra energy.", "correct": true, "feedback": "Yes. The same food can fit one person's diet and not another's."},
-          {"label": "Only foods labelled healthy should count toward her diet.", "correct": false, "feedback": "Labels don't decide this. What matters is adequacy, variety and balance across the day."}
-        ]
-      }
-    },
-    {
-      "id": "l1-b2",
-      "title": "Nutrient intake standards",
-      "teach": [
-        "The Dietary Reference Intakes (DRIs) are a set of standards. The Estimated Average Requirement (EAR) is the intake that meets the needs of half the healthy people in a group. It is used to judge whether a group's intake is adequate. The Recommended Dietary Allowance (RDA) is set higher, to cover nearly all healthy people (about 97–98%).",
-        "When there isn't enough evidence to set an RDA, an Adequate Intake (AI) is used. The Tolerable Upper Intake Level (UL) is the highest daily intake unlikely to cause harm. It is a safety limit, not a target. Nutrition labels use a separate set of reference amounts called Daily Values, and the % DV tells you how much of that amount one serving gives."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Match each standard with what it means.",
-        "categories": ["EAR", "RDA", "AI", "UL"],
-        "items": [
-          {"label": "Meets the needs of half the healthy people in a group", "category": 0, "feedback": "That is the Estimated Average Requirement."},
-          {"label": "Covers nearly all healthy people", "category": 1, "feedback": "The RDA is set above the EAR to cover almost everyone."},
-          {"label": "Used when there isn't enough evidence for an RDA", "category": 2, "feedback": "That is the Adequate Intake."},
-          {"label": "Highest intake unlikely to cause harm", "category": 3, "feedback": "The Tolerable Upper Intake Level is a safety limit, not a goal."}
-        ]
-      }
-    },
-    {
-      "id": "l1-b3",
-      "title": "Counting calories from macronutrients",
-      "teach": [
-        "Carbohydrate and protein give 4 Calories per gram, and fat gives 9. (Fibre gives about 2, and alcohol 7.) To find the Calories in a food, multiply the grams of each by its factor and add them up.",
-        "To find the share of Calories from one nutrient, divide its Calories by the total and multiply by 100. For adults, the Acceptable Macronutrient Distribution Ranges are 45–65% of Calories from carbohydrate, 10–35% from protein and 20–35% from fat. Sucrose (table sugar) is made of glucose and fructose."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A snack has 30 g carbohydrate, 10 g protein and 10 g fat. How many Calories does it provide?",
-        "answer": 250,
-        "tolerance": 0,
-        "unit": "Calories",
-        "explanation": "30 × 4 = 120, 10 × 4 = 40 and 10 × 9 = 90. 120 + 40 + 90 = 250 Calories."
-      }
-    },
-    {
-      "id": "l1-b4",
-      "title": "Vitamins",
-      "teach": [
-        "The B-complex vitamins and vitamin C dissolve in water. Vitamins A, D, E and K dissolve in fat (think DEKA). Apart from vitamin B12, the body's stores of water-soluble vitamins are small and run out within weeks to months when intake drops. Fat-soluble vitamins are stored in fat tissue, so a deficiency takes longer to show.",
-        "Vitamins C and E and beta-carotene (which the body turns into vitamin A) act as antioxidants. They help prevent or repair damage to cells from oxidation. Large doses from supplements, especially of vitamins A and D, can be toxic. Overdoses from food alone are very rare."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Sort each vitamin by how it dissolves.",
-        "categories": ["Water-soluble", "Fat-soluble"],
-        "items": [
-          {"label": "Vitamin C", "category": 0, "feedback": "Vitamin C dissolves in water."},
-          {"label": "Thiamin (a B vitamin)", "category": 0, "feedback": "All the B-complex vitamins are water-soluble."},
-          {"label": "Vitamin D", "category": 1, "feedback": "D is one of the fat-soluble vitamins: D, E, K and A."},
-          {"label": "Vitamin K", "category": 1, "feedback": "K is fat-soluble and stored in body fat."}
-        ]
-      }
-    },
-    {
-      "id": "l1-b5",
-      "title": "Minerals, phytochemicals and water",
-      "teach": [
-        "Minerals tend to bind with other substances, such as other minerals in supplements or fibre in food. Bound minerals can't be absorbed, so overall we absorb a smaller share of the minerals we eat than of the vitamins. Phytochemicals are substances in plants that aren't nutrients but may protect body processes and benefit health.",
-        "Adults are about 60–70% water. Water is the medium where most of the body's chemical reactions happen. It also plays a part in energy transformation, getting rid of wastes and controlling body temperature. Pale yellow urine in normal amounts is a sign of enough fluid."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which of these is NOT a role of water described in the chapter?",
-        "options": [
-          {"label": "Temperature regulation", "correct": false, "feedback": "Controlling body temperature is one of water's roles."},
-          {"label": "Excretion of wastes", "correct": false, "feedback": "Water helps the body get rid of wastes."},
-          {"label": "Regulating hunger hormones", "correct": true, "feedback": "Right. The chapter lists reactions, energy transformation, waste removal and temperature control, but not this."}
-        ]
-      }
-    },
-    {
-      "id": "l1-b6",
-      "title": "Nutrient density and malnutrition",
-      "teach": [
-        "Nutrient-dense foods give plenty of nutrients for relatively few Calories. Examples are nonfat milk and yogurt, lean meat, dried beans, vegetables and fruit. Empty-calorie foods, like soft drinks and hard candy, give Calories with few nutrients. A diet made mostly of nutrient-dense foods is more likely to meet nutrient needs without going over energy needs.",
-        "Primary malnutrition comes from the diet itself, for example not having enough money for food. Secondary malnutrition is caused by a disease, surgery or medication that affects how the body uses nutrients."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Is each situation an example of primary or secondary malnutrition?",
-        "categories": ["Primary (diet)", "Secondary (disease, surgery or medication)"],
-        "items": [
-          {"label": "A family can't afford enough food at the end of the month.", "category": 0, "feedback": "The poor nutrition comes from the diet itself."},
-          {"label": "Ongoing diarrhea keeps a person from absorbing nutrients.", "category": 1, "feedback": "A health condition causes the problem, so it is secondary."},
-          {"label": "A student lives mostly on soft drinks and chips.", "category": 0, "feedback": "The cause is what she eats."},
-          {"label": "Bleeding in the digestive tract leads to low iron.", "category": 1, "feedback": "The cause is a condition, not the diet."}
-        ]
-      }
-    },
-    {
-      "id": "l1-b7",
-      "title": "Reading labels and claims",
-      "teach": [
-        "Almost all foods with more than one ingredient must have a Nutrition Facts panel. The panel shows the serving size, nutrients such as fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, fibre, sugars and protein, and a % DV column. Labels also flag common allergens. The textbook uses the older U.S. label, on which vitamins A and C, calcium and iron were mandatory.",
-        "Enriched refined grains such as bread, cornmeal, crackers, flour tortillas and white rice must have thiamin, riboflavin, niacin and iron added back. Supplements have a Supplement Facts panel. They don't have to be proven safe and effective before they are sold, so their labels can't claim to treat, cure or prevent a disease."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which claim would NOT be allowed on a supplement label?",
-        "options": [
-          {"label": "“A good source of fibre”", "correct": false, "feedback": "Standard nutrient content claims like this are allowed."},
-          {"label": "“Cures joint pain”", "correct": true, "feedback": "Right. Supplements can't claim to treat, cure or prevent a disease."},
-          {"label": "“Calcium builds strong bones”", "correct": false, "feedback": "Claims about how a nutrient supports the body are allowed."}
-        ]
-      }
-    },
-    {
-      "id": "l1-b8",
-      "title": "The life course and nutrition assessment",
-      "teach": [
-        "Nutrition at one life stage affects health at the next. Poor nutrition in pregnancy can shape gene function for life, and iron deficiency in young children can affect learning later on. Everyone needs the same nutrients throughout life, but the amounts change with age, growth and development. There is no single best diet for everyone.",
-        "Assessing a person's nutrition has four parts: clinical (physical), dietary, anthropometric (body measurements) and biochemical (lab tests). You need all four. One measure, like normal weight or good iron levels, doesn't prove someone is well nourished."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Match each finding with the part of nutrition assessment it belongs to.",
-        "categories": ["Clinical / physical", "Dietary", "Anthropometric", "Biochemical"],
-        "items": [
-          {"label": "Pale skin and brittle nails noted during an exam", "category": 0, "feedback": "Physical signs are part of the clinical assessment."},
-          {"label": "A 24-hour recall of everything eaten yesterday", "category": 1, "feedback": "Recalls and food records assess diet."},
-          {"label": "Height, weight and waist measurement", "category": 2, "feedback": "Body measurements are anthropometric."},
-          {"label": "Blood iron levels", "category": 3, "feedback": "Lab values are biochemical."}
-        ]
-      }
-    }
-  ],
-  "flashcards": [
-    {"front": "Estimated Average Requirement (EAR)", "back": "The intake that meets the needs of half the healthy people in a group."},
-    {"front": "Recommended Dietary Allowance (RDA)", "back": "The intake that meets the needs of nearly all healthy people (about 97–98%)."},
-    {"front": "Adequate Intake (AI)", "back": "Used when there isn't enough evidence to set an EAR and RDA."},
-    {"front": "Tolerable Upper Intake Level (UL)", "back": "The highest daily intake unlikely to cause harm. A safety limit, not a target."},
-    {"front": "Calories per gram", "back": "Carbohydrate 4, protein 4, fat 9 (fibre about 2, alcohol 7)."},
-    {"front": "Adult AMDRs", "back": "Carbohydrate 45–65%, protein 10–35%, fat 20–35% of Calories."},
-    {"front": "Sucrose", "back": "Table sugar, made of glucose and fructose."},
-    {"front": "Water-soluble vitamins", "back": "The B-complex vitamins and vitamin C."},
-    {"front": "Fat-soluble vitamins", "back": "Vitamins A, D, E and K (DEKA). Stored in body fat, so deficiency is slower to appear."},
-    {"front": "Antioxidant vitamins", "back": "Vitamin C, vitamin E and beta-carotene."},
-    {"front": "Phytochemicals", "back": "Substances in plants that may protect body processes and benefit health."},
-    {"front": "Nutrient-dense foods", "back": "Foods with lots of nutrients and relatively few Calories."},
-    {"front": "Primary vs. secondary malnutrition", "back": "Primary comes from the diet. Secondary is caused by a disease, surgery or medication."},
-    {"front": "Enriched grains must include…", "back": "Thiamin, riboflavin, niacin and iron."},
-    {"front": "Four parts of nutrition assessment", "back": "Clinical/physical, dietary, anthropometric and biochemical."},
-    {"front": "Roles of water", "back": "Medium for chemical reactions, energy transformation, waste removal and temperature control."}
-  ],
-  "quiz": [
-    {"q": "The Estimated Average Requirement (EAR) means:", "o": ["an intake level that meets the nutrient needs of 98% of healthy people.", "an intake value that meets the nutrient needs of half the healthy individuals in a group.", "the upper limits of a nutrient compatible with health.", "the nutrient intake standard for healthy people.", "that this is a “tentative” RDA."], "a": 1, "e": "Checked answer, not from an official key. Chapter 1 defines the EAR as meeting the needs of half the healthy people in a group."},
-    {"q": "What two monosaccharides are found in sucrose (table sugar)?", "o": ["Glucose and lactose", "Glucose and glucose", "Glucose and maltose", "Glucose and fructose"], "a": 3, "e": "Checked answer, not from an official key. Sucrose is glucose joined to fructose."},
-    {"q": "Which of the following statements about food labels is FALSE?", "o": ["They note the presence of common food allergens.", "They appear on almost all multiple-ingredient foods.", "They list the content of fat, saturated fat, trans fat, and cholesterol.", "They contain information about the amount recommended for ingestion each day.", "They list the % Daily Value (%DV) for each relevant nutrient."], "a": 3, "e": "Checked answer, not from an official key. Labels show amounts per serving and % DV, which is a general reference, not a recommended amount for you to eat each day."},
-    {"q": "Producers of bread, cornmeal, crackers, flour tortillas, white rice, and other products made with refined grains MUST use flours enriched with which of the following?", "o": ["Thiamin", "Niacin", "Iron", "Riboflavin", "All of the above"], "a": 4, "e": "Checked answer, not from an official key. By law, enriched flour must have thiamin, riboflavin, niacin and iron added."},
-    {"q": "What mandatory nutrient is missing from the food label? (Refers to the label in your test.)", "o": ["Unsaturated fats", "Simple sugars", "Vitamin C", "Vitamin K"], "a": 2, "e": "Checked answer, not from an official key. On the older label used in the textbook, vitamin C was mandatory. The other choices weren't required."},
-    {"q": "Does this product fall within the Acceptable Macronutrient Distribution Range for fat? (The label in your test shows 170 Calories per serving, 45 from fat.)", "o": ["Yes", "No"], "a": 0, "e": "Checked answer, not from an official key. 45 ÷ 170 × 100 is about 26%, which is within the adult fat range of 20–35%."},
-    {"q": "After class, you go to Jamba Juice and get an “Orange-a-Peel” smoothie that contains the following nutrients: 9 g of protein, 102 g carbohydrate, and 1 g of fat. How many total Calories does this provide?", "o": ["299", "399", "448", "453", "546"], "a": 3, "e": "Checked answer, not from an official key. 9 × 4 = 36, 102 × 4 = 408 and 1 × 9 = 9. 36 + 408 + 9 = 453."},
-    {"q": "A woman ate 1/2 of a pita bread sandwich filled with tuna salad. The entire sandwich contained 20 grams carbohydrate, 8 grams protein, and 5 grams fat. Approximately how many calories did she obtain?", "o": ["80", "130", "150", "160"], "a": 0, "e": "Checked answer, not from an official key. The whole sandwich is 80 + 32 + 45 = 157 Calories. Half is about 79, so about 80."},
-    {"q": "If the woman in question #8 drank a glass of regular, fortified milk, what is the most important essential nutrient that she added to her diet?", "o": ["Calcium", "Cholesterol", "Fluoride", "Glucose", "Vitamin C"], "a": 0, "e": "Checked answer, not from an official key. Milk is a major source of calcium."},
-    {"q": "What nutrient would someone susceptible to high blood pressure be consuming too much of with a meal consisting of a salami sandwich, chicken noodle soup, and whole milk?", "o": ["Sugar", "Caffeine", "Sodium", "Water", "Calcium"], "a": 2, "e": "Checked answer, not from an official key. Salami and canned or packaged soup are high in sodium."},
-    {"q": "Phytochemicals are chemical substances found in _____ that protect human body processes and may benefit health.", "o": ["animals", "the human body", "plants", "both plants and animals", "None of the above"], "a": 2, "e": "Checked answer, not from an official key. “Phyto” means plant. These substances come from plants."},
-    {"q": "Which of the following vitamins acts as an antioxidant in the body?", "o": ["Vitamin C", "Vitamin E", "Beta-carotene", "All of the above", "a and b only"], "a": 3, "e": "Checked answer, not from an official key. The textbook names vitamins C and E and beta-carotene as antioxidants."},
-    {"q": "Which of the following is NOT one of the roles that water plays in the body?", "o": ["Energy transformation", "Energy metabolism regulation", "Excretion of wastes", "Temperature regulation", "Medium in which most chemical reactions take place"], "a": 1, "e": "Checked answer, not from an official key. The textbook lists every other choice as a role of water."},
-    {"q": "Nutrient-dense foods can be defined as:", "o": ["foods that are both good sources of nutrients and low in Calories.", "foods that contain low amounts of nutrients and are high in Calories.", "foods that are both good sources of nutrients and high in Calories.", "foods that contain low amounts of nutrients and are low in Calories.", "all animal-derived foods."], "a": 0, "e": "Checked answer, not from an official key. Nutrient-dense foods have lots of nutrients for relatively few Calories."},
-    {"q": "Which of the following would NOT be considered one of the four components of nutrition assessment?", "o": ["Anthropometric", "Biochemical", "Clinical/physical", "Initial evaluation", "Dietary"], "a": 3, "e": "Checked answer, not from an official key. The four parts are clinical/physical, dietary, anthropometric and biochemical."},
-    {"q": "Jill is a very active teenager who has been maintaining her current weight of 125 pounds. Her average daily macronutrient intake consists of 250 g carbohydrate, 100 g total fat, 30 g saturated fat, and 50 g protein.\n\nHow many Calories from carbohydrates is Jill consuming daily?", "o": ["750", "1000", "1750", "2250"], "a": 1, "e": "Checked answer, not from an official key. 250 g × 4 = 1,000 Calories."},
-    {"q": "Jill is a very active teenager who has been maintaining her current weight of 125 pounds. Her average daily macronutrient intake consists of 250 g carbohydrate, 100 g total fat, 30 g saturated fat, and 50 g protein.\n\nThe percentage of energy that comes from Jill’s intake of carbohydrate is:", "o": ["12%.", "25%.", "48%.", "57%.", "65%."], "a": 2, "e": "Checked answer, not from an official key. Her total is 1,000 + 900 + 200 = 2,100 Calories. 1,000 ÷ 2,100 × 100 is about 48%."},
-    {"q": "Jill is a very active teenager who has been maintaining her current weight of 125 pounds. Her average daily macronutrient intake consists of 250 g carbohydrate, 100 g total fat, 30 g saturated fat, and 50 g protein.\n\nThe percentage of energy that comes from Jill’s intake of fat is:", "o": ["13%.", "30%.", "43%.", "56%."], "a": 2, "e": "Checked answer, not from an official key. 100 g × 9 = 900 Calories. 900 ÷ 2,100 × 100 is about 43%."},
-    {"q": "Good food sources of antioxidants would include which of the following foods?", "o": ["Bananas, raisins, figs", "Oranges, sweet potatoes, bell peppers", "Spinach, blueberries, cranberries", "All of the above", "b and c only"], "a": 4, "e": "Checked answer, not from an official key. Less certain: the foods in b and c are the ones the textbook lists as rich in antioxidant vitamins, but raisins and figs also contain some antioxidants, so check this one against your graded result."},
-    {"q": "Which of the following would NOT be an example of an approved dietary supplement claim?", "o": ["Calcium builds strong bones", "Calcium prevents bone fracture", "Vitamin E, an antioxidant, helps maintain cell membranes", "XYZ helps promote urinary tract health", "XYZ gives you energy and focus throughout your busy day"], "a": 1, "e": "Checked answer, not from an official key. Supplement labels can't claim to prevent a disease or condition, such as a fracture."},
-    {"q": "The water-soluble vitamins include:", "o": ["A, D, E, and K.", "A and C.", "B-complex and C.", "B-complex and K.", "All vitamins are water soluble."], "a": 2, "e": "Checked answer, not from an official key. The B-complex vitamins and vitamin C dissolve in water."},
-    {"q": "A diet low in fat-soluble vitamins will result in a more rapid onset of deficiency symptoms than one low in water-soluble vitamins.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. Fat-soluble vitamins are stored in body fat, while most water-soluble vitamin stores run out within weeks to months, so it's the other way around."},
-    {"q": "Typically, we absorb a greater percentage of minerals than vitamins.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. Minerals often bind to other substances and can't be absorbed, so we absorb a smaller share of minerals than vitamins."},
-    {"q": "Not having enough money to buy food to eat is an example of a potential cause of primary malnutrition.", "o": ["True", "False"], "a": 0, "e": "Checked answer, not from an official key. Primary malnutrition comes from the diet itself."},
-    {"q": "What food serving below does NOT provide significant amounts of iron?", "o": ["Round steak, 3 oz", "Pork and beans, 1/2 cup", "Peaches, 1/2 cup", "Iron-fortified breakfast cereal, 1 cup"], "a": 2, "e": "Checked answer, not from an official key. Less certain: meat, beans and fortified cereal are well-known iron sources, and peaches have very little, but check this one against your graded result."}
-  ]
+ "lesson": 1,
+ "book": "Nutrition Through the Life Cycle (Brown), Chapter 1: Nutrition Basics",
+ "kicker": "Lesson 1 of your course, built from Chapter 1 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "l1-b1",
+   "title": "Ten ideas that run through the course",
+   "teach": [
+    "Chapter 1 sets out ten nutrition principles that come up again at every life stage. Food is a basic human need. Food supplies energy, nutrients and other substances we need to grow and stay healthy. Nutrition problems start inside cells. Too little and too much of a nutrient can both cause harm, and the body has ways of coping with ups and downs in intake.",
+    "Malnutrition can come from a poor diet, from disease or genes, or from a mix of these. Some groups are at higher risk than others. Poor nutrition can help set up chronic disease. Healthy eating patterns are built on adequacy, variety and balance. And no single food is simply good or bad: what matters is how it fits into the whole diet."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "A very active teenager who has already eaten well today has ice cream after practice. How does the chapter see this?",
+    "options": [
+     {
+      "label": "Ice cream is a bad food, so it should be avoided.",
+      "correct": false,
+      "feedback": "The chapter's tenth principle is that there are no good or bad foods. It depends on the whole diet."
+     },
+     {
+      "label": "It can fit well, because her nutrient needs are met and she needs the extra energy.",
+      "correct": true,
+      "feedback": "Yes. The same food can fit one person's diet and not another's."
+     },
+     {
+      "label": "Only foods labelled healthy should count toward her diet.",
+      "correct": false,
+      "feedback": "Labels don't decide this. What matters is adequacy, variety and balance across the day."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l1-b2",
+   "title": "Nutrient intake standards",
+   "teach": [
+    "The Dietary Reference Intakes (DRIs) are a set of standards. The Estimated Average Requirement (EAR) is the intake that meets the needs of half the healthy people in a group. It is used to judge whether a group's intake is adequate. The Recommended Dietary Allowance (RDA) is set higher, to cover nearly all healthy people (about 97–98%).",
+    "When there isn't enough evidence to set an RDA, an Adequate Intake (AI) is used. The Tolerable Upper Intake Level (UL) is the highest daily intake unlikely to cause harm. It is a safety limit, not a target. Nutrition labels use a separate set of reference amounts called Daily Values, and the % DV tells you how much of that amount one serving gives."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each standard with what it means.",
+    "categories": [
+     "EAR",
+     "RDA",
+     "AI",
+     "UL"
+    ],
+    "items": [
+     {
+      "label": "Meets the needs of half the healthy people in a group",
+      "category": 0,
+      "feedback": "That is the Estimated Average Requirement."
+     },
+     {
+      "label": "Covers nearly all healthy people",
+      "category": 1,
+      "feedback": "The RDA is set above the EAR to cover almost everyone."
+     },
+     {
+      "label": "Used when there isn't enough evidence for an RDA",
+      "category": 2,
+      "feedback": "That is the Adequate Intake."
+     },
+     {
+      "label": "Highest intake unlikely to cause harm",
+      "category": 3,
+      "feedback": "The Tolerable Upper Intake Level is a safety limit, not a goal."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l1-b3",
+   "title": "Counting calories from macronutrients",
+   "teach": [
+    "Carbohydrate and protein give 4 Calories per gram, and fat gives 9. (Fibre gives about 2, and alcohol 7.) To find the Calories in a food, multiply the grams of each by its factor and add them up.",
+    "To find the share of Calories from one nutrient, divide its Calories by the total and multiply by 100. For adults, the Acceptable Macronutrient Distribution Ranges are 45–65% of Calories from carbohydrate, 10–35% from protein and 20–35% from fat. Sucrose (table sugar) is made of glucose and fructose."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A snack has 30 g carbohydrate, 10 g protein and 10 g fat. How many Calories does it provide?",
+    "answer": 250,
+    "tolerance": 0,
+    "unit": "Calories",
+    "explanation": "30 × 4 = 120, 10 × 4 = 40 and 10 × 9 = 90. 120 + 40 + 90 = 250 Calories."
+   }
+  },
+  {
+   "id": "l1-b4",
+   "title": "Vitamins",
+   "teach": [
+    "The B-complex vitamins and vitamin C dissolve in water. Vitamins A, D, E and K dissolve in fat (think DEKA). Apart from vitamin B12, the body's stores of water-soluble vitamins are small and run out within weeks to months when intake drops. Fat-soluble vitamins are stored in fat tissue, so a deficiency takes longer to show.",
+    "Vitamins C and E and beta-carotene (which the body turns into vitamin A) act as antioxidants. They help prevent or repair damage to cells from oxidation. Large doses from supplements, especially of vitamins A and D, can be toxic. Overdoses from food alone are very rare."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Sort each vitamin by how it dissolves.",
+    "categories": [
+     "Water-soluble",
+     "Fat-soluble"
+    ],
+    "items": [
+     {
+      "label": "Vitamin C",
+      "category": 0,
+      "feedback": "Vitamin C dissolves in water."
+     },
+     {
+      "label": "Thiamin (a B vitamin)",
+      "category": 0,
+      "feedback": "All the B-complex vitamins are water-soluble."
+     },
+     {
+      "label": "Vitamin D",
+      "category": 1,
+      "feedback": "D is one of the fat-soluble vitamins: D, E, K and A."
+     },
+     {
+      "label": "Vitamin K",
+      "category": 1,
+      "feedback": "K is fat-soluble and stored in body fat."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l1-b5",
+   "title": "Minerals, phytochemicals and water",
+   "teach": [
+    "Minerals tend to bind with other substances, such as other minerals in supplements or fibre in food. Bound minerals can't be absorbed, so overall we absorb a smaller share of the minerals we eat than of the vitamins. Phytochemicals are substances in plants that aren't nutrients but may protect body processes and benefit health.",
+    "Adults are about 60–70% water. Water is the medium where most of the body's chemical reactions happen. It also plays a part in energy transformation, getting rid of wastes and controlling body temperature. Pale yellow urine in normal amounts is a sign of enough fluid."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which of these is NOT a role of water described in the chapter?",
+    "options": [
+     {
+      "label": "Temperature regulation",
+      "correct": false,
+      "feedback": "Controlling body temperature is one of water's roles."
+     },
+     {
+      "label": "Excretion of wastes",
+      "correct": false,
+      "feedback": "Water helps the body get rid of wastes."
+     },
+     {
+      "label": "Regulating hunger hormones",
+      "correct": true,
+      "feedback": "Right. The chapter lists reactions, energy transformation, waste removal and temperature control, but not this."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l1-b6",
+   "title": "Nutrient density and malnutrition",
+   "teach": [
+    "Nutrient-dense foods give plenty of nutrients for relatively few Calories. Examples are nonfat milk and yogurt, lean meat, dried beans, vegetables and fruit. Empty-calorie foods, like soft drinks and hard candy, give Calories with few nutrients. A diet made mostly of nutrient-dense foods is more likely to meet nutrient needs without going over energy needs.",
+    "Primary malnutrition comes from the diet itself, for example not having enough money for food. Secondary malnutrition is caused by a disease, surgery or medication that affects how the body uses nutrients."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Is each situation an example of primary or secondary malnutrition?",
+    "categories": [
+     "Primary (diet)",
+     "Secondary (disease, surgery or medication)"
+    ],
+    "items": [
+     {
+      "label": "A family can't afford enough food at the end of the month.",
+      "category": 0,
+      "feedback": "The poor nutrition comes from the diet itself."
+     },
+     {
+      "label": "Ongoing diarrhea keeps a person from absorbing nutrients.",
+      "category": 1,
+      "feedback": "A health condition causes the problem, so it is secondary."
+     },
+     {
+      "label": "A student lives mostly on soft drinks and chips.",
+      "category": 0,
+      "feedback": "The cause is what she eats."
+     },
+     {
+      "label": "Bleeding in the digestive tract leads to low iron.",
+      "category": 1,
+      "feedback": "The cause is a condition, not the diet."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l1-b7",
+   "title": "Reading labels and claims",
+   "teach": [
+    "Almost all foods with more than one ingredient must have a Nutrition Facts panel. The panel shows the serving size, nutrients such as fat, saturated fat, trans fat, cholesterol, sodium, carbohydrate, fibre, sugars and protein, and a % DV column. Labels also flag common allergens. The textbook uses the older U.S. label, on which vitamins A and C, calcium and iron were mandatory.",
+    "Enriched refined grains such as bread, cornmeal, crackers, flour tortillas and white rice must have thiamin, riboflavin, niacin and iron added back. Supplements have a Supplement Facts panel. They don't have to be proven safe and effective before they are sold, so their labels can't claim to treat, cure or prevent a disease."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which claim would NOT be allowed on a supplement label?",
+    "options": [
+     {
+      "label": "“A good source of fibre”",
+      "correct": false,
+      "feedback": "Standard nutrient content claims like this are allowed."
+     },
+     {
+      "label": "“Cures joint pain”",
+      "correct": true,
+      "feedback": "Right. Supplements can't claim to treat, cure or prevent a disease."
+     },
+     {
+      "label": "“Calcium builds strong bones”",
+      "correct": false,
+      "feedback": "Claims about how a nutrient supports the body are allowed."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l1-b8",
+   "title": "The life course and nutrition assessment",
+   "teach": [
+    "Nutrition at one life stage affects health at the next. Poor nutrition in pregnancy can shape gene function for life, and iron deficiency in young children can affect learning later on. Everyone needs the same nutrients throughout life, but the amounts change with age, growth and development. There is no single best diet for everyone.",
+    "Assessing a person's nutrition has four parts: clinical (physical), dietary, anthropometric (body measurements) and biochemical (lab tests). You need all four. One measure, like normal weight or good iron levels, doesn't prove someone is well nourished."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each finding with the part of nutrition assessment it belongs to.",
+    "categories": [
+     "Clinical / physical",
+     "Dietary",
+     "Anthropometric",
+     "Biochemical"
+    ],
+    "items": [
+     {
+      "label": "Pale skin and brittle nails noted during an exam",
+      "category": 0,
+      "feedback": "Physical signs are part of the clinical assessment."
+     },
+     {
+      "label": "A 24-hour recall of everything eaten yesterday",
+      "category": 1,
+      "feedback": "Recalls and food records assess diet."
+     },
+     {
+      "label": "Height, weight and waist measurement",
+      "category": 2,
+      "feedback": "Body measurements are anthropometric."
+     },
+     {
+      "label": "Blood iron levels",
+      "category": 3,
+      "feedback": "Lab values are biochemical."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Estimated Average Requirement (EAR)",
+   "back": "The intake that meets the needs of half the healthy people in a group."
+  },
+  {
+   "front": "Recommended Dietary Allowance (RDA)",
+   "back": "The intake that meets the needs of nearly all healthy people (about 97–98%)."
+  },
+  {
+   "front": "Adequate Intake (AI)",
+   "back": "Used when there isn't enough evidence to set an EAR and RDA."
+  },
+  {
+   "front": "Tolerable Upper Intake Level (UL)",
+   "back": "The highest daily intake unlikely to cause harm. A safety limit, not a target."
+  },
+  {
+   "front": "Calories per gram",
+   "back": "Carbohydrate 4, protein 4, fat 9 (fibre about 2, alcohol 7)."
+  },
+  {
+   "front": "Adult AMDRs",
+   "back": "Carbohydrate 45–65%, protein 10–35%, fat 20–35% of Calories."
+  },
+  {
+   "front": "Sucrose",
+   "back": "Table sugar, made of glucose and fructose."
+  },
+  {
+   "front": "Water-soluble vitamins",
+   "back": "The B-complex vitamins and vitamin C."
+  },
+  {
+   "front": "Fat-soluble vitamins",
+   "back": "Vitamins A, D, E and K (DEKA). Stored in body fat, so deficiency is slower to appear."
+  },
+  {
+   "front": "Antioxidant vitamins",
+   "back": "Vitamin C, vitamin E and beta-carotene."
+  },
+  {
+   "front": "Phytochemicals",
+   "back": "Substances in plants that may protect body processes and benefit health."
+  },
+  {
+   "front": "Nutrient-dense foods",
+   "back": "Foods with lots of nutrients and relatively few Calories."
+  },
+  {
+   "front": "Primary vs. secondary malnutrition",
+   "back": "Primary comes from the diet. Secondary is caused by a disease, surgery or medication."
+  },
+  {
+   "front": "Enriched grains must include…",
+   "back": "Thiamin, riboflavin, niacin and iron."
+  },
+  {
+   "front": "Four parts of nutrition assessment",
+   "back": "Clinical/physical, dietary, anthropometric and biochemical."
+  },
+  {
+   "front": "Roles of water",
+   "back": "Medium for chemical reactions, energy transformation, waste removal and temperature control."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The Estimated Average Requirement (EAR) means:",
+   "o": [
+    "an intake level that meets the nutrient needs of 98% of healthy people.",
+    "an intake value that meets the nutrient needs of half the healthy individuals in a group.",
+    "the upper limits of a nutrient compatible with health.",
+    "the nutrient intake standard for healthy people.",
+    "that this is a “tentative” RDA."
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 1 defines the EAR as meeting the needs of half the healthy people in a group."
+  },
+  {
+   "q": "What two monosaccharides are found in sucrose (table sugar)?",
+   "o": [
+    "Glucose and lactose",
+    "Glucose and glucose",
+    "Glucose and maltose",
+    "Glucose and fructose"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Sucrose is glucose joined to fructose."
+  },
+  {
+   "q": "Which of the following statements about food labels is FALSE?",
+   "o": [
+    "They note the presence of common food allergens.",
+    "They appear on almost all multiple-ingredient foods.",
+    "They list the content of fat, saturated fat, trans fat, and cholesterol.",
+    "They contain information about the amount recommended for ingestion each day.",
+    "They list the % Daily Value (%DV) for each relevant nutrient."
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Labels show amounts per serving and % DV, which is a general reference, not a recommended amount for you to eat each day."
+  },
+  {
+   "q": "Producers of bread, cornmeal, crackers, flour tortillas, white rice, and other products made with refined grains MUST use flours enriched with which of the following?",
+   "o": [
+    "Thiamin",
+    "Niacin",
+    "Iron",
+    "Riboflavin",
+    "All of the above"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. By law, enriched flour must have thiamin, riboflavin, niacin and iron added."
+  },
+  {
+   "q": "What mandatory nutrient is missing from the food label? (Refers to the label in your test.)",
+   "o": [
+    "Unsaturated fats",
+    "Simple sugars",
+    "Vitamin C",
+    "Vitamin K"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. On the older label used in the textbook, vitamin C was mandatory. The other choices weren't required."
+  },
+  {
+   "q": "Does this product fall within the Acceptable Macronutrient Distribution Range for fat? (The label in your test shows 170 Calories per serving, 45 from fat.)",
+   "o": [
+    "Yes",
+    "No"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. 45 ÷ 170 × 100 is about 26%, which is within the adult fat range of 20–35%."
+  },
+  {
+   "q": "After class, you go to Jamba Juice and get an “Orange-a-Peel” smoothie that contains the following nutrients: 9 g of protein, 102 g carbohydrate, and 1 g of fat. How many total Calories does this provide?",
+   "o": [
+    "299",
+    "399",
+    "448",
+    "453",
+    "546"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. 9 × 4 = 36, 102 × 4 = 408 and 1 × 9 = 9. 36 + 408 + 9 = 453."
+  },
+  {
+   "q": "A woman ate 1/2 of a pita bread sandwich filled with tuna salad. The entire sandwich contained 20 grams carbohydrate, 8 grams protein, and 5 grams fat. Approximately how many calories did she obtain?",
+   "o": [
+    "80",
+    "130",
+    "150",
+    "160"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. The whole sandwich is 80 + 32 + 45 = 157 Calories. Half is about 79, so about 80."
+  },
+  {
+   "q": "If the woman in question #8 drank a glass of regular, fortified milk, what is the most important essential nutrient that she added to her diet?",
+   "o": [
+    "Calcium",
+    "Cholesterol",
+    "Fluoride",
+    "Glucose",
+    "Vitamin C"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Milk is a major source of calcium."
+  },
+  {
+   "q": "What nutrient would someone susceptible to high blood pressure be consuming too much of with a meal consisting of a salami sandwich, chicken noodle soup, and whole milk?",
+   "o": [
+    "Sugar",
+    "Caffeine",
+    "Sodium",
+    "Water",
+    "Calcium"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Salami and canned or packaged soup are high in sodium."
+  },
+  {
+   "q": "Phytochemicals are chemical substances found in _____ that protect human body processes and may benefit health.",
+   "o": [
+    "animals",
+    "the human body",
+    "plants",
+    "both plants and animals",
+    "None of the above"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. “Phyto” means plant. These substances come from plants."
+  },
+  {
+   "q": "Which of the following vitamins acts as an antioxidant in the body?",
+   "o": [
+    "Vitamin C",
+    "Vitamin E",
+    "Beta-carotene",
+    "All of the above",
+    "a and b only"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The textbook names vitamins C and E and beta-carotene as antioxidants."
+  },
+  {
+   "q": "Which of the following is NOT one of the roles that water plays in the body?",
+   "o": [
+    "Energy transformation",
+    "Energy metabolism regulation",
+    "Excretion of wastes",
+    "Temperature regulation",
+    "Medium in which most chemical reactions take place"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The textbook lists every other choice as a role of water."
+  },
+  {
+   "q": "Nutrient-dense foods can be defined as:",
+   "o": [
+    "foods that are both good sources of nutrients and low in Calories.",
+    "foods that contain low amounts of nutrients and are high in Calories.",
+    "foods that are both good sources of nutrients and high in Calories.",
+    "foods that contain low amounts of nutrients and are low in Calories.",
+    "all animal-derived foods."
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Nutrient-dense foods have lots of nutrients for relatively few Calories."
+  },
+  {
+   "q": "Which of the following would NOT be considered one of the four components of nutrition assessment?",
+   "o": [
+    "Anthropometric",
+    "Biochemical",
+    "Clinical/physical",
+    "Initial evaluation",
+    "Dietary"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The four parts are clinical/physical, dietary, anthropometric and biochemical."
+  },
+  {
+   "q": "Jill is a very active teenager who has been maintaining her current weight of 125 pounds. Her average daily macronutrient intake consists of 250 g carbohydrate, 100 g total fat, 30 g saturated fat, and 50 g protein.\n\nHow many Calories from carbohydrates is Jill consuming daily?",
+   "o": [
+    "750",
+    "1000",
+    "1750",
+    "2250"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. 250 g × 4 = 1,000 Calories."
+  },
+  {
+   "q": "Jill is a very active teenager who has been maintaining her current weight of 125 pounds. Her average daily macronutrient intake consists of 250 g carbohydrate, 100 g total fat, 30 g saturated fat, and 50 g protein.\n\nThe percentage of energy that comes from Jill’s intake of carbohydrate is:",
+   "o": [
+    "12%.",
+    "25%.",
+    "48%.",
+    "57%.",
+    "65%."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Her total is 1,000 + 900 + 200 = 2,100 Calories. 1,000 ÷ 2,100 × 100 is about 48%."
+  },
+  {
+   "q": "Jill is a very active teenager who has been maintaining her current weight of 125 pounds. Her average daily macronutrient intake consists of 250 g carbohydrate, 100 g total fat, 30 g saturated fat, and 50 g protein.\n\nThe percentage of energy that comes from Jill’s intake of fat is:",
+   "o": [
+    "13%.",
+    "30%.",
+    "43%.",
+    "56%."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. 100 g × 9 = 900 Calories. 900 ÷ 2,100 × 100 is about 43%."
+  },
+  {
+   "q": "Good food sources of antioxidants would include which of the following foods?",
+   "o": [
+    "Bananas, raisins, figs",
+    "Oranges, sweet potatoes, bell peppers",
+    "Spinach, blueberries, cranberries",
+    "All of the above",
+    "b and c only"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. Oranges, sweet potatoes and bell peppers (vitamin C and beta-carotene) and spinach, blueberries and cranberries (carotenoids and polyphenols) are standard antioxidant sources in the textbook and in USDA and NIH Office of Dietary Supplements food lists. Raisins and figs have far less, so b and c is the best answer."
+  },
+  {
+   "q": "Which of the following would NOT be an example of an approved dietary supplement claim?",
+   "o": [
+    "Calcium builds strong bones",
+    "Calcium prevents bone fracture",
+    "Vitamin E, an antioxidant, helps maintain cell membranes",
+    "XYZ helps promote urinary tract health",
+    "XYZ gives you energy and focus throughout your busy day"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Supplement labels can't claim to prevent a disease or condition, such as a fracture."
+  },
+  {
+   "q": "The water-soluble vitamins include:",
+   "o": [
+    "A, D, E, and K.",
+    "A and C.",
+    "B-complex and C.",
+    "B-complex and K.",
+    "All vitamins are water soluble."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The B-complex vitamins and vitamin C dissolve in water."
+  },
+  {
+   "q": "A diet low in fat-soluble vitamins will result in a more rapid onset of deficiency symptoms than one low in water-soluble vitamins.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Fat-soluble vitamins are stored in body fat, while most water-soluble vitamin stores run out within weeks to months, so it's the other way around."
+  },
+  {
+   "q": "Typically, we absorb a greater percentage of minerals than vitamins.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Minerals often bind to other substances and can't be absorbed, so we absorb a smaller share of minerals than vitamins."
+  },
+  {
+   "q": "Not having enough money to buy food to eat is an example of a potential cause of primary malnutrition.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Primary malnutrition comes from the diet itself."
+  },
+  {
+   "q": "What food serving below does NOT provide significant amounts of iron?",
+   "o": [
+    "Round steak, 3 oz",
+    "Pork and beans, 1/2 cup",
+    "Peaches, 1/2 cup",
+    "Iron-fortified breakfast cereal, 1 cup"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. USDA FoodData Central lists half a cup of peaches at about 0.2–0.4 mg of iron, compared with several milligrams in a serving of red meat, beans or fortified cereal. Source: USDA FoodData Central."
+  }
+ ]
 }

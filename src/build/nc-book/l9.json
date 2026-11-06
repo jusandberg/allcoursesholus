@@ -1,405 +1,405 @@
 {
-  "lesson": 9,
-  "book": "Nutrition Through the Life Cycle (Brown), Chapter 16: Adult Nutrition and Chapter 17: Adult Nutrition: Conditions and Interventions",
-  "kicker": "Lesson 9 of your course, built from Chapters 16 and 17 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
-  "steps": [
-    {
-      "id": "l9-b1",
-      "title": "How energy needs change in adulthood",
-      "teach": [
-        "Metabolic rate and energy use start to drop in early adulthood, by about 2.0% per decade in women and 2.9% in men. This mostly follows a drop in activity and muscle. Staying active slows it down.",
-        "Resting energy expenditure (REE) can be estimated with a formula. For women: REE = (10 × weight in kg) + (6.25 × height in cm) − (5 × age) − 161. Multiply by an activity factor (for example, 1.4 for light activity) to estimate daily needs. To lose about 1 lb a week, eat about 500 fewer Calories a day."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A 40-year-old woman weighs 60 kg and is 165 cm tall. What is her REE? (Round to the nearest whole number.)",
-        "answer": 1270,
-        "tolerance": 2,
-        "unit": "Calories",
-        "explanation": "(10 × 60) + (6.25 × 165) − (5 × 40) − 161 = 600 + 1,031 − 200 − 161 = 1,270 Calories."
-      }
-    },
-    {
-      "id": "l9-b2",
-      "title": "Macronutrients and alcohol",
-      "teach": [
-        "The adult range for fat is 20–35% of Calories. On 2,000 Calories, that's 400–700 Calories from fat. To check a food, divide the Calories from fat by total Calories and multiply by 100. Saturated fat should stay under the Daily Value of 20 g on a 2,000-Calorie diet.",
-        "A standard alcoholic drink has about 13–15 g of alcohol, or about 0.5 oz of ethanol. Sugary drinks, including fancy coffee drinks, add a lot of Calories and are linked to metabolic syndrome and fatty liver."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A snack has 180 Calories, 54 of them from fat. What percent of its Calories come from fat?",
-        "answer": 30,
-        "tolerance": 0,
-        "unit": "%",
-        "explanation": "54 ÷ 180 × 100 = 30%, which is within the 20–35% range."
-      }
-    },
-    {
-      "id": "l9-b3",
-      "title": "Menopause",
-      "teach": [
-        "After menopause, the drop in estrogen speeds up bone loss, shifts fat toward the belly and raises the risk of heart disease. Calcium, vitamin D, weight-bearing activity and a heart-healthy diet become even more important.",
-        "Fat stored deep in the belly (visceral fat) is linked to more health risks than fat under the skin or on the hips and thighs."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which of these is NOT caused by lower estrogen after menopause?",
-        "options": [
-          {
-            "label": "Faster bone loss",
-            "correct": false,
-            "feedback": "Lower estrogen does speed up bone loss."
-          },
-          {
-            "label": "More belly fat",
-            "correct": false,
-            "feedback": "Fat tends to shift toward the abdomen."
-          },
-          {
-            "label": "More acne",
-            "correct": true,
-            "feedback": "Right. Acne isn't one of the effects described."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l9-b4",
-      "title": "Heart disease and metabolic syndrome",
-      "teach": [
-        "Cardiovascular disease affects the heart, the brain (stroke) and the blood vessels. Risk factors for coronary heart disease include low HDL (under 40 mg/dL), high LDL, smoking, high blood pressure, diabetes, a family history of early heart disease, older age (55+ for women), belly fat and eating few whole grains. Fat on the hips and thighs isn't a risk factor.",
-        "Metabolic syndrome is a cluster that includes belly fat, high blood glucose, high triglycerides, low HDL and high blood pressure. Helpful changes include fewer high-fat dairy foods and fried foods, leaner meats, and more whole grains and fibre."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which is NOT a risk factor for coronary heart disease?",
-        "options": [
-          {
-            "label": "HDL under 40 mg/dL",
-            "correct": false,
-            "feedback": "Low HDL raises risk."
-          },
-          {
-            "label": "Extra fat on the hips and thighs",
-            "correct": true,
-            "feedback": "Right. Belly fat raises risk, but hip and thigh fat doesn't."
-          },
-          {
-            "label": "Eating few whole grains",
-            "correct": false,
-            "feedback": "A low intake of whole grains is linked to higher risk."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l9-b5",
-      "title": "Cancer",
-      "teach": [
-        "Cancer can start in any cell, but most cancers start in epithelial tissue, the cells lining the skin, lungs, gut, breast and other organs. These cells divide quickly and are most exposed to things in the environment.",
-        "Diet can raise or lower risk. Excess body fat, alcohol and processed meat raise it, while vegetables (such as cruciferous ones), fruit, whole grains and fibre are protective."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Where do most cancers develop?",
-        "options": [
-          {
-            "label": "Epithelial tissue",
-            "correct": true,
-            "feedback": "Yes. These fast-dividing lining cells are most exposed to carcinogens."
-          },
-          {
-            "label": "Fat cells",
-            "correct": false,
-            "feedback": "Excess body fat raises risk, but most cancers start in epithelial tissue."
-          },
-          {
-            "label": "Bone marrow",
-            "correct": false,
-            "feedback": "Some cancers do, but most start in epithelial tissue."
-          }
-        ]
-      }
-    }
-  ],
-  "flashcards": [
-    {
-      "front": "Decline in metabolic rate per decade",
-      "back": "About 2.0% for women and 2.9% for men."
-    },
-    {
-      "front": "REE formula for women",
-      "back": "(10 × kg) + (6.25 × cm) − (5 × age) − 161."
-    },
-    {
-      "front": "To lose 1 lb a week",
-      "back": "Eat about 500 fewer Calories a day."
-    },
-    {
-      "front": "Adult AMDR for fat",
-      "back": "20–35% of Calories (400–700 Calories on 2,000)."
-    },
-    {
-      "front": "Grams of alcohol in a drink",
-      "back": "About 13–15 g (0.5 oz of ethanol)."
-    },
-    {
-      "front": "Saturated fat Daily Value",
-      "back": "20 g a day on a 2,000-Calorie diet."
-    },
-    {
-      "front": "Effects of lower estrogen after menopause",
-      "back": "Faster bone loss, more belly fat and higher heart disease risk."
-    },
-    {
-      "front": "Areas affected by cardiovascular disease",
-      "back": "The heart, the brain and the blood vessels."
-    },
-    {
-      "front": "Not a heart disease risk factor",
-      "back": "Fat on the hips and thighs."
-    },
-    {
-      "front": "Metabolic syndrome includes…",
-      "back": "Belly fat, high glucose, high triglycerides, low HDL and high blood pressure."
-    },
-    {
-      "front": "Where most cancers start",
-      "back": "Epithelial tissue."
-    }
-  ],
-  "quiz": [
-    {
-      "q": "The decline in estrogen production in women after menopause leads to all of the following EXCEPT:",
-      "o": [
-        "more acne.",
-        "accelerated loss of bone mass.",
-        "an increase in abdominal fat.",
-        "greater risk of cardiovascular disease.",
-        "All of the above occur with less estrogen."
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Lower estrogen speeds bone loss, adds belly fat and raises heart disease risk, but acne isn't one of its effects."
-    },
-    {
-      "q": "To lose one pound per week, a person would need to eat ________ fewer Calories per day.",
-      "o": [
-        "250",
-        "300",
-        "450",
-        "500",
-        "1,000"
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. About 3,500 Calories make a pound, and 3,500 ÷ 7 = 500 a day."
-    },
-    {
-      "q": "Metabolic rate and energy expenditure begin to decline in early adulthood at a rate of about _____ per decade for women and _____ per decade for men.",
-      "o": [
-        "2.0%, 2.9%",
-        "5.0%, 5.9%",
-        "8.0%, 8.0%",
-        "5.9%, 5.0%",
-        "2.9%, 2.0%"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. The textbook gives 2.0% for women and 2.9% for men."
-    },
-    {
-      "q": "The Acceptable Macronutrient Distribution Range for total fat intake is _____ of Calories.",
-      "o": [
-        "10-15%",
-        "15-20%",
-        "20-35%",
-        "35-40%",
-        "40-50%"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. 20–35% for adults."
-    },
-    {
-      "q": "Based on the Acceptable Macronutrient Distribution Ranges, someone that consumes 2000 Calories per day should aim for _______________ fat Calories/day.",
-      "o": [
-        "200-400",
-        "400-700",
-        "600-900",
-        "1000-1200"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. 20% of 2,000 is 400 and 35% is 700."
-    },
-    {
-      "q": "An alcoholic drink contains roughly _____ grams of alcohol or 0.5 oz of ethanol.",
-      "o": [
-        "2-5",
-        "6-8",
-        "9-11",
-        "13-15",
-        "17-21"
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. Less certain: a standard drink is about 14 g of alcohol, but the textbook text doesn't give the figure. Check this one against your graded result."
-    },
-    {
-      "q": "One serving of Gardetto’s reduced-fat chips and twists snack mix contains 220 Calories, with 79 kcal from fat. Therefore, the snack mix derives _____% kcal from fat:",
-      "o": [
-        "75",
-        "50",
-        "36",
-        "25",
-        "5"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. 79 ÷ 220 × 100 = 36%."
-    },
-    {
-      "q": "Using the answer from question #7, would this product fit the Acceptable Macronutrient Distribution Range for fat intake?",
-      "o": [
-        "Yes",
-        "No",
-        "Not enough information to determine"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. 36% is just above the 20–35% range."
-    },
-    {
-      "q": "Use the food label below to answer questions 9-11.\n\nNutrition Facts\nServing Size 1 cup (228g)\nServings Per Container 2\nAmount Per Serving\nCalories 260\nCalories from Fat 120\n% Daily Value*\nTotal Fat 13g 20%\nSaturated Fat 5g 25%\nTrans Fat 2g\nCholesterol 30mg 10%\nSodium 660mg 28%\nTotal Carbohydrate 31g 10%\nDietary Fiber 0g\nSugars 5g\nProtein 5g\nVitamin A 4%\nVitamin C 2%\nCalcium 15%\nIron 4%\n\nWhat % of Calories in this food are provided by saturated fat?",
-      "o": [
-        "2%",
-        "9%",
-        "13%",
-        "17%",
-        "25%"
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. 5 g × 9 = 45 Calories. 45 ÷ 260 × 100 = 17%."
-    },
-    {
-      "q": "Nutrition Facts\nServing Size 1 cup (228g)\nServings Per Container 2\nAmount Per Serving\nCalories 260\nCalories from Fat 120\n% Daily Value*\nTotal Fat 13g 20%\nSaturated Fat 5g 25%\nTrans Fat 2g\nCholesterol 30mg 10%\nSodium 660mg 28%\nTotal Carbohydrate 31g 10%\nDietary Fiber 0g\nSugars 5g\nProtein 5g\nVitamin A 4%\nVitamin C 2%\nCalcium 15%\nIron 4%\n\nWould a person who consumed one container of the food described in this label plus an additional 15 g saturated fat in the same day meet the current recommendations for saturated fat intake (based on the Daily Value)?",
-      "o": [
-        "Yes, they would meet the recommendations.",
-        "No, they would not meet the recommended amount.",
-        "Based on the recommendations, they would consume too much saturated fat."
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. A container is 2 servings, or 10 g. Plus 15 g makes 25 g, which is over the 20 g Daily Value."
-    },
-    {
-      "q": "Nutrition Facts\nServing Size 1 cup (228g)\nServings Per Container 2\nAmount Per Serving\nCalories 260\nCalories from Fat 120\n% Daily Value*\nTotal Fat 13g 20%\nSaturated Fat 5g 25%\nTrans Fat 2g\nCholesterol 30mg 10%\nSodium 660mg 28%\nTotal Carbohydrate 31g 10%\nDietary Fiber 0g\nSugars 5g\nProtein 5g\nVitamin A 4%\nVitamin C 2%\nCalcium 15%\nIron 4%\n\nWould the food described in this label be a good source of fiber?",
-      "o": [
-        "Yes",
-        "No"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. It has 0 g of fibre."
-    },
-    {
-      "q": "Use the following information to answer questions 12-13.\n\nMichelle is a 49-year-old, lightly active female who weighs 131 pounds and is 5’8” tall.\nFemales: REE = (10 x weight) + (6.25 x height) - (5 x age) - 161\nSedentary = 1.2\nLight activity = 1.4\nModerate activity = 1.6\nVery active = 1.1\n\nWhat is Michelle’s resting metabolic rate?",
-      "o": [
-        "1270",
-        "1500",
-        "1760",
-        "2164",
-        "2340"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. 131 lb = 59.5 kg and 68 in = 172.7 cm. 595 + 1,079 − 245 − 161 = about 1,270."
-    },
-    {
-      "q": "Michelle is a 49-year-old, lightly active female who weighs 131 pounds and is 5’8” tall.\nFemales: REE = (10 x weight) + (6.25 x height) - (5 x age) - 161\nSedentary = 1.2\nLight activity = 1.4\nModerate activity = 1.6\nVery active = 1.1\n\nWhat is Michelle’s estimated daily Calorie expenditure?",
-      "o": [
-        "1500",
-        "1780",
-        "1930",
-        "2100",
-        "2450"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. 1,270 × 1.4 = about 1,780."
-    },
-    {
-      "q": "The majority of cancers develop in:",
-      "o": [
-        "epithelial tissue.",
-        "lymph nodes.",
-        "adipocytes.",
-        "bones and bone marrow.",
-        "connective tissue"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. The textbook says most cancers develop in epithelial tissue."
-    },
-    {
-      "q": "The areas of the body affected by cardiovascular diseases include the:",
-      "o": [
-        "heart.",
-        "brain.",
-        "blood vessels.",
-        "All of the above",
-        "a and c only"
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. Cardiovascular disease includes heart disease, stroke and blood vessel disease."
-    },
-    {
-      "q": "Which of the following is NOT a risk factor for coronary heart disease?",
-      "o": [
-        "HDL cholesterol < 40 mg/dL",
-        "Age 55 and older in women",
-        "Excess hip or thigh fat",
-        "Consumption of few whole-grain products",
-        "Diabetes"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. Belly fat raises risk, but hip and thigh fat doesn't."
-    },
-    {
-      "q": "Metabolic syndrome is related to a cluster of metabolic abnormalities that include:",
-      "o": [
-        "low fasting blood glucose levels.",
-        "abdominal obesity.",
-        "low LDL levels.",
-        "high levels of HDL cholesterol.",
-        "All of the above"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Belly fat is one of the criteria. The others are the reverse of the real criteria."
-    },
-    {
-      "q": "Use the following information for questions 18-20.\n\nMr. Jones\nSex: Male\nHours of work: 55+/wk\nAge: 61\nOccupation: Computer programmer\nHousehold members: wife, 65 years old\nFamily Hx: coronary artery disease in father, had MI age 59\nSmoker: yes, 40 years, 1 pack/day\nHt = 70” Wt = 190 lbs\nBMI = 27\nWaist circumference: 43 inches\nCholesterol: 220 mg/dL; HDL-C 30 mg/dL; LDL-C 160 mg/dL; VLDL 45 mg/dL; TG 150 mg/dL\nBlood pressure: 140/85\nDiet history of Mr. Jones shows that he eats the following foods: Dairy products such as milk, cheese, and ice cream regularly. He consumes a variety of protein-rich foods including fish, shellfish, beef, poultry, and eggs; and large quantities of rice and potatoes; and he and his wife also frequently eat breads, crackers, and potato chips. Mr. Jones consumes a large variety of vegetables including eggplant, broccoli, mushrooms, onions, and tomatoes, although many of these are deep fried or cooked in butter.\n\nAccording to the BMI chart on page 519 Mr. Jones is:",
-      "o": [
-        "underweight",
-        "normal weight",
-        "overweight",
-        "severely obese"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. A BMI of 27 is in the overweight range (25–29.9)."
-    },
-    {
-      "q": "Mr. Jones\nSex: Male\nHours of work: 55+/wk\nAge: 61\nOccupation: Computer programmer\nHousehold members: wife, 65 years old\nFamily Hx: coronary artery disease in father, had MI age 59\nSmoker: yes, 40 years, 1 pack/day\nHt = 70” Wt = 190 lbs\nBMI = 27\nWaist circumference: 43 inches\nCholesterol: 220 mg/dL; HDL-C 30 mg/dL; LDL-C 160 mg/dL; VLDL 45 mg/dL; TG 150 mg/dL\nBlood pressure: 140/85\nDiet history of Mr. Jones shows that he eats the following foods: Dairy products such as milk, cheese, and ice cream regularly. He consumes a variety of protein-rich foods including fish, shellfish, beef, poultry, and eggs; and large quantities of rice and potatoes; and he and his wife also frequently eat breads, crackers, and potato chips. Mr. Jones consumes a large variety of vegetables including eggplant, broccoli, mushrooms, onions, and tomatoes, although many of these are deep fried or cooked in butter.\n\nBased on the information above, what chronic disease is he at risk of developing?",
-      "o": [
-        "Coronary heart disease",
-        "Colon cancer",
-        "Type 2 diabetes",
-        "All of the above",
-        "a and c"
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. Smoking, belly fat, low HDL, high LDL and his diet raise his risk of all three."
-    },
-    {
-      "q": "Mr. Jones\nSex: Male\nHours of work: 55+/wk\nAge: 61\nOccupation: Computer programmer\nHousehold members: wife, 65 years old\nFamily Hx: coronary artery disease in father, had MI age 59\nSmoker: yes, 40 years, 1 pack/day\nHt = 70” Wt = 190 lbs\nBMI = 27\nWaist circumference: 43 inches\nCholesterol: 220 mg/dL; HDL-C 30 mg/dL; LDL-C 160 mg/dL; VLDL 45 mg/dL; TG 150 mg/dL\nBlood pressure: 140/85\nDiet history of Mr. Jones shows that he eats the following foods: Dairy products such as milk, cheese, and ice cream regularly. He consumes a variety of protein-rich foods including fish, shellfish, beef, poultry, and eggs; and large quantities of rice and potatoes; and he and his wife also frequently eat breads, crackers, and potato chips. Mr. Jones consumes a large variety of vegetables including eggplant, broccoli, mushrooms, onions, and tomatoes, although many of these are deep fried or cooked in butter.\n\nWhat dietary suggestions could you make to him to help decrease his risk factors?",
-      "o": [
-        "Decrease consumption of high-fat dairy products",
-        "Increase whole grain intake",
-        "Increase dietary fiber intake",
-        "Choose lean cuts of meat and poultry",
-        "All of the above"
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. All four would help."
-    }
-  ]
+ "lesson": 9,
+ "book": "Nutrition Through the Life Cycle (Brown), Chapter 16: Adult Nutrition and Chapter 17: Adult Nutrition: Conditions and Interventions",
+ "kicker": "Lesson 9 of your course, built from Chapters 16 and 17 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "l9-b1",
+   "title": "How energy needs change in adulthood",
+   "teach": [
+    "Metabolic rate and energy use start to drop in early adulthood, by about 2.0% per decade in women and 2.9% in men. This mostly follows a drop in activity and muscle. Staying active slows it down.",
+    "Resting energy expenditure (REE) can be estimated with a formula. For women: REE = (10 × weight in kg) + (6.25 × height in cm) − (5 × age) − 161. Multiply by an activity factor (for example, 1.4 for light activity) to estimate daily needs. To lose about 1 lb a week, eat about 500 fewer Calories a day."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A 40-year-old woman weighs 60 kg and is 165 cm tall. What is her REE? (Round to the nearest whole number.)",
+    "answer": 1270,
+    "tolerance": 2,
+    "unit": "Calories",
+    "explanation": "(10 × 60) + (6.25 × 165) − (5 × 40) − 161 = 600 + 1,031 − 200 − 161 = 1,270 Calories."
+   }
+  },
+  {
+   "id": "l9-b2",
+   "title": "Macronutrients and alcohol",
+   "teach": [
+    "The adult range for fat is 20–35% of Calories. On 2,000 Calories, that's 400–700 Calories from fat. To check a food, divide the Calories from fat by total Calories and multiply by 100. Saturated fat should stay under the Daily Value of 20 g on a 2,000-Calorie diet.",
+    "A standard alcoholic drink has about 13–15 g of alcohol, or about 0.5 oz of ethanol. Sugary drinks, including fancy coffee drinks, add a lot of Calories and are linked to metabolic syndrome and fatty liver."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A snack has 180 Calories, 54 of them from fat. What percent of its Calories come from fat?",
+    "answer": 30,
+    "tolerance": 0,
+    "unit": "%",
+    "explanation": "54 ÷ 180 × 100 = 30%, which is within the 20–35% range."
+   }
+  },
+  {
+   "id": "l9-b3",
+   "title": "Menopause",
+   "teach": [
+    "After menopause, the drop in estrogen speeds up bone loss, shifts fat toward the belly and raises the risk of heart disease. Calcium, vitamin D, weight-bearing activity and a heart-healthy diet become even more important.",
+    "Fat stored deep in the belly (visceral fat) is linked to more health risks than fat under the skin or on the hips and thighs."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which of these is NOT caused by lower estrogen after menopause?",
+    "options": [
+     {
+      "label": "Faster bone loss",
+      "correct": false,
+      "feedback": "Lower estrogen does speed up bone loss."
+     },
+     {
+      "label": "More belly fat",
+      "correct": false,
+      "feedback": "Fat tends to shift toward the abdomen."
+     },
+     {
+      "label": "More acne",
+      "correct": true,
+      "feedback": "Right. Acne isn't one of the effects described."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l9-b4",
+   "title": "Heart disease and metabolic syndrome",
+   "teach": [
+    "Cardiovascular disease affects the heart, the brain (stroke) and the blood vessels. Risk factors for coronary heart disease include low HDL (under 40 mg/dL), high LDL, smoking, high blood pressure, diabetes, a family history of early heart disease, older age (55+ for women), belly fat and eating few whole grains. Fat on the hips and thighs isn't a risk factor.",
+    "Metabolic syndrome is a cluster that includes belly fat, high blood glucose, high triglycerides, low HDL and high blood pressure. Helpful changes include fewer high-fat dairy foods and fried foods, leaner meats, and more whole grains and fibre."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which is NOT a risk factor for coronary heart disease?",
+    "options": [
+     {
+      "label": "HDL under 40 mg/dL",
+      "correct": false,
+      "feedback": "Low HDL raises risk."
+     },
+     {
+      "label": "Extra fat on the hips and thighs",
+      "correct": true,
+      "feedback": "Right. Belly fat raises risk, but hip and thigh fat doesn't."
+     },
+     {
+      "label": "Eating few whole grains",
+      "correct": false,
+      "feedback": "A low intake of whole grains is linked to higher risk."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l9-b5",
+   "title": "Cancer",
+   "teach": [
+    "Cancer can start in any cell, but most cancers start in epithelial tissue, the cells lining the skin, lungs, gut, breast and other organs. These cells divide quickly and are most exposed to things in the environment.",
+    "Diet can raise or lower risk. Excess body fat, alcohol and processed meat raise it, while vegetables (such as cruciferous ones), fruit, whole grains and fibre are protective."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Where do most cancers develop?",
+    "options": [
+     {
+      "label": "Epithelial tissue",
+      "correct": true,
+      "feedback": "Yes. These fast-dividing lining cells are most exposed to carcinogens."
+     },
+     {
+      "label": "Fat cells",
+      "correct": false,
+      "feedback": "Excess body fat raises risk, but most cancers start in epithelial tissue."
+     },
+     {
+      "label": "Bone marrow",
+      "correct": false,
+      "feedback": "Some cancers do, but most start in epithelial tissue."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Decline in metabolic rate per decade",
+   "back": "About 2.0% for women and 2.9% for men."
+  },
+  {
+   "front": "REE formula for women",
+   "back": "(10 × kg) + (6.25 × cm) − (5 × age) − 161."
+  },
+  {
+   "front": "To lose 1 lb a week",
+   "back": "Eat about 500 fewer Calories a day."
+  },
+  {
+   "front": "Adult AMDR for fat",
+   "back": "20–35% of Calories (400–700 Calories on 2,000)."
+  },
+  {
+   "front": "Grams of alcohol in a drink",
+   "back": "About 13–15 g (0.5 oz of ethanol)."
+  },
+  {
+   "front": "Saturated fat Daily Value",
+   "back": "20 g a day on a 2,000-Calorie diet."
+  },
+  {
+   "front": "Effects of lower estrogen after menopause",
+   "back": "Faster bone loss, more belly fat and higher heart disease risk."
+  },
+  {
+   "front": "Areas affected by cardiovascular disease",
+   "back": "The heart, the brain and the blood vessels."
+  },
+  {
+   "front": "Not a heart disease risk factor",
+   "back": "Fat on the hips and thighs."
+  },
+  {
+   "front": "Metabolic syndrome includes…",
+   "back": "Belly fat, high glucose, high triglycerides, low HDL and high blood pressure."
+  },
+  {
+   "front": "Where most cancers start",
+   "back": "Epithelial tissue."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The decline in estrogen production in women after menopause leads to all of the following EXCEPT:",
+   "o": [
+    "more acne.",
+    "accelerated loss of bone mass.",
+    "an increase in abdominal fat.",
+    "greater risk of cardiovascular disease.",
+    "All of the above occur with less estrogen."
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Lower estrogen speeds bone loss, adds belly fat and raises heart disease risk, but acne isn't one of its effects."
+  },
+  {
+   "q": "To lose one pound per week, a person would need to eat ________ fewer Calories per day.",
+   "o": [
+    "250",
+    "300",
+    "450",
+    "500",
+    "1,000"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. About 3,500 Calories make a pound, and 3,500 ÷ 7 = 500 a day."
+  },
+  {
+   "q": "Metabolic rate and energy expenditure begin to decline in early adulthood at a rate of about _____ per decade for women and _____ per decade for men.",
+   "o": [
+    "2.0%, 2.9%",
+    "5.0%, 5.9%",
+    "8.0%, 8.0%",
+    "5.9%, 5.0%",
+    "2.9%, 2.0%"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. The textbook gives 2.0% for women and 2.9% for men."
+  },
+  {
+   "q": "The Acceptable Macronutrient Distribution Range for total fat intake is _____ of Calories.",
+   "o": [
+    "10-15%",
+    "15-20%",
+    "20-35%",
+    "35-40%",
+    "40-50%"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. 20–35% for adults."
+  },
+  {
+   "q": "Based on the Acceptable Macronutrient Distribution Ranges, someone that consumes 2000 Calories per day should aim for _______________ fat Calories/day.",
+   "o": [
+    "200-400",
+    "400-700",
+    "600-900",
+    "1000-1200"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. 20% of 2,000 is 400 and 35% is 700."
+  },
+  {
+   "q": "An alcoholic drink contains roughly _____ grams of alcohol or 0.5 oz of ethanol.",
+   "o": [
+    "2-5",
+    "6-8",
+    "9-11",
+    "13-15",
+    "17-21"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. A standard drink holds about 14 g (0.6 oz) of pure alcohol, which falls in the 13–15 g range. Source: National Institute on Alcohol Abuse and Alcoholism (NIAAA); Health Canada uses 13.45 g."
+  },
+  {
+   "q": "One serving of Gardetto’s reduced-fat chips and twists snack mix contains 220 Calories, with 79 kcal from fat. Therefore, the snack mix derives _____% kcal from fat:",
+   "o": [
+    "75",
+    "50",
+    "36",
+    "25",
+    "5"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. 79 ÷ 220 × 100 = 36%."
+  },
+  {
+   "q": "Using the answer from question #7, would this product fit the Acceptable Macronutrient Distribution Range for fat intake?",
+   "o": [
+    "Yes",
+    "No",
+    "Not enough information to determine"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. 36% is just above the 20–35% range."
+  },
+  {
+   "q": "Use the food label below to answer questions 9-11.\n\nNutrition Facts\nServing Size 1 cup (228g)\nServings Per Container 2\nAmount Per Serving\nCalories 260\nCalories from Fat 120\n% Daily Value*\nTotal Fat 13g 20%\nSaturated Fat 5g 25%\nTrans Fat 2g\nCholesterol 30mg 10%\nSodium 660mg 28%\nTotal Carbohydrate 31g 10%\nDietary Fiber 0g\nSugars 5g\nProtein 5g\nVitamin A 4%\nVitamin C 2%\nCalcium 15%\nIron 4%\n\nWhat % of Calories in this food are provided by saturated fat?",
+   "o": [
+    "2%",
+    "9%",
+    "13%",
+    "17%",
+    "25%"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. 5 g × 9 = 45 Calories. 45 ÷ 260 × 100 = 17%."
+  },
+  {
+   "q": "Nutrition Facts\nServing Size 1 cup (228g)\nServings Per Container 2\nAmount Per Serving\nCalories 260\nCalories from Fat 120\n% Daily Value*\nTotal Fat 13g 20%\nSaturated Fat 5g 25%\nTrans Fat 2g\nCholesterol 30mg 10%\nSodium 660mg 28%\nTotal Carbohydrate 31g 10%\nDietary Fiber 0g\nSugars 5g\nProtein 5g\nVitamin A 4%\nVitamin C 2%\nCalcium 15%\nIron 4%\n\nWould a person who consumed one container of the food described in this label plus an additional 15 g saturated fat in the same day meet the current recommendations for saturated fat intake (based on the Daily Value)?",
+   "o": [
+    "Yes, they would meet the recommendations.",
+    "No, they would not meet the recommended amount.",
+    "Based on the recommendations, they would consume too much saturated fat."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. A container is 2 servings, or 10 g. Plus 15 g makes 25 g, which is over the 20 g Daily Value."
+  },
+  {
+   "q": "Nutrition Facts\nServing Size 1 cup (228g)\nServings Per Container 2\nAmount Per Serving\nCalories 260\nCalories from Fat 120\n% Daily Value*\nTotal Fat 13g 20%\nSaturated Fat 5g 25%\nTrans Fat 2g\nCholesterol 30mg 10%\nSodium 660mg 28%\nTotal Carbohydrate 31g 10%\nDietary Fiber 0g\nSugars 5g\nProtein 5g\nVitamin A 4%\nVitamin C 2%\nCalcium 15%\nIron 4%\n\nWould the food described in this label be a good source of fiber?",
+   "o": [
+    "Yes",
+    "No"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. It has 0 g of fibre."
+  },
+  {
+   "q": "Use the following information to answer questions 12-13.\n\nMichelle is a 49-year-old, lightly active female who weighs 131 pounds and is 5’8” tall.\nFemales: REE = (10 x weight) + (6.25 x height) - (5 x age) - 161\nSedentary = 1.2\nLight activity = 1.4\nModerate activity = 1.6\nVery active = 1.1\n\nWhat is Michelle’s resting metabolic rate?",
+   "o": [
+    "1270",
+    "1500",
+    "1760",
+    "2164",
+    "2340"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. 131 lb = 59.5 kg and 68 in = 172.7 cm. 595 + 1,079 − 245 − 161 = about 1,270."
+  },
+  {
+   "q": "Michelle is a 49-year-old, lightly active female who weighs 131 pounds and is 5’8” tall.\nFemales: REE = (10 x weight) + (6.25 x height) - (5 x age) - 161\nSedentary = 1.2\nLight activity = 1.4\nModerate activity = 1.6\nVery active = 1.1\n\nWhat is Michelle’s estimated daily Calorie expenditure?",
+   "o": [
+    "1500",
+    "1780",
+    "1930",
+    "2100",
+    "2450"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. 1,270 × 1.4 = about 1,780."
+  },
+  {
+   "q": "The majority of cancers develop in:",
+   "o": [
+    "epithelial tissue.",
+    "lymph nodes.",
+    "adipocytes.",
+    "bones and bone marrow.",
+    "connective tissue"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. The textbook says most cancers develop in epithelial tissue."
+  },
+  {
+   "q": "The areas of the body affected by cardiovascular diseases include the:",
+   "o": [
+    "heart.",
+    "brain.",
+    "blood vessels.",
+    "All of the above",
+    "a and c only"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Cardiovascular disease includes heart disease, stroke and blood vessel disease."
+  },
+  {
+   "q": "Which of the following is NOT a risk factor for coronary heart disease?",
+   "o": [
+    "HDL cholesterol < 40 mg/dL",
+    "Age 55 and older in women",
+    "Excess hip or thigh fat",
+    "Consumption of few whole-grain products",
+    "Diabetes"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Belly fat raises risk, but hip and thigh fat doesn't."
+  },
+  {
+   "q": "Metabolic syndrome is related to a cluster of metabolic abnormalities that include:",
+   "o": [
+    "low fasting blood glucose levels.",
+    "abdominal obesity.",
+    "low LDL levels.",
+    "high levels of HDL cholesterol.",
+    "All of the above"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Belly fat is one of the criteria. The others are the reverse of the real criteria."
+  },
+  {
+   "q": "Use the following information for questions 18-20.\n\nMr. Jones\nSex: Male\nHours of work: 55+/wk\nAge: 61\nOccupation: Computer programmer\nHousehold members: wife, 65 years old\nFamily Hx: coronary artery disease in father, had MI age 59\nSmoker: yes, 40 years, 1 pack/day\nHt = 70” Wt = 190 lbs\nBMI = 27\nWaist circumference: 43 inches\nCholesterol: 220 mg/dL; HDL-C 30 mg/dL; LDL-C 160 mg/dL; VLDL 45 mg/dL; TG 150 mg/dL\nBlood pressure: 140/85\nDiet history of Mr. Jones shows that he eats the following foods: Dairy products such as milk, cheese, and ice cream regularly. He consumes a variety of protein-rich foods including fish, shellfish, beef, poultry, and eggs; and large quantities of rice and potatoes; and he and his wife also frequently eat breads, crackers, and potato chips. Mr. Jones consumes a large variety of vegetables including eggplant, broccoli, mushrooms, onions, and tomatoes, although many of these are deep fried or cooked in butter.\n\nAccording to the BMI chart on page 519 Mr. Jones is:",
+   "o": [
+    "underweight",
+    "normal weight",
+    "overweight",
+    "severely obese"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. A BMI of 27 is in the overweight range (25–29.9)."
+  },
+  {
+   "q": "Mr. Jones\nSex: Male\nHours of work: 55+/wk\nAge: 61\nOccupation: Computer programmer\nHousehold members: wife, 65 years old\nFamily Hx: coronary artery disease in father, had MI age 59\nSmoker: yes, 40 years, 1 pack/day\nHt = 70” Wt = 190 lbs\nBMI = 27\nWaist circumference: 43 inches\nCholesterol: 220 mg/dL; HDL-C 30 mg/dL; LDL-C 160 mg/dL; VLDL 45 mg/dL; TG 150 mg/dL\nBlood pressure: 140/85\nDiet history of Mr. Jones shows that he eats the following foods: Dairy products such as milk, cheese, and ice cream regularly. He consumes a variety of protein-rich foods including fish, shellfish, beef, poultry, and eggs; and large quantities of rice and potatoes; and he and his wife also frequently eat breads, crackers, and potato chips. Mr. Jones consumes a large variety of vegetables including eggplant, broccoli, mushrooms, onions, and tomatoes, although many of these are deep fried or cooked in butter.\n\nBased on the information above, what chronic disease is he at risk of developing?",
+   "o": [
+    "Coronary heart disease",
+    "Colon cancer",
+    "Type 2 diabetes",
+    "All of the above",
+    "a and c"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Smoking, belly fat, low HDL, high LDL and his diet raise his risk of all three."
+  },
+  {
+   "q": "Mr. Jones\nSex: Male\nHours of work: 55+/wk\nAge: 61\nOccupation: Computer programmer\nHousehold members: wife, 65 years old\nFamily Hx: coronary artery disease in father, had MI age 59\nSmoker: yes, 40 years, 1 pack/day\nHt = 70” Wt = 190 lbs\nBMI = 27\nWaist circumference: 43 inches\nCholesterol: 220 mg/dL; HDL-C 30 mg/dL; LDL-C 160 mg/dL; VLDL 45 mg/dL; TG 150 mg/dL\nBlood pressure: 140/85\nDiet history of Mr. Jones shows that he eats the following foods: Dairy products such as milk, cheese, and ice cream regularly. He consumes a variety of protein-rich foods including fish, shellfish, beef, poultry, and eggs; and large quantities of rice and potatoes; and he and his wife also frequently eat breads, crackers, and potato chips. Mr. Jones consumes a large variety of vegetables including eggplant, broccoli, mushrooms, onions, and tomatoes, although many of these are deep fried or cooked in butter.\n\nWhat dietary suggestions could you make to him to help decrease his risk factors?",
+   "o": [
+    "Decrease consumption of high-fat dairy products",
+    "Increase whole grain intake",
+    "Increase dietary fiber intake",
+    "Choose lean cuts of meat and poultry",
+    "All of the above"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. All four would help."
+  }
+ ]
 }

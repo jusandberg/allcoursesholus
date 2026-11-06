@@ -1,448 +1,448 @@
 {
-  "lesson": 5,
-  "book": "Nutrition Through the Life Cycle (Brown), Chapter 8: Infant Nutrition and Chapter 9: Infant Nutrition: Conditions and Interventions",
-  "kicker": "Lesson 5 of your course, built from Chapters 8 and 9 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
-  "steps": [
-    {
-      "id": "l5-b1",
-      "title": "How babies develop",
-      "teach": [
-        "Babies gain control of their muscles in a set order: from the head downward, and from the centre of the body out to the hands and fingers. They hold up their heads before they sit, and use their arms before they pick things up with their fingers. Newborns are born with feeding reflexes such as rooting: stroke a baby's cheek and they turn toward it and open their mouth.",
-        "In the first two years, babies learn through their senses and movements. This is called the sensorimotor stage. Feeding skills follow development: sitting with support, moving the head toward a spoon, then picking up finger foods. Readiness, not just age, should guide when new textures are offered."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which statement describes how muscle control develops in infants?",
-        "options": [
-          {
-            "label": "From the head downward, and from the centre of the body out to the hands",
-            "correct": true,
-            "feedback": "Yes. Head control comes first, and fine finger control comes last."
-          },
-          {
-            "label": "From the toes upward",
-            "correct": false,
-            "feedback": "It's the other way around: head first, legs later."
-          },
-          {
-            "label": "From the fingers inward",
-            "correct": false,
-            "feedback": "The central muscles come first, and the hands and fingers later."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l5-b2",
-      "title": "Energy and nutrient needs",
-      "teach": [
-        "Babies need a lot of energy for their size. In the first six months the average is 108 Calories per kg of body weight, based on the growth of breastfed babies. From 6 to 12 months it is 98 Calories per kg. Protein needs from 7 to 12 months are about 11 g a day.",
-        "Breast milk and standard formula both give about 20 Calories per ounce. Iron stores from birth last about four to six months. Exclusively breastfed babies are advised to get an iron supplement starting at four months (1 mg per kg per day) until they eat iron-rich foods. Meat is a good early food for iron and zinc."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A 4-month-old baby weighs 7 kg. At 108 Calories per kg, how many Calories does she need each day?",
-        "answer": 756,
-        "tolerance": 0,
-        "unit": "Calories",
-        "explanation": "7 × 108 = 756 Calories a day."
-      }
-    },
-    {
-      "id": "l5-b3",
-      "title": "Formula feeding",
-      "teach": [
-        "Formula-fed babies should stay on formula for the first year. Routine formulas for full-term babies give 19–20 Calories per ounce when mixed as directed. Formulas for preterm babies after they leave the hospital usually give 22 or 24 Calories per ounce.",
-        "Many feeding troubles are blamed on allergies when they aren't. A baby with a suspected protein intolerance may be switched to a formula with hydrolyzed (broken-down) protein, which is less likely to trigger a reaction. These formulas cost more and taste stronger."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A baby drinks 24 ounces of standard formula a day. At 20 Calories per ounce, how many Calories is that?",
-        "answer": 480,
-        "tolerance": 0,
-        "unit": "Calories",
-        "explanation": "24 × 20 = 480 Calories."
-      }
-    },
-    {
-      "id": "l5-b4",
-      "title": "Growth charts and size at birth",
-      "teach": [
-        "Growth charts show how a baby's weight, length and head size compare with other babies of the same age and sex. A baby between the 10th and 90th percentiles at birth is appropriate for gestational age (AGA). Below the 10th is small for gestational age (SGA), and above the 90th is large (LGA).",
-        "One measurement is a snapshot. What matters most is the pattern over time, and whether the baby keeps following their own curve."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Sort each newborn by size for gestational age.",
-        "categories": [
-          "SGA (below 10th)",
-          "AGA (10th–90th)",
-          "LGA (above 90th)"
-        ],
-        "items": [
-          {
-            "label": "Birthweight at the 5th percentile",
-            "category": 0,
-            "feedback": "Below the 10th percentile is small for gestational age."
-          },
-          {
-            "label": "Birthweight at the 50th percentile",
-            "category": 1,
-            "feedback": "This is right in the middle, so appropriate for gestational age."
-          },
-          {
-            "label": "Birthweight at the 75th percentile",
-            "category": 1,
-            "feedback": "Still between the 10th and 90th, so AGA."
-          },
-          {
-            "label": "Birthweight at the 95th percentile",
-            "category": 2,
-            "feedback": "Above the 90th percentile is large for gestational age."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l5-b5",
-      "title": "Newborn screening and inborn errors",
-      "teach": [
-        "Newborns are screened shortly after birth for metabolic disorders, most often PKU, congenital hypothyroidism, galactosemia and sickle cell disease. Finding these early lets treatment start before damage occurs. Food allergies can't be picked up by newborn screening.",
-        "Babies with galactosemia can't break down galactose, which is part of lactose (milk sugar). They can't have breast milk or regular milk-based formula. Soy formula, which has no lactose, is used instead. Babies with PKU need a special formula low in phenylalanine."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which feeding is NOT safe for a baby with galactosemia?",
-        "options": [
-          {
-            "label": "Soy formula",
-            "correct": false,
-            "feedback": "Soy formula has no lactose, so it's used for galactosemia."
-          },
-          {
-            "label": "Breast milk",
-            "correct": true,
-            "feedback": "Right. Breast milk is rich in lactose, which contains galactose."
-          },
-          {
-            "label": "Apple juice",
-            "correct": false,
-            "feedback": "Apple juice has no galactose."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l5-b6",
-      "title": "Vegetarian and vegan babies",
-      "teach": [
-        "A well-planned vegetarian diet can meet a baby's needs, but some nutrients need attention. Iron, vitamin B12, vitamin D, calcium and zinc are the main ones, especially in vegan diets. Fortified soy formula, iron-fortified cereals, beans and lentils, and a B12 source all help.",
-        "Check the diet against the baby's needs: about 98 Calories per kg from 6 to 12 months, and about 11 g of protein a day."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A 10-month-old weighs 9 kg. At 98 Calories per kg, how many Calories does he need each day?",
-        "answer": 882,
-        "tolerance": 0,
-        "unit": "Calories",
-        "explanation": "9 × 98 = 882 Calories a day."
-      }
-    },
-    {
-      "id": "l5-b7",
-      "title": "Preterm babies and special needs",
-      "teach": [
-        "For preterm babies, use the corrected age: subtract the weeks born early from the age since birth. A baby born at 32 weeks is 8 weeks (about 2 months) early. At 9 months old, that baby's corrected age is about 7 months, and development should be judged on that. Preterm babies often can't suck, swallow and breathe in rhythm until 32–34 weeks, so they may need gavage feeding: a tube from the mouth or nose into the stomach.",
-        "Preterm babies need more energy, about 105–130 Calories per kg. Babies with bronchopulmonary dysplasia (BPD), a lung condition, grow more slowly because of higher nutrient needs and changes in their hormone and lung systems. Some babies need fewer Calories than usual, such as babies with Down syndrome, who tend to be less active and have lower energy needs."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A baby born at 28 weeks (12 weeks early) is now 6 months old. What is the corrected age in months? (Use 4 weeks = 1 month.)",
-        "answer": 3,
-        "tolerance": 0,
-        "unit": "months",
-        "explanation": "12 weeks early is 3 months. 6 − 3 = 3 months corrected age."
-      }
-    }
-  ],
-  "flashcards": [
-    {
-      "front": "Order of muscle control in infants",
-      "back": "From the head downward, and from the centre of the body out to the hands."
-    },
-    {
-      "front": "Rooting reflex",
-      "back": "Stroke the cheek and the baby turns toward it and opens the mouth."
-    },
-    {
-      "front": "Energy needs, 0–6 months",
-      "back": "About 108 Calories per kg per day."
-    },
-    {
-      "front": "Energy needs, 6–12 months",
-      "back": "About 98 Calories per kg per day."
-    },
-    {
-      "front": "Protein, 7–12 months",
-      "back": "About 11 g a day."
-    },
-    {
-      "front": "Calories in standard formula or breast milk",
-      "back": "About 20 per ounce."
-    },
-    {
-      "front": "Formula for preterm babies after discharge",
-      "back": "Usually 22 or 24 Calories per ounce."
-    },
-    {
-      "front": "Suspected protein intolerance",
-      "back": "Switch to a formula with hydrolyzed (broken-down) protein."
-    },
-    {
-      "front": "AGA",
-      "back": "Appropriate for gestational age: birthweight between the 10th and 90th percentiles."
-    },
-    {
-      "front": "Newborn screening",
-      "back": "Commonly PKU, hypothyroidism, galactosemia and sickle cell disease. Not food allergies."
-    },
-    {
-      "front": "Galactosemia",
-      "back": "Can't break down galactose. No breast milk or milk-based formula. Soy formula is used."
-    },
-    {
-      "front": "Nutrients of concern for vegan babies",
-      "back": "Iron, vitamin B12, vitamin D, calcium and zinc."
-    },
-    {
-      "front": "Corrected age",
-      "back": "Age since birth minus the weeks born early."
-    },
-    {
-      "front": "Gavage feeding",
-      "back": "A tube from the mouth or nose into the stomach."
-    },
-    {
-      "front": "Bronchopulmonary dysplasia (BPD)",
-      "back": "A lung condition. Slower growth from higher needs and hormone and lung changes."
-    },
-    {
-      "front": "Lower energy needs",
-      "back": "Babies with Down syndrome often need fewer Calories."
-    }
-  ],
-  "quiz": [
-    {
-      "q": "Which of the following statements best describes motor development in infants?",
-      "o": [
-        "Voluntary control of muscles starts from the head and moves down to the legs.",
-        "Voluntary control of muscles starts from being able to fan toes out at birth to blinking eyes in response to a loud noise or light.",
-        "Voluntary muscle control develops with central muscles first and then moves out to hand muscles.",
-        "Voluntary muscle control develops with rooting reflex and then moves out to hand muscles.",
-        "a and c"
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. Muscle control develops from the head down and from the centre out."
-    },
-    {
-      "q": "An example of sensorimotor development is _______________________________________.",
-      "o": [
-        "thumb sucking",
-        "crying when hungry",
-        "blinking eyes in response to bright light",
-        "ability to sleep through the night",
-        "an increase in head circumference"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. Less certain: sensorimotor development is about responding to the senses with movement, and blinking at bright light is the clearest example here. Thumb sucking could also be argued, so check this one against your graded result."
-    },
-    {
-      "q": "The AVERAGE caloric need of infants in the first six months of life is ________________ per kg of body weight, based on growth in breast-fed infants.",
-      "o": [
-        "57 Calories",
-        "98 Calories",
-        "108 Calories",
-        "122 Calories",
-        "154 Calories"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook gives 108 Calories per kg for the first six months."
-    },
-    {
-      "q": "Based on your answer to question #3, a 5-month-old infant would require approximately _____ total Calories per day based on a weight of 6 kg.",
-      "o": [
-        "648",
-        "732",
-        "924",
-        "1037",
-        "1251"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. 6 × 108 = 648."
-    },
-    {
-      "q": "A 3-month-old infant was taking 30 ounces/day of a standard formula. How many Calories did the infant consume each day?",
-      "o": [
-        "600",
-        "300",
-        "450",
-        "510"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Standard formula gives about 20 Calories an ounce. 30 × 20 = 600."
-    },
-    {
-      "q": "Based on your answer to #6, this baby is: (Question 6 asks you to plot an 8-pound newborn girl on the growth chart in your test.)",
-      "o": [
-        "small for gestational age (SGA).",
-        "large for gestational age (LGA).",
-        "appropriate for gestational age (AGA).",
-        "None of the above"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. An 8-pound newborn girl falls between the 10th and 90th percentiles, so she is appropriate for gestational age."
-    },
-    {
-      "q": "Which of the following conditions CANNOT be screened for shortly after birth?",
-      "o": [
-        "PKU",
-        "Food allergy",
-        "Galactosemia",
-        "Sickle-cell disease",
-        "Hypothyroidism"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Newborns are screened for PKU, hypothyroidism, galactosemia and sickle cell disease, but not food allergies."
-    },
-    {
-      "q": "An infant with a suspected protein intolerance may be:",
-      "o": [
-        "put on a soy formula because plant proteins are well tolerated.",
-        "put on a hydrolyzed formula because the protein is broken down.",
-        "breast fed only because breast milk is the gold standard to feed babies",
-        "put on IV fluids with a fat replacement."
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. The textbook says these babies may be switched to a hydrolyzed protein formula."
-    },
-    {
-      "q": "Use the following information to answer questions 10-12.\n\nThe mother of a 9-month-old vegetarian infant weighing 19 pounds (8.6 kg) provided the following diet history for her son.\nBreakfast: 1/4 cup oatmeal made with water; 1/2 banana; 4 oz. apple juice\nLunch: Rice cake with 1 t. peanut butter; 1/2 c. applesauce; 4 oz. soy formula\nDinner: 1/4 cup mashed potatoes made with water; 1/4 cup lentil beans; 1/4 c. yam; 4 cherry tomatoes cut; 4 oz. soy formula\nSnacks: 15 goldfish crackers and 1/4 c. canned fruit at 10 am; rice cake with 1/4 c. canned pears at 3 pm\nTotal calories = ~750\nProtein = 21 grams\n\nNutrients of concern in this diet include:",
-      "o": [
-        "calcium",
-        "vitamin B12",
-        "vitamin D",
-        "Iron",
-        "All of the above"
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. With only 8 oz of soy formula and no other B12, calcium or vitamin D sources, all four are a concern."
-    },
-    {
-      "q": "The mother of a 9-month-old vegetarian infant weighing 19 pounds (8.6 kg) provided the following diet history for her son.\nBreakfast: 1/4 cup oatmeal made with water; 1/2 banana; 4 oz. apple juice\nLunch: Rice cake with 1 t. peanut butter; 1/2 c. applesauce; 4 oz. soy formula\nDinner: 1/4 cup mashed potatoes made with water; 1/4 cup lentil beans; 1/4 c. yam; 4 cherry tomatoes cut; 4 oz. soy formula\nSnacks: 15 goldfish crackers and 1/4 c. canned fruit at 10 am; rice cake with 1/4 c. canned pears at 3 pm\nTotal calories = ~750\nProtein = 21 grams\n\nDoes this diet have an adequate amount of calories for a 9-month-old infant?",
-      "o": [
-        "Yes",
-        "No"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. 8.6 kg × 98 = about 843 Calories needed. 750 is short."
-    },
-    {
-      "q": "The mother of a 9-month-old vegetarian infant weighing 19 pounds (8.6 kg) provided the following diet history for her son.\nBreakfast: 1/4 cup oatmeal made with water; 1/2 banana; 4 oz. apple juice\nLunch: Rice cake with 1 t. peanut butter; 1/2 c. applesauce; 4 oz. soy formula\nDinner: 1/4 cup mashed potatoes made with water; 1/4 cup lentil beans; 1/4 c. yam; 4 cherry tomatoes cut; 4 oz. soy formula\nSnacks: 15 goldfish crackers and 1/4 c. canned fruit at 10 am; rice cake with 1/4 c. canned pears at 3 pm\nTotal calories = ~750\nProtein = 21 grams\n\nDoes this diet have an adequate amount of protein for a 9-month-old infant?",
-      "o": [
-        "Yes",
-        "No"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Babies 7–12 months need about 11 g of protein a day, and he gets 21 g."
-    },
-    {
-      "q": "An infant with what special condition requires less energy than a healthy infant?",
-      "o": [
-        "Extremely low-birth-weight infant",
-        "Low-birth-weight infant",
-        "Infant with Down’s syndrome",
-        "Infant born with difficulty breathing",
-        "Infant born with PKU"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook lists babies with lower activity and slower growth, including Down syndrome, as needing fewer Calories. Preterm and lung conditions raise needs."
-    },
-    {
-      "q": "What is the gestation-adjusted age for a 9-month-old infant born preterm (32 weeks)?",
-      "o": [
-        "6.5 months",
-        "7 months",
-        "8 months",
-        "8.5 months"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Born 8 weeks (2 months) early, so 9 − 2 = 7 months."
-    },
-    {
-      "q": "Which of the following foods would NOT be appropriate for a baby with galactosemia?",
-      "o": [
-        "Sugar solution",
-        "Apple juice",
-        "Soybean formula",
-        "Breast milk"
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. Breast milk is rich in lactose, which contains galactose."
-    },
-    {
-      "q": "Growth rates among infants that have the lung condition bronchopulmonary dysplasia (BPD) are slower due to all of the following EXCEPT:",
-      "o": [
-        "higher nutritional requirements.",
-        "more muscle mass.",
-        "changes in endocrine systems.",
-        "changes in pulmonary systems.",
-        "All of the above are reasons that these infants have slower growth rates."
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. The textbook lists higher needs and changes in the endocrine and lung systems, not muscle mass."
-    },
-    {
-      "q": "A gavage feeding is one that:",
-      "o": [
-        "provides nutrition directly through the central vein and includes amino acids, dextrose, and a lipid emulsion.",
-        "provides nutrition through a tube inserted into the stomach or small intestine.",
-        "provides slow feedings from the mouth or nose into the stomach through a tube.",
-        "provides oral nutrition that has been pureed thoroughly so the infant does not choke.",
-        "provides nutrition through the use of an oral syringe."
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook describes gavage feeding as a tube from the mouth or nose to the stomach."
-    },
-    {
-      "q": "Please read the case study below and use the information to answer questions 18-20.\n\nCase Study: Rebecca, an infant born at 32 weeks, weighed 1200 g (2.6 lb), and was SGA. Her head circumference was 30 cm (< 5th percentile). The mother was not interested in breastfeeding. A dietitian evaluated Rebecca and established appropriate growth and development goals for weight, length, head circumference, and body fat stores. A high-calorie formula (22 kcal/oz) was also initiated.\n\nWhat daily weight gain goal would the dietitian set for the first three months?",
-      "o": [
-        "10-25g/day",
-        "20-30 g/day",
-        "30-40 g/day",
-        ">40 g/day"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Less certain: 20–30 g a day is a common goal for preterm babies after discharge, but the textbook text doesn't give the figure directly, so check this one against your graded result."
-    },
-    {
-      "q": "Case Study: Rebecca, an infant born at 32 weeks, weighed 1200 g (2.6 lb), and was SGA. Her head circumference was 30 cm (< 5th percentile). The mother was not interested in breastfeeding. A dietitian evaluated Rebecca and established appropriate growth and development goals for weight, length, head circumference, and body fat stores. A high-calorie formula (22 kcal/oz) was also initiated.\n\nFollowing discharge from the hospital, Rebecca showed signs of fatigue during feeding. The dietitian then recommended a higher-calorie formula. How many Calories/ounce would the new formula most likely contain?",
-      "o": [
-        "40 Calories",
-        "24 Calories",
-        "30 Calories",
-        "35 Calories"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Post-discharge formulas usually give 22 or 24 Calories an ounce, so the next step up is 24."
-    },
-    {
-      "q": "Case Study: Rebecca, an infant born at 32 weeks, weighed 1200 g (2.6 lb), and was SGA. Her head circumference was 30 cm (< 5th percentile). The mother was not interested in breastfeeding. A dietitian evaluated Rebecca and established appropriate growth and development goals for weight, length, head circumference, and body fat stores. A high-calorie formula (22 kcal/oz) was also initiated.\n\nWill Rebecca be able to sit in a high chair and maintain a stable feeding position at 6 months — the same physical development expected from a term infant?",
-      "o": [
-        "Yes",
-        "No"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Born 2 months early, at 6 months her corrected age is about 4 months, so she likely won't be ready yet."
-    }
-  ]
+ "lesson": 5,
+ "book": "Nutrition Through the Life Cycle (Brown), Chapter 8: Infant Nutrition and Chapter 9: Infant Nutrition: Conditions and Interventions",
+ "kicker": "Lesson 5 of your course, built from Chapters 8 and 9 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "l5-b1",
+   "title": "How babies develop",
+   "teach": [
+    "Babies gain control of their muscles in a set order: from the head downward, and from the centre of the body out to the hands and fingers. They hold up their heads before they sit, and use their arms before they pick things up with their fingers. Newborns are born with feeding reflexes such as rooting: stroke a baby's cheek and they turn toward it and open their mouth.",
+    "In the first two years, babies learn through their senses and movements. This is called the sensorimotor stage. Feeding skills follow development: sitting with support, moving the head toward a spoon, then picking up finger foods. Readiness, not just age, should guide when new textures are offered."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which statement describes how muscle control develops in infants?",
+    "options": [
+     {
+      "label": "From the head downward, and from the centre of the body out to the hands",
+      "correct": true,
+      "feedback": "Yes. Head control comes first, and fine finger control comes last."
+     },
+     {
+      "label": "From the toes upward",
+      "correct": false,
+      "feedback": "It's the other way around: head first, legs later."
+     },
+     {
+      "label": "From the fingers inward",
+      "correct": false,
+      "feedback": "The central muscles come first, and the hands and fingers later."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l5-b2",
+   "title": "Energy and nutrient needs",
+   "teach": [
+    "Babies need a lot of energy for their size. In the first six months the average is 108 Calories per kg of body weight, based on the growth of breastfed babies. From 6 to 12 months it is 98 Calories per kg. Protein needs from 7 to 12 months are about 11 g a day.",
+    "Breast milk and standard formula both give about 20 Calories per ounce. Iron stores from birth last about four to six months. Exclusively breastfed babies are advised to get an iron supplement starting at four months (1 mg per kg per day) until they eat iron-rich foods. Meat is a good early food for iron and zinc."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A 4-month-old baby weighs 7 kg. At 108 Calories per kg, how many Calories does she need each day?",
+    "answer": 756,
+    "tolerance": 0,
+    "unit": "Calories",
+    "explanation": "7 × 108 = 756 Calories a day."
+   }
+  },
+  {
+   "id": "l5-b3",
+   "title": "Formula feeding",
+   "teach": [
+    "Formula-fed babies should stay on formula for the first year. Routine formulas for full-term babies give 19–20 Calories per ounce when mixed as directed. Formulas for preterm babies after they leave the hospital usually give 22 or 24 Calories per ounce.",
+    "Many feeding troubles are blamed on allergies when they aren't. A baby with a suspected protein intolerance may be switched to a formula with hydrolyzed (broken-down) protein, which is less likely to trigger a reaction. These formulas cost more and taste stronger."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A baby drinks 24 ounces of standard formula a day. At 20 Calories per ounce, how many Calories is that?",
+    "answer": 480,
+    "tolerance": 0,
+    "unit": "Calories",
+    "explanation": "24 × 20 = 480 Calories."
+   }
+  },
+  {
+   "id": "l5-b4",
+   "title": "Growth charts and size at birth",
+   "teach": [
+    "Growth charts show how a baby's weight, length and head size compare with other babies of the same age and sex. A baby between the 10th and 90th percentiles at birth is appropriate for gestational age (AGA). Below the 10th is small for gestational age (SGA), and above the 90th is large (LGA).",
+    "One measurement is a snapshot. What matters most is the pattern over time, and whether the baby keeps following their own curve."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Sort each newborn by size for gestational age.",
+    "categories": [
+     "SGA (below 10th)",
+     "AGA (10th–90th)",
+     "LGA (above 90th)"
+    ],
+    "items": [
+     {
+      "label": "Birthweight at the 5th percentile",
+      "category": 0,
+      "feedback": "Below the 10th percentile is small for gestational age."
+     },
+     {
+      "label": "Birthweight at the 50th percentile",
+      "category": 1,
+      "feedback": "This is right in the middle, so appropriate for gestational age."
+     },
+     {
+      "label": "Birthweight at the 75th percentile",
+      "category": 1,
+      "feedback": "Still between the 10th and 90th, so AGA."
+     },
+     {
+      "label": "Birthweight at the 95th percentile",
+      "category": 2,
+      "feedback": "Above the 90th percentile is large for gestational age."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l5-b5",
+   "title": "Newborn screening and inborn errors",
+   "teach": [
+    "Newborns are screened shortly after birth for metabolic disorders, most often PKU, congenital hypothyroidism, galactosemia and sickle cell disease. Finding these early lets treatment start before damage occurs. Food allergies can't be picked up by newborn screening.",
+    "Babies with galactosemia can't break down galactose, which is part of lactose (milk sugar). They can't have breast milk or regular milk-based formula. Soy formula, which has no lactose, is used instead. Babies with PKU need a special formula low in phenylalanine."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which feeding is NOT safe for a baby with galactosemia?",
+    "options": [
+     {
+      "label": "Soy formula",
+      "correct": false,
+      "feedback": "Soy formula has no lactose, so it's used for galactosemia."
+     },
+     {
+      "label": "Breast milk",
+      "correct": true,
+      "feedback": "Right. Breast milk is rich in lactose, which contains galactose."
+     },
+     {
+      "label": "Apple juice",
+      "correct": false,
+      "feedback": "Apple juice has no galactose."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l5-b6",
+   "title": "Vegetarian and vegan babies",
+   "teach": [
+    "A well-planned vegetarian diet can meet a baby's needs, but some nutrients need attention. Iron, vitamin B12, vitamin D, calcium and zinc are the main ones, especially in vegan diets. Fortified soy formula, iron-fortified cereals, beans and lentils, and a B12 source all help.",
+    "Check the diet against the baby's needs: about 98 Calories per kg from 6 to 12 months, and about 11 g of protein a day."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A 10-month-old weighs 9 kg. At 98 Calories per kg, how many Calories does he need each day?",
+    "answer": 882,
+    "tolerance": 0,
+    "unit": "Calories",
+    "explanation": "9 × 98 = 882 Calories a day."
+   }
+  },
+  {
+   "id": "l5-b7",
+   "title": "Preterm babies and special needs",
+   "teach": [
+    "For preterm babies, use the corrected age: subtract the weeks born early from the age since birth. A baby born at 32 weeks is 8 weeks (about 2 months) early. At 9 months old, that baby's corrected age is about 7 months, and development should be judged on that. Preterm babies often can't suck, swallow and breathe in rhythm until 32–34 weeks, so they may need gavage feeding: a tube from the mouth or nose into the stomach.",
+    "Preterm babies need more energy, about 105–130 Calories per kg. Babies with bronchopulmonary dysplasia (BPD), a lung condition, grow more slowly because of higher nutrient needs and changes in their hormone and lung systems. Some babies need fewer Calories than usual, such as babies with Down syndrome, who tend to be less active and have lower energy needs."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A baby born at 28 weeks (12 weeks early) is now 6 months old. What is the corrected age in months? (Use 4 weeks = 1 month.)",
+    "answer": 3,
+    "tolerance": 0,
+    "unit": "months",
+    "explanation": "12 weeks early is 3 months. 6 − 3 = 3 months corrected age."
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Order of muscle control in infants",
+   "back": "From the head downward, and from the centre of the body out to the hands."
+  },
+  {
+   "front": "Rooting reflex",
+   "back": "Stroke the cheek and the baby turns toward it and opens the mouth."
+  },
+  {
+   "front": "Energy needs, 0–6 months",
+   "back": "About 108 Calories per kg per day."
+  },
+  {
+   "front": "Energy needs, 6–12 months",
+   "back": "About 98 Calories per kg per day."
+  },
+  {
+   "front": "Protein, 7–12 months",
+   "back": "About 11 g a day."
+  },
+  {
+   "front": "Calories in standard formula or breast milk",
+   "back": "About 20 per ounce."
+  },
+  {
+   "front": "Formula for preterm babies after discharge",
+   "back": "Usually 22 or 24 Calories per ounce."
+  },
+  {
+   "front": "Suspected protein intolerance",
+   "back": "Switch to a formula with hydrolyzed (broken-down) protein."
+  },
+  {
+   "front": "AGA",
+   "back": "Appropriate for gestational age: birthweight between the 10th and 90th percentiles."
+  },
+  {
+   "front": "Newborn screening",
+   "back": "Commonly PKU, hypothyroidism, galactosemia and sickle cell disease. Not food allergies."
+  },
+  {
+   "front": "Galactosemia",
+   "back": "Can't break down galactose. No breast milk or milk-based formula. Soy formula is used."
+  },
+  {
+   "front": "Nutrients of concern for vegan babies",
+   "back": "Iron, vitamin B12, vitamin D, calcium and zinc."
+  },
+  {
+   "front": "Corrected age",
+   "back": "Age since birth minus the weeks born early."
+  },
+  {
+   "front": "Gavage feeding",
+   "back": "A tube from the mouth or nose into the stomach."
+  },
+  {
+   "front": "Bronchopulmonary dysplasia (BPD)",
+   "back": "A lung condition. Slower growth from higher needs and hormone and lung changes."
+  },
+  {
+   "front": "Lower energy needs",
+   "back": "Babies with Down syndrome often need fewer Calories."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Which of the following statements best describes motor development in infants?",
+   "o": [
+    "Voluntary control of muscles starts from the head and moves down to the legs.",
+    "Voluntary control of muscles starts from being able to fan toes out at birth to blinking eyes in response to a loud noise or light.",
+    "Voluntary muscle control develops with central muscles first and then moves out to hand muscles.",
+    "Voluntary muscle control develops with rooting reflex and then moves out to hand muscles.",
+    "a and c"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. Muscle control develops from the head down and from the centre out."
+  },
+  {
+   "q": "An example of sensorimotor development is _______________________________________.",
+   "o": [
+    "thumb sucking",
+    "crying when hungry",
+    "blinking eyes in response to bright light",
+    "ability to sleep through the night",
+    "an increase in head circumference"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Sensorimotor development is about responding to what the senses pick up with movement, and blinking at bright light is the clearest example here. Still to check: I couldn’t confirm this against the textbook’s wording yet. Check it against your graded result."
+  },
+  {
+   "q": "The AVERAGE caloric need of infants in the first six months of life is ________________ per kg of body weight, based on growth in breast-fed infants.",
+   "o": [
+    "57 Calories",
+    "98 Calories",
+    "108 Calories",
+    "122 Calories",
+    "154 Calories"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook gives 108 Calories per kg for the first six months."
+  },
+  {
+   "q": "Based on your answer to question #3, a 5-month-old infant would require approximately _____ total Calories per day based on a weight of 6 kg.",
+   "o": [
+    "648",
+    "732",
+    "924",
+    "1037",
+    "1251"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. 6 × 108 = 648."
+  },
+  {
+   "q": "A 3-month-old infant was taking 30 ounces/day of a standard formula. How many Calories did the infant consume each day?",
+   "o": [
+    "600",
+    "300",
+    "450",
+    "510"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Standard formula gives about 20 Calories an ounce. 30 × 20 = 600."
+  },
+  {
+   "q": "Based on your answer to #6, this baby is: (Question 6 asks you to plot an 8-pound newborn girl on the growth chart in your test.)",
+   "o": [
+    "small for gestational age (SGA).",
+    "large for gestational age (LGA).",
+    "appropriate for gestational age (AGA).",
+    "None of the above"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. An 8-pound newborn girl falls between the 10th and 90th percentiles, so she is appropriate for gestational age."
+  },
+  {
+   "q": "Which of the following conditions CANNOT be screened for shortly after birth?",
+   "o": [
+    "PKU",
+    "Food allergy",
+    "Galactosemia",
+    "Sickle-cell disease",
+    "Hypothyroidism"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Newborns are screened for PKU, hypothyroidism, galactosemia and sickle cell disease, but not food allergies."
+  },
+  {
+   "q": "An infant with a suspected protein intolerance may be:",
+   "o": [
+    "put on a soy formula because plant proteins are well tolerated.",
+    "put on a hydrolyzed formula because the protein is broken down.",
+    "breast fed only because breast milk is the gold standard to feed babies",
+    "put on IV fluids with a fat replacement."
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The textbook says these babies may be switched to a hydrolyzed protein formula."
+  },
+  {
+   "q": "Use the following information to answer questions 10-12.\n\nThe mother of a 9-month-old vegetarian infant weighing 19 pounds (8.6 kg) provided the following diet history for her son.\nBreakfast: 1/4 cup oatmeal made with water; 1/2 banana; 4 oz. apple juice\nLunch: Rice cake with 1 t. peanut butter; 1/2 c. applesauce; 4 oz. soy formula\nDinner: 1/4 cup mashed potatoes made with water; 1/4 cup lentil beans; 1/4 c. yam; 4 cherry tomatoes cut; 4 oz. soy formula\nSnacks: 15 goldfish crackers and 1/4 c. canned fruit at 10 am; rice cake with 1/4 c. canned pears at 3 pm\nTotal calories = ~750\nProtein = 21 grams\n\nNutrients of concern in this diet include:",
+   "o": [
+    "calcium",
+    "vitamin B12",
+    "vitamin D",
+    "Iron",
+    "All of the above"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. With only 8 oz of soy formula and no other B12, calcium or vitamin D sources, all four are a concern."
+  },
+  {
+   "q": "The mother of a 9-month-old vegetarian infant weighing 19 pounds (8.6 kg) provided the following diet history for her son.\nBreakfast: 1/4 cup oatmeal made with water; 1/2 banana; 4 oz. apple juice\nLunch: Rice cake with 1 t. peanut butter; 1/2 c. applesauce; 4 oz. soy formula\nDinner: 1/4 cup mashed potatoes made with water; 1/4 cup lentil beans; 1/4 c. yam; 4 cherry tomatoes cut; 4 oz. soy formula\nSnacks: 15 goldfish crackers and 1/4 c. canned fruit at 10 am; rice cake with 1/4 c. canned pears at 3 pm\nTotal calories = ~750\nProtein = 21 grams\n\nDoes this diet have an adequate amount of calories for a 9-month-old infant?",
+   "o": [
+    "Yes",
+    "No"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. 8.6 kg × 98 = about 843 Calories needed. 750 is short."
+  },
+  {
+   "q": "The mother of a 9-month-old vegetarian infant weighing 19 pounds (8.6 kg) provided the following diet history for her son.\nBreakfast: 1/4 cup oatmeal made with water; 1/2 banana; 4 oz. apple juice\nLunch: Rice cake with 1 t. peanut butter; 1/2 c. applesauce; 4 oz. soy formula\nDinner: 1/4 cup mashed potatoes made with water; 1/4 cup lentil beans; 1/4 c. yam; 4 cherry tomatoes cut; 4 oz. soy formula\nSnacks: 15 goldfish crackers and 1/4 c. canned fruit at 10 am; rice cake with 1/4 c. canned pears at 3 pm\nTotal calories = ~750\nProtein = 21 grams\n\nDoes this diet have an adequate amount of protein for a 9-month-old infant?",
+   "o": [
+    "Yes",
+    "No"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Babies 7–12 months need about 11 g of protein a day, and he gets 21 g."
+  },
+  {
+   "q": "An infant with what special condition requires less energy than a healthy infant?",
+   "o": [
+    "Extremely low-birth-weight infant",
+    "Low-birth-weight infant",
+    "Infant with Down’s syndrome",
+    "Infant born with difficulty breathing",
+    "Infant born with PKU"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook lists babies with lower activity and slower growth, including Down syndrome, as needing fewer Calories. Preterm and lung conditions raise needs."
+  },
+  {
+   "q": "What is the gestation-adjusted age for a 9-month-old infant born preterm (32 weeks)?",
+   "o": [
+    "6.5 months",
+    "7 months",
+    "8 months",
+    "8.5 months"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Born 8 weeks (2 months) early, so 9 − 2 = 7 months."
+  },
+  {
+   "q": "Which of the following foods would NOT be appropriate for a baby with galactosemia?",
+   "o": [
+    "Sugar solution",
+    "Apple juice",
+    "Soybean formula",
+    "Breast milk"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Breast milk is rich in lactose, which contains galactose."
+  },
+  {
+   "q": "Growth rates among infants that have the lung condition bronchopulmonary dysplasia (BPD) are slower due to all of the following EXCEPT:",
+   "o": [
+    "higher nutritional requirements.",
+    "more muscle mass.",
+    "changes in endocrine systems.",
+    "changes in pulmonary systems.",
+    "All of the above are reasons that these infants have slower growth rates."
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The textbook lists higher needs and changes in the endocrine and lung systems, not muscle mass."
+  },
+  {
+   "q": "A gavage feeding is one that:",
+   "o": [
+    "provides nutrition directly through the central vein and includes amino acids, dextrose, and a lipid emulsion.",
+    "provides nutrition through a tube inserted into the stomach or small intestine.",
+    "provides slow feedings from the mouth or nose into the stomach through a tube.",
+    "provides oral nutrition that has been pureed thoroughly so the infant does not choke.",
+    "provides nutrition through the use of an oral syringe."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook describes gavage feeding as a tube from the mouth or nose to the stomach."
+  },
+  {
+   "q": "Please read the case study below and use the information to answer questions 18-20.\n\nCase Study: Rebecca, an infant born at 32 weeks, weighed 1200 g (2.6 lb), and was SGA. Her head circumference was 30 cm (< 5th percentile). The mother was not interested in breastfeeding. A dietitian evaluated Rebecca and established appropriate growth and development goals for weight, length, head circumference, and body fat stores. A high-calorie formula (22 kcal/oz) was also initiated.\n\nWhat daily weight gain goal would the dietitian set for the first three months?",
+   "o": [
+    "10-25g/day",
+    "20-30 g/day",
+    "30-40 g/day",
+    ">40 g/day"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The American Academy of Pediatrics’ goal for preterm infants is a weight gain of about 20–30 g a day, close to the rate in the womb. Source: AAP Pediatric Nutrition handbook; preterm growth guidance."
+  },
+  {
+   "q": "Case Study: Rebecca, an infant born at 32 weeks, weighed 1200 g (2.6 lb), and was SGA. Her head circumference was 30 cm (< 5th percentile). The mother was not interested in breastfeeding. A dietitian evaluated Rebecca and established appropriate growth and development goals for weight, length, head circumference, and body fat stores. A high-calorie formula (22 kcal/oz) was also initiated.\n\nFollowing discharge from the hospital, Rebecca showed signs of fatigue during feeding. The dietitian then recommended a higher-calorie formula. How many Calories/ounce would the new formula most likely contain?",
+   "o": [
+    "40 Calories",
+    "24 Calories",
+    "30 Calories",
+    "35 Calories"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Post-discharge formulas usually give 22 or 24 Calories an ounce, so the next step up is 24."
+  },
+  {
+   "q": "Case Study: Rebecca, an infant born at 32 weeks, weighed 1200 g (2.6 lb), and was SGA. Her head circumference was 30 cm (< 5th percentile). The mother was not interested in breastfeeding. A dietitian evaluated Rebecca and established appropriate growth and development goals for weight, length, head circumference, and body fat stores. A high-calorie formula (22 kcal/oz) was also initiated.\n\nWill Rebecca be able to sit in a high chair and maintain a stable feeding position at 6 months — the same physical development expected from a term infant?",
+   "o": [
+    "Yes",
+    "No"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Born 2 months early, at 6 months her corrected age is about 4 months, so she likely won't be ready yet."
+  }
+ ]
 }

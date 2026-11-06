@@ -1,564 +1,564 @@
 {
-  "lesson": 4,
-  "book": "Nutrition Through the Life Cycle (Brown), Chapter 6: Nutrition During Lactation and Chapter 7: Nutrition During Lactation: Conditions and Interventions",
-  "kicker": "Lesson 4 of your course, built from Chapters 6 and 7 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
-  "steps": [
-    {
-      "id": "l4-b1",
-      "title": "How the breast makes milk",
-      "teach": [
-        "During puberty, the cyclic release of estrogen and progesterone develops the breasts. The working units of the mammary gland are the alveoli: clusters of milk-secreting cells around a small duct. The ducts branch like a tree toward the nipple. Muscle-like cells around the alveoli contract under the hormone oxytocin to push milk out (the letdown).",
-        "Breast size depends mostly on fat and doesn't decide how much milk a woman can make. Milk supply works on supply and demand: the more fully the breast is emptied, the more milk it makes. If a lot of milk is left behind, production slows."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "What are the functional units of the mammary gland?",
-        "options": [
-          {
-            "label": "Alveoli",
-            "correct": true,
-            "feedback": "Yes. Each alveolus is a cluster of cells that secrete milk."
-          },
-          {
-            "label": "Areolas",
-            "correct": false,
-            "feedback": "The areola is the darker skin around the nipple, not where milk is made."
-          },
-          {
-            "label": "Lobules",
-            "correct": false,
-            "feedback": "Lobules are groups of alveoli. The alveoli are the units that make milk."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l4-b2",
-      "title": "What's in breast milk",
-      "teach": [
-        "Breast milk is mostly water, so a breastfed baby doesn't need extra water. Lactose is the main carbohydrate, and it helps the baby absorb calcium. Fat gives about half the energy. Fat is lower in the foremilk at the start of a feed and higher in the hindmilk at the end. Whey, the main protein, forms a soft curd that is easy to digest. Milk also carries antibodies, so nursing while the mother is sick helps protect the baby.",
-        "Milk from mothers of preterm babies has more protein and energy (58–70 kcal per 100 mL). Breast milk is low in vitamin K, so all newborns get a vitamin K shot at birth. Without it, a baby can bleed too much because the blood doesn't clot properly."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Match each part of breast milk with what it does.",
-        "categories": [
-          "Lactose",
-          "Whey",
-          "Hindmilk",
-          "Antibodies"
-        ],
-        "items": [
-          {
-            "label": "Main carbohydrate. Helps calcium absorption.",
-            "category": 0,
-            "feedback": "Lactose is the dominant carbohydrate in human milk."
-          },
-          {
-            "label": "Forms a soft, easily digested curd",
-            "category": 1,
-            "feedback": "Whey protein makes a soft curd in the baby's stomach."
-          },
-          {
-            "label": "Higher-fat milk at the end of a feed",
-            "category": 2,
-            "feedback": "Hindmilk is richer in fat than foremilk."
-          },
-          {
-            "label": "Protect the baby from germs the mother meets",
-            "category": 3,
-            "feedback": "The mother makes antibodies to germs around her and passes them on in her milk."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l4-b3",
-      "title": "Latch and feeding",
-      "teach": [
-        "A good latch means the baby's mouth takes in a large part of the areola, with the nose close to the breast and breathing freely. The mother should hear swallowing, but not smacking, clicking or slurping. Those sounds suggest a poor latch, which raises the risk of sore nipples.",
-        "If a baby always nurses briefly on both breasts, they may get lots of low-fat foremilk and not enough hindmilk. That can cause gas, colic, loose stools and slow weight gain. Letting the baby finish one breast before switching, and having someone watch a feed, helps."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "A baby makes smacking and clicking sounds while nursing. What does that tell you?",
-        "options": [
-          {
-            "label": "The baby is feeding well.",
-            "correct": false,
-            "feedback": "You should hear swallowing, not smacking or clicking."
-          },
-          {
-            "label": "The baby probably isn't latched on correctly, which can lead to sore nipples.",
-            "correct": true,
-            "feedback": "Yes. These sounds point to a poor latch."
-          },
-          {
-            "label": "Nothing. Some babies are just noisy.",
-            "correct": false,
-            "feedback": "These sounds are a sign worth checking."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l4-b4",
-      "title": "The mother's diet",
-      "teach": [
-        "Drinking extra fluid doesn't raise milk supply. Mothers should drink to thirst and aim for pale yellow urine, rather than counting glasses. Mothers don't need to avoid common allergy foods unless the baby seems to react. If a baby has colic, cutting out cow's milk, eggs, peanuts, tree nuts, wheat, soy or fish has helped in studies. Only cut out foods that seem to cause problems, and replace the nutrients they provided.",
-        "Fish is good for mother and baby, but she should choose low-mercury seafood and avoid swordfish, shark and king mackerel."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "A nursing mother asks how many glasses of water she should drink each day. What's the best answer?",
-        "options": [
-          {
-            "label": "At least 10 glasses",
-            "correct": false,
-            "feedback": "Drinking extra doesn't raise milk supply, and needs vary."
-          },
-          {
-            "label": "Drink to thirst, enough to keep your urine pale yellow",
-            "correct": true,
-            "feedback": "Yes. Thirst and urine colour are better guides than a set number."
-          },
-          {
-            "label": "6–8 glasses, no more",
-            "correct": false,
-            "feedback": "There's no set number. Thirst is the guide."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l4-b5",
-      "title": "Common breastfeeding problems",
-      "teach": [
-        "Sore nipples, engorgement, plugged ducts and mastitis are all common. Mild nipple soreness in the first week is normal, but cracks or pain that lasts call for a check of the latch. Engorgement, swollen and overfull breasts, peaks around days 3–5. It can happen any time the breasts aren't emptied for a long stretch, such as missing several feeds.",
-        "Mastitis is inflammation or infection of the breast. The mother should keep nursing or pumping, because emptying the breast helps it clear. Rest, fluids, pain relief and, if it doesn't improve within 24 hours, antibiotics are used."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "A new mother misses six hours of feeds while out. What problem is she most likely to have?",
-        "options": [
-          {
-            "label": "Engorgement",
-            "correct": true,
-            "feedback": "Yes. Going a long time without emptying the breasts leads to engorgement."
-          },
-          {
-            "label": "Sore nipples",
-            "correct": false,
-            "feedback": "Sore nipples usually come from a poor latch, not from skipped feeds."
-          },
-          {
-            "label": "Jaundice",
-            "correct": false,
-            "feedback": "Jaundice is a newborn condition, not a problem for the mother."
-          }
-        ]
-      }
-    },
-    {
-      "id": "l4-b6",
-      "title": "Medications, herbs and alcohol",
-      "teach": [
-        "If a nursing mother needs a medication, the safest time to take it is usually right after the baby nurses, at the lowest dose that works. Herbs can matter too. Large doses of St. John's wort may lower prolactin, the hormone that drives milk production, and so reduce milk supply.",
-        "Alcohol passes into milk. If a nursing mother drinks, the Institute of Medicine advises no more than 0.5 g of alcohol per kg of her body weight per day. Alcohol doesn't help babies sleep; babies actually sleep less after milk with alcohol. Pumping right after drinking doesn't speed up clearance. The safer plan is to pump before going out and use that milk until the alcohol has cleared."
-      ],
-      "act": {
-        "type": "number",
-        "prompt": "A nursing mother weighs 60 kg. Using 0.5 g of alcohol per kg, what is her daily limit in grams of alcohol?",
-        "answer": 30,
-        "tolerance": 0,
-        "unit": "g",
-        "explanation": "60 × 0.5 = 30 g of alcohol, which is about two cans of beer."
-      }
-    },
-    {
-      "id": "l4-b7",
-      "title": "Newborn jaundice",
-      "teach": [
-        "Jaundice is yellowing of the skin from too much bilirubin in the blood. At least 40% of healthy full-term babies and 80% of preterm babies become visibly jaundiced. Bilirubin comes from the breakdown of red blood cells. Newborns break down a lot of extra red blood cells after birth, and their young livers can't clear bilirubin quickly.",
-        "It is usually harmless and goes away on its own, but very high levels need treatment. Feeding often helps the baby pass bilirubin in stool."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "What causes high bilirubin in newborns?",
-        "options": [
-          {
-            "label": "Breakdown of red blood cells",
-            "correct": true,
-            "feedback": "Yes. Newborns break down many red blood cells after birth, and their livers can't keep up."
-          },
-          {
-            "label": "High maternal vitamin A intake",
-            "correct": false,
-            "feedback": "Bilirubin comes from red blood cell breakdown, not vitamin A."
-          },
-          {
-            "label": "A labour lasting over 12 hours",
-            "correct": false,
-            "feedback": "Length of labour isn't the cause."
-          }
-        ]
-      }
-    }
-  ],
-  "flashcards": [
-    {
-      "front": "Hormones behind breast development at puberty",
-      "back": "The cyclic release of estrogen and progesterone."
-    },
-    {
-      "front": "Functional units of the mammary gland",
-      "back": "The alveoli."
-    },
-    {
-      "front": "Largest components of breast milk",
-      "back": "Water first, then nutrients such as lactose and fat."
-    },
-    {
-      "front": "Main carbohydrate in breast milk",
-      "back": "Lactose."
-    },
-    {
-      "front": "Protein that forms a soft curd",
-      "back": "Whey."
-    },
-    {
-      "front": "Foremilk vs. hindmilk",
-      "back": "Foremilk at the start of a feed is lower in fat. Hindmilk at the end is higher in fat."
-    },
-    {
-      "front": "Energy in preterm milk",
-      "back": "58–70 kcal per 100 mL."
-    },
-    {
-      "front": "Why newborns get vitamin K",
-      "back": "To prevent bleeding from poor blood clotting."
-    },
-    {
-      "front": "Fluids while breastfeeding",
-      "back": "Drink to thirst. Aim for pale yellow urine."
-    },
-    {
-      "front": "Safest time to take a medication",
-      "back": "Right after the baby nurses."
-    },
-    {
-      "front": "Alcohol limit while breastfeeding",
-      "back": "No more than 0.5 g per kg of body weight per day."
-    },
-    {
-      "front": "St. John's wort and breastfeeding",
-      "back": "Large doses may lower prolactin and reduce milk supply."
-    },
-    {
-      "front": "Smacking or clicking while nursing",
-      "back": "A sign of a poor latch, which can cause sore nipples."
-    },
-    {
-      "front": "Mastitis",
-      "back": "Breast inflammation or infection. Keep nursing or pumping."
-    },
-    {
-      "front": "Newborn jaundice",
-      "back": "Yellow skin from high bilirubin, which comes from red blood cell breakdown. At least 40% of term babies get it."
-    }
-  ],
-  "quiz": [
-    {
-      "q": "Which of the following is a nutritional benefit of breastfeeding?",
-      "o": [
-        "It provides optimal nutrition to the infant.",
-        "The balance of nutrients matches requirements needed for human growth.",
-        "Infants do not need additional fluids or water when breastfeeding.",
-        "The low protein content is easily tolerated.",
-        "All of the above are considered nutritional benefits."
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. Less certain: each statement describes a benefit of breast milk, but the textbook doesn't list them together, so check this one against your graded result."
-    },
-    {
-      "q": "The cyclic release of what 2 hormones governs pubertal breast development?",
-      "o": [
-        "Prolactin and oxytocin",
-        "Progesterone and estrogen",
-        "Prolactin and estrogen",
-        "Progesterone and oxytocin",
-        "Testosterone and progesterone"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. The textbook says the cyclic release of estrogen and progesterone governs pubertal breast development."
-    },
-    {
-      "q": "The functional units of the mammary gland are the:",
-      "o": [
-        "lobules.",
-        "myoepithelial cells.",
-        "alveoli.",
-        "areolas.",
-        "secretory cells."
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook names the alveoli."
-    },
-    {
-      "q": "The major component of breast milk is _________________, while the second largest component is ____________________.",
-      "o": [
-        "water, lipids",
-        "lipids, water",
-        "protein, carbohydrate",
-        "carbohydrate, protein",
-        "protein, lipids"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Water is the largest component. Of these choices, only water then lipids fits."
-    },
-    {
-      "q": "The dominant carbohydrate in human milk is _________________.",
-      "o": [
-        "galactose",
-        "glucose",
-        "lactose",
-        "sucrose",
-        "maltose"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook says lactose is the dominant carbohydrate."
-    },
-    {
-      "q": "What nutrient forms a soft, easily digestible curd in the baby’s stomach?",
-      "o": [
-        "Copper",
-        "Vitamin K",
-        "Whey",
-        "Casein",
-        "Iron"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook says whey protein forms a soft, easily digestible curd."
-    },
-    {
-      "q": "A health care professional was asked by a nursing mom, “How many glasses of water should I drink a today?” What would be an appropriate recommendation?",
-      "o": [
-        "6-8 glasses",
-        "8-10 glasses",
-        ">10 glasses",
-        "Drink enough fluids to keep your urine pale yellow."
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. The textbook advises drinking to thirst rather than a set number of glasses."
-    },
-    {
-      "q": "Use the following information for questions 8-10:\n\nA young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat would the best advice be for this woman?",
-      "o": [
-        "Allow your baby to nurse on one breast only until it is completely empty.",
-        "Allow us to evaluate you while you are nursing your baby and see what you are doing.",
-        "Stop nursing immediately and use an infant formula so your baby starts growing.",
-        "Use supplemental infant formula after each feeding because the baby is obviously not getting enough to eat.",
-        "a and b only"
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. Less certain: emptying one breast gives the baby more hindmilk, and watching a feed checks the latch. Stopping breastfeeding isn't called for. Check this one against your graded result."
-    },
-    {
-      "q": "A young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat is likely happening to this baby and causing the diarrhea?",
-      "o": [
-        "The baby is not latched on properly.",
-        "The mother is not producing enough breast milk.",
-        "The baby is getting too much foremilk and not enough hindmilk.",
-        "The baby has a poor suckle.",
-        "The baby is lactose intolerant."
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. Switching breasts early gives lots of low-fat foremilk, which can cause gas, colic and loose stools."
-    },
-    {
-      "q": "A young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nAfter looking at her diet, what changes could you suggest to help with the baby’s colic?",
-      "o": [
-        "Eliminate all fruit except canned fruit",
-        "Eliminate nuts",
-        "Eliminate dairy products",
-        "All of the above",
-        "b and c only"
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. Cow's milk, peanuts and tree nuts are among the foods linked to colic in the textbook. There's no reason to cut fruit."
-    },
-    {
-      "q": "Continuing to nurse while you are sick actually protects your baby because:",
-      "o": [
-        "you do not pass germs through breast milk.",
-        "your breast milk is full of antibodies that are passed on to your baby.",
-        "you do not contaminate bottles by handling them.",
-        "infant formulas are higher in vitamins and minerals and help boost the baby’s immune system."
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. The mother makes antibodies to the germs around her and passes them on in her milk."
-    },
-    {
-      "q": "A baby that is not given vitamin K at birth may have:",
-      "o": [
-        "excessive bleeding due to a lack of blood clotting.",
-        "decreased calcium absorption.",
-        "increased incidence of colic.",
-        "increased incidence of diarrhea",
-        "All of the above"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Vitamin K is needed for clotting. Without it, babies are at risk of vitamin K deficiency bleeding."
-    },
-    {
-      "q": "Which of the following would NOT be considered a common condition that is experienced by a woman who is breastfeeding?",
-      "o": [
-        "Sore nipples",
-        "Engorgement",
-        "Mastitis",
-        "Plugged ducts",
-        "All of the above are common problems."
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. The textbook covers all four as common problems in breastfeeding."
-    },
-    {
-      "q": "When is the safest time for a nursing mom to take a drug?",
-      "o": [
-        "In the morning",
-        "After eating a meal",
-        "After the infant nurses",
-        "Any time is safe to take a drug.",
-        "It is never safe for a nursing mom to take drugs."
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook says the safest time is usually right after the baby nurses."
-    },
-    {
-      "q": "If a 110-lb nursing woman (50 kg) wants to drink alcohol, how many cans of beer (15 g alcohol/12 oz) can this woman drink and stay within the Institute of Medicine’s alcohol recommendations?",
-      "o": [
-        "0",
-        "1",
-        "2",
-        "3"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. 50 kg × 0.5 g = 25 g of alcohol. One can is 15 g, and two would be 30 g, which is over the limit."
-    },
-    {
-      "q": "Approximately _____ of term infants will become visibly jaundiced with their serum bilirubin levels exceeding 5 to 7 mg/dL.",
-      "o": [
-        "20%",
-        "30%",
-        "40%",
-        "50%",
-        "60%"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook says at least 40% of healthy full-term babies."
-    },
-    {
-      "q": "Hyperbilirubinemia in newborns is caused by ________________________________.",
-      "o": [
-        "destruction of red blood cells",
-        "high blood lipid levels",
-        "high maternal intake of vitamin A",
-        "labor lasting over 12 hours"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Bilirubin comes from the breakdown of red blood cells."
-    },
-    {
-      "q": "The energy content of breast milk in women who deliver pre-term infants is ___________________.",
-      "o": [
-        "30-37 kcal/100 mL",
-        "40-48 kcal/100 mL",
-        "58-70 kcal/100 mL",
-        "72-120 kcal/100 mL"
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook gives 58–70 kcal per 100 mL."
-    },
-    {
-      "q": "A new mother goes to the mall shopping with her friends. She is gone longer than planned and is not able to nurse her baby until she returns 6 hours later. What is the most likely problem she will have?",
-      "o": [
-        "A breast infection",
-        "Engorgement",
-        "Plugged ducts",
-        "Sore nipples",
-        "Mastitis"
-      ],
-      "a": 1,
-      "e": "Checked answer, not from an official key. Going hours without emptying the breasts leads to engorgement."
-    },
-    {
-      "q": "A lactation consultant is observing a new mom breastfeeding and notices that the baby is making smacking and clicking sounds as she sucks. This tells her that:",
-      "o": [
-        "the baby is eating well and has a strong suckle.",
-        "the baby has a cleft palate and should be closely followed.",
-        "the baby is not latched on correctly and this may increase the risk of sore nipples.",
-        "this is just a noisy baby.",
-        "Noise is not an indicator of anything."
-      ],
-      "a": 2,
-      "e": "Checked answer, not from an official key. The textbook says you should hear swallowing, not smacking or clicking."
-    },
-    {
-      "q": "Large doses of St. John’s wort decrease prolactin levels in women. This could potentially:",
-      "o": [
-        "reduce oxytocin levels.",
-        "cause breast milk to taste like maple syrup.",
-        "cause a woman to become constipated.",
-        "reduce breast milk supply.",
-        "cause depression in some women."
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. Prolactin drives milk production, so lowering it can reduce supply."
-    },
-    {
-      "q": "Your best friend had a baby 3 months ago and is anxious to go “out on the town” with her friends. She is still breastfeeding, but would like to be able to have some drinks. What advice would you give her?",
-      "o": [
-        "It is okay to drink while nursing because it actually helps babies sleep.",
-        "It is okay to drink while nursing because it increases breast milk production.",
-        "Pump your milk immediately after drinking and it will be eliminated from your body.",
-        "Pump milk before going out and use that until the alcohol has been cleared from your system.",
-        "Drink only beer because babies tolerate it."
-      ],
-      "a": 3,
-      "e": "Checked answer, not from an official key. The textbook suggests nursing or pumping before drinking and using that milk until the alcohol has cleared."
-    },
-    {
-      "q": "You are at a nice restaurant and would like to order seafood for dinner; however, you are breastfeeding. Which of the following would have the lowest amount of mercury and be safest for you to eat?",
-      "o": [
-        "Calamari",
-        "Swordfish",
-        "Shark",
-        "Tuna",
-        "King mackerel"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Less certain: swordfish, shark and king mackerel are high in mercury and tuna is moderate, so calamari (squid) is the low-mercury choice, but the textbook doesn't name calamari. Check this one against your graded result."
-    },
-    {
-      "q": "Which of the following foods would a pediatrician recommend a nursing mother with no history of food allergies in the family restrict?",
-      "o": [
-        "Peanuts and tree nuts",
-        "Wheat",
-        "Soy",
-        "Eggs",
-        "None of the above"
-      ],
-      "a": 4,
-      "e": "Checked answer, not from an official key. Less certain: the textbook advises cutting out only foods that seem to cause problems, so with no family history, no restriction is needed. Check this one against your graded result."
-    },
-    {
-      "q": "A woman with mastitis should continue to nurse her baby.",
-      "o": [
-        "True",
-        "False"
-      ],
-      "a": 0,
-      "e": "Checked answer, not from an official key. Emptying the breast by nursing or pumping helps clear mastitis."
-    }
-  ]
+ "lesson": 4,
+ "book": "Nutrition Through the Life Cycle (Brown), Chapter 6: Nutrition During Lactation and Chapter 7: Nutrition During Lactation: Conditions and Interventions",
+ "kicker": "Lesson 4 of your course, built from Chapters 6 and 7 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "l4-b1",
+   "title": "How the breast makes milk",
+   "teach": [
+    "During puberty, the cyclic release of estrogen and progesterone develops the breasts. The working units of the mammary gland are the alveoli: clusters of milk-secreting cells around a small duct. The ducts branch like a tree toward the nipple. Muscle-like cells around the alveoli contract under the hormone oxytocin to push milk out (the letdown).",
+    "Breast size depends mostly on fat and doesn't decide how much milk a woman can make. Milk supply works on supply and demand: the more fully the breast is emptied, the more milk it makes. If a lot of milk is left behind, production slows."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What are the functional units of the mammary gland?",
+    "options": [
+     {
+      "label": "Alveoli",
+      "correct": true,
+      "feedback": "Yes. Each alveolus is a cluster of cells that secrete milk."
+     },
+     {
+      "label": "Areolas",
+      "correct": false,
+      "feedback": "The areola is the darker skin around the nipple, not where milk is made."
+     },
+     {
+      "label": "Lobules",
+      "correct": false,
+      "feedback": "Lobules are groups of alveoli. The alveoli are the units that make milk."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l4-b2",
+   "title": "What's in breast milk",
+   "teach": [
+    "Breast milk is mostly water, so a breastfed baby doesn't need extra water. Lactose is the main carbohydrate, and it helps the baby absorb calcium. Fat gives about half the energy. Fat is lower in the foremilk at the start of a feed and higher in the hindmilk at the end. Whey, the main protein, forms a soft curd that is easy to digest. Milk also carries antibodies, so nursing while the mother is sick helps protect the baby.",
+    "Milk from mothers of preterm babies has more protein and energy (58–70 kcal per 100 mL). Breast milk is low in vitamin K, so all newborns get a vitamin K shot at birth. Without it, a baby can bleed too much because the blood doesn't clot properly."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each part of breast milk with what it does.",
+    "categories": [
+     "Lactose",
+     "Whey",
+     "Hindmilk",
+     "Antibodies"
+    ],
+    "items": [
+     {
+      "label": "Main carbohydrate. Helps calcium absorption.",
+      "category": 0,
+      "feedback": "Lactose is the dominant carbohydrate in human milk."
+     },
+     {
+      "label": "Forms a soft, easily digested curd",
+      "category": 1,
+      "feedback": "Whey protein makes a soft curd in the baby's stomach."
+     },
+     {
+      "label": "Higher-fat milk at the end of a feed",
+      "category": 2,
+      "feedback": "Hindmilk is richer in fat than foremilk."
+     },
+     {
+      "label": "Protect the baby from germs the mother meets",
+      "category": 3,
+      "feedback": "The mother makes antibodies to germs around her and passes them on in her milk."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l4-b3",
+   "title": "Latch and feeding",
+   "teach": [
+    "A good latch means the baby's mouth takes in a large part of the areola, with the nose close to the breast and breathing freely. The mother should hear swallowing, but not smacking, clicking or slurping. Those sounds suggest a poor latch, which raises the risk of sore nipples.",
+    "If a baby always nurses briefly on both breasts, they may get lots of low-fat foremilk and not enough hindmilk. That can cause gas, colic, loose stools and slow weight gain. Letting the baby finish one breast before switching, and having someone watch a feed, helps."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "A baby makes smacking and clicking sounds while nursing. What does that tell you?",
+    "options": [
+     {
+      "label": "The baby is feeding well.",
+      "correct": false,
+      "feedback": "You should hear swallowing, not smacking or clicking."
+     },
+     {
+      "label": "The baby probably isn't latched on correctly, which can lead to sore nipples.",
+      "correct": true,
+      "feedback": "Yes. These sounds point to a poor latch."
+     },
+     {
+      "label": "Nothing. Some babies are just noisy.",
+      "correct": false,
+      "feedback": "These sounds are a sign worth checking."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l4-b4",
+   "title": "The mother's diet",
+   "teach": [
+    "Drinking extra fluid doesn't raise milk supply. Mothers should drink to thirst and aim for pale yellow urine, rather than counting glasses. Mothers don't need to avoid common allergy foods unless the baby seems to react. If a baby has colic, cutting out cow's milk, eggs, peanuts, tree nuts, wheat, soy or fish has helped in studies. Only cut out foods that seem to cause problems, and replace the nutrients they provided.",
+    "Fish is good for mother and baby, but she should choose low-mercury seafood and avoid swordfish, shark and king mackerel."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "A nursing mother asks how many glasses of water she should drink each day. What's the best answer?",
+    "options": [
+     {
+      "label": "At least 10 glasses",
+      "correct": false,
+      "feedback": "Drinking extra doesn't raise milk supply, and needs vary."
+     },
+     {
+      "label": "Drink to thirst, enough to keep your urine pale yellow",
+      "correct": true,
+      "feedback": "Yes. Thirst and urine colour are better guides than a set number."
+     },
+     {
+      "label": "6–8 glasses, no more",
+      "correct": false,
+      "feedback": "There's no set number. Thirst is the guide."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l4-b5",
+   "title": "Common breastfeeding problems",
+   "teach": [
+    "Sore nipples, engorgement, plugged ducts and mastitis are all common. Mild nipple soreness in the first week is normal, but cracks or pain that lasts call for a check of the latch. Engorgement, swollen and overfull breasts, peaks around days 3–5. It can happen any time the breasts aren't emptied for a long stretch, such as missing several feeds.",
+    "Mastitis is inflammation or infection of the breast. The mother should keep nursing or pumping, because emptying the breast helps it clear. Rest, fluids, pain relief and, if it doesn't improve within 24 hours, antibiotics are used."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "A new mother misses six hours of feeds while out. What problem is she most likely to have?",
+    "options": [
+     {
+      "label": "Engorgement",
+      "correct": true,
+      "feedback": "Yes. Going a long time without emptying the breasts leads to engorgement."
+     },
+     {
+      "label": "Sore nipples",
+      "correct": false,
+      "feedback": "Sore nipples usually come from a poor latch, not from skipped feeds."
+     },
+     {
+      "label": "Jaundice",
+      "correct": false,
+      "feedback": "Jaundice is a newborn condition, not a problem for the mother."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l4-b6",
+   "title": "Medications, herbs and alcohol",
+   "teach": [
+    "If a nursing mother needs a medication, the safest time to take it is usually right after the baby nurses, at the lowest dose that works. Herbs can matter too. Large doses of St. John's wort may lower prolactin, the hormone that drives milk production, and so reduce milk supply.",
+    "Alcohol passes into milk. If a nursing mother drinks, the Institute of Medicine advises no more than 0.5 g of alcohol per kg of her body weight per day. Alcohol doesn't help babies sleep; babies actually sleep less after milk with alcohol. Pumping right after drinking doesn't speed up clearance. The safer plan is to pump before going out and use that milk until the alcohol has cleared."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "A nursing mother weighs 60 kg. Using 0.5 g of alcohol per kg, what is her daily limit in grams of alcohol?",
+    "answer": 30,
+    "tolerance": 0,
+    "unit": "g",
+    "explanation": "60 × 0.5 = 30 g of alcohol, which is about two cans of beer."
+   }
+  },
+  {
+   "id": "l4-b7",
+   "title": "Newborn jaundice",
+   "teach": [
+    "Jaundice is yellowing of the skin from too much bilirubin in the blood. At least 40% of healthy full-term babies and 80% of preterm babies become visibly jaundiced. Bilirubin comes from the breakdown of red blood cells. Newborns break down a lot of extra red blood cells after birth, and their young livers can't clear bilirubin quickly.",
+    "It is usually harmless and goes away on its own, but very high levels need treatment. Feeding often helps the baby pass bilirubin in stool."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What causes high bilirubin in newborns?",
+    "options": [
+     {
+      "label": "Breakdown of red blood cells",
+      "correct": true,
+      "feedback": "Yes. Newborns break down many red blood cells after birth, and their livers can't keep up."
+     },
+     {
+      "label": "High maternal vitamin A intake",
+      "correct": false,
+      "feedback": "Bilirubin comes from red blood cell breakdown, not vitamin A."
+     },
+     {
+      "label": "A labour lasting over 12 hours",
+      "correct": false,
+      "feedback": "Length of labour isn't the cause."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Hormones behind breast development at puberty",
+   "back": "The cyclic release of estrogen and progesterone."
+  },
+  {
+   "front": "Functional units of the mammary gland",
+   "back": "The alveoli."
+  },
+  {
+   "front": "Largest components of breast milk",
+   "back": "Water first, then nutrients such as lactose and fat."
+  },
+  {
+   "front": "Main carbohydrate in breast milk",
+   "back": "Lactose."
+  },
+  {
+   "front": "Protein that forms a soft curd",
+   "back": "Whey."
+  },
+  {
+   "front": "Foremilk vs. hindmilk",
+   "back": "Foremilk at the start of a feed is lower in fat. Hindmilk at the end is higher in fat."
+  },
+  {
+   "front": "Energy in preterm milk",
+   "back": "58–70 kcal per 100 mL."
+  },
+  {
+   "front": "Why newborns get vitamin K",
+   "back": "To prevent bleeding from poor blood clotting."
+  },
+  {
+   "front": "Fluids while breastfeeding",
+   "back": "Drink to thirst. Aim for pale yellow urine."
+  },
+  {
+   "front": "Safest time to take a medication",
+   "back": "Right after the baby nurses."
+  },
+  {
+   "front": "Alcohol limit while breastfeeding",
+   "back": "No more than 0.5 g per kg of body weight per day."
+  },
+  {
+   "front": "St. John's wort and breastfeeding",
+   "back": "Large doses may lower prolactin and reduce milk supply."
+  },
+  {
+   "front": "Smacking or clicking while nursing",
+   "back": "A sign of a poor latch, which can cause sore nipples."
+  },
+  {
+   "front": "Mastitis",
+   "back": "Breast inflammation or infection. Keep nursing or pumping."
+  },
+  {
+   "front": "Newborn jaundice",
+   "back": "Yellow skin from high bilirubin, which comes from red blood cell breakdown. At least 40% of term babies get it."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Which of the following is a nutritional benefit of breastfeeding?",
+   "o": [
+    "It provides optimal nutrition to the infant.",
+    "The balance of nutrients matches requirements needed for human growth.",
+    "Infants do not need additional fluids or water when breastfeeding.",
+    "The low protein content is easily tolerated.",
+    "All of the above are considered nutritional benefits."
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. Breast milk’s lower protein and mineral load suits a newborn’s immature kidneys, and the AAP and WHO say exclusively breastfed babies don’t need extra water. Each statement is a recognized nutritional benefit, so \"All of the above\" is correct. Sources: textbook chapter on lactation; WHO and AAP breastfeeding guidance."
+  },
+  {
+   "q": "The cyclic release of what 2 hormones governs pubertal breast development?",
+   "o": [
+    "Prolactin and oxytocin",
+    "Progesterone and estrogen",
+    "Prolactin and estrogen",
+    "Progesterone and oxytocin",
+    "Testosterone and progesterone"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The textbook says the cyclic release of estrogen and progesterone governs pubertal breast development."
+  },
+  {
+   "q": "The functional units of the mammary gland are the:",
+   "o": [
+    "lobules.",
+    "myoepithelial cells.",
+    "alveoli.",
+    "areolas.",
+    "secretory cells."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook names the alveoli."
+  },
+  {
+   "q": "The major component of breast milk is _________________, while the second largest component is ____________________.",
+   "o": [
+    "water, lipids",
+    "lipids, water",
+    "protein, carbohydrate",
+    "carbohydrate, protein",
+    "protein, lipids"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Water is the largest component. Of these choices, only water then lipids fits."
+  },
+  {
+   "q": "The dominant carbohydrate in human milk is _________________.",
+   "o": [
+    "galactose",
+    "glucose",
+    "lactose",
+    "sucrose",
+    "maltose"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook says lactose is the dominant carbohydrate."
+  },
+  {
+   "q": "What nutrient forms a soft, easily digestible curd in the baby’s stomach?",
+   "o": [
+    "Copper",
+    "Vitamin K",
+    "Whey",
+    "Casein",
+    "Iron"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook says whey protein forms a soft, easily digestible curd."
+  },
+  {
+   "q": "A health care professional was asked by a nursing mom, “How many glasses of water should I drink a today?” What would be an appropriate recommendation?",
+   "o": [
+    "6-8 glasses",
+    "8-10 glasses",
+    ">10 glasses",
+    "Drink enough fluids to keep your urine pale yellow."
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The textbook advises drinking to thirst rather than a set number of glasses."
+  },
+  {
+   "q": "Use the following information for questions 8-10:\n\nA young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat would the best advice be for this woman?",
+   "o": [
+    "Allow your baby to nurse on one breast only until it is completely empty.",
+    "Allow us to evaluate you while you are nursing your baby and see what you are doing.",
+    "Stop nursing immediately and use an infant formula so your baby starts growing.",
+    "Use supplemental infant formula after each feeding because the baby is obviously not getting enough to eat.",
+    "a and b only"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. Letting the baby finish one breast before switching gives more of the higher-fat hindmilk, and having a lactation consultant watch a feed checks latch and technique. Nothing in her case calls for stopping breastfeeding. Sources: textbook chapter on lactation; La Leche League and AAP guidance on feeding technique."
+  },
+  {
+   "q": "A young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nWhat is likely happening to this baby and causing the diarrhea?",
+   "o": [
+    "The baby is not latched on properly.",
+    "The mother is not producing enough breast milk.",
+    "The baby is getting too much foremilk and not enough hindmilk.",
+    "The baby has a poor suckle.",
+    "The baby is lactose intolerant."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Switching breasts early gives lots of low-fat foremilk, which can cause gas, colic and loose stools."
+  },
+  {
+   "q": "A young woman comes into your office for a lactation consultation complaining that her 1-month-old baby is colicky and slow to gain weight. Her baby requires 6 to 7 diaper changes each day and suffers from diarrhea. She tells you she allows the baby to nurse equally on each breast so that she does not feel \"overfull\"; she is desperate for help and asks your advice on what to do. A 24-hour diet history provides the following information about her eating habits.\nBreakfast: cereal, milk, banana, and walnut pieces; sometimes she has eggs\nLunch: peanut butter sandwich, salad, and grapes with a glass of milk\nDinner: fish or chicken, vegetables, potato or rice, applesauce, and milk\nSnacks: change daily, but she likes trail mix because it is easy to eat when nursing\n\nAfter looking at her diet, what changes could you suggest to help with the baby’s colic?",
+   "o": [
+    "Eliminate all fruit except canned fruit",
+    "Eliminate nuts",
+    "Eliminate dairy products",
+    "All of the above",
+    "b and c only"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. Cow's milk, peanuts and tree nuts are among the foods linked to colic in the textbook. There's no reason to cut fruit."
+  },
+  {
+   "q": "Continuing to nurse while you are sick actually protects your baby because:",
+   "o": [
+    "you do not pass germs through breast milk.",
+    "your breast milk is full of antibodies that are passed on to your baby.",
+    "you do not contaminate bottles by handling them.",
+    "infant formulas are higher in vitamins and minerals and help boost the baby’s immune system."
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The mother makes antibodies to the germs around her and passes them on in her milk."
+  },
+  {
+   "q": "A baby that is not given vitamin K at birth may have:",
+   "o": [
+    "excessive bleeding due to a lack of blood clotting.",
+    "decreased calcium absorption.",
+    "increased incidence of colic.",
+    "increased incidence of diarrhea",
+    "All of the above"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Vitamin K is needed for clotting. Without it, babies are at risk of vitamin K deficiency bleeding."
+  },
+  {
+   "q": "Which of the following would NOT be considered a common condition that is experienced by a woman who is breastfeeding?",
+   "o": [
+    "Sore nipples",
+    "Engorgement",
+    "Mastitis",
+    "Plugged ducts",
+    "All of the above are common problems."
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. The textbook covers all four as common problems in breastfeeding."
+  },
+  {
+   "q": "When is the safest time for a nursing mom to take a drug?",
+   "o": [
+    "In the morning",
+    "After eating a meal",
+    "After the infant nurses",
+    "Any time is safe to take a drug.",
+    "It is never safe for a nursing mom to take drugs."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook says the safest time is usually right after the baby nurses."
+  },
+  {
+   "q": "If a 110-lb nursing woman (50 kg) wants to drink alcohol, how many cans of beer (15 g alcohol/12 oz) can this woman drink and stay within the Institute of Medicine’s alcohol recommendations?",
+   "o": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. 50 kg × 0.5 g = 25 g of alcohol. One can is 15 g, and two would be 30 g, which is over the limit."
+  },
+  {
+   "q": "Approximately _____ of term infants will become visibly jaundiced with their serum bilirubin levels exceeding 5 to 7 mg/dL.",
+   "o": [
+    "20%",
+    "30%",
+    "40%",
+    "50%",
+    "60%"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook says at least 40% of healthy full-term babies."
+  },
+  {
+   "q": "Hyperbilirubinemia in newborns is caused by ________________________________.",
+   "o": [
+    "destruction of red blood cells",
+    "high blood lipid levels",
+    "high maternal intake of vitamin A",
+    "labor lasting over 12 hours"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Bilirubin comes from the breakdown of red blood cells."
+  },
+  {
+   "q": "The energy content of breast milk in women who deliver pre-term infants is ___________________.",
+   "o": [
+    "30-37 kcal/100 mL",
+    "40-48 kcal/100 mL",
+    "58-70 kcal/100 mL",
+    "72-120 kcal/100 mL"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook gives 58–70 kcal per 100 mL."
+  },
+  {
+   "q": "A new mother goes to the mall shopping with her friends. She is gone longer than planned and is not able to nurse her baby until she returns 6 hours later. What is the most likely problem she will have?",
+   "o": [
+    "A breast infection",
+    "Engorgement",
+    "Plugged ducts",
+    "Sore nipples",
+    "Mastitis"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Going hours without emptying the breasts leads to engorgement."
+  },
+  {
+   "q": "A lactation consultant is observing a new mom breastfeeding and notices that the baby is making smacking and clicking sounds as she sucks. This tells her that:",
+   "o": [
+    "the baby is eating well and has a strong suckle.",
+    "the baby has a cleft palate and should be closely followed.",
+    "the baby is not latched on correctly and this may increase the risk of sore nipples.",
+    "this is just a noisy baby.",
+    "Noise is not an indicator of anything."
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook says you should hear swallowing, not smacking or clicking."
+  },
+  {
+   "q": "Large doses of St. John’s wort decrease prolactin levels in women. This could potentially:",
+   "o": [
+    "reduce oxytocin levels.",
+    "cause breast milk to taste like maple syrup.",
+    "cause a woman to become constipated.",
+    "reduce breast milk supply.",
+    "cause depression in some women."
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Prolactin drives milk production, so lowering it can reduce supply."
+  },
+  {
+   "q": "Your best friend had a baby 3 months ago and is anxious to go “out on the town” with her friends. She is still breastfeeding, but would like to be able to have some drinks. What advice would you give her?",
+   "o": [
+    "It is okay to drink while nursing because it actually helps babies sleep.",
+    "It is okay to drink while nursing because it increases breast milk production.",
+    "Pump your milk immediately after drinking and it will be eliminated from your body.",
+    "Pump milk before going out and use that until the alcohol has been cleared from your system.",
+    "Drink only beer because babies tolerate it."
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The textbook suggests nursing or pumping before drinking and using that milk until the alcohol has cleared."
+  },
+  {
+   "q": "You are at a nice restaurant and would like to order seafood for dinner; however, you are breastfeeding. Which of the following would have the lowest amount of mercury and be safest for you to eat?",
+   "o": [
+    "Calamari",
+    "Swordfish",
+    "Shark",
+    "Tuna",
+    "King mackerel"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. The FDA and EPA advice on eating fish lists squid (calamari) as a \"Best Choice\" for low mercury. Swordfish, shark and king mackerel are on the \"Choices to Avoid\" list, and tuna steak is higher than squid. Source: FDA/EPA Advice about Eating Fish."
+  },
+  {
+   "q": "Which of the following foods would a pediatrician recommend a nursing mother with no history of food allergies in the family restrict?",
+   "o": [
+    "Peanuts and tree nuts",
+    "Wheat",
+    "Soy",
+    "Eggs",
+    "None of the above"
+   ],
+   "a": 4,
+   "e": "Checked answer, not from an official key. The American Academy of Pediatrics’ 2019 clinical report found no evidence that cutting foods from a nursing mother’s diet prevents allergies. With no family history, there is nothing to restrict. Source: AAP clinical report, Greer et al., Pediatrics 2019."
+  },
+  {
+   "q": "A woman with mastitis should continue to nurse her baby.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Emptying the breast by nursing or pumping helps clear mastitis."
+  }
+ ]
 }
