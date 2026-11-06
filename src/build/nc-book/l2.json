@@ -1,0 +1,509 @@
+{
+  "lesson": 2,
+  "book": "Nutrition Through the Life Cycle (Brown), Chapter 2: Preconception Nutrition and Chapter 3: Preconception Nutrition Conditions and Interventions",
+  "kicker": "Lesson 2 of your course, built from Chapters 2 and 3 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l2-b1",
+      "title": "Getting pregnant isn't a sure thing",
+      "teach": [
+        "Many conceptions never become a pregnancy anyone knows about. About 30–50% are lost in the first six weeks, and another 9% end in miscarriage in the first 20 weeks. The most common known cause of miscarriage is a severe defect in the fetus. Others include infection in the mother, problems with the shape of the uterus, hormone or immune problems, and random events.",
+        "Couples are called subfertile when the woman has had several miscarriages, the man has sperm problems such as a low count or poorly moving sperm, or the woman ovulates only now and then. About 18% of married couples in the U.S. are subfertile. Nutrition is one of the things that can help or hurt fertility."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these would be described as subfertile?",
+        "options": [
+          {
+            "label": "A woman who ovulates only a few times a year",
+            "correct": true,
+            "feedback": "Yes. Ovulating infrequently is one of the signs of subfertility."
+          },
+          {
+            "label": "A woman who has just reached menopause",
+            "correct": false,
+            "feedback": "Menopause ends fertility. Subfertility means reduced, not absent, fertility."
+          },
+          {
+            "label": "A couple who conceived in their third month of trying",
+            "correct": false,
+            "feedback": "Subfertility is usually defined as more than 12 months to conceive, or repeated losses."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l2-b2",
+      "title": "Hormones and the menstrual cycle",
+      "teach": [
+        "A typical cycle is about 28 days and starts on the first day of bleeding. The first half is the follicular phase, and the last 14 days are the luteal phase. Early in the cycle, the pituitary gland releases follicle-stimulating hormone (FSH) and luteinizing hormone (LH). FSH helps eggs mature in the ovary.",
+        "Just before ovulation, usually on day 14, FSH and LH peak. The surge of LH releases the egg. If there is no pregnancy, the uterus makes prostaglandins, which make it contract and shed its lining. Prostaglandins are behind cramps and other side effects of menstruation."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each hormone or substance with what it does.",
+        "categories": [
+          "FSH",
+          "LH",
+          "Prostaglandins"
+        ],
+        "items": [
+          {
+            "label": "Helps eggs mature in the ovary",
+            "category": 0,
+            "feedback": "Follicle-stimulating hormone drives follicle growth."
+          },
+          {
+            "label": "Its surge on about day 14 triggers ovulation",
+            "category": 1,
+            "feedback": "The LH surge releases the egg."
+          },
+          {
+            "label": "Makes the uterus contract, causing cramps",
+            "category": 2,
+            "feedback": "Prostaglandins from the uterus cause menstrual cramps."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l2-b3",
+      "title": "Body fat and fertility",
+      "teach": [
+        "Both too much and too little body fat can lower fertility in women and men. Fat cells make estrogen, testosterone and leptin, and these hormones affect egg development, ovulation and sperm. In people with obesity, losing body fat improves hormone levels, oxidative stress, inflammation and conception rates.",
+        "In normal-weight women, losing more than about 10–15% of usual weight lowers estrogen, LH and FSH. Periods can stop, ovulation can stop, and the luteal phase can become short or disappear. This is called functional hypothalamic amenorrhea, and hormone levels usually recover once weight is back to within 95% of before. Being underweight in pregnancy raises the risk of complications for the mother and of small, early babies. Young female athletes and dancers often start their periods 2–4 years later than average."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which hormone is NOT made by fat cells?",
+        "options": [
+          {
+            "label": "Estrogen",
+            "correct": false,
+            "feedback": "Fat cells do make estrogen."
+          },
+          {
+            "label": "Leptin",
+            "correct": false,
+            "feedback": "Leptin is made by fat cells."
+          },
+          {
+            "label": "Insulin",
+            "correct": true,
+            "feedback": "Right. Insulin comes from the pancreas. Fat cells make estrogen, testosterone and leptin."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l2-b4",
+      "title": "Folate and iron before pregnancy",
+      "teach": [
+        "All women who could become pregnant are advised to get 400 mcg of folic acid a day from fortified foods or a supplement. Good folate status around conception lowers the risk of neural tube defects such as spina bifida. One serving of a breakfast cereal fortified with 400 mcg of folic acid covers it. Gluten-free grain products may not be fortified, so check the label.",
+        "Iron status before pregnancy matters too. Low iron stores going into pregnancy are linked to poorer outcomes, and they are hard to build up once pregnancy starts."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "How much folic acid a day is recommended for every woman who could become pregnant?",
+        "options": [
+          {
+            "label": "40 mcg",
+            "correct": false,
+            "feedback": "That's ten times too little."
+          },
+          {
+            "label": "400 mcg",
+            "correct": true,
+            "feedback": "Yes, 400 micrograms a day from fortified foods or a supplement."
+          },
+          {
+            "label": "400 mg",
+            "correct": false,
+            "feedback": "Watch the units. The amount is 400 micrograms (mcg), not milligrams."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l2-b5",
+      "title": "What can throw fertility off",
+      "teach": [
+        "Conditions that affect fertility usually work through one of four routes. They change the hormones that control ovulation, change the presence or length of the luteal phase, reduce sperm production, or affect the tubes that eggs and sperm must travel through. An infection that scars the tubes is an example of the last one.",
+        "Hormonal birth control can also have nutrition side effects. Combination pills tend to lower HDL cholesterol and raise LDL cholesterol, triglycerides, blood glucose and insulin a little."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these is NOT one of the ways hormone changes affect fertility, according to the chapter?",
+        "options": [
+          {
+            "label": "A short or missing luteal phase",
+            "correct": false,
+            "feedback": "The textbook lists this as one of the effects."
+          },
+          {
+            "label": "Lower sperm production",
+            "correct": false,
+            "feedback": "Reduced sperm production is one of the routes."
+          },
+          {
+            "label": "No follicular phase",
+            "correct": true,
+            "feedback": "Right. The chapter talks about the luteal phase, ovulation, sperm and the passageways, not losing the follicular phase."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l2-b6",
+      "title": "Central body fat and metabolic syndrome",
+      "teach": [
+        "Fat stored deep in the abdomen is linked to insulin resistance, high insulin, inflammation, oxidative stress and metabolic syndrome. In women, high insulin leads the ovaries to make more testosterone, which disrupts egg development. Polycystic ovary syndrome (PCOS) often comes with high abdominal fat, even in normal-weight women.",
+        "Metabolic syndrome is a cluster of risk factors, not one disease. It is diagnosed when three of these five are present: waist over 40 inches in men or 35 inches in women, triglycerides of 150 mg/dL or more, HDL cholesterol under 40 mg/dL in men or 50 mg/dL in women, blood pressure of 130/85 or more, and fasting blood glucose of 100 mg/dL or more."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A woman has a 37-inch waist, triglycerides of 160 mg/dL, HDL of 55 mg/dL, blood pressure of 118/76 and fasting glucose of 104 mg/dL. How many of the five criteria does she meet?",
+        "answer": 3,
+        "tolerance": 0,
+        "unit": "criteria",
+        "explanation": "Waist (over 35), triglycerides (150 or more) and fasting glucose (100 or more) count. Her HDL and blood pressure are fine. Three criteria means she would be diagnosed with metabolic syndrome."
+      }
+    },
+    {
+      "id": "l2-b7",
+      "title": "Diabetes and PKU before pregnancy",
+      "teach": [
+        "High blood glucose in the first two months of pregnancy is teratogenic: it raises the risk of birth defects two- to three-fold and also raises the risk of miscarriage. Good glucose control before conception helps. Low-glycemic-index foods and plenty of fibre, about 14 g per 1,000 Calories, help keep blood glucose steady.",
+        "Phenylketonuria (PKU) is an inherited condition in which the body can't break down the amino acid phenylalanine. High phenylalanine early in pregnancy harms the baby's brain development and raises the risk of heart defects. Untreated, there is a 92% chance of intellectual disability and a 73% chance of an abnormally small head (microcephaly). That's why the PKU diet needs to be under control before pregnancy."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "Using 14 g of fibre per 1,000 Calories, how much fibre should someone eating 2,000 Calories a day aim for?",
+        "answer": 28,
+        "tolerance": 0,
+        "unit": "g",
+        "explanation": "14 g × 2 = 28 g of fibre a day."
+      }
+    },
+    {
+      "id": "l2-b8",
+      "title": "PMS and PMDD",
+      "teach": [
+        "Premenstrual syndrome (PMS) brings physical and emotional changes that start in the luteal phase and go away within two days after bleeding starts. It affects about 20–40% of women who menstruate.",
+        "Premenstrual dysphoric disorder (PMDD) is a severe form of PMS that affects about 5% of women who menstruate. It brings marked mood swings, anxiety, irritability, low mood, strained relationships and physical symptoms such as breast tenderness, headaches and joint or muscle pain. It seems to come from extra sensitivity to normal hormone changes."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these is part of PMDD?",
+        "options": [
+          {
+            "label": "Mood swings only",
+            "correct": false,
+            "feedback": "Mood swings are part of it, but so are other symptoms."
+          },
+          {
+            "label": "Physical symptoms only",
+            "correct": false,
+            "feedback": "PMDD includes emotional symptoms as well."
+          },
+          {
+            "label": "Mood swings, irritability, low mood and physical symptoms",
+            "correct": true,
+            "feedback": "Yes. PMDD includes all of these."
+          }
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Miscarriage rate in the first 20 weeks",
+      "back": "About 9% of pregnancies."
+    },
+    {
+      "front": "Most common known cause of miscarriage",
+      "back": "A severe defect in the fetus."
+    },
+    {
+      "front": "Subfertile",
+      "back": "Women with multiple miscarriages, men with sperm problems, or women who ovulate infrequently."
+    },
+    {
+      "front": "Hormones released by the pituitary in the follicular phase",
+      "back": "Follicle-stimulating hormone (FSH) and luteinizing hormone (LH)."
+    },
+    {
+      "front": "When does LH peak in a 28-day cycle?",
+      "back": "Around day 14, just before ovulation."
+    },
+    {
+      "front": "Cause of menstrual cramps",
+      "back": "Prostaglandins made by the uterus."
+    },
+    {
+      "front": "Hormones made by fat cells",
+      "back": "Estrogen, testosterone and leptin."
+    },
+    {
+      "front": "Functional hypothalamic amenorrhea",
+      "back": "Loss of periods after losing more than about 10–15% of usual weight."
+    },
+    {
+      "front": "Delay in first period for young athletes",
+      "back": "Often 2–4 years."
+    },
+    {
+      "front": "Folic acid before pregnancy",
+      "back": "400 mcg a day for all women who could become pregnant."
+    },
+    {
+      "front": "Metabolic syndrome",
+      "back": "Three of five: large waist, high triglycerides, low HDL, high blood pressure, high fasting glucose."
+    },
+    {
+      "front": "High blood glucose early in pregnancy",
+      "back": "Teratogenic. Two- to three-fold higher risk of birth defects."
+    },
+    {
+      "front": "Fibre for blood glucose control",
+      "back": "About 14 g per 1,000 Calories."
+    },
+    {
+      "front": "Untreated PKU in pregnancy",
+      "back": "Raises the risk of heart defects, microcephaly and intellectual disability in the baby."
+    },
+    {
+      "front": "PMDD",
+      "back": "Severe PMS with mood swings, irritability, low mood, anxiety and physical symptoms."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What is the rate of miscarriages in the first 20 weeks of pregnancy?",
+      "o": [
+        "6%",
+        "7%",
+        "8%",
+        "9%"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook says 9% are lost to miscarriage in the first 20 weeks."
+    },
+    {
+      "q": "The most common cause of miscarriage for women is:",
+      "o": [
+        "structural abnormalities in the uterus.",
+        "the presence of a severe defect in the fetus.",
+        "maternal infection.",
+        "endocrine disorders.",
+        "unknown random events."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The textbook names a severe defect in the fetus as the most common known cause."
+    },
+    {
+      "q": "The two hormones secreted by the pituitary gland during the FOLLICULAR phase of a woman’s cycle are:",
+      "o": [
+        "follicle-stimulating hormone and progesterone.",
+        "progesterone and estrogen.",
+        "follicle-stimulating hormone and luteinizing hormone.",
+        "luteinizing hormone and progesterone.",
+        "luteinizing hormone and estrogen."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Early in the cycle the pituitary releases FSH and LH."
+    },
+    {
+      "q": "Fat cells produce all of the following hormones that may interfere with reproductive processes EXCEPT:",
+      "o": [
+        "estrogen.",
+        "testosterone.",
+        "leptin.",
+        "insulin.",
+        "Fat cells do not produce any of these hormones."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Fat cells make estrogen, testosterone and leptin. Insulin comes from the pancreas."
+    },
+    {
+      "q": "Loss of body fat in obese men and women is related to:",
+      "o": [
+        "improved hormone levels.",
+        "reduced oxidative stress.",
+        "improved conception rates.",
+        "All of the above",
+        "a and b only"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook links losing body fat to better hormone levels, less oxidative stress and better conception rates."
+    },
+    {
+      "q": "Women who experience multiple miscarriages, men who have sperm abnormalities, and women that ovulate infrequently may be classified as:",
+      "o": [
+        "fertile.",
+        "infertile.",
+        "subfertile.",
+        "menopausal.",
+        "infecund."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The textbook calls these people subfertile."
+    },
+    {
+      "q": "The recommended daily intake of folic acid for ALL women who may become pregnant is:",
+      "o": [
+        "40 mcg.",
+        "40 mg.",
+        "400 mcg.",
+        "400 mg.",
+        "400 g."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. 400 micrograms a day."
+    },
+    {
+      "q": "The primary effect(s) of being underweight on reproduction in women is/are:",
+      "o": [
+        "high likelihood of maternal complications.",
+        "the birth of small and early infants.",
+        "spina bifida or other NTDs.",
+        "All of the above",
+        "Both a and b"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Being underweight raises the risk of complications for the mother and of small, early babies. Neural tube defects are linked to low folate, not low weight."
+    },
+    {
+      "q": "Cramps and other side effects of menstruation can be traced back to the production of _______________________________ by the uterus.",
+      "o": [
+        "progesterone",
+        "estrogen",
+        "prostaglandins",
+        "pituitary hormones",
+        "both a and b"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Prostaglandins make the uterus contract."
+    },
+    {
+      "q": "When hormones are altered in the body, many changes take place that affect fertility; which of the following would NOT be one of those changes?",
+      "o": [
+        "Change in length or presence of the luteal phase",
+        "A decrease in the production of sperm",
+        "Alterations in the passageways that ova and sperm travel",
+        "Absence of the follicular phase",
+        "All of the above would be changes that occur."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook lists ovulation, the luteal phase, sperm production and the passageways, but not the follicular phase."
+    },
+    {
+      "q": "Young female athletes often experience a delay in menarche of approximately what duration?",
+      "o": [
+        "1-2 years",
+        "2-4 years",
+        "No delay in menarche",
+        "6 mo-1 year",
+        "None of the above"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The textbook says menarche is often delayed by 2–4 years."
+    },
+    {
+      "q": "In a “typical” 28-day cycle, when would levels of luteinizing hormone most likely be the highest?",
+      "o": [
+        "Day 1",
+        "Day 7",
+        "Day 10",
+        "Day 14",
+        "Day 28"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. LH peaks just before ovulation, usually on day 14."
+    },
+    {
+      "q": "Premenstrual dysphoric disorder (PMDD) is characterized by:",
+      "o": [
+        "mood swings.",
+        "irritability.",
+        "depressed mood.",
+        "physical symptoms.",
+        "All of the above"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. PMDD includes all of these."
+    },
+    {
+      "q": "Untreated phenylketonuria in pregnant women can lead to:",
+      "o": [
+        "increased risk of heart defects in the infant.",
+        "infants with microcephaly.",
+        "mental retardation in their children.",
+        "All of the above",
+        "a and b only"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook names heart defects, microcephaly and intellectual disability."
+    },
+    {
+      "q": "______________________________ during the first 2 months of pregnancy is teratogenic and leads to a two- to three-fold risk of congenital abnormalities.",
+      "o": [
+        "A high blood glucose level",
+        "Type 1 diabetes",
+        "Type 2 diabetes",
+        "Insulin resistance",
+        "Celiac disease"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The textbook says high blood glucose in the first two months is teratogenic."
+    },
+    {
+      "q": "Diets that provide low-glycemic index carbohydrates along with _______________________ of fiber daily are associated with improved blood glucose control.",
+      "o": [
+        "15 g",
+        "25-35 g",
+        "14 g per 1000 calories",
+        "38 g",
+        "50 g"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The textbook recommends about 14 g of fibre per 1,000 Calories."
+    },
+    {
+      "q": "Excess central body fat is related to ____________________________________.",
+      "o": [
+        "insulin resistance",
+        "increased sperm count",
+        "decreased testosterone production in females",
+        "increased testosterone production in males",
+        "decreased oxidative stress"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Fat deep in the abdomen is linked to insulin resistance."
+    },
+    {
+      "q": "Use the following information to answer questions 19 and 20.\n\nJane and her husband are interested in having a child, but she has had a hard time conceiving. She has met with her OB-GYN to have a physical, labs drawn, and a prenatal check-up in order to determine what the problem is. Lab work and other relevant data for Jane are as follows:\nAge: 36\nBlood pressure: 110/70 mm Hg\nFasting blood glucose: 130 mg/dL\nHDL cholesterol 35 mg/dL\nBlood triglycerides: 175 mg/dL\nWaist circumference: 36\"\nCurrent weight: 150 lbs\nHeight: 5'3\"\n\nBased on the data above, Jane will likely be diagnosed with:",
+      "o": [
+        "type 2 diabetes",
+        "metabolic syndrome",
+        "celiac disease",
+        "hypothalamic amenorrhea",
+        "gestational diabetes"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Jane meets four of the five criteria for metabolic syndrome: high fasting glucose, low HDL, high triglycerides and a waist over 35 inches. Less certain: a fasting glucose of 130 could also point to type 2 diabetes, but the test seems to be built around metabolic syndrome, so check this one against your graded result."
+    },
+    {
+      "q": "Jane and her husband are interested in having a child, but she has had a hard time conceiving. She has met with her OB-GYN to have a physical, labs drawn, and a prenatal check-up in order to determine what the problem is. Lab work and other relevant data for Jane are as follows:\nAge: 36\nBlood pressure: 110/70 mm Hg\nFasting blood glucose: 130 mg/dL\nHDL cholesterol 35 mg/dL\nBlood triglycerides: 175 mg/dL\nWaist circumference: 36\"\nCurrent weight: 150 lbs\nHeight: 5'3\"\n\nWhich of the following symptoms would indicate that Jane has this diagnosis?",
+      "o": [
+        "Her blood pressure, weight, and height",
+        "Hard time with conception and her age",
+        "High fasting blood glucose, blood triglycerides, and HDL cholesterol levels",
+        "Her waist circumference, age, and blood pressure",
+        "All of the above"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Her fasting glucose and triglycerides are high and her HDL is low, which are three of the five criteria. Her blood pressure is normal."
+    }
+  ]
+}
