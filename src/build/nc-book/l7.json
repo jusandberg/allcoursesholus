@@ -1,0 +1,459 @@
+{
+  "lesson": 7,
+  "book": "Nutrition Through the Life Cycle (Brown), Chapter 12: Child and Preadolescent Nutrition and Chapter 13: Child and Preadolescent Nutrition: Conditions and Interventions",
+  "kicker": "Lesson 7 of your course, built from Chapters 12 and 13 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l7-b1",
+      "title": "Growth and BMI rebound",
+      "teach": [
+        "School-age children grow steadily until the growth spurt of adolescence. Body fat drops through the preschool years, reaches its lowest point and then starts to rise again, usually around age six. This normal rise is called BMI rebound or adiposity rebound, and you can see it on BMI-for-age charts.",
+        "An early BMI rebound, before age five, is linked to a higher risk of overweight and obesity later. Maternal obesity has been found to be the strongest predictor of childhood obesity, along with the home environment."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What is BMI rebound?",
+        "options": [
+          {
+            "label": "The normal rise in body fat after it reaches its lowest point in early childhood",
+            "correct": true,
+            "feedback": "Yes. It usually happens around age six."
+          },
+          {
+            "label": "Losing all baby fat at age six",
+            "correct": false,
+            "feedback": "Body fat drops and then rises again. That rise is the rebound."
+          },
+          {
+            "label": "Returning to a normal weight after a growth spurt",
+            "correct": false,
+            "feedback": "It's about the normal pattern of body fat in childhood."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l7-b2",
+      "title": "Parents' feeding style",
+      "teach": [
+        "Parents shape a healthy food environment, but being too controlling backfires. When parents restrict food or pressure children to eat, children become less able to regulate how much they eat and are more likely to become overweight.",
+        "A responsive feeding style works better. Parents offer healthy food at regular times, eat together as a family and let children decide how much to eat. More activity and less screen time also help prevent overweight."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What tends to happen to children whose parents strictly control what and how much they eat?",
+        "options": [
+          {
+            "label": "They develop healthier habits.",
+            "correct": false,
+            "feedback": "Strict control usually backfires."
+          },
+          {
+            "label": "They're less able to regulate their intake and more likely to become overweight.",
+            "correct": true,
+            "feedback": "Yes. Both effects are linked to controlling feeding."
+          },
+          {
+            "label": "They have fewer eating problems.",
+            "correct": false,
+            "feedback": "Controlling feeding is linked to more problems, not fewer."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l7-b3",
+      "title": "Nutrient needs of school-age children",
+      "teach": [
+        "School-age children (4–13) need about 0.95 g of protein per kg of body weight a day. The fat range for ages 4–18 is 25–35% of Calories. The Adequate Intake for fibre is 25 g a day for ages 4–8. Fresh fruit, vegetables and whole-grain breads are the best ways to add fibre.",
+        "To check a child's diet, multiply grams by Calories per gram (4 for protein and carbohydrate, 9 for fat), then compare the results with these ranges."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A 10-year-old weighs 32 kg. At 0.95 g per kg, about how much protein does he need each day? (Round to the nearest gram.)",
+        "answer": 30,
+        "tolerance": 1,
+        "unit": "g",
+        "explanation": "32 × 0.95 = 30.4, so about 30 g a day."
+      }
+    },
+    {
+      "id": "l7-b4",
+      "title": "Teeth and school drinks",
+      "teach": [
+        "Sticky, sugary foods like raisins and other dried fruit cling to teeth and are the most likely to cause cavities. Cheese, plain yogurt and peanut butter are much less likely to.",
+        "The American Academy of Pediatrics wants sweetened drinks out of schools, replaced with real fruit and vegetable juices, water, and low-fat white or flavoured milk. Sports drinks aren't on the list of replacements."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which snack is most likely to promote cavities?",
+        "options": [
+          {
+            "label": "Cheddar cheese",
+            "correct": false,
+            "feedback": "Cheese is unlikely to cause cavities and may even help protect teeth."
+          },
+          {
+            "label": "Raisins",
+            "correct": true,
+            "feedback": "Yes. Sticky, sugary dried fruit clings to teeth."
+          },
+          {
+            "label": "Plain yogurt",
+            "correct": false,
+            "feedback": "Plain yogurt has no added sugar to feed cavity-causing bacteria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l7-b5",
+      "title": "Cystic fibrosis, diabetes and special diets",
+      "teach": [
+        "In cystic fibrosis (CF), the pancreas doesn't release enough digestive enzymes, so nutrients, especially fat and the fat-soluble vitamins, are poorly absorbed. Children with CF take pancreatic enzymes with every meal and snack, plus water-soluble forms of vitamins A, D, E and K. Their energy and protein needs are much higher than usual because of poor absorption and lung infections.",
+        "Type 1 diabetes is an immune condition that leaves the body making virtually no insulin. Protein needs go up with wound healing and CF, but not with PKU. The ketogenic diet, used for hard-to-control seizures, is very high in fat and very low in carbohydrate: think eggs, bacon and cheese, not cereal and juice."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which breakfast fits a ketogenic diet?",
+        "options": [
+          {
+            "label": "Oatmeal with milk, raisins and brown sugar",
+            "correct": false,
+            "feedback": "This is high in carbohydrate."
+          },
+          {
+            "label": "Scrambled eggs with bacon and cheese",
+            "correct": true,
+            "feedback": "Yes. High fat and very low carbohydrate."
+          },
+          {
+            "label": "Toast and jelly with grape juice",
+            "correct": false,
+            "feedback": "This is almost all carbohydrate."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l7-b6",
+      "title": "Cerebral palsy and ADHD",
+      "teach": [
+        "Spastic quadriplegia, cerebral palsy (CP) affecting all four limbs, causes the most nutrition problems. These children often look thin partly because their muscles are smaller, so body composition changes. Common problems include feeding difficulty, constipation, reflux and contractures.",
+        "Children with ADHD are often treated with psychostimulant medication, which can lower appetite and slow weight gain and growth. Plan meals and snacks around the medication. A large bedtime snack, when the medication has worn off, is a common tip."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A child on medication for ADHD isn't hungry at lunch. What is a common suggestion?",
+        "options": [
+          {
+            "label": "Stop the medication on school days.",
+            "correct": false,
+            "feedback": "Medication decisions belong to the child's doctor. Nutrition advice works around it."
+          },
+          {
+            "label": "Offer a bigger snack in the evening when the medication has worn off.",
+            "correct": true,
+            "feedback": "Yes. Time meals and snacks for when appetite returns."
+          },
+          {
+            "label": "Insist the child finishes lunch.",
+            "correct": false,
+            "feedback": "Pressure doesn't help, and appetite is truly low while the medication works."
+          }
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "BMI (adiposity) rebound",
+      "back": "The normal rise in body fat after its lowest point, usually around age six. Early rebound raises obesity risk."
+    },
+    {
+      "front": "Strongest predictor of childhood obesity",
+      "back": "Maternal obesity."
+    },
+    {
+      "front": "Controlling or restrictive feeding",
+      "back": "Children regulate intake less well and are more likely to become overweight."
+    },
+    {
+      "front": "Protein for ages 4–13",
+      "back": "About 0.95 g per kg per day."
+    },
+    {
+      "front": "Fibre AI, ages 4–8",
+      "back": "25 g a day."
+    },
+    {
+      "front": "Fat AMDR, ages 4–18",
+      "back": "25–35% of Calories."
+    },
+    {
+      "front": "Most cavity-promoting snacks",
+      "back": "Sticky, sugary foods like raisins."
+    },
+    {
+      "front": "AAP: replace sweetened school drinks with…",
+      "back": "Fruit and vegetable juices, water, and low-fat white or flavoured milk."
+    },
+    {
+      "front": "Cystic fibrosis",
+      "back": "Too few pancreatic enzymes cause poor absorption. Take enzymes with meals, plus vitamins A, D, E and K."
+    },
+    {
+      "front": "Type 1 diabetes",
+      "back": "An immune condition with virtually no insulin production."
+    },
+    {
+      "front": "Conditions that increase protein needs",
+      "back": "Wound healing and cystic fibrosis."
+    },
+    {
+      "front": "Ketogenic diet",
+      "back": "Very high fat, very low carbohydrate. Used for hard-to-control seizures."
+    },
+    {
+      "front": "Spastic quadriplegia",
+      "back": "CP in all four limbs. Changes in body composition and the most nutrition problems."
+    },
+    {
+      "front": "Psychostimulants",
+      "back": "Medication for ADHD. Can lower appetite and slow growth."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Studies show that children of parents who impose authoritarian methods of control on their eating are:",
+      "o": [
+        "likely to have healthy eating habits",
+        "less likely to regulate their intake",
+        "more likely to become overweight",
+        "prone to developing fewer eating-related issues",
+        "Both b and c"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The textbook says controlled children regulate their intake less well and are more likely to become overweight."
+    },
+    {
+      "q": "What is the recommended adequate intake of total fiber for children between the ages of 4 and 8?",
+      "o": [
+        "25 g/day",
+        "29 g/day",
+        "31 g/day",
+        "35 g/day"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The AI for ages 4–8 is 25 g a day."
+    },
+    {
+      "q": "Which of the following foods would be MOST likely to promote dental caries?",
+      "o": [
+        "Raisins",
+        "Apple slices",
+        "Cheddar cheese",
+        "Peanut butter",
+        "Plain yogurt"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Sticky, sugary dried fruit clings to teeth."
+    },
+    {
+      "q": "“BMI rebound” can be defined as:",
+      "o": [
+        "the period in which your weight “rebounds” and settles in at your normal weight.",
+        "the normal increase in percent body fat which occurs after percent body fat declines and reaches its lowest point.",
+        "the point at which you have the greatest amount of fat you will ever have, typically between the ages of 8 and 10.",
+        "the weight you attain by the age of 13 after you have had a growth spurt.",
+        "the loss of all a child’s baby fat, which occurs at about 6 years of age."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The textbook defines it as the normal rise in body fat after its lowest point, usually around age six."
+    },
+    {
+      "q": "The most significant predictor of childhood obesity has been found to be:",
+      "o": [
+        "low family income.",
+        "food insecurity.",
+        "Maternal obesity.",
+        "lower cognitive stimulation.",
+        "use of formula instead of breastfeeding."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The textbook says maternal obesity was the most significant predictor."
+    },
+    {
+      "q": "Which of the following foods would be the best choice for a parent trying to increase fiber in her/his child’s diet?",
+      "o": [
+        "Protein or energy bar",
+        "Fresh fruits, vegetables and whole-grain breads",
+        "Fresh juice and enriched bread",
+        "Canned fruits",
+        "All of the above would be great sources of fiber."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Whole fruits, vegetables and whole grains are the best fibre sources."
+    },
+    {
+      "q": "The American Academy of Pediatrics (AAP) advocates for the elimination of sweetened beverages in school and suggests replacing them with all of the following EXCEPT:",
+      "o": [
+        "Low-fat chocolate milk",
+        "Low-fat milk",
+        "Vegetable juice",
+        "100% fruit juice",
+        "Sports beverages"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The AAP lists juices, water, and low-fat white or flavoured milk, not sports drinks."
+    },
+    {
+      "q": "Using the following information, answer questions 8-11.\n\nJane is an 8-year-old girl that weighs 56.5 pounds (25.6 kg), is 51 inches tall, and enjoys lots of outdoor activities. Her total caloric intake is 1800 Calories per day consisting of 80 grams of fat, 225 grams of carbohydrate, and 45 grams of protein. She likes vegetables and eats lots of fruit; the only food she truly dislikes is milk.\n\nJane gets _____% of her energy from fat.",
+      "o": [
+        "20",
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. 80 g × 9 = 720 Calories. 720 ÷ 1,800 × 100 = 40%."
+    },
+    {
+      "q": "Jane is an 8-year-old girl that weighs 56.5 pounds (25.6 kg), is 51 inches tall, and enjoys lots of outdoor activities. Her total caloric intake is 1800 Calories per day consisting of 80 grams of fat, 225 grams of carbohydrate, and 45 grams of protein. She likes vegetables and eats lots of fruit; the only food she truly dislikes is milk.\n\nIs this within the Acceptable Macronutrient Distribution Range (AMDR) for fat for a child her age?",
+      "o": [
+        "Yes",
+        "No",
+        "Cannot be determined from the information provided"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The range for ages 4–18 is 25–35%, and 40% is above it."
+    },
+    {
+      "q": "Jane is an 8-year-old girl that weighs 56.5 pounds (25.6 kg), is 51 inches tall, and enjoys lots of outdoor activities. Her total caloric intake is 1800 Calories per day consisting of 80 grams of fat, 225 grams of carbohydrate, and 45 grams of protein. She likes vegetables and eats lots of fruit; the only food she truly dislikes is milk.\n\nHow many grams of protein per day are recommended for Jane?",
+      "o": [
+        "24 g",
+        "15 g",
+        "30 g",
+        "20 g",
+        "50 g"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. 25.6 kg × 0.95 g = about 24 g."
+    },
+    {
+      "q": "Jane is an 8-year-old girl that weighs 56.5 pounds (25.6 kg), is 51 inches tall, and enjoys lots of outdoor activities. Her total caloric intake is 1800 Calories per day consisting of 80 grams of fat, 225 grams of carbohydrate, and 45 grams of protein. She likes vegetables and eats lots of fruit; the only food she truly dislikes is milk.\n\nIs she eating more, less, or the recommended amount of protein compared to the DRI for a girl her age?",
+      "o": [
+        "More",
+        "Less",
+        "Exactly as much as the DRI recommends"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. She eats 45 g, which is more than the 24 g recommended."
+    },
+    {
+      "q": "Examples of conditions that INCREASE protein needs include:",
+      "o": [
+        "wound healing.",
+        "cystic fibrosis.",
+        "PKU.",
+        "All of the above",
+        "a and b only"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Wound healing and CF raise protein needs. PKU calls for a special low-phenylalanine protein source, not more protein."
+    },
+    {
+      "q": "Fat-soluble vitamin supplements are recommended for children with __________________ due to poor intestinal absorption of these nutrients.",
+      "o": [
+        "diabetes",
+        "seizures",
+        "PKU",
+        "cystic fibrosis",
+        "all of the above"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook says CF treatment requires fat-soluble vitamin supplements."
+    },
+    {
+      "q": "Energy and protein needs for children with cystic fibrosis are _____________________ those of healthy children.",
+      "o": [
+        "less than",
+        "the same as",
+        "two to four times greater than",
+        "greater than four times"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Less certain: the textbook says needs are much higher because of poor absorption and lung infections, but it doesn't give this exact range. Check this one against your graded result."
+    },
+    {
+      "q": "Type 1 diabetes is related to immune function and results in virtually ________________________________________.",
+      "o": [
+        "no immune system regulation",
+        "no colds for the first few years of the disease",
+        "no ability to process all macronutrients",
+        "no regulation of appetite",
+        "no insulin production"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. In type 1 diabetes the body makes virtually no insulin."
+    },
+    {
+      "q": "Nutritional consequences of spastic quadriplegia include:",
+      "o": [
+        "rapid weight gain.",
+        "predictable 2-fold increases in energy needs.",
+        "changes in body composition.",
+        "extreme vitamin and mineral deficiencies."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Less certain: the textbook says these children often look thin partly because their muscles are smaller, which is a change in body composition. Check this one against your graded result."
+    },
+    {
+      "q": "A psychostimulant is a medication given to children with ____________________________.",
+      "o": [
+        "seizures",
+        "attention deficit hyperactivity disorder",
+        "phenylketonuria",
+        "type 1 diabetes"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Psychostimulants are used for ADHD."
+    },
+    {
+      "q": "What is the importance of taking pancreatic enzymes when a child has cystic fibrosis?",
+      "o": [
+        "These enzymes help digest foods and when they are missing, malabsorption of various nutrients occurs",
+        "Pancreatic enzymes also supply the fat-soluble vitamins, which are necessary for normal growth.",
+        "It is not necessary to take pancreatic enzymes with cystic fibrosis; you need to take nutritional supplements, however.",
+        "Without these enzymes, inflammation occurs.",
+        "These enzymes help with calcium absorption."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Without pancreatic enzymes, many nutrients are poorly absorbed."
+    },
+    {
+      "q": "Which of the following foods would be the best breakfast choice for a child on a ketogenic diet?",
+      "o": [
+        "A bowl of frosted Mini-Wheat, milk, and orange juice",
+        "Homemade oatmeal with milk, raisins, and brown sugar",
+        "Scrambled eggs with bacon and cheese",
+        "Toast and jelly with a glass of grape juice",
+        "A doughnut with a glass of chocolate milk"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The ketogenic diet is high in fat and very low in carbohydrate."
+    },
+    {
+      "q": "Which of the following is NOT a secondary effect of cerebral palsy?",
+      "o": [
+        "Dehydration",
+        "Constipation",
+        "Contractures",
+        "Gastroesophageal reflux"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Less certain: constipation, contractures and reflux are common in children with CP, so dehydration is the likely answer, but the textbook text doesn't list them together. Check this one against your graded result."
+    }
+  ]
+}
