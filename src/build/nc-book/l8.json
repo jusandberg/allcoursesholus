@@ -1,0 +1,504 @@
+{
+  "lesson": 8,
+  "book": "Nutrition Through the Life Cycle (Brown), Chapter 14: Adolescent Nutrition and Chapter 15: Adolescent Nutrition: Conditions and Interventions",
+  "kicker": "Lesson 8 of your course, built from Chapters 14 and 15 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l8-b1",
+      "title": "What shapes how teens eat",
+      "teach": [
+        "Three levels of influence shape teen eating. Personal factors include family and friends, food likes, role models, confidence and body changes. Environmental factors include home, school, fast-food places and stores. Macrosystem factors include how food is produced and sold, and the media and advertising. Good programs work on all three.",
+        "Snacks make up about a quarter of teens' daily energy and a large share of their added sugars. Soft drinks are the top source of energy and added sugar in teen diets."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Sort each influence into its level.",
+        "categories": [
+          "Personal",
+          "Environmental",
+          "Macrosystem"
+        ],
+        "items": [
+          {
+            "label": "Friends' food choices",
+            "category": 0,
+            "feedback": "Peers are a personal or interpersonal influence."
+          },
+          {
+            "label": "What the school cafeteria sells",
+            "category": 1,
+            "feedback": "The school food environment is an environmental factor."
+          },
+          {
+            "label": "TV and online food ads",
+            "category": 2,
+            "feedback": "Mass media and advertising are macrosystem factors."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l8-b2",
+      "title": "Growth and key nutrients",
+      "teach": [
+        "Adolescence is a time of fast growth. Teens hold on to more calcium than adults and build much of their lifetime bone mass, which is why calcium matters so much at this age. Milk and fortified drinks are key sources, and vitamin D helps calcium do its job.",
+        "Iron needs rise with fast growth, more blood volume and, for girls, the start of periods. Teens have the lowest folate levels of any age group, which matters for girls who could become pregnant. Breakfast cereals and orange juice help."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What is the best reason to make sure young teens get enough calcium?",
+        "options": [
+          {
+            "label": "They retain more calcium than adults and are building bone mass.",
+            "correct": true,
+            "feedback": "Yes. This is a key window for building bone."
+          },
+          {
+            "label": "They burn more energy in sports.",
+            "correct": false,
+            "feedback": "Energy use doesn't drive calcium needs."
+          },
+          {
+            "label": "Dairy foods are cheap.",
+            "correct": false,
+            "feedback": "Cost isn't the nutrition reason."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l8-b3",
+      "title": "Talking with teens about food",
+      "teach": [
+        "Teens respond to messages about the here and now, such as having energy for sports and friends, more than warnings about disease decades away. Focus on lasting healthy habits rather than short-term dieting.",
+        "A 24-hour recall, food frequency questionnaire or food record can all be used with teens. A 24-hour recall is quick to start in person and can easily be finished by phone later."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which message is most likely to motivate a teen?",
+        "options": [
+          {
+            "label": "“Eating well will give you energy for sports and time with friends.”",
+            "correct": true,
+            "feedback": "Yes. Short-term, personal benefits work best with teens."
+          },
+          {
+            "label": "“Eating well may prevent heart disease later in life.”",
+            "correct": false,
+            "feedback": "Long-term disease risk feels far away to most teens."
+          },
+          {
+            "label": "“Eat it because it's good for you.”",
+            "correct": false,
+            "feedback": "This usually backfires with teens."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l8-b4",
+      "title": "Overweight in adolescence",
+      "teach": [
+        "For teens, BMI is compared with percentiles for age and sex. Between the 5th and 85th percentile is a healthy weight, the 85th to 95th is overweight (older guides say “at risk for overweight”), and the 95th and above is obese.",
+        "Up to 90% of overweight teens stay overweight as adults, so early support matters. Look at the share of Calories from fat when helping teens choose fast food: grams of fat × 9 ÷ Calories × 100."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A fast-food item has 500 Calories and 15 g of fat. What percent of its Calories come from fat?",
+        "answer": 27,
+        "tolerance": 0,
+        "unit": "%",
+        "explanation": "15 × 9 = 135 Calories from fat. 135 ÷ 500 × 100 = 27%, which is within 25–35%."
+      }
+    },
+    {
+      "id": "l8-b5",
+      "title": "Teen athletes",
+      "teach": [
+        "Teens need energy for their basal metabolism, their activity and pubertal growth. Carbohydrates are the most effective way to build up muscle glycogen. Some endurance athletes use carbohydrate loading before a big event.",
+        "For fluids, drink about 16 oz for each pound lost during activity. During long events, sports drinks with no more than 6–8% carbohydrate, or juice diluted with water, hydrate better. Undiluted juice and stronger drinks can cause cramping."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A wrestler loses 2 lb during practice. How many ounces of fluid should he drink afterward?",
+        "answer": 32,
+        "tolerance": 0,
+        "unit": "oz",
+        "explanation": "16 oz × 2 lb = 32 oz."
+      }
+    },
+    {
+      "id": "l8-b6",
+      "title": "Eating disorders and special needs",
+      "teach": [
+        "Binge-eating disorder means eating large amounts in a short time while feeling out of control, but without compensating by vomiting, laxatives or over-exercising. That last part is what sets it apart from bulimia. Treatment goals include a full diet assessment, a regular pattern of balanced meals, slowly bringing back “forbidden” foods, and stepping away from dieting and too much exercise. Family members can help by eating balanced meals themselves and showing love and praise that has nothing to do with food or weight.",
+        "Up to 40% of children and teens with special health care needs have nutrition risks that call for a referral to a dietitian. A lacto-vegetarian teen can get iron from beans and lentils, eaten with vitamin C foods such as tomatoes to boost absorption."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "How does binge-eating disorder differ from bulimia?",
+        "options": [
+          {
+            "label": "It doesn't involve compensating behaviours like vomiting or laxatives.",
+            "correct": true,
+            "feedback": "Yes. That is the key difference."
+          },
+          {
+            "label": "It doesn't involve eating large amounts.",
+            "correct": false,
+            "feedback": "Both involve eating large amounts in a short time."
+          },
+          {
+            "label": "Binges are mostly fruit and vegetables.",
+            "correct": false,
+            "feedback": "The type of food isn't what defines it."
+          }
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Three levels of influence on teen eating",
+      "back": "Personal, environmental and macrosystem."
+    },
+    {
+      "front": "Snacks in teen diets",
+      "back": "About a quarter of daily food energy."
+    },
+    {
+      "front": "Why calcium matters for teens",
+      "back": "They retain more calcium than adults and build bone mass."
+    },
+    {
+      "front": "What raises teens' iron needs",
+      "back": "Fast growth, more blood volume and the start of periods."
+    },
+    {
+      "front": "Folate in teens",
+      "back": "Teens have the lowest folate levels of any age group, which matters for girls who could become pregnant."
+    },
+    {
+      "front": "Best motivating message for teens",
+      "back": "Short-term benefits, like energy for sports and friends."
+    },
+    {
+      "front": "BMI 50th–75th percentile",
+      "back": "Healthy (normal) weight."
+    },
+    {
+      "front": "Overweight teens into adulthood",
+      "back": "Up to 90% stay overweight."
+    },
+    {
+      "front": "Fluid after exercise",
+      "back": "About 16 oz for each pound lost."
+    },
+    {
+      "front": "Carbohydrate in drinks during long exercise",
+      "back": "No more than 6–8%."
+    },
+    {
+      "front": "Best for building muscle glycogen",
+      "back": "Carbohydrates."
+    },
+    {
+      "front": "Binge-eating disorder vs. bulimia",
+      "back": "No compensating behaviours in binge-eating disorder."
+    },
+    {
+      "front": "Special health care needs and referral",
+      "back": "Up to 40% have nutrition risks that call for a dietitian."
+    },
+    {
+      "front": "Iron for a lacto-vegetarian teen",
+      "back": "Beans and lentils, with vitamin C foods like tomatoes."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "In order to improve the eating habits of youth, nutrition interventions should be aimed at three levels of influence. Which of the following would NOT be one of these levels?",
+      "o": [
+        "Environmental factors",
+        "Macrosystem factors",
+        "Transportation factors",
+        "Personal factors"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The three levels are personal, environmental and macrosystem."
+    },
+    {
+      "q": "Snacks account for up to _____% of daily food intake among adolescents.",
+      "o": [
+        "15-20",
+        "23-27",
+        "27-35",
+        "41-44",
+        "51-55"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The textbook says snacks make up about one-quarter of teens' daily food energy."
+    },
+    {
+      "q": "The best reason for advising young adolescents to consume foods that provide adequate calcium is ____________________________________________________________________.",
+      "o": [
+        "young adolescents expend more energy from increased physical activity and need more calcium",
+        "young adolescents do not have much money and dairy foods are the least expensive to buy",
+        "young adolescents retain four times as much calcium than adults and build bone mass",
+        "young adolescents fight with their parents a lot and this would eliminate one food battle"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Teens retain more calcium and build much of their bone mass."
+    },
+    {
+      "q": "All of the following are factors that increase a teen’s need for iron EXCEPT:",
+      "o": [
+        "A rapid rate of linear growth.",
+        "The onset of menarche for females.",
+        "An increase in blood volume.",
+        "Greater intake of heme than nonheme iron sources.",
+        "All of the above factors increase a teen’s need for iron."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Heme iron is better absorbed, so it doesn't increase needs."
+    },
+    {
+      "q": "Susan is a 15-year-old who likes fruits, some vegetables, and breads (whole-grain and enriched) but refuses to consume milk, seafood, and eggs. A recent doctor visit revealed normal hemoglobin and plasma ferritin levels. What would you advise?",
+      "o": [
+        "A folate supplement (400 micrograms/day)",
+        "A vitamin D supplement (400 IU/day)",
+        "An iron supplement (10 mg/day)",
+        "No changes in nutrient intake"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Less certain: her iron is normal and enriched breads give folate, but without milk, seafood or eggs she has almost no vitamin D source. Check this one against your graded result."
+    },
+    {
+      "q": "An underweight 17-year-old male was 15 minutes late to his nutrition counseling appointment and he has to leave for a school-related practice in 20 minutes. What dietary assessment method would be the most appropriate for the dietitian to begin assessing his food intake pattern as well as a method that she could reliably complete on the telephone at a later time?",
+      "o": [
+        "24-hour recall",
+        "Food frequency",
+        "Food record",
+        "Diet history"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. A 24-hour recall is quick to start and easy to finish by phone."
+    },
+    {
+      "q": "Which of these messages is best for motivating adolescents to eat a healthy diet?",
+      "o": [
+        "“Eating well will give you energy for sports or social activities.”",
+        "”Eat what you don’t like because it’s good for you.”",
+        "”Eating well may prevent heart disease in the long term.”",
+        "”Eat well now so you won’t be frail or disabled when you are old.”"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Teens respond best to short-term, personal benefits."
+    },
+    {
+      "q": "For which 16-year-old teen would the dietitian have the greatest concern about folate status?",
+      "o": [
+        "Male whose estimated intake is 450 micrograms per day",
+        "Female who consumes orange juice and cereal for breakfast",
+        "Male with serum folate levels just below the normal range",
+        "Female who is sexually active and skips breakfast"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. She could become pregnant, and skipping breakfast means missing fortified cereal and juice."
+    },
+    {
+      "q": "Youth with body mass index (BMI) values > 50th percentile, but < 75th percentile are considered:",
+      "o": [
+        "normal weight.",
+        "at risk for overweight.",
+        "overweight.",
+        "obese.",
+        "morbidly obese."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Below the 85th percentile is a healthy weight."
+    },
+    {
+      "q": "As many as _____ of overweight adolescents can be expected to remain overweight into adulthood.",
+      "o": [
+        "40%",
+        "50%",
+        "60%",
+        "70%",
+        "90%"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The textbook says as many as 90%."
+    },
+    {
+      "q": "Each pound of body weight lost during an activity requires ingestion of _____ ounces of fluid following the activity to maintain proper hydration.",
+      "o": [
+        "8",
+        "16",
+        "20",
+        "32",
+        "48"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The usual guide is 16 oz for each pound lost."
+    },
+    {
+      "q": "Use the Tapango’s menu provided below to answer questions 12-14.\n\nBreakfast Burrito\nnutritional information: 412 Calories, 17g fat, 6.6g saturated fat, 44.9g carbs per 200g burrito\ningredients: flour tortilla, scrambled eggs, salsa, and cheddar cheese\nBreakfast Burrito with Bacon\nnutritional information: 657 Calories, 35.9g fat, 12.9g saturated fat, 45.5g carbs per 245g burrito\ningredients: flour tortilla, scrambled eggs, bacon, salsa, and cheddar cheese\nPrimo Breakfast Burrito\nnutritional information: 761 Calories, 43.6g fat, 16.8g saturated fat, 54.2g carbs per 402g burrito\ningredients: flour tortilla, scrambled eggs, bacon, cheddar cheese, salsa, lettuce, chili sauce, sour cream, tomatoes, olives, onions, jalapeño peppers\nBreakfast Quesadilla\nnutritional information: 478 Calories, 23.9g fat, 11.8g saturated fat, 41.7g carbs per 171g quesadilla\ningredients: flour tortilla, scrambled eggs, and cheddar cheese\nBreakfast Quesadilla with Bacon\nnutritional information: 726 Calories, 43g fat, 18.1g saturated fat, 42.5g carbs per 217g quesadilla\ningredients: flour tortilla, scrambled eggs, bacon, and cheddar cheese\nPrimo Nachos\nnutritional information: 964 Calories, 49.3g fat, 14.3g saturated fat, 102.7g carbs per 445g nachos\ningredients: tortilla chips, nacho cheese, refried beans, chicken (chicken breast, green chili peppers, olive oil, onions, garlic), salsa, lettuce, chili sauce, sour cream, tomatoes, olives, onions, and jalapeño peppers\nPrimo Taco Salad\nnutritional information: 502 Calories, 20.9g fat, 5.5g saturated fat, 62.6g carbs per 448g taco salad\ningredients: lettuce, chicken (chicken breast, green chili peppers, olive oil, onions, garlic, and spices), tortilla chips, refried beans, Spanish rice (rice, olive oil, tomato sauce, onions, garlic, and spices), salsa, lettuce, chili sauce, sour cream, tomatoes, olives, onions, and jalapeño peppers\nBeef Taco\nnutritional information: 214 Calories, 11.7g fat, 5.1g saturated fat, 14.5 carbs per 128g taco\ningredients: corn tortilla, beef (ground beef, tomato sauce, onions, and spices), chili sauce, lettuce, tomatoes, and cheddar cheese\nChicken Taco\nnutritional information: 154 Calories, 5.3g fat, 2.4g saturated fat, 14.1g carbs per 128g taco\ningredients: corn tortilla, chicken (chicken breast, green chili peppers, olive oil, onions, garlic, and spices), chili sauce, lettuce, tomatoes, and cheddar cheese\n\nAn adolescent is considering Tapango’s menu and would like to choose the food with the lowest percentage of fat calories. This would be the:",
+      "o": [
+        "breakfast burrito w/ bacon.",
+        "breakfast quesadilla w/ bacon.",
+        "primo taco salad.",
+        "beef taco.",
+        "primo nachos."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Taco salad: 20.9 × 9 ÷ 502 = 37%. The others are 46–53%."
+    },
+    {
+      "q": "Would this food fit within the current recommendations for fat consumption?",
+      "o": [
+        "No, it is high at 37% fat",
+        "No, it is high at 47% fat",
+        "No, it is low at 17% fat",
+        "Yes, it is only 30% fat",
+        "Need more information"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. 37% is above the 25–35% range for teens."
+    },
+    {
+      "q": "What beverage would be a good accompaniment to this meal and provide a nutrient that is usually scarce in adolescent diets?",
+      "o": [
+        "Non-fat milk",
+        "Diet soda",
+        "Water",
+        "Regular soda",
+        "Iced tea with sweetener"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Milk adds calcium, which is often low in teen diets."
+    },
+    {
+      "q": "A juice or sports drink that contains no more than _____ carbohydrate may allow for better hydration and physical performance than those that are more concentrated.",
+      "o": [
+        "2-3%",
+        "4-5%",
+        "5-6%",
+        "6-8%",
+        "9-10%"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook says no more than 6–8% carbohydrate."
+    },
+    {
+      "q": "A teenage girl ate Christmas dinner at her step-mother’s house and following a creamy dessert, announced, “I am fatter than all of my classmates; I am going to stop eating for 5 days!” Important behaviors the step-mother should model include all of the following EXCEPT:",
+      "o": [
+        "eating well-balanced meals as part of her normal routine.",
+        "showing the step-daughter love without using food.",
+        "identifying strengths of the step-daughter that are not eating related.",
+        "beginning a subscription to Weight Watcher’s magazine for the stepdaughter."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. A dieting magazine would feed the focus on weight."
+    },
+    {
+      "q": "Binge-eating disorder differs from bulimia nervosa in that binge-eating disorder:",
+      "o": [
+        "does not include binges on “fast” or “junk” foods.",
+        "does not involve eating large amounts of food in a short period of time.",
+        "does include large amounts of fruits and vegetables during a binge episode.",
+        "does not involve compensatory behaviors.",
+        "involves stool softeners, not laxatives."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Binge-eating disorder has no vomiting, laxatives or other compensating behaviours."
+    },
+    {
+      "q": "Key goals of nutritional care for someone in treatment for an eating disorder would include:",
+      "o": [
+        "establishing a regular pattern of nutritionally balanced meals.",
+        "gradually introducing forbidden foods into the diet.",
+        "avoiding dieting behaviors and excessive exercise.",
+        "thoroughly assessing dietary intake and adequacy.",
+        "All of the above are key goals"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. All four are goals of nutrition care for eating disorders."
+    },
+    {
+      "q": "An estimated _____ percent of children and adolescents with a chronic condition or disability also have nutrition risk factors that warrant a referral to a dietitian.",
+      "o": [
+        "20",
+        "30",
+        "40",
+        "50"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The textbook says as many as 40%."
+    },
+    {
+      "q": "Use the following nutrition label to answer questions 20-22.\n\nNutrition Facts\nServing Size 1 Drink Box (6.75 oz)\nServings Per Container 1\nAmount Per Serving\nCalories 100\nCalories from Fat 0\n% Daily Value*\nTotal Fat 0g 0%\nSaturated Fat 0g 0%\nTrans Fat 0g\nCholesterol 0mg 0%\nSodium 25mg 1%\nTotal Carbohydrate 27g 10%\nDietary Fiber 0g\nSugars 24g\nProtein 1g 2%\nVitamin A 0%\nVitamin C 2%\nCalcium 10%\nIron 0%\n\nA coach bought fruit juice boxes (see food label above) for the wrestling team to provide energy to wrestlers after they weighed in. What is the best recommendation for teens when they consume this 30 minutes before the meet?",
+      "o": [
+        "Dilute half of this juice with 6.75 oz cold water",
+        "Drink three juice boxes to get adequate fluid volume before the match.",
+        "Only drink 20 oz of water before the match.",
+        "Find a vending machine and purchase a sports drink containing caffeine."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Diluting juice with water brings the carbohydrate down to a level that hydrates better."
+    },
+    {
+      "q": "Nutrition Facts\nServing Size 1 Drink Box (6.75 oz)\nServings Per Container 1\nAmount Per Serving\nCalories 100\nCalories from Fat 0\n% Daily Value*\nTotal Fat 0g 0%\nSaturated Fat 0g 0%\nTrans Fat 0g\nCholesterol 0mg 0%\nSodium 25mg 1%\nTotal Carbohydrate 27g 10%\nDietary Fiber 0g\nSugars 24g\nProtein 1g 2%\nVitamin A 0%\nVitamin C 2%\nCalcium 10%\nIron 0%\n\nBased on the calories in this drink, calculate the percentage of total calories from carbohydrates it provides.",
+      "o": [
+        "14",
+        "40",
+        "50",
+        "100"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. 27 g × 4 = 108 Calories, which is essentially all of the 100 Calories."
+    },
+    {
+      "q": "Nutrition Facts\nServing Size 1 Drink Box (6.75 oz)\nServings Per Container 1\nAmount Per Serving\nCalories 100\nCalories from Fat 0\n% Daily Value*\nTotal Fat 0g 0%\nSaturated Fat 0g 0%\nTrans Fat 0g\nCholesterol 0mg 0%\nSodium 25mg 1%\nTotal Carbohydrate 27g 10%\nDietary Fiber 0g\nSugars 24g\nProtein 1g 2%\nVitamin A 0%\nVitamin C 2%\nCalcium 10%\nIron 0%\n\nWould this beverage be a good choice to drink during a strenuous activity?",
+      "o": [
+        "Yes: it is 100% fruit juice, so it is a good choice",
+        "No: it is too high in carbohydrate and may cause cramping",
+        "Not enough information is provided on the label"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. At about 13% carbohydrate, it is well above the 6–8% advised during exercise."
+    },
+    {
+      "q": "What iron-rich food source would be the best choice for an adolescent who is a lactovegetarian?",
+      "o": [
+        "Pinto beans and diced tomatoes",
+        "Scrambled eggs with cheese",
+        "Tuna sandwich",
+        "Flour tortilla with cheese",
+        "Fish sandwich with lettuce"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Beans give iron, and the vitamin C in tomatoes helps absorb it. Lacto-vegetarians don't eat eggs or fish."
+    },
+    {
+      "q": "What dietary components are MOST effective at raising muscle glycogen concentrations?",
+      "o": [
+        "Fats",
+        "Proteins",
+        "Carbohydrates",
+        "Chromium & iron-containing supplements"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Carbohydrates build muscle glycogen."
+    },
+    {
+      "q": "The energy needs of adolescents are influenced by basal metabolic rate, activity level, and increased requirements to support pubertal growth and development.",
+      "o": [
+        "True",
+        "False"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. All three affect energy needs."
+    }
+  ]
+}
