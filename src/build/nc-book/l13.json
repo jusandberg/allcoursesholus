@@ -1,0 +1,116 @@
+{
+  "lesson": 13,
+  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 3: Communication Essentials",
+  "kicker": "Lesson 13 of your course, built from Chapter 3 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l13-b1",
+      "title": "Learning a new skill takes stages",
+      "teach": [
+        "Learning counselling skills follows predictable stages. First you become aware of a skill. Then comes awkwardness, when using it feels clumsy and forced. Next is conscious awareness: you're more comfortable, but you still have to think about it. Finally it becomes an automatic response.",
+        "Feeling awkward is a normal step, not a sign you're doing it wrong. Practice moves you through it."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which stage comes right before conscious awareness?",
+        "options": [
+          {"label": "Awkwardness", "correct": true, "feedback": "Yes. Skills feel clumsy before they feel comfortable."},
+          {"label": "Automatic response", "correct": false, "feedback": "That's the last stage, after conscious awareness."},
+          {"label": "Motivation", "correct": false, "feedback": "Motivation isn't one of the named stages."}
+        ]
+      }
+    },
+    {
+      "id": "l13-b2",
+      "title": "Nonverbal communication",
+      "teach": [
+        "Much of what we communicate isn't in our words. Eye contact, facial expression, posture, gestures, energy level and the volume, pace and tone of your voice all send messages.",
+        "When two people's body language naturally matches, it's called synchrony. It's a sign of rapport. Watch your clients' nonverbal cues too, because they often show feelings their words don't."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these is nonverbal communication?",
+        "options": [
+          {"label": "Eye contact", "correct": false, "feedback": "Yes, but it's not the only one."},
+          {"label": "Volume of voice and energy level", "correct": false, "feedback": "Yes, but there's more."},
+          {"label": "All of these", "correct": true, "feedback": "Right. Eye contact, voice volume and energy level all send messages."}
+        ]
+      }
+    },
+    {
+      "id": "l13-b3",
+      "title": "Responses that build the relationship",
+      "teach": [
+        "Some responses are especially useful for building a relationship: attending (giving full attention), reflecting, legitimation (letting the client know their feelings make sense) and respect.",
+        "Reflection means naming the emotion the client has shown in words or body language. When it's accurate, clients feel understood. Respond to your client's own feelings, not to how other people in their story might feel."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A client says, “My husband keeps bringing home donuts and I just give in.” Which response reflects her feeling?",
+        "options": [
+          {"label": "“Your husband must feel bad about it.”", "correct": false, "feedback": "This focuses on someone else's feelings. Stay with your client's."},
+          {"label": "“It sounds frustrating to keep facing that temptation at home.”", "correct": true, "feedback": "Yes. It names her emotion and checks your understanding."},
+          {"label": "“Just tell him to stop.”", "correct": false, "feedback": "This is advice, not reflection."}
+        ]
+      }
+    },
+    {
+      "id": "l13-b4",
+      "title": "Focus and intent",
+      "teach": [
+        "Every response has a focus and an intent. The focus is where you put the emphasis: information, or the client's experience, which can be their feelings, thoughts or behaviours. The intent is your reason for the response: to acknowledge, to explore or to challenge.",
+        "Open questions (what, how, tell me) invite the client to explore. Closed questions get a short fact or a yes or no. “What do you think would work for you?” is an open question about the client's thoughts, asked to explore."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each counsellor response with its intent.",
+        "categories": ["To acknowledge", "To explore", "To challenge"],
+        "items": [
+          {"label": "“You've packed your lunch every day this week. That took effort.”", "category": 0, "feedback": "Affirming an effort acknowledges the client."},
+          {"label": "“What gets in the way of eating breakfast?”", "category": 1, "feedback": "An open question invites the client to explore."},
+          {"label": "“You want more energy, and you're skipping lunch most days.”", "category": 2, "feedback": "Pointing out a gap between goals and actions is a gentle challenge."}
+        ]
+      }
+    },
+    {
+      "id": "l13-b5",
+      "title": "Challenging gently",
+      "teach": [
+        "Sometimes you need to point out a gap between what a client says and what they do. How you phrase it matters. “But” tends to cancel out what came before it and can sound like an accusation.",
+        "A softer approach is to state the observation without “but”, often using “and”: “You want to improve your eating habits, and you had delivery pizza twice this week.” This puts both facts side by side and lets the client think about them."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which version is the softer challenge?",
+        "options": [
+          {"label": "“You say you want to eat better, but you had pizza twice this week.”", "correct": false, "feedback": "“But” can sound like an accusation and cancels the first part."},
+          {"label": "“You say you want to eat better, and you had pizza twice this week.”", "correct": true, "feedback": "Yes. “And” puts both facts side by side without blame."}
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {"front": "Stages of skill development", "back": "Awareness, awkwardness, conscious awareness, automatic response."},
+    {"front": "Nonverbal communication", "back": "Eye contact, facial expression, posture, gestures, energy level and voice volume, pace and tone."},
+    {"front": "Synchrony", "back": "Body language harmony between two people."},
+    {"front": "Relationship-building responses", "back": "Attending, reflecting, legitimation and respect."},
+    {"front": "Reflection", "back": "Naming the emotion a client has shown in words or body language."},
+    {"front": "Whose feelings do you respond to?", "back": "Your client's, not other people's."},
+    {"front": "Counselling focus", "back": "Information, or the client's experience: feelings, thoughts or behaviours."},
+    {"front": "Counselling intent", "back": "To acknowledge, to explore or to challenge."},
+    {"front": "Open question", "back": "Starts with what, how or tell me, and invites a fuller answer."},
+    {"front": "Softer challenge", "back": "Use “and” instead of “but” to state the observation."}
+  ],
+  "quiz": [
+    {"q": "What step precedes “conscious awareness” in the stages of skill development?", "o": ["Motivation", "Learning", "Awkwardness", "Automatic response"], "a": 2, "e": "Checked answer, not from an official key. Skills feel awkward before you reach conscious awareness."},
+    {"q": "Which of the following is a nonverbal mode of communication?", "o": ["Volume of voice", "Energy level", "Eye contact", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. All three are nonverbal."},
+    {"q": "Body language harmony between two people is referred to as _________ .", "o": ["synchrony", "empathy", "encoding", "awkward."], "a": 0, "e": "Checked answer, not from an official key. The textbook calls this synchrony."},
+    {"q": "Attending, reflecting, legitimation, and respect responses are particularly useful for:", "o": ["changing direction of a counseling session.", "challenging a client.", "building a relationship.", "All of the above"], "a": 2, "e": "Checked answer, not from an official key. The textbook lists these as relationship-building responses."},
+    {"q": "__________ is labeling a client’s expressed verbal and nonverbal emotion.", "o": ["Attending", "Paraphrasing", "Mirroring", "Reflection"], "a": 3, "e": "Checked answer, not from an official key. This is the textbook's definition of reflection."},
+    {"q": "When empathizing or reflecting, you should respond to the feelings of _______ and not to the feelings of _______.", "o": ["your client / others", "others / your client"], "a": 0, "e": "Checked answer, not from an official key. Respond to your client's feelings, not other people's."},
+    {"q": "Use the following statement to answer questions 7-9:\n\nWhat do you think would work for you to help you lose weight?\n\nWhat type of response is this question?", "o": ["Attending", "Mirroring", "Question-closed", "Question-open"], "a": 3, "e": "Checked answer, not from an official key. It starts with “what” and invites a full answer."},
+    {"q": "Use the following statement to answer questions 7-9:\n\nWhat do you think would work for you to help you lose weight?\n\nWhat is the focus of this question?", "o": ["Experience", "Behaviour", "Thoughts"], "a": 2, "e": "Checked answer, not from an official key. Less certain: “What do you think…” asks for the client's thoughts, but you could argue it's about behaviour too. Check this one against your graded result."},
+    {"q": "Use the following statement to answer questions 7-9:\n\nWhat do you think would work for you to help you lose weight?\n\nWhat is the counsellor’s intent for selecting this question?", "o": ["To acknowledge", "To explore", "To challenge"], "a": 1, "e": "Checked answer, not from an official key. An open question like this is asked to explore."},
+    {"q": "Which word would you choose to complete this statement using a soft approach: “You say you want to improve your eating habits _____ you had delivery pizza twice this week.”", "o": ["but", "and"], "a": 1, "e": "Checked answer, not from an official key. The textbook suggests stating the observation without “but”."}
+  ]
+}
