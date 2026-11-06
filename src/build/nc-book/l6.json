@@ -1,0 +1,553 @@
+{
+  "lesson": 6,
+  "book": "Nutrition Through the Life Cycle (Brown), Chapter 10: Toddler and Preschooler Nutrition and Chapter 11: Toddler and Preschooler Nutrition: Conditions and Interventions",
+  "kicker": "Lesson 6 of your course, built from Chapters 10 and 11 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l6-b1",
+      "title": "Slower growth, smaller appetite",
+      "teach": [
+        "Growth slows down after the first year. Toddlers gain about 8 oz and 1 cm a month, and preschoolers gain about 4.4 lb (2 kg) and 7 cm a year. Appetite drops along with growth, and many parents worry their child isn't eating enough. A smaller appetite is a normal part of growing up at this age.",
+        "Growth charts and BMI-for-age help show whether a child is growing well. For children, BMI is compared with percentiles for age and sex rather than adult cut-offs."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A 4-year-old weighs 18 kg and is 1.05 m tall. What is her BMI? (Round to one decimal.)",
+        "answer": 16.3,
+        "tolerance": 0.1,
+        "unit": "kg/m²",
+        "explanation": "1.05 × 1.05 = 1.1025. 18 ÷ 1.1025 = 16.3. For children, you then compare this with BMI-for-age percentiles."
+      }
+    },
+    {
+      "id": "l6-b2",
+      "title": "Feeding young children",
+      "teach": [
+        "A handy portion guide for toddlers is 1 tablespoon of each food per year of age. Parents decide what, when and where food is offered, and children decide how much to eat. Keep distractions like TV to a minimum and let toddlers practise feeding themselves.",
+        "Children often need many tries before they accept a new food, so keep offering it calmly. Pressure and bribes backfire. Restricting a tasty food can make it more desirable and lead children to overeat it and feel bad about it. Using a food as a reward makes it even more prized."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A parent keeps cookies locked away and only gives them as a reward. What is the likely effect?",
+        "options": [
+          {
+            "label": "The child loses interest in cookies.",
+            "correct": false,
+            "feedback": "Studies show restriction and rewards make a food more desirable, not less."
+          },
+          {
+            "label": "Cookies become more desirable, and the child may overeat them when they get the chance.",
+            "correct": true,
+            "feedback": "Yes. Restricting a tasty food tends to increase the desire for it."
+          },
+          {
+            "label": "No effect on how the child sees cookies.",
+            "correct": false,
+            "feedback": "How foods are offered does shape children's preferences."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l6-b3",
+      "title": "Nutrient needs",
+      "teach": [
+        "Fat is important for young children's growth. The acceptable range is 30–40% of Calories for ages 1–3 and 25–35% for ages 4–18. The RDA for iron is 7 mg a day for ages 1–3 and 10 mg for ages 4–8. A simple fibre guide is the child's age plus 5 g a day, so 10 g for a 5-year-old. Age plus 15 g or more may be too much bulk for a small appetite.",
+        "Most young children get plenty of most nutrients, but iron, vitamin D and calcium are often low. More than 24 oz of milk a day can crowd out iron-rich foods. Too much fruit juice, especially juice with sorbitol, is a common cause of diarrhea in healthy toddlers."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each guideline with the right number.",
+        "categories": [
+          "30–40% of Calories",
+          "10 mg a day",
+          "Age + 5 g a day"
+        ],
+        "items": [
+          {
+            "label": "Fat for children aged 1–3",
+            "category": 0,
+            "feedback": "Young children need a higher share of fat than older children."
+          },
+          {
+            "label": "Iron RDA for children aged 4–8",
+            "category": 1,
+            "feedback": "The RDA rises from 7 mg (ages 1–3) to 10 mg (ages 4–8)."
+          },
+          {
+            "label": "Fibre for a young child",
+            "category": 2,
+            "feedback": "A 5-year-old would aim for about 10 g."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l6-b4",
+      "title": "Vegetarian toddlers",
+      "teach": [
+        "Toddlers on a vegetarian diet can grow well with some planning. Offer three meals and two to three snacks a day. Include energy-dense foods such as cheese, avocado, nut butters and oils, because small stomachs fill up fast.",
+        "Avoid bran and too many bulky foods like raw fruit and vegetables, which fill children up without enough Calories. Make sure there is a good source of vitamin B12, or a supplement if needed."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these is NOT good advice for a vegetarian toddler?",
+        "options": [
+          {
+            "label": "Serve bran muffins with fruit and vegetables.",
+            "correct": true,
+            "feedback": "Right. Bran is bulky and low in energy, so it should be avoided at this age."
+          },
+          {
+            "label": "Include cheese or avocado.",
+            "correct": false,
+            "feedback": "These are good energy-dense choices."
+          },
+          {
+            "label": "Make sure there's a source of vitamin B12.",
+            "correct": false,
+            "feedback": "B12 is important, especially in vegan diets."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l6-b5",
+      "title": "Common nutrition problems",
+      "teach": [
+        "Iron-deficiency anemia, tooth decay and constipation are common in young children. Lead poisoning is less common but serious. Some children are at higher risk of nutrient deficiencies: those who are abused or neglected, those with failure to thrive, those on vegan diets without dairy or fortified foods, and those on restrictive weight-management plans. Children who eat a variety of basic foods are at low risk.",
+        "Failure to thrive means poor growth, and it often comes from a mix of medical and family factors. A diet that leans on juice and plain starches, with little variety, is a sign of a feeding problem."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A 3-year-old drinks about 40 oz of juice a day and eats mostly plain pasta, bread and crackers. What points to a feeding problem?",
+        "options": [
+          {
+            "label": "Lack of variety",
+            "correct": false,
+            "feedback": "Yes, but that's not all."
+          },
+          {
+            "label": "Too much fluid",
+            "correct": false,
+            "feedback": "Yes, but there's more."
+          },
+          {
+            "label": "Lack of variety, bland choices and too much fluid",
+            "correct": true,
+            "feedback": "Right. All three are warning signs."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l6-b6",
+      "title": "Children with special health needs",
+      "teach": [
+        "Up to 90% of children with disabilities have some kind of nutrition problem. Needs depend on the condition. A child with Down syndrome is at risk of gaining too much weight if food intake doesn't match their energy needs. A child with cerebral palsy who uses a wheelchair needs less energy than one who walks.",
+        "Rett syndrome is a rare genetic disorder on the X chromosome, almost always in girls, with severe neurological delays and slowed head growth. Children with autism may refuse foods they don't like, insist on certain foods or drinks, and have tantrums at meals."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Who needs less energy?",
+        "options": [
+          {
+            "label": "A child with cerebral palsy who uses a wheelchair",
+            "correct": true,
+            "feedback": "Yes. Less movement means lower energy needs."
+          },
+          {
+            "label": "A child with cerebral palsy who walks",
+            "correct": false,
+            "feedback": "Walking takes more energy, especially with muscle-control problems."
+          },
+          {
+            "label": "Both need the same",
+            "correct": false,
+            "feedback": "Activity level makes a real difference."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l6-b7",
+      "title": "Celiac disease, sickle cell disease and asthma",
+      "teach": [
+        "Celiac disease is an immune reaction to gluten, found in wheat, rye and barley. These grains must be removed from the diet for life. Children with sickle cell disease who get blood transfusions also receive iron from them, so iron-rich foods may need to be limited rather than encouraged.",
+        "Asthma itself doesn't need nutrition treatment, but some children with asthma also have food allergies, and food allergies can trigger asthma. Families sometimes cut out dairy because they believe milk increases mucus, which isn't supported and can leave children short of calcium."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which grains must be removed for celiac disease?",
+        "options": [
+          {
+            "label": "Wheat, rye and barley",
+            "correct": true,
+            "feedback": "Yes. These contain gluten."
+          },
+          {
+            "label": "Wheat, rice and soy",
+            "correct": false,
+            "feedback": "Rice and soy are gluten-free."
+          },
+          {
+            "label": "Rice, corn and eggs",
+            "correct": false,
+            "feedback": "None of these contain gluten."
+          }
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Growth of preschoolers",
+      "back": "About 4.4 lb (2 kg) and 7 cm a year."
+    },
+    {
+      "front": "Portion rule of thumb for toddlers",
+      "back": "1 tablespoon of each food per year of age."
+    },
+    {
+      "front": "Restricting a tasty food",
+      "back": "Makes it more desirable and can lead to overeating it."
+    },
+    {
+      "front": "Fat AMDR, ages 1–3",
+      "back": "30–40% of Calories."
+    },
+    {
+      "front": "Fat AMDR, ages 4–18",
+      "back": "25–35% of Calories."
+    },
+    {
+      "front": "Iron RDA, ages 4–8",
+      "back": "10 mg a day."
+    },
+    {
+      "front": "Fibre for young children",
+      "back": "Age plus 5 g a day."
+    },
+    {
+      "front": "Nutrients often low in young children",
+      "back": "Iron, vitamin D and calcium."
+    },
+    {
+      "front": "Common cause of diarrhea in healthy toddlers",
+      "back": "Too much fruit juice."
+    },
+    {
+      "front": "Vegetarian toddlers: what to avoid",
+      "back": "Bran and too many bulky foods."
+    },
+    {
+      "front": "Children with disabilities and nutrition problems",
+      "back": "Up to 90% have some kind of nutrition problem."
+    },
+    {
+      "front": "Rett syndrome",
+      "back": "A rare genetic change on the X chromosome causing severe neurological delays, mostly in girls."
+    },
+    {
+      "front": "Cerebral palsy and energy",
+      "back": "A child who uses a wheelchair needs less energy than one who walks."
+    },
+    {
+      "front": "Celiac disease",
+      "back": "Remove gluten: wheat, rye and barley."
+    },
+    {
+      "front": "Sickle cell disease with transfusions",
+      "back": "Transfusions add iron, so iron-rich foods may need limiting."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "On average, toddlers gain 8 oz/month and preschoolers gain _____ lb/year.",
+      "o": [
+        "4.4",
+        "6.2",
+        "8.3",
+        "10.5"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The textbook says preschoolers gain about 4.4 lb a year."
+    },
+    {
+      "q": "One “rule of thumb” regarding portion sizes for toddlers is:",
+      "o": [
+        "Serve them as you would serve yourself and let them decide how much they would like to eat.",
+        "1 tablespoon of food per year of age.",
+        "Allow toddlers to self serve and graze throughout the day as there are no actual portion sizes for this age group.",
+        "1/4 cup of protein-type foods and ½ cup of all others.",
+        "None of the above is correct."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. A common guide is 1 tablespoon of each food per year of age."
+    },
+    {
+      "q": "Studies have shown that restricting a young child’s access to palatable food may:",
+      "o": [
+        "promote desirability of that particular food.",
+        "increase disinterest in new foods.",
+        "encourage them to overeat these foods and have negative feelings.",
+        "All of the above",
+        "a and c only"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The textbook says restriction makes a food more desirable, and girls whose parents restricted snacks ate more of them and felt bad about it."
+    },
+    {
+      "q": "Approximately how many exposures to a new food might it take for a toddler to accept the flavor or taste?",
+      "o": [
+        "1-2",
+        "5-7",
+        "8-10",
+        ">15"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Less certain: the textbook stresses repeated exposure, and 8–10 tries is the common figure, but the chapter text doesn't give a number. Check this one against your graded result."
+    },
+    {
+      "q": "The Acceptable Macronutrient Distribution Ranges (AMDRs) for fat are _____ for children 1 to 3 years and _____________________ for children 4 to 18 years old.",
+      "o": [
+        "20-30%, <30%",
+        "20-30%, 25-35%",
+        "30-40%, <30%",
+        "30-40%, 25-35%",
+        "It is the same for both age groups at <30%."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook gives 30–40% for ages 1–3 and 25–35% for ages 4–18."
+    },
+    {
+      "q": "The RDA for iron for children ages 4-8 years is __________________.",
+      "o": [
+        "<5 mg/day",
+        "8 mg/day",
+        "10 mg/day",
+        "18 mg/day",
+        "29 mg/day"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The RDA for ages 4–8 is 10 mg a day."
+    },
+    {
+      "q": "The general fiber recommendation for 5-year-old children is _____/day.",
+      "o": [
+        "5 g",
+        "7 g",
+        "10 g",
+        "25 g",
+        "35-50 g"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Age plus 5 g: 5 + 5 = 10 g."
+    },
+    {
+      "q": "Use the following information for questions 8 & 9:\n\nA 5-year-old boy is brought in for a nutrition assessment and health check. He weighs 50 lb (22.7 kg), and is 45 in (114 cm) tall.\n\nBased on the above information, this boy has a BMI of:",
+      "o": [
+        "13.1",
+        "15.2",
+        "17.4",
+        "19.6",
+        "21.8"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. 22.7 ÷ (1.14 × 1.14) = 22.7 ÷ 1.30 = 17.4."
+    },
+    {
+      "q": "A 5-year-old boy is brought in for a nutrition assessment and health check. He weighs 50 lb (22.7 kg), and is 45 in (114 cm) tall.\n\nWhat does this boy’s BMI mean?",
+      "o": [
+        "He is underweight.",
+        "He is normal weight.",
+        "He is at risk of overweight.",
+        "He is overweight.",
+        "He is obese."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. Less certain: a BMI of 17.4 for a 5-year-old boy falls between the 85th and 95th percentiles on the growth chart, which this test calls “at risk of overweight”. Check this one against your graded result."
+    },
+    {
+      "q": "In general, children ages 1-5 tend to consume more than enough of most nutrients in their diets EXCEPT ___________________________________.",
+      "o": [
+        "calcium and zinc",
+        "fat and carbohydrate",
+        "vitamin C and iron",
+        "vitamin A and fluoride",
+        "iron and vitamin D"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Iron and vitamin D are often low in young children's diets."
+    },
+    {
+      "q": "A decrease in appetite is a normal part of growth and development for toddlers and preschool age children.",
+      "o": [
+        "True",
+        "False"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The textbook says parents can be reassured this is normal."
+    },
+    {
+      "q": "Which of the following children would NOT be at risk for a nutrient deficiency?",
+      "o": [
+        "Children suffering from abuse or neglect",
+        "Children who consume a vegetarian diet without dairy products",
+        "Children with failure to thrive",
+        "Children who participate in a dietary program for managing obesity",
+        "Children who consume a variety of basic foods"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Eating a variety of basic foods is protective."
+    },
+    {
+      "q": "Which of the following nutrition problems is the LEAST common among young children?",
+      "o": [
+        "Iron-deficiency anemia",
+        "Dental caries",
+        "Constipation",
+        "Lead poisoning"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Less certain: anemia, tooth decay and constipation are common, and lead poisoning is the least common of these, but the textbook doesn't rank them directly. Check this one against your graded result."
+    },
+    {
+      "q": "Recommendations for toddlers whose parents are vegetarian include all of the following EXCEPT:",
+      "o": [
+        "Encourage toddlers to eat bran muffins when serving fruits and vegetables.",
+        "Include cheese or avocados in toddlers’ diets.",
+        "Encourage toddlers to eat two to three snacks.",
+        "Include good sources of vitamin B12 in toddler’s diets or supplement, if required."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The textbook says to avoid serving bran and too many bulky foods."
+    },
+    {
+      "q": "It is estimated that up to _____ of children with disabilities have some type of nutritional problem.",
+      "o": [
+        "25%",
+        "45%",
+        "55%",
+        "75%",
+        "90%"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The textbook says up to 90%."
+    },
+    {
+      "q": "A child who has Down syndrome would have a poorer health outcome associated with",
+      "o": [
+        "skipping one meal.",
+        "offering meals in the school foodservice cafeteria on days when he is not attending.",
+        "reviewing his individualized education plan three weeks late.",
+        "mismatching his energy needs with food intake, thus leading to excessive weight gain."
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Children with Down syndrome often have lower energy needs, so too much food leads to excess weight gain."
+    },
+    {
+      "q": "Rett syndrome is a rare disorder characterized by:",
+      "o": [
+        "damage that occurs to underdeveloped lungs resulting in breathing that requires extra effort.",
+        "a genetic change on the X chromosome resulting in severe neurological delays",
+        "damage to the part of the brain controlling movement of the legs, interfering with muscle control and ambulation.",
+        "damage to chromosome 7 that interferes with all the exocrine functions in the body.",
+        "destruction of the infection-fighting abilities of the body by a virus."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Rett syndrome is a genetic change on the X chromosome, mostly in girls."
+    },
+    {
+      "q": "Characteristics of food choices by an autistic child might include all of the following EXCEPT:",
+      "o": [
+        "preferring to eat solid foods rather than drink liquids.",
+        "refusing to eat when offered something he/she does not like.",
+        "having temper tantrums in which he/she can be injured.",
+        "preferring one type of drink above others.",
+        "All of the above ARE characteristics of food choices."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Less certain: food refusal, tantrums and strong drink preferences are typical, while preferring solids over liquids isn't a recognized pattern, but the textbook text doesn't settle this. Check this one against your graded result."
+    },
+    {
+      "q": "Healthy toddlers are likely to develop diarrhea from _____.",
+      "o": [
+        "introduction of vegetables into their diet",
+        "addition of too much fat into their diet",
+        "consumption of eggs",
+        "drinking too much fruit juice",
+        "drinking 2% milk versus whole milk"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. The textbook links diarrhea to too much juice, especially with sorbitol."
+    },
+    {
+      "q": "Dietary management of celiac disease requires the elimination of:",
+      "o": [
+        "wheat, rye, and barley.",
+        "wheat, rice, and soy.",
+        "wheat, rice, corn, and soy.",
+        "rice, corn, eggs, and bulgur.",
+        "fruits, vegetables, and nuts."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. These are the gluten-containing grains."
+    },
+    {
+      "q": "Which food may not be appropriate to serve a child with sickle-cell disease also receiving a blood transfusion containing iron?",
+      "o": [
+        "Cereal with milk",
+        "Hamburger with tomatoes",
+        "Green beans and butter",
+        "Hostess snack cake",
+        "Potato chips"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Transfusions add iron, so iron-rich foods like hamburger may not be needed."
+    },
+    {
+      "q": "Use the following diet record to answer questions 22 & 23.\n\nBreakfast: Instant oatmeal sweetened with brown sugar Mashed banana 8 oz. fortified juice\nLunch: Macaroni with butter 8 oz. fortified juice\nSnack: Goldfish crackers 12 oz. fortified juice\nDinner: White bread without crusts and with butter 12 oz. fortified juice\n\nWhat would indicate that the 3-year-old girl following this diet has a potential feeding problem?",
+      "o": [
+        "Lack of variety",
+        "Bland food choices",
+        "Excessive fluid intake",
+        "All of the above",
+        "a and c only"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Her diet has little variety, only bland foods and 40 oz of juice a day."
+    },
+    {
+      "q": "Breakfast: Instant oatmeal sweetened with brown sugar Mashed banana 8 oz. fortified juice\nLunch: Macaroni with butter 8 oz. fortified juice\nSnack: Goldfish crackers 12 oz. fortified juice\nDinner: White bread without crusts and with butter 12 oz. fortified juice\n\nWhat foods could you suggest to increase variety and still make it easy for her to eat?",
+      "o": [
+        "Pureed pears or peaches",
+        "Macaroni made with milk and cheese",
+        "Peanut butter sandwich crackers",
+        "Fortified juice smoothie",
+        "All of the above"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Each choice adds variety in a soft, familiar form."
+    },
+    {
+      "q": "A child with cerebral palsy in a wheelchair will likely require _____ energy than/as a child with cerebral palsy that is able to walk.",
+      "o": [
+        "more",
+        "less",
+        "the same amount of"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Less movement means lower energy needs."
+    },
+    {
+      "q": "Some children have asthma as a result of food allergies.",
+      "o": [
+        "True",
+        "False"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Less certain: the textbook says some children with asthma also have food allergies, and food allergies can trigger asthma, but it doesn't say this in so many words. Check this one against your graded result."
+    }
+  ]
+}
