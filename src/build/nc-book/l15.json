@@ -1,0 +1,98 @@
+{
+  "lesson": 15,
+  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 5: Developing a Nutrition Care Plan: Putting It All Together",
+  "kicker": "Lesson 15 of your course, built from Chapter 5 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l15-b1",
+      "title": "Setting goals",
+      "teach": [
+        "Goal setting suits clients who are ready to change (Level 3, and sometimes Level 2). It breaks a big change into small steps, and each small success builds confidence. Goal setting is part of the Nutrition Care Process, Social Cognitive Theory and motivational interviewing.",
+        "Start with a broad goal, such as eating more fruit, then narrow it down to one specific, measurable, time-bound step. Many clients pick goals that are too ambitious. Help them find the smallest goal that is achievable and worthwhile, rather than asking how much they think they can do."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "A client wants to “eat healthier from now on.” What's the best next step?",
+        "options": [
+          {"label": "Ask how much she thinks she can change this week", "correct": false, "feedback": "This often leads to over-ambitious goals."},
+          {"label": "Help her find the smallest goal that is achievable and worthwhile", "correct": true, "feedback": "Yes. Small wins build confidence."},
+          {"label": "Keep the goal broad so it's flexible", "correct": false, "feedback": "Broad goals need to be narrowed to a specific step."}
+        ]
+      }
+    },
+    {
+      "id": "l15-b2",
+      "title": "Dietary assessment tools",
+      "teach": [
+        "A 24-hour recall is quick, but people over- or under-report. Ask neutral questions like “What were the first foods or drinks you had after waking up?” rather than “What did you have for breakfast?”, which assumes a meal. A food frequency questionnaire shows how often foods are eaten. In a clinical setting, pairing it with a 24-hour recall gives a better picture.",
+        "A food diary (record) is filled in by the client and can also work as an intervention, because writing things down makes people more aware of their habits. Detailed history forms give clues to strengths and barriers, but some clients may find them invasive or culturally uncomfortable."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which 24-hour recall question is better?",
+        "options": [
+          {"label": "“What did you eat for breakfast?”", "correct": false, "feedback": "This assumes the client ate breakfast."},
+          {"label": "“What were the first foods or drinks you had after waking up today?”", "correct": true, "feedback": "Yes. It doesn't assume a meal was eaten."}
+        ]
+      }
+    },
+    {
+      "id": "l15-b3",
+      "title": "Estimating portions",
+      "teach": [
+        "Everyday objects help clients estimate portions. Half a cup of fruit, vegetables, cooked cereal, pasta or rice is about a small fist. Three ounces of cooked meat, poultry or fish is about a deck of cards. A potato is about the size of a computer mouse.",
+        "Using these comparisons in recalls and food records makes estimates more accurate."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each portion with its everyday comparison.",
+        "categories": ["Small fist", "Deck of cards", "Computer mouse"],
+        "items": [
+          {"label": "½ cup cooked rice", "category": 0, "feedback": "Half a cup is about a small fist."},
+          {"label": "3 oz cooked chicken", "category": 1, "feedback": "Three ounces of meat is about a deck of cards."},
+          {"label": "A small baked potato", "category": 2, "feedback": "A potato is about the size of a computer mouse."}
+        ]
+      }
+    },
+    {
+      "id": "l15-b4",
+      "title": "Body weight standards",
+      "teach": [
+        "Height–weight tables are outdated and no longer seen as a reliable way to find a healthy weight. BMI is used instead, but cut-offs vary by population. The World Health Organization suggests 23 as the overweight cut-off and 27.5 for obesity for most Asians. For Pacific Islanders, the overweight cut-off is 26.",
+        "BMI isn't a good guide to body fat in pregnant or breastfeeding women, very muscular people, growing children or adults over 65."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What BMI does the WHO suggest as the overweight level for Pacific Islanders?",
+        "options": [
+          {"label": "23", "correct": false, "feedback": "23 is the suggested cut-off for most Asians."},
+          {"label": "26", "correct": true, "feedback": "Yes. 26 for Pacific Islanders."},
+          {"label": "27.5", "correct": false, "feedback": "27.5 is the obesity cut-off for most Asians."}
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {"front": "Goal setting is part of…", "back": "The Nutrition Care Process, Social Cognitive Theory and motivational interviewing."},
+    {"front": "Choosing a goal", "back": "Find the smallest goal that is achievable and worthwhile."},
+    {"front": "24-hour recall", "back": "Quick, but people over- and under-report."},
+    {"front": "Better first recall question", "back": "“What were the first foods or drinks you had after waking up?”"},
+    {"front": "Food diary as an intervention", "back": "Writing intake down raises awareness and can change habits."},
+    {"front": "Clinical intake assessment", "back": "A food frequency questionnaire plus a 24-hour recall."},
+    {"front": "Portion comparisons", "back": "½ cup = small fist. 3 oz meat = deck of cards. Potato = computer mouse."},
+    {"front": "BMI overweight cut-off for Pacific Islanders", "back": "26."},
+    {"front": "Height–weight tables", "back": "Outdated. Not a reliable guide to healthy weight."}
+  ],
+  "quiz": [
+    {"q": "Goal-setting is a key strategy in", "o": ["the Nutrition Care Process.", "Social cognitive theory.", "Motivational interviewing.", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. The textbook ties goal setting to all three."},
+    {"q": "When helping a client choose a goal, it’s best to", "o": ["focus on identifying the smallest goal that is achievable and worthwhile.", "ask the client how much they think they can accomplish.", "select a broadly stated goal.", "B and C"], "a": 0, "e": "Checked answer, not from an official key. The textbook recommends this rather than asking how much the client can do."},
+    {"q": "While providing clues to a client’s strengths and potential barriers, the _________ may seem invasive to some clients and may not be culturally sensitive.", "o": ["24-hour recall", "diet history interview", "client assessment questionnaire and historical data form", "All of the above"], "a": 2, "e": "Checked answer, not from an official key. Less certain: detailed personal history forms are the most likely to feel invasive, but the textbook doesn't tie the wording to one tool. Check this one against your graded result."},
+    {"q": "Which diet assessment tool is quick, but occasionally unreliable, as over and under reporting does occur?", "o": ["24-hour recall", "diet history interview", "client assessment questionnaire and historical data form", "All of the above"], "a": 0, "e": "Checked answer, not from an official key. Less certain: the 24-hour recall is the quick tool, and over- and under-reporting are its known weak points. Check this one against your graded result."},
+    {"q": "One small baked potato can be estimated to be the same size as", "o": ["a small fist.", "a deck of cards.", "a baseball.", "a computer mouse."], "a": 3, "e": "Checked answer, not from an official key. A potato is commonly compared to a computer mouse."},
+    {"q": "Which dietary assessment tool can also be used as an intervention technique to alter food habits?", "o": ["A food diary", "Diet history interview", "24-hour recall", "All of the above"], "a": 0, "e": "Checked answer, not from an official key. Keeping a food diary raises awareness and can change habits."},
+    {"q": "In a clinical setting, you may consider a general food frequency questionnaire and a ___________ to best evaluate your client’s food intake.", "o": ["food diary", "diet history interview", "client assessment questionnaire and historical data form", "24-hour recall"], "a": 3, "e": "Checked answer, not from an official key. The textbook pairs a food frequency questionnaire with a 24-hour recall."},
+    {"q": "Which of the following questions would NOT be recommended for an effective 24-hour recall?", "o": ["What did you eat for breakfast?", "What foods were first consumed after waking up today?", "How much butter did you use on your toast?", "What foods were consumed during meal preparation?"], "a": 0, "e": "Checked answer, not from an official key. The textbook says to avoid this because it assumes a meal was eaten."},
+    {"q": "The World Health Organization suggests using a BMI of _________ as the level indicating overweight for Pacific Islanders.", "o": ["23", "25", "26", "27.5"], "a": 2, "e": "Checked answer, not from an official key. The textbook gives 26 for Pacific Islanders."},
+    {"q": "Height-weight tables are still a reliable tool to determine a healthy weight.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. They are outdated, and BMI is used instead."}
+  ]
+}
