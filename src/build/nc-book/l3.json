@@ -1,0 +1,205 @@
+{
+  "lesson": 3,
+  "book": "Nutrition Through the Life Cycle (Brown), Chapter 4: Nutrition During Pregnancy and Chapter 5: Nutrition During Pregnancy Conditions and Interventions",
+  "kicker": "Lesson 3 of your course, built from Chapters 4 and 5 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l3-b1",
+      "title": "Why pregnancy nutrition matters",
+      "teach": [
+        "What a woman eats before and during pregnancy affects the baby's growth, health at birth and even health later in life. Infant deaths are one way to measure how well a population is doing. Two-thirds of deaths of babies born alive happen in the first month after birth, the newborn period. Low birthweight and preterm birth are major reasons.",
+        "Each organ has a critical period of fast growth. A shortage at that exact time can cause lasting harm that can't be fixed later. The neural tube, which becomes the brain and spinal cord, forms in weeks 3 and 4 after conception, often before a woman knows she is pregnant. That is why folate matters so much early on."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "When does the neural tube, which becomes the spinal cord, form?",
+        "options": [
+          {"label": "1–2 weeks after conception", "correct": false, "feedback": "A little too early. It forms in weeks 3 and 4."},
+          {"label": "3–4 weeks after conception", "correct": true, "feedback": "Yes, which is often before a woman knows she's pregnant."},
+          {"label": "7–8 weeks after conception", "correct": false, "feedback": "By then the critical period for the neural tube has passed."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b2",
+      "title": "How the mother's body changes",
+      "teach": [
+        "Early in pregnancy, the mother's blood volume expands. Nutrients, some drawn from her stores, go first to support this expansion. The greater the expansion, the larger the baby tends to be. The extra water in the blood dilutes some vitamins and minerals, so blood levels can look lower even when intake is fine.",
+        "Hormones made by the placenta drive many of these changes. In the second half of pregnancy the body uses more fat, so blood lipids rise a lot. Triglycerides more than double, and cholesterol rises too. The placenta uses cholesterol to make hormones, and the baby uses it for nerve and cell membranes. Levels return to normal after birth."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What happens to blood cholesterol and triglycerides during pregnancy?",
+        "options": [
+          {"label": "They drop because the blood is diluted.", "correct": false, "feedback": "Dilution lowers some vitamins and minerals, but lipids go up."},
+          {"label": "They rise a lot from pre-pregnancy levels.", "correct": true, "feedback": "Yes. Triglycerides more than double by the end of pregnancy."},
+          {"label": "They stay the same.", "correct": false, "feedback": "They change a lot, especially in the second half of pregnancy."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b3",
+      "title": "The placenta",
+      "teach": [
+        "The placenta makes hormones and enzymes, handles the exchange of nutrients and gases between mother and baby, and removes the baby's waste. It also acts as a partial barrier, but it is more like a fence than a filter. Many harmful things, including alcohol, some drugs, excess vitamins and bacteria such as listeria, can pass through.",
+        "Some substances don't cross at all. Maternal insulin is one: the baby has to make its own. That's why high blood glucose in the mother leads the baby to make extra insulin."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which statement about the placenta is accurate?",
+        "options": [
+          {"label": "It blocks alcohol and drugs from reaching the baby.", "correct": false, "feedback": "It's more like a fence than a filter. Alcohol and many drugs do pass through."},
+          {"label": "It makes hormones, exchanges nutrients and gases, and removes waste.", "correct": true, "feedback": "Yes. These are its main jobs."},
+          {"label": "Maternal insulin passes through it easily.", "correct": false, "feedback": "Insulin doesn't cross the placenta. The baby makes its own."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b4",
+      "title": "How much weight to gain",
+      "teach": [
+        "Recommended weight gain depends on the woman's BMI before pregnancy. The Institute of Medicine ranges for one baby are: underweight (BMI under 18.5), 28–40 lb; normal weight (18.5–24.9), 25–35 lb; overweight (25–29.9), 15–25 lb; and obese (30 or more), 11–20 lb.",
+        "BMI is weight in kilograms divided by height in metres squared. For twins, the recommended gain is higher."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A woman is 1.65 m tall and weighs 75 kg before pregnancy. What is her BMI? (Round to one decimal.)",
+        "answer": 27.5,
+        "tolerance": 0.1,
+        "unit": "kg/m²",
+        "explanation": "1.65 × 1.65 = 2.72. 75 ÷ 2.72 = 27.5. She is overweight, so the recommended gain is 15–25 lb."
+      }
+    },
+    {
+      "id": "l3-b5",
+      "title": "Key nutrients in pregnancy",
+      "teach": [
+        "Pregnant women need 71 g of protein a day, and most North American women already eat about that much. The recommendation for folate is 600 mcg a day, including 400 mcg of folic acid from fortified foods or a supplement. The rest can come from vegetables and fruit.",
+        "DHA, an omega-3 fat, supports the baby's brain and eyes. Pregnant women are advised to eat 2–3 servings a week of fish or seafood that is low in mercury, such as shrimp, canned light tuna, salmon, pollock and catfish. They should avoid high-mercury fish like swordfish, king mackerel, tilefish and shark. Algae-based DHA is an option for vegetarians."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these would give a pregnant woman the most DHA?",
+        "options": [
+          {"label": "A tuna salad sandwich", "correct": true, "feedback": "Yes. Fish such as tuna is the main food source of DHA."},
+          {"label": "A glass of whole milk", "correct": false, "feedback": "Regular milk has very little DHA."},
+          {"label": "A cup of broccoli", "correct": false, "feedback": "Vegetables don't provide DHA."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b6",
+      "title": "Pica and food safety",
+      "teach": [
+        "Pica is a craving for and eating of non-food items such as ice, laundry starch or cornstarch, baking soda or clay. It is an eating disorder and is more common in non-Hispanic Black American women than in other groups. Women with pica are more likely to have low iron, though it isn't clear which comes first.",
+        "Pregnant women are more vulnerable to foodborne illness, especially listeria, which can cross the placenta. Foods to avoid include soft cheeses such as brie (unless made with pasteurized milk), ready-to-eat deli meats unless heated until steaming, raw oysters and other raw seafood, and unpasteurized milk."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Sort each food by its food safety risk in pregnancy.",
+        "categories": ["Avoid or handle with care", "Low risk"],
+        "items": [
+          {"label": "Unpasteurized milk", "category": 0, "feedback": "Can carry listeria and other bacteria."},
+          {"label": "Raw oysters", "category": 0, "feedback": "Raw seafood carries a risk of foodborne illness."},
+          {"label": "Cold deli meat straight from the package", "category": 0, "feedback": "Heat deli meats until steaming to kill listeria."},
+          {"label": "A washed banana", "category": 1, "feedback": "Fresh fruit you peel is low risk."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b7",
+      "title": "High blood pressure and preeclampsia",
+      "teach": [
+        "Hypertension is blood pressure of 140/90 mm Hg or higher. High blood pressure disorders of pregnancy affect 5–10% of pregnancies and are a leading cause of death in mothers around the world. Preeclampsia usually appears after 20 weeks, with high blood pressure plus signs such as headache, blurred vision, belly pain and abnormal liver tests.",
+        "In preeclampsia, small blood clots and poor blood flow most affect the placenta and the mother's kidneys, liver and brain. Helpful habits include plenty of fruit and vegetables, enough fibre, moderate activity and enough vitamin D. High-dose iron supplements should not be given, because they can make inflammation worse."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these is NOT recommended for a woman at risk of preeclampsia?",
+        "options": [
+          {"label": "Five or more servings of fruit and vegetables a day", "correct": false, "feedback": "This is recommended."},
+          {"label": "High-dose iron supplements", "correct": true, "feedback": "Right. High-dose iron can increase inflammation and shouldn't be given."},
+          {"label": "Moderate exercise", "correct": false, "feedback": "Moderate activity is part of the advice."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b8",
+      "title": "Diabetes in pregnancy",
+      "teach": [
+        "When the mother's blood glucose is high, the extra glucose reaches the baby. The baby responds by making more insulin, which moves glucose into its cells and turns it into fat. This can lead to a large baby and may raise the child's risk of type 2 diabetes later.",
+        "Type 1 diabetes is usually the most hazardous type in pregnancy, because of higher risks of kidney disease, high blood pressure, preeclampsia and other complications. Gestational diabetes develops during pregnancy. Insulin sensitivity usually improves once the placenta is delivered, but these women have a higher chance of gestational diabetes in later pregnancies and of type 2 diabetes."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What does the baby do when the mother's blood glucose is high?",
+        "options": [
+          {"label": "Makes more insulin", "correct": false, "feedback": "Yes, but that's only part of it."},
+          {"label": "Turns extra glucose into stored fat", "correct": false, "feedback": "True, but there's more."},
+          {"label": "All of these, and it may raise the child's later risk of type 2 diabetes", "correct": true, "feedback": "Right. Extra insulin, fat storage and a possible later risk all go together."}
+        ]
+      }
+    },
+    {
+      "id": "l3-b9",
+      "title": "Twins and other multiple pregnancies",
+      "teach": [
+        "Only about 3% of babies come from multiple pregnancies, but they make up a large share of low-birthweight and preterm babies. Many twin pregnancies lose one embryo early on, which is called the vanishing twin. It is not unusual for embryos to disappear within 13 weeks of conception.",
+        "Carrying more than one baby raises the mother's risk of preeclampsia, iron-deficiency anemia, preterm delivery and cesarean birth. A 40-lb gain for twins takes about 35,000 more Calories over the pregnancy than a single pregnancy, roughly 150 extra Calories a day. A prenatal vitamin and mineral supplement is generally advised."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What is the vanishing twin phenomenon?",
+        "options": [
+          {"label": "The disappearance of an embryo within 13 weeks of conception", "correct": true, "feedback": "Yes. Many pregnancies that start as twins end with one baby."},
+          {"label": "Fewer twins being born because of fertility drugs", "correct": false, "feedback": "Fertility treatment actually raised the number of multiple births."},
+          {"label": "One twin being much smaller at birth", "correct": false, "feedback": "That's a growth difference, not the vanishing twin."}
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {"front": "Infant deaths in the first month", "back": "About two-thirds of infant deaths happen in the newborn period."},
+    {"front": "Critical period for the neural tube", "back": "Weeks 3 and 4 after conception."},
+    {"front": "Blood lipids in pregnancy", "back": "Rise a lot. Triglycerides more than double by the end of pregnancy."},
+    {"front": "Dilution effect", "back": "Expanded blood volume lowers blood levels of some vitamins and minerals."},
+    {"front": "Main jobs of the placenta", "back": "Making hormones and enzymes, exchanging nutrients and gases, and removing waste."},
+    {"front": "Does insulin cross the placenta?", "back": "No. The baby makes its own insulin."},
+    {"front": "Weight gain for an overweight woman (BMI 25–29.9)", "back": "15–25 lb."},
+    {"front": "Protein in pregnancy", "back": "71 g a day."},
+    {"front": "Folate in pregnancy", "back": "600 mcg a day, with 400 mcg as folic acid from fortified foods or a supplement."},
+    {"front": "DHA in pregnancy", "back": "2–3 servings a week of low-mercury fish or seafood."},
+    {"front": "Pica", "back": "Eating non-food items such as ice, starch or clay. More common in non-Hispanic Black American women."},
+    {"front": "Hypertension", "back": "Blood pressure of 140/90 mm Hg or higher."},
+    {"front": "Leading cause of maternal death worldwide", "back": "High blood pressure disorders of pregnancy."},
+    {"front": "Organs most affected in preeclampsia", "back": "The placenta and the mother's kidneys, liver and brain."},
+    {"front": "Most hazardous type of diabetes in pregnancy", "back": "Type 1 diabetes."},
+    {"front": "Extra Calories for a twin pregnancy", "back": "About 35,000 more over the pregnancy, roughly 150 a day."}
+  ],
+  "quiz": [
+    {"q": "Approximately what proportion of infants who die within the first year of life die within the first month after birth?", "o": ["1/3", "2/3", "1/2", "3/4", "5/8"], "a": 1, "e": "Checked answer, not from an official key. The textbook says two-thirds of infant deaths happen in the first month."},
+    {"q": "How can the change in lipid blood levels that occurs during pregnancy best be described?", "o": ["Cholesterol and triglyceride levels decrease due to the increased water volume in the blood", "Cholesterol and triglyceride levels remain the same as pre-pregnancy levels", "Cholesterol and triglyceride levels increase dramatically from pre-pregnancy levels", "Cholesterol and triglyceride levels fluctuate daily depending on when the fetus is building nerve cells"], "a": 2, "e": "Checked answer, not from an official key. The textbook says blood lipids increase dramatically, with triglycerides more than doubling."},
+    {"q": "All of the following substances are transported through the placenta easily, with the exception of _________________, which is not transferred at all.", "o": ["water", "cholesterol", "oxygen", "ketones", "insulin"], "a": 4, "e": "Checked answer, not from an official key. Maternal insulin does not cross the placenta. The baby makes its own."},
+    {"q": "A critical period of spinal cord development following conception is:", "o": ["1-2 weeks after conception.", "3-4 weeks after conception.", "5-6 weeks after conception.", "7-8 weeks after conception.", "9-10 weeks after conception."], "a": 1, "e": "Checked answer, not from an official key. The neural tube becomes the brain and spinal cord during weeks 3 and 4."},
+    {"q": "The recommended daily protein (g) intake for pregnant women is _____.", "o": ["30 g", "71 g", "90 g", "120 g"], "a": 1, "e": "Checked answer, not from an official key. 71 g a day."},
+    {"q": "Research is emerging that suggests pregnant women should increase their food sources of docosahexaenoic acid (DHA). Which of the following foods would provide the most DHA to pregnant women?", "o": ["1/2 tuna salad sandwich", "1/4 cup granola containing 1 tsp sunflower seed", "8 oz glass whole milk", "1 cup broccoli"], "a": 0, "e": "Checked answer, not from an official key. Fish such as tuna is the main food source of DHA."},
+    {"q": "Pregnant women of ____________________________ ethnicity are more likely than those of other ethnicities to have an eating disorder known as pica.", "o": ["Chinese", "African American", "White Caucasian", "Hispanic", "Hmong"], "a": 1, "e": "Checked answer, not from an official key. The textbook says pica is more common in non-Hispanic Black Americans."},
+    {"q": "______________________________ do(es) NOT pose any foodborne bacterial risks in pregnant women.", "o": ["Brie cheese", "Ready-to-eat deli meats", "Raw oysters", "Unpasteurized milk", "Organic bananas"], "a": 4, "e": "Checked answer, not from an official key. The others can carry listeria or other bacteria."},
+    {"q": "Why must volume expansion occur BEFORE maternal nutrient stores accumulate?", "o": ["In order to support large gains in fetal weight", "In order to provide the fetus with sufficient energy, nutrients, and oxygen", "In order to provide the mother with plenty of fluids", "In order to dilute the high concentration of nutrients in pregnant women", "In order to make room for growing organs"], "a": 1, "e": "Checked answer, not from an official key. Less certain: the textbook says expanded blood volume carries nutrients and oxygen to support the pregnancy, but it doesn't answer this question directly, so check it against your graded result."},
+    {"q": "Which of the following is a major function of the placenta?", "o": ["Hormone and enzyme production", "Nutrient and gas exchange between mother and fetus", "Removal of waste products from the fetus", "Barrier to drugs and alcohol", "a, b, and c", "all of the above"], "a": 4, "e": "Checked answer, not from an official key. The placenta isn't a reliable barrier. Alcohol and many drugs pass through it."},
+    {"q": "Use the following information to answer questions 11-13:\n\nJane is 5’7” (1.70 m) and weighs 160 pounds (72.7 kg).\n\nWhat is Jane’s body mass index?", "o": ["19.7", "25.1", "31.4", "43"], "a": 1, "e": "Checked answer, not from an official key. 72.7 ÷ (1.70 × 1.70) = 72.7 ÷ 2.89 = 25.1."},
+    {"q": "Jane is 5’7” (1.70 m) and weighs 160 pounds (72.7 kg).\n\nBased on her BMI, Jane would be considered:", "o": ["underweight.", "normal weight.", "overweight.", "obese.", "morbidly obese."], "a": 2, "e": "Checked answer, not from an official key. A BMI of 25–29.9 is overweight."},
+    {"q": "Jane is 5’7” (1.70 m) and weighs 160 pounds (72.7 kg).\n\nJane becomes pregnant. How many pounds should Jane gain during her pregnancy, based on her BMI?", "o": ["11 to 20", "15 to 25", "25 to 35", "28 to 40", "35 to 45"], "a": 1, "e": "Checked answer, not from an official key. The recommendation for overweight women is 15–25 lb."},
+    {"q": "The recommended daily dietary intake of folate during pregnancy is:", "o": ["200 mcg from fortified food or supplements.", "400 mcg from fortified food or supplements.", "600 mcg total with 400 mcg from fortified food or supplements.", "800 mcg total with 600 mcg from fortified food or supplements.", "4000 mcg total in any form."], "a": 2, "e": "Checked answer, not from an official key. 600 mcg a day, including 400 mcg of folic acid."},
+    {"q": "Hypertension is defined as having a blood pressure of _____.", "o": ["≥120 mm Hg systolic or ≥70 mm Hg diastolic", "≥140 mm Hg systolic or ≥90 mm Hg diastolic", "≥120 mm Hg systolic or ≥90 mm Hg diastolic", "≥140 mm Hg systolic or ≥70 mm Hg diastolic", "≥160 mm Hg systolic or ≥110 mm Hg diastolic"], "a": 1, "e": "Checked answer, not from an official key. The textbook uses 140/90 mm Hg."},
+    {"q": "A worldwide leading cause of MATERNAL mortality is:", "o": ["gestational diabetes.", "hypertensive disorders of pregnancy.", "AIDS/HIV.", "multifetal pregnancies.", "adolescent pregnancy complications."], "a": 1, "e": "Checked answer, not from an official key. The textbook names high blood pressure disorders of pregnancy."},
+    {"q": "Maternal organs most affected by small blot clots and reduced blood flow in preeclampsia include all of the following EXCEPT:", "o": ["the placenta", "the kidneys.", "the brain.", "the appendix.", "the liver."], "a": 3, "e": "Checked answer, not from an official key. The textbook lists the placenta, kidneys, liver and brain."},
+    {"q": "Nutritional and physical activity recommendations that may benefit women at risk for preeclampsia include all of the following EXCEPT:", "o": ["high-dose iron supplements.", "5 or more servings of fruits and vegetables daily.", "moderate exercise.", "adequate fiber intake", "adequate vitamin D."], "a": 0, "e": "Checked answer, not from an official key. High-dose iron can increase inflammation and shouldn't be given."},
+    {"q": "High maternal blood glucose levels cause the fetus to ____________________________________________________.", "o": ["increase insulin output", "convert glucose into triglycerides and store it as fat", "potentially develop type 2 diabetes later in life", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. The textbook describes all three effects."},
+    {"q": "Which type of diabetes is potentially the most hazardous to the mother and fetus?", "o": ["Type 1 diabetes", "Type 2 diabetes", "Gestational diabetes", "They are all equally hazardous."], "a": 0, "e": "Checked answer, not from an official key. The textbook says type 1 is usually the most hazardous."},
+    {"q": "The vanishing twin phenomenon refers to:", "o": ["the fact that more triplets and quadruplets are being born because of fertility drugs.", "the disappearance of embryos within 13 weeks of conception.", "the decreasing percentage of dizygotic twins in favor of monozygotes.", "None of the above"], "a": 1, "e": "Checked answer, not from an official key. The textbook defines it this way."},
+    {"q": "A multifetal pregnancy increases the mother’s risk for:", "o": ["development of preeclampsia", "development of iron-deficiency anemia", "preterm delivery", "cesarean delivery", "All of the above"], "a": 4, "e": "Checked answer, not from an official key. Multiple pregnancies raise the risk of all of these."},
+    {"q": "To achieve a 40-pound weight gain, women with twins need to consume approximately _________ more calories during pregnancy than do women with singleton pregnancies.", "o": ["15,000", "25,000", "35,000", "45,000", "50,000"], "a": 2, "e": "Checked answer, not from an official key. The textbook gives about 35,000 Calories, or roughly 150 a day."},
+    {"q": "“Best practice” vitamin and mineral supplement recommendations for women during multifetal pregnancies include which of the following statements?", "o": ["There is no need to take a vitamin and mineral supplement if you are eating enough food.", "Women with twins need to take more iron.", "Women should use a prenatal vitamin and mineral supplement.", "Women with twins need to take twice the recommended amount of a supplement."], "a": 2, "e": "Checked answer, not from an official key. The textbook's twin case uses a prenatal vitamin and mineral supplement. It doesn't support doubling the dose."}
+  ]
+}
