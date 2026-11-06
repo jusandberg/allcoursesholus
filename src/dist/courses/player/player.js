@@ -97,7 +97,7 @@ function render(sc){
     const t=L.title.split(' ');const mid=Math.ceil(t.length/2);
     const checks=steps.filter(x=>x.act&&x.act.type!=='explore').length;
     const mins=L.duration||('About '+Math.max(10,Math.round(steps.length*2.5))+' min');
-    return `<div class="orb"></div><div class="orb two"></div><div class="inner"><p class="eyebrow">${esc(L.courseName)}${num?` · Lesson ${num} of ${L.total}`:' · Whole course'}</p>
+    return `<div class="orbs"><div class="orb"></div><div class="orb two"></div></div><div class="inner"><p class="eyebrow">${esc(L.courseName)}${num?` · Lesson ${num} of ${L.total}`:' · Whole course'}</p>
     <h1 class="title"><span>${esc(t.slice(0,mid).join(' '))}</span>${t.length>1?`<span>${esc(t.slice(mid).join(' '))}</span>`:''}</h1>
     <p class="lede">${esc(L.kicker||'')}</p>
     <div class="meta">${L.mode?`<span>${L.mode==='cards'?L.flashcards.length+' flashcards':L.quiz.length+' questions'}</span>`:`<span>${steps.length} moments</span>`}${L.mode?'':`<span>${esc(mins)}</span><span>${checks} checks</span>${L.flashcards.length?`<span>${L.flashcards.length} flashcards</span>`:''}`}</div>
@@ -106,7 +106,7 @@ function render(sc){
   if(sc.t==='chapter'){
     const title=s.chapter||s.title;
     const chapN=steps.slice(0,sc.k+1).filter(x=>x.chapter||L.perStepChapter).length;
-    return `<div class="orb"></div><div class="inner"><p class="chap-n">${String(chapN).padStart(2,'0')}</p><p class="eyebrow">${L.perStepChapter?`Moment ${sc.k+1} of ${steps.length}`:'Part '+chapN}</p><h2 class="h2 big">${esc(title)}</h2>${s.chapterSummary?`<p class="lede" style="animation-delay:.2s">${esc(s.chapterSummary)}</p>`:''}</div>`;
+    return `<div class="orbs"><div class="orb"></div></div><div class="inner"><p class="chap-n">${String(chapN).padStart(2,'0')}</p><p class="eyebrow">${L.perStepChapter?`Moment ${sc.k+1} of ${steps.length}`:'Part '+chapN}</p><h2 class="h2 big">${esc(title)}</h2>${s.chapterSummary?`<p class="lede" style="animation-delay:.2s">${esc(s.chapterSummary)}</p>`:''}</div>`;
   }
   if(sc.t==='teach'){
     const ps=s.html?chunks(s.html):(s.teach||[]).map(p=>`<p class="reveal">${esc(p)}</p>`).join('');
@@ -134,7 +134,7 @@ function render(sc){
   }
   if(sc.t==='case'){
     const c=L.caseStudy;
-    return `<div class="orb"></div><div class="inner"><p class="eyebrow">Case study</p><h2 class="h2 big">${esc(c.title||'Put it together')}</h2><p class="lede" style="animation-delay:.15s">${esc(c.scenario||'')}</p>
+    return `<div class="orbs"><div class="orb"></div></div><div class="inner"><p class="eyebrow">Case study</p><h2 class="h2 big">${esc(c.title||'Put it together')}</h2><p class="lede" style="animation-delay:.15s">${esc(c.scenario||'')}</p>
     <div class="panels dark-panels">${(c.prompts||[]).map((p,j)=>`<div class="cp" style="--d:${300+j*140}ms"><b>${j+1}</b><span>${esc(p)}</span></div>`).join('')}</div>
     ${c.model||c.answer||c.debrief?`<button class="panel-btn reveal-model" aria-expanded="false"><h4>See a model answer</h4><p>${esc(c.model||c.answer||c.debrief)}</p></button>`:'<p class="hint light">Think each one through, or say your answer out loud, before moving on.</p>'}</div>`;
   }
@@ -150,7 +150,7 @@ function render(sc){
     const miss=graded.filter(x=>!(st.res[x.id]&&st.res[x.id].ok));
     const R=2*Math.PI*70;
     const known=Object.values(st.cards).filter(v=>v==='got').length;
-    return `<div class="orb"></div><div class="orb two"></div><div class="inner"><p class="eyebrow">${L.mode?(L.mode==='cards'?'Flashcards':'Test practice')+' complete':'Lesson '+num+' complete'}</p>
+    return `<div class="orbs"><div class="orb"></div><div class="orb two"></div></div><div class="inner"><p class="eyebrow">${L.mode?(L.mode==='cards'?'Flashcards':'Test practice')+' complete':'Lesson '+num+' complete'}</p>
     <svg class="ring" viewBox="0 0 170 170" role="img" aria-label="${pct}% right first try"><circle class="bg" cx="85" cy="85" r="70"/><circle class="fg" cx="85" cy="85" r="70" stroke-dasharray="${R}" stroke-dashoffset="${R}" data-to="${R*(1-pct/100)}"/><text x="85" y="98">${pct}%</text></svg>
     <h2 class="h2 big">${pct>=80?'Beautifully done.':pct>=50?'Good progress.':'A solid first pass.'}</h2>
     <div class="stats"><div><b>${st.xp}</b><span>XP earned</span></div><div><b>${right}/${graded.length}</b><span>right first try</span></div>${st.quiz&&st.quiz.done?`<div><b>${st.quiz.score}/${L.quiz.length}</b><span>test practice</span></div>`:''}${L.flashcards.length?`<div><b>${known}/${L.flashcards.length}</b><span>cards known</span></div>`:''}</div>

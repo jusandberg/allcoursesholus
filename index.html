@@ -11,6 +11,7 @@
 :root{--ink:#243341;--ink-deep:#16212b;--deep:#4B5D49;--sage:#71836D;--light:#C7D2C4;--mist:#EEF2ED;--teal:#C3D3D0;--cloud:#F7F8F6;--white:#fff;--muted:#5e676c;--line:#dfe4de;--good:#4B5D49;--bad:#9b4a3c;--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
+html{overflow-x:hidden}
 body{background:var(--ink-deep);color:var(--ink);font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
 button{font:inherit;cursor:pointer}
 .hp{position:fixed;inset:0;display:flex;flex-direction:column}
@@ -26,7 +27,7 @@ button{font:inherit;cursor:pointer}
 @keyframes pop{40%{transform:scale(1.18)}}
 /* stage */
 .hp-stage{position:relative;flex:1;overflow:hidden}
-.scene{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:12px max(18px,env(safe-area-inset-left)) 120px;opacity:0;transform:translateY(28px) scale(.985);transition:opacity .55s var(--ease),transform .55s var(--ease);pointer-events:none}
+.scene{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y;-webkit-overflow-scrolling:touch;padding:12px max(18px,env(safe-area-inset-left)) 120px;opacity:0;transform:translateY(28px) scale(.985);transition:opacity .55s var(--ease),transform .55s var(--ease);pointer-events:none}
 .scene.on{opacity:1;transform:none;pointer-events:auto}
 .scene.off{opacity:0;transform:translateY(-24px) scale(.985)}
 .inner{width:min(760px,100%);margin:0 auto;min-height:100%;display:flex;flex-direction:column;justify-content:center;padding-block:4vh}
@@ -41,6 +42,7 @@ button{font:inherit;cursor:pointer}
 .lede{font-size:clamp(17px,2.2vw,20px);color:rgba(255,255,255,.78);max-width:36rem;margin:0 0 30px;opacity:0;animation:rise .9s .35s var(--ease) forwards}
 .meta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 32px;opacity:0;animation:rise .9s .45s var(--ease) forwards}
 .meta span{font:600 13px/1 Manrope,sans-serif;padding:10px 14px;border-radius:99px;background:rgba(255,255,255,.08);color:#fff}
+.orbs{position:absolute;inset:0;overflow:hidden;pointer-events:none}
 .orb{position:absolute;right:-12vw;top:8vh;width:min(62vw,620px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(199,210,196,.32),rgba(113,131,109,.08) 55%,transparent 70%);filter:blur(2px);animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
 .orb.two{left:-20vw;right:auto;top:auto;bottom:-20vh;width:min(70vw,700px);background:radial-gradient(circle at 60% 40%,rgba(195,211,208,.22),transparent 65%);animation-duration:18s}
 @keyframes drift{to{transform:translate(-4vw,3vh) scale(1.06)}}
@@ -631,7 +633,7 @@ function render(sc){
     const t=L.title.split(' ');const mid=Math.ceil(t.length/2);
     const checks=steps.filter(x=>x.act&&x.act.type!=='explore').length;
     const mins=L.duration||('About '+Math.max(10,Math.round(steps.length*2.5))+' min');
-    return `<div class="orb"></div><div class="orb two"></div><div class="inner"><p class="eyebrow">${esc(L.courseName)}${num?` · Lesson ${num} of ${L.total}`:' · Whole course'}</p>
+    return `<div class="orbs"><div class="orb"></div><div class="orb two"></div></div><div class="inner"><p class="eyebrow">${esc(L.courseName)}${num?` · Lesson ${num} of ${L.total}`:' · Whole course'}</p>
     <h1 class="title"><span>${esc(t.slice(0,mid).join(' '))}</span>${t.length>1?`<span>${esc(t.slice(mid).join(' '))}</span>`:''}</h1>
     <p class="lede">${esc(L.kicker||'')}</p>
     <div class="meta">${L.mode?`<span>${L.mode==='cards'?L.flashcards.length+' flashcards':L.quiz.length+' questions'}</span>`:`<span>${steps.length} moments</span>`}${L.mode?'':`<span>${esc(mins)}</span><span>${checks} checks</span>${L.flashcards.length?`<span>${L.flashcards.length} flashcards</span>`:''}`}</div>
@@ -640,7 +642,7 @@ function render(sc){
   if(sc.t==='chapter'){
     const title=s.chapter||s.title;
     const chapN=steps.slice(0,sc.k+1).filter(x=>x.chapter||L.perStepChapter).length;
-    return `<div class="orb"></div><div class="inner"><p class="chap-n">${String(chapN).padStart(2,'0')}</p><p class="eyebrow">${L.perStepChapter?`Moment ${sc.k+1} of ${steps.length}`:'Part '+chapN}</p><h2 class="h2 big">${esc(title)}</h2>${s.chapterSummary?`<p class="lede" style="animation-delay:.2s">${esc(s.chapterSummary)}</p>`:''}</div>`;
+    return `<div class="orbs"><div class="orb"></div></div><div class="inner"><p class="chap-n">${String(chapN).padStart(2,'0')}</p><p class="eyebrow">${L.perStepChapter?`Moment ${sc.k+1} of ${steps.length}`:'Part '+chapN}</p><h2 class="h2 big">${esc(title)}</h2>${s.chapterSummary?`<p class="lede" style="animation-delay:.2s">${esc(s.chapterSummary)}</p>`:''}</div>`;
   }
   if(sc.t==='teach'){
     const ps=s.html?chunks(s.html):(s.teach||[]).map(p=>`<p class="reveal">${esc(p)}</p>`).join('');
@@ -668,7 +670,7 @@ function render(sc){
   }
   if(sc.t==='case'){
     const c=L.caseStudy;
-    return `<div class="orb"></div><div class="inner"><p class="eyebrow">Case study</p><h2 class="h2 big">${esc(c.title||'Put it together')}</h2><p class="lede" style="animation-delay:.15s">${esc(c.scenario||'')}</p>
+    return `<div class="orbs"><div class="orb"></div></div><div class="inner"><p class="eyebrow">Case study</p><h2 class="h2 big">${esc(c.title||'Put it together')}</h2><p class="lede" style="animation-delay:.15s">${esc(c.scenario||'')}</p>
     <div class="panels dark-panels">${(c.prompts||[]).map((p,j)=>`<div class="cp" style="--d:${300+j*140}ms"><b>${j+1}</b><span>${esc(p)}</span></div>`).join('')}</div>
     ${c.model||c.answer||c.debrief?`<button class="panel-btn reveal-model" aria-expanded="false"><h4>See a model answer</h4><p>${esc(c.model||c.answer||c.debrief)}</p></button>`:'<p class="hint light">Think each one through, or say your answer out loud, before moving on.</p>'}</div>`;
   }
@@ -684,7 +686,7 @@ function render(sc){
     const miss=graded.filter(x=>!(st.res[x.id]&&st.res[x.id].ok));
     const R=2*Math.PI*70;
     const known=Object.values(st.cards).filter(v=>v==='got').length;
-    return `<div class="orb"></div><div class="orb two"></div><div class="inner"><p class="eyebrow">${L.mode?(L.mode==='cards'?'Flashcards':'Test practice')+' complete':'Lesson '+num+' complete'}</p>
+    return `<div class="orbs"><div class="orb"></div><div class="orb two"></div></div><div class="inner"><p class="eyebrow">${L.mode?(L.mode==='cards'?'Flashcards':'Test practice')+' complete':'Lesson '+num+' complete'}</p>
     <svg class="ring" viewBox="0 0 170 170" role="img" aria-label="${pct}% right first try"><circle class="bg" cx="85" cy="85" r="70"/><circle class="fg" cx="85" cy="85" r="70" stroke-dasharray="${R}" stroke-dashoffset="${R}" data-to="${R*(1-pct/100)}"/><text x="85" y="98">${pct}%</text></svg>
     <h2 class="h2 big">${pct>=80?'Beautifully done.':pct>=50?'Good progress.':'A solid first pass.'}</h2>
     <div class="stats"><div><b>${st.xp}</b><span>XP earned</span></div><div><b>${right}/${graded.length}</b><span>right first try</span></div>${st.quiz&&st.quiz.done?`<div><b>${st.quiz.score}/${L.quiz.length}</b><span>test practice</span></div>`:''}${L.flashcards.length?`<div><b>${known}/${L.flashcards.length}</b><span>cards known</span></div>`:''}</div>
