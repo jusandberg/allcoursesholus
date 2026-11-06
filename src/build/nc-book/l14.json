@@ -1,0 +1,99 @@
+{
+  "lesson": 14,
+  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 4: Meeting Your Client: The Counseling Interview",
+  "kicker": "Lesson 14 of your course, built from Chapter 4 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l14-b1",
+      "title": "The phases of a counselling session",
+      "teach": [
+        "A counselling interview moves through phases. In the involving phase you greet the client, build rapport, ask how things have been going and agree on an agenda together.",
+        "In the exploration–education phase you work together to understand the problem, look for strengths, assess readiness to change and offer education. In the resolving phase you tailor the plan to the client's motivation level. The closing phase wraps up the session."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each task with its phase.",
+        "categories": ["Involving", "Exploration–education", "Resolving"],
+        "items": [
+          {"label": "Agree on an agenda for the session", "category": 0, "feedback": "Setting the agenda happens early, in the involving phase."},
+          {"label": "Clarify problems and find strengths", "category": 1, "feedback": "Understanding the problem and strengths is exploration–education."},
+          {"label": "Tailor the plan to the client's motivation", "category": 2, "feedback": "Tailoring to motivation level is the resolving phase."}
+        ]
+      }
+    },
+    {
+      "id": "l14-b2",
+      "title": "The “typical day” strategy",
+      "teach": [
+        "If you have six to eight minutes, ask the client to walk you through a typical day and where eating fits in. Sit back and relax, let them tell their story with as few interruptions as possible, and use simple open questions like “What happened then?”",
+        "The biggest mistake is jumping in with your own ideas. Don't investigate problems during the story; save that for later. At the end, review and summarize what you heard."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which of these should you NOT do during the typical day strategy?",
+        "options": [
+          {"label": "Sit back and relax", "correct": false, "feedback": "This is exactly how the textbook says to start."},
+          {"label": "Investigate problems as they come up", "correct": true, "feedback": "Right. Hold your questions and ideas until the story is told."},
+          {"label": "Review and summarize at the end", "correct": false, "feedback": "Summarizing is part of the strategy."}
+        ]
+      }
+    },
+    {
+      "id": "l14-b3",
+      "title": "Sharing assessment results",
+      "teach": [
+        "Don't just hand a client their results. Go through them in a neutral way, with clear standards to compare against, such as the Dietary Reference Intakes.",
+        "Give the facts and let the client make the first comments about what they mean. This keeps the client in charge of the conversation and avoids sounding like a judgement."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "How should assessment results be shared?",
+        "options": [
+          {"label": "Hand over the printout and point out the problems", "correct": false, "feedback": "Results should be reviewed together, not just handed over."},
+          {"label": "Go through them neutrally with clear standards, and let the client respond first", "correct": true, "feedback": "Yes. Give the facts and invite the client's view."},
+          {"label": "Skip them unless the client asks", "correct": false, "feedback": "Results are useful when shared well."}
+        ]
+      }
+    },
+    {
+      "id": "l14-b4",
+      "title": "Three levels of readiness",
+      "teach": [
+        "In the resolving phase, the approach depends on the client's readiness. Level 1 is not ready (precontemplation). The goal is to raise doubt about current habits, and the best open questions deal with the need to change. Don't push an action plan.",
+        "Level 2 is unsure. The focus is on confidence, and the best questions build confidence and address barriers. Level 3 is motivated, confident and ready. Now you help the client choose a goal and make a specific action plan."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each goal with the readiness level.",
+        "categories": ["Level 1: not ready", "Level 2: unsure", "Level 3: ready"],
+        "items": [
+          {"label": "Raise doubt about current eating habits", "category": 0, "feedback": "Level 1 works on why change matters."},
+          {"label": "Build confidence and address barriers", "category": 1, "feedback": "Level 2 is about confidence."},
+          {"label": "Negotiate a specific action plan", "category": 2, "feedback": "An action plan fits once the client is ready."}
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {"front": "Involving phase", "back": "Greet, build rapport, check in and agree on an agenda."},
+    {"front": "Exploration–education phase", "back": "Clarify problems, find strengths, assess readiness and educate."},
+    {"front": "Resolving phase", "back": "Tailor the plan to the client's motivation level."},
+    {"front": "Typical day strategy", "back": "6–8 minutes. Let the client tell their day. Don't investigate problems. Summarize at the end."},
+    {"front": "Sharing assessment results", "back": "Review neutrally with clear standards, and let the client respond first."},
+    {"front": "Level 1 (not ready)", "back": "Raise doubt. Ask about the need to change. No action plan yet."},
+    {"front": "Level 2 (unsure)", "back": "Build confidence and address barriers."},
+    {"front": "Level 3 (ready)", "back": "Choose a goal and make a specific action plan."}
+  ],
+  "quiz": [
+    {"q": "What is the goal of the counseling approach for a client who is at Level 1 in the Resolving Phase?", "o": ["Raise doubt about present dietary behaviour", "Build confidence", "Increase motivation to change diet", "Negotiate a specific plan of action"], "a": 0, "e": "Checked answer, not from an official key. Level 1 clients aren't ready, so the aim is to raise doubt about current habits."},
+    {"q": "In which phase of the counseling process would a counsellor clarify problems and identify strengths?", "o": ["Involving", "Exploration-education", "Resolving", "Closing"], "a": 1, "e": "Checked answer, not from an official key. The textbook places understanding problems and finding strengths in the exploration–education phase."},
+    {"q": "In which phase of the counseling process would a counsellor set the agenda?", "o": ["Involving", "Exploration-education", "Resolving", "Closing"], "a": 0, "e": "Checked answer, not from an official key. The agenda is agreed at the start, in the involving phase."},
+    {"q": "In which phase of the counseling process would a counsellor tailor the intervention to the client’s motivational level?", "o": ["Involving", "Exploration-education", "Resolving", "Closing"], "a": 2, "e": "Checked answer, not from an official key. This is the resolving phase."},
+    {"q": "When using a Typical Day Strategy, it is important to do all of the following, EXCEPT", "o": ["sit back and relax.", "ask only open questions.", "investigate problems.", "review and summarize"], "a": 2, "e": "Checked answer, not from an official key. The textbook's guidelines say “Don't investigate problems!”"},
+    {"q": "The most effective open-ended questions for people who are pre-contemplative deal with", "o": ["building confidence.", "the need to change.", "addressing barriers.", "A and C", "All of the above"], "a": 1, "e": "Checked answer, not from an official key. Level 1 clients need to see why change matters."},
+    {"q": "For clients at Level 1, the objective is to create an action plan.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. Action plans are for Level 3 clients who are ready."},
+    {"q": "The most effective open-ended questions for people who are unsure deal with", "o": ["building confidence.", "the need to change.", "addressing barriers.", "A and C", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. Less certain: the textbook says Level 2 is about confidence, and barriers are part of that, so A and C fits best. Check this one against your graded result."},
+    {"q": "Assessment results should be reviewed point by point in a neutral manner.", "o": ["True", "False"], "a": 0, "e": "Checked answer, not from an official key. Less certain: the textbook says to review results in a neutral manner but doesn't say “point by point”. Check this one against your graded result."},
+    {"q": "Approximately how much time in a counseling session should be allotted for a “typical day” strategy?", "o": ["1 to 3 minutes", "3 to 6 minutes", "6 to 8 minutes", "8 to 10 minutes"], "a": 2, "e": "Checked answer, not from an official key. The textbook says six to eight minutes."}
+  ]
+}
