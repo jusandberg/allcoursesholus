@@ -1729,235 +1729,232 @@ window.VN_COURSE = {
       "questionCount": 15,
       "sourceFile": "Vegetarian Nutrition - 10282026 - 303 PM (1)__Lesson 8 Test.txt",
       "questions": [
-        {
-          "number": 1,
-          "prompt": "The first ever recommended dietary allowances were announced over the radio in 1941.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "answerStatus": "course-intended",
-          "rationale": "The course treats this as historical RDA trivia and expects True. The Food and Nutrition Board adopted the first U.S. Recommended Dietary Allowances in 1941.",
-          "correction": "The 1941 adoption is well documented; the radio-announcement detail should be remembered as the older course's historical framing rather than a nutrition principle.",
-          "sourceNote": "Likely course-intended answer; 1941 RDA history corroborated by the National Academies.",
-          "sourceUrl": "https://nap.nationalacademies.org/read/12086/chapter/6",
-          "confidence": "medium"
-        },
-        {
-          "number": 2,
-          "prompt": "Which statement is False:",
-          "options": [
-            "The Dietary Guidelines suggest that half of grain intake should be from whole, unrefined grains,",
-            "Refined grains such as white rice and pasta play important roles in some cultures.",
-            "Sea vegetables - alaria, kelp, and nori are included in the Protein section of Vegetarian Food Groups.",
-            "Legumes are a good source of iron.",
-            "All statements are True."
-          ],
-          "answer": 2,
-          "answerStatus": "verified",
-          "rationale": "Sea vegetables belong with vegetables/seaweeds rather than the protein group in modern planning frameworks.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 3,
-          "prompt": "Which milk(s) are high in protein?",
-          "options": [
-            "Oat",
-            "Cashew & Almond",
-            "Soy & Pea",
-            "All of the above"
-          ],
-          "answer": 2,
-          "answerStatus": "verified",
-          "rationale": "Soy and pea beverages are usually much higher in protein than oat, almond, or cashew beverages.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 4,
-          "prompt": "Most nondairy cheeses are high in protein.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "answerStatus": "verified",
-          "rationale": "Many nondairy cheeses are based on starch or oil and contain little protein.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 5,
-          "prompt": "5. Which statement about B12 is True?",
-          "options": [
-            "All nutritional yeast provides an excellent source of B12",
-            "Found in Baking yeast",
-            "Found in brewer's yeast",
-            "Not all nutritional yeast provides B12"
-          ],
-          "answer": 3,
-          "answerStatus": "verified",
-          "rationale": "Nutritional yeast contains B12 only when it is fortified; not every product is fortified.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 6,
-          "prompt": "A food included in the fat category is",
-          "options": [
-            "peanut butter.",
-            "refined grain products.",
-            "sour cream.",
-            "avocado."
-          ],
-          "answer": null,
-          "answerStatus": "ambiguous",
-          "rationale": "Both peanut butter and avocado are commonly treated as fat-rich foods, so the item has two defensible options.",
-          "correction": "",
-          "sourceNote": "The source item has more than one defensible interpretation or depends on missing context.",
-          "sourceUrl": null
-        },
-        {
-          "number": 7,
-          "prompt": "Blackstrap molasses is a valuable addition to the vegan diet because it is rich in calcium.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "answerStatus": "course-intended",
-          "rationale": "Becoming Vegetarian includes blackstrap molasses among calcium-rich foods and lists approximately 176 mg calcium per tablespoon, so True is the intended answer.",
-          "correction": "Calcium content varies by product, and blackstrap molasses is a concentrated sweetener. It can contribute calcium but is not required for a well-planned vegan diet.",
-          "sourceNote": "Course-intended answer from Becoming Vegetarian (2003), chapters 4 and 9.",
-          "sourceUrl": null,
-          "confidence": "high"
-        },
-        {
-          "number": 8,
-          "prompt": "Eating a variety of foods helps diversify nutrients in a person’s diet.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "answerStatus": "verified",
-          "rationale": "Dietary variety helps diversify nutrient exposure.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 9,
-          "prompt": "The most efficient way to get omega-3 fatty acids is from",
-          "options": [
-            "eggs.",
-            "beets.",
-            "flaxseed oil.",
-            "ground almonds"
-          ],
-          "answer": 2,
-          "answerStatus": "verified",
-          "rationale": "Flaxseed oil is the most concentrated ALA source among the offered choices.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 10,
-          "prompt": "Aside from in supplements, vitamin B12 can be found in",
-          "options": [
-            "meat.",
-            "dairy.",
-            "eggs.",
-            "All of the above"
-          ],
-          "answer": 3,
-          "answerStatus": "verified",
-          "rationale": "B12 is naturally present in meat, dairy, and eggs, though vegans need fortified foods or supplements.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 11,
-          "prompt": "Fruit drinks and fruit juice can be equally counted as daily fruit servings.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "answerStatus": "verified",
-          "rationale": "Fruit juice and fruit drinks are not nutritionally equivalent to whole fruit, and fruit drinks may contain little juice.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 12,
-          "prompt": "Dried fruits can contribute a significant amount of iron to the diet.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "answerStatus": "verified",
-          "rationale": "Dried fruit can contribute iron, though portion size and sugar concentration matter.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 13,
-          "prompt": "Grains contain which of the following nutrients?",
-          "options": [
-            "Fibre",
-            "Protein",
-            "Iron",
-            "All of the above"
-          ],
-          "answer": 3,
-          "answerStatus": "verified",
-          "rationale": "Grains can provide fibre, protein, and iron.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 14,
-          "prompt": "All soymilk is a good source of vitamin D and calcium.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 1,
-          "answerStatus": "verified",
-          "rationale": "Calcium and vitamin D fortification varies by brand and product.",
-          "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
-        },
-        {
-          "number": 15,
-          "prompt": "A serving of veggie “meat” counts as a serving of “beans and alternates” in the “Vegetarian Food Guide”.",
-          "options": [
-            "True",
-            "False"
-          ],
-          "answer": 0,
-          "answerStatus": "course-intended",
-          "rationale": "The Vegetarian Food Guide in Becoming Vegetarian explicitly lists one serving of veggie meat in the Beans and Alternates group.",
-          "correction": "This is the classification used by that older guide. Current food guides may use different group names and emphasize the product's nutrient profile rather than a fixed serving exchange.",
-          "sourceNote": "Course-intended answer from Becoming Vegetarian (2003), chapter 9.",
-          "sourceUrl": "https://www.canada.ca/en/health-canada/services/food-guide/explore/dietary-guidelines/applying/considerations-vegetarian-diets.html",
-          "confidence": "high"
-        }
-      ]
+          {
+            "number": 1,
+            "prompt": "The first ever recommended dietary allowances were announced over the radio in 1941.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "answerStatus": "course-confirmed",
+            "rationale": "True. The first Recommended Dietary Allowances came out in 1941, and the course teaches that they were announced over the radio.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 2,
+            "prompt": "Which statement is false:",
+            "options": [
+              "The Dietary Guidelines suggest that half of grain intake should be from whole, unrefined grains.",
+              "Refined grains such as white rice and pasta play important roles in some cultures.",
+              "Sea vegetables - alaria, kelp, and nori are included in the Protein section of Vegetarian Food Groups",
+              "Legumes are a good source of iron",
+              "All statements are True"
+            ],
+            "answer": 2,
+            "answerStatus": "course-confirmed",
+            "rationale": "Sea vegetables such as alaria, kelp and nori are grouped with vegetables, not in the protein section.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 3,
+            "prompt": "Which milk (s) are high in protein?",
+            "options": [
+              "Oat",
+              "Cashew and Almond",
+              "Soy and Pea",
+              "All of the above"
+            ],
+            "answer": 2,
+            "answerStatus": "course-confirmed",
+            "rationale": "Soy and pea milks have much more protein than oat, cashew or almond milk.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 4,
+            "prompt": "Most nondairy cheeses are high in protein.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "answerStatus": "course-confirmed",
+            "rationale": "False. Most nondairy cheeses are made mainly from starch or oil and have little protein.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 5,
+            "prompt": "Which statement about B12 is true?",
+            "options": [
+              "All nutritional yeast provides an excellent source of B12.",
+              "Found in baking yeast",
+              "Bound in brewer's yeast",
+              "Not all nutritional yeast provides B12."
+            ],
+            "answer": 3,
+            "answerStatus": "course-confirmed",
+            "rationale": "Nutritional yeast only has B12 when it has been fortified, so check the label.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 6,
+            "prompt": "A food included in the fat category is:",
+            "options": [
+              "peanut butter.",
+              "refined grain products.",
+              "sour cream.",
+              "avocado."
+            ],
+            "answer": 2,
+            "answerStatus": "course-confirmed",
+            "rationale": "Sour cream is in the fat category. Peanut butter and avocado are rich in fat too, but the food guide places them in other groups.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 7,
+            "prompt": "Blackstrap molasses is a valuable addition to the vegan diet because it is rich in calcium.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "answerStatus": "course-confirmed",
+            "rationale": "True. Blackstrap molasses is one of the calcium-rich foods listed in Becoming Vegetarian, with about 176 mg of calcium per tablespoon.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 8,
+            "prompt": "Eating a variety of foods helps diversify nutrients in a person's diet.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "answerStatus": "course-confirmed",
+            "rationale": "True. Eating a wide range of foods gives you a wider range of nutrients.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 9,
+            "prompt": "The most efficient way to get omega-3 fatty acids is from:",
+            "options": [
+              "eggs.",
+              "beats.",
+              "flaxseed oil.",
+              "ground almonds."
+            ],
+            "answer": 2,
+            "answerStatus": "course-confirmed",
+            "rationale": "Flaxseed oil is the richest source of omega-3 fat (ALA) among these choices.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 10,
+            "prompt": "Aside from in supplements, vitamin B12 can be found in:",
+            "options": [
+              "meat.",
+              "dairy.",
+              "eggs.",
+              "All of the above."
+            ],
+            "answer": 3,
+            "answerStatus": "course-confirmed",
+            "rationale": "Meat, dairy and eggs all contain B12. Vegans need fortified foods or a supplement.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 11,
+            "prompt": "Fruit drinks and fruit juice can be equally counted as daily fruit servings.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "answerStatus": "course-confirmed",
+            "rationale": "False. Fruit drinks can contain very little juice, so they don't count the same as fruit juice.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 12,
+            "prompt": "Dried fruits can contribute a significant amount of iron to the diet.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "answerStatus": "course-confirmed",
+            "rationale": "True. Dried fruits such as apricots, raisins and figs add a useful amount of iron.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 13,
+            "prompt": "Grains contain which of the following nutrients?",
+            "options": [
+              "Fibre.",
+              "Protein.",
+              "Iron.",
+              "All of the above."
+            ],
+            "answer": 3,
+            "answerStatus": "course-confirmed",
+            "rationale": "Grains provide fibre, protein and iron, especially whole grains.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 14,
+            "prompt": "All soymilk is a good source of vitamin D and calcium.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "answerStatus": "course-confirmed",
+            "rationale": "False. Only fortified soymilk is a good source of vitamin D and calcium. Check the label.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          },
+          {
+            "number": 15,
+            "prompt": "A serving of veggie \"meat\" counts as a serving of \"beans and alternates\" in the \"Vegetarian Food Guide\".",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "answerStatus": "course-confirmed",
+            "rationale": "True. The Vegetarian Food Guide counts one serving of veggie meat as a serving of beans and alternates.",
+            "correction": "",
+            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+            "sourceUrl": null
+          }
+        ]
     },
     {
       "id": "lesson-9",
