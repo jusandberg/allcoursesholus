@@ -1,0 +1,100 @@
+{
+  "lesson": 16,
+  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 6: Promoting Change to Facilitate Self-Management",
+  "kicker": "Lesson 16 of your course, built from Chapter 6 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l16-b1",
+      "title": "Self-monitoring",
+      "teach": [
+        "Keeping track of eating and activity (journaling) is one of the most useful self-management tools. Records can include what was eaten, portions, time, place, mood and hunger. Asking for too much detail makes people give up, so keep it simple. Recording gets quicker with practice.",
+        "For clients who don't want to write things down, there are alternatives: checking off boxes, using drawings or art, or watching a bowl of tokens slowly empty as goals are met."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Checking off boxes and gradually emptying a bowl are alternatives to what?",
+        "options": [
+          {"label": "Journaling", "correct": true, "feedback": "Yes. They're simpler ways to self-monitor."},
+          {"label": "Goal setting", "correct": false, "feedback": "These track behaviour, which is what journaling does."},
+          {"label": "Meal planning", "correct": false, "feedback": "These are ways to record and track, not to plan meals."}
+        ]
+      }
+    },
+    {
+      "id": "l16-b2",
+      "title": "The ABCs of behaviour",
+      "teach": [
+        "Behaviour can be broken into a chain: the antecedent (the cue that comes before), the behaviour itself, and the consequence that follows. Strategies can target any link.",
+        "Cue management (stimulus control) works on the antecedents. The aim is to change the triggering cue or reduce exposure to it. For example, keep healthy foods in a highly visible spot and tempting foods out of sight. Strategies for the behaviour itself include eating more slowly, eating in one place and finding a substitute activity, like a walk."
+      ],
+      "act": {
+        "type": "sort",
+        "prompt": "Match each strategy with the link in the chain it targets.",
+        "categories": ["Antecedent (cue)", "Behaviour", "Consequence"],
+        "items": [
+          {"label": "Keep a bowl of fruit on the counter and chips out of sight", "category": 0, "feedback": "Changing what you see changes the cue."},
+          {"label": "Put your fork down between bites", "category": 1, "feedback": "This changes the act of eating itself."},
+          {"label": "Earn a reward after a week of packed lunches", "category": 2, "feedback": "Rewards are consequences that strengthen a behaviour."}
+        ]
+      }
+    },
+    {
+      "id": "l16-b3",
+      "title": "Contracts, rewards and thinking patterns",
+      "teach": [
+        "Rewards are often used with contracting: a written agreement between counsellor and client to work on a goal. Small rewards right after the behaviour work best for short-term goals. Bigger rewards can suit long-term goals.",
+        "Thinking patterns matter too. Opportunity thinking sees challenges as chances to grow. Obstacle thinking focuses on why things won't work, and all-or-nothing views make people hard on themselves. Barriers to change include lack of knowledge, lack of skill, fear of taking risks and lack of social support. Many of the most common barriers can be addressed by increasing knowledge."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "What are the two thinking patterns described in the textbook?",
+        "options": [
+          {"label": "Opportunity thinking and obstacle thinking", "correct": true, "feedback": "Yes. One sees chances to grow, the other sees reasons it won't work."},
+          {"label": "Good thinking and bad thinking", "correct": false, "feedback": "The textbook uses opportunity and obstacle thinking."},
+          {"label": "Observational thinking and reward thinking", "correct": false, "feedback": "These aren't the terms used."}
+        ]
+      }
+    },
+    {
+      "id": "l16-b4",
+      "title": "Teaching that sticks",
+      "teach": [
+        "Clients forget about half of what they hear within five minutes, especially when stressed. Keep instructions short and focused, and don't bury clients in handouts.",
+        "Use supportive language: steer away from the word “you”, give information neutrally, start with “I” and ask permission. In the Nutrition Care Process, adherence is the term for how well a client follows the plan; it replaces the older word “compliance”."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which statement uses supportive language?",
+        "options": [
+          {"label": "“You need to stop skipping meals.”", "correct": false, "feedback": "Starting with “you” can sound like blame."},
+          {"label": "“I have a few ideas that might help with your blood sugars. Would you like to hear them?”", "correct": true, "feedback": "Yes. It starts with “I” and asks permission."},
+          {"label": "“You're not following the plan.”", "correct": false, "feedback": "This is judgemental and uses “you”."}
+        ]
+      }
+    }
+  ],
+  "flashcards": [
+    {"front": "Alternatives to journaling", "back": "Checking off boxes, using art, and gradually emptying a bowl."},
+    {"front": "ABCs of behaviour", "back": "Antecedent, Behaviour, Consequence."},
+    {"front": "Cue management (stimulus control)", "back": "Change the triggering cue or reduce exposure to it."},
+    {"front": "Controlling environmental cues", "back": "Put foods you want to eat more of in a highly visible spot."},
+    {"front": "Rewards are often used with…", "back": "Contracting."},
+    {"front": "How fast clients forget", "back": "About half of the information within five minutes."},
+    {"front": "Supportive language", "back": "Avoid the word “you”, stay neutral, start with “I” and ask permission."},
+    {"front": "NCP term for following a plan", "back": "Adherence."},
+    {"front": "Two thinking patterns", "back": "Opportunity thinking and obstacle thinking."},
+    {"front": "Many common barriers can be addressed by…", "back": "Increasing knowledge."}
+  ],
+  "quiz": [
+    {"q": "Checking off boxes, using art, and the gradual emptying of a bowl are all alternatives to which of the following?", "o": ["Journaling", "Countering", "Goal-setting", "Meal-planning"], "a": 0, "e": "Checked answer, not from an official key. These are simpler ways to self-monitor instead of writing a journal."},
+    {"q": "In the case of decreasing the occurrence of a detrimental food stimulus, the objective in _______________________ is to alter the triggering stimulus or reduce exposure to it.", "o": ["countering", "contracting", "cue management", "goal setting"], "a": 2, "e": "Checked answer, not from an official key. The textbook says this about cue management."},
+    {"q": "Which of the following is a strategy to control environmental cues?", "o": ["Placing pennies in a jar each time a particular behaviour is accomplished", "Placing foods that should be encouraged in a highly visible spot", "Finding an activity to substitute for eating", "All of the above"], "a": 1, "e": "Checked answer, not from an official key. Changing what's visible changes the cue. Pennies are a reward, and a substitute activity targets the behaviour."},
+    {"q": "What are the ABCs of behaviour?", "o": ["Action, Behaviour, Cues", "Ambivalence, Behaviour, Consequence", "Antecedent, Belief, Cues", "Antecedent, Behaviour, Consequence"], "a": 3, "e": "Checked answer, not from an official key. Antecedent, behaviour, consequence."},
+    {"q": "Rewards are often used in conjunction with ______________________________.", "o": ["problem-solving", "modeling", "contracting", "countering"], "a": 2, "e": "Checked answer, not from an official key. The textbook says rewards are often used with contracting."},
+    {"q": "Studies of patient education have shown that clients typically forget half the information presented to them within _________________________.", "o": ["five minutes", "fifteen minutes", "half an hour", "an hour"], "a": 0, "e": "Checked answer, not from an official key. The textbook says within five minutes."},
+    {"q": "It’s recommended that counsellors use supportive language when providing educational instructions to a client. Supportive language usually means staying away from the word _______.", "o": ["diet", "you", "me", "no"], "a": 1, "e": "Checked answer, not from an official key. The textbook says supportive language usually means avoiding the word “you”."},
+    {"q": "In the Nutrition Care Process, the American Dietetic Association uses the term _______________ to describe the degree to which a client has followed a prescribed regimen.", "o": ["adherence", "compliance", "observance", "obedience"], "a": 0, "e": "Checked answer, not from an official key. The Nutrition Care Process uses “adherence”."},
+    {"q": "Thinking patterns have been categorized as", "o": ["good thinking and bad thinking.", "opportunity thinking and reward thinking.", "observational thinking and obstacle thinking.", "opportunity thinking and obstacle thinking."], "a": 3, "e": "Checked answer, not from an official key. The textbook describes opportunity and obstacle thinking."},
+    {"q": "Some of the most frequently named barriers to behavior change can be addressed by _____________________________.", "o": ["willpower", "an increase in knowledge", "risk taking", "money"], "a": 1, "e": "Checked answer, not from an official key. Less certain: the textbook lists lack of knowledge first among the major barriers, but the sentence that settles this was cut off in what I could read. Check this one against your graded result."}
+  ]
+}
