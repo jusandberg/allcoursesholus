@@ -1,0 +1,456 @@
+{
+  "lesson": 10,
+  "book": "Nutrition Through the Life Cycle (Brown), Chapter 18: Nutrition and Older Adults and Chapter 19: Nutrition and Older Adults: Conditions and Interventions",
+  "kicker": "Lesson 10 of your course, built from Chapters 18 and 19 of your Nutrition Through the Life Cycle textbook. Test practice uses checked answers, because there is no official key for this test.",
+  "steps": [
+    {
+      "id": "l10-b1",
+      "title": "Why we age",
+      "teach": [
+        "Life expectancy keeps rising, but the human life span stays at about 110–120 years. Programmed aging theories say aging is built in. One idea is that telomeres, the caps on the ends of chromosomes, get shorter with each cell division until cells can no longer divide. Hayflick found that human cells divide only about 40–60 times.",
+        "Other theories blame damage that builds up over time: free radicals harming cells, and proteins becoming cross-linked when glucose is high. Free radical damage is linked to heart disease, cataracts and some cancers."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which idea is a programmed theory of aging?",
+        "options": [
+          {
+            "label": "Telomeres shorten with each cell division until cells can't replicate",
+            "correct": true,
+            "feedback": "Yes. The molecular clock is a programmed theory."
+          },
+          {
+            "label": "Free radicals damage cell membranes",
+            "correct": false,
+            "feedback": "That's a damage (wear-and-tear) theory, not a programmed one."
+          },
+          {
+            "label": "Fast-paced living shortens life",
+            "correct": false,
+            "feedback": "That isn't one of the theories in the textbook."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l10-b2",
+      "title": "Energy and nutrient needs",
+      "teach": [
+        "Lower activity and a slower metabolism cut energy needs by about 7–10 Calories a year, or 70–100 a day over a decade. Vitamin and mineral needs stay the same or rise, and it's hard to meet them on fewer than 1,600 Calories a day. Staying active helps, and older adults gain just as much from exercise as younger people.",
+        "Many older adults absorb vitamin B12 poorly. Up to 30% have atrophic gastritis, where less stomach acid makes it hard to free B12 from food. Low B12 can cause memory problems and permanent nerve damage. Supplements made for older adults usually have more B12 and little or no iron."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "On 1,900 Calories, what is the most carbohydrate in grams that fits the AMDR of 45–65%? (Round up.)",
+        "answer": 309,
+        "tolerance": 1,
+        "unit": "g",
+        "explanation": "1,900 × 0.65 = 1,235 Calories. 1,235 ÷ 4 = 308.75, so 309 g. The low end is 1,900 × 0.45 ÷ 4 = 214 g."
+      }
+    },
+    {
+      "id": "l10-b3",
+      "title": "Body changes that affect eating",
+      "teach": [
+        "With age, saliva gets thicker and there is less of it, appetite control is blunted, taste and smell fade, sex hormones drop, breathing capacity falls and blood flow drops. Total body water drops too, and thirst becomes less reliable, so dehydration is common. Drinking six or more glasses of fluid a day helps.",
+        "Signs of dehydration in older adults include confusion, a dry or furrowed tongue, sunken eyes, slurred speech and weakness in the arms or legs. Older adults are also at higher risk from foodborne illness, often from undercooked food or food held at the wrong temperature."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which is NOT an age-related change that affects nutrition?",
+        "options": [
+          {
+            "label": "More saliva",
+            "correct": true,
+            "feedback": "Right. Saliva usually decreases and thickens with age."
+          },
+          {
+            "label": "Blunted appetite control",
+            "correct": false,
+            "feedback": "This is a common change with age."
+          },
+          {
+            "label": "Less blood flow",
+            "correct": false,
+            "feedback": "Blood flow does decrease with age."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l10-b4",
+      "title": "Common conditions",
+      "teach": [
+        "Hypertension is the only chronic condition more common in older adults than arthritis. Diabetes brings a tenfold higher risk of amputation, macular degeneration, cataracts and nerve damage. GERD causes heartburn and acid coming back up. Skipping alcohol and coffee and eating smaller, lower-fat meals can help.",
+        "Risk factors for osteoporosis include too little calcium, heavy drinking and low body weight. Men treated for prostate cancer with androgen deprivation can lose bone twice as fast. For lower stroke risk, the DASH, Mediterranean and Prudent diets all show benefits."
+      ],
+      "act": {
+        "type": "choice",
+        "prompt": "Which is NOT a risk factor for osteoporosis?",
+        "options": [
+          {
+            "label": "Low calcium intake",
+            "correct": false,
+            "feedback": "This is a risk factor."
+          },
+          {
+            "label": "Heavy drinking",
+            "correct": false,
+            "feedback": "Heavy alcohol use is a risk factor."
+          },
+          {
+            "label": "High iron intake",
+            "correct": true,
+            "feedback": "Right. Iron isn't one of the listed risk factors."
+          }
+        ]
+      }
+    },
+    {
+      "id": "l10-b5",
+      "title": "Unplanned weight loss",
+      "teach": [
+        "Unplanned weight loss is a red flag in older adults. Compare current weight with usual weight: current ÷ usual × 100. Protein needs for older adults are about 1.0–1.5 g per kg of body weight a day.",
+        "To help, offer small, frequent meals and snacks with more Calories and protein, a protein and energy supplement if needed, and gentle strength exercise to rebuild muscle. Avoid foods that cause discomfort."
+      ],
+      "act": {
+        "type": "number",
+        "prompt": "A woman usually weighs 140 lb and now weighs 119 lb. What percent of her usual weight is she?",
+        "answer": 85,
+        "tolerance": 0,
+        "unit": "%",
+        "explanation": "119 ÷ 140 × 100 = 85% of her usual weight."
+      }
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Human life span",
+      "back": "About 110–120 years."
+    },
+    {
+      "front": "Programmed aging: telomeres",
+      "back": "Telomeres shorten with each cell division until chromosomes can no longer replicate."
+    },
+    {
+      "front": "Drop in energy needs with age",
+      "back": "About 7–10 Calories a year."
+    },
+    {
+      "front": "Hard to meet vitamin and mineral needs below…",
+      "back": "1,600 Calories a day."
+    },
+    {
+      "front": "Main cause of poor B12 status in older adults",
+      "back": "Atrophic gastritis: less stomach acid, so B12 isn't freed from food."
+    },
+    {
+      "front": "Supplements for older adults",
+      "back": "More B12 and little or no iron."
+    },
+    {
+      "front": "Effects of B12 deficiency",
+      "back": "Memory problems and permanent nerve damage."
+    },
+    {
+      "front": "Body water with age",
+      "back": "Decreases. Thirst is less reliable."
+    },
+    {
+      "front": "More common than arthritis in older adults",
+      "back": "Hypertension."
+    },
+    {
+      "front": "Diabetes: tenfold higher risk of…",
+      "back": "Amputation, macular degeneration, cataracts and nerve damage."
+    },
+    {
+      "front": "Main symptoms of GERD",
+      "back": "Heartburn and acid regurgitation."
+    },
+    {
+      "front": "Prostate cancer treatment and bone",
+      "back": "Bone loss can double with androgen deprivation."
+    },
+    {
+      "front": "Diets linked to less stroke",
+      "back": "DASH, Mediterranean and Prudent diets."
+    },
+    {
+      "front": "Protein for older adults",
+      "back": "About 1.0–1.5 g per kg per day."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The human life span is projected to be ______________ years.",
+      "o": [
+        "102-104",
+        "105-110",
+        "110-120",
+        ">120"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. The textbook says about 110–120 years."
+    },
+    {
+      "q": "Programmed aging theories propose that senescence occurs because",
+      "o": [
+        "the telomeres capping the ends of chromosomes become shorter with each cell division and their loss eventually stops the chromosomes from replicating.",
+        "mistakes in the replication of cells or buildup of damaging by-products from biologic processes eventually destroy the organism.",
+        "unstable oxygen, formed normally during metabolism, can damage cells by initiating reactions that break down cell membranes.",
+        "fast-paced living shortens one’s lifespan."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The telomere (molecular clock) idea is a programmed theory. The others are damage theories."
+    },
+    {
+      "q": "A decrease in physical activity and basal metabolic rate from early to late adulthood leads to an estimated decrease in daily energy needs by ____________ Calories per year.",
+      "o": [
+        "7-10",
+        "12-15",
+        "20-23",
+        "25-28",
+        "34-37"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The textbook gives 7–10 Calories a year."
+    },
+    {
+      "q": "It is difficult to meet vitamin and mineral needs via foods at Calorie levels below",
+      "o": [
+        "1300.",
+        "1600.",
+        "1800.",
+        "2000.",
+        "It is hard to meet vitamin and mineral needs at ANY calorie level; therefore, a multivitamin is ALWAYS recommended."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The textbook says below 1,600 Calories."
+    },
+    {
+      "q": "Age-associated physiological system changes that affect nutritional health include all of the following EXCEPT:",
+      "o": [
+        "increased secretion of saliva",
+        "reduced levels of estrogen and testosterone.",
+        "blunted appetite regulation.",
+        "reduced breathing capacity.",
+        "less blood flow."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Saliva decreases and thickens with age."
+    },
+    {
+      "q": "Which statement describes how physiologic doses found in a vitamin-mineral supplement for the elderly differ from doses in supplements for the general adult population?",
+      "o": [
+        "Additional vitamin B12 is added",
+        "Little or no iron is added",
+        "Decrease in zinc",
+        "Additional vitamin E is added",
+        "a and b"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Supplements for older adults usually have more B12 and little or no iron."
+    },
+    {
+      "q": "A short-stature female (5’2”) was not consistently eating two or three meals a day. She usually had a piece of toast and coffee with cream and sugar at breakfast and never could quite eat all of her home-delivered noon meal. What dietary supplement would you recommend?",
+      "o": [
+        "Multi-vitamin/mineral that is physiologically designed for elderly",
+        "Calcium supplement only",
+        "Folate, vitamin B12, and iron only",
+        "Calcium and magnesium only"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Her intake is low overall, so a broad supplement made for older adults fits best."
+    },
+    {
+      "q": "What is the most common reason that vitamin B12 deficiency, or at least compromised B12 status, occurs in older adults?",
+      "o": [
+        "Diets are frequently low in vitamin B12, since oral problems and financial difficulties limit meat intake and meats are the best dietary sources of B12.",
+        "Pernicious anemia is common in the elderly.",
+        "Their diets provide primarily synthetic forms of vitamin B12, which are less absorbable than the protein-bound form found naturally in foods.",
+        "The elderly have a higher incidence of bacterial overgrowth, which decreases secretion of hydrochloric acid.",
+        "None of the above"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Atrophic gastritis, with bacterial overgrowth and less stomach acid, affects up to 30% of older adults."
+    },
+    {
+      "q": "Failing to cook foods long enough and to hold them at proper temperatures before consumption are among the most common practices that lead to foodborne illness among older adults.",
+      "o": [
+        "True",
+        "False"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Undercooking and poor temperature control are common causes."
+    },
+    {
+      "q": "Older people do NOT benefit from exercise as much as younger people.",
+      "o": [
+        "True",
+        "False"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Older adults benefit from exercise just as much."
+    },
+    {
+      "q": "The recommended Calorie intake for energy for females between the ages of 60 and 74 is 1900 Calories. Calculate how many grams of carbohydrate they should consume to meet the AMDR. (Round up.)",
+      "o": [
+        "130-145",
+        "175-220",
+        "215-310",
+        "400-550"
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. 1,900 × 0.45 ÷ 4 = 214 and 1,900 × 0.65 ÷ 4 = 309. Rounded up, that's about 215–310 g."
+    },
+    {
+      "q": "The amount of stored body water decreases with age.",
+      "o": [
+        "True",
+        "False"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Body water drops with age, which raises the risk of dehydration."
+    },
+    {
+      "q": "The only chronic condition that has higher prevalence in older adults than arthritis is:",
+      "o": [
+        "diabetes.",
+        "hypertension.",
+        "cancer.",
+        "stroke.",
+        "osteoporosis."
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The textbook says hypertension is the only one."
+    },
+    {
+      "q": "Diabetes leads to a tenfold greater risk of all of the following EXCEPT:",
+      "o": [
+        "amputations.",
+        "neuropathies.",
+        "macular degeneration.",
+        "cataracts.",
+        "elevated blood lipids."
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The textbook lists amputations, macular degeneration, cataracts and neuropathies."
+    },
+    {
+      "q": "Which of the following is NOT a risk factor for osteoporosis?",
+      "o": [
+        "Inadequate calcium intake",
+        "Heavy alcohol consumption",
+        "Low body weight",
+        "High iron intake"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Iron intake isn't a listed risk factor."
+    },
+    {
+      "q": "An elderly man who is 75 years old and recently had prostate cancer treatments would likely have:",
+      "o": [
+        "a doubling of bone mass loss.",
+        "a slowing of bone mass loss.",
+        "a twenty-five percent chance of mortality within 6 months.",
+        "a fifty percent chance of mortality within 1 year."
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. The textbook says bone loss doubles when androgen deprivation starts."
+    },
+    {
+      "q": "The main symptoms of GERD include:",
+      "o": [
+        "heartburn.",
+        "acid regurgitation.",
+        "bloating and cramping.",
+        "All of the above",
+        "a and b only"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. The textbook names heartburn and regurgitation."
+    },
+    {
+      "q": "A deficiency in vitamin B12 may lead to:",
+      "o": [
+        "irreversible neurological damage.",
+        "cognitive impairment.",
+        "constipation.",
+        "a and b",
+        "b and c"
+      ],
+      "a": 3,
+      "e": "Checked answer, not from an official key. Low B12 can cause permanent nerve damage and memory problems."
+    },
+    {
+      "q": "Seven signs and symptoms have been strongly related to dehydration in the elderly. Which of the following would NOT be one of these?",
+      "o": [
+        "Hearing difficulty",
+        "Confusion",
+        "Dry tongue",
+        "Sunken appearance of eyes",
+        "Upper-body weakness"
+      ],
+      "a": 0,
+      "e": "Checked answer, not from an official key. Confusion, a dry tongue, sunken eyes and weakness are signs. Hearing difficulty isn't."
+    },
+    {
+      "q": "Which of the following is NOT one of the diets that was correlated with reduced stroke incidence?",
+      "o": [
+        "DASH diet",
+        "South Beach Diet",
+        "The Prudent Diet",
+        "Mediterranean Diet"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. The DASH, Prudent and Mediterranean diets are linked to less stroke."
+    },
+    {
+      "q": "Use the following information to answer questions 22-25.\n\nA 75-year-old female reports having lost 20 pounds in the last 3 months and now weighs 100 pounds; she is 5’3”. She is complaining that food has lost its taste, and when she does eat, she develops severe heartburn. She is now in your office for assessment. Her daily intake is ~1000 Calories with 35 g of protein.\n1 cup non-fat milk\n1 medium apple\n1 slice bread + 3 t. butter\n1 cup black coffee + 3 t. sugar\n1/3 cup cooked rice\n1/2 cup cooked zucchini\n2 oz. ground beef\n1 cup orange juice\n1 oz. Cheddar cheese\nBlack coffee\n2 martinis before dinner.\n\nHow does her current weight compare to her usual weight?",
+      "o": [
+        "She is 77% of her usual body weight",
+        "She is 83% of her usual body weight",
+        "She is 94% of her usual body weight",
+        "She is 120% of her usual body weight"
+      ],
+      "a": 1,
+      "e": "Checked answer, not from an official key. Her usual weight was 120 lb. 100 ÷ 120 × 100 = 83%."
+    },
+    {
+      "q": "A 75-year-old female reports having lost 20 pounds in the last 3 months and now weighs 100 pounds; she is 5’3”. She is complaining that food has lost its taste, and when she does eat, she develops severe heartburn. She is now in your office for assessment. Her daily intake is ~1000 Calories with 35 g of protein.\n1 cup non-fat milk\n1 medium apple\n1 slice bread + 3 t. butter\n1 cup black coffee + 3 t. sugar\n1/3 cup cooked rice\n1/2 cup cooked zucchini\n2 oz. ground beef\n1 cup orange juice\n1 oz. Cheddar cheese\nBlack coffee\n2 martinis before dinner.\n\nHow does her intake compare to her estimated protein needs?",
+      "o": [
+        "It is low; based on her current weight, she should be consuming at least 100 g per day.",
+        "It is high; based on her current weight, she should be consuming at least 25 g per day.",
+        "It is low; based on her current weight, she should be consuming between 45 and 70 g per day.",
+        "It is adequate to meet her needs based on her current weight and Calorie intake."
+      ],
+      "a": 2,
+      "e": "Checked answer, not from an official key. At 45 kg and 1.0–1.5 g per kg, she needs about 45–70 g, so 35 g is low."
+    },
+    {
+      "q": "A 75-year-old female reports having lost 20 pounds in the last 3 months and now weighs 100 pounds; she is 5’3”. She is complaining that food has lost its taste, and when she does eat, she develops severe heartburn. She is now in your office for assessment. Her daily intake is ~1000 Calories with 35 g of protein.\n1 cup non-fat milk\n1 medium apple\n1 slice bread + 3 t. butter\n1 cup black coffee + 3 t. sugar\n1/3 cup cooked rice\n1/2 cup cooked zucchini\n2 oz. ground beef\n1 cup orange juice\n1 oz. Cheddar cheese\nBlack coffee\n2 martinis before dinner.\n\nWhat dietary changes might help with her heartburn?",
+      "o": [
+        "Skipping the martinis before dinner",
+        "Avoiding coffee",
+        "Changing her milk to whole vs. non-fat",
+        "All of the above",
+        "a and b only"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. Alcohol and coffee can worsen heartburn. Higher-fat milk wouldn't help."
+    },
+    {
+      "q": "A 75-year-old female reports having lost 20 pounds in the last 3 months and now weighs 100 pounds; she is 5’3”. She is complaining that food has lost its taste, and when she does eat, she develops severe heartburn. She is now in your office for assessment. Her daily intake is ~1000 Calories with 35 g of protein.\n1 cup non-fat milk\n1 medium apple\n1 slice bread + 3 t. butter\n1 cup black coffee + 3 t. sugar\n1/3 cup cooked rice\n1/2 cup cooked zucchini\n2 oz. ground beef\n1 cup orange juice\n1 oz. Cheddar cheese\nBlack coffee\n2 martinis before dinner.\n\nWhat other suggestions could you give her to help prevent weight loss and increase protein in her diet?",
+      "o": [
+        "Eat more calories throughout day",
+        "Exercise to help build muscle mass",
+        "Try a protein and energy supplement",
+        "Avoid foods that irritate you",
+        "All of the above"
+      ],
+      "a": 4,
+      "e": "Checked answer, not from an official key. All four help prevent more weight loss."
+    }
+  ]
+}
