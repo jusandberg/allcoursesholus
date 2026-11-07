@@ -16,20 +16,20 @@ function fromModules(L){const steps=[];
   });return steps;}
 function write(id,course){fs.writeFileSync(OUT+id+'.js','window.HOLUS_DATA=window.HOLUS_DATA||{};window.HOLUS_DATA['+JSON.stringify(id)+']='+JSON.stringify(course).replace(/<\/script/gi,'<\\/script')+';\n');console.log(id,course.lessons.length,'lessons',(fs.statSync(OUT+id+'.js').size/1024|0)+'KB');}
 // Lessons rebuilt from the Nutrition Counseling textbook live in build/nc-book/lNN.json and replace the older general lessons.
-function ncBook(L){const f=path.join(__dirname,'nc-book','l'+L.n+'.json');if(!fs.existsSync(f))return L;const B=JSON.parse(fs.readFileSync(f,'utf8'));
- return {...L,kicker:B.kicker||L.kicker,perStepChapter:true,steps:B.steps.map(s=>({id:s.id,chapter:s.title,title:s.title,teach:s.teach,act:s.act.type==='choice'?{...s.act,options:opts(s.act.options)}:s.act})),flashcards:B.flashcards,quiz:B.quiz};}
+function ncBook(L,dir='nc-book'){const f=path.join(__dirname,dir,'l'+L.n+'.json');if(!fs.existsSync(f))return L;const B=JSON.parse(fs.readFileSync(f,'utf8'));
+ return {...L,kicker:B.kicker||L.kicker,perStepChapter:true,steps:B.steps.map(s=>({id:s.id,chapter:s.title,title:s.title,teach:s.teach,visual:s.visual,keyPoints:s.keyPoints,mnemonic:s.mnemonic,goodToKnow:s.goodToKnow,act:s.act.type==='choice'?{...s.act,options:opts(s.act.options)}:s.act})),flashcards:B.flashcards,quiz:B.quiz};}
 (async()=>{
  // NC
  global.window={};eval(fs.readFileSync(D+'nutrition-counseling-education/interactive-content.js','utf8'));
  const J=window.NC_JOURNEYS;
  write('nc',{id:'nc',num:5,name:'Nutritional Counselling',area:'Counselling practice',lessons:Object.keys(J).sort((a,b)=>+a.split('-')[1]-+b.split('-')[1]).map(k=>{const L=J[k];return {n:+k.split('-')[1],title:L.title,kicker:L.kicker,perStepChapter:true,
-   steps:L.steps.map(s=>{const act={type:s.type,prompt:s.prompt};if(s.type==='choice')act.options=opts(s.options);if(s.type==='sort'){act.categories=s.categories;act.items=s.items;}if(s.type==='explore')act.panels=s.panels;if(s.type==='number')Object.assign(act,{answer:s.answer,tolerance:s.tolerance,unit:s.unit,explanation:s.explanation});return {id:s.id,chapter:s.title,title:s.title,teach:s.teach||[],act};}),flashcards:[],quiz:[]};}).map(ncBook)});
+   steps:L.steps.map(s=>{const act={type:s.type,prompt:s.prompt};if(s.type==='choice')act.options=opts(s.options);if(s.type==='sort'){act.categories=s.categories;act.items=s.items;}if(s.type==='explore')act.panels=s.panels;if(s.type==='number')Object.assign(act,{answer:s.answer,tolerance:s.tolerance,unit:s.unit,explanation:s.explanation});return {id:s.id,chapter:s.title,title:s.title,teach:s.teach||[],act};}),flashcards:[],quiz:[]};}).map(L=>ncBook(L))});
  for(const [id,dir,G,num,name,area] of [['ap','anatomy-physiology','AP_LEARNING',6,'Anatomy & Physiology','Body systems'],['vn','vegetarian-nutrition','VN_LEARNING',7,'Vegetarian Nutrition','Evidence-informed practice']]){
    global.window={};for(const f of fs.readdirSync(D+dir+'/learning').sort())if(f.startsWith('lesson'))eval(fs.readFileSync(D+dir+'/learning/'+f,'utf8'));
    const g=window[G];
    let QZ={};if(id==='vn'){eval(fs.readFileSync(D+dir+'/course-data.js','utf8'));const note={'course-intended':'This is the answer the course appears to expect.','ambiguous':'This question is worded ambiguously; this is the most defensible answer.','source-error':'The course source has an error here; the evidence-based answer is shown.'};
      (window.VN_COURSE.lessons||[]).forEach(l=>{QZ[l.number]=(l.questions||[]).filter(q=>Number.isInteger(q.answer)).map(q=>({q:q.prompt,o:q.options,a:q.answer,e:[q.rationale,q.correction,note[q.answerStatus]].filter(Boolean).join(' ')}));});}
-   write(id,{id,num,name,area,lessons:Object.keys(g).sort((a,b)=>+a.split('-')[1]-+b.split('-')[1]).map(k=>{const L=g[k];const n=+k.split('-')[1];return {n,title:L.title,kicker:(L.outcomes||[])[0]||'',duration:L.duration,steps:fromModules(L),flashcards:(L.flashcards||[]).map(c=>({front:c.front,back:c.back})),quiz:QZ[n]||[],caseStudy:L.caseStudy||null};})});}
+   write(id,{id,num,name,area,lessons:Object.keys(g).sort((a,b)=>+a.split('-')[1]-+b.split('-')[1]).map(k=>{const L=g[k];const n=+k.split('-')[1];return {n,title:L.title,kicker:(L.outcomes||[])[0]||'',duration:L.duration,steps:fromModules(L),flashcards:(L.flashcards||[]).map(c=>({front:c.front,back:c.back})),quiz:QZ[n]||[],caseStudy:L.caseStudy||null};}).map(L=>id==='ap'?ncBook(L,'ap-book'):L)});}
  const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage();
  // NHF
  await p.goto('http://localhost:8790/courses/natural-health-fundamentals/',{waitUntil:'networkidle'});

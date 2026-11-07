@@ -1,0 +1,957 @@
+{
+ "lesson": 1,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 1 of your course, built from Chapter 1 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap1-1",
+   "title": "Anatomy, physiology and pathology",
+   "teach": [
+    "Anatomy is the study of the body’s structure: what the parts are and how they’re organized. Physiology is the study of what those parts do and how they do it. Pathology is the study of the body’s diseases.",
+    "Anatomy and physiology are hard to separate. Your mouth is a good example: teeth break food down mechanically (structure doing a job), the tongue tastes and moves food, and saliva contains enzymes that start breaking complex carbohydrates into simple sugars.",
+    "People have studied the body for a long time. Leonardo da Vinci was the first to draw the whole skeleton correctly, Andreas Vesalius wrote a book on the human body, and William Harvey worked out how blood circulates."
+   ],
+   "keyPoints": [
+    "Anatomy = structure",
+    "Physiology = function",
+    "Pathology = disease"
+   ],
+   "mnemonic": {
+    "cue": "Anatomy is what it IS, physiology is what it DOES",
+    "explanation": "Ask \"what is it made of and where is it?\" for anatomy, and \"what does it do?\" for physiology."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Sort each statement into the right field of study.",
+    "categories": [
+     "Anatomy",
+     "Physiology",
+     "Pathology"
+    ],
+    "items": [
+     {
+      "label": "The heart has four chambers",
+      "category": 0,
+      "feedback": "That describes structure, so it’s anatomy."
+     },
+     {
+      "label": "The heart pumps blood to the lungs and body",
+      "category": 1,
+      "feedback": "That describes what the heart does, so it’s physiology."
+     },
+     {
+      "label": "How a heart attack damages heart muscle",
+      "category": 2,
+      "feedback": "That’s about disease, so it’s pathology."
+     },
+     {
+      "label": "The femur is the longest bone in the body",
+      "category": 0,
+      "feedback": "Size and shape are structure: anatomy."
+     },
+     {
+      "label": "Saliva enzymes break starch into sugars",
+      "category": 1,
+      "feedback": "That’s a process, so it’s physiology."
+     },
+     {
+      "label": "What happens to bones in osteoporosis",
+      "category": 2,
+      "feedback": "That’s a disease, so it’s pathology."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-2",
+   "title": "Anatomic position",
+   "teach": [
+    "To keep everyone using the same language, scientists use four reference systems: directions, planes, cavities and structural units.",
+    "All of them assume the body is in anatomic position: standing upright and facing forward, arms at the sides, palms and feet facing forward. Even if a patient is lying down, you describe locations as if they were standing this way."
+   ],
+   "goodToKnow": "\"Left\" and \"right\" always mean the patient’s left and right, not yours.",
+   "act": {
+    "type": "choice",
+    "prompt": "Which describes anatomic position?",
+    "options": [
+     {
+      "label": "Standing upright, facing forward, arms at the sides, palms facing forward",
+      "correct": true,
+      "feedback": "Right. Palms forward is the detail people often miss."
+     },
+     {
+      "label": "Standing upright, arms at the sides, palms facing the thighs",
+      "correct": false,
+      "feedback": "Close, but in anatomic position the palms face forward."
+     },
+     {
+      "label": "Lying on the back, arms by the sides",
+      "correct": false,
+      "feedback": "That’s lying down. Anatomic position is standing and facing forward."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-3",
+   "title": "Directional terms, part 1",
+   "teach": [
+    "Superior means above (the head is superior to the neck). Inferior means below (the foot is inferior to the ankle).",
+    "Anterior means toward the front; ventral, the belly side, means the same thing. Posterior means toward the back; dorsal, the back side, means the same thing. The esophagus is posterior to the trachea.",
+    "Cephalad or cranial means toward the head, so it’s another word for superior. Caudal means toward the tail, and is sometimes used for inferior. Humans only have a tail as embryos."
+   ],
+   "visual": {
+    "kind": "hub",
+    "title": "Pairs of opposites",
+    "items": [
+     {
+      "label": "Superior / inferior",
+      "detail": "Above / below"
+     },
+     {
+      "label": "Anterior / posterior",
+      "detail": "Front / back (ventral / dorsal)"
+     },
+     {
+      "label": "Cephalad / caudal",
+      "detail": "Toward the head / toward the tail"
+     },
+     {
+      "label": "Medial / lateral",
+      "detail": "Toward the midline / toward the side"
+     },
+     {
+      "label": "Proximal / distal",
+      "detail": "Near / far from the point of attachment"
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "The vertebral column is ______ to the digestive tract.",
+    "options": [
+     {
+      "label": "Posterior (dorsal)",
+      "correct": true,
+      "feedback": "Right. The spine sits behind the gut."
+     },
+     {
+      "label": "Anterior (ventral)",
+      "correct": false,
+      "feedback": "Anterior means in front. The spine is behind the gut."
+     },
+     {
+      "label": "Superior",
+      "correct": false,
+      "feedback": "Superior means above. Here the spine is behind, not above."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-4",
+   "title": "Directional terms, part 2",
+   "teach": [
+    "Medial means closer to the midline of the body: the nose is medial on the face, and the ulna is on the medial side of the forearm. Lateral means toward the side: the ears are lateral, and the radius is lateral to the ulna.",
+    "Proximal means near the point of attachment or origin. Distal means away from it. These are used mostly for limbs: the elbow is proximal to the wrist, and the wrist is distal to the elbow."
+   ],
+   "mnemonic": {
+    "cue": "Proximal = proximity, distal = distance",
+    "explanation": "Proximal parts are close to where the limb joins the trunk; distal parts are a long distance from it."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Pick the right term for each statement.",
+    "categories": [
+     "Proximal",
+     "Distal",
+     "Medial",
+     "Lateral"
+    ],
+    "items": [
+     {
+      "label": "The knee, compared with the ankle",
+      "category": 0,
+      "feedback": "The knee is closer to the hip, where the leg attaches."
+     },
+     {
+      "label": "The fingers, compared with the wrist",
+      "category": 1,
+      "feedback": "Fingers are farther from the shoulder attachment."
+     },
+     {
+      "label": "The nose on the face",
+      "category": 2,
+      "feedback": "The nose sits on the midline."
+     },
+     {
+      "label": "The radius, compared with the ulna",
+      "category": 3,
+      "feedback": "The radius is on the thumb side, away from the midline."
+     },
+     {
+      "label": "The ears on the face",
+      "category": 3,
+      "feedback": "The ears are toward the sides."
+     },
+     {
+      "label": "The wrist, compared with the elbow",
+      "category": 1,
+      "feedback": "The wrist is farther from the attachment, so it’s distal."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-5",
+   "title": "Body planes",
+   "teach": [
+    "Planes are imaginary flat surfaces passing through the body. They’re most useful when describing dissections or scans.",
+    "A midsagittal (median) plane divides the body down the middle into equal left and right halves. Any sagittal plane runs parallel to it and divides the body into unequal left and right parts.",
+    "A horizontal or transverse plane divides the body into superior and inferior portions. A frontal or coronal plane divides it into anterior and posterior portions, at right angles to the sagittal plane.",
+    "When an organ is cut, a cut along its long axis is a longitudinal section, and a cut across it is a transverse or cross section."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "Three planes",
+    "items": [
+     {
+      "label": "Sagittal (midsagittal)",
+      "detail": "Left and right parts. Midsagittal gives equal halves."
+     },
+     {
+      "label": "Frontal (coronal)",
+      "detail": "Front (anterior) and back (posterior) parts."
+     },
+     {
+      "label": "Transverse (horizontal)",
+      "detail": "Upper (superior) and lower (inferior) parts."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "A CT scan slice that separates the chest from the abdomen is cut along which plane?",
+    "options": [
+     {
+      "label": "Transverse (horizontal)",
+      "correct": true,
+      "feedback": "Right. It splits the body into upper and lower parts."
+     },
+     {
+      "label": "Frontal (coronal)",
+      "correct": false,
+      "feedback": "A frontal plane splits front from back."
+     },
+     {
+      "label": "Midsagittal",
+      "correct": false,
+      "feedback": "A midsagittal plane splits left from right."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-6",
+   "title": "The dorsal cavity",
+   "teach": [
+    "The body has two major cavities, the dorsal cavity and the ventral cavity. The organs inside any cavity are called the viscera.",
+    "The dorsal cavity holds the nervous system organs that coordinate the body. It has two parts: the cranial cavity, which holds the brain, and the spinal cavity, which holds the spinal cord."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "The spinal cord sits in the:",
+    "options": [
+     {
+      "label": "Spinal cavity, part of the dorsal cavity",
+      "correct": true,
+      "feedback": "Right. The dorsal cavity is the cranial cavity plus the spinal cavity."
+     },
+     {
+      "label": "Thoracic cavity, part of the ventral cavity",
+      "correct": false,
+      "feedback": "The thoracic cavity holds the heart and lungs."
+     },
+     {
+      "label": "Abdominopelvic cavity",
+      "correct": false,
+      "feedback": "That holds digestive, urinary and reproductive organs."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-7",
+   "title": "The ventral cavity",
+   "teach": [
+    "The ventral cavity holds organs that keep the internal environment steady (homeostasis). Its first part is the thoracic cavity, surrounded by the rib cage.",
+    "Inside the thoracic cavity, the heart sits in the pericardial sac (the pericardial cavity) and each lung is covered by a pleural membrane (the pleural cavities). Between the two pleural cavities is the mediastinum, which holds the heart, thymus, lymph and blood vessels, trachea, esophagus and nerves.",
+    "The diaphragm separates the thoracic cavity from the abdominopelvic cavity. That second part holds the kidneys, stomach, liver and gallbladder, small and large intestines, spleen, pancreas, and in women the ovaries and uterus.",
+    "Parietal refers to the wall of a cavity (the parietal peritoneum lines the abdominal wall). Visceral refers to the covering of an organ (the visceral peritoneum covers the abdominal organs)."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "Cavities of the body",
+    "items": [
+     {
+      "label": "Dorsal cavity",
+      "detail": "Cranial cavity (brain) and spinal cavity (spinal cord)."
+     },
+     {
+      "label": "Thoracic cavity",
+      "detail": "Pericardial cavity (heart), pleural cavities (lungs), mediastinum."
+     },
+     {
+      "label": "Diaphragm",
+      "detail": "The muscle that separates the chest from the abdomen."
+     },
+     {
+      "label": "Abdominopelvic cavity",
+      "detail": "Stomach, liver, intestines, kidneys, spleen, pancreas, and in women the ovaries and uterus."
+     }
+    ]
+   },
+   "mnemonic": {
+    "cue": "Parietal = partition wall, visceral = viscera",
+    "explanation": "The parietal layer lines the wall; the visceral layer hugs the organ (the viscera)."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Put each organ in its cavity.",
+    "categories": [
+     "Cranial",
+     "Thoracic",
+     "Abdominopelvic"
+    ],
+    "items": [
+     {
+      "label": "Brain",
+      "category": 0,
+      "feedback": "The brain is in the cranial cavity."
+     },
+     {
+      "label": "Heart",
+      "category": 1,
+      "feedback": "The heart is in the pericardial cavity, inside the thoracic cavity."
+     },
+     {
+      "label": "Lungs",
+      "category": 1,
+      "feedback": "Each lung is in a pleural cavity in the thorax."
+     },
+     {
+      "label": "Esophagus (in the chest)",
+      "category": 1,
+      "feedback": "It runs through the mediastinum."
+     },
+     {
+      "label": "Liver",
+      "category": 2,
+      "feedback": "The liver is below the diaphragm."
+     },
+     {
+      "label": "Kidneys",
+      "category": 2,
+      "feedback": "The textbook lists the kidneys in the abdominopelvic cavity."
+     },
+     {
+      "label": "Uterus",
+      "category": 2,
+      "feedback": "The uterus is in the pelvic part."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-8",
+   "title": "Levels of organization",
+   "teach": [
+    "All living material is made of cells, the smallest units of life. Cells form tissues, tissues form organs, organs form systems, and all the systems together make the organism.",
+    "Below the cell are atoms (like carbon, hydrogen and oxygen) and molecules (like water, sugars and amino acids), but these aren’t alive. The cell is the smallest living unit and the basic unit of biologic organization.",
+    "The fluid part of a cell is protoplasm. It’s surrounded by the cell (plasma) membrane, which controls what enters and leaves, and it contains organelles such as mitochondria, ribosomes and lysosomes."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the levels of organization in order, smallest first.",
+    "items": [
+     {
+      "label": "Atoms",
+      "detail": "Smallest units of elements"
+     },
+     {
+      "label": "Molecules",
+      "detail": "Atoms joined by chemical bonds"
+     },
+     {
+      "label": "Cells",
+      "detail": "Smallest living units"
+     },
+     {
+      "label": "Tissues",
+      "detail": "Similar cells doing similar jobs"
+     },
+     {
+      "label": "Organs",
+      "detail": "Different tissues working together"
+     },
+     {
+      "label": "Systems",
+      "detail": "Groups of organs"
+     },
+     {
+      "label": "Organism",
+      "detail": "All systems together"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-9",
+   "title": "The four tissue types",
+   "teach": [
+    "Every tissue in the body fits one of four groups.",
+    "Epithelial tissue covers and protects surfaces (outside, like skin, and inside, like the intestine lining), forms glands and lines cavities. Its cells sit close together with almost no material between them.",
+    "Connective tissue binds and supports other tissues. Its cells make fibers (collagen and elastin) set in a nonliving matrix. Blood, bone and lymphatic tissue are specialized connective tissues.",
+    "Muscle tissue has long cells (muscle fibers) that generate movement by contracting forcefully. There are three types: skeletal (voluntary, pulls on bones), smooth (involuntary, in the intestines and blood vessels) and cardiac (involuntary, only in the heart).",
+    "Nervous tissue is made of nerve cells that link the sensory and motor structures of the body into one coordinating system."
+   ],
+   "keyPoints": [
+    "4 tissue types: epithelial, connective, muscle, nervous",
+    "3 muscle types: skeletal, smooth, cardiac"
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each description to its tissue.",
+    "categories": [
+     "Epithelial",
+     "Connective",
+     "Muscle",
+     "Nervous"
+    ],
+    "items": [
+     {
+      "label": "Lines the intestine and forms glands",
+      "category": 0,
+      "feedback": "Covering, lining and glands are epithelial jobs."
+     },
+     {
+      "label": "Bone and blood",
+      "category": 1,
+      "feedback": "Both are specialized connective tissues."
+     },
+     {
+      "label": "Contracts forcefully to create movement",
+      "category": 2,
+      "feedback": "That’s muscle."
+     },
+     {
+      "label": "Pushes food along the digestive tract",
+      "category": 2,
+      "feedback": "Smooth muscle does this."
+     },
+     {
+      "label": "Carries signals between sensory and motor structures",
+      "category": 3,
+      "feedback": "That’s nervous tissue."
+     },
+     {
+      "label": "Cells make collagen and elastin fibers in a matrix",
+      "category": 1,
+      "feedback": "Fibers in a matrix is the mark of connective tissue."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-10",
+   "title": "Body systems: covering, support and movement",
+   "teach": [
+    "The integumentary system is the skin (epidermis and dermis) plus hair, nails, sebaceous glands and sweat glands. It insulates and protects the body, helps control temperature and water, and has receptors for temperature and pressure.",
+    "The skeletal system is bones, cartilage and the membranes around bones. It protects and supports, acts as levers for movement, makes blood cells in red marrow, stores fat in yellow marrow, and stores minerals like calcium and phosphorus.",
+    "The muscular system is muscles, fasciae, tendon sheaths and bursae. Skeletal muscle moves bones, smooth muscle moves food and blood, and cardiac muscle makes the heart contract."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Red bone marrow making blood cells is a job of which system?",
+    "options": [
+     {
+      "label": "Skeletal",
+      "correct": true,
+      "feedback": "Right. Bones make blood cells and store fat and minerals."
+     },
+     {
+      "label": "Cardiovascular",
+      "correct": false,
+      "feedback": "The cardiovascular system moves blood, but bones make the cells."
+     },
+     {
+      "label": "Lymphatic",
+      "correct": false,
+      "feedback": "Not in this textbook’s list. Blood cells come from red bone marrow."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-11",
+   "title": "Body systems: control and transport",
+   "teach": [
+    "The nervous system (brain, spinal cord, cranial and peripheral nerves) controls and coordinates the other systems, interprets stimuli and handles the special senses.",
+    "The endocrine system is the ductless glands. The pituitary, the \"master gland\", controls the thyroid, adrenals, ovaries and testes. Hormones regulate the body chemically, and the hypothalamus links this system with the nervous system.",
+    "The cardiovascular system (heart, arteries, veins, capillaries) pumps blood carrying oxygen, nutrients and wastes.",
+    "The lymphatic (immune) system (lymph nodes, thymus, spleen, lymph vessels) drains extra fluid from tissues, carries absorbed fats from the intestine to the blood, and protects against disease."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which system does each job?",
+    "categories": [
+     "Nervous",
+     "Endocrine",
+     "Cardiovascular",
+     "Lymphatic"
+    ],
+    "items": [
+     {
+      "label": "Interprets sight, hearing, taste and smell",
+      "category": 0,
+      "feedback": "The special senses are nervous system work."
+     },
+     {
+      "label": "Regulates the body with hormones",
+      "category": 1,
+      "feedback": "Hormones come from endocrine glands."
+     },
+     {
+      "label": "Pumps blood through arteries, veins and capillaries",
+      "category": 2,
+      "feedback": "That’s the cardiovascular system."
+     },
+     {
+      "label": "Carries absorbed fats from the intestine",
+      "category": 3,
+      "feedback": "Lymph vessels pick up fats."
+     },
+     {
+      "label": "Drains extra fluid from tissue spaces",
+      "category": 3,
+      "feedback": "That’s a lymphatic job."
+     },
+     {
+      "label": "Pituitary controls other glands",
+      "category": 1,
+      "feedback": "The pituitary is the endocrine master gland."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-12",
+   "title": "Body systems: exchange, processing and reproduction",
+   "teach": [
+    "The respiratory system (nasal cavities, pharynx, larynx, trachea, bronchi, lungs) brings oxygen into the blood and removes carbon dioxide.",
+    "The digestive system is the alimentary canal (mouth to anus) plus the salivary glands, liver and pancreas. It breaks food into simpler substances that cells can absorb and gets rid of what can’t be digested.",
+    "The urinary system (two kidneys, two ureters, bladder, urethra) chemically regulates the blood, makes and removes urine, and helps maintain homeostasis.",
+    "The reproductive system is the ovaries, uterine tubes, uterus and vagina in women, and the testes, vas deferens, seminal vesicles, prostate, penis and urethra in men. It maintains sexual characteristics and continues the species."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which system does each organ belong to?",
+    "categories": [
+     "Respiratory",
+     "Digestive",
+     "Urinary",
+     "Reproductive"
+    ],
+    "items": [
+     {
+      "label": "Larynx",
+      "category": 0,
+      "feedback": "The larynx is part of the airway."
+     },
+     {
+      "label": "Pancreas",
+      "category": 1,
+      "feedback": "It’s an associated gland of the digestive system."
+     },
+     {
+      "label": "Ureters",
+      "category": 2,
+      "feedback": "They carry urine from the kidneys to the bladder."
+     },
+     {
+      "label": "Prostate gland",
+      "category": 3,
+      "feedback": "It’s part of the male reproductive system."
+     },
+     {
+      "label": "Bronchi",
+      "category": 0,
+      "feedback": "They lead into the lungs."
+     },
+     {
+      "label": "Liver",
+      "category": 1,
+      "feedback": "The textbook lists it as a digestive gland."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-13",
+   "title": "Homeostasis",
+   "teach": [
+    "Homeostasis is keeping the body’s internal environment within narrow limits. Claude Bernard was one of the first scientists to explain why it matters. Blood sugar, body temperature, heart rate and the fluid around cells are all kept in range.",
+    "Blood sugar: after a carbohydrate meal, blood glucose rises. The pancreas releases insulin, which moves extra glucose into the liver to be stored as glycogen. Between meals, when glucose drops, the pancreas releases glucagon, which breaks glycogen back down into glucose.",
+    "Temperature: when you overheat, the hypothalamus makes you sweat and widens blood vessels near the skin to lose heat. When you’re cold, it makes you shiver and narrows those vessels to hold heat in.",
+    "If homeostasis isn’t maintained, the body becomes diseased and eventually dies."
+   ],
+   "visual": {
+    "kind": "cycle",
+    "title": "Blood sugar balance",
+    "items": [
+     {
+      "label": "Meal raises glucose",
+      "detail": "Carbohydrates are broken down into glucose."
+     },
+     {
+      "label": "Insulin released",
+      "detail": "The pancreas sends extra glucose to the liver."
+     },
+     {
+      "label": "Stored as glycogen",
+      "detail": "The liver stores it for later."
+     },
+     {
+      "label": "Glucose drops between meals",
+      "detail": "Cells keep using glucose."
+     },
+     {
+      "label": "Glucagon released",
+      "detail": "Glycogen is broken back into glucose."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "Between meals, blood glucose falls. What does the pancreas release?",
+    "options": [
+     {
+      "label": "Glucagon, which turns stored glycogen back into glucose",
+      "correct": true,
+      "feedback": "Right. Glucagon raises blood glucose."
+     },
+     {
+      "label": "Insulin, which moves glucose into the liver",
+      "correct": false,
+      "feedback": "Insulin lowers blood glucose. That’s the response after a meal."
+     },
+     {
+      "label": "Sweat, to cool the body",
+      "correct": false,
+      "feedback": "Sweating is for temperature, not blood sugar."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap1-14",
+   "title": "Negative and positive feedback",
+   "teach": [
+    "The body keeps checking itself and correcting changes using negative feedback: a change triggers a response that reverses it. A home thermostat works the same way: when it gets cold, the furnace turns on; when it’s warm enough, it turns off. Body temperature control is negative feedback.",
+    "Positive feedback is the opposite: a stimulus leads to more of the same response. In labour, after the first contraction, the uterus keeps contracting harder and more often."
+   ],
+   "mnemonic": {
+    "cue": "Negative = \"no more\", positive = \"more, more\"",
+    "explanation": "Negative feedback shuts the change down. Positive feedback builds it up until an end point (like birth)."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Negative or positive feedback?",
+    "categories": [
+     "Negative feedback",
+     "Positive feedback"
+    ],
+    "items": [
+     {
+      "label": "Sweating when body temperature rises",
+      "category": 0,
+      "feedback": "It brings temperature back down."
+     },
+     {
+      "label": "Contractions growing stronger during labour",
+      "category": 1,
+      "feedback": "Each contraction leads to a stronger one."
+     },
+     {
+      "label": "Insulin release after a meal",
+      "category": 0,
+      "feedback": "It brings blood glucose back down."
+     },
+     {
+      "label": "Shivering in the cold",
+      "category": 0,
+      "feedback": "It brings temperature back up to normal."
+     },
+     {
+      "label": "A furnace switching off when the room is warm",
+      "category": 0,
+      "feedback": "That’s the thermostat example of negative feedback."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Anatomy",
+   "back": "The study of the body’s structure and how its parts are organized."
+  },
+  {
+   "front": "Physiology",
+   "back": "The study of what body parts do and how they do it."
+  },
+  {
+   "front": "Pathology",
+   "back": "The study of the diseases of the body."
+  },
+  {
+   "front": "Anatomic position",
+   "back": "Standing upright, facing forward, arms at the sides, palms and feet facing forward."
+  },
+  {
+   "front": "Superior / inferior",
+   "back": "Above / below."
+  },
+  {
+   "front": "Anterior (ventral) / posterior (dorsal)",
+   "back": "Toward the front / toward the back."
+  },
+  {
+   "front": "Cephalad (cranial) / caudal",
+   "back": "Toward the head / toward the tail."
+  },
+  {
+   "front": "Medial / lateral",
+   "back": "Toward the midline / toward the side."
+  },
+  {
+   "front": "Proximal / distal",
+   "back": "Near / away from the point of attachment or origin."
+  },
+  {
+   "front": "Midsagittal plane",
+   "back": "Divides the body into equal left and right halves (also called the median plane)."
+  },
+  {
+   "front": "Transverse (horizontal) plane",
+   "back": "Divides the body into superior and inferior portions."
+  },
+  {
+   "front": "Frontal (coronal) plane",
+   "back": "Divides the body into anterior and posterior portions."
+  },
+  {
+   "front": "Viscera",
+   "back": "The organs inside any body cavity."
+  },
+  {
+   "front": "Dorsal cavity",
+   "back": "Cranial cavity (brain) and spinal cavity (spinal cord)."
+  },
+  {
+   "front": "Thoracic cavity",
+   "back": "Holds the heart in the pericardial cavity and the lungs in the pleural cavities, with the mediastinum between them."
+  },
+  {
+   "front": "Mediastinum",
+   "back": "Space between the pleural cavities holding the heart, thymus, trachea, esophagus, vessels and nerves."
+  },
+  {
+   "front": "Parietal / visceral",
+   "back": "Lining the wall of a cavity / covering an organ."
+  },
+  {
+   "front": "Protoplasm",
+   "back": "The fluid part of a cell."
+  },
+  {
+   "front": "Four tissue types",
+   "back": "Epithelial, connective, muscle and nervous."
+  },
+  {
+   "front": "Three muscle types",
+   "back": "Skeletal (voluntary), smooth (involuntary, gut and vessels), cardiac (heart only)."
+  },
+  {
+   "front": "Homeostasis",
+   "back": "Keeping the internal environment within narrow limits."
+  },
+  {
+   "front": "Negative feedback",
+   "back": "A response that reverses a change, like temperature control."
+  },
+  {
+   "front": "Positive feedback",
+   "back": "A response that increases the change, like labour contractions."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The organs of any cavity are referred to as the viscera.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 1 says the organs of any cavity are called the viscera. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "A __________________ is any plane that divides the body into superior and inferior portions.",
+   "o": [
+    "frontal",
+    "mid-sagittal",
+    "coronal",
+    "transverse"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 1 says a horizontal or transverse plane divides the body into superior and inferior portions. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "The heart is located within the _______________ cavity.",
+   "o": [
+    "pleural",
+    "pericardial",
+    "abdominal",
+    "cranial"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 1 says the heart sits in the pericardial sac, called the pericardial cavity, inside the thoracic cavity. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "The wrist is _____________________ to the elbow.",
+   "o": [
+    "proximal",
+    "superior",
+    "distal",
+    "superficial"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Distal means away from the point of attachment. The textbook’s own example is \"the wrist is distal to the elbow\". Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "What are the smallest living units of biologic organization?",
+   "o": [
+    "Atoms",
+    "Cells",
+    "Organelles",
+    "Systems"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Table 1-1 says cells are the smallest living units of biologic organization. Atoms and molecules are smaller but not alive. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "Skin, hair, and nails belong to the ________________________ system.",
+   "o": [
+    "integumentary",
+    "muscular",
+    "digestive",
+    "endocrine"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 1 says the integumentary system includes the skin, hair, nails, sebaceous glands and sweat glands. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "What term is used for the maintenance (within varying narrow limits) of the internal environment of the body?",
+   "o": [
+    "physiology",
+    "homeostasis",
+    "pathology",
+    "epithelium"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 1 defines homeostasis as the maintenance, within varying narrow limits, of the internal environment of the body. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "What type of muscle is found along the digestive tract?",
+   "o": [
+    "smooth",
+    "cardiac",
+    "skeletal",
+    "vascular"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 1 says smooth (involuntary) muscle is found in the intestines, where it pushes food along the digestive tract. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "Body temperature control is an example of, _______________________ a process by which the body responds to a stimulus by correcting the change and bringing the body back to the original setting.",
+   "o": [
+    "positive feedback",
+    "endocrinology",
+    "negative feedback",
+    "pathology"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 1 uses body temperature control as its example of negative feedback, which corrects a change and brings the body back to normal. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "The first contraction during labor results in stronger and stronger contractions of the uterus. This process is an example of _____________________________.",
+   "o": [
+    "negative feedback",
+    "endocrinology",
+    "pathology",
+    "positive feedback"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 1 gives labour as the example: after the first contraction, the uterus keeps contracting with more strength and frequency. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "The study of the diseases of the body is called ___________________.",
+   "o": [
+    "anatomy",
+    "physiology",
+    "endocrinology",
+    "pathology"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 1 says pathology is the study of the diseases of the body. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "What type of tissue generates movement by contracting in a forcible manner?",
+   "o": [
+    "muscle",
+    "nervous",
+    "connective",
+    "epithelial"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 1 says muscle tissue generates movement by shortening or contracting in a forcible manner. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "Anatomy is the study of diseases in the body.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Anatomy is the study of structure. The study of disease is pathology. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "There are four types of muscle in the human body.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. There are three types of muscle tissue: skeletal, smooth and cardiac. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  },
+  {
+   "q": "The prostate gland, penis, and urethra belong to the male reproductive system.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 1 lists the prostate gland, penis and urethra as part of the male reproductive system. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 1."
+  }
+ ]
+}
