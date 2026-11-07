@@ -1,0 +1,931 @@
+{
+ "lesson": 16,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 16 of your course, built from Chapter 16 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap16-1",
+   "title": "What digestion is",
+   "teach": [
+    "The digestive system breaks complex carbohydrates, proteins and fats down by hydrolysis into simpler nutrients the cells can use. Digestion lets the body’s cells convert food energy into ATP.",
+    "Five basic activities: ingestion (taking food in), peristalsis (pushing food along the tract), digestion (mechanical and chemical breakdown), absorption (passing digested food into the blood and lymph) and defecation (eliminating what can’t be digested or absorbed).",
+    "Enzymes: amylase breaks complex carbohydrates into simple sugars; proteases break proteins into amino acids; lipases break fats into fatty acids and glycerol."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which activity is it?",
+    "categories": [
+     "Peristalsis",
+     "Digestion",
+     "Absorption",
+     "Defecation"
+    ],
+    "items": [
+     {
+      "label": "Pushing food along the tract",
+      "category": 0,
+      "feedback": "Peristalsis."
+     },
+     {
+      "label": "Breaking food down mechanically and chemically",
+      "category": 1,
+      "feedback": "Digestion."
+     },
+     {
+      "label": "Passing digested food into the blood and lymph",
+      "category": 2,
+      "feedback": "Absorption."
+     },
+     {
+      "label": "Eliminating indigestible material",
+      "category": 3,
+      "feedback": "Defecation."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-2",
+   "title": "Digestive enzymes",
+   "teach": [
+    "Each enzyme matches a food group. Amylase (in saliva and pancreatic juice) breaks complex carbohydrates like starch and glycogen into simple sugars. Proteases, such as pepsin in the stomach, break proteins into amino acids. Lipases break fats into fatty acids and glycerol."
+   ],
+   "mnemonic": {
+    "cue": "-ase = enzyme; amyl = starch, prote = protein, lip = fat",
+    "explanation": "The start of the enzyme’s name tells you what it digests."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Which enzyme breaks down each food?",
+    "categories": [
+     "Amylase",
+     "Protease",
+     "Lipase"
+    ],
+    "items": [
+     {
+      "label": "Complex carbohydrates into simple sugars",
+      "category": 0,
+      "feedback": "Amylase."
+     },
+     {
+      "label": "Proteins into amino acids",
+      "category": 1,
+      "feedback": "Protease."
+     },
+     {
+      "label": "Fats into fatty acids and glycerol",
+      "category": 2,
+      "feedback": "Lipase."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-3",
+   "title": "The alimentary canal and accessory organs",
+   "teach": [
+    "The gastrointestinal tract (alimentary canal) is a continuous tube about 30 feet long from mouth to anus: mouth, oropharynx, esophagus, stomach, and small and large intestines.",
+    "Accessory structures are the teeth, tongue, salivary glands, liver and gallbladder, and pancreas."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Alimentary canal or accessory organ?",
+    "categories": [
+     "Alimentary canal",
+     "Accessory organ"
+    ],
+    "items": [
+     {
+      "label": "Esophagus",
+      "category": 0,
+      "feedback": "Part of the tube."
+     },
+     {
+      "label": "Stomach",
+      "category": 0,
+      "feedback": "Part of the tube."
+     },
+     {
+      "label": "Liver",
+      "category": 1,
+      "feedback": "Accessory."
+     },
+     {
+      "label": "Pancreas",
+      "category": 1,
+      "feedback": "Accessory."
+     },
+     {
+      "label": "Salivary glands",
+      "category": 1,
+      "feedback": "Accessory."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-4",
+   "title": "The four tunics of the canal",
+   "teach": [
+    "From the esophagus to the anal canal, the walls have the same four layers, called coats or tunics. From the inside out:",
+    "Tunica mucosa, the innermost lining: epithelium in contact with the food, the lamina propria (loose connective tissue that supports it and carries blood and lymph) and the muscularis mucosa.",
+    "Tunica submucosa: loose connective tissue binding the mucosa to the muscularis. Tunica muscularis: skeletal muscle in the mouth, pharynx and upper esophagus (for voluntary swallowing), smooth muscle in inner circular and outer longitudinal layers elsewhere. Tunica serosa (visceral peritoneum): the outermost layer; one extension forms the mesentery."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the tunics in order, inside out.",
+    "items": [
+     {
+      "label": "Tunica mucosa",
+      "detail": "Innermost lining"
+     },
+     {
+      "label": "Tunica submucosa",
+      "detail": "Loose connective tissue"
+     },
+     {
+      "label": "Tunica muscularis",
+      "detail": "Muscle layers"
+     },
+     {
+      "label": "Tunica serosa",
+      "detail": "Visceral peritoneum"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-5",
+   "title": "The mouth, tongue and saliva",
+   "teach": [
+    "The mouth (buccal cavity) has a hard palate in front and a soft palate behind. The uvula hangs from the soft palate and stops food going up into the nose when you swallow.",
+    "The tongue is skeletal muscle on the hyoid bone, covered in papillae. Filiform papillae help with licking; fungiform and circumvallate papillae have taste buds. The five tastes are sweet, sour, salty, bitter and umami (which detects MSG).",
+    "Buccal glands in the mouth lining secrete small amounts of saliva; most comes from three pairs of large glands: parotid, submandibular and sublingual. Saliva is 99.5% water and contains amylase, buffers, mucin and lysozyme."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which glands in the mucous membrane of the mouth secrete small amounts of saliva?",
+    "options": [
+     {
+      "label": "Buccal glands",
+      "correct": true,
+      "feedback": "Right. The large parotid, submandibular and sublingual glands make most saliva."
+     },
+     {
+      "label": "Parotid glands",
+      "correct": false,
+      "feedback": "These are large glands outside the mouth."
+     },
+     {
+      "label": "Sublingual glands",
+      "correct": false,
+      "feedback": "Also a large outside gland."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-6",
+   "title": "Teeth",
+   "teach": [
+    "Chewing is mastication. Children have 20 deciduous teeth; adults have 32 permanent teeth: 8 incisors (cut), 4 canines (tear), 8 premolars (bicuspids) and 12 molars (grind).",
+    "The crown is above the gum and covered in enamel, the hardest substance in the body. The neck (cervix) joins the crown to the root. Teeth are mostly dentin around a pulp cavity. Cementum attaches the root to the periodontal ligament."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the tooth part.",
+    "categories": [
+     "Enamel",
+     "Dentin",
+     "Pulp",
+     "Cementum"
+    ],
+    "items": [
+     {
+      "label": "Hardest substance in the body; covers the crown",
+      "category": 0,
+      "feedback": "Enamel."
+     },
+     {
+      "label": "Bonelike bulk of the tooth",
+      "category": 1,
+      "feedback": "Dentin."
+     },
+     {
+      "label": "Contains blood vessels and nerves",
+      "category": 2,
+      "feedback": "Pulp."
+     },
+     {
+      "label": "Attaches the root to the periodontal ligament",
+      "category": 3,
+      "feedback": "Cementum."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-7",
+   "title": "Swallowing and the esophagus",
+   "teach": [
+    "Swallowing is deglutition. The tongue forms food into a bolus and pushes it into the oropharynx (voluntary stage). Then, involuntarily, breathing pauses, the soft palate and uvula close off the nasopharynx, the epiglottis seals the trachea, and the bolus enters the esophagus.",
+    "The esophagus is a collapsible muscular tube behind the trachea, about 10 inches long. It passes through the diaphragm at the esophageal hiatus. It secretes mucus and moves food by peristalsis, but doesn’t digest or absorb. The lower esophageal sphincter controls entry to the stomach."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Swallowing is also called:",
+    "options": [
+     {
+      "label": "Deglutition",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Mastication",
+      "correct": false,
+      "feedback": "That’s chewing."
+     },
+     {
+      "label": "Peristalsis",
+      "correct": false,
+      "feedback": "That’s the wave that moves food along."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-8",
+   "title": "The stomach",
+   "teach": [
+    "The J-shaped stomach has four parts: the cardia (around the gastroesophageal sphincter), the fundus (rounded top), the body (large center) and the pylorus (the narrow lower region, joining the duodenum at the pyloric sphincter).",
+    "When empty, the lining lies in folds called rugae, which let the stomach expand. It has three muscle layers (oblique, circular, longitudinal) to churn food.",
+    "Gastric glands have chief (zymogenic) cells that secrete pepsinogen, parietal cells that secrete hydrochloric acid (which turns pepsinogen into pepsin to start digesting protein), and mucous cells that protect the lining. The stomach empties in 2 to 6 hours."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which stomach cell?",
+    "categories": [
+     "Chief cells",
+     "Parietal cells",
+     "Mucous cells"
+    ],
+    "items": [
+     {
+      "label": "Secrete pepsinogen",
+      "category": 0,
+      "feedback": "Chief (zymogenic) cells."
+     },
+     {
+      "label": "Secrete hydrochloric acid",
+      "category": 1,
+      "feedback": "Parietal cells."
+     },
+     {
+      "label": "Protect the stomach from digesting itself",
+      "category": 2,
+      "feedback": "Mucous cells."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-9",
+   "title": "The pancreas",
+   "teach": [
+    "The pancreas lies under the stomach and connects to the duodenum. It has two jobs.",
+    "Exocrine: the acini release pancreatic juice, a mix of digestive enzymes (lipases, carbohydrases and proteases), through the pancreatic duct. Duct cells add sodium bicarbonate.",
+    "Endocrine: the pancreatic islets’ alpha cells make glucagon and beta cells make insulin."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which pancreatic cells release pancreatic juice?",
+    "options": [
+     {
+      "label": "Acini",
+      "correct": true,
+      "feedback": "Right, the exocrine part."
+     },
+     {
+      "label": "Beta cells",
+      "correct": false,
+      "feedback": "Beta cells make insulin."
+     },
+     {
+      "label": "Parietal cells",
+      "correct": false,
+      "feedback": "Those are in the stomach."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-10",
+   "title": "The liver and gallbladder",
+   "teach": [
+    "The liver is one of the largest digestive organs, about 4 pounds, with right and left lobes.",
+    "Six major functions: makes heparin and clotting proteins; Kupffer cells (liver macrophages) eat bacteria and old blood cells; breaks down poisons and converts toxic ammonia to urea; stores excess glucose as glycogen or fat; stores glycogen, copper, iron and vitamins A, D, E and K; and makes bile salts that emulsify fats.",
+    "The gallbladder, a pear-shaped sac in a depression on the liver’s surface, stores and concentrates bile and releases it to the duodenum through the common bile duct."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Liver or gallbladder?",
+    "categories": [
+     "Liver",
+     "Gallbladder"
+    ],
+    "items": [
+     {
+      "label": "Makes bile and converts ammonia to urea",
+      "category": 0,
+      "feedback": "Liver."
+     },
+     {
+      "label": "Stores and concentrates bile",
+      "category": 1,
+      "feedback": "Gallbladder."
+     },
+     {
+      "label": "Has Kupffer cells",
+      "category": 0,
+      "feedback": "Liver."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-11",
+   "title": "The small intestine and absorption",
+   "teach": [
+    "The small intestine is about 21 feet long and does most digestion and absorption. Its three parts: the duodenum (first and shortest, about 10 inches), the jejunum (about 8 feet) and the ileum (about 12 feet), which joins the large intestine at the ileocecal valve.",
+    "Intestinal glands add enzymes; duodenal glands and goblet cells add alkaline mucus to neutralize acidic chyme.",
+    "About 80% of nutrient absorption happens here. Three features increase surface area: folds called plicae, millions of villi (each with capillaries and a lacteal) and microvilli on the cells."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the parts of the small intestine in order.",
+    "items": [
+     {
+      "label": "Duodenum",
+      "detail": "First, shortest"
+     },
+     {
+      "label": "Jejunum",
+      "detail": "Middle"
+     },
+     {
+      "label": "Ileum",
+      "detail": "Last, joins the large intestine"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-12",
+   "title": "The large intestine",
+   "teach": [
+    "The large intestine (bowel) is about 5 feet long. It absorbs water, makes and absorbs some vitamins (bacteria make vitamin K, biotin and B5) and forms and expels feces.",
+    "Its regions: cecum (with the appendix attached), colon (ascending, transverse, descending and sigmoid), rectum and anal canal. Mass peristalsis drives contents into the rectum, triggering the defecation reflex."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the large intestine in order.",
+    "items": [
+     {
+      "label": "Cecum",
+      "detail": "With the appendix"
+     },
+     {
+      "label": "Ascending colon",
+      "detail": ""
+     },
+     {
+      "label": "Transverse colon",
+      "detail": ""
+     },
+     {
+      "label": "Descending colon",
+      "detail": ""
+     },
+     {
+      "label": "Sigmoid colon",
+      "detail": ""
+     },
+     {
+      "label": "Rectum and anal canal",
+      "detail": ""
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-13",
+   "title": "Vitamins and essential nutrients",
+   "teach": [
+    "There are six classes of nutrients: carbohydrates, lipids, proteins, vitamins, minerals and water. Essential nutrients are those a person must get from food because the body can’t make enough of them.",
+    "Vitamin A: vision, bone growth and epithelial cells. B1 (thiamine): muscle and nerve function; deficiency causes beriberi. The other B vitamins are coenzymes in energy metabolism. Vitamin D: bone mineralization. Vitamin K: clotting. Vitamin C: an antioxidant; deficiency causes scurvy."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which vitamin?",
+    "categories": [
+     "Vitamin A",
+     "Vitamin B1",
+     "Vitamin K",
+     "Vitamin C"
+    ],
+    "items": [
+     {
+      "label": "Vision, bone growth and epithelial cells",
+      "category": 0,
+      "feedback": "Vitamin A."
+     },
+     {
+      "label": "Thiamine; muscle and nerve function",
+      "category": 1,
+      "feedback": "B1."
+     },
+     {
+      "label": "Blood clotting",
+      "category": 2,
+      "feedback": "Vitamin K."
+     },
+     {
+      "label": "Deficiency causes scurvy",
+      "category": 3,
+      "feedback": "Vitamin C."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap16-14",
+   "title": "Digestive disorders",
+   "teach": [
+    "Hepatitis is inflammation of the liver from alcohol or viruses (A is spread by contaminated food or water; B by blood and sexual contact). Cirrhosis is a long-term degenerative liver disease in which the lobes are covered with fibrous connective tissue, most often from chronic alcohol abuse.",
+    "Ulcers form when acid and enzymes erode the stomach or duodenum; the bacterium Helicobacter pylori is linked to many. A hiatal hernia lets part of the stomach push up through the diaphragm, causing acid reflux.",
+    "Gallstones form when cholesterol precipitates in the gallbladder. Appendicitis is an inflamed, obstructed appendix. Crohn’s disease is a chronic inflammatory bowel disease. Mumps is a viral infection of the salivary glands. Dental caries is tooth decay."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the disorder.",
+    "categories": [
+     "Cirrhosis",
+     "Hepatitis",
+     "Gallstones",
+     "Crohn’s disease"
+    ],
+    "items": [
+     {
+      "label": "Liver lobes covered with fibrous tissue",
+      "category": 0,
+      "feedback": "Cirrhosis."
+     },
+     {
+      "label": "Inflammation of the liver",
+      "category": 1,
+      "feedback": "Hepatitis."
+     },
+     {
+      "label": "Cholesterol precipitates in the gallbladder",
+      "category": 2,
+      "feedback": "Gallstones."
+     },
+     {
+      "label": "Chronic inflammatory bowel disease",
+      "category": 3,
+      "feedback": "Crohn’s disease."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Five digestive activities",
+   "back": "Ingestion, peristalsis, digestion, absorption, defecation."
+  },
+  {
+   "front": "Peristalsis",
+   "back": "Physical movement of food along the tract."
+  },
+  {
+   "front": "Absorption",
+   "back": "Passage of digested food into the blood and lymph."
+  },
+  {
+   "front": "Amylase / protease / lipase",
+   "back": "Carbohydrates / proteins / fats."
+  },
+  {
+   "front": "Four tunics (in to out)",
+   "back": "Mucosa, submucosa, muscularis, serosa."
+  },
+  {
+   "front": "Lamina propria",
+   "back": "Loose connective tissue layer of the mucosa."
+  },
+  {
+   "front": "Uvula",
+   "back": "Hangs from the soft palate; blocks the nasal area in swallowing."
+  },
+  {
+   "front": "Umami",
+   "back": "Taste that detects MSG."
+  },
+  {
+   "front": "Buccal glands",
+   "back": "Small glands in the mouth lining that secrete a little saliva."
+  },
+  {
+   "front": "Enamel",
+   "back": "Covers the crown; hardest substance in the body."
+  },
+  {
+   "front": "Deglutition",
+   "back": "Swallowing."
+  },
+  {
+   "front": "Esophagus",
+   "back": "Collapsible muscular tube behind the trachea."
+  },
+  {
+   "front": "Parts of the stomach",
+   "back": "Cardia, fundus, body, pylorus."
+  },
+  {
+   "front": "Rugae",
+   "back": "Folds of the empty stomach lining."
+  },
+  {
+   "front": "Chief / parietal cells",
+   "back": "Pepsinogen / hydrochloric acid."
+  },
+  {
+   "front": "Acini",
+   "back": "Pancreatic cells that release pancreatic juice."
+  },
+  {
+   "front": "Kupffer cells",
+   "back": "Liver macrophages."
+  },
+  {
+   "front": "Liver functions",
+   "back": "Clotting proteins, phagocytosis, detox (ammonia to urea), storage, bile."
+  },
+  {
+   "front": "Gallbladder",
+   "back": "Stores and concentrates bile."
+  },
+  {
+   "front": "Duodenum / jejunum / ileum",
+   "back": "First / middle / last parts of the small intestine."
+  },
+  {
+   "front": "Villi and microvilli",
+   "back": "Increase surface area for absorption."
+  },
+  {
+   "front": "Large intestine regions",
+   "back": "Cecum, colon, rectum, anal canal."
+  },
+  {
+   "front": "Essential nutrients",
+   "back": "Must come from food; the body can’t make enough."
+  },
+  {
+   "front": "Vitamin A",
+   "back": "Vision, bone growth, epithelial cells."
+  },
+  {
+   "front": "Vitamin B1 (thiamine)",
+   "back": "Muscle and nerve function."
+  },
+  {
+   "front": "Cirrhosis",
+   "back": "Liver lobes covered with fibrous tissue."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Composed of loose connective tissue, the underlying layer of the mucus membrane is called the __________________________________.",
+   "o": [
+    "lamina propria",
+    "muscularis mucosa",
+    "adventitia",
+    "tunica intimas"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says the underlying layer of the mucous membrane is loose connective tissue called the lamina propria. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The ___________________ glands in the mucous membrane lining the mouth secrete small amounts of saliva.",
+   "o": [
+    "parotid",
+    "submaxillary",
+    "sublingual",
+    "buccal"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 16 says the buccal glands in the mucous membrane lining the mouth secrete small amounts of saliva. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Swallowing is also called ______________________.",
+   "o": [
+    "agglutination",
+    "deglutition",
+    "mastication",
+    "cementum"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says swallowing is called deglutition. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The ______________ cells release a mixture of digestive enzymes, collectively called the pancreatic juice.",
+   "o": [
+    "acini",
+    "beta",
+    "alpha",
+    "parietal"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says the acini release a mixture of digestive enzymes called pancreatic juice. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The lobes of a liver affected by _____________________ are covered with fibrous connective tissue.",
+   "o": [
+    "appendicitis",
+    "hepatitis",
+    "Crohn’s disease",
+    "cirrhosis"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 16 says in cirrhosis the lobes of the liver are covered with fibrous connective tissue. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The _______________ is one of the largest organs in the digestive system.",
+   "o": [
+    "heart",
+    "stomach",
+    "pancreas",
+    "liver"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 16 says the liver is one of the largest organs of the digestive system. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The crown of a tooth is covered by _________________, the hardest substance in the body.",
+   "o": [
+    "enamel",
+    "dentin",
+    "pulp",
+    "root"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says the crown is covered with enamel, the hardest substance in the body. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Vitamin _______ is necessary for vision, bone growth and maintenance of epithelial cells.",
+   "o": [
+    "A",
+    "K",
+    "B1",
+    "B12"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says vitamin A is necessary for vision, bone growth and maintenance of epithelial cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The enzyme that breaks down fats into fatty acids and glycerol is _______________________.",
+   "o": [
+    "protease",
+    "amylase",
+    "nuclease",
+    "lipase"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 16 says lipases break fats down into fatty acids and glycerol. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The passage of digested food from the digestive tract into the cardiovascular and lymphatic systems is called __________________________.",
+   "o": [
+    "absorption",
+    "digestion",
+    "defecation",
+    "peristalsis"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 defines absorption as the passage of digested food into the cardiovascular and lymphatic systems. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Vitamin _______ is also known as thiamine and is necessary for muscle and nerve function.",
+   "o": [
+    "A",
+    "K",
+    "B1",
+    "B12"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 16 says vitamin B1, thiamine, is necessary for muscle and nerve function. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The collapsible, muscular tube that is situated behind the trachea is called the ________________.",
+   "o": [
+    "esophagus",
+    "mediastinum",
+    "pharynx",
+    "veins"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says the esophagus is a collapsible, muscular tube behind the trachea. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The first part of the small intestine is called the ____________________.",
+   "o": [
+    "jejunum",
+    "duodenum",
+    "ileum",
+    "fundus"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says the duodenum is the first part of the small intestine. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The __________________ converts harmful ammonia from the digestion of proteins to harmless urea and provides bile to emulsify fats.",
+   "o": [
+    "liver",
+    "kidney",
+    "pancreas",
+    "gallbladder"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says the liver converts ammonia to urea and produces bile salts to emulsify fats. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Liver macrophages are called _______________ cells.",
+   "o": [
+    "acinar",
+    "Kupffer",
+    "parietal",
+    "beta"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says Kupffer cells of the liver phagocytose bacteria and old blood cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Hydrochloric acid is secreted into the stomach by _________________ cells.",
+   "o": [
+    "chief",
+    "zymogenic",
+    "parietal",
+    "beta"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 16 says parietal cells secrete hydrochloric acid. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Pepsinogen is secreted by ______________ cells.",
+   "o": [
+    "parietal",
+    "chief",
+    "beta",
+    "alpha"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says the zymogenic, or chief, cells secrete pepsinogen. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The taste of ________________ detects monosodium glutamate.",
+   "o": [
+    "sweet",
+    "salty",
+    "sour",
+    "umami"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 16 says umami detects MSG (monosodium glutamate). Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The walls of the alimentary canal have a similar arrangement of tissue layers called ______________.",
+   "o": [
+    "mucosa",
+    "tunics",
+    "serosa",
+    "propria"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says the walls’ matching tissue layers are called coats or tunics. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Complex carbohydrates are digested into simple sugars by _______________________.",
+   "o": [
+    "protease",
+    "lipase",
+    "amylase",
+    "nuclease"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 16 says amylase breaks down complex carbohydrates into simple sugars. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The physical movement or pushing of food along the digestive tract is called ____________________.",
+   "o": [
+    "absorption",
+    "peristalsis",
+    "defecation",
+    "digestion"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 defines peristalsis as the physical movement or pushing of food along the digestive tract. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The innermost layer of the alimentary canal is called the tunica _________________________.",
+   "o": [
+    "submucosa",
+    "mucosa",
+    "serosa",
+    "adventitia"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says the tunica mucosa is the innermost lining of the canal. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Hanging from the posterior border of the soft palate is a cone-shaped muscular structure called the _____________.",
+   "o": [
+    "tongue",
+    "uvula",
+    "papillae",
+    "fungiform"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 16 says the uvula is a cone-shaped muscular structure hanging from the posterior border of the soft palate. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The narrow inferior region of the stomach is called the _________________.",
+   "o": [
+    "fundus",
+    "cardia",
+    "pylorus",
+    "duodenum"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 16 says the pylorus is the narrow inferior region of the stomach. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The __________________, located in a depression of the surface of the liver, stores bile.",
+   "o": [
+    "thymus",
+    "spleen",
+    "pancreas",
+    "gallbladder"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 16 says the gallbladder sits in a depression of the liver’s surface and stores bile. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Essential nutrients are nutrients a person must obtain from food because the body cannot manufacture them in sufficient amounts to meet its physiological needs.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 defines essential nutrients this way. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Digestion allows the body’s cells to convert food energy into the high-energy ATP molecules that run the cell’s machinery.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says digestion allows the body’s cells to convert food energy into ATP. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "Thrush is caused by inflammation and enlargement of rectal veins.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Inflamed, enlarged rectal veins are hemorrhoids. Thrush is a fungal (Candida) infection of the mouth. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The accessory structures of the alimentary canal include the oral cavity, oropharynx, esophagus, and stomach.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Those are parts of the alimentary canal. The accessory structures are the teeth, tongue, salivary glands, liver, gallbladder and pancreas. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  },
+  {
+   "q": "The empty stomach lining has many folds called rugae that allow the stomach to expand and hold large amounts of food.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 16 says the empty stomach lining lies in folds called rugae that let it expand. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 16."
+  }
+ ]
+}
