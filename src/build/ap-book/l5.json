@@ -1,0 +1,1020 @@
+{
+ "lesson": 5,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 5 of your course, built from Chapter 5 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap5-1",
+   "title": "What a tissue is",
+   "teach": [
+    "A tissue is a group of cells with a similar structure and function. Tissues are classified by how their cells are arranged and by how much material lies between the cells.",
+    "The study of tissues is histology. (Cytology is the study of cells.) The four basic types are epithelial, connective, muscle and nervous. Tissues combine to form organs."
+   ],
+   "mnemonic": {
+    "cue": "Histo = tissue, cyto = cell",
+    "explanation": "Histology studies tissues; cytology studies cells."
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "The study of tissues is called:",
+    "options": [
+     {
+      "label": "Histology",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Cytology",
+      "correct": false,
+      "feedback": "Cytology is the study of cells."
+     },
+     {
+      "label": "Pathology",
+      "correct": false,
+      "feedback": "Pathology is the study of disease."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-2",
+   "title": "Epithelial tissue: what it does",
+   "teach": [
+    "Epithelial tissue has four main jobs. It protects (skin, the lining of the gut). It absorbs (nutrients through the small intestine lining). It secretes (all glands are epithelial tissue). And it excretes (sweat glands get rid of wastes like urea).",
+    "Its cells are packed tightly with little or no material between them, which makes it hard to penetrate. Cells are anchored to each other and to the tissue below by the basement membrane, like adhesive under floor tiles.",
+    "The free surface may be plain or have cilia, a flagellum, microvilli or secretory vesicles."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What anchors epithelial cells to each other and to the tissue underneath?",
+    "options": [
+     {
+      "label": "The basement membrane",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "The matrix",
+      "correct": false,
+      "feedback": "Matrix is the material between cells in connective tissue."
+     },
+     {
+      "label": "Intercalated disks",
+      "correct": false,
+      "feedback": "Those connect cardiac muscle cells."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-3",
+   "title": "Epithelial cell shapes",
+   "teach": [
+    "Squamous cells are flat. They line the mouth, blood and lymph vessels, parts of the kidney tubules, throat, esophagus and anus, and form the skin. They mainly protect.",
+    "Cuboidal cells look like small cubes. They’re found in glands and gland ducts (sweat and salivary), covering the ovaries, and in the retina. They secrete and protect, and absorb in parts of the kidney tubules.",
+    "Columnar cells are tall rectangles. They line the stomach, the intestinal villi, the uterine tubes, the upper airway, the bile duct and mammary ducts. Many have cilia."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which cell shape is it?",
+    "categories": [
+     "Squamous",
+     "Cuboidal",
+     "Columnar"
+    ],
+    "items": [
+     {
+      "label": "Flat cells lining blood vessels",
+      "category": 0,
+      "feedback": "Squamous."
+     },
+     {
+      "label": "Cube-shaped cells in salivary gland ducts",
+      "category": 1,
+      "feedback": "Cuboidal."
+     },
+     {
+      "label": "Tall cells lining the small intestine villi",
+      "category": 2,
+      "feedback": "Columnar."
+     },
+     {
+      "label": "Outer surface of the skin",
+      "category": 0,
+      "feedback": "Stratified squamous."
+     },
+     {
+      "label": "Lining of the uterine tubes",
+      "category": 2,
+      "feedback": "Columnar, often ciliated."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-4",
+   "title": "Epithelial arrangements",
+   "teach": [
+    "Epithelium is named by shape plus arrangement. Simple is one layer thick (capillaries, lung alveoli). Stratified is several layers thick (stratified squamous lines the mouth and throat and forms the skin surface).",
+    "Pseudostratified looks layered because the nuclei sit at different heights, but every cell touches the basement membrane. Pseudostratified ciliated columnar epithelium lines the throat, trachea and bronchi.",
+    "Transitional epithelium is several layers of stretchy cells. It looks flat when stretched (full bladder) and saw-toothed when relaxed (empty bladder). It lines the renal pelvis, ureters, bladder and upper urethra."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the arrangement to where it’s found.",
+    "categories": [
+     "Simple",
+     "Stratified",
+     "Pseudostratified",
+     "Transitional"
+    ],
+    "items": [
+     {
+      "label": "Capillary walls and lung alveoli",
+      "category": 0,
+      "feedback": "One thin layer for easy exchange."
+     },
+     {
+      "label": "Lining of the mouth",
+      "category": 1,
+      "feedback": "Several layers for protection."
+     },
+     {
+      "label": "Trachea, with cilia",
+      "category": 2,
+      "feedback": "Pseudostratified ciliated columnar."
+     },
+     {
+      "label": "Urinary bladder",
+      "category": 3,
+      "feedback": "Stretches as the bladder fills."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-5",
+   "title": "Epithelium named by function",
+   "teach": [
+    "Mucous membrane lines every body cavity that opens to the outside: the digestive, respiratory, urinary and reproductive tracts. It protects, absorbs and secretes mucus, enzymes and bile salts.",
+    "Endothelium is the special name for the single layer of squamous cells lining the circulatory system (blood and lymph vessels). In the heart it’s called endocardium. Capillaries are just one layer of endothelium.",
+    "Mesothelium, or serous tissue, lines the large body cavities that don’t open to the outside. The pleura lines the thoracic cavity, the pericardium covers the heart, and the peritoneum lines the abdominal cavity. It reduces friction and secretes fluid."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which membrane or lining is it?",
+    "categories": [
+     "Mucous membrane",
+     "Endothelium",
+     "Serous (mesothelium)"
+    ],
+    "items": [
+     {
+      "label": "Lines the digestive tract",
+      "category": 0,
+      "feedback": "It opens to the outside."
+     },
+     {
+      "label": "Lines blood vessels",
+      "category": 1,
+      "feedback": "Endothelium lines the circulatory system."
+     },
+     {
+      "label": "Pleura lining the thoracic cavity",
+      "category": 2,
+      "feedback": "Serous membrane."
+     },
+     {
+      "label": "Peritoneum lining the abdomen",
+      "category": 2,
+      "feedback": "Serous membrane."
+     },
+     {
+      "label": "Lines the airway",
+      "category": 0,
+      "feedback": "Mucous membrane."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-6",
+   "title": "Glands",
+   "teach": [
+    "All glands are made of epithelial tissue.",
+    "Exocrine glands have ducts that carry their secretions to a surface. Simple exocrine glands have one unbranched duct (sweat glands, sebaceous glands, most digestive glands). Compound exocrine glands have branching ducts (mammary glands, large salivary glands).",
+    "Endocrine glands are ductless and secrete hormones straight into the blood (thyroid, pituitary). Goblet cells are single-celled glands that secrete mucus."
+   ],
+   "mnemonic": {
+    "cue": "EXOcrine EXits through a duct; ENDOcrine goes in(to the blood)",
+    "explanation": "Endocrine glands have no ducts."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Exocrine or endocrine?",
+    "categories": [
+     "Exocrine (ducts)",
+     "Endocrine (ductless)"
+    ],
+    "items": [
+     {
+      "label": "Sweat gland",
+      "category": 0,
+      "feedback": "Simple exocrine."
+     },
+     {
+      "label": "Thyroid gland",
+      "category": 1,
+      "feedback": "Secretes hormones into the blood."
+     },
+     {
+      "label": "Mammary gland",
+      "category": 0,
+      "feedback": "Compound exocrine."
+     },
+     {
+      "label": "Pituitary gland",
+      "category": 1,
+      "feedback": "Endocrine."
+     },
+     {
+      "label": "Salivary gland",
+      "category": 0,
+      "feedback": "Compound exocrine."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-7",
+   "title": "Connective tissue: the basics",
+   "teach": [
+    "Connective tissue supports other tissues and allows movement. Unlike epithelium, it has lots of intercellular material called matrix, with collagen and elastin fibers in it. The type and amount of matrix is a main difference between connective tissues.",
+    "There are three subgroups: loose, dense and specialized connective tissue."
+   ],
+   "visual": {
+    "kind": "hub",
+    "title": "Jobs of connective tissue",
+    "items": [
+     {
+      "label": "Support",
+      "detail": "Bones and cartilage."
+     },
+     {
+      "label": "Nourish and transport",
+      "detail": "Blood carries nutrients, gases and hormones."
+     },
+     {
+      "label": "Connect",
+      "detail": "Tendons (muscle to bone), ligaments (bone to bone)."
+     },
+     {
+      "label": "Protect",
+      "detail": "Bones guard organs; white blood cells fight microbes."
+     },
+     {
+      "label": "Insulate and store",
+      "detail": "Fat insulates and stores energy; bone stores calcium."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "Which tissue has an abundance of intercellular material called matrix?",
+    "options": [
+     {
+      "label": "Connective",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Epithelial",
+      "correct": false,
+      "feedback": "Epithelial cells are tightly packed with almost no matrix."
+     },
+     {
+      "label": "Nervous",
+      "correct": false,
+      "feedback": "Matrix is the mark of connective tissue."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-8",
+   "title": "Loose connective tissue",
+   "teach": [
+    "Loose connective tissue has loosely woven fibers and fills spaces between and within organs. There are three types: areolar, adipose and reticular.",
+    "Areolar is the most widespread. It surrounds organs, muscles, vessels and nerves and attaches skin to the tissue below. Its cells: fibroblasts make fibers and repair injuries; histiocytes are fixed macrophages that eat debris and microbes; mast cells make heparin (an anticoagulant) and histamine (an inflammatory substance released in allergies).",
+    "Adipose tissue is packed with fat cells that look like soap bubbles. It cushions organs (like the kidneys) and insulates the body.",
+    "Reticular tissue is a fine network of fibers that forms the framework of the liver, bone marrow, spleen and lymph nodes."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which loose connective tissue?",
+    "categories": [
+     "Areolar",
+     "Adipose",
+     "Reticular"
+    ],
+    "items": [
+     {
+      "label": "Attaches skin to the tissue below",
+      "category": 0,
+      "feedback": "Areolar."
+     },
+     {
+      "label": "Loaded with fat cells",
+      "category": 1,
+      "feedback": "Adipose."
+     },
+     {
+      "label": "Framework of the spleen and lymph nodes",
+      "category": 2,
+      "feedback": "Reticular."
+     },
+     {
+      "label": "Contains mast cells that make histamine",
+      "category": 0,
+      "feedback": "Areolar."
+     },
+     {
+      "label": "Cushions the kidneys",
+      "category": 1,
+      "feedback": "Adipose."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-9",
+   "title": "Dense connective tissue",
+   "teach": [
+    "Dense connective tissue is tightly packed protein fibers.",
+    "Dense regular tissue has fibers in a regular arrangement: tendons attach muscle to bone, ligaments attach bone to bone, and aponeuroses are wide, flat tendons. Tendons are mostly collagen; ligaments mix collagen and elastin.",
+    "Dense irregular tissue has fibers going in many directions: the dermis of the skin, muscle sheaths, joint capsules, the outer coat of arteries, and fascia (which covers a whole muscle)."
+   ],
+   "mnemonic": {
+    "cue": "Tendons Tie muscle to bone; Ligaments Link bone to bone",
+    "explanation": "Both are dense regular connective tissue."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Regular or irregular dense connective tissue?",
+    "categories": [
+     "Dense regular",
+     "Dense irregular"
+    ],
+    "items": [
+     {
+      "label": "Tendon",
+      "category": 0,
+      "feedback": "Attaches muscle to bone."
+     },
+     {
+      "label": "Ligament",
+      "category": 0,
+      "feedback": "Attaches bone to bone."
+     },
+     {
+      "label": "Dermis of the skin",
+      "category": 1,
+      "feedback": "Fibers run in many directions."
+     },
+     {
+      "label": "Fascia around a muscle",
+      "category": 1,
+      "feedback": "Dense irregular."
+     },
+     {
+      "label": "Aponeurosis",
+      "category": 0,
+      "feedback": "A wide flat tendon."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-10",
+   "title": "Cartilage",
+   "teach": [
+    "Cartilage cells are chondrocytes, sitting in cavities called lacunae within a firm matrix of protein and polysaccharides.",
+    "Hyaline cartilage has no visible fibers (\"hyaline\" means clear). The fetal skeleton starts as hyaline cartilage and is mostly replaced by bone (ossification). It remains on joint surfaces, in the costal cartilages joining ribs to the sternum, in the rings of the trachea and bronchi, and in the nasal septum.",
+    "Fibrocartilage is mostly tough collagen, so it’s dense and very resistant to stretching. It forms the intervertebral disks and the pubic symphysis.",
+    "Elastic cartilage is mostly elastin, so it stretches and springs back. It forms the external ear, the auditory tubes and the epiglottis."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which type of cartilage?",
+    "categories": [
+     "Hyaline",
+     "Fibrocartilage",
+     "Elastic"
+    ],
+    "items": [
+     {
+      "label": "Rings of the trachea",
+      "category": 0,
+      "feedback": "Hyaline."
+     },
+     {
+      "label": "Intervertebral disks",
+      "category": 1,
+      "feedback": "Strong shock absorbers."
+     },
+     {
+      "label": "External ear",
+      "category": 2,
+      "feedback": "Flexible and springs back."
+     },
+     {
+      "label": "Dense and very resistant to stretching",
+      "category": 1,
+      "feedback": "Lots of collagen."
+     },
+     {
+      "label": "Epiglottis",
+      "category": 2,
+      "feedback": "Elastic."
+     },
+     {
+      "label": "Covers bone ends at joints",
+      "category": 0,
+      "feedback": "Hyaline."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-11",
+   "title": "Bone, dentin and blood",
+   "teach": [
+    "Bone is very firm connective tissue. Its two types are compact bone (the dense outer layer) and cancellous bone (the spongy inner layer). Bone cells (osteocytes) sit in lacunae, and the matrix is hardened with calcium and phosphorus salts. Chapter 7 covers bone in detail.",
+    "Dentin forms the teeth. It’s like bone but harder and denser, and it’s covered by white enamel on the crown.",
+    "Blood is a unique connective tissue: a fluid portion (plasma) plus formed elements (red and white blood cells). It transports gases, nutrients, hormones and wastes, protects the body and helps regulate temperature. Blood cells are made in hematopoietic tissue (red bone marrow and lymphoid organs)."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which connective tissue is made of plasma plus formed elements?",
+    "options": [
+     {
+      "label": "Blood",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Bone",
+      "correct": false,
+      "feedback": "Bone has a hard mineral matrix."
+     },
+     {
+      "label": "Cartilage",
+      "correct": false,
+      "feedback": "Cartilage has a firm matrix with chondrocytes."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-12",
+   "title": "Lymphoid tissue, the RE system and synovial membranes",
+   "teach": [
+    "Lymphoid tissue is in the lymph nodes, thymus, spleen, tonsils and adenoids. Its main role is making antibodies to protect against disease.",
+    "The reticuloendothelial (RE) system is the connective tissue cells that do phagocytosis: Kupffer’s cells lining the liver (and cells lining the spleen and marrow), macrophages, and microglia in the central nervous system.",
+    "Synovial membranes line the cavities of freely moving joints and the bursae (small fluid-filled sacs that prevent friction). They are classed as specialized connective tissue."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which membrane lines the cavities of freely moving joints?",
+    "options": [
+     {
+      "label": "Synovial",
+      "correct": true,
+      "feedback": "Right. It also lines bursae."
+     },
+     {
+      "label": "Serous",
+      "correct": false,
+      "feedback": "Serous membranes line closed body cavities like the thorax."
+     },
+     {
+      "label": "Mucous",
+      "correct": false,
+      "feedback": "Mucous membranes line cavities that open to the outside."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-13",
+   "title": "Muscle tissue",
+   "teach": [
+    "Muscle tissue contracts (shortens and thickens) because of two proteins, actin and myosin. Muscle cells are long, so they’re called muscle fibers. There are three types.",
+    "Smooth muscle: spindle-shaped cells with one nucleus, no striations, involuntary (autonomic control). It’s in the walls of hollow organs like the gut, arteries and veins. Its outer longitudinal and inner circular layers push contents along: in the gut this is peristalsis.",
+    "Skeletal (striated) muscle: long cells with many nuclei and light and dark bands (actin and myosin). Voluntary, controlled by the central nervous system. It moves bones and makes up about 40% of body weight.",
+    "Cardiac muscle: only in the heart. Striated like skeletal, one nucleus and involuntary like smooth. Its branching cells connect at intercalated disks, which coordinate the heartbeat."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Smooth, skeletal or cardiac?",
+    "categories": [
+     "Smooth",
+     "Skeletal",
+     "Cardiac"
+    ],
+    "items": [
+     {
+      "label": "Spindle-shaped with one nucleus, no stripes",
+      "category": 0,
+      "feedback": "Smooth."
+     },
+     {
+      "label": "Many nuclei and voluntary",
+      "category": 1,
+      "feedback": "Skeletal."
+     },
+     {
+      "label": "Intercalated disks",
+      "category": 2,
+      "feedback": "Cardiac."
+     },
+     {
+      "label": "Lines the digestive tract (peristalsis)",
+      "category": 0,
+      "feedback": "Smooth."
+     },
+     {
+      "label": "Pulls on bones",
+      "category": 1,
+      "feedback": "Skeletal."
+     },
+     {
+      "label": "Striated but involuntary",
+      "category": 2,
+      "feedback": "Cardiac."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-14",
+   "title": "Nervous tissue",
+   "teach": [
+    "The neuron (nerve cell) is the conducting cell of nervous tissue; neuroglia are supporting cells. Neurons are very long, so they’re also called nerve fibers.",
+    "A neuron has a cell body with the nucleus, dendrites that receive stimuli and carry them to the cell body, and an axon that carries the impulse away to the axon endings.",
+    "Nervous tissue makes up the brain, spinal cord and nerves. It’s the most highly organized tissue: it controls and coordinates the body, handles the senses, emotions and reasoning, and makes memory possible."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "Direction of a nerve impulse",
+    "items": [
+     {
+      "label": "Dendrites",
+      "detail": "Receive the stimulus."
+     },
+     {
+      "label": "Cell body",
+      "detail": "Contains the nucleus."
+     },
+     {
+      "label": "Axon",
+      "detail": "Carries the impulse away."
+     },
+     {
+      "label": "Axon endings",
+      "detail": "Pass the signal on."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "Which part of a neuron receives stimuli and carries them to the cell body?",
+    "options": [
+     {
+      "label": "Dendrites",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Axon",
+      "correct": false,
+      "feedback": "The axon carries impulses away from the cell body."
+     },
+     {
+      "label": "Neuroglia",
+      "correct": false,
+      "feedback": "Neuroglia are supporting cells."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap5-15",
+   "title": "Tissues and aging",
+   "teach": [
+    "Cells divide more slowly in older adults, so injuries, especially to bone, heal more slowly and sometimes incompletely. Muscle cells and working neurons decrease with age.",
+    "Collagen fibers become irregular, making tendons and ligaments more fragile and less flexible, and elastic fibers lose their stretch. This is why skin wrinkles over time."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Why does skin wrinkle with age, according to the textbook?",
+    "options": [
+     {
+      "label": "Collagen becomes irregular and elastic fibers lose their stretch",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Epithelial cells stop dividing completely",
+      "correct": false,
+      "feedback": "They slow down, but the textbook links wrinkles to fiber changes."
+     },
+     {
+      "label": "Adipose tissue increases",
+      "correct": false,
+      "feedback": "The textbook points to connective tissue fibers."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Histology",
+   "back": "The study of tissues."
+  },
+  {
+   "front": "Four basic tissues",
+   "back": "Epithelial, connective, muscle, nervous."
+  },
+  {
+   "front": "Epithelial functions",
+   "back": "Protect, absorb, secrete, excrete."
+  },
+  {
+   "front": "Basement membrane",
+   "back": "Anchors epithelial cells to each other and to the tissue below."
+  },
+  {
+   "front": "Squamous / cuboidal / columnar",
+   "back": "Flat / cube-shaped / tall rectangles."
+  },
+  {
+   "front": "Simple vs stratified",
+   "back": "One layer / several layers."
+  },
+  {
+   "front": "Pseudostratified",
+   "back": "Looks layered, but every cell touches the basement membrane (trachea)."
+  },
+  {
+   "front": "Transitional epithelium",
+   "back": "Stretchy layers lining the bladder, ureters and renal pelvis."
+  },
+  {
+   "front": "Endothelium",
+   "back": "Epithelium lining the circulatory system."
+  },
+  {
+   "front": "Pleura / pericardium / peritoneum",
+   "back": "Serous membranes of the thoracic cavity / heart / abdominal cavity."
+  },
+  {
+   "front": "Exocrine vs endocrine",
+   "back": "Glands with ducts / ductless glands secreting hormones into the blood."
+  },
+  {
+   "front": "Goblet cell",
+   "back": "Single-celled gland that secretes mucus."
+  },
+  {
+   "front": "Matrix",
+   "back": "Abundant intercellular material of connective tissue."
+  },
+  {
+   "front": "Loose connective tissue types",
+   "back": "Areolar, adipose, reticular."
+  },
+  {
+   "front": "Mast cells",
+   "back": "Make heparin and histamine."
+  },
+  {
+   "front": "Tendon / ligament",
+   "back": "Muscle to bone / bone to bone."
+  },
+  {
+   "front": "Chondrocytes",
+   "back": "Cartilage cells, in lacunae."
+  },
+  {
+   "front": "Hyaline cartilage",
+   "back": "No visible fibers; joint surfaces, trachea, nasal septum, costal cartilage."
+  },
+  {
+   "front": "Fibrocartilage",
+   "back": "Dense, resists stretching; intervertebral disks, pubic symphysis."
+  },
+  {
+   "front": "Elastic cartilage",
+   "back": "Flexible; external ear, auditory tube, epiglottis."
+  },
+  {
+   "front": "Compact vs cancellous bone",
+   "back": "Dense outer layer / spongy inner layer."
+  },
+  {
+   "front": "Blood",
+   "back": "Connective tissue of plasma plus formed elements."
+  },
+  {
+   "front": "Synovial membrane",
+   "back": "Lines freely moving joint cavities and bursae."
+  },
+  {
+   "front": "Smooth muscle",
+   "back": "Spindle-shaped, one nucleus, involuntary, hollow organ walls."
+  },
+  {
+   "front": "Skeletal muscle",
+   "back": "Striated, many nuclei, voluntary."
+  },
+  {
+   "front": "Cardiac muscle",
+   "back": "Striated, one nucleus, involuntary, intercalated disks."
+  },
+  {
+   "front": "Dendrite / axon",
+   "back": "Carries impulses toward / away from the cell body."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The two types of ________________ tissue are compact (dense) and cancellous (spongy).",
+   "o": [
+    "adipose",
+    "blood",
+    "areolar",
+    "bone"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 5 says bone is made of two types of tissue: compact bone and cancellous (spongy) bone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which glands are ductless and secrete hormones directly into the bloodstream?",
+   "o": [
+    "Goblet",
+    "Endocrine",
+    "Exocrine",
+    "Holocrine"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 5 says endocrine glands are ductless and secrete hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "What is the dense regular connective tissue that attaches muscle to bone?",
+   "o": [
+    "Ligament",
+    "Areolar",
+    "Fascia",
+    "Tendon"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 5 says tendons are dense regular connective tissue that attach muscle to bone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Epithelial cells are anchored to each other and to underlying tissues by the __________________ membrane.",
+   "o": [
+    "basement",
+    "apical",
+    "corner",
+    "endocrine"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 5 says epithelial cells are anchored to each other and to underlying tissues by the basement membrane. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Mast cells produce which inflammatory substance in response to allergies?",
+   "o": [
+    "Fibroblasts",
+    "Histamine",
+    "Collagen",
+    "Cartilage"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 5 says mast cells produce histamine, an inflammatory substance produced in response to allergies. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Chondrocytes are found in cavities called _____________________.",
+   "o": [
+    "lacunae",
+    "lamellae",
+    "canaliculi",
+    "canals"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 5 says chondrocytes are found in cavities called lacunae. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which type of cartilage is dense and very resistant to stretching?",
+   "o": [
+    "Hyaline cartilage",
+    "Costal cartilage",
+    "Elastic cartilage",
+    "Fibrocartilage"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 5 says fibrocartilage’s collagen fibers make it dense and very resistant to stretching. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "All glands are made of __________________________ tissue.",
+   "o": [
+    "connective",
+    "nervous",
+    "epithelial",
+    "muscle"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 5 says all glands are made of epithelial tissue. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which unique connective tissue is composed of a fluid portion (plasma) and formed elements?",
+   "o": [
+    "Blood",
+    "Bone",
+    "Connective tissue proper",
+    "Cartilage"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 5 says blood is a unique connective tissue made of a fluid portion (plasma) and formed elements. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "The type of muscle that lines the digestive tract is called _________________________ muscle.",
+   "o": [
+    "smooth",
+    "cardiac",
+    "skeletal",
+    "striated"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 5 says smooth muscle is found in the walls of the digestive tract, where it pushes food along. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "A epithelium has several layers of epithelial cells thick.",
+   "o": [
+    "simple",
+    "stratified",
+    "pseudostratified",
+    "columnar"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 5 says the stratified arrangement is several layers of cells thick. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which type of tissue makes up the brain and spinal cord?.",
+   "o": [
+    "Smooth",
+    "Nervous",
+    "Skeletal",
+    "Muscle"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 5 says nervous tissue makes up the brain, spinal cord and nerves. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "What type of tissue is loaded with fat cells?.",
+   "o": [
+    "Areolar",
+    "Epithelial",
+    "Adipose",
+    "Dense regular connective"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 5 says adipose tissue is loaded with fat cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "The three types of _______________________ tissue are smooth, skeletal, and cardiac.",
+   "o": [
+    "connective",
+    "nervous",
+    "muscle",
+    "epithelial"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 5 names the three types of muscle tissue as smooth, striated (skeletal) and cardiac. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Areolar, adipose, and reticular tissues are all types of _______________________________ tissue.",
+   "o": [
+    "loose connective",
+    "dense connective",
+    "epithelial",
+    "nervous"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 5 says the three types of loose connective tissue are areolar, adipose and reticular. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "The ________________________ is the serous tissue that lines the thoracic cavity.",
+   "o": [
+    "pericardium",
+    "peritoneum",
+    "pleura",
+    "endothelium"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 5 says the pleura is the serous membrane that lines the thoracic cavity. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which type of membrane lines the cavities of freely moving joints?",
+   "o": [
+    "Peritoneum",
+    "Pericardial",
+    "Synovial",
+    "Endothelial"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 5 says synovial membranes line the cavities of freely moving joints. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which type of tissue has a regular arrangement of embedded fibres and makes up tendons and ligaments?",
+   "o": [
+    "Loose connective tissue",
+    "Dense connective tissue",
+    "Areolar connective tissue",
+    "Cartilage"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 5 says tendons and ligaments are dense connective tissue with a regular arrangement of fibers. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "What is the special name given to the epithelium that lines the circulatory system?",
+   "o": [
+    "Endomysium",
+    "Pericardium",
+    "Peritoneum",
+    "Endothelium"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 5 says endothelium is the special name for the epithelium that lines the circulatory system. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Which tissue is characterized by an abundance of intercellular material called the matrix?",
+   "o": [
+    "Epithelial",
+    "Nervous",
+    "Muscle",
+    "Connective"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 5 says connective tissue has an abundance of intercellular material called matrix. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Cells of which type of muscle are spindle-shaped with a single nucleus?",
+   "o": [
+    "Cardiac",
+    "Smooth",
+    "Nervous",
+    "Skeletal"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 5 says smooth muscle cells are spindle-shaped with a single nucleus. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "The study of tissue is called cytology.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The study of tissue is histology. Cytology is the study of cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Simple epithelium is several layers thick",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Simple epithelium is one cell layer thick. Several layers is stratified. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "The three types of loose connective tissue are areolar, adipose and reticular.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 5 says the three types of loose connective tissue are areolar, adipose and reticular. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  },
+  {
+   "q": "Endocrine glands have ducts.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Endocrine glands are ductless. Exocrine glands have ducts. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 5."
+  }
+ ]
+}
