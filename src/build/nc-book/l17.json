@@ -1,76 +1,199 @@
 {
-  "lesson": 17,
-  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 13: Professionalism and Final Issues",
-  "kicker": "Lesson 17 of your course, built from Chapter 13 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
-  "steps": [
-    {
-      "id": "l17-b1",
-      "title": "Scope of practice and ethics",
-      "teach": [
-        "Scope of practice describes the range of roles, activities and regulations within which nutrition professionals work. Knowing your scope protects clients and tells you when to refer them on, for example when a concern crosses into psychotherapy.",
-        "Four moral principles of biomedical ethics guide ethical decisions: autonomy (respecting the client's right to choose), nonmaleficence (do no harm), beneficence (act for the client's good) and justice (fairness)."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Match each example with the ethical principle.",
-        "categories": ["Autonomy", "Nonmaleficence", "Beneficence", "Justice"],
-        "items": [
-          {"label": "Respecting a client's decision not to follow a suggestion", "category": 0, "feedback": "Autonomy is the client's right to choose."},
-          {"label": "Not recommending a supplement that could interact with her medication", "category": 1, "feedback": "Nonmaleficence means do no harm."},
-          {"label": "Going the extra step to find a program that fits her budget", "category": 2, "feedback": "Beneficence is acting for the client's good."},
-          {"label": "Offering the same quality of care to every client", "category": 3, "feedback": "Justice is about fairness."}
-        ]
-      }
-    },
-    {
-      "id": "l17-b2",
-      "title": "What clients have a right to know",
-      "teach": [
-        "Before starting counselling, clients have a right to know three things: how confidentiality works, the procedures and goals of counselling, and the counsellor's qualifications and scope of practice.",
-        "Sharing these up front builds trust and lets clients make an informed choice about working with you."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "What do clients have a right to know before counselling begins?",
-        "options": [
-          {"label": "Only the counsellor's qualifications", "correct": false, "feedback": "That's one of three things."},
-          {"label": "Confidentiality, the procedures and goals, and the counsellor's qualifications and scope", "correct": true, "feedback": "Yes. All three."},
-          {"label": "Only the fees", "correct": false, "feedback": "The textbook names confidentiality, procedures and goals, and qualifications."}
-        ]
-      }
-    },
-    {
-      "id": "l17-b3",
-      "title": "Private practice and your brand",
-      "teach": [
-        "Before starting a private practice, have a well-defined focus. Looking at the market helps you find a niche, so you can master one area instead of being a jack of all trades. A vision board, a collage of what you want to keep and grow in your life, can help you picture where you're headed.",
-        "Your brand image is how other people see you. A positive brand image brings more opportunities and more satisfaction in your career, whether or not you run your own practice."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "What's most important to have before starting a private practice?",
-        "options": [
-          {"label": "A well-defined focus", "correct": true, "feedback": "Yes. A clear niche lets you build real expertise."},
-          {"label": "An investor", "correct": false, "feedback": "The textbook stresses focus, not funding."},
-          {"label": "An existing client list", "correct": false, "feedback": "Clients come once your focus and services are clear."}
-        ]
-      }
-    }
-  ],
-  "flashcards": [
-    {"front": "Scope of practice", "back": "The range of roles, activities and regulations within which nutrition professionals work."},
-    {"front": "Four principles of biomedical ethics", "back": "Autonomy, nonmaleficence, beneficence and justice."},
-    {"front": "What clients have a right to know", "back": "Confidentiality, the procedures and goals of counselling, and the counsellor's qualifications and scope."},
-    {"front": "Before a private practice", "back": "Have a well-defined focus (a niche)."},
-    {"front": "Vision board", "back": "A visual collage of what you want to keep and grow in your life."},
-    {"front": "Brand image", "back": "How you are perceived by others."}
-  ],
-  "quiz": [
-    {"q": "What is the Scope of Practice?", "o": ["Encompasses the range of roles within which nutrition and dietetics practitioners perform?", "Encompasses the range of activities within which nutrition and dietetics practitioners perform?", "Encompasses the range of regulations within which nutrition and dietetics practitioners perform?", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. Scope of practice covers the roles, activities and regulations of the profession."},
-    {"q": "The four moral principles of biomedical ethics guiding individuals to behave in an ethical manner are:", "o": ["Respect, confidentiality, autonomy, and justice", "Autonomy, nonmaleficence, beneficence, and justice", "Autonomy, nonmaleficence, beneficence, and confidentiality", "Respect, autonomy, nonmaleficence, and justice"], "a": 1, "e": "Checked answer, not from an official key. Autonomy, nonmaleficence, beneficence and justice."},
-    {"q": "Clients have a right to know the ________________________________ before engaging in a counseling relationship.", "o": ["confidential nature of sessions", "procedures and goals of Counseling", "counsellor’s qualifications and scope of practice", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. The textbook names three things clients have a right to know, and these are the three."},
-    {"q": "Before starting a private practice, it’s important to have _________________________ .", "o": ["an existing clientele", "an investor", "a well-defined focus", "All of the above"], "a": 2, "e": "Checked answer, not from an official key. The textbook stresses finding a focus or niche first."},
-    {"q": "One way to visually depict what you want to keep and expand in your life is with ________________________ .", "o": ["a marketing plan", "a Pinterest board", "a website", "a vision board"], "a": 3, "e": "Checked answer, not from an official key. A vision board is a visual picture of what you want to keep and grow."},
-    {"q": "In business, how you are perceived by others is called your ___________________ .", "o": ["trademark", "brand image", "roadmap", "business plan"], "a": 1, "e": "Checked answer, not from an official key. The textbook defines brand image as how you are perceived by others."}
-  ]
+ "lesson": 17,
+ "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 13: Professionalism and Final Issues",
+ "kicker": "Lesson 17 of your course, built from Chapter 13 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "l17-b1",
+   "title": "Scope of practice and ethics",
+   "teach": [
+    "Scope of practice describes the range of roles, activities and regulations within which nutrition professionals work. Knowing your scope protects clients and tells you when to refer them on, for example when a concern crosses into psychotherapy.",
+    "Four moral principles of biomedical ethics guide ethical decisions: autonomy (respecting the client's right to choose), nonmaleficence (do no harm), beneficence (act for the client's good) and justice (fairness)."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each example with the ethical principle.",
+    "categories": [
+     "Autonomy",
+     "Nonmaleficence",
+     "Beneficence",
+     "Justice"
+    ],
+    "items": [
+     {
+      "label": "Respecting a client's decision not to follow a suggestion",
+      "category": 0,
+      "feedback": "Autonomy is the client's right to choose."
+     },
+     {
+      "label": "Not recommending a supplement that could interact with her medication",
+      "category": 1,
+      "feedback": "Nonmaleficence means do no harm."
+     },
+     {
+      "label": "Going the extra step to find a program that fits her budget",
+      "category": 2,
+      "feedback": "Beneficence is acting for the client's good."
+     },
+     {
+      "label": "Offering the same quality of care to every client",
+      "category": 3,
+      "feedback": "Justice is about fairness."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l17-b2",
+   "title": "What clients have a right to know",
+   "teach": [
+    "Before starting counselling, clients have a right to know three things: how confidentiality works, the procedures and goals of counselling, and the counsellor's qualifications and scope of practice.",
+    "Sharing these up front builds trust and lets clients make an informed choice about working with you."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What do clients have a right to know before counselling begins?",
+    "options": [
+     {
+      "label": "Only the counsellor's qualifications",
+      "correct": false,
+      "feedback": "That's one of three things."
+     },
+     {
+      "label": "Confidentiality, the procedures and goals, and the counsellor's qualifications and scope",
+      "correct": true,
+      "feedback": "Yes. All three."
+     },
+     {
+      "label": "Only the fees",
+      "correct": false,
+      "feedback": "The textbook names confidentiality, procedures and goals, and qualifications."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l17-b3",
+   "title": "Private practice and your brand",
+   "teach": [
+    "Before starting a private practice, have a well-defined focus. Looking at the market helps you find a niche, so you can master one area instead of being a jack of all trades. A vision board, a collage of what you want to keep and grow in your life, can help you picture where you're headed.",
+    "Your brand image is how other people see you. A positive brand image brings more opportunities and more satisfaction in your career, whether or not you run your own practice."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What's most important to have before starting a private practice?",
+    "options": [
+     {
+      "label": "A well-defined focus",
+      "correct": true,
+      "feedback": "Yes. A clear niche lets you build real expertise."
+     },
+     {
+      "label": "An investor",
+      "correct": false,
+      "feedback": "The textbook stresses focus, not funding."
+     },
+     {
+      "label": "An existing client list",
+      "correct": false,
+      "feedback": "Clients come once your focus and services are clear."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Scope of practice",
+   "back": "The range of roles, activities and regulations within which nutrition professionals work."
+  },
+  {
+   "front": "Four principles of biomedical ethics",
+   "back": "Autonomy, nonmaleficence, beneficence and justice."
+  },
+  {
+   "front": "What clients have a right to know",
+   "back": "Confidentiality, the procedures and goals of counselling, and the counsellor's qualifications and scope."
+  },
+  {
+   "front": "Before a private practice",
+   "back": "Have a well-defined focus (a niche)."
+  },
+  {
+   "front": "Vision board",
+   "back": "A visual collage of what you want to keep and grow in your life."
+  },
+  {
+   "front": "Brand image",
+   "back": "How you are perceived by others."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "What is the Scope of Practice?",
+   "o": [
+    "Encompasses the range of roles within which nutrition and dietetics practitioners perform?",
+    "Encompasses the range of activities within which nutrition and dietetics practitioners perform?",
+    "Encompasses the range of regulations within which nutrition and dietetics practitioners perform?",
+    "All of the above"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Scope of practice covers the roles, activities and regulations of the profession. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 13."
+  },
+  {
+   "q": "The four moral principles of biomedical ethics guiding individuals to behave in an ethical manner are:",
+   "o": [
+    "Respect, confidentiality, autonomy, and justice",
+    "Autonomy, nonmaleficence, beneficence, and justice",
+    "Autonomy, nonmaleficence, beneficence, and confidentiality",
+    "Respect, autonomy, nonmaleficence, and justice"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Autonomy, nonmaleficence, beneficence and justice. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 13."
+  },
+  {
+   "q": "Clients have a right to know the ________________________________ before engaging in a counseling relationship.",
+   "o": [
+    "confidential nature of sessions",
+    "procedures and goals of Counseling",
+    "counsellor’s qualifications and scope of practice",
+    "All of the above"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The textbook names three things clients have a right to know, and these are the three. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 13."
+  },
+  {
+   "q": "Before starting a private practice, it’s important to have _________________________ .",
+   "o": [
+    "an existing clientele",
+    "an investor",
+    "a well-defined focus",
+    "All of the above"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook stresses finding a focus or niche first. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 13."
+  },
+  {
+   "q": "One way to visually depict what you want to keep and expand in your life is with ________________________ .",
+   "o": [
+    "a marketing plan",
+    "a Pinterest board",
+    "a website",
+    "a vision board"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. A vision board is a visual picture of what you want to keep and grow. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 13."
+  },
+  {
+   "q": "In business, how you are perceived by others is called your ___________________ .",
+   "o": [
+    "trademark",
+    "brand image",
+    "roadmap",
+    "business plan"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The textbook defines brand image as how you are perceived by others. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 13."
+  }
+ ]
 }

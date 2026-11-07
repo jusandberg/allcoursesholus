@@ -1,156 +1,387 @@
 {
-  "lesson": 12,
-  "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 2: Frameworks for Understanding and Attaining Behavior Change",
-  "kicker": "Lesson 12 of your course, built from Chapter 2 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
-  "steps": [
-    {
-      "id": "l12-b1",
-      "title": "Why theories matter, and self-efficacy",
-      "teach": [
-        "Behaviour change theories help you understand why people eat the way they do and choose approaches that are more likely to work. No single theory fits every client, so counsellors often mix ideas from several.",
-        "One idea shows up in almost all of them: self-efficacy, or a person's confidence that they can make a change. It affects the choices people make, how much effort they put in, how they see barriers and whether they keep going when things get hard. A person's confidence in their ability to change may matter more than their actual skill."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Two clients know equally well how to plan meals. One is sure she can do it, the other doubts herself. Who is more likely to change?",
-        "options": [
-          {"label": "The confident client", "correct": true, "feedback": "Yes. Self-efficacy can matter more than actual skill."},
-          {"label": "Both equally, since their skills are the same", "correct": false, "feedback": "Confidence affects effort and persistence, so skill alone doesn't decide it."},
-          {"label": "The doubtful client, because she'll try harder", "correct": false, "feedback": "Low confidence usually means less effort and giving up sooner when obstacles come up."}
-        ]
-      }
-    },
-    {
-      "id": "l12-b2",
-      "title": "The Health Belief Model",
-      "teach": [
-        "The Health Belief Model says people are more likely to act when they believe they are at risk (perceived susceptibility), believe the problem would be serious (perceived severity), believe that acting will help (perceived benefits), and believe the obstacles are manageable (perceived barriers). Severity includes physical and social effects, such as the impact on work or money.",
-        "Cues to action are the nudges that get someone started: physical symptoms, seeing someone else take action, a media report, or a doctor's advice. You and your client can also plan your own cues, such as a note on the fridge. Self-efficacy was later added to the model too."
-      ],
-      "act": {
-        "type": "sort",
-        "prompt": "Match each thought with the Health Belief Model idea it shows.",
-        "categories": ["Perceived susceptibility", "Perceived severity", "Perceived barriers", "Cue to action"],
-        "items": [
-          {"label": "“Heart disease runs in my family, so I could get it.”", "category": 0, "feedback": "Believing you are at risk is perceived susceptibility."},
-          {"label": "“If I had a heart attack, I couldn't work and pay my bills.”", "category": 1, "feedback": "Seeing serious physical or financial effects is perceived severity."},
-          {"label": "“Cooking from scratch takes too much time.”", "category": 2, "feedback": "Obstacles like time, cost or taste are perceived barriers."},
-          {"label": "“My doctor told me to cut back on salt.”", "category": 3, "feedback": "A doctor's advice can be a cue to action."}
-        ]
-      }
-    },
-    {
-      "id": "l12-b3",
-      "title": "Stages of change",
-      "teach": [
-        "The Transtheoretical Model describes change as a series of stages. In precontemplation, the person isn't thinking about changing. In contemplation, they are thinking about it, usually within the next six months, but they're stuck weighing pros and cons. People can stay in contemplation for years, waiting for certainty or a “magic moment”. Then come preparation, action and maintenance.",
-        "Decisional balance is the weighing of pros and cons. In precontemplation the cons clearly win, and in contemplation they are about even. Self-efficacy tends to drop between precontemplation and contemplation, as people start to see how hard the change will be, and then it rises gradually through action and maintenance."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "A client says, “I know I should eat better, and I'll probably start sometime this year, but it's just not the right time.” Which stage is this?",
-        "options": [
-          {"label": "Precontemplation", "correct": false, "feedback": "She is already thinking about changing, so she has moved past precontemplation."},
-          {"label": "Contemplation", "correct": true, "feedback": "Yes. She is thinking about it but waiting for the right moment."},
-          {"label": "Action", "correct": false, "feedback": "She hasn't started making changes yet."}
-        ]
-      }
-    },
-    {
-      "id": "l12-b4",
-      "title": "Planned behaviour and Social Cognitive Theory",
-      "teach": [
-        "The Theory of Planned Behaviour looks at intention. A person is more likely to act when they have a positive attitude toward the behaviour, feel that people who matter to them support it, and feel they have control over doing it.",
-        "Social Cognitive Theory goes beyond the individual. It includes a person's relationship with social groups and the environment. It describes reciprocal determinism: the person, their behaviour and their environment all affect each other. For example, a husband's high blood pressure (environment) motivates his wife to learn about food (person), so she starts eating more vegetables (behaviour). Ways to build self-efficacy include social modelling, verbal persuasion and helping the person feel better physically and emotionally."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which theory looks at a person's relationship with social groups and the environment?",
-        "options": [
-          {"label": "Health Belief Model", "correct": false, "feedback": "The Health Belief Model focuses on the person's own beliefs about risk, severity, benefits and barriers."},
-          {"label": "Social Cognitive Theory", "correct": true, "feedback": "Yes. It looks at how the person, their behaviour and the environment influence each other."},
-          {"label": "Transtheoretical Model", "correct": false, "feedback": "This model describes stages of readiness, not social groups and the environment."}
-        ]
-      }
-    },
-    {
-      "id": "l12-b5",
-      "title": "Cognitive-behavioural approaches",
-      "teach": [
-        "Cognitive-behavioural therapy works on both thoughts and actions. The cognitive part helps clients notice and change unhelpful thinking, such as “I ate one cookie, so the whole day is ruined.”",
-        "The behavioural part changes actions directly. Classical conditioning pairs a cue with a response. Operant conditioning is based on the law of effect: behaviours can be changed by their positive or negative effect. In nutrition counselling, the positive side is usually used, such as a reward for reaching a goal. Sometimes the change is its own reward, like relief from constipation after drinking more fluids and eating more fibre."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "A client treats herself to a new cookbook after a month of packing lunches. Which approach is this?",
-        "options": [
-          {"label": "Operant conditioning", "correct": true, "feedback": "Yes. A reward strengthens the behaviour, which is the law of effect."},
-          {"label": "Classical conditioning", "correct": false, "feedback": "Classical conditioning pairs a cue with a response. This is a reward after a behaviour."},
-          {"label": "Modelling", "correct": false, "feedback": "Modelling means learning by watching someone else."}
-        ]
-      }
-    },
-    {
-      "id": "l12-b6",
-      "title": "Client-centred and solution-focused counselling",
-      "teach": [
-        "Client-centred counselling, from Carl Rogers, guides how to build a good counselling relationship: warmth, genuineness, acceptance and empathy. Many practitioners use its basics no matter which other approach they follow.",
-        "Solution-focused therapy spends less time on the problem and more on what is already working. It looks for exceptions (times the problem didn't happen) and builds on the client's strengths and past successes."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which question fits a solution-focused approach?",
-        "options": [
-          {"label": "“Why do you think you overeat at night?”", "correct": false, "feedback": "This digs into the problem rather than what works."},
-          {"label": "“Tell me about a night this week when snacking wasn't a problem. What was different?”", "correct": true, "feedback": "Yes. Looking for exceptions and building on them is the heart of this approach."},
-          {"label": "“How many calories do you eat after dinner?”", "correct": false, "feedback": "This gathers facts but doesn't look for what's already working."}
-        ]
-      }
-    },
-    {
-      "id": "l12-b7",
-      "title": "Motivational interviewing",
-      "teach": [
-        "Motivational interviewing (MI) helps people resolve ambivalence, the feeling of wanting to change and not wanting to at the same time. Its spirit is a partnership with the client rather than an expert telling them what to do. It assumes people already have reasons to change, and your job is to draw them out (evocation), while respecting that the choice is theirs (autonomy). Your course test describes the three parts as collaboration, evocation and autonomy.",
-        "Core MI skills are open-ended questions, affirmations, reflections and summaries. The aim is for the client, not you, to make the case for change. This is called change talk. As the client voices their own need for change and the gap between their behaviour and their values grows, the balance of indecision starts to tip toward action."
-      ],
-      "act": {
-        "type": "choice",
-        "prompt": "Which counsellor move is most in the spirit of motivational interviewing?",
-        "options": [
-          {"label": "Listing all the health risks so the client sees why she must change", "correct": false, "feedback": "Trying to convince the client tends to create pushback. MI lets the client make the case."},
-          {"label": "Asking, “What would be different for you if you made this change?”", "correct": true, "feedback": "Yes. An open question that draws out the client's own reasons encourages change talk."},
-          {"label": "Telling the client which change to start with", "correct": false, "feedback": "MI respects the client's choice and works in partnership."}
-        ]
-      }
-    }
-  ],
-  "flashcards": [
-    {"front": "Self-efficacy", "back": "A person's confidence that they can make a change. It may matter more than actual skill."},
-    {"front": "Health Belief Model: perceived susceptibility", "back": "Believing you are at risk of the problem."},
-    {"front": "Health Belief Model: perceived severity", "back": "Believing the problem would have serious physical or social effects, including on money or work."},
-    {"front": "Health Belief Model: perceived barriers", "back": "The obstacles a person sees, such as taste, cost or inconvenience."},
-    {"front": "Cues to action", "back": "Prompts to act, such as physical symptoms, seeing others act, a media report or a doctor's advice."},
-    {"front": "Contemplation stage", "back": "Thinking about changing, usually within six months. People can be stuck here for years waiting for the “magic moment”."},
-    {"front": "Self-efficacy across the stages of change", "back": "It tends to drop from precontemplation to contemplation, then rises through action and maintenance."},
-    {"front": "Decisional balance", "back": "Weighing the pros and cons of changing."},
-    {"front": "Social Cognitive Theory", "back": "Looks at the person, their behaviour and the environment, including social groups, and how they affect each other (reciprocal determinism)."},
-    {"front": "Ways to build self-efficacy (SCT)", "back": "Social modelling, verbal persuasion, and improving physical and emotional states."},
-    {"front": "Operant conditioning", "back": "Based on the law of effect: behaviours change through their positive or negative effects."},
-    {"front": "Solution-focused therapy", "back": "Focuses on exceptions and what is already working rather than on the problem."},
-    {"front": "Spirit of motivational interviewing (course test)", "back": "Collaboration, evocation and autonomy."},
-    {"front": "Change talk", "back": "The client's own statements in favour of change. As it grows, the balance shifts toward action."}
-  ],
-  "quiz": [
-    {"q": "A person’s confidence in his or her ability to accomplish a behaviour change may be more important than actual skill.", "o": ["True", "False"], "a": 0, "e": "Checked answer, not from an official key. Chapter 2 says this about self-efficacy almost word for word."},
-    {"q": "Which behaviour change theory incorporates a person’s relationship with social groups and the environment?", "o": ["Health belief model", "Transtheoretical model", "Theory of planned behaviour", "Social cognitive theory", "All of the above"], "a": 3, "e": "Checked answer, not from an official key. The textbook says Social Cognitive Theory looks beyond the individual to social groups and the environment."},
-    {"q": "In the Health Belief Model, physical symptoms, a media report, or advice of a physician can all be cues to action.", "o": ["True", "False"], "a": 0, "e": "Checked answer, not from an official key. The textbook lists all three as cues to action."},
-    {"q": "Which Health Belief Construct is the perception that heart disease can negatively affect a person’s financial status?", "o": ["Cue to Action", "Perceived Susceptibility", "Perceived Severity", "Perceived Barrier"], "a": 2, "e": "Checked answer, not from an official key. Perceived severity covers the physical and social effects of a condition, including effects on money."},
-    {"q": "In the Transtheoretical Model, people can be stuck in which stage for years, waiting for the “magic moment”?", "o": ["Precontemplation", "Contemplation", "Preparation", "Action", "Maintenance"], "a": 1, "e": "Checked answer, not from an official key. The textbook says this about the contemplation stage."},
-    {"q": "Self-efficacy tends to increase for individuals between the precontemplation and contemplation stages.", "o": ["True", "False"], "a": 1, "e": "Checked answer, not from an official key. It tends to decrease between these stages, as people start to see how hard the change will be."},
-    {"q": "A__________ is based on the law of effect, which states that behaviours can be changed by their positive or negative effect.", "o": ["Modelling", "Classical conditioning", "Operant conditioning", "Systematic densensitization"], "a": 2, "e": "Checked answer, not from an official key. The textbook defines operant conditioning this way."},
-    {"q": "Social modelling, verbal persuasion, and improving physical and emotional states are intervention strategies for which Social Cognitive Theory concept?", "o": ["Behavioural capacity", "Self-efficacy", "Observational learning", "Facilitation"], "a": 1, "e": "Checked answer, not from an official key. These are the classic ways to build self-efficacy."},
-    {"q": "Collaboration, evocation, and autonomy are the three components of _____________.", "o": ["solution-focused therapy", "behavioural therapy", "cognitive therapy", "motivational interviewing."], "a": 3, "e": "Checked answer, not from an official key. These describe the spirit of motivational interviewing. The 7th edition describes it as partnership, acceptance, compassion and evocation."},
-    {"q": "When clients express _______________, the balance of indecision begins to shift toward taking action.", "o": ["ambivalence", "need for change", "resistance", "B and C"], "a": 1, "e": "Checked answer, not from an official key. As clients voice their own need for change (change talk), the balance of indecision begins to shift toward action."}
-  ]
+ "lesson": 12,
+ "book": "Nutrition Counseling and Education Skills, 7th edition (Bauer and Liou), Chapter 2: Frameworks for Understanding and Attaining Behavior Change",
+ "kicker": "Lesson 12 of your course, built from Chapter 2 of your Nutrition Counseling textbook. Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "l12-b1",
+   "title": "Why theories matter, and self-efficacy",
+   "teach": [
+    "Behaviour change theories help you understand why people eat the way they do and choose approaches that are more likely to work. No single theory fits every client, so counsellors often mix ideas from several.",
+    "One idea shows up in almost all of them: self-efficacy, or a person's confidence that they can make a change. It affects the choices people make, how much effort they put in, how they see barriers and whether they keep going when things get hard. A person's confidence in their ability to change may matter more than their actual skill."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Two clients know equally well how to plan meals. One is sure she can do it, the other doubts herself. Who is more likely to change?",
+    "options": [
+     {
+      "label": "The confident client",
+      "correct": true,
+      "feedback": "Yes. Self-efficacy can matter more than actual skill."
+     },
+     {
+      "label": "Both equally, since their skills are the same",
+      "correct": false,
+      "feedback": "Confidence affects effort and persistence, so skill alone doesn't decide it."
+     },
+     {
+      "label": "The doubtful client, because she'll try harder",
+      "correct": false,
+      "feedback": "Low confidence usually means less effort and giving up sooner when obstacles come up."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l12-b2",
+   "title": "The Health Belief Model",
+   "teach": [
+    "The Health Belief Model says people are more likely to act when they believe they are at risk (perceived susceptibility), believe the problem would be serious (perceived severity), believe that acting will help (perceived benefits), and believe the obstacles are manageable (perceived barriers). Severity includes physical and social effects, such as the impact on work or money.",
+    "Cues to action are the nudges that get someone started: physical symptoms, seeing someone else take action, a media report, or a doctor's advice. You and your client can also plan your own cues, such as a note on the fridge. Self-efficacy was later added to the model too."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each thought with the Health Belief Model idea it shows.",
+    "categories": [
+     "Perceived susceptibility",
+     "Perceived severity",
+     "Perceived barriers",
+     "Cue to action"
+    ],
+    "items": [
+     {
+      "label": "“Heart disease runs in my family, so I could get it.”",
+      "category": 0,
+      "feedback": "Believing you are at risk is perceived susceptibility."
+     },
+     {
+      "label": "“If I had a heart attack, I couldn't work and pay my bills.”",
+      "category": 1,
+      "feedback": "Seeing serious physical or financial effects is perceived severity."
+     },
+     {
+      "label": "“Cooking from scratch takes too much time.”",
+      "category": 2,
+      "feedback": "Obstacles like time, cost or taste are perceived barriers."
+     },
+     {
+      "label": "“My doctor told me to cut back on salt.”",
+      "category": 3,
+      "feedback": "A doctor's advice can be a cue to action."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l12-b3",
+   "title": "Stages of change",
+   "teach": [
+    "The Transtheoretical Model describes change as a series of stages. In precontemplation, the person isn't thinking about changing. In contemplation, they are thinking about it, usually within the next six months, but they're stuck weighing pros and cons. People can stay in contemplation for years, waiting for certainty or a “magic moment”. Then come preparation, action and maintenance.",
+    "Decisional balance is the weighing of pros and cons. In precontemplation the cons clearly win, and in contemplation they are about even. Self-efficacy tends to drop between precontemplation and contemplation, as people start to see how hard the change will be, and then it rises gradually through action and maintenance."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "A client says, “I know I should eat better, and I'll probably start sometime this year, but it's just not the right time.” Which stage is this?",
+    "options": [
+     {
+      "label": "Precontemplation",
+      "correct": false,
+      "feedback": "She is already thinking about changing, so she has moved past precontemplation."
+     },
+     {
+      "label": "Contemplation",
+      "correct": true,
+      "feedback": "Yes. She is thinking about it but waiting for the right moment."
+     },
+     {
+      "label": "Action",
+      "correct": false,
+      "feedback": "She hasn't started making changes yet."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l12-b4",
+   "title": "Planned behaviour and Social Cognitive Theory",
+   "teach": [
+    "The Theory of Planned Behaviour looks at intention. A person is more likely to act when they have a positive attitude toward the behaviour, feel that people who matter to them support it, and feel they have control over doing it.",
+    "Social Cognitive Theory goes beyond the individual. It includes a person's relationship with social groups and the environment. It describes reciprocal determinism: the person, their behaviour and their environment all affect each other. For example, a husband's high blood pressure (environment) motivates his wife to learn about food (person), so she starts eating more vegetables (behaviour). Ways to build self-efficacy include social modelling, verbal persuasion and helping the person feel better physically and emotionally."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which theory looks at a person's relationship with social groups and the environment?",
+    "options": [
+     {
+      "label": "Health Belief Model",
+      "correct": false,
+      "feedback": "The Health Belief Model focuses on the person's own beliefs about risk, severity, benefits and barriers."
+     },
+     {
+      "label": "Social Cognitive Theory",
+      "correct": true,
+      "feedback": "Yes. It looks at how the person, their behaviour and the environment influence each other."
+     },
+     {
+      "label": "Transtheoretical Model",
+      "correct": false,
+      "feedback": "This model describes stages of readiness, not social groups and the environment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l12-b5",
+   "title": "Cognitive-behavioural approaches",
+   "teach": [
+    "Cognitive-behavioural therapy works on both thoughts and actions. The cognitive part helps clients notice and change unhelpful thinking, such as “I ate one cookie, so the whole day is ruined.”",
+    "The behavioural part changes actions directly. Classical conditioning pairs a cue with a response. Operant conditioning is based on the law of effect: behaviours can be changed by their positive or negative effect. In nutrition counselling, the positive side is usually used, such as a reward for reaching a goal. Sometimes the change is its own reward, like relief from constipation after drinking more fluids and eating more fibre."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "A client treats herself to a new cookbook after a month of packing lunches. Which approach is this?",
+    "options": [
+     {
+      "label": "Operant conditioning",
+      "correct": true,
+      "feedback": "Yes. A reward strengthens the behaviour, which is the law of effect."
+     },
+     {
+      "label": "Classical conditioning",
+      "correct": false,
+      "feedback": "Classical conditioning pairs a cue with a response. This is a reward after a behaviour."
+     },
+     {
+      "label": "Modelling",
+      "correct": false,
+      "feedback": "Modelling means learning by watching someone else."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l12-b6",
+   "title": "Client-centred and solution-focused counselling",
+   "teach": [
+    "Client-centred counselling, from Carl Rogers, guides how to build a good counselling relationship: warmth, genuineness, acceptance and empathy. Many practitioners use its basics no matter which other approach they follow.",
+    "Solution-focused therapy spends less time on the problem and more on what is already working. It looks for exceptions (times the problem didn't happen) and builds on the client's strengths and past successes."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which question fits a solution-focused approach?",
+    "options": [
+     {
+      "label": "“Why do you think you overeat at night?”",
+      "correct": false,
+      "feedback": "This digs into the problem rather than what works."
+     },
+     {
+      "label": "“Tell me about a night this week when snacking wasn't a problem. What was different?”",
+      "correct": true,
+      "feedback": "Yes. Looking for exceptions and building on them is the heart of this approach."
+     },
+     {
+      "label": "“How many calories do you eat after dinner?”",
+      "correct": false,
+      "feedback": "This gathers facts but doesn't look for what's already working."
+     }
+    ]
+   }
+  },
+  {
+   "id": "l12-b7",
+   "title": "Motivational interviewing",
+   "teach": [
+    "Motivational interviewing (MI) helps people resolve ambivalence, the feeling of wanting to change and not wanting to at the same time. Its spirit is a partnership with the client rather than an expert telling them what to do. It assumes people already have reasons to change, and your job is to draw them out (evocation), while respecting that the choice is theirs (autonomy). Your course test describes the three parts as collaboration, evocation and autonomy.",
+    "Core MI skills are open-ended questions, affirmations, reflections and summaries. The aim is for the client, not you, to make the case for change. This is called change talk. As the client voices their own need for change and the gap between their behaviour and their values grows, the balance of indecision starts to tip toward action."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which counsellor move is most in the spirit of motivational interviewing?",
+    "options": [
+     {
+      "label": "Listing all the health risks so the client sees why she must change",
+      "correct": false,
+      "feedback": "Trying to convince the client tends to create pushback. MI lets the client make the case."
+     },
+     {
+      "label": "Asking, “What would be different for you if you made this change?”",
+      "correct": true,
+      "feedback": "Yes. An open question that draws out the client's own reasons encourages change talk."
+     },
+     {
+      "label": "Telling the client which change to start with",
+      "correct": false,
+      "feedback": "MI respects the client's choice and works in partnership."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Self-efficacy",
+   "back": "A person's confidence that they can make a change. It may matter more than actual skill."
+  },
+  {
+   "front": "Health Belief Model: perceived susceptibility",
+   "back": "Believing you are at risk of the problem."
+  },
+  {
+   "front": "Health Belief Model: perceived severity",
+   "back": "Believing the problem would have serious physical or social effects, including on money or work."
+  },
+  {
+   "front": "Health Belief Model: perceived barriers",
+   "back": "The obstacles a person sees, such as taste, cost or inconvenience."
+  },
+  {
+   "front": "Cues to action",
+   "back": "Prompts to act, such as physical symptoms, seeing others act, a media report or a doctor's advice."
+  },
+  {
+   "front": "Contemplation stage",
+   "back": "Thinking about changing, usually within six months. People can be stuck here for years waiting for the “magic moment”."
+  },
+  {
+   "front": "Self-efficacy across the stages of change",
+   "back": "It tends to drop from precontemplation to contemplation, then rises through action and maintenance."
+  },
+  {
+   "front": "Decisional balance",
+   "back": "Weighing the pros and cons of changing."
+  },
+  {
+   "front": "Social Cognitive Theory",
+   "back": "Looks at the person, their behaviour and the environment, including social groups, and how they affect each other (reciprocal determinism)."
+  },
+  {
+   "front": "Ways to build self-efficacy (SCT)",
+   "back": "Social modelling, verbal persuasion, and improving physical and emotional states."
+  },
+  {
+   "front": "Operant conditioning",
+   "back": "Based on the law of effect: behaviours change through their positive or negative effects."
+  },
+  {
+   "front": "Solution-focused therapy",
+   "back": "Focuses on exceptions and what is already working rather than on the problem."
+  },
+  {
+   "front": "Spirit of motivational interviewing (course test)",
+   "back": "Collaboration, evocation and autonomy."
+  },
+  {
+   "front": "Change talk",
+   "back": "The client's own statements in favour of change. As it grows, the balance shifts toward action."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A person’s confidence in his or her ability to accomplish a behaviour change may be more important than actual skill.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 2 says this about self-efficacy almost word for word. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "Which behaviour change theory incorporates a person’s relationship with social groups and the environment?",
+   "o": [
+    "Health belief model",
+    "Transtheoretical model",
+    "Theory of planned behaviour",
+    "Social cognitive theory",
+    "All of the above"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The textbook says Social Cognitive Theory looks beyond the individual to social groups and the environment. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "In the Health Belief Model, physical symptoms, a media report, or advice of a physician can all be cues to action.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. The textbook lists all three as cues to action. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "Which Health Belief Construct is the perception that heart disease can negatively affect a person’s financial status?",
+   "o": [
+    "Cue to Action",
+    "Perceived Susceptibility",
+    "Perceived Severity",
+    "Perceived Barrier"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Perceived severity covers the physical and social effects of a condition, including effects on money. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "In the Transtheoretical Model, people can be stuck in which stage for years, waiting for the “magic moment”?",
+   "o": [
+    "Precontemplation",
+    "Contemplation",
+    "Preparation",
+    "Action",
+    "Maintenance"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The textbook says this about the contemplation stage. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "Self-efficacy tends to increase for individuals between the precontemplation and contemplation stages.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. It tends to decrease between these stages, as people start to see how hard the change will be. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "A__________ is based on the law of effect, which states that behaviours can be changed by their positive or negative effect.",
+   "o": [
+    "Modelling",
+    "Classical conditioning",
+    "Operant conditioning",
+    "Systematic densensitization"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. The textbook defines operant conditioning this way. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "Social modelling, verbal persuasion, and improving physical and emotional states are intervention strategies for which Social Cognitive Theory concept?",
+   "o": [
+    "Behavioural capacity",
+    "Self-efficacy",
+    "Observational learning",
+    "Facilitation"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. These are the classic ways to build self-efficacy. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "Collaboration, evocation, and autonomy are the three components of _____________.",
+   "o": [
+    "solution-focused therapy",
+    "behavioural therapy",
+    "cognitive therapy",
+    "motivational interviewing."
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. These describe the spirit of motivational interviewing. The 7th edition describes it as partnership, acceptance, compassion and evocation. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  },
+  {
+   "q": "When clients express _______________, the balance of indecision begins to shift toward taking action.",
+   "o": [
+    "ambivalence",
+    "need for change",
+    "resistance",
+    "B and C"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. As clients voice their own need for change (change talk), the balance of indecision begins to shift toward action. Source: Nutrition Counseling and Education Skill Development (Bauer), Chapter 2."
+  }
+ ]
 }
