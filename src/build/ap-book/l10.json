@@ -1,0 +1,872 @@
+{
+ "lesson": 10,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 10 of your course, built from Chapter 10 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap10-1",
+   "title": "The nervous system’s job",
+   "teach": [
+    "The nervous system is the body’s control center and communication network. It directs the organs, interprets what happens around us and decides how to respond, often by making muscles contract.",
+    "It shares the job of homeostasis with the endocrine system, controlling the pituitary gland through the hypothalamus."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which system is the body’s control center and communication network?",
+    "options": [
+     {
+      "label": "Nervous",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Endocrine",
+      "correct": false,
+      "feedback": "The endocrine system works with it, using hormones."
+     },
+     {
+      "label": "Cardiovascular",
+      "correct": false,
+      "feedback": "That system transports blood."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-2",
+   "title": "Divisions of the nervous system",
+   "teach": [
+    "The central nervous system (CNS) is the brain and spinal cord, the control center.",
+    "The peripheral nervous system (PNS) is all the nerves connecting the CNS to receptors, muscles and glands. Its afferent (sensory) side carries information to the CNS; its efferent (motor) side carries commands out.",
+    "The efferent side splits into the somatic nervous system (to skeletal muscle) and the autonomic nervous system (ANS, involuntary, to smooth muscle, cardiac muscle and glands).",
+    "The ANS has two divisions. The sympathetic division stimulates and speeds up activity (energy use) and uses norepinephrine. The parasympathetic division stimulates \"vegetative\" activities like digestion, urination and defecation, slows other activities down, and uses acetylcholine at its nerve endings."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "How the nervous system divides",
+    "items": [
+     {
+      "label": "CNS",
+      "detail": "Brain and spinal cord."
+     },
+     {
+      "label": "PNS: afferent",
+      "detail": "Sensory neurons, toward the CNS."
+     },
+     {
+      "label": "PNS: efferent → somatic",
+      "detail": "Motor neurons to skeletal muscle."
+     },
+     {
+      "label": "PNS: efferent → autonomic",
+      "detail": "To smooth and cardiac muscle and glands."
+     },
+     {
+      "label": "Sympathetic / parasympathetic",
+      "detail": "Speeds up (norepinephrine) / rest and digest (acetylcholine)."
+     }
+    ]
+   },
+   "mnemonic": {
+    "cue": "Afferent Arrives, Efferent Exits",
+    "explanation": "Afferent (sensory) signals arrive at the CNS; efferent (motor) signals exit to muscles and glands."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Sympathetic or parasympathetic?",
+    "categories": [
+     "Sympathetic",
+     "Parasympathetic"
+    ],
+    "items": [
+     {
+      "label": "Speeds up activity and uses energy",
+      "category": 0,
+      "feedback": "Sympathetic."
+     },
+     {
+      "label": "Stimulates digestion and urination",
+      "category": 1,
+      "feedback": "Parasympathetic."
+     },
+     {
+      "label": "Uses norepinephrine",
+      "category": 0,
+      "feedback": "Sympathetic."
+     },
+     {
+      "label": "Uses acetylcholine at its nerve endings",
+      "category": 1,
+      "feedback": "Parasympathetic."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-3",
+   "title": "Neurons and neuroglia",
+   "teach": [
+    "Neurons are nerve cells that transmit impulses as electrochemical changes. A nerve is a bundle of nerve fibers. Neuroglia (\"nerve glue\") support and protect neurons and don’t conduct impulses. Over 60% of brain cells are neuroglia.",
+    "Astrocytes are star-shaped cells that form a supporting network in the brain and spinal cord, link neurons to blood vessels and help form the blood-brain barrier. Oligodendroglia support neurons and make the myelin sheath in the CNS. Microglia engulf microbes and debris. Ependymal cells line the brain’s ventricles and make or move cerebrospinal fluid. Schwann cells make the myelin sheath in the PNS."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which neuroglia cell?",
+    "categories": [
+     "Astrocytes",
+     "Oligodendroglia",
+     "Microglia",
+     "Ependymal",
+     "Schwann"
+    ],
+    "items": [
+     {
+      "label": "Star-shaped supporting network",
+      "category": 0,
+      "feedback": "Astrocytes."
+     },
+     {
+      "label": "Myelin in the CNS",
+      "category": 1,
+      "feedback": "Oligodendroglia."
+     },
+     {
+      "label": "Engulf microbes and debris",
+      "category": 2,
+      "feedback": "Microglia."
+     },
+     {
+      "label": "Line the ventricles; cerebrospinal fluid",
+      "category": 3,
+      "feedback": "Ependymal cells."
+     },
+     {
+      "label": "Myelin in the PNS",
+      "category": 4,
+      "feedback": "Schwann cells."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-4",
+   "title": "Parts of a neuron",
+   "teach": [
+    "The cell body holds the nucleus, organelles and Nissl bodies (rough ER where proteins are made). Dendrites are short and branched; they’re the receiving areas.",
+    "Each neuron has one axon, starting at the axon hillock and ending in axon terminals. Large peripheral axons are wrapped in a fatty myelin sheath made by Schwann cells; the outer part of the Schwann cell is the neurilemma. Gaps in the sheath are the nodes of Ranvier."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each part to its role.",
+    "categories": [
+     "Dendrites",
+     "Axon",
+     "Myelin sheath",
+     "Nodes of Ranvier"
+    ],
+    "items": [
+     {
+      "label": "Receive incoming signals",
+      "category": 0,
+      "feedback": "Dendrites."
+     },
+     {
+      "label": "Single long fiber carrying the impulse away",
+      "category": 1,
+      "feedback": "Axon."
+     },
+     {
+      "label": "Fatty insulation",
+      "category": 2,
+      "feedback": "Myelin sheath."
+     },
+     {
+      "label": "Gaps where the impulse jumps",
+      "category": 3,
+      "feedback": "Nodes of Ranvier."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-5",
+   "title": "Neurons by structure",
+   "teach": [
+    "Multipolar neurons have several dendrites and one axon. Most neurons in the brain and spinal cord are this type, including motor and association neurons.",
+    "Bipolar neurons have one dendrite and one axon. They’re found only in the retina, the inner ear and the olfactory area of the nose.",
+    "Unipolar neurons have one process that splits into an axon-like branch and a dendrite-like branch. Most sensory neurons are unipolar."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which structural type?",
+    "categories": [
+     "Multipolar",
+     "Bipolar",
+     "Unipolar"
+    ],
+    "items": [
+     {
+      "label": "Several dendrites and one axon",
+      "category": 0,
+      "feedback": "Multipolar."
+     },
+     {
+      "label": "Found in the retina and inner ear",
+      "category": 1,
+      "feedback": "Bipolar."
+     },
+     {
+      "label": "Most sensory neurons",
+      "category": 2,
+      "feedback": "Unipolar."
+     },
+     {
+      "label": "Most brain and spinal cord neurons",
+      "category": 0,
+      "feedback": "Multipolar."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-6",
+   "title": "Neurons by function",
+   "teach": [
+    "Receptors pick up stimuli and turn them into nerve impulses.",
+    "The first nerve cell receiving the impulse from a receptor is the sensory, or afferent, neuron (unipolar). The impulse may pass through internuncial, or association, neurons in the brain or spinal cord (multipolar). The final cell, which brings about the response, is the motor, or efferent, neuron (multipolar). The response is usually muscular, but it can be glandular."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the neurons in the order an impulse travels.",
+    "items": [
+     {
+      "label": "Sensory (afferent) neuron",
+      "detail": "From the receptor"
+     },
+     {
+      "label": "Association (internuncial) neuron",
+      "detail": "In the brain or spinal cord"
+     },
+     {
+      "label": "Motor (efferent) neuron",
+      "detail": "Brings about the response"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-7",
+   "title": "The nerve impulse",
+   "teach": [
+    "At rest, sodium is concentrated outside and potassium inside; the inside is negative. This is the resting (membrane) potential, kept by the sodium-potassium pump.",
+    "When an impulse starts, sodium rushes in and the inside turns positive: depolarization, the action potential. Potassium then moves out and the pump restores the charges: repolarization. The impulse is a self-propagating wave of depolarization and repolarization that moves in one direction down the fiber.",
+    "Unmyelinated fibers conduct along their whole length, slowly (about 0.5 m/s). In myelinated fibers the impulse jumps from node to node, much faster (about 120 m/s).",
+    "All-or-none law: if a nerve fiber carries an impulse at all, it carries a full-strength one."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Depolarization or repolarization?",
+    "categories": [
+     "Depolarization",
+     "Repolarization"
+    ],
+    "items": [
+     {
+      "label": "Sodium rushes in",
+      "category": 0,
+      "feedback": "Inside becomes positive."
+     },
+     {
+      "label": "Inside becomes positive",
+      "category": 0,
+      "feedback": "The action potential."
+     },
+     {
+      "label": "Potassium moves out and the pump restores charges",
+      "category": 1,
+      "feedback": "Repolarization."
+     },
+     {
+      "label": "Inside becomes negative again",
+      "category": 1,
+      "feedback": "Back to resting potential."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-8",
+   "title": "Synapses and neurotransmitters",
+   "teach": [
+    "A synapse is where axon terminals come close to, but don’t touch, another neuron’s dendrites (or a muscle or gland). The gap is the synaptic cleft, and the impulse crosses it in one direction only.",
+    "The impulse makes the presynaptic neuron release a neurotransmitter, a chemical that carries the signal across. Most synapses use acetylcholine, which the enzyme acetylcholinesterase then breaks down. Others include norepinephrine, epinephrine (adrenaline), serotonin, dopamine and endorphins."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which neurotransmitter do most synapses in the body use?",
+    "options": [
+     {
+      "label": "Acetylcholine",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Dopamine",
+      "correct": false,
+      "feedback": "Dopamine is one of many, but not the most common."
+     },
+     {
+      "label": "Epinephrine",
+      "correct": false,
+      "feedback": "The ANS also uses epinephrine, but most synapses use acetylcholine."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-9",
+   "title": "Reflexes",
+   "teach": [
+    "A reflex is an involuntary reaction to a stimulus, faster than a thought-out response, like pulling your finger off a thorn.",
+    "A reflex arc has five parts: a sensory receptor, a sensory (afferent) neuron, association neurons in the spinal cord, a motor (efferent) neuron, and an effector organ such as a muscle. The knee-jerk (patellar) reflex is the classic example.",
+    "Reflexes also keep homeostasis: heart rate, breathing, digestion, coughing, sneezing, swallowing and vomiting."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the parts of a reflex arc in order.",
+    "items": [
+     {
+      "label": "Sensory receptor",
+      "detail": "Detects the stimulus"
+     },
+     {
+      "label": "Sensory neuron",
+      "detail": "Carries it to the cord"
+     },
+     {
+      "label": "Association neuron",
+      "detail": "In the spinal cord"
+     },
+     {
+      "label": "Motor neuron",
+      "detail": "Carries the response out"
+     },
+     {
+      "label": "Effector",
+      "detail": "Muscle or gland responds"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-10",
+   "title": "White matter, gray matter, nerves and tracts",
+   "teach": [
+    "White matter is myelinated axons (myelin looks white). Gray matter is nerve cell bodies and dendrites, plus unmyelinated axons; the gray surface of the brain is the cortex.",
+    "Outside the CNS: a nerve is a bundle of fibers; ganglia are clusters of nerve cell bodies (gray matter). Inside the CNS: a tract is a bundle of fibers (white matter); a nucleus is a mass of cell bodies (gray matter). Horns are the gray matter areas of the spinal cord.",
+    "Ascending tracts carry sensation up; descending tracts carry motor signals down."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Inside or outside the CNS?",
+    "categories": [
+     "Outside the CNS",
+     "Inside the CNS"
+    ],
+    "items": [
+     {
+      "label": "Nerve (bundle of fibers)",
+      "category": 0,
+      "feedback": "Outside."
+     },
+     {
+      "label": "Ganglion (cell bodies)",
+      "category": 0,
+      "feedback": "Outside."
+     },
+     {
+      "label": "Tract (bundle of fibers)",
+      "category": 1,
+      "feedback": "Inside."
+     },
+     {
+      "label": "Nucleus (cell bodies)",
+      "category": 1,
+      "feedback": "Inside."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-11",
+   "title": "The spinal cord and meninges",
+   "teach": [
+    "The spinal cord is a continuation of the medulla oblongata, about 16 to 18 inches long, with 31 segments, each giving off a pair of spinal nerves. It ends around the second lumbar vertebra.",
+    "Three meninges protect it: the tough outer dura mater, the middle arachnoid mater (spider layer) and the delicate inner pia mater, which clings to the cord.",
+    "The subdural space (between dura and arachnoid) holds serous fluid. The subarachnoid space (between arachnoid and pia) holds cerebrospinal fluid. The epidural space separates the meninges from the vertebrae and holds fat and loose connective tissue.",
+    "A spinal tap draws cerebrospinal fluid from the subarachnoid space below the end of the cord."
+   ],
+   "mnemonic": {
+    "cue": "DAP: Dura, Arachnoid, Pia (outside in)",
+    "explanation": "The tough mother is outside, the delicate mother hugs the cord."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Match each space to what it holds or where it is.",
+    "categories": [
+     "Epidural space",
+     "Subdural space",
+     "Subarachnoid space"
+    ],
+    "items": [
+     {
+      "label": "Between the meninges and the vertebrae",
+      "category": 0,
+      "feedback": "Epidural."
+     },
+     {
+      "label": "Between dura and arachnoid; serous fluid",
+      "category": 1,
+      "feedback": "Subdural."
+     },
+     {
+      "label": "Between arachnoid and pia; cerebrospinal fluid",
+      "category": 2,
+      "feedback": "Subarachnoid."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap10-12",
+   "title": "Spinal cord roots and spinal nerves",
+   "teach": [
+    "The spinal cord carries sensory impulses up to the brain and motor impulses down, and integrates reflexes.",
+    "Each spinal nerve attaches by two roots. The dorsal (posterior) root is sensory only and connects to the dorsal gray horn. The ventral (anterior) root is motor only and connects to the ventral gray horn.",
+    "Because each spinal nerve joins both roots, all spinal nerves are mixed nerves (sensory and motor). There are 31 pairs: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral and 1 coccygeal."
+   ],
+   "act": {
+    "type": "number",
+    "prompt": "How many pairs of spinal nerves are there?",
+    "answer": 31,
+    "tolerance": 0,
+    "unit": "pairs",
+    "explanation": "8 cervical + 12 thoracic + 5 lumbar + 5 sacral + 1 coccygeal = 31."
+   }
+  },
+  {
+   "id": "ap10-13",
+   "title": "Drugs that affect the CNS",
+   "teach": [
+    "Depressants (\"downers\") include Valium and opiates like codeine and heroin; they sedate and can cause dependence.",
+    "Stimulants include cocaine and amphetamines. Hallucinogens like LSD distort the senses.",
+    "Anabolic steroids act like male sex hormones and enlarge muscle cells, but in large doses suppress hormones from the hypothalamus and pituitary, which can shrink the testes and cause liver and heart problems."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which group does each drug belong to?",
+    "categories": [
+     "Depressant",
+     "Stimulant",
+     "Hallucinogen",
+     "Anabolic steroid"
+    ],
+    "items": [
+     {
+      "label": "Valium",
+      "category": 0,
+      "feedback": "Depressant."
+     },
+     {
+      "label": "Amphetamines",
+      "category": 1,
+      "feedback": "Stimulant."
+     },
+     {
+      "label": "LSD",
+      "category": 2,
+      "feedback": "Hallucinogen."
+     },
+     {
+      "label": "Acts like male sex hormones",
+      "category": 3,
+      "feedback": "Anabolic steroid."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "CNS",
+   "back": "Brain and spinal cord."
+  },
+  {
+   "front": "PNS",
+   "back": "All nerves connecting the CNS to receptors, muscles and glands."
+  },
+  {
+   "front": "Afferent / efferent",
+   "back": "Sensory, toward the CNS / motor, away from the CNS."
+  },
+  {
+   "front": "Somatic nervous system",
+   "back": "Signals to skeletal muscle."
+  },
+  {
+   "front": "Autonomic nervous system",
+   "back": "Involuntary; smooth muscle, cardiac muscle and glands."
+  },
+  {
+   "front": "Sympathetic division",
+   "back": "Speeds up activity; norepinephrine."
+  },
+  {
+   "front": "Parasympathetic division",
+   "back": "Digestion, urination, defecation; acetylcholine."
+  },
+  {
+   "front": "Neuroglia",
+   "back": "Supporting cells; over 60% of brain cells."
+  },
+  {
+   "front": "Astrocytes",
+   "back": "Star-shaped support network; blood-brain barrier."
+  },
+  {
+   "front": "Schwann cells",
+   "back": "Make myelin in the PNS."
+  },
+  {
+   "front": "Oligodendroglia",
+   "back": "Make myelin in the CNS."
+  },
+  {
+   "front": "Nodes of Ranvier",
+   "back": "Gaps in the myelin sheath."
+  },
+  {
+   "front": "Multipolar / bipolar / unipolar",
+   "back": "Many dendrites, one axon / one of each / one split process (most sensory neurons)."
+  },
+  {
+   "front": "Resting potential",
+   "back": "Inside negative; Na⁺ outside, K⁺ inside."
+  },
+  {
+   "front": "Depolarization / repolarization",
+   "back": "Na⁺ rushes in / K⁺ out and pump restores."
+  },
+  {
+   "front": "Myelinated vs unmyelinated",
+   "back": "Jumps node to node, fast / whole length, slow."
+  },
+  {
+   "front": "Synapse",
+   "back": "Gap between axon terminals and the next cell."
+  },
+  {
+   "front": "Neurotransmitter",
+   "back": "Chemical that carries the signal across the synapse."
+  },
+  {
+   "front": "Reflex arc",
+   "back": "Receptor, sensory neuron, association neuron, motor neuron, effector."
+  },
+  {
+   "front": "White / gray matter",
+   "back": "Myelinated axons / cell bodies and dendrites."
+  },
+  {
+   "front": "Ganglia",
+   "back": "Nerve cell bodies outside the CNS."
+  },
+  {
+   "front": "Tract",
+   "back": "Bundle of fibers inside the CNS."
+  },
+  {
+   "front": "Meninges",
+   "back": "Dura mater, arachnoid mater, pia mater."
+  },
+  {
+   "front": "Epidural space",
+   "back": "Separates the meninges from the vertebrae."
+  },
+  {
+   "front": "Dorsal / ventral root",
+   "back": "Sensory / motor."
+  },
+  {
+   "front": "Spinal nerves",
+   "back": "31 pairs; all mixed."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The parasympathetic division of the autonomic nervous system uses the neurotransmitter _____________________ at nerve endings.",
+   "o": [
+    "dopamine",
+    "epinephrine",
+    "norepinephrine",
+    "acetylcholine"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 10 says the parasympathetic division uses acetylcholine as a neurotransmitter at nerve endings. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The final nerve cell that receives the impulse and brings about the reaction to the original stimulus is called the motor or _____________________ neuron.",
+   "o": [
+    "afferent",
+    "inter",
+    "bipolar",
+    "efferent"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 10 says the final nerve cell, which brings about the reaction, is the motor or efferent neuron. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The spinal cord is a continuation of the _____________________ .",
+   "o": [
+    "medulla oblongata",
+    "thalamus",
+    "hypothalamus",
+    "pons"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says the spinal cord begins as a continuation of the medulla oblongata of the brainstem. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The ____________________________ act like the male sex hormones.",
+   "o": [
+    "stimulants",
+    "depressants",
+    "anabolic steroids",
+    "hallucinogens"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 10 says anabolic steroids act like the male sex hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Nerve cells known as _______________________ transmit nerve impulses in the form of electrochemical changes.",
+   "o": [
+    "neurons",
+    "microglia",
+    "oligodendrocytes",
+    "astrocytes"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says neurons transmit nerve impulses in the form of electrochemical changes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The chemicals that transmit signals across the synapse are called _________________________.",
+   "o": [
+    "sarcolemmas",
+    "neurotransmitters",
+    "synapses",
+    "receptors"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 10 says transmission across synapses is brought about by chemicals called neurotransmitters. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Valium is an example of a(n) _______________________________.",
+   "o": [
+    "depressant",
+    "stimulant",
+    "hallucinogen",
+    "anabolic steroid"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 gives Valium as an example of a depressant. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Nerve cell bodies found outside the central nervous system are called ____________________.",
+   "o": [
+    "tracts",
+    "nerves",
+    "neurons",
+    "ganglia"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 10 says nerve cell bodies found outside the CNS are grouped together to form ganglia. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Most sensory neurons are _______________________ neurons.",
+   "o": [
+    "multipolar",
+    "interneurons",
+    "unipolar",
+    "bipolar"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 10 says most sensory neurons are unipolar neurons. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "A bundle of fibres inside the central nervous system is called a ________________________.",
+   "o": [
+    "ganglion",
+    "tract",
+    "nucleus",
+    "soma"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 10 says a tract is a bundle of fibers inside the CNS. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "All the spinal nerves are __________________________ nerves.",
+   "o": [
+    "sensory",
+    "motor",
+    "mixed",
+    "efferent"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 10 says all the spinal nerves are mixed nerves because they contain both motor and sensory fibers. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Star-shaped cells that form a supporting network in the brain and spinal cord are called ________________________.",
+   "o": [
+    "oligodendrocytes",
+    "astrocytes",
+    "microglia",
+    "ependymal cells"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 10 says astrocytes are star-shaped cells that form a supporting network in the brain and spinal cord. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The __________________ system is the body’s control centre and communication network.",
+   "o": [
+    "muscular",
+    "digestive",
+    "nervous",
+    "cardiovascular"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 10 says the nervous system is the body’s control center and communication network. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Areas of the nervous system known as ___________________________ consist of nerve cells bodies and dendrites.",
+   "o": [
+    "white matter",
+    "ganglia",
+    "tracts",
+    "gray matter"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 10 says gray matter consists of nerve cell bodies and dendrites. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The ____________________________ division of the autonomic nervous system stimulates and speeds up certain bodily activities.",
+   "o": [
+    "parasympathetic",
+    "sympathetic",
+    "somatic",
+    "central"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 10 says the sympathetic division stimulates or speeds up activity. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Myelin sheaths surrounding nerve fibers in the peripheral nervous system are produced by ____________________________.",
+   "o": [
+    "Schwann cells",
+    "microglia",
+    "satellite cells",
+    "astrocytes"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says Schwann cells form myelin sheaths around nerve fibers in the PNS. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Neurons that convey information from the brain and spinal cord to muscles and glands are called ____________________________ neurons.",
+   "o": [
+    "efferent",
+    "afferent",
+    "interneurons",
+    "cranial"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says efferent (motor) neurons convey information from the brain and spinal cord to muscles and glands. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Neurons that have several dendrites and one axon are called __________________________ neurons.",
+   "o": [
+    "bipolar",
+    "unipolar",
+    "multipolar",
+    "uniaxial"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 10 says multipolar neurons have several dendrites and one axon. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Most synapses in our bodies use the _____________________ neurotransmitter.",
+   "o": [
+    "acetylcholine",
+    "dopamine",
+    "epinephrine",
+    "norepinephrine"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says most of the synapses in our bodies use acetylcholine as the neurotransmitter. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The space that separates the meninges from the vertebrae is called the ____________________ space.",
+   "o": [
+    "subarachnoid",
+    "subdura",
+    "epidural",
+    "submater"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 10 says the meninges are separated from the vertebrae by the epidural space. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "Over 60% of all brain cells are neurons.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 10 says over 60% of all brain cells are neuroglia, not neurons. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "An unmyelinated nerve fibre conducts an impulse over its entire length with a slower rate of conduction than that of a myelinated fibre.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says an unmyelinated fiber conducts over its entire length, more slowly than a myelinated fiber. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The action potential moves in both directions down a nerve fibre.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 10 says the action potential moves in one direction down the nerve fiber. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The parasympathetic division of the autonomic nervous system stimulates the body’s vegetative activities such as digestion, urination, and defecation.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 10 says the parasympathetic division stimulates vegetative activities such as digestion, urination and defecation. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  },
+  {
+   "q": "The first nerve cell receiving an impulse directly from a receptor is called a motor or efferent neuron.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The first nerve cell receiving an impulse from a receptor is the sensory, or afferent, neuron. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 10."
+  }
+ ]
+}

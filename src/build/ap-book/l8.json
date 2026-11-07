@@ -1,0 +1,834 @@
+{
+ "lesson": 8,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 8 of your course, built from Chapter 8 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap8-1",
+   "title": "What a joint is",
+   "teach": [
+    "An articulation, or joint, is any place where two or more bones meet, whatever the amount of movement. Skull sutures are joints as much as the knee is.",
+    "Joints are classified by how much they move (function) and by what holds them together (structure) into three groups: synarthroses (no movement), amphiarthroses (slight movement) and diarthroses (free movement)."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "Three joint groups",
+    "items": [
+     {
+      "label": "Synarthroses",
+      "detail": "No movement: suture, syndesmosis, gomphosis."
+     },
+     {
+      "label": "Amphiarthroses",
+      "detail": "Slight movement: symphysis, synchondrosis."
+     },
+     {
+      "label": "Diarthroses (synovial)",
+      "detail": "Free movement: six types, like the hip and knee."
+     }
+    ]
+   },
+   "mnemonic": {
+    "cue": "SYN = sealed, AMPHI = a little, DI = do anything",
+    "explanation": "Synarthroses don’t move, amphiarthroses move a little, diarthroses move freely."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "How much does each group move?",
+    "categories": [
+     "No movement",
+     "Slight movement",
+     "Free movement"
+    ],
+    "items": [
+     {
+      "label": "Synarthroses",
+      "category": 0,
+      "feedback": "Immovable."
+     },
+     {
+      "label": "Amphiarthroses",
+      "category": 1,
+      "feedback": "Slightly movable."
+     },
+     {
+      "label": "Diarthroses",
+      "category": 2,
+      "feedback": "Freely movable."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-2",
+   "title": "Synarthroses: immovable joints",
+   "teach": [
+    "A suture joins bones with a thin layer of fibrous tissue, as in the skull. The tissue is left over from intramembranous ossification.",
+    "A syndesmosis connects bones with ligaments between them, like the radius and ulna, or the tibia and fibula. (Some authors call these amphiarthroses.)",
+    "A gomphosis is a cone-shaped process held in a socket by ligaments: a tooth in its alveolus, held by the periodontal ligament."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which synarthrosis?",
+    "categories": [
+     "Suture",
+     "Syndesmosis",
+     "Gomphosis"
+    ],
+    "items": [
+     {
+      "label": "Joints of the skull",
+      "category": 0,
+      "feedback": "Suture."
+     },
+     {
+      "label": "Radius and ulna joined by ligament",
+      "category": 1,
+      "feedback": "Syndesmosis."
+     },
+     {
+      "label": "Tooth in its socket",
+      "category": 2,
+      "feedback": "Gomphosis."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-3",
+   "title": "Amphiarthroses: slightly movable joints",
+   "teach": [
+    "A symphysis joins bones with a disk of fibrocartilage. The pubic symphysis gives a little during delivery to widen the birth canal.",
+    "A synchondrosis joins two bony surfaces with hyaline cartilage, later replaced by bone. Examples: the growth plate between the epiphysis and diaphysis of a long bone, and the rib-to-sternum cartilage. (Some authors call it a synarthrosis.)"
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Symphysis or synchondrosis?",
+    "categories": [
+     "Symphysis (fibrocartilage)",
+     "Synchondrosis (hyaline cartilage)"
+    ],
+    "items": [
+     {
+      "label": "Pubic symphysis",
+      "category": 0,
+      "feedback": "Disk of fibrocartilage."
+     },
+     {
+      "label": "Growth plate between epiphysis and diaphysis",
+      "category": 1,
+      "feedback": "Hyaline cartilage."
+     },
+     {
+      "label": "Ribs joined to the sternum by cartilage",
+      "category": 1,
+      "feedback": "Synchondrosis."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-4",
+   "title": "Diarthroses: synovial joints",
+   "teach": [
+    "Diarthroses (synovial joints) move freely. They always have a cavity enclosed by a capsule. Ligaments reinforce the capsule, articular cartilage covers the bone ends, and a synovial membrane lines the inside and makes synovial fluid. Most joints of the arms and legs are diarthroses.",
+    "Synovial fluid creates a smooth gliding surface for opposing bones and nourishes the articular cartilage, which has little blood supply.",
+    "Looser capsules allow more movement. The shoulder has the widest range; the hip is more restricted because its capsule is thicker and the femur is held in the acetabulum by strong ligaments. Muscles and tendons around the capsule add stability."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What provides a smooth gliding surface for opposing bones in a synovial joint?",
+    "options": [
+     {
+      "label": "Synovial fluid",
+      "correct": true,
+      "feedback": "Right. It also nourishes the cartilage."
+     },
+     {
+      "label": "Sebum",
+      "correct": false,
+      "feedback": "Sebum lubricates the skin."
+     },
+     {
+      "label": "Desmosomes",
+      "correct": false,
+      "feedback": "Desmosomes hold skin cells together."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-5",
+   "title": "Movements: bending, straightening and side to side",
+   "teach": [
+    "Flexion decreases the angle between bones (bending). Extension increases it (straightening). Hyperextension goes beyond anatomic position.",
+    "Abduction moves a bone away from the midline. Adduction moves it toward the midline.",
+    "Rotation turns a bone around its own axis, like shaking your head. Circumduction moves a limb so its end draws a circle and its sides draw a cone."
+   ],
+   "mnemonic": {
+    "cue": "ABduction ABducts it away; ADDuction ADDs it back",
+    "explanation": "Abduction moves away from the midline; adduction brings it back to the body."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Name the movement.",
+    "categories": [
+     "Flexion",
+     "Extension",
+     "Abduction",
+     "Adduction"
+    ],
+    "items": [
+     {
+      "label": "Bending the elbow",
+      "category": 0,
+      "feedback": "Decreases the angle."
+     },
+     {
+      "label": "Straightening the knee",
+      "category": 1,
+      "feedback": "Increases the angle."
+     },
+     {
+      "label": "Raising your arm out to the side",
+      "category": 2,
+      "feedback": "Away from the midline."
+     },
+     {
+      "label": "Bringing your arm back to your side",
+      "category": 3,
+      "feedback": "Toward the midline."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-6",
+   "title": "Movements of the hand, foot and jaw",
+   "teach": [
+    "Supination turns the palm up (forearm bones parallel). Pronation turns the palm down (bones crossed). These are forearm and hand movements.",
+    "Eversion turns the sole of the foot outward; inversion turns it inward. Dorsiflexion raises the foot up at the ankle; plantar flexion pushes it down.",
+    "Protraction moves a part forward and retraction moves it back, like the jaw. Elevation raises a part and depression lowers it, like shrugging the shoulders. Opposition brings the thumb tip to the fingertips; it’s unique to primates. Reposition returns the digits."
+   ],
+   "mnemonic": {
+    "cue": "Supination = holding a bowl of SOUP",
+    "explanation": "Palm up is supination; palm down is pronation."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Which part of the body does each movement belong to?",
+    "categories": [
+     "Forearm and hand",
+     "Foot and ankle",
+     "Jaw or shoulder"
+    ],
+    "items": [
+     {
+      "label": "Supination and pronation",
+      "category": 0,
+      "feedback": "Forearm and hand."
+     },
+     {
+      "label": "Eversion and inversion",
+      "category": 1,
+      "feedback": "Foot."
+     },
+     {
+      "label": "Dorsiflexion",
+      "category": 1,
+      "feedback": "Raising the foot at the ankle."
+     },
+     {
+      "label": "Protraction and retraction",
+      "category": 2,
+      "feedback": "For example, the jaw."
+     },
+     {
+      "label": "Opposition",
+      "category": 0,
+      "feedback": "The thumb."
+     },
+     {
+      "label": "Elevation and depression",
+      "category": 2,
+      "feedback": "For example, the shoulders."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-7",
+   "title": "Six types of synovial joints",
+   "teach": [
+    "Ball-and-socket (multiaxial): a ball fits into a socket, giving the widest range of motion in all planes. Shoulder and hip; the shoulder moves more.",
+    "Hinge (uniaxial): flexion and extension in one plane. Elbow, knee, and the middle and distal finger and toe joints.",
+    "Pivot (uniaxial): rotation in one plane, like the atlas turning on the axis.",
+    "Condyloid or ellipsoidal (biaxial): an oval condyle in an elliptical cavity, moving in two planes. The wrist joint between the radius and carpals.",
+    "Saddle (biaxial): found only in the thumb, between the trapezium and the first metacarpal. It allows opposition.",
+    "Gliding (multiaxial): flat surfaces that only glide, like the joints between vertebral articular processes."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the joint to its type.",
+    "categories": [
+     "Ball-and-socket",
+     "Hinge",
+     "Pivot",
+     "Saddle"
+    ],
+    "items": [
+     {
+      "label": "Shoulder",
+      "category": 0,
+      "feedback": "Ball-and-socket."
+     },
+     {
+      "label": "Elbow",
+      "category": 1,
+      "feedback": "Hinge."
+     },
+     {
+      "label": "Atlas on axis",
+      "category": 2,
+      "feedback": "Pivot."
+     },
+     {
+      "label": "Base of the thumb",
+      "category": 3,
+      "feedback": "Saddle, only in the thumb."
+     },
+     {
+      "label": "Knee",
+      "category": 1,
+      "feedback": "Hinge."
+     },
+     {
+      "label": "Hip",
+      "category": 0,
+      "feedback": "Ball-and-socket."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-8",
+   "title": "Uniaxial, biaxial, multiaxial",
+   "teach": [
+    "Joints are also named by how many planes they move in. Uniaxial: one plane (hinge, pivot). Biaxial: two planes at right angles (condyloid, saddle). Multiaxial: many planes (ball-and-socket; the textbook also calls gliding joints multiaxial)."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "How many axes?",
+    "categories": [
+     "Uniaxial",
+     "Biaxial",
+     "Multiaxial"
+    ],
+    "items": [
+     {
+      "label": "Hinge",
+      "category": 0,
+      "feedback": "One plane."
+     },
+     {
+      "label": "Pivot",
+      "category": 0,
+      "feedback": "Rotation in one plane."
+     },
+     {
+      "label": "Condyloid",
+      "category": 1,
+      "feedback": "Two planes."
+     },
+     {
+      "label": "Saddle",
+      "category": 1,
+      "feedback": "Two planes."
+     },
+     {
+      "label": "Ball-and-socket",
+      "category": 2,
+      "feedback": "All planes."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-9",
+   "title": "Bursae",
+   "teach": [
+    "Bursae are closed sacs lined with synovial membrane, found wherever friction could happen between tendons, ligaments and bones.",
+    "Subcutaneous bursae are under the skin, over a bony process (like between the kneecap and the skin). Subfascial bursae are between muscles. Subtendinous bursae are where a tendon passes over another tendon or a bony projection, as in the shoulder."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which type of bursa?",
+    "categories": [
+     "Subcutaneous",
+     "Subfascial",
+     "Subtendinous"
+    ],
+    "items": [
+     {
+      "label": "Between the kneecap and the skin",
+      "category": 0,
+      "feedback": "Under the skin."
+     },
+     {
+      "label": "Between two muscles",
+      "category": 1,
+      "feedback": "Between fasciae."
+     },
+     {
+      "label": "Where a tendon passes over bone in the shoulder",
+      "category": 2,
+      "feedback": "Subtendinous."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-10",
+   "title": "Joint disorders",
+   "teach": [
+    "Arthritis is inflammation of the whole joint; there are over 100 kinds. Rheumatoid arthritis is a connective tissue disorder with severe inflammation of small joints, possibly autoimmune. Osteoarthritis (degenerative joint disease) comes with age and affects weight-bearing joints. Gout is a build-up of uric acid crystals, often at the base of the big toe.",
+    "Bursitis is inflammation of a bursa. Tennis elbow (lateral epicondylitis) comes from overuse. Carpal tunnel syndrome is a repetitive-motion injury of the wrist, common with keyboard use.",
+    "A sprain tears ligaments. A dislocation is a bone temporarily displaced from its joint. A slipped (herniated) disk presses on the spinal cord; if therapy fails, a laminectomy removes the protruding disk."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the condition.",
+    "categories": [
+     "Gout",
+     "Rheumatoid arthritis",
+     "Carpal tunnel syndrome",
+     "Dislocation"
+    ],
+    "items": [
+     {
+      "label": "Uric acid crystals at the base of the big toe",
+      "category": 0,
+      "feedback": "Gout."
+     },
+     {
+      "label": "Severe inflammation of small joints",
+      "category": 1,
+      "feedback": "Rheumatoid arthritis."
+     },
+     {
+      "label": "Repetitive wrist movements",
+      "category": 2,
+      "feedback": "Carpal tunnel syndrome."
+     },
+     {
+      "label": "Bone temporarily displaced from a joint",
+      "category": 3,
+      "feedback": "Dislocation."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap8-11",
+   "title": "Joints and aging",
+   "teach": [
+    "With age, collagen and elastin in joints stiffen, cartilage wears faster than it’s replaced, and synovial fluid production drops, so range of motion decreases.",
+    "Moderate, regular exercise helps keep joints flexible."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which change does the textbook link to stiffer joints with age?",
+    "options": [
+     {
+      "label": "Less synovial fluid and less flexible tendons and ligaments",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "More cartilage on the bone ends",
+      "correct": false,
+      "feedback": "Cartilage wears down with age."
+     },
+     {
+      "label": "More bursae",
+      "correct": false,
+      "feedback": "That isn’t in the textbook."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Articulation",
+   "back": "A joint: where two or more bones meet."
+  },
+  {
+   "front": "Synarthroses",
+   "back": "Immovable joints: suture, syndesmosis, gomphosis."
+  },
+  {
+   "front": "Amphiarthroses",
+   "back": "Slightly movable joints: symphysis, synchondrosis."
+  },
+  {
+   "front": "Diarthroses",
+   "back": "Freely movable synovial joints; most limb joints."
+  },
+  {
+   "front": "Suture",
+   "back": "Bones joined by fibrous tissue (skull)."
+  },
+  {
+   "front": "Gomphosis",
+   "back": "Tooth in its socket."
+  },
+  {
+   "front": "Symphysis",
+   "back": "Bones joined by fibrocartilage (pubic symphysis)."
+  },
+  {
+   "front": "Synchondrosis",
+   "back": "Bones joined by hyaline cartilage (growth plate)."
+  },
+  {
+   "front": "Synovial fluid",
+   "back": "Smooth gliding surface; nourishes articular cartilage."
+  },
+  {
+   "front": "Flexion / extension",
+   "back": "Decrease / increase the angle between bones."
+  },
+  {
+   "front": "Abduction / adduction",
+   "back": "Away from / toward the midline."
+  },
+  {
+   "front": "Circumduction",
+   "back": "Limb end draws a circle; sides draw a cone."
+  },
+  {
+   "front": "Supination / pronation",
+   "back": "Palm up / palm down."
+  },
+  {
+   "front": "Eversion / inversion",
+   "back": "Sole of the foot outward / inward."
+  },
+  {
+   "front": "Dorsiflexion / plantar flexion",
+   "back": "Foot up / foot down at the ankle."
+  },
+  {
+   "front": "Opposition",
+   "back": "Thumb tip to fingertips."
+  },
+  {
+   "front": "Ball-and-socket",
+   "back": "Multiaxial; shoulder and hip."
+  },
+  {
+   "front": "Hinge joint",
+   "back": "Uniaxial; elbow, knee, fingers."
+  },
+  {
+   "front": "Pivot joint",
+   "back": "Rotation; atlas and axis."
+  },
+  {
+   "front": "Saddle joint",
+   "back": "Biaxial; only in the thumb."
+  },
+  {
+   "front": "Subcutaneous bursae",
+   "back": "Under the skin over bony processes."
+  },
+  {
+   "front": "Arthritis",
+   "back": "Inflammation of the whole joint."
+  },
+  {
+   "front": "Gout",
+   "back": "Uric acid crystals, often at the base of the big toe."
+  },
+  {
+   "front": "Laminectomy",
+   "back": "Surgical removal of a protruding disk."
+  },
+  {
+   "front": "Dislocation",
+   "back": "A bone temporarily displaced from its joint."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Which joints do not allow movement?",
+   "o": [
+    "Diarthrosis",
+    "Synarthroses",
+    "Amphiarthoses",
+    "Fracture"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 8 says synarthroses are joints between bones that do not allow movement. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "The act of bending or decreasing the angle between bones is called _____________________ .",
+   "o": [
+    "extension",
+    "distension",
+    "flexion",
+    "hyperextension"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 defines flexion as bending, or decreasing the angle between bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "An inflammation of the whole joint is called ___________________ .",
+   "o": [
+    "bursitis",
+    "tendonitis",
+    "fibrositis",
+    "arthritis"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 8 says arthritis is an inflammation of the whole joint. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "A bone that is moved away from the midline has undergone _____________________ .",
+   "o": [
+    "abduction",
+    "protraction",
+    "adduction",
+    "pronation"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 says abduction is moving a bone or limb away from the midline of the body. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "The femur is connected to the acetabulum by a series of strong ________________________________ .",
+   "o": [
+    "ligaments",
+    "epithelium",
+    "sutures",
+    "synarthroses"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 says the femur is connected to the acetabulum by a series of strong ligaments. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "A smooth gliding surface for opposing bones is provided by: ___________________________.",
+   "o": [
+    "desmosomes",
+    "synovial fluid",
+    "sebum",
+    "sweat"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 8 says synovial fluid creates a smooth gliding surface for opposing bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Most joints of the upper and lower limbs are ______________________________ .",
+   "o": [
+    "amphiarthroses",
+    "sutures",
+    "diarthroses",
+    "synarthroses"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 says most joints of the upper and lower limbs are diarthroses. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "The elbow joint is an example of a _____________________ joint.",
+   "o": [
+    "hinge",
+    "condyloid",
+    "ball-and-socket",
+    "saddle"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 gives the elbow and knee as examples of hinge joints. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "A __________________________ is the surgical removal of a protruding disk.",
+   "o": [
+    "dislocation",
+    "rehabilitation",
+    "therapy",
+    "laminectomy"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 8 says a laminectomy is the surgical removal of the protruding disk. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Which movement involves raising the foot upward at the ankle joint?",
+   "o": [
+    "abduction",
+    "elevation",
+    "dorsiflexion",
+    "depression"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 says dorsiflexion is raising the foot up at the ankle joint. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "An example of a _____________________ is the joint between the epiphyses and the diaphysis of a long bone.",
+   "o": [
+    "gomphosis",
+    "symphysis",
+    "syndesmosis",
+    "synchondrosis"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 8 gives the joint between the epiphyses and diaphysis of a long bone as an example of a synchondrosis. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Subcutaneous bursae are found under the _____________________.",
+   "o": [
+    "ligament",
+    "skin",
+    "bone",
+    "joint"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 8 says subcutaneous bursae are found under the skin wherever it lies over a bony process. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Eversion and inversion refer to movements of the _____________________ .",
+   "o": [
+    "hand",
+    "wrist",
+    "knee",
+    "foot"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 8 says eversion and inversion refer to movements of the foot. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Which amphiarthrotic joints are characterized by two bony surfaces connected by hyaline cartilage?",
+   "o": [
+    "synchondroses",
+    "symphyses",
+    "gomphoses",
+    "syndesmoses"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 says synchondroses are joints in which two bony surfaces are connected by hyaline cartilage. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "A temporarily displaced bone from a joint is called a _____________________.",
+   "o": [
+    "fracture",
+    "strain",
+    "dislocation",
+    "sprain"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 says a dislocation is a temporarily displaced bone from a joint. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Which type of joint is found only in the thumb?",
+   "o": [
+    "saddle",
+    "hinge",
+    "condyloid",
+    "pivot"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 says the saddle joint is found only in the thumb. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Which disease occurs when an accumulation of uric acid crystals accumulates in the joint at the base of the large toe and in other joints of the feet and legs?",
+   "o": [
+    "Gout",
+    "Osteoarthritis",
+    "Rheumatoid arthritis",
+    "Bursitis"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 says gout is an accumulation of uric acid crystals in the joint at the base of the large toe and other joints of the feet and legs. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "A ball-and-socket is an example of a(n) _____________________ joint.",
+   "o": [
+    "uniaxial",
+    "biaxial",
+    "multiaxial",
+    "hinge"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 says a ball-and-socket joint is an example of a multiaxial joint. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "The shoulder and hip are examples of _____________________ joints.",
+   "o": [
+    "hinge",
+    "condyloid",
+    "ball-and-socket",
+    "saddle"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 gives the hip and shoulder as the two ball-and-socket joints. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Which type of arthritis is a connective tissue disorder resulting in severe inflammation of small joints?",
+   "o": [
+    "Fibroid",
+    "Rheumatoid",
+    "Osteoarthritis",
+    "Gout"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 8 says rheumatoid arthritis is a connective tissue disorder causing severe inflammation of small joints. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "The joints of the skull are examples of _____________________ .",
+   "o": [
+    "syndesmoses",
+    "amphiarthroses",
+    "sutures",
+    "symphyses"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 8 says the suture joints of the skull are examples of sutures. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Which injury is caused by repetitive movements that affect the wrist?",
+   "o": [
+    "Tennis elbow",
+    "Carpal tunnel syndrome",
+    "Dorsiflexion",
+    "Overextension"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 8 says carpal tunnel syndrome, affecting the wrist, develops from long periods of repetitive keyboard use. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Pronation is a term used to describe movement of the jaw.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Pronation is a movement of the forearm and hand (palm down). The jaw protracts and retracts. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "Extension increases the angle of bones.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 says extension is the act of increasing the angle between bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  },
+  {
+   "q": "An example of an amphiarthrosis is a symphysis.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 8 lists the symphysis as one of the two examples of amphiarthroses. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 8."
+  }
+ ]
+}

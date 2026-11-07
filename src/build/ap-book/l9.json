@@ -1,0 +1,992 @@
+{
+ "lesson": 9,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 9 of your course, built from Chapter 9 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap9-1",
+   "title": "Three types of muscle, revisited",
+   "teach": [
+    "Muscles make up about 40% to 50% of body weight. Skeletal muscle is voluntary, striated and multinucleated. Smooth muscle is involuntary, has one nucleus and no striations, and lines hollow organs. Cardiac muscle is involuntary, striated and has one nucleus; it’s only in the heart.",
+    "Smooth and cardiac muscle are both controlled by the autonomic nervous system. So cardiac is the only striated muscle that’s under autonomic control."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which striated muscle is controlled by the autonomic nervous system?",
+    "options": [
+     {
+      "label": "Cardiac",
+      "correct": true,
+      "feedback": "Right. Skeletal muscle is striated too, but it’s voluntary."
+     },
+     {
+      "label": "Skeletal",
+      "correct": false,
+      "feedback": "Skeletal muscle is voluntary, controlled by the central nervous system."
+     },
+     {
+      "label": "Smooth",
+      "correct": false,
+      "feedback": "Smooth muscle is autonomic but not striated."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-2",
+   "title": "Inside a skeletal muscle",
+   "teach": [
+    "Skeletal muscle cells are long and slender, so they’re called muscle fibers. Each has many nuclei and an electrically polarized membrane, the sarcolemma.",
+    "Three layers of connective tissue hold a muscle together. The endomysium surrounds each fiber. Fibers are grouped into bundles called fascicles (fasciculi), each wrapped in perimysium. The epimysium, coarse irregular connective tissue, surrounds the whole muscle. Fascia covers the outside.",
+    "Each fiber is made of thousands of myofibrils, which are made of thick myosin and thin actin filaments."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "From whole muscle to filament",
+    "items": [
+     {
+      "label": "Muscle (epimysium)",
+      "detail": "The whole muscle."
+     },
+     {
+      "label": "Fascicle (perimysium)",
+      "detail": "A bundle of fibers."
+     },
+     {
+      "label": "Muscle fiber (endomysium)",
+      "detail": "One cell."
+     },
+     {
+      "label": "Myofibril",
+      "detail": "Thousands per fiber."
+     },
+     {
+      "label": "Actin and myosin filaments",
+      "detail": "Thin and thick proteins."
+     }
+    ]
+   },
+   "mnemonic": {
+    "cue": "Epi = upon, Peri = around, Endo = within",
+    "explanation": "Epimysium wraps the whole muscle, perimysium wraps each fascicle, endomysium wraps each fiber."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Which connective tissue layer surrounds each part?",
+    "categories": [
+     "Epimysium",
+     "Perimysium",
+     "Endomysium"
+    ],
+    "items": [
+     {
+      "label": "The whole muscle",
+      "category": 0,
+      "feedback": "Epimysium."
+     },
+     {
+      "label": "A fascicle (bundle)",
+      "category": 1,
+      "feedback": "Perimysium."
+     },
+     {
+      "label": "A single muscle fiber",
+      "category": 2,
+      "feedback": "Endomysium."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-3",
+   "title": "Bands, lines and the sarcomere",
+   "teach": [
+    "The stripes come from overlapping proteins. Dark A bands are thick myosin filaments. Light I bands are thin actin filaments.",
+    "The Z line runs through the middle of each I band. The H zone is the slightly lighter middle of the A band. The sarcomere, between two Z lines, is where contraction happens.",
+    "The sarcotubular system has two parts: T tubules, continuous with the sarcolemma, carry the impulse deep into the fiber, and the sarcoplasmic reticulum, wrapped around each myofibril, stores calcium."
+   ],
+   "mnemonic": {
+    "cue": "dArk = A band; lIght = I band",
+    "explanation": "The second letter of each word gives the band’s name."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Actin or myosin?",
+    "categories": [
+     "Actin",
+     "Myosin"
+    ],
+    "items": [
+     {
+      "label": "Thin filaments",
+      "category": 0,
+      "feedback": "Actin."
+     },
+     {
+      "label": "Thick filaments",
+      "category": 1,
+      "feedback": "Myosin."
+     },
+     {
+      "label": "Light I bands",
+      "category": 0,
+      "feedback": "Actin."
+     },
+     {
+      "label": "Dark A bands",
+      "category": 1,
+      "feedback": "Myosin."
+     },
+     {
+      "label": "Heads that form cross-bridges",
+      "category": 1,
+      "feedback": "Myosin heads hold ATP."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-4",
+   "title": "Motor units and muscle properties",
+   "teach": [
+    "A motor unit is one motor neuron and all the muscle fibers it supplies; they contract together. Fine movements (eye muscles) have about 10 fibers per unit; gross movements have 200 or more. The average is about 150.",
+    "Muscle cells have four properties: excitability (respond to a stimulus), conductivity (pass the response along), contractility and elasticity (return to shape)."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Muscles for fine movements, like the eye muscles, have:",
+    "options": [
+     {
+      "label": "Few muscle fibers per motor unit",
+      "correct": true,
+      "feedback": "Right, about 10."
+     },
+     {
+      "label": "Many fibers per motor unit",
+      "correct": false,
+      "feedback": "That’s for gross movements."
+     },
+     {
+      "label": "No motor units",
+      "correct": false,
+      "feedback": "All skeletal muscles have motor units."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-5",
+   "title": "Resting potential and the nerve signal",
+   "teach": [
+    "At rest, there’s more potassium inside the muscle cell and more sodium outside. Both are positive ions. The inside is negative and the outside positive: the resting potential.",
+    "When a nerve impulse reaches the neuromuscular junction, the axon terminals release acetylcholine. Sodium rushes into the cell, the inside becomes positive, and the muscle cell fires its own action potential: the signal to contract.",
+    "The action potential travels down the T tubules and makes the sarcoplasmic reticulum release calcium ions around the myofibrils."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the steps in order.",
+    "items": [
+     {
+      "label": "Nerve impulse reaches the neuromuscular junction",
+      "detail": "Start"
+     },
+     {
+      "label": "Acetylcholine is released",
+      "detail": "Neurotransmitter"
+     },
+     {
+      "label": "Sodium rushes into the muscle cell",
+      "detail": "Action potential"
+     },
+     {
+      "label": "Signal travels down the T tubules",
+      "detail": "Deep into the fiber"
+     },
+     {
+      "label": "Sarcoplasmic reticulum releases calcium",
+      "detail": "Triggers contraction"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-6",
+   "title": "The sliding filament contraction",
+   "teach": [
+    "At rest, troponin and tropomyosin keep actin and myosin apart. Calcium binds to troponin and removes that block, activating myosin.",
+    "Myosin heads, carrying ATP, link to actin and form cross-bridges (actomyosin). Breaking ATP into ADP and phosphate releases energy that pulls the actin filaments in among the myosin. The Z lines move closer together; the A bands stay the same width.",
+    "The sodium-potassium pump restores the resting potential, calcium returns to the sarcoplasmic reticulum, and the muscle relaxes. The whole cycle takes about 1/40 of a second."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What does calcium do in contraction?",
+    "options": [
+     {
+      "label": "Binds to troponin, removing the block so myosin can link with actin",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Carries the nerve impulse across the junction",
+      "correct": false,
+      "feedback": "That’s acetylcholine."
+     },
+     {
+      "label": "Supplies the energy for contraction",
+      "correct": false,
+      "feedback": "ATP supplies the energy."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-7",
+   "title": "Energy for contraction",
+   "teach": [
+    "Muscles turn chemical energy (ATP) into mechanical energy. They get ATP four ways.",
+    "Aerobic respiration of glucose (38 ATP, per the textbook). Anaerobic breakdown when oxygen runs short: pyruvic acid becomes lactic acid, which builds up, with only 2 ATP. Phosphocreatine, found only in muscle, gives a fast supply: phosphocreatine + ADP ↔ creatine + ATP. And free fatty acids from the blood.",
+    "Heat is a by-product of every contraction."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each energy source to its description.",
+    "categories": [
+     "Aerobic glucose",
+     "Anaerobic glucose",
+     "Phosphocreatine",
+     "Fatty acids"
+    ],
+    "items": [
+     {
+      "label": "Makes the most ATP; needs oxygen",
+      "category": 0,
+      "feedback": "Aerobic respiration."
+     },
+     {
+      "label": "Produces lactic acid",
+      "category": 1,
+      "feedback": "Without oxygen."
+     },
+     {
+      "label": "Found only in muscle; rapid ATP",
+      "category": 2,
+      "feedback": "Phosphocreatine."
+     },
+     {
+      "label": "Taken up from the blood and broken down to CO₂, water and ATP",
+      "category": 3,
+      "feedback": "Free fatty acids."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-8",
+   "title": "Twitch, all-or-none and tone",
+   "teach": [
+    "A muscle twitch has a latent period (before contraction begins), a contraction period and a relaxation period.",
+    "The all-or-none law: a stimulus strong enough to fire a single muscle cell produces its maximum contraction; it either contracts fully or not at all. Whole-muscle strength depends on stimulus strength, duration, speed, load and temperature.",
+    "Tone is a steady partial contraction, with groups of cells taking turns. It keeps posture, firmness, blood pressure and pressure on abdominal contents."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "The all-or-none law says that a single muscle cell:",
+    "options": [
+     {
+      "label": "Either contracts fully or not at all",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Contracts harder the longer it’s stimulated",
+      "correct": false,
+      "feedback": "For one cell, it’s all or nothing."
+     },
+     {
+      "label": "Never fully relaxes",
+      "correct": false,
+      "feedback": "That describes tone in a whole muscle."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-9",
+   "title": "Isotonic vs isometric",
+   "teach": [
+    "Isotonic contraction: the muscle shortens and thickens while the tension stays the same, as when lifting a weight.",
+    "Isometric contraction: the muscle stays the same length while tension increases, as when pushing against a wall."
+   ],
+   "mnemonic": {
+    "cue": "Iso-TONIC = same Tension; Iso-METRIC = same length (meter)",
+    "explanation": "Isotonic keeps tension constant and the muscle shortens. Isometric keeps length constant and tension rises."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Isotonic or isometric?",
+    "categories": [
+     "Isotonic",
+     "Isometric"
+    ],
+    "items": [
+     {
+      "label": "Lifting a weight",
+      "category": 0,
+      "feedback": "The muscle shortens."
+     },
+     {
+      "label": "Pushing against a wall",
+      "category": 1,
+      "feedback": "Length stays the same."
+     },
+     {
+      "label": "Pulling locked fingers apart",
+      "category": 1,
+      "feedback": "An isometric exercise."
+     },
+     {
+      "label": "Muscle shortens and thickens, same tension",
+      "category": 0,
+      "feedback": "Isotonic."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-10",
+   "title": "Smooth and cardiac muscle contraction",
+   "teach": [
+    "Smooth muscle in hollow organs has an outer longitudinal layer and an inner circular layer that push contents forward. It contracts more slowly than skeletal muscle but stretches more. Its actin and myosin aren’t neatly lined up, so there are no stripes.",
+    "Cardiac muscle cells all contract together when one is stimulated, and the fastest cell sets the pace. The heart beats about 75 times a minute. Rapid, uncontrolled contraction of individual cells is fibrillation, which stops the heart pumping properly."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "In cardiac muscle, which cell sets the pace?",
+    "options": [
+     {
+      "label": "The one that contracts fastest",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "The largest one",
+      "correct": false,
+      "feedback": "It’s the fastest."
+     },
+     {
+      "label": "Each cell beats on its own schedule",
+      "correct": false,
+      "feedback": "That would be fibrillation."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-11",
+   "title": "Naming muscles and how they work together",
+   "teach": [
+    "Muscles are named by action (flexor, adductor), shape (trapezius), origin and insertion (sternocleidomastoid), location (frontalis), number of divisions (biceps, triceps, quadriceps) or fiber direction (oblique).",
+    "The origin is the fixed, usually proximal, attachment. The insertion is the movable attachment where the effect is seen. Muscles usually attach through tendons; a wide flat tendon is an aponeurosis.",
+    "By action: flexors bend, extensors straighten, abductors move away from the midline, adductors move toward it, rotators rotate, levators raise and depressors lower.",
+    "Prime movers (agonists) do the movement; antagonists do the opposite and must relax; synergists assist."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which kind of muscle?",
+    "categories": [
+     "Abductor",
+     "Adductor",
+     "Levator",
+     "Depressor"
+    ],
+    "items": [
+     {
+      "label": "Moves a limb away from the midline",
+      "category": 0,
+      "feedback": "Abductor."
+     },
+     {
+      "label": "Brings a limb toward the midline",
+      "category": 1,
+      "feedback": "Adductor."
+     },
+     {
+      "label": "Raises a body part",
+      "category": 2,
+      "feedback": "Levator."
+     },
+     {
+      "label": "Lowers a body part",
+      "category": 3,
+      "feedback": "Depressor."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-12",
+   "title": "Muscles of the head",
+   "teach": [
+    "Facial expression: the frontalis raises the eyebrows and wrinkles the forehead; the occipitalis draws the scalp back; the zygomaticus pulls the mouth up when smiling and laughing; the orbicularis oris closes the lips; the buccinator compresses the cheek.",
+    "Chewing: the masseter and temporalis close the jaw, helped by the pterygoids.",
+    "Eye: the superior rectus raises the eye, the inferior rectus lowers it, the medial and lateral recti roll it in and out, and the obliques rotate it. These muscles insert on the eyeball, not on bone.",
+    "Head: the sternocleidomastoid flexes the neck (both sides) or turns the head (one side)."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "What does each muscle do?",
+    "categories": [
+     "Raises eyebrows",
+     "Closes the jaw",
+     "Raises the eye",
+     "Turns the head"
+    ],
+    "items": [
+     {
+      "label": "Frontalis",
+      "category": 0,
+      "feedback": "Also wrinkles the forehead."
+     },
+     {
+      "label": "Masseter",
+      "category": 1,
+      "feedback": "Main chewing muscle."
+     },
+     {
+      "label": "Superior rectus",
+      "category": 2,
+      "feedback": "Rolls the eye upward."
+     },
+     {
+      "label": "Sternocleidomastoid",
+      "category": 3,
+      "feedback": "One side turns the head."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-13",
+   "title": "Muscles of the shoulder, arm and hand",
+   "teach": [
+    "The trapezius, rhomboids, levator scapulae, pectoralis minor and serratus anterior move the scapula.",
+    "The pectoralis major flexes and adducts the arm. The latissimus dorsi (\"swimmer’s muscle\") extends, adducts and rotates it. The deltoid abducts the arm and is an injection site. The rotator cuff includes the supraspinatus, infraspinatus and teres minor.",
+    "The biceps brachii, brachialis and brachioradialis flex the elbow; the triceps brachii and anconeus extend it. Flexor carpi muscles flex the wrist and extensor carpi muscles extend it. The supinator supinates; the pronator teres and quadratus pronate. Pollicis means thumb: the opponens pollicis opposes it."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Flexes or extends the elbow?",
+    "categories": [
+     "Flexes the elbow",
+     "Extends the elbow"
+    ],
+    "items": [
+     {
+      "label": "Biceps brachii",
+      "category": 0,
+      "feedback": "Flexor."
+     },
+     {
+      "label": "Brachialis",
+      "category": 0,
+      "feedback": "Flexor."
+     },
+     {
+      "label": "Triceps brachii",
+      "category": 1,
+      "feedback": "Extensor."
+     },
+     {
+      "label": "Anconeus",
+      "category": 1,
+      "feedback": "Extensor."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-14",
+   "title": "Muscles of the trunk and breathing",
+   "teach": [
+    "The abdominal wall has three side layers, outer to inner: external oblique, internal oblique and transversus abdominis. Down the front is the rectus abdominis, the muscle sit-ups build (the \"washboard\").",
+    "The diaphragm is the main breathing muscle. The external intercostals raise the ribs when breathing in; the internal intercostals lower them when breathing out."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which muscle do sit-ups develop?",
+    "options": [
+     {
+      "label": "Rectus abdominis",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Transversus abdominis",
+      "correct": false,
+      "feedback": "That’s the deepest side layer."
+     },
+     {
+      "label": "External oblique",
+      "correct": false,
+      "feedback": "That’s the outer side layer."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-15",
+   "title": "Muscles of the hip, leg and foot",
+   "teach": [
+    "The psoas and iliacus flex the thigh. The gluteus maximus forms most of the buttocks and extends the thigh; the gluteus medius is an injection site.",
+    "The hamstrings (biceps femoris, semitendinosus, semimembranosus) flex the knee. The quadriceps femoris (rectus femoris and three vasti) extends it. The sartorius is the longest muscle in the body.",
+    "The gastrocnemius (calf), soleus and others plantar flex the foot; the tibialis anterior dorsiflexes it. The flexor digitorum longus flexes the toes. Hallucis means the great toe."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "What does each muscle do?",
+    "categories": [
+     "Flexes the knee",
+     "Extends the knee",
+     "Plantar flexes the foot",
+     "Flexes the toes"
+    ],
+    "items": [
+     {
+      "label": "Hamstrings",
+      "category": 0,
+      "feedback": "Back of the thigh."
+     },
+     {
+      "label": "Quadriceps femoris",
+      "category": 1,
+      "feedback": "Front of the thigh."
+     },
+     {
+      "label": "Gastrocnemius",
+      "category": 2,
+      "feedback": "The calf muscle."
+     },
+     {
+      "label": "Flexor digitorum longus",
+      "category": 3,
+      "feedback": "Flexes the toes."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap9-16",
+   "title": "Muscle disorders and aging",
+   "teach": [
+    "Atrophy is a decrease in muscle bulk from lack of exercise, as in a cast. Hypertrophy is the opposite: muscle growth from exercise like weightlifting.",
+    "Tendinitis is inflammation of a tendon. Fibromyalgia is a form of rheumatism that doesn’t affect the joints: long-term muscle and tendon pain, stiffness and fatigue. Others in the chapter include muscular dystrophy, myasthenia gravis, ALS, tetanus and plantar fasciitis.",
+    "From the late 20s, muscle fibers are gradually lost; by the late 70s about half of muscle mass is gone. Walking and resistance exercise slow this."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the term.",
+    "categories": [
+     "Atrophy",
+     "Hypertrophy",
+     "Tendinitis",
+     "Fibromyalgia"
+    ],
+    "items": [
+     {
+      "label": "Loss of muscle bulk from lack of exercise",
+      "category": 0,
+      "feedback": "Atrophy."
+     },
+     {
+      "label": "Muscle growth from weightlifting",
+      "category": 1,
+      "feedback": "Hypertrophy."
+     },
+     {
+      "label": "Inflammation of a tendon",
+      "category": 2,
+      "feedback": "Tendinitis."
+     },
+     {
+      "label": "Rheumatism that doesn’t affect the joints",
+      "category": 3,
+      "feedback": "Fibromyalgia."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Muscle fiber",
+   "back": "A skeletal muscle cell (long relative to its width)."
+  },
+  {
+   "front": "Sarcolemma",
+   "back": "The muscle fiber’s polarized cell membrane."
+  },
+  {
+   "front": "Endomysium / perimysium / epimysium",
+   "back": "Around each fiber / each fascicle / the whole muscle."
+  },
+  {
+   "front": "Fascicle",
+   "back": "A bundle of muscle fibers."
+  },
+  {
+   "front": "A band / I band",
+   "back": "Dark, thick myosin / light, thin actin."
+  },
+  {
+   "front": "Sarcomere",
+   "back": "Section between two Z lines; where contraction happens."
+  },
+  {
+   "front": "T tubules",
+   "back": "Carry the action potential deep into the fiber."
+  },
+  {
+   "front": "Sarcoplasmic reticulum",
+   "back": "Stores and releases calcium."
+  },
+  {
+   "front": "Motor unit",
+   "back": "One motor neuron and all the fibers it supplies."
+  },
+  {
+   "front": "Resting potential",
+   "back": "More K⁺ inside, more Na⁺ outside; inside negative."
+  },
+  {
+   "front": "Acetylcholine",
+   "back": "Neurotransmitter released at the neuromuscular junction."
+  },
+  {
+   "front": "Troponin and tropomyosin",
+   "back": "Block actin and myosin until calcium arrives."
+  },
+  {
+   "front": "Phosphocreatine",
+   "back": "Found only in muscle; rapid source of ATP."
+  },
+  {
+   "front": "Lactic acid",
+   "back": "Builds up when pyruvic acid can’t be used without oxygen."
+  },
+  {
+   "front": "All-or-none law",
+   "back": "A single muscle cell contracts fully or not at all."
+  },
+  {
+   "front": "Tone",
+   "back": "Steady partial contraction of a muscle."
+  },
+  {
+   "front": "Isotonic / isometric",
+   "back": "Shortens, same tension / same length, more tension."
+  },
+  {
+   "front": "Origin / insertion",
+   "back": "Fixed attachment / movable attachment."
+  },
+  {
+   "front": "Prime mover / antagonist / synergist",
+   "back": "Does the movement / opposes it / assists it."
+  },
+  {
+   "front": "Levator / depressor",
+   "back": "Raises / lowers a part."
+  },
+  {
+   "front": "Frontalis",
+   "back": "Raises the eyebrows and wrinkles the forehead."
+  },
+  {
+   "front": "Superior rectus",
+   "back": "Raises the eye."
+  },
+  {
+   "front": "Rectus abdominis",
+   "back": "Front abdominal muscle built by sit-ups."
+  },
+  {
+   "front": "Hamstrings / quadriceps",
+   "back": "Flex / extend the knee."
+  },
+  {
+   "front": "Atrophy / hypertrophy",
+   "back": "Loss of muscle bulk / increase in muscle size."
+  },
+  {
+   "front": "Fibromyalgia",
+   "back": "Rheumatism that doesn’t affect the joints."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Muscles that move a limb away from the midline are called ________________________.",
+   "o": [
+    "extensors",
+    "abductors",
+    "flexors",
+    "adductors"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 9 says that when a limb is moved away from the midline, an abductor is functioning. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The flexor digitorum longus flex the _________________________.",
+   "o": [
+    "wrist",
+    "elbow",
+    "toes",
+    "fingers"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Table 9-10 in Chapter 9 says the flexor digitorum longus flexes the toes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "What is the molecule that is found only in muscle tissue and provides a rapid source of high-energy ATP for muscle contraction?",
+   "o": [
+    "acid",
+    "creatine",
+    "phosphocreatine",
+    "fatty acids"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 9 says phosphocreatine is found only in muscle tissue and provides a rapid source of high-energy ATP for contraction. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Each individual bundle of muscle cells is called a ____________________________.",
+   "o": [
+    "fascicle",
+    "muscle fiber",
+    "myofibril",
+    "microfilament"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says each individual bundle of muscle cells is a fascicle. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "If oxygen is not available to a muscle cell, pyruvic acid is changed to __________________ and builds up in the muscle cell.",
+   "o": [
+    "fatty acid",
+    "phosphocreatine",
+    "lactic acid",
+    "glucose"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 9 says that without oxygen, pyruvic acid changes to lactic acid and builds up in the muscle cell. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The muscle we develop when we do sit-ups is the __________________________________.",
+   "o": [
+    "transversus abdominis",
+    "external oblique",
+    "rectus abdominis",
+    "internal oblique"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 9 says the rectus abdominis is the muscle we develop when we do sit-ups. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Muscle cells have positively charged _______________________ ions in greater concentration outside the muscle cell than inside the cell.",
+   "o": [
+    "sodium",
+    "potassium",
+    "chloride",
+    "calcium"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says there is a greater concentration of sodium ions outside the muscle cell than inside. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Muscles that raise a part of the body are called ________________________.",
+   "o": [
+    "levators",
+    "flexors",
+    "rotators",
+    "depressors"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says levators raise a part of the body. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Inflammation of a tendon is called _________________________.",
+   "o": [
+    "tendonitis",
+    "ligament",
+    "hypertrophy",
+    "bursitis"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says tendinitis (also spelled tendonitis) is an inflammation of a tendon. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Which movement involves raising the foot upward at the ankle joint?",
+   "o": [
+    "abduction",
+    "elevation",
+    "dorsiflexion",
+    "depression"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 9 says muscles of dorsiflexion turn the foot upward at the ankle. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The coarse irregular connective tissue that surrounds the whole muscle is called the ______________.",
+   "o": [
+    "perimysium",
+    "endomysium",
+    "fasciculi",
+    "epimysium"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 9 says the coarse irregular connective tissue that surrounds the whole muscle is the epimysium. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The _____________________ muscle raises your eyebrows and wrinkles the skin of your forehead.",
+   "o": [
+    "occipitalis",
+    "frontalis",
+    "zygomaticus",
+    "buccinators"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 9 says the frontalis raises your eyebrows and wrinkles the skin of your forehead. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The light bands are made of the thin filaments of the protein _____________________.",
+   "o": [
+    "myosin",
+    "actin",
+    "tropomyosin",
+    "troponin"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 9 says the light bands are made of the thin filaments of the protein actin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "As the nerve impulse of an axon reaches the neuromuscular junction, it triggers the release of a neurotransmitter called _________________________ .",
+   "o": [
+    "acetylcholine",
+    "dopamine",
+    "epinephrine",
+    "norepinephrine"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says the nerve impulse triggers the axon terminals to release the neurotransmitter acetylcholine. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Because skeletal muscles are much longer than their width, they are often called muscle ________________.",
+   "o": [
+    "ligaments",
+    "fibers",
+    "filaments",
+    "striations"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 9 says skeletal muscle cells are often called muscle fibers because they are much longer than they are wide. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "A form of rheumatism that does not affect the joints is called _____________________ .",
+   "o": [
+    "tendinitis",
+    "tetanus",
+    "myasthenia gravis",
+    "fibromyalgia"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 9 says fibromyalgia is a form of rheumatism that does not affect the joints. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "A decrease in muscle bulk due to a lack of exercise is called _____________________.",
+   "o": [
+    "dystrophy",
+    "atrophy",
+    "hypertrophy",
+    "anatrophy"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 9 says atrophy is a decrease in muscle bulk due to a lack of exercise. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Which type of striated muscle is controlled by the autonomic nervous system?",
+   "o": [
+    "cardiac",
+    "smooth",
+    "skeletal",
+    "voluntary"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Cardiac muscle is striated and controlled by the autonomic nervous system. Skeletal muscle is striated but voluntary, and smooth muscle is autonomic but not striated. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The __________________ rectus muscle raises the eye.",
+   "o": [
+    "inferior",
+    "superior",
+    "medial",
+    "lateral"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 9 says the superior rectus raises the eye. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The action potential traveling down the T tubule causes the sarcoplasmic reticulum to release _________________ ions into the fluids surrounding the myofibrils.",
+   "o": [
+    "sodium",
+    "potassium",
+    "chloride",
+    "calcium"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 9 says the action potential causes the sarcoplasmic reticulum to release stored calcium ions into the fluids surrounding the myofibrils. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "Skeletal muscle is involuntary.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Skeletal muscle is voluntary. Smooth and cardiac muscle are involuntary. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The movable attachment, where the effects of muscle contraction are seen, is called the origin.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The movable attachment is the insertion. The origin is the more fixed attachment. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "When lifting a weight, muscles become shorter and thicker but the tone or tension remains the same and is referred to as isometric contraction.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. That describes isotonic contraction. In isometric contraction the muscle stays the same length while tension increases. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "The dark bands of skeletal muscle are made of thick filaments (myosin).",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says the dark bands are made of the thick filaments of the protein myosin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  },
+  {
+   "q": "In performing any given movement, the muscles performing the actual movement are called the prime movers or agonists.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 9 says the muscles performing the actual movement are called the prime movers or agonists. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 9."
+  }
+ ]
+}
