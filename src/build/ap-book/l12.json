@@ -1,0 +1,919 @@
+{
+ "lesson": 12,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 12 of your course, built from Chapter 12 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap12-1",
+   "title": "What the endocrine system does",
+   "teach": [
+    "The endocrine system controls the body chemically, keeping the internal environment within narrow ranges (homeostasis). It shares this job with the nervous system.",
+    "Endocrine glands are ductless: they secrete hormones straight into the bloodstream, which carries them to target organs. Exocrine glands, like sweat and salivary glands, have ducts.",
+    "Hormones control cellular respiration, growth and reproduction, water and electrolyte balance, the secretion of other hormones, behavior, reproductive cycles, and growth and development."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Endocrine or exocrine?",
+    "categories": [
+     "Endocrine (ductless)",
+     "Exocrine (ducts)"
+    ],
+    "items": [
+     {
+      "label": "Thyroid gland",
+      "category": 0,
+      "feedback": "Hormones go into the blood."
+     },
+     {
+      "label": "Sweat gland",
+      "category": 1,
+      "feedback": "Has a duct to the skin."
+     },
+     {
+      "label": "Pituitary gland",
+      "category": 0,
+      "feedback": "Endocrine."
+     },
+     {
+      "label": "Salivary gland",
+      "category": 1,
+      "feedback": "Has a duct to the mouth."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-2",
+   "title": "Negative feedback",
+   "teach": [
+    "Most hormone control works by negative feedback, like a thermostat. When a hormone’s level rises high enough, it inhibits the gland that made it, so secretion stops or drops. When the level falls, the inhibition lifts and secretion starts again.",
+    "Thyroid hormones are a good example: rising thyroid hormone inhibits TSH from the pituitary and TRH from the hypothalamus."
+   ],
+   "visual": {
+    "kind": "cycle",
+    "title": "Negative feedback loop",
+    "items": [
+     {
+      "label": "Gland secretes hormone",
+      "detail": "Hormone level rises."
+     },
+     {
+      "label": "Level gets high",
+      "detail": "Inhibits the gland."
+     },
+     {
+      "label": "Secretion drops",
+      "detail": "Hormone level falls."
+     },
+     {
+      "label": "Inhibition lifts",
+      "detail": "Gland secretes again."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "In negative feedback, a rising blood level of a hormone:",
+    "options": [
+     {
+      "label": "Inhibits further secretion from its gland",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Makes the gland secrete even more",
+      "correct": false,
+      "feedback": "That would be positive feedback."
+     },
+     {
+      "label": "Has no effect on the gland",
+      "correct": false,
+      "feedback": "It inhibits the gland."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-3",
+   "title": "Three chemical types of hormones",
+   "teach": [
+    "Modified amino acid hormones: epinephrine and norepinephrine (adrenal medulla), oxytocin and vasopressin (posterior pituitary).",
+    "Protein hormones: insulin (pancreatic islets), growth hormone and the gonad-stimulating hormones (anterior pituitary).",
+    "Steroid hormones are lipids: cortisol (adrenal cortex), estrogen and testosterone (gonads).",
+    "Protein and amino acid hormones bind to receptors on the cell membrane. Steroids pass through the membrane to receptors inside. Steroids can be taken by mouth (like birth control pills), but insulin is broken down in the gut, so it must be injected."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which chemical type?",
+    "categories": [
+     "Modified amino acid",
+     "Protein",
+     "Steroid"
+    ],
+    "items": [
+     {
+      "label": "Epinephrine",
+      "category": 0,
+      "feedback": "Modified amino acid."
+     },
+     {
+      "label": "Insulin",
+      "category": 1,
+      "feedback": "Protein."
+     },
+     {
+      "label": "Growth hormone",
+      "category": 1,
+      "feedback": "Protein."
+     },
+     {
+      "label": "Cortisol",
+      "category": 2,
+      "feedback": "Steroid."
+     },
+     {
+      "label": "Testosterone",
+      "category": 2,
+      "feedback": "Steroid."
+     },
+     {
+      "label": "Oxytocin",
+      "category": 0,
+      "feedback": "Modified amino acid."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-4",
+   "title": "The hypothalamus and the pituitary",
+   "teach": [
+    "The pituitary is called the master gland because it controls many other glands, but the hypothalamus actually controls the pituitary. The infundibulum is the stalk connecting them.",
+    "The hypothalamus makes releasing hormones and release-inhibiting hormones that travel through a portal vein to the anterior pituitary. For example, TRH (thyrotropin-releasing hormone) makes the anterior pituitary release TSH.",
+    "The pituitary (hypophysis) is pea-sized and sits in a hollow of the sphenoid bone. It has an anterior lobe (adenohypophysis) and a posterior lobe (neurohypophysis)."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which releasing hormone from the hypothalamus makes the anterior pituitary secrete TSH?",
+    "options": [
+     {
+      "label": "TRH",
+      "correct": true,
+      "feedback": "Right: thyrotropin-releasing hormone."
+     },
+     {
+      "label": "PTH",
+      "correct": false,
+      "feedback": "PTH is parathyroid hormone."
+     },
+     {
+      "label": "CRH",
+      "correct": false,
+      "feedback": "CRH triggers ACTH."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-5",
+   "title": "Anterior pituitary hormones",
+   "teach": [
+    "The anterior lobe makes seven hormones.",
+    "Growth hormone (GH): cell growth, protein synthesis, bone and muscle growth. Too little in childhood causes pituitary dwarfism; too much in childhood causes gigantism; too much after childhood causes acromegaly.",
+    "TSH stimulates the thyroid. ACTH stimulates the adrenal cortex to make cortisol. MSH increases melanin, darkening the skin. FSH develops ovarian follicles, or sperm in males. LH triggers ovulation and progesterone, or testosterone in males. Prolactin (LTH) stimulates milk production after delivery."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which anterior pituitary hormone?",
+    "categories": [
+     "GH",
+     "MSH",
+     "LH",
+     "Prolactin"
+    ],
+    "items": [
+     {
+      "label": "Too much after childhood causes acromegaly",
+      "category": 0,
+      "feedback": "Growth hormone."
+     },
+     {
+      "label": "Darkens the skin",
+      "category": 1,
+      "feedback": "Melanocyte-stimulating hormone."
+     },
+     {
+      "label": "Stimulates ovulation",
+      "category": 2,
+      "feedback": "Luteinizing hormone."
+     },
+     {
+      "label": "Stimulates milk production after childbirth",
+      "category": 3,
+      "feedback": "Prolactin."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-6",
+   "title": "Posterior pituitary hormones",
+   "teach": [
+    "The posterior lobe stores hormones made by neurons in the hypothalamus.",
+    "Antidiuretic hormone (ADH, or vasopressin) makes the kidneys reabsorb water, so less is lost in urine. A deficiency causes diabetes insipidus: 20 to 30 liters of urine a day and severe dehydration.",
+    "Oxytocin stimulates the uterus to contract during childbirth and makes the mammary glands eject milk. It’s sometimes given to induce labor."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "ADH or oxytocin?",
+    "categories": [
+     "ADH (vasopressin)",
+     "Oxytocin"
+    ],
+    "items": [
+     {
+      "label": "Kidneys reabsorb water",
+      "category": 0,
+      "feedback": "ADH."
+     },
+     {
+      "label": "Uterine contractions in childbirth",
+      "category": 1,
+      "feedback": "Oxytocin."
+     },
+     {
+      "label": "Deficiency causes diabetes insipidus",
+      "category": 0,
+      "feedback": "ADH."
+     },
+     {
+      "label": "Milk ejection during breastfeeding",
+      "category": 1,
+      "feedback": "Oxytocin."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-7",
+   "title": "The thyroid gland",
+   "teach": [
+    "The thyroid has two lobes joined by the isthmus, below the larynx. Its follicles make thyroxine (T4, four iodine atoms) and triiodothyronine (T3), which regulate the metabolism of carbohydrates, fats and proteins and are needed for growth and nervous system development. It needs iodine; without enough, it enlarges into a goiter.",
+    "Hypothyroidism: in children, cretinism (stunted growth and impaired development); in adults, a slow metabolism, sluggishness and myxedema, a build-up of fluid in the tissue under the skin.",
+    "Hyperthyroidism: nervousness, fatigue and a high metabolic rate. Graves’ disease is caused by overproduction of thyroid hormone, often with a goiter and bulging eyes.",
+    "The thyroid also makes calcitonin, which lowers blood calcium."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the thyroid condition.",
+    "categories": [
+     "Goiter",
+     "Myxedema",
+     "Graves’ disease",
+     "Cretinism"
+    ],
+    "items": [
+     {
+      "label": "Enlarged thyroid from too little iodine",
+      "category": 0,
+      "feedback": "Goiter."
+     },
+     {
+      "label": "Fluid build-up under the skin in adults",
+      "category": 1,
+      "feedback": "Myxedema."
+     },
+     {
+      "label": "Overproduction of thyroid hormone",
+      "category": 2,
+      "feedback": "Graves’ disease."
+     },
+     {
+      "label": "Low thyroid hormone in young children",
+      "category": 3,
+      "feedback": "Cretinism."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-8",
+   "title": "Parathyroid glands and calcium",
+   "teach": [
+    "Four raisin-sized parathyroid glands sit on the back of the thyroid. They secrete parathyroid hormone (PTH, parathormone).",
+    "When blood calcium is low, PTH makes osteoclasts break down bone matrix, releasing calcium and phosphate into the blood. It also makes the kidneys keep calcium and the intestines absorb more (with vitamin D). Calcitonin from the thyroid does the opposite.",
+    "Hyperparathyroidism softens and deforms bones and can cause kidney stones. Hypoparathyroidism lowers blood calcium, causing muscle cramps and spasms."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Raises or lowers blood calcium?",
+    "categories": [
+     "Raises blood calcium",
+     "Lowers blood calcium"
+    ],
+    "items": [
+     {
+      "label": "Parathyroid hormone (PTH)",
+      "category": 0,
+      "feedback": "Releases calcium from bone."
+     },
+     {
+      "label": "Calcitonin",
+      "category": 1,
+      "feedback": "Keeps calcium in bone."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-9",
+   "title": "The adrenal glands",
+   "teach": [
+    "The adrenal (suprarenal) glands sit on top of each kidney. The inner medulla and outer cortex work as two separate glands.",
+    "The adrenal medulla makes epinephrine (adrenaline) and some norepinephrine, the fight-or-flight hormones, when signaled by the sympathetic nervous system. They raise blood glucose, heart rate and blood pressure.",
+    "The adrenal cortex has three layers. The outer layer secretes mineralocorticoids, mainly aldosterone, which controls sodium and potassium. The middle layer secretes cortisol (a glucocorticoid), which raises blood glucose and reduces inflammation. The inner layer secretes androgens.",
+    "Too little cortex hormone causes Addison’s disease (bronzed skin, low sodium and glucose). Too much causes Cushing’s syndrome (high glucose, puffy moon face, obesity)."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which part or condition?",
+    "categories": [
+     "Adrenal medulla",
+     "Outer cortex",
+     "Addison’s disease",
+     "Cushing’s syndrome"
+    ],
+    "items": [
+     {
+      "label": "Fight-or-flight hormones",
+      "category": 0,
+      "feedback": "Epinephrine and norepinephrine."
+     },
+     {
+      "label": "Mineralocorticoids like aldosterone",
+      "category": 1,
+      "feedback": "Outer layer of the cortex."
+     },
+     {
+      "label": "Too little cortex hormone",
+      "category": 2,
+      "feedback": "Addison’s disease."
+     },
+     {
+      "label": "Too much cortex hormone",
+      "category": 3,
+      "feedback": "Cushing’s syndrome."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-10",
+   "title": "The pancreas and blood glucose",
+   "teach": [
+    "The pancreas is both exocrine (digestive juice) and endocrine. Its pancreatic islets (islets of Langerhans) make two hormones.",
+    "Beta cells secrete insulin after a meal, when glucose is high. Insulin moves glucose into the liver (stored as glycogen), muscle and fat.",
+    "Alpha cells secrete glucagon when glucose is low. Glucagon makes the liver turn glycogen back into glucose.",
+    "Diabetes mellitus comes from a lack of insulin: high blood glucose, glucose in the urine, polyuria, polydipsia (excessive thirst) and polyphagia (intense hunger). If cells burn fat instead, ketones lower blood pH: acidosis."
+   ],
+   "mnemonic": {
+    "cue": "Beta = Builds stores (insulin); Alpha = Activates release (glucagon)",
+    "explanation": "Insulin lowers blood glucose by storing it; glucagon raises it by releasing it."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Insulin or glucagon?",
+    "categories": [
+     "Insulin",
+     "Glucagon"
+    ],
+    "items": [
+     {
+      "label": "Secreted by beta cells",
+      "category": 0,
+      "feedback": "Insulin."
+     },
+     {
+      "label": "Secreted by alpha cells",
+      "category": 1,
+      "feedback": "Glucagon."
+     },
+     {
+      "label": "Released after a meal",
+      "category": 0,
+      "feedback": "Lowers glucose."
+     },
+     {
+      "label": "Turns liver glycogen into glucose",
+      "category": 1,
+      "feedback": "Raises glucose."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-11",
+   "title": "Gonads, thymus and pineal gland",
+   "teach": [
+    "The testes make testosterone, which develops male structures and secondary sex characteristics. Anabolic steroids are variants of testosterone and have serious side effects. The ovaries make estrogen and progesterone, which develop female structures and control the menstrual cycle.",
+    "The thymus, behind the sternum, secretes thymosin, which helps T lymphocytes develop. It’s largest in childhood and shrinks with age.",
+    "The pineal gland secretes melatonin, which regulates circadian rhythms (sleep–wake cycles). Darkness increases melatonin; bright light reduces it. Seasonal affective disorder occurs in people sensitive to an overproduction of melatonin in dark, cloudy winters. The pineal gland also secretes serotonin."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which gland?",
+    "categories": [
+     "Testes",
+     "Thymus",
+     "Pineal gland"
+    ],
+    "items": [
+     {
+      "label": "Testosterone",
+      "category": 0,
+      "feedback": "Testes."
+     },
+     {
+      "label": "Thymosin and T cell development",
+      "category": 1,
+      "feedback": "Thymus."
+     },
+     {
+      "label": "Melatonin and circadian rhythms",
+      "category": 2,
+      "feedback": "Pineal gland."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap12-12",
+   "title": "Hormones and aging",
+   "teach": [
+    "Growth hormone falls with age, so bone and lean muscle decrease and fat increases. Sex hormones decline in later middle age; in women this is menopause.",
+    "Less thymosin means fewer mature lymphocytes and more infections. Less melatonin changes sleep patterns, often with daytime tiredness."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "With age, less growth hormone leads to:",
+    "options": [
+     {
+      "label": "Less bone mass and lean muscle",
+      "correct": true,
+      "feedback": "Right. Exercise helps limit this."
+     },
+     {
+      "label": "More bone growth",
+      "correct": false,
+      "feedback": "Bone mass decreases."
+     },
+     {
+      "label": "Higher melatonin",
+      "correct": false,
+      "feedback": "Melatonin decreases with age too."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Endocrine glands",
+   "back": "Ductless; secrete hormones into the blood."
+  },
+  {
+   "front": "Negative feedback",
+   "back": "Rising hormone level inhibits its own gland."
+  },
+  {
+   "front": "Protein hormones",
+   "back": "Insulin, growth hormone, gonad-stimulating hormones."
+  },
+  {
+   "front": "Steroid hormones",
+   "back": "Cortisol, estrogen, testosterone (lipids)."
+  },
+  {
+   "front": "Modified amino acid hormones",
+   "back": "Epinephrine, norepinephrine, oxytocin, vasopressin."
+  },
+  {
+   "front": "Infundibulum",
+   "back": "Stalk connecting the hypothalamus to the pituitary."
+  },
+  {
+   "front": "Pituitary (hypophysis)",
+   "back": "Two lobes: anterior and posterior."
+  },
+  {
+   "front": "TRH",
+   "back": "From the hypothalamus; triggers TSH release."
+  },
+  {
+   "front": "Growth hormone excess",
+   "back": "Childhood: gigantism. After childhood: acromegaly."
+  },
+  {
+   "front": "MSH",
+   "back": "Increases melanin, darkening the skin."
+  },
+  {
+   "front": "LH",
+   "back": "Stimulates ovulation; testosterone in males."
+  },
+  {
+   "front": "Prolactin",
+   "back": "Stimulates milk production after delivery."
+  },
+  {
+   "front": "ADH",
+   "back": "Kidneys reabsorb water; deficiency causes diabetes insipidus."
+  },
+  {
+   "front": "Oxytocin",
+   "back": "Uterine contractions in labor; milk ejection."
+  },
+  {
+   "front": "Thyroid hormones",
+   "back": "T4 (thyroxine) and T3; regulate metabolism."
+  },
+  {
+   "front": "Goiter",
+   "back": "Enlarged thyroid from too little iodine."
+  },
+  {
+   "front": "Myxedema",
+   "back": "Fluid build-up under the skin in adult hypothyroidism."
+  },
+  {
+   "front": "Graves’ disease",
+   "back": "Overproduction of thyroid hormone."
+  },
+  {
+   "front": "PTH",
+   "back": "Raises blood calcium by releasing it from bone."
+  },
+  {
+   "front": "Hyperparathyroidism",
+   "back": "Bones soften and deform; kidney stones."
+  },
+  {
+   "front": "Epinephrine and norepinephrine",
+   "back": "Fight-or-flight hormones of the adrenal medulla."
+  },
+  {
+   "front": "Mineralocorticoids",
+   "back": "From the outer adrenal cortex; mainly aldosterone."
+  },
+  {
+   "front": "Cortisol",
+   "back": "Glucocorticoid; raises blood glucose; reduces inflammation."
+  },
+  {
+   "front": "Addison’s / Cushing’s",
+   "back": "Too little / too much adrenal cortex hormone."
+  },
+  {
+   "front": "Beta / alpha cells",
+   "back": "Insulin / glucagon."
+  },
+  {
+   "front": "Polydipsia",
+   "back": "Excessive thirst."
+  },
+  {
+   "front": "Acidosis",
+   "back": "A lowering of blood pH."
+  },
+  {
+   "front": "Melatonin",
+   "back": "From the pineal gland; regulates circadian rhythms."
+  },
+  {
+   "front": "Seasonal affective disorder",
+   "back": "Linked to overproduction of melatonin in dark winters."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Insulin and growth hormone are examples of ___________________________ hormones.",
+   "o": [
+    "steroid",
+    "modified amino acid",
+    "protein",
+    "exocrine"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 12 lists insulin and growth hormone as protein hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "An accumulation of fluid in subcutaneous tissue is called _______________________ .",
+   "o": [
+    "goiter",
+    "myxedema",
+    "cretinism",
+    "acromegaly"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 12 says an accumulation of fluid in subcutaneous tissues is called myxedema. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Modified amino acid hormones include _______________________ .",
+   "o": [
+    "epinephrine",
+    "testosterone",
+    "estrogen",
+    "insulin"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 lists epinephrine and norepinephrine as modified amino acid hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Overproduction of thyroid hormone results in _______________________________ .",
+   "o": [
+    "cretinism",
+    "Addison’s disease",
+    "polydipsia",
+    "Graves’ disease"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says Graves’ disease is a type of hyperthyroidism caused by overproduction of thyroid hormone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Secretion of ______ from the anterior pituitary increases pigmentation or darkening of the skin.",
+   "o": [
+    "TSH",
+    "LH",
+    "MSH",
+    "GH"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 12 says melanocyte-stimulating hormone increases melanin production, darkening the skin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Testosterone and cortisol are examples of _______________________________ hormones.",
+   "o": [
+    "steroid",
+    "modified amino acid",
+    "protein",
+    "exocrine"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 lists cortisol and testosterone as steroid hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Excess secretion of growth hormone after childhood results in ______________________.",
+   "o": [
+    "gigantism",
+    "dwarfism",
+    "adrenogenital syndrome",
+    "acromegaly"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says excess growth hormone after childhood results in acromegaly. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Stimulation of uterine muscle contractions during childbirth is triggered by ______________________ .",
+   "o": [
+    "oxytocin",
+    "estrogen",
+    "peripheral",
+    "aldosterone"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 says oxytocin stimulates contraction of the uterus in the late stages of childbirth. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "In the pancreas, insulin is secreted by cells.",
+   "o": [
+    "alpha",
+    "beta",
+    "chief",
+    "oxyphil"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 12 says beta cells secrete insulin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The release of ___________________, stimulates the liver to convert the stored glycogen into glucose.",
+   "o": [
+    "calcitonin",
+    "insulin",
+    "cortisol",
+    "glucagon"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says glucagon stimulates the liver to convert stored glycogen into glucose. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Excessive thirst is called _____________________________.",
+   "o": [
+    "polydipsia",
+    "polynurea",
+    "polyphagia",
+    "glycosuria"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 calls excessive thirst polydipsia. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Anabolic steroids are variants of the male sex hormone _________________________.",
+   "o": [
+    "estrogen",
+    "progesterone",
+    "testosterone",
+    "prolactin"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 12 says anabolic steroids are variants of the male sex hormone testosterone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Following childbirth, _______________________ stimulates milk production in the mammary glands.",
+   "o": [
+    "estrogen",
+    "testosterone",
+    "progesterone",
+    "prolactin"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says prolactin stimulates milk production in the mammary glands following delivery. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The outer layer of the adrenal cortex secretes a group of hormones called _______________.",
+   "o": [
+    "cortisol",
+    "androgens",
+    "triphosphates",
+    "mineralocorticoids"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says the outer layer of the adrenal cortex secretes mineralocorticoid hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The common disorder ______________________ is caused by a deficiency in insulin production.",
+   "o": [
+    "polynuria",
+    "diabetes mellitus",
+    "diabetes insipidus",
+    "polyphagia"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Diabetes mellitus is caused by a lack of insulin; Chapter 12 says insulin must be injected to treat it. Diabetes insipidus comes from a lack of ADH. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The hormones insulin and glucagon are produced by the ____________________________.",
+   "o": [
+    "pancreas",
+    "thyroid",
+    "pituitary",
+    "adrenals"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 says the pancreatic islets produce insulin and glucagon. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Secretion of _________________________ from the anterior pituitary stimulates ovulation in the ovary.",
+   "o": [
+    "luteinizing hormone",
+    "estrogen",
+    "testosterone",
+    "aldosterone"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 says luteinizing hormone stimulates ovulation in the ovary. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The ______________________ gland, also known as the hypophysis, is divided into two lobes.",
+   "o": [
+    "pineal",
+    "pituitary",
+    "adrenal",
+    "ovarian"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 12 says the pituitary gland, also called the hypophysis, is divided into two lobes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Too much secretion of adrenal cortex hormones can lead to ________________________.",
+   "o": [
+    "Addison’s disease",
+    "Graves’ disease",
+    "gigantism",
+    "Cushing’s syndrome"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says too much secretion from the adrenal cortex can lead to Cushing’s syndrome. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The ___________________ gland stimulates the release of calcium and phosphate ions into the blood when calcium levels become too low.",
+   "o": [
+    "thyroid",
+    "pineal",
+    "parathyroid",
+    "pituitary"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 12 says parathyroid hormone releases calcium and phosphate ions into the blood. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Inadequate amounts of iodine in the diet leads to an enlarged thyroid gland, known as a(n) __________________________.",
+   "o": [
+    "myxedema",
+    "cretin",
+    "goiter",
+    "edema"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 12 says without enough iodine the thyroid enlarges, forming a goiter. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Circadian rhythms are regulated by __________________________.",
+   "o": [
+    "aldosterone",
+    "melatonin",
+    "cortisol",
+    "estrogen"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 12 says studies indicate melatonin regulates circadian rhythms. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Seasonal affective disorder occurs in individuals who are sensitive to overproduction of ___________________.",
+   "o": [
+    "prolactin",
+    "melanin",
+    "aldosterone",
+    "melatonin"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 12 says seasonal affective disorder occurs in people sensitive to an overproduction of melatonin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The release of ________ from the hypothalamus stimulates the anterior pituitary to secrete TSH.",
+   "o": [
+    "TIH",
+    "TRH",
+    "TH",
+    "PTH"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 12 says the hypothalamus produces thyrotropin-releasing hormone (TRH), which stimulates the anterior pituitary to secrete TSH. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Hyperparathyroidism results in the softening and deformation of the _______________.",
+   "o": [
+    "bones",
+    "kidneys",
+    "intestines",
+    "adrenal glands"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 says hyperparathyroidism breaks down bone matrix, so bones become soft and deformed. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Epinephrine and norepinephrine are commonly referred to as the fight-or-flight hormones.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 says epinephrine and norepinephrine are commonly called the fight-or-flight hormones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The exocrine glands are ductless glands that secrete hormone directly into the bloodstream.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Endocrine glands are ductless and secrete into the bloodstream. Exocrine glands have ducts. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "Negative feedback occurs when the increasing blood level of a hormone inhibits its continued secretion from its source endocrine gland.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 describes negative feedback exactly this way. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "The thalamus plays a major role in controlling secretions from the pituitary gland.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. It’s the hypothalamus, not the thalamus, that controls secretions from the pituitary gland. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  },
+  {
+   "q": "A lowering of blood pH is called acidosis.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 12 says a lowering of blood pH is called acidosis. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 12."
+  }
+ ]
+}
