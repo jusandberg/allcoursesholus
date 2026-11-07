@@ -1,0 +1,1093 @@
+{
+ "lesson": 7,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 7 of your course, built from Chapter 7 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap7-1",
+   "title": "What the skeleton does",
+   "teach": [
+    "The skeletal system includes all the bones of the body plus their cartilage, tendons and ligaments. Bones are living tissue; their hardness comes from mineral salts like calcium phosphate in the matrix. The adult skeleton typically has 206 named bones.",
+    "It has five functions: support, protection of vital organs, movement (bones act as levers for muscles), making blood cells (hematopoiesis, mainly in red marrow), and storage of minerals (calcium and phosphorus) and fat.",
+    "Ligaments attach bone to bone. Tendons attach muscle to bone. Cartilage gives a smooth surface at joints and is the environment in which fetal bone develops."
+   ],
+   "visual": {
+    "kind": "hub",
+    "title": "Five functions of the skeleton",
+    "items": [
+     {
+      "label": "Support",
+      "detail": "Holds up muscles, vessels, nerves, fat and skin."
+     },
+     {
+      "label": "Protection",
+      "detail": "Brain, spinal cord, heart and lungs."
+     },
+     {
+      "label": "Movement",
+      "detail": "Bones are levers pulled by muscles."
+     },
+     {
+      "label": "Blood cell formation",
+      "detail": "Hematopoiesis in red bone marrow."
+     },
+     {
+      "label": "Storage",
+      "detail": "Calcium, phosphorus and fat."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "Making blood cells in red bone marrow is called:",
+    "options": [
+     {
+      "label": "Hematopoiesis",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Ossification",
+      "correct": false,
+      "feedback": "Ossification is the formation of bone."
+     },
+     {
+      "label": "Osteomalacia",
+      "correct": false,
+      "feedback": "That’s softening of the bones in adults."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-2",
+   "title": "Bone cells and growth",
+   "teach": [
+    "Osteoblasts are bone-forming cells that develop from osteoprogenitor cells under the periosteum (the fibrovascular membrane covering bone) and in the endosteum (lining the medullary cavity). When an osteoblast is surrounded by matrix it becomes an osteocyte, a mature bone cell.",
+    "Osteoclasts, which come from immune cells, reabsorb (remove) bone during remodeling, such as after a break or when braces straighten a bow-legged child’s legs.",
+    "Strain builds bone: the more stress on a bone, the more bone is deposited. That’s why the heel bone is so large, why bones in a cast weaken, and why exercise strengthens them.",
+    "Bones grow in length at the epiphyseal plate until about 15 in girls and 16 in boys; maturation continues to about 21."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which bone cell?",
+    "categories": [
+     "Osteoblast",
+     "Osteocyte",
+     "Osteoclast"
+    ],
+    "items": [
+     {
+      "label": "Forms new bone",
+      "category": 0,
+      "feedback": "Osteoblasts build bone."
+     },
+     {
+      "label": "Mature bone cell in a lacuna",
+      "category": 1,
+      "feedback": "Osteocyte."
+     },
+     {
+      "label": "Reabsorbs bone during remodeling",
+      "category": 2,
+      "feedback": "Osteoclast."
+     },
+     {
+      "label": "Comes from immune system cells",
+      "category": 2,
+      "feedback": "Osteoclasts do."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-3",
+   "title": "Ossification",
+   "teach": [
+    "Ossification is the formation of bone by osteoblasts. The fetal skeleton is mostly cartilage at three months; bone forms over the remaining months. Cartilage doesn’t turn into bone; it’s the environment where bone develops.",
+    "Intramembranous ossification replaces connective tissue membranes with bone. Only the cranial bones form this way. The unfinished membranes are the fontanelles, or soft spots, on a baby’s skull.",
+    "Endochondral ossification forms all the other bones, using cartilage as the environment (endo = inside, chondro = cartilage).",
+    "Calcium balance is controlled by hormones: calcitonin (thyroid) stores calcium in bone; parathormone (parathyroids) releases it into the blood."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which type of ossification?",
+    "categories": [
+     "Intramembranous",
+     "Endochondral"
+    ],
+    "items": [
+     {
+      "label": "Cranial bones",
+      "category": 0,
+      "feedback": "Only the skull forms this way."
+     },
+     {
+      "label": "Femur",
+      "category": 1,
+      "feedback": "Long bones form in cartilage."
+     },
+     {
+      "label": "Leaves fontanelles in a newborn",
+      "category": 0,
+      "feedback": "The soft spots."
+     },
+     {
+      "label": "Cartilage is the environment for bone",
+      "category": 1,
+      "feedback": "Endo-chondral."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-4",
+   "title": "Compact bone and the osteon",
+   "teach": [
+    "Compact bone is dense and strong. Its unit is the haversian system, or osteon, named after Clopton Havers.",
+    "At its center is the haversian (central) canal carrying blood vessels. Around it are concentric rings of bone, each called a lamella. Between the lamellae are tiny cavities, lacunae, each holding an osteocyte. Tiny canals called canaliculi connect the lacunae to each other and to the central canal. Volkmann’s (perforating) canals run crosswise and also carry vessels.",
+    "Tissue fluid flows through all these canals, bringing oxygen and nutrients to the osteocytes and carrying away waste."
+   ],
+   "visual": {
+    "kind": "hub",
+    "title": "Parts of an osteon",
+    "items": [
+     {
+      "label": "Central (haversian) canal",
+      "detail": "Runs lengthwise; blood vessels."
+     },
+     {
+      "label": "Lamella",
+      "detail": "One concentric ring of bone."
+     },
+     {
+      "label": "Lacuna",
+      "detail": "Small cavity holding an osteocyte."
+     },
+     {
+      "label": "Canaliculi",
+      "detail": "Tiny canals linking lacunae."
+     },
+     {
+      "label": "Perforating (Volkmann’s) canal",
+      "detail": "Runs crosswise; blood vessels."
+     }
+    ]
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Match each osteon part to its description.",
+    "categories": [
+     "Lamella",
+     "Lacuna",
+     "Canaliculi",
+     "Central canal"
+    ],
+    "items": [
+     {
+      "label": "A concentric ring of bone",
+      "category": 0,
+      "feedback": "Lamella."
+     },
+     {
+      "label": "Cavity holding an osteocyte",
+      "category": 1,
+      "feedback": "Lacuna."
+     },
+     {
+      "label": "Tiny canals connecting the cavities",
+      "category": 2,
+      "feedback": "Canaliculi."
+     },
+     {
+      "label": "Center of the osteon, with blood vessels",
+      "category": 3,
+      "feedback": "Haversian (central) canal."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-5",
+   "title": "Spongy bone and marrow",
+   "teach": [
+    "Cancellous (spongy) bone is at the ends of long bones and the center of other bones. It’s a meshwork of bony plates called trabeculae, strong but light, with marrow in the spaces.",
+    "Red bone marrow makes red and white blood cells and platelets. In adults it’s in the ribs, vertebrae, sternum and pelvis.",
+    "Yellow bone marrow is mostly fat and fills the medullary cavity in the shafts of long bones."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What fills the medullary cavity of a long bone in an adult?",
+    "options": [
+     {
+      "label": "Yellow bone marrow (mostly fat)",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Red bone marrow",
+      "correct": false,
+      "feedback": "In adults, red marrow is mainly in the ribs, vertebrae, sternum and pelvis."
+     },
+     {
+      "label": "Cartilage",
+      "correct": false,
+      "feedback": "Cartilage covers joint surfaces."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-6",
+   "title": "Bone shapes and the long bone",
+   "teach": [
+    "Long bones are longer than they are wide (femur, humerus, and also metacarpals and phalanges). Short bones lack a long axis (carpals, tarsals). Flat bones are thin, usually curved, and found where muscles need wide attachment or soft organs need protection (sternum, ribs, scapula, skull bones). Irregular bones have odd shapes (vertebrae, ear ossicles). Sesamoid bones are small, round and inside tendons; the patella is the largest.",
+    "A long bone has a diaphysis (shaft, mostly compact bone), a metaphysis at each flared end, and an epiphysis at each end, separated by the epiphyseal (growth) line. The interior of the shaft is the medullary cavity. The periosteum covers the outside."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Classify each bone by shape.",
+    "categories": [
+     "Long",
+     "Short",
+     "Flat",
+     "Irregular",
+     "Sesamoid"
+    ],
+    "items": [
+     {
+      "label": "Femur",
+      "category": 0,
+      "feedback": "Long."
+     },
+     {
+      "label": "Carpals",
+      "category": 1,
+      "feedback": "Short."
+     },
+     {
+      "label": "Sternum",
+      "category": 2,
+      "feedback": "Flat."
+     },
+     {
+      "label": "Vertebra",
+      "category": 3,
+      "feedback": "Irregular."
+     },
+     {
+      "label": "Patella",
+      "category": 4,
+      "feedback": "The largest sesamoid bone."
+     },
+     {
+      "label": "Scapula",
+      "category": 2,
+      "feedback": "Flat."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-7",
+   "title": "Bone markings",
+   "teach": [
+    "Processes stick out: a spine is sharp and slender; a condyle is a rounded knuckle at a joint; a tubercle is a small round bump; a trochanter is a very large projection (femur); a crest is a narrow ridge (iliac crest); a head is an enlarged end, joined to the rest by a neck.",
+    "Fossae are depressions or openings: a suture is a narrow junction between skull bones; a foramen is a hole for vessels and nerves; a meatus is a tube-like canal; a sinus is a cavity in a bone; a sulcus is a groove."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Process (projection) or fossa (depression/opening)?",
+    "categories": [
+     "Process",
+     "Fossa"
+    ],
+    "items": [
+     {
+      "label": "Condyle",
+      "category": 0,
+      "feedback": "A rounded projection."
+     },
+     {
+      "label": "Foramen",
+      "category": 1,
+      "feedback": "An opening."
+     },
+     {
+      "label": "Trochanter",
+      "category": 0,
+      "feedback": "A very large projection."
+     },
+     {
+      "label": "Sinus",
+      "category": 1,
+      "feedback": "A cavity."
+     },
+     {
+      "label": "Crest",
+      "category": 0,
+      "feedback": "A ridge."
+     },
+     {
+      "label": "Meatus",
+      "category": 1,
+      "feedback": "A canal."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-8",
+   "title": "Fractures and bone disorders",
+   "teach": [
+    "A fracture is a break in a bone or its cartilage. Open (compound) fractures break through the skin; closed (simple) ones don’t. A greenstick fracture is incomplete; a comminuted fracture shatters into pieces.",
+    "Rickets (children) and osteomalacia (adults) are caused by a lack of calcium, phosphorus or vitamin D/sunlight; bones stay soft.",
+    "Osteoporosis is loss of bone mass with more fractures, linked to falling estrogen. Paget’s disease is a common nonmetabolic bone disease with irregular thickening and softening of bones. Acromegaly is caused by an overactive anterior pituitary making too much growth hormone, widening the bones of the hands, face, jaws and feet. Spina bifida is a defect in the vertebral arch."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the disorder to its cause or sign.",
+    "categories": [
+     "Rickets",
+     "Osteoporosis",
+     "Paget’s disease",
+     "Acromegaly"
+    ],
+    "items": [
+     {
+      "label": "Children lacking vitamin D and calcium",
+      "category": 0,
+      "feedback": "Rickets."
+     },
+     {
+      "label": "Loss of bone mass after menopause",
+      "category": 1,
+      "feedback": "Osteoporosis."
+     },
+     {
+      "label": "Irregular thickening and softening of bone",
+      "category": 2,
+      "feedback": "Paget’s disease."
+     },
+     {
+      "label": "Too much growth hormone in adults",
+      "category": 3,
+      "feedback": "Acromegaly."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-9",
+   "title": "The skeleton: axial and appendicular",
+   "teach": [
+    "The axial skeleton is the skull (28 bones, cranial and facial), the hyoid, the vertebrae (26), the ribs (24) and the sternum.",
+    "The appendicular skeleton is the upper extremities (64 bones, including the shoulder girdles) and the lower extremities (62 bones, including the pelvic girdle)."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Axial or appendicular?",
+    "categories": [
+     "Axial",
+     "Appendicular"
+    ],
+    "items": [
+     {
+      "label": "Skull",
+      "category": 0,
+      "feedback": "Axial."
+     },
+     {
+      "label": "Ribs",
+      "category": 0,
+      "feedback": "Axial."
+     },
+     {
+      "label": "Femur",
+      "category": 1,
+      "feedback": "Appendicular."
+     },
+     {
+      "label": "Scapula",
+      "category": 1,
+      "feedback": "Part of the shoulder girdle."
+     },
+     {
+      "label": "Vertebrae",
+      "category": 0,
+      "feedback": "Axial."
+     },
+     {
+      "label": "Hip bones",
+      "category": 1,
+      "feedback": "Pelvic girdle."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-10",
+   "title": "Cranial bones",
+   "teach": [
+    "The cranium protects the brain and sense organs. Its bones are joined by immovable sutures.",
+    "Frontal: the forehead and roof of the orbits; joins the parietals at the coronal suture. Parietals (2): the upper sides and roof; joined at the sagittal suture. Occipital: the back and base; joins the parietals at the lambdoid suture and has the foramen magnum, the large opening where the spinal cord connects to the brain. Its occipital condyles rest on the atlas.",
+    "Temporals (2): the lower sides; each encloses an ear and has the mastoid process and the styloid process. Sphenoid: looks like a butterfly and anchors all the cranial bones together. Ethmoid: supports the nasal cavities; the lightest cranial bone.",
+    "The ear ossicles are the malleus, incus and stapes. Wormian bones sit in sutures and aren’t counted."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which cranial bone?",
+    "categories": [
+     "Frontal",
+     "Occipital",
+     "Temporal",
+     "Sphenoid",
+     "Ethmoid"
+    ],
+    "items": [
+     {
+      "label": "Forms the forehead",
+      "category": 0,
+      "feedback": "Frontal."
+     },
+     {
+      "label": "Has the foramen magnum",
+      "category": 1,
+      "feedback": "Occipital."
+     },
+     {
+      "label": "Encloses the ear; has the mastoid process",
+      "category": 2,
+      "feedback": "Temporal."
+     },
+     {
+      "label": "Butterfly-shaped anchor for the cranial bones",
+      "category": 3,
+      "feedback": "Sphenoid."
+     },
+     {
+      "label": "Lightest cranial bone; supports the nasal cavities",
+      "category": 4,
+      "feedback": "Ethmoid."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-11",
+   "title": "Facial bones and the hyoid",
+   "teach": [
+    "Facial bones are joined by sutures, except the mandible, which moves.",
+    "Nasal bones (2) form the bridge of the nose. Palatine bones (2) form the back of the hard palate. Maxillae (2) form the upper jaw and hold the upper teeth; if they don’t fuse, the result is a cleft palate. Zygomatic (malar) bones (2) form the cheeks. Lacrimal bones (2) hold the tear sac. Nasal conchae (turbinates) warm and filter air. The vomer forms the lower nasal septum.",
+    "The mandible is the strongest and longest bone of the face and forms the lower jaw.",
+    "The hyoid bone supports the tongue and doesn’t articulate with any other bone; it hangs from the styloid processes by ligaments."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Which is the strongest and longest bone of the face?",
+    "options": [
+     {
+      "label": "Mandible",
+      "correct": true,
+      "feedback": "Right. It forms the lower jaw."
+     },
+     {
+      "label": "Maxilla",
+      "correct": false,
+      "feedback": "The maxillae form the upper jaw."
+     },
+     {
+      "label": "Zygomatic",
+      "correct": false,
+      "feedback": "The zygomatic bones are the cheekbones."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-12",
+   "title": "The vertebral column",
+   "teach": [
+    "The spine has 26 vertebrae separated by intervertebral disks of fibrocartilage: 7 cervical, 12 thoracic, 5 lumbar, plus the sacrum (5 fused) and the coccyx (4 fused).",
+    "A typical vertebra has a body, a neural arch around the vertebral foramen (for the spinal cord), a spinous process and two transverse processes, and articular processes.",
+    "The atlas (C1) holds up the head; the axis (C2) is the pivot it rotates on. Thoracic vertebrae have long downward spines and facets for ribs. Lumbar vertebrae are the largest and strongest.",
+    "Abnormal curves: kyphosis (hunchback, upper thoracic), lordosis (swayback, lumbar) and scoliosis (sideways curve, usually thoracic)."
+   ],
+   "mnemonic": {
+    "cue": "Breakfast at 7, lunch at 12, dinner at 5",
+    "explanation": "7 cervical, 12 thoracic, 5 lumbar vertebrae."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Match the spinal curvature to the region.",
+    "categories": [
+     "Kyphosis",
+     "Lordosis",
+     "Scoliosis"
+    ],
+    "items": [
+     {
+      "label": "Exaggerated upper thoracic curve (hunchback)",
+      "category": 0,
+      "feedback": "Kyphosis."
+     },
+     {
+      "label": "Exaggerated lumbar curve (swayback)",
+      "category": 1,
+      "feedback": "Lordosis."
+     },
+     {
+      "label": "Sideways curve",
+      "category": 2,
+      "feedback": "Scoliosis."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-13",
+   "title": "The thoracic cage",
+   "teach": [
+    "The rib cage (sternum, costal cartilages, ribs and thoracic vertebrae) protects the heart and lungs.",
+    "The sternum, or breastbone, is shaped like a sword: the manubrium (handle), the gladiolus or body (blade) and the xiphoid process (tip).",
+    "There are 12 pairs of ribs. The upper seven pairs attach directly to the sternum: true ribs. The lower five pairs are false ribs. Pairs 8 to 10 attach indirectly through the 7th rib’s cartilage, and pairs 11 and 12 don’t attach in front at all: floating ribs."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "What kind of rib?",
+    "categories": [
+     "True ribs",
+     "False ribs (attach indirectly)",
+     "Floating ribs"
+    ],
+    "items": [
+     {
+      "label": "Pairs 1–7",
+      "category": 0,
+      "feedback": "Attach directly to the sternum."
+     },
+     {
+      "label": "Pairs 8–10",
+      "category": 1,
+      "feedback": "Attach through the 7th rib’s cartilage."
+     },
+     {
+      "label": "Pairs 11–12",
+      "category": 2,
+      "feedback": "No front attachment."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-14",
+   "title": "Upper extremity",
+   "teach": [
+    "The shoulder (pectoral) girdle is the clavicle (collarbone) and scapula (shoulder blade). The scapula’s glenoid fossa receives the head of the humerus.",
+    "The humerus is the largest and longest bone of the upper arm. The ulna is the longer, medial forearm bone; its olecranon process is the elbow (\"funny bone\"). The radius is the shorter, lateral forearm bone.",
+    "The wrist has 8 carpals in two rows (pisiform, triquetral, lunate, scaphoid; hamate, capitate, trapezoid, trapezium). The palm has 5 metacarpals. Each finger has 3 phalanges; the thumb has 2."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Where is each bone?",
+    "categories": [
+     "Arm",
+     "Forearm",
+     "Wrist",
+     "Hand"
+    ],
+    "items": [
+     {
+      "label": "Humerus",
+      "category": 0,
+      "feedback": "Upper arm."
+     },
+     {
+      "label": "Ulna",
+      "category": 1,
+      "feedback": "Medial forearm."
+     },
+     {
+      "label": "Radius",
+      "category": 1,
+      "feedback": "Lateral forearm."
+     },
+     {
+      "label": "Carpals",
+      "category": 2,
+      "feedback": "Wrist bones."
+     },
+     {
+      "label": "Metacarpals",
+      "category": 3,
+      "feedback": "Palm."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-15",
+   "title": "Pelvic girdle and lower extremity",
+   "teach": [
+    "The pelvic girdle is the two hip (coxal) bones, which meet at the front at the pubic symphysis and at the back with the sacrum. Each hip bone is three fused parts: the ilium (largest, with the iliac crest), the ischium (strongest; you sit on its tuberosity) and the pubis. The obturator foramen is the largest foramen in the body. The acetabulum is the socket for the femur.",
+    "The femur is the largest and heaviest bone. The patella (kneecap) is the largest sesamoid bone. The tibia (shinbone) is the larger lower-leg bone; the fibula is the slender lateral one.",
+    "The ankle has 7 tarsals; the calcaneus (heel) is the largest. The foot has 5 metatarsals and 14 phalanges.",
+    "The foot has two longitudinal arches and one transverse arch. The medial longitudinal arch is the highest. Flat foot is pes planus."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the bone to its description.",
+    "categories": [
+     "Femur",
+     "Patella",
+     "Tibia",
+     "Calcaneus"
+    ],
+    "items": [
+     {
+      "label": "Largest and heaviest bone",
+      "category": 0,
+      "feedback": "Femur."
+     },
+     {
+      "label": "Largest sesamoid bone",
+      "category": 1,
+      "feedback": "Patella."
+     },
+     {
+      "label": "Shinbone",
+      "category": 2,
+      "feedback": "Tibia."
+     },
+     {
+      "label": "Heel bone; largest tarsal",
+      "category": 3,
+      "feedback": "Calcaneus."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap7-16",
+   "title": "Bones and aging",
+   "teach": [
+    "With age, less protein matrix forms and calcium is lost, so bones break more easily. Less collagen in tendons and ligaments makes the skeleton stiffer.",
+    "People \"shrink\" because the intervertebral disks thin: from about age 40, roughly half an inch every 20 years. Calcium-rich food and regular exercise like walking help."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Why do people lose height with age, according to the textbook?",
+    "options": [
+     {
+      "label": "The intervertebral disks thin",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "The femur gets shorter",
+      "correct": false,
+      "feedback": "It’s the disks in the spine."
+     },
+     {
+      "label": "The skull shrinks",
+      "correct": false,
+      "feedback": "It’s the disks."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Skeletal system",
+   "back": "All bones plus their cartilage, tendons and ligaments."
+  },
+  {
+   "front": "Number of bones",
+   "back": "206 named bones."
+  },
+  {
+   "front": "Hematopoiesis",
+   "back": "Making blood cells, chiefly in red bone marrow."
+  },
+  {
+   "front": "Ligament / tendon",
+   "back": "Bone to bone / muscle to bone."
+  },
+  {
+   "front": "Periosteum",
+   "back": "Fibrovascular membrane covering bone."
+  },
+  {
+   "front": "Osteoblast / osteocyte / osteoclast",
+   "back": "Builds bone / mature bone cell / reabsorbs bone."
+  },
+  {
+   "front": "Ossification",
+   "back": "The formation of bone."
+  },
+  {
+   "front": "Intramembranous vs endochondral",
+   "back": "Cranial bones only / all other bones, in cartilage."
+  },
+  {
+   "front": "Calcitonin / parathormone",
+   "back": "Stores calcium in bone / releases it to the blood."
+  },
+  {
+   "front": "Osteon parts",
+   "back": "Central canal, lamellae, lacunae (osteocytes), canaliculi, perforating canals."
+  },
+  {
+   "front": "Lamella",
+   "back": "A concentric ring of bone around the central canal."
+  },
+  {
+   "front": "Medullary cavity",
+   "back": "Interior of a long bone’s shaft, with yellow marrow."
+  },
+  {
+   "front": "Diaphysis / epiphysis",
+   "back": "Shaft / end of a long bone."
+  },
+  {
+   "front": "Flat bones",
+   "back": "Thin; for muscle attachment or protection (sternum, ribs, scapula, skull)."
+  },
+  {
+   "front": "Fracture",
+   "back": "A break in a bone or its cartilage."
+  },
+  {
+   "front": "Rickets",
+   "back": "Soft bones in children from lack of calcium, phosphorus or vitamin D."
+  },
+  {
+   "front": "Paget’s disease",
+   "back": "Nonmetabolic disease with irregular thickening and softening of bone."
+  },
+  {
+   "front": "Acromegaly",
+   "back": "Too much growth hormone from the anterior pituitary in adults."
+  },
+  {
+   "front": "Foramen magnum",
+   "back": "Large opening in the occipital bone for the spinal cord."
+  },
+  {
+   "front": "Sphenoid",
+   "back": "Butterfly-shaped bone anchoring the cranial bones."
+  },
+  {
+   "front": "Mandible",
+   "back": "Strongest and longest facial bone; lower jaw."
+  },
+  {
+   "front": "Vertebrae",
+   "back": "7 cervical, 12 thoracic, 5 lumbar, sacrum, coccyx (26 total)."
+  },
+  {
+   "front": "Lordosis / kyphosis / scoliosis",
+   "back": "Lumbar swayback / thoracic hunchback / sideways curve."
+  },
+  {
+   "front": "True / false / floating ribs",
+   "back": "Pairs 1–7 / 8–12 / 11–12."
+  },
+  {
+   "front": "Sternum parts",
+   "back": "Manubrium, gladiolus (body), xiphoid process."
+  },
+  {
+   "front": "Humerus",
+   "back": "Largest and longest bone of the upper arm."
+  },
+  {
+   "front": "Carpals / tarsals",
+   "back": "Wrist bones / ankle bones."
+  },
+  {
+   "front": "Pelvic girdle",
+   "back": "The two hip bones (ilium, ischium, pubis fused)."
+  },
+  {
+   "front": "Patella",
+   "back": "Kneecap; largest sesamoid bone."
+  },
+  {
+   "front": "Highest arch of the foot",
+   "back": "Medial longitudinal arch."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The breaking of a bone or the associated cartilage is called a(n) __________________________.",
+   "o": [
+    "ricket",
+    "osteomalacia",
+    "epiphysis",
+    "fracture"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 7 says the breaking of bone or associated cartilage is known as a fracture. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The _____________________ system includes all the bones of the body and their associated cartilage, tendons, and ligaments.",
+   "o": [
+    "integumentary",
+    "urinary",
+    "skeletal",
+    "muscular"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 7 says the skeletal system includes all the bones of the body and their associated cartilage, tendons and ligaments. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The _______________ bone is the strongest and longest bone of the face and forms the lower jaw.",
+   "o": [
+    "maxillary",
+    "sphenoid",
+    "mandible",
+    "zygomatic"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 7 says the mandible is the strongest and longest bone of the face. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "Overactivity of the anterior pituitary gland results in excessive secretions of growth hormone and which chronic condition?",
+   "o": [
+    "Acromegaly",
+    "Spina bifida",
+    "Cleft palate",
+    "Osteomalacia"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 says acromegaly is a chronic condition caused by overactivity of the anterior pituitary, resulting in excessive growth hormone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "Abnormal curvature of the lumbar portion of the spine is called _________________.",
+   "o": [
+    "lordosis",
+    "scoliosis",
+    "kyphosis",
+    "rickets"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 says lordosis, or swayback, is an abnormal accentuated lumbar curvature. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "Which disease occurs in children and is caused by deficiencies in calcium and vitamin D?",
+   "o": [
+    "Fracture",
+    "Rickets",
+    "Osteoporosis",
+    "Diaphysis"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 says rickets occurs in children and is caused by deficiencies in calcium, phosphorus or vitamin D. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The term for the formation of bone is called _________________________.",
+   "o": [
+    "calcification",
+    "ossification",
+    "fontanellation",
+    "chondrofication"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 defines ossification as the formation of bone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The ____________________ bone looks like a butterfly and acts as an anchor binding all of the cranial bones together.",
+   "o": [
+    "frontal",
+    "sphenoid",
+    "occipital",
+    "temporal"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 says the sphenoid looks like a butterfly from below and acts as an anchor binding all the cranial bones together. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The _____________________ is the largest and longest bone of the upper arm.",
+   "o": [
+    "ulna",
+    "humerus",
+    "tibia",
+    "radius"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 says the humerus is the largest and longest bone of the upper arm. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The highest arch of the foot is the _____________________ arch.",
+   "o": [
+    "longitudinal",
+    "transverse",
+    "medial longitudinal",
+    "medial"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 7 says the medial longitudinal arch is the highest arch of the foot. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The central canal of an osteon is surrounded by concentric rings of bone, each layer of which is called a(n) ______________________________.",
+   "o": [
+    "canaliculus",
+    "lamella",
+    "lacuna",
+    "perforating canal"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 says the central canals are surrounded by concentric rings of bone, each called a lamella. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "Which bones are thin and typically found where there is a need for extensive muscle attachment or protection for soft or vital parts of the body?",
+   "o": [
+    "Long",
+    "Flat",
+    "Short",
+    "Irregular"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 says flat bones are thin bones found where there is a need for extensive muscle attachment or protection for soft or vital parts. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The _____________________ girdle is made up of the two hip bones.",
+   "o": [
+    "pectoral",
+    "pubic",
+    "iliac",
+    "pelvic"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 7 says the pelvic girdle is made up of the two hip (coxal) bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The fibrovascular membrane that covers bone is called the _________________________.",
+   "o": [
+    "periosteum",
+    "perichondrium",
+    "endosteum",
+    "osseus"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 calls the fibrovascular membrane that covers a bone the periosteum. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The occipital bone has a large opening called the _____________________ through which the spinal cord connects to the brain.",
+   "o": [
+    "mental foramen",
+    "occipital condyle",
+    "foramen magnum",
+    "temporal condyle"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 7 says the occipital bone has a large opening called the foramen magnum, through which the spinal cord connects with the brain. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The upper seven pairs of ribs articulate directly with the sternum and are called _____________ ribs.",
+   "o": [
+    "true",
+    "free",
+    "floating",
+    "false"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 says the upper seven pairs of ribs articulate directly with the sternum and are called true ribs. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "Which common non-metabolic disease presents with irregular thickening and softening of the bones?",
+   "o": [
+    "Gigantism",
+    "Paget’s disease",
+    "Osteoporosis",
+    "Rickets"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 7 says Paget’s disease is a common nonmetabolic bone disease with irregular thickening and softening of the bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The type of bone cell responsible for the reabsorption of bone is called an ____________________.",
+   "o": [
+    "osteocyte",
+    "osteoblast",
+    "osteogenic cell",
+    "osteoclast"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 7 says osteoclasts are responsible for the reabsorption of bone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The breastbone is called the _____________________.",
+   "o": [
+    "scapula",
+    "clavicle",
+    "rib",
+    "sternum"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 7 says the sternum is also known as the breastbone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The ______________ (kneecap) is the largest sesamoid bone in the human body.",
+   "o": [
+    "patella",
+    "scapula",
+    "fibula",
+    "tibia"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 says the patella, or kneecap, is the largest of the sesamoid bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The interior of the shaft of long bone contains the ______________________________.",
+   "o": [
+    "medullary cavity",
+    "cortical cavity",
+    "medullary sinus",
+    "cortical sinus"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 says the interior of the shaft of a long bone is the medullary cavity. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The tiny cavities in the osteon called lacunae contain _____________________.",
+   "o": [
+    "osteocytes",
+    "osteoblasts",
+    "osteoclasts",
+    "chondroblasts"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 7 says each lacuna contains an osteocyte, or bone cell. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "Tendons are tough connective tissue structures that attach bones to bones.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Tendons attach muscle to bone. Ligaments attach bone to bone. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "The bones of the wrist are called tarsals.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The wrist bones are carpals. Tarsals are the ankle bones. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  },
+  {
+   "q": "There are 14 thoracic vertebrae.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. There are 12 thoracic vertebrae. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 7."
+  }
+ ]
+}
