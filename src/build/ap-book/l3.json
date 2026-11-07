@@ -1,0 +1,892 @@
+{
+ "lesson": 3,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 3 of your course, built from Chapter 3 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap3-1",
+   "title": "The cell and its parts",
+   "teach": [
+    "The cell is the basic unit of biologic organization; your body is made of trillions of them. Every cell is protoplasm (a watery mix of carbohydrates, proteins, lipids, nucleic acids and salts) surrounded by a cell membrane. Structures inside it are organelles.",
+    "Protoplasm inside the nucleus is nucleoplasm; protoplasm outside it is cytoplasm.",
+    "Human cells are eukaryotic (\"true\" nucleus): they have membrane-bound organelles. Prokaryotic cells, like bacteria, don’t.",
+    "Most cells are 10 to 100 micrometers across (a micrometer is a thousandth of a millimeter). Light microscopes magnify 10× to 1000×; seeing fine detail takes an electron microscope."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What makes a cell eukaryotic?",
+    "options": [
+     {
+      "label": "It has membrane-bound organelles, including a true nucleus",
+      "correct": true,
+      "feedback": "Right. Human cells are eukaryotic; bacteria are prokaryotic."
+     },
+     {
+      "label": "It has a cell wall",
+      "correct": false,
+      "feedback": "Plant cells have walls, but that isn’t what makes a cell eukaryotic."
+     },
+     {
+      "label": "It has no nucleus",
+      "correct": false,
+      "feedback": "That describes a prokaryotic cell."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-2",
+   "title": "Discovering cells and the cell theory",
+   "teach": [
+    "Robert Hooke first described cells in 1665, looking at dead cork. The empty walls looked like little rooms, so he called them cellulae. Antonie van Leeuwenhoek soon saw living \"animalcules\" in pond water.",
+    "In 1838 Matthias Schleiden (a botanist) said all plants are made of cells, and in 1839 Theodor Schwann (a zoologist) said the same of animals. That laid the foundation of the cell theory.",
+    "The modern cell theory: cells are the basic units of organization of all organisms; all organisms are made of one or more cells; cells arise only from preexisting cells by cell division; and all cells today descend from the first cells on earth."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each person to what they did.",
+    "categories": [
+     "Hooke",
+     "Leeuwenhoek",
+     "Schleiden",
+     "Schwann"
+    ],
+    "items": [
+     {
+      "label": "Named cells after looking at cork (1665)",
+      "category": 0,
+      "feedback": "Robert Hooke."
+     },
+     {
+      "label": "Saw living \"animalcules\" in pond water",
+      "category": 1,
+      "feedback": "Antonie van Leeuwenhoek."
+     },
+     {
+      "label": "All plants are made of cells (1838)",
+      "category": 2,
+      "feedback": "Matthias Schleiden, a botanist."
+     },
+     {
+      "label": "All animals are made of cells (1839)",
+      "category": 3,
+      "feedback": "Theodor Schwann, a zoologist."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-3",
+   "title": "The cell membrane",
+   "teach": [
+    "The cell (plasma) membrane is a double layer of phospholipids with proteins embedded in it. Each phospholipid has a water-attracting (hydrophilic) head and water-repelling (hydrophobic) tails. Water passes through easily by osmosis.",
+    "The proteins do many jobs: channels for small ions, pumps for active transport (using ATP), receptor sites for hormones, identity markers, \"cement\" that holds cells together, and anchors for the cytoskeleton. The sodium-potassium pump in muscle and nerve cells is made of protein.",
+    "This arrangement is called the fluid mosaic model: the pieces are like mosaic tiles set in a fluid rather than solid cement. Every membrane-bound organelle has the same basic structure."
+   ],
+   "visual": {
+    "kind": "hub",
+    "title": "Jobs of membrane proteins",
+    "items": [
+     {
+      "label": "Channels",
+      "detail": "Let small dissolved ions through."
+     },
+     {
+      "label": "Pumps",
+      "detail": "Active transport against a gradient, using ATP."
+     },
+     {
+      "label": "Receptors",
+      "detail": "Binding sites for hormones."
+     },
+     {
+      "label": "Identity markers",
+      "detail": "Tell the body which cells are \"self\"."
+     },
+     {
+      "label": "Adhesion and support",
+      "detail": "Hold cells together and anchor the cytoskeleton."
+     }
+    ]
+   },
+   "act": {
+    "type": "choice",
+    "prompt": "The cell membrane’s structure is described as:",
+    "options": [
+     {
+      "label": "A fluid mosaic: a double phospholipid layer with proteins embedded in it",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "A rigid wall of cellulose",
+      "correct": false,
+      "feedback": "That’s a plant cell wall."
+     },
+     {
+      "label": "A single layer of protein",
+      "correct": false,
+      "feedback": "It’s a double layer of phospholipids with proteins in it."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-4",
+   "title": "Cytoplasm: solutions and colloids",
+   "teach": [
+    "Cytoplasm is mostly water, with RNA, enzymes, hormones and other chemicals in it. Some are in solution and some are in colloidal suspension.",
+    "In a solution, individual atoms or ions are spread through the water. In a colloid, clumps of atoms are spread through it.",
+    "Which one a substance forms depends on polarity. Water is polar. Polar compounds, like ionically bonded salts, dissolve readily. Nonpolar compounds (covalent molecules that share electrons evenly) don’t dissolve readily. So mineral salts (sodium, potassium, calcium, chlorine, phosphorus) are in solution, while proteins, carbohydrates, fats and nucleic acids are in colloidal suspension.",
+    "Cytoplasm also holds storage granules, fat droplets and vacuoles (membrane-bound spaces holding water, food or waste)."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "In the cytoplasm, is each substance in solution or in a colloid?",
+    "categories": [
+     "Solution (individual ions)",
+     "Colloid (clumps of atoms)"
+    ],
+    "items": [
+     {
+      "label": "Sodium",
+      "category": 0,
+      "feedback": "Mineral salts dissolve."
+     },
+     {
+      "label": "Potassium",
+      "category": 0,
+      "feedback": "Mineral salts dissolve."
+     },
+     {
+      "label": "Proteins",
+      "category": 1,
+      "feedback": "Large nonpolar organic molecules are colloidal."
+     },
+     {
+      "label": "Fats",
+      "category": 1,
+      "feedback": "Nonpolar, so colloidal."
+     },
+     {
+      "label": "Nucleic acids",
+      "category": 1,
+      "feedback": "Colloidal."
+     },
+     {
+      "label": "Calcium",
+      "category": 0,
+      "feedback": "Mineral salt, in solution."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-5",
+   "title": "The nucleus",
+   "teach": [
+    "The nucleus is the control center of the cell. Remove it and the cell loses its functions; transplant a nucleus and the cell takes on the donor’s characteristics.",
+    "The nuclear membrane (envelope) is a double membrane. The outer membrane connects to the endoplasmic reticulum. It has pores that let materials such as messenger RNA leave for the cytoplasm.",
+    "Stained, the nucleus shows dark threads of chromatin, the genetic material. During cell division the DNA duplicates, shortens and thickens into visible chromosomes. Chromosomes are made of DNA and proteins.",
+    "Human body cells have 46 chromosomes (22 pairs of autosomes plus one pair of sex chromosomes). Egg and sperm cells have 23.",
+    "The nucleolus is a round body with no membrane, made mostly of DNA, RNA and protein. It makes ribosomes."
+   ],
+   "keyPoints": [
+    "46 chromosomes in body cells; 23 in egg and sperm",
+    "Chromatin when not dividing; chromosomes when dividing",
+    "Nucleolus makes ribosomes"
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What does the nucleolus do?",
+    "options": [
+     {
+      "label": "Makes ribosomes",
+      "correct": true,
+      "feedback": "Right. That’s how it supports protein synthesis."
+     },
+     {
+      "label": "Makes ATP",
+      "correct": false,
+      "feedback": "That’s the mitochondria."
+     },
+     {
+      "label": "Packages secretions",
+      "correct": false,
+      "feedback": "That’s the Golgi apparatus."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-6",
+   "title": "Mitochondria",
+   "teach": [
+    "Mitochondria are small oblong organelles with two membranes. The inner membrane folds into cristae, which give lots of surface for energy reactions.",
+    "Cellular respiration (its aerobic phase) happens on the cristae, turning the chemical energy in food into ATP: glucose + oxygen → ATP + carbon dioxide + water. That’s why mitochondria are called the powerhouses of the cell.",
+    "High-energy cells like muscle have mitochondria with many cristae; low-energy cells like cheek lining have fewer. Mitochondria have their own DNA and are inherited from the mother through the egg."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Why do muscle cells have mitochondria with many cristae?",
+    "options": [
+     {
+      "label": "More folds mean more surface for making ATP, and muscle needs a lot of energy",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Cristae store calcium for contraction",
+      "correct": false,
+      "feedback": "Cristae are where ATP is made."
+     },
+     {
+      "label": "Muscle cells have no nucleus",
+      "correct": false,
+      "feedback": "That isn’t the reason."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-7",
+   "title": "Lysosomes",
+   "teach": [
+    "Lysosomes are small, usually round bodies filled with powerful digestive enzymes. They have three jobs.",
+    "They fuse with food vacuoles to break stored food into usable pieces (starch to sugars, protein to amino acids, fat to fatty acids and glycerol). They break down worn-out parts so the material can be recycled. And they act as \"suicide agents\" in old or weak cells, releasing their enzymes to destroy the cell. This is autolysis."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Autolysis is when:",
+    "options": [
+     {
+      "label": "A lysosome releases its enzymes and destroys an old or weak cell",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "A cell divides into two",
+      "correct": false,
+      "feedback": "That’s cell division."
+     },
+     {
+      "label": "A ribosome builds a protein",
+      "correct": false,
+      "feedback": "That’s protein synthesis."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-8",
+   "title": "Endoplasmic reticulum and Golgi apparatus",
+   "teach": [
+    "The endoplasmic reticulum (ER) is a network of membrane-bound channels called cisternae, used to store and transport what the cell makes. It connects to the outer nuclear membrane and to the cell membrane.",
+    "Rough (granular) ER has ribosomes attached, so it’s a site of protein synthesis, especially proteins the cell will secrete. All cells have it.",
+    "Smooth (agranular) ER has no ribosomes and is found only in some cells: in the gonads, where it makes sex hormones, and in the intestinal lacteals, where it helps transport fats.",
+    "The Golgi apparatus is a stack of flat sacs, like pancakes. It’s where compounds the cell will secrete are collected and concentrated, a bit like a warehouse. It makes carbohydrates to combine with proteins, and lysosomes can form there. It also makes the cellulose of plant cell walls."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Rough ER, smooth ER or Golgi?",
+    "categories": [
+     "Rough ER",
+     "Smooth ER",
+     "Golgi apparatus"
+    ],
+    "items": [
+     {
+      "label": "Has ribosomes attached",
+      "category": 0,
+      "feedback": "That’s what makes it rough."
+     },
+     {
+      "label": "Makes sex hormones in the gonads",
+      "category": 1,
+      "feedback": "Smooth ER."
+     },
+     {
+      "label": "Collects and concentrates secretions",
+      "category": 2,
+      "feedback": "The Golgi is the cell’s warehouse."
+     },
+     {
+      "label": "Helps transport fats in intestinal lacteals",
+      "category": 1,
+      "feedback": "Smooth ER."
+     },
+     {
+      "label": "Looks like a stack of pancakes",
+      "category": 2,
+      "feedback": "Flat sac-like cisternae."
+     },
+     {
+      "label": "Found in all cells",
+      "category": 0,
+      "feedback": "All cells have rough ER; only some have smooth ER."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-9",
+   "title": "Ribosomes and protein synthesis",
+   "teach": [
+    "Ribosomes are tiny granules made of ribosomal RNA and protein, with no membrane. They float in the cytoplasm or sit on rough ER, and they’re where proteins are made.",
+    "The code for a protein is a gene on DNA in the nucleus. In transcription, messenger RNA (mRNA) copies the code with the help of the enzyme RNA polymerase, then leaves through a nuclear pore to a ribosome.",
+    "In translation, transfer RNA (tRNA) brings amino acids from the cytoplasm. Each tRNA has three bases called an anticodon, which matches three bases on the mRNA called a codon. The ribosome links the amino acids into a polypeptide chain."
+   ],
+   "visual": {
+    "kind": "flow",
+    "title": "From gene to protein",
+    "items": [
+     {
+      "label": "Gene on DNA",
+      "detail": "The code, in the nucleus."
+     },
+     {
+      "label": "Transcription",
+      "detail": "mRNA copies the code (RNA polymerase helps)."
+     },
+     {
+      "label": "mRNA leaves",
+      "detail": "Through a nuclear pore to a ribosome."
+     },
+     {
+      "label": "Translation",
+      "detail": "tRNA anticodons match mRNA codons, bringing amino acids."
+     },
+     {
+      "label": "Protein",
+      "detail": "The ribosome links amino acids into a chain."
+     }
+    ]
+   },
+   "mnemonic": {
+    "cue": "Transcription = copy (in the nucleus); Translation = build (in the cytoplasm)",
+    "explanation": "You transcribe notes word for word; you translate them into a new language: amino acids."
+   },
+   "act": {
+    "type": "order",
+    "prompt": "Put the steps of protein synthesis in order.",
+    "items": [
+     {
+      "label": "mRNA copies a gene in the nucleus",
+      "detail": "Transcription"
+     },
+     {
+      "label": "mRNA leaves through a nuclear pore",
+      "detail": "Goes to a ribosome"
+     },
+     {
+      "label": "tRNA brings amino acids",
+      "detail": "Anticodon matches codon"
+     },
+     {
+      "label": "The ribosome links the amino acids",
+      "detail": "Forms a polypeptide chain"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-10",
+   "title": "Centrioles, cilia and flagella",
+   "teach": [
+    "Centrioles are a pair of cylinders at right angles near the nucleus (together, the centrosome). Each is nine sets of triplet fibers. During cell division they move to opposite poles and form spindle fibers (microtubules of tubulin) that guide the duplicated chromosomes into the new cells.",
+    "Cilia and flagella are hair-like projections that beat. Cilia are short and come in rows; in the airway they sweep mucus and trapped dust up to the throat. A flagellum is long and there are only one to a few; the sperm cell uses one to swim.",
+    "Inside, both have nine double fibrils in a ring around two central ones (the \"9 + 2\" pattern), growing from a basal body built like a centriole."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Centrioles, cilia or flagellum?",
+    "categories": [
+     "Centrioles",
+     "Cilia",
+     "Flagellum"
+    ],
+    "items": [
+     {
+      "label": "Form spindle fibers in cell division",
+      "category": 0,
+      "feedback": "Centrioles."
+     },
+     {
+      "label": "Sweep mucus up the airway",
+      "category": 1,
+      "feedback": "Rows of short cilia."
+     },
+     {
+      "label": "Propels the sperm cell",
+      "category": 2,
+      "feedback": "A single long flagellum."
+     },
+     {
+      "label": "Nine sets of triplet fibers",
+      "category": 0,
+      "feedback": "Centriole structure."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-11",
+   "title": "Plant cells: plastids and the cell wall",
+   "teach": [
+    "Your course also compares plant and animal cells. Plant cells have a cell wall and plastids; animal cells don’t.",
+    "Chloroplasts are large plastids containing green chlorophyll. They are the site of photosynthesis, which turns light energy into chemical energy (glucose). Inside are stacks of membranes; each stack is a granum, made of thylakoids, and the grana are linked by lamellae.",
+    "Chromoplasts hold other pigments: xanthophyll (yellow) and carotene (red-orange). Leucoplasts have no pigment and store food, like sugar in onions and starch in potatoes.",
+    "The cell wall is made of cellulose, made by the Golgi. We can’t digest it; in our diet it’s fiber."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which plastid?",
+    "categories": [
+     "Chloroplast",
+     "Chromoplast",
+     "Leucoplast"
+    ],
+    "items": [
+     {
+      "label": "Site of photosynthesis",
+      "category": 0,
+      "feedback": "Chloroplasts contain chlorophyll."
+     },
+     {
+      "label": "Yellow xanthophyll in a banana peel",
+      "category": 1,
+      "feedback": "Chromoplasts hold carotenoid pigments."
+     },
+     {
+      "label": "Stores starch in a potato",
+      "category": 2,
+      "feedback": "Leucoplasts are storage plastids."
+     },
+     {
+      "label": "Contains stacks called grana",
+      "category": 0,
+      "feedback": "Grana are inside chloroplasts."
+     },
+     {
+      "label": "Red-orange carotene in carrots",
+      "category": 1,
+      "feedback": "Chromoplast."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap3-12",
+   "title": "Apoptosis and aging",
+   "teach": [
+    "Apoptosis is a natural, gene-controlled process by which cells die. It removes damaged cells, cells past their lifespan, infected cells and some cancer cells.",
+    "With age, repairing cells and replacing them by division gets harder. Some biologists think \"death genes\" switch on later in life."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Apoptosis is:",
+    "options": [
+     {
+      "label": "A natural, gene-controlled process of cell death",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "A type of cell division",
+      "correct": false,
+      "feedback": "It’s cell death, not division."
+     },
+     {
+      "label": "Always caused by infection",
+      "correct": false,
+      "feedback": "It’s a normal process that also removes old and damaged cells."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Protoplasm",
+   "back": "Watery colloidal solution inside the cell membrane."
+  },
+  {
+   "front": "Nucleoplasm / cytoplasm",
+   "back": "Protoplasm inside / outside the nucleus."
+  },
+  {
+   "front": "Eukaryotic vs prokaryotic",
+   "back": "Has membrane-bound organelles / doesn’t (e.g., bacteria)."
+  },
+  {
+   "front": "Modern cell theory",
+   "back": "Cells are the basic units of life; all organisms are cells; cells come only from preexisting cells; all cells descend from the first cells."
+  },
+  {
+   "front": "Schleiden and Schwann",
+   "back": "Founded the cell theory (plants 1838, animals 1839)."
+  },
+  {
+   "front": "Fluid mosaic model",
+   "back": "Double phospholipid layer with embedded proteins."
+  },
+  {
+   "front": "Solution vs colloid",
+   "back": "Individual atoms or ions spread out / clumps of atoms spread out."
+  },
+  {
+   "front": "Polar vs nonpolar",
+   "back": "Dissolves readily in water / doesn’t dissolve readily."
+  },
+  {
+   "front": "Nucleus",
+   "back": "Control center; double membrane with pores."
+  },
+  {
+   "front": "Chromatin vs chromosomes",
+   "back": "Long thin DNA threads / shortened, thickened DNA during division."
+  },
+  {
+   "front": "Human chromosome number",
+   "back": "46 in body cells; 23 in egg and sperm."
+  },
+  {
+   "front": "Nucleolus",
+   "back": "Membrane-free body in the nucleus that makes ribosomes."
+  },
+  {
+   "front": "Mitochondria",
+   "back": "Powerhouses; aerobic respiration on the cristae makes ATP."
+  },
+  {
+   "front": "Lysosomes",
+   "back": "Digestive enzymes: digest food, recycle parts, destroy old cells (autolysis)."
+  },
+  {
+   "front": "Rough ER",
+   "back": "Has ribosomes; makes proteins for secretion."
+  },
+  {
+   "front": "Smooth ER",
+   "back": "No ribosomes; sex hormones and fat transport."
+  },
+  {
+   "front": "Golgi apparatus",
+   "back": "Stacked sacs that collect and concentrate secretions."
+  },
+  {
+   "front": "Ribosomes",
+   "back": "rRNA + protein granules; sites of protein synthesis."
+  },
+  {
+   "front": "Transcription",
+   "back": "mRNA copies a gene’s code in the nucleus."
+  },
+  {
+   "front": "Translation",
+   "back": "tRNA brings amino acids to the mRNA at the ribosome."
+  },
+  {
+   "front": "Codon / anticodon",
+   "back": "Three bases on mRNA / matching three bases on tRNA."
+  },
+  {
+   "front": "Gene",
+   "back": "A region of DNA with the code for a particular protein."
+  },
+  {
+   "front": "Centrioles",
+   "back": "Form spindle fibers that move chromosomes during division."
+  },
+  {
+   "front": "Cilia vs flagella",
+   "back": "Short, many, move material / long, few, move the cell."
+  },
+  {
+   "front": "Chloroplast",
+   "back": "Plastid with chlorophyll; site of photosynthesis; contains grana."
+  },
+  {
+   "front": "Leucoplast",
+   "back": "Colorless plastid that stores food."
+  },
+  {
+   "front": "Apoptosis",
+   "back": "Natural, gene-controlled cell death."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Clumps of atoms that are distributed throughout a water medium are referred to as a _________________.",
+   "o": [
+    "solution",
+    "compound",
+    "colloid",
+    "solute"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says in a colloid, clumps of atoms rather than individual atoms are distributed throughout the water. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Chromosomes are made of ________ molecules and proteins.",
+   "o": [
+    "DNA",
+    "RNA",
+    "lipids",
+    "ATP"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 3 says chromosomes are made of DNA molecules and proteins. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Large organelles found mainly in plant cells that are the site of photosynthesis are known as __________________________.",
+   "o": [
+    "nuclei",
+    "mitochondria",
+    "chloroplasts",
+    "thylakoids"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says chloroplasts are large organelles found mainly in plant cells and are the site of photosynthesis. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Which structures form the spindle fibres during cell division and guide the duplicated chromosomes to their daughter cells?",
+   "o": [
+    "nucleoli",
+    "mitochondria",
+    "centrioles",
+    "lysosomes"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says the centrioles form the spindle fibers during cell division and guide the duplicated chromosomes to their daughter cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "What are the basic units of organization of all organisms?",
+   "o": [
+    "Organelles",
+    "Organs",
+    "Molecules",
+    "Cells"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. The modern cell theory in Chapter 3 says cells are the basic units of organization of all organisms. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Chemical energy from food is converted to another form of chemical energy called ______________ in the mitochondria.",
+   "o": [
+    "ATP",
+    "glycogen",
+    "glucose",
+    "RNA"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 3 says cellular respiration on the cristae converts food (chemical energy) into ATP. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Sodium, potassium, calcium, chlorine, and phosphorus are all examples of ___________________.",
+   "o": [
+    "proteins",
+    "carbohydrates",
+    "lipids",
+    "mineral salts",
+    "None of the above"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 3 lists sodium, potassium, calcium, chlorine and phosphorus as the mineral salts that are in solution in the cytoplasm. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "The process of translation occurs in the _________________.",
+   "o": [
+    "nucleus",
+    "nucleolus",
+    "cytoplasm",
+    "smooth ER",
+    "None of the above"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says tRNA collects amino acids in the cytoplasm and brings them to the mRNA at the ribosomes, which are in the cytoplasm. That process is translation. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Which type of compound does not dissolve readily in water?",
+   "o": [
+    "Polar",
+    "Sonic",
+    "Electrolytic",
+    "Nonpolar"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 3 says nonpolar compounds do not dissolve readily in water. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Which type of RNA has three nitrogen bases at one end that are known collectively as an anticodon?",
+   "o": [
+    "Ribosomal",
+    "Messenger",
+    "Lysosomal",
+    "Transfer"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 3 says each tRNA is coded for an amino acid by three nitrogen bases at one end, known as the anticodon. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Which type of plastids store food?",
+   "o": [
+    "Chloroplasts",
+    "Chromoplasts",
+    "Leucoplasts",
+    "Granum"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says leucoplasts have no pigment and are storage plastids. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "The aerobic phase of cellular respiration occurs in which organelle?",
+   "o": [
+    "Ribosome",
+    "Lysosome",
+    "Nucleus",
+    "Mitochondrion"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 3 says the aerobic phase of cellular respiration occurs in the mitochondrion. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Which term refers to the conversion of light energy into chemical energy?",
+   "o": [
+    "Dehydration Synthesis",
+    "Cellular Respiration",
+    "Hydrolysis",
+    "Photosynthesis"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 3 defines photosynthesis as the conversion of light energy into chemical energy. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "The cells of the human body contain _____ chromosomes.",
+   "o": [
+    "40",
+    "46",
+    "36",
+    "42",
+    "22"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 3 says the cells of the human body contain 46 chromosomes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "What type of RNA is used during the process of transcription?",
+   "o": [
+    "Ribosomal",
+    "Messenger",
+    "Transverse",
+    "Transfer"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 3 says messenger RNA copies the code from DNA in a process called transcription. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "The assembly of flat saclike cisternae where compounds to be secreted by the cell are collected and concentrated is called the _________________________________.",
+   "o": [
+    "mitochondrion",
+    "smooth ER",
+    "Golgi apparatus",
+    "lysosome"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 describes the Golgi apparatus as flat sac-like cisternae where compounds to be secreted are collected and concentrated. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "The cell wall of plant cells is composed of ______________________.",
+   "o": [
+    "cellulose",
+    "lipid",
+    "protein",
+    "nucleic acid",
+    "chloroplasts"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 3 says the plant cell wall is made of a complex carbohydrate called cellulose. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "The many stacks of membranes found inside chloroplasts are known as _________________________.",
+   "o": [
+    "granum",
+    "cristae",
+    "chlorophyll",
+    "xanthophyll",
+    "None of the above"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 3 says a chloroplast contains many stacks of membranes, each called a granum. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "A region of DNA that contains instructions for the amino acid sequence of a particular protein is called a(n) __________________.",
+   "o": [
+    "codon",
+    "sugar",
+    "gene",
+    "anticodon"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says the code to make a particular protein is a gene on a DNA molecule. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Transcription occurs in what organelle?",
+   "o": [
+    "Ribosome",
+    "Lysosome",
+    "Mitochondrion",
+    "Nucleus"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 3 says mRNA copies the code from the DNA molecule in the nucleus, which is transcription. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "DNA molecules that shorten and thicken during cell division are known as .",
+   "o": [
+    "chromatids",
+    "chromatin units",
+    "chromosomes",
+    "ribosomes"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 3 says that when DNA duplicates during cell division it shortens and thickens and becomes visible as chromosomes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "In a colloid, individual atoms or ions are distributed throughout the medium.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. That describes a solution. In a colloid, clumps of atoms, not individual atoms or ions, are distributed through the medium. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Cells arise only from pre-existing cells through the process of cell division.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. This is one of the principles of the modern cell theory in Chapter 3. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Apoptosis is a natural process by which cells in the body die.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 3 says apoptosis is a natural process by which cells in the body die, controlled by specific genes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  },
+  {
+   "q": "Eukaryotic cells do not have membrane-bound organelles.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Eukaryotic cells do have membrane-bound organelles. Cells without them (like bacteria) are prokaryotic. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 3."
+  }
+ ]
+}
