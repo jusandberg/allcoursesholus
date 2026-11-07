@@ -1,0 +1,1047 @@
+{
+ "lesson": 11,
+ "book": "Fundamentals of Anatomy and Physiology, 4th ed. (Rizzo)",
+ "kicker": "Lesson 11 of your course, built from Chapter 11 of your Fundamentals of Anatomy and Physiology textbook (Rizzo). Test practice uses checked answers, because there is no official key for this test.",
+ "steps": [
+  {
+   "id": "ap11-1",
+   "title": "The four parts of the brain",
+   "teach": [
+    "The brain weighs about 3 pounds and has four main parts: the brainstem (medulla oblongata, pons varolii and midbrain), the diencephalon (thalamus and hypothalamus), the cerebrum and the cerebellum.",
+    "In short: the brainstem controls breathing, heart rate and reactions to sights and sounds; the diencephalon handles much of homeostasis; the cerebrum handles intellect and emotions; the cerebellum handles posture and balance."
+   ],
+   "visual": {
+    "kind": "hub",
+    "title": "Main parts of the brain",
+    "items": [
+     {
+      "label": "Brainstem",
+      "detail": "Medulla, pons, midbrain: breathing, heartbeat, reflexes."
+     },
+     {
+      "label": "Diencephalon",
+      "detail": "Thalamus (relay) and hypothalamus (homeostasis)."
+     },
+     {
+      "label": "Cerebrum",
+      "detail": "Intellect, emotions, voluntary movement, senses."
+     },
+     {
+      "label": "Cerebellum",
+      "detail": "Coordination, posture, balance."
+     }
+    ]
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Which part of the brain?",
+    "categories": [
+     "Brainstem",
+     "Diencephalon",
+     "Cerebrum",
+     "Cerebellum"
+    ],
+    "items": [
+     {
+      "label": "Medulla oblongata",
+      "category": 0,
+      "feedback": "Part of the brainstem."
+     },
+     {
+      "label": "Thalamus",
+      "category": 1,
+      "feedback": "Diencephalon."
+     },
+     {
+      "label": "Intellectual processes and emotions",
+      "category": 2,
+      "feedback": "Cerebrum."
+     },
+     {
+      "label": "Coordinates complex muscle movements",
+      "category": 3,
+      "feedback": "Cerebellum."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-2",
+   "title": "Protecting the brain: meninges, ventricles and CSF",
+   "teach": [
+    "The cranial bones and the cranial meninges (dura, arachnoid and pia mater, the same as around the spinal cord) protect the brain. The arachnoid is the middle layer.",
+    "Cerebrospinal fluid (CSF) circulates through the subarachnoid space and the four ventricles. It acts as a shock absorber for the central nervous system and carries nutrients.",
+    "There are two lateral ventricles (one in each hemisphere), a third ventricle in the diencephalon, and a fourth between the cerebellum and lower brainstem. They connect through the interventricular foramen and the cerebral aqueduct."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What acts as a shock absorber for the central nervous system?",
+    "options": [
+     {
+      "label": "Cerebrospinal fluid",
+      "correct": true,
+      "feedback": "Right. It also carries nutrients."
+     },
+     {
+      "label": "Interstitial fluid",
+      "correct": false,
+      "feedback": "That’s fluid between cells in general."
+     },
+     {
+      "label": "Synovial fluid",
+      "correct": false,
+      "feedback": "That lubricates joints."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-3",
+   "title": "The brainstem",
+   "teach": [
+    "The medulla oblongata contains all the ascending and descending tracts between the spinal cord and the brain. Some motor tracts cross here (decussation of pyramids), which is why one side of the brain controls the opposite side of the body.",
+    "It holds the reticular formation, which maintains consciousness and arousal, and three vital centers: vasomotor (blood vessel diameter), cardiac (heartbeat) and medullary rhythmicity (breathing rhythm).",
+    "The pons (\"bridge\") connects the spinal cord, brain parts and cerebellum, and helps control breathing. The midbrain carries impulses from the cortex down and has reflex centers that turn the eyes and head toward sights and sounds."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Medulla, pons or midbrain?",
+    "categories": [
+     "Medulla oblongata",
+     "Pons",
+     "Midbrain"
+    ],
+    "items": [
+     {
+      "label": "Cardiac and vasomotor centers",
+      "category": 0,
+      "feedback": "Medulla."
+     },
+     {
+      "label": "A \"bridge\" connecting brain parts",
+      "category": 1,
+      "feedback": "Pons means bridge."
+     },
+     {
+      "label": "Turns the eyes toward a visual stimulus",
+      "category": 2,
+      "feedback": "Midbrain tectum."
+     },
+     {
+      "label": "Where motor tracts cross",
+      "category": 0,
+      "feedback": "Decussation of pyramids."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-4",
+   "title": "The diencephalon",
+   "teach": [
+    "The thalamus is the main relay station for sensory impulses heading to the cerebral cortex, and helps us consciously recognize pain and temperature.",
+    "The hypothalamus is small but controls much of homeostasis: it controls the autonomic nervous system, links the nervous and endocrine systems by controlling the pituitary, and regulates body temperature, thirst, hunger, sleep and waking, and rage and aggression.",
+    "Also in the diencephalon: the optic chiasma, where optic nerves cross; the infundibulum, which attaches the hypothalamus to the pituitary; the mamillary bodies; and the pineal gland, a pinecone-shaped gland that secretes melatonin."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match each structure to its role.",
+    "categories": [
+     "Thalamus",
+     "Hypothalamus",
+     "Infundibulum",
+     "Pineal gland"
+    ],
+    "items": [
+     {
+      "label": "Relays sensory impulses to the cortex",
+      "category": 0,
+      "feedback": "Thalamus."
+     },
+     {
+      "label": "Controls body temperature and thirst",
+      "category": 1,
+      "feedback": "Hypothalamus."
+     },
+     {
+      "label": "Attaches the hypothalamus to the pituitary",
+      "category": 2,
+      "feedback": "Infundibulum."
+     },
+     {
+      "label": "Secretes melatonin",
+      "category": 3,
+      "feedback": "Pineal gland."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-5",
+   "title": "The cerebrum",
+   "teach": [
+    "The cerebrum is the bulk of the brain. Its gray surface is the cerebral cortex, with white matter beneath.",
+    "The longitudinal fissure divides it into right and left cerebral hemispheres, joined by the corpus callosum. The surface folds are gyri, and the grooves between them are sulci; the folds increase the cortex’s surface area.",
+    "The cortex has motor areas (movement), sensory areas (interpreting sensations) and association areas (emotion and intellect)."
+   ],
+   "mnemonic": {
+    "cue": "Gyri = Go up (ridges); Sulci = Sink (grooves)",
+    "explanation": "Gyri are the raised folds; sulci are the grooves between them."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Match the term.",
+    "categories": [
+     "Longitudinal fissure",
+     "Corpus callosum",
+     "Gyri",
+     "Sulci"
+    ],
+    "items": [
+     {
+      "label": "Separates the right and left hemispheres",
+      "category": 0,
+      "feedback": "Longitudinal fissure."
+     },
+     {
+      "label": "Connects the two hemispheres",
+      "category": 1,
+      "feedback": "Corpus callosum."
+     },
+     {
+      "label": "The folds on the surface",
+      "category": 2,
+      "feedback": "Gyri."
+     },
+     {
+      "label": "The grooves between folds",
+      "category": 3,
+      "feedback": "Sulci."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-6",
+   "title": "Lobes of the cerebrum",
+   "teach": [
+    "Frontal lobe: voluntary movement, mood, aggression, smell and motivation. Parietal lobe (behind the central sulcus): touch, pain, balance, taste and temperature. Temporal lobe (below the lateral fissure): hearing, smell, memory, abstract thought and judgment. Occipital lobe (at the back): receiving and interpreting vision. The insula is a fifth lobe deep in the lateral sulcus."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which lobe?",
+    "categories": [
+     "Frontal",
+     "Parietal",
+     "Temporal",
+     "Occipital"
+    ],
+    "items": [
+     {
+      "label": "Voluntary movement and motivation",
+      "category": 0,
+      "feedback": "Frontal."
+     },
+     {
+      "label": "Touch, pain and temperature",
+      "category": 1,
+      "feedback": "Parietal."
+     },
+     {
+      "label": "Hearing and memory",
+      "category": 2,
+      "feedback": "Temporal."
+     },
+     {
+      "label": "Vision",
+      "category": 3,
+      "feedback": "Occipital."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-7",
+   "title": "The cerebellum",
+   "teach": [
+    "The cerebellum is the second largest part of the brain, below the occipital lobes and behind the brainstem. Its two hemispheres are joined by the vermis.",
+    "It’s a reflex center that coordinates complex skeletal muscle movements, maintains posture and keeps the body balanced. Damage can cause tremors, loss of balance and low muscle tone. Intellect and emotions are the cerebrum’s job, not the cerebellum’s."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What does the cerebellum do?",
+    "options": [
+     {
+      "label": "Coordinates complex movements, posture and balance",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "Controls intellect and emotions",
+      "correct": false,
+      "feedback": "That’s the cerebrum."
+     },
+     {
+      "label": "Controls thirst and temperature",
+      "correct": false,
+      "feedback": "That’s the hypothalamus."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-8",
+   "title": "The autonomic nervous system",
+   "teach": [
+    "The autonomic nervous system works automatically. It regulates internal organs by controlling glands, smooth muscle and cardiac muscle. (The somatic system controls skeletal muscle.)",
+    "The sympathetic division prepares the body for stressful situations (\"fight or flight\"): raises heart rate and blood pressure, opens the airways, triggers sweating and glucose release, and slows digestion. Its fibers come from the thoracic and lumbar spinal cord; it uses acetylcholine before the ganglia and norepinephrine after.",
+    "The parasympathetic division operates under normal, nonstressful conditions (\"rest and repose\"): it stimulates digestion, urination and defecation, slows the heart and breathing, lowers blood pressure and constricts the pupil. Its fibers come from the brainstem and sacral cord, and it uses acetylcholine throughout."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Sympathetic or parasympathetic?",
+    "categories": [
+     "Sympathetic",
+     "Parasympathetic"
+    ],
+    "items": [
+     {
+      "label": "Prepares for stressful situations",
+      "category": 0,
+      "feedback": "Fight or flight."
+     },
+     {
+      "label": "Operates under normal, nonstressful conditions",
+      "category": 1,
+      "feedback": "Rest and repose."
+     },
+     {
+      "label": "Speeds up the heart",
+      "category": 0,
+      "feedback": "Sympathetic."
+     },
+     {
+      "label": "Constricts the pupil",
+      "category": 1,
+      "feedback": "Parasympathetic."
+     },
+     {
+      "label": "Inhibits digestion",
+      "category": 0,
+      "feedback": "Sympathetic."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-9",
+   "title": "The 12 cranial nerves",
+   "teach": [
+    "There are 12 pairs, numbered I to XII from front to back. Some are sensory, some motor, some mixed.",
+    "I Olfactory (smell, sensory). II Optic (vision, sensory). III Oculomotor (eye and eyelid movement, pupil; motor). IV Trochlear (eye movement; smallest). V Trigeminal (largest; mixed; face sensation and chewing; three branches). VI Abducens (eye movement, abduction; motor).",
+    "VII Facial (facial expression, taste, tears and saliva; mixed). VIII Vestibulocochlear (balance and hearing; sensory). IX Glossopharyngeal (swallowing, taste, saliva; mixed). X Vagus (pharynx, larynx and the organs of the thorax and abdomen; mixed). XI Accessory (head and shoulder movement; motor). XII Hypoglossal (tongue movements, speech and swallowing; motor)."
+   ],
+   "mnemonic": {
+    "cue": "Oh Oh Oh To Touch And Feel Very Good Velvet. Ah, Heaven!",
+    "explanation": "Olfactory, Optic, Oculomotor, Trochlear, Trigeminal, Abducens, Facial, Vestibulocochlear, Glossopharyngeal, Vagus, Accessory, Hypoglossal."
+   },
+   "act": {
+    "type": "sort",
+    "prompt": "Which cranial nerve?",
+    "categories": [
+     "Trigeminal (V)",
+     "Abducens (VI)",
+     "Vestibulocochlear (VIII)",
+     "Hypoglossal (XII)"
+    ],
+    "items": [
+     {
+      "label": "Largest cranial nerve",
+      "category": 0,
+      "feedback": "Trigeminal."
+     },
+     {
+      "label": "Moves the eyeball outward",
+      "category": 1,
+      "feedback": "Abducens."
+     },
+     {
+      "label": "Hearing and balance",
+      "category": 2,
+      "feedback": "Vestibulocochlear."
+     },
+     {
+      "label": "Tongue movements",
+      "category": 3,
+      "feedback": "Hypoglossal."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-10",
+   "title": "Smell and taste",
+   "teach": [
+    "Smell (olfaction): odor molecules dissolve in the mucus of the superior nasal conchae and bind to receptors on bipolar olfactory neurons. Signals pass through the olfactory bulbs to the olfactory cortex in the temporal and frontal lobes. The receptors adapt quickly to an odor.",
+    "Taste: taste buds sit on papillae of the tongue (and the palate and pharynx). Taste hairs poking out of the taste pore are the receptors. Food must dissolve in saliva first. The five tastes are sweet, sour, salty, bitter and umami. Signals travel on cranial nerves VII, IX and X to the taste cortex in the parietal lobe. Smell strongly affects taste."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "What must happen before a chemical can be tasted?",
+    "options": [
+     {
+      "label": "It must dissolve in saliva",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "It must reach the stomach",
+      "correct": false,
+      "feedback": "Taste happens in the mouth."
+     },
+     {
+      "label": "It must be smelled first",
+      "correct": false,
+      "feedback": "Smell influences taste, but dissolving in saliva is required."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-11",
+   "title": "The eye: layers and parts",
+   "teach": [
+    "Tears from the lacrimal gland lubricate the eye and fight bacteria (lysozyme).",
+    "The eye wall has three layers. The outer sclera is the tough white of the eye; its transparent front part is the cornea, which lets light in. The conjunctiva lines the eyelids and front of the sclera. The middle choroid is full of blood vessels and dark pigment that absorbs stray light. The innermost retina contains the light-sensitive rods and cones.",
+    "The ciliary body holds the lens. The iris, the colored muscle around the pupil, regulates how much light enters. Aqueous humor fills the front compartment; vitreous humor fills the back."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Which part of the eye?",
+    "categories": [
+     "Sclera",
+     "Cornea",
+     "Choroid",
+     "Retina",
+     "Iris"
+    ],
+    "items": [
+     {
+      "label": "Tough white outer layer",
+      "category": 0,
+      "feedback": "Sclera."
+     },
+     {
+      "label": "Transparent front of the outer layer",
+      "category": 1,
+      "feedback": "Cornea."
+     },
+     {
+      "label": "Blood vessels and dark pigment",
+      "category": 2,
+      "feedback": "Choroid."
+     },
+     {
+      "label": "Innermost layer with rods and cones",
+      "category": 3,
+      "feedback": "Retina."
+     },
+     {
+      "label": "Controls pupil size",
+      "category": 4,
+      "feedback": "Iris."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-12",
+   "title": "Rods, cones and the path to the brain",
+   "teach": [
+    "Rods are more numerous, very sensitive to light, work in dim light and don’t give color vision. Cones give color vision and need lots of light; there are red, green and blue cones.",
+    "Rods contain rhodopsin, which needs vitamin A; a vitamin A deficiency can cause night blindness.",
+    "Rods and cones synapse with bipolar cells, which synapse with ganglion cells whose axons form the optic nerve. The fovea centralis in the macula lutea gives the sharpest vision. Nerve fibers leave at the optic disk, the \"blind spot,\" because it has no receptors. Vision is interpreted in the occipital lobe."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Rods or cones?",
+    "categories": [
+     "Rods",
+     "Cones"
+    ],
+    "items": [
+     {
+      "label": "Work in dim light",
+      "category": 0,
+      "feedback": "Rods."
+     },
+     {
+      "label": "Produce color vision",
+      "category": 1,
+      "feedback": "Cones."
+     },
+     {
+      "label": "Need lots of light",
+      "category": 1,
+      "feedback": "Cones."
+     },
+     {
+      "label": "Contain rhodopsin",
+      "category": 0,
+      "feedback": "Rods."
+     },
+     {
+      "label": "More numerous",
+      "category": 0,
+      "feedback": "Rods outnumber cones."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-13",
+   "title": "The ear: hearing and balance",
+   "teach": [
+    "External ear: the auricle (elastic cartilage) funnels sound into the external auditory meatus, which directs it to the tympanic membrane (eardrum), making it vibrate. Ceruminous glands make earwax.",
+    "Middle ear: the ossicles (malleus, incus, stapes) pass and amplify the vibrations to the oval window. The eustachian (auditory) tube connects to the pharynx and equalizes air pressure.",
+    "Inner ear: the cochlea handles hearing. The vestibule (static equilibrium, head position) and semicircular canals (kinetic equilibrium, rotation) handle balance."
+   ],
+   "act": {
+    "type": "order",
+    "prompt": "Put the path of sound in order.",
+    "items": [
+     {
+      "label": "Auricle",
+      "detail": "Collects sound"
+     },
+     {
+      "label": "External auditory meatus",
+      "detail": "Ear canal"
+     },
+     {
+      "label": "Tympanic membrane",
+      "detail": "Vibrates"
+     },
+     {
+      "label": "Malleus, incus, stapes",
+      "detail": "Amplify vibrations"
+     },
+     {
+      "label": "Oval window to the cochlea",
+      "detail": "Inner ear"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-14",
+   "title": "Brain disorders",
+   "teach": [
+    "Encephalitis is inflammation of brain tissue, usually caused by a virus spread by mosquitoes. Meningitis is inflammation of the meninges.",
+    "Multiple sclerosis (MS) is caused by progressive demyelination of nerve cells in the brain and spinal cord; it’s considered autoimmune. Alzheimer’s disease causes severe mental deterioration and usually affects older people. Parkinson’s disease and epilepsy are also covered in the chapter.",
+    "A cerebrovascular accident (CVA), or stroke, can be caused by a clot or a piece of clot blocking a vessel, or by a ruptured vessel. An aneurysm is a ballooning (dilation) of a blood vessel wall that can rupture."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Match the disorder.",
+    "categories": [
+     "Encephalitis",
+     "Multiple sclerosis",
+     "Stroke",
+     "Aneurysm"
+    ],
+    "items": [
+     {
+      "label": "Inflammation of brain tissue",
+      "category": 0,
+      "feedback": "Encephalitis."
+     },
+     {
+      "label": "Progressive loss of myelin",
+      "category": 1,
+      "feedback": "MS."
+     },
+     {
+      "label": "Can be caused by a blood clot",
+      "category": 2,
+      "feedback": "Cerebrovascular accident."
+     },
+     {
+      "label": "Ballooning of a vessel wall",
+      "category": 3,
+      "feedback": "Aneurysm."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap11-15",
+   "title": "The nervous system and aging",
+   "teach": [
+    "After maturity, the brain loses neurons in the outer cerebrum; by the mid-70s it has lost about 7% of its weight. Fewer synapses and neurotransmitters slow information processing and reactions.",
+    "Narrower arteries to the brain mean less oxygen and a higher risk of stroke. Staying mentally active, with reading and puzzles, helps keep the brain healthy."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "About how much brain weight is lost by the mid-70s, according to the textbook?",
+    "options": [
+     {
+      "label": "About 7%",
+      "correct": true,
+      "feedback": "Right."
+     },
+     {
+      "label": "About 30%",
+      "correct": false,
+      "feedback": "The textbook says about 7%."
+     },
+     {
+      "label": "None",
+      "correct": false,
+      "feedback": "The brain does shrink with age."
+     }
+    ]
+   }
+  }
+ ],
+ "flashcards": [
+  {
+   "front": "Four parts of the brain",
+   "back": "Brainstem, diencephalon, cerebrum, cerebellum."
+  },
+  {
+   "front": "Brainstem",
+   "back": "Medulla oblongata, pons and midbrain."
+  },
+  {
+   "front": "Cerebrospinal fluid",
+   "back": "Shock absorber for the CNS; circulates nutrients."
+  },
+  {
+   "front": "Medulla oblongata",
+   "back": "All tracts between cord and brain; cardiac, vasomotor and breathing centers."
+  },
+  {
+   "front": "Reticular formation",
+   "back": "Maintains consciousness and arousal."
+  },
+  {
+   "front": "Thalamus",
+   "back": "Main sensory relay station to the cortex."
+  },
+  {
+   "front": "Hypothalamus",
+   "back": "Homeostasis: temperature, thirst, hunger, sleep; controls the pituitary."
+  },
+  {
+   "front": "Infundibulum",
+   "back": "Attaches the hypothalamus to the pituitary."
+  },
+  {
+   "front": "Pineal gland",
+   "back": "Pinecone-shaped; secretes melatonin."
+  },
+  {
+   "front": "Longitudinal fissure",
+   "back": "Divides the cerebrum into right and left hemispheres."
+  },
+  {
+   "front": "Gyri / sulci",
+   "back": "Folds / grooves on the cerebrum."
+  },
+  {
+   "front": "Corpus callosum",
+   "back": "Connects the two cerebral hemispheres."
+  },
+  {
+   "front": "Occipital lobe",
+   "back": "Receives and interprets vision."
+  },
+  {
+   "front": "Cerebellum",
+   "back": "Coordinates movement, posture and balance."
+  },
+  {
+   "front": "Sympathetic",
+   "back": "Prepares for stress; fight or flight."
+  },
+  {
+   "front": "Parasympathetic",
+   "back": "Normal, nonstressful conditions; rest and repose."
+  },
+  {
+   "front": "Largest / smallest cranial nerve",
+   "back": "Trigeminal (V) / trochlear (IV)."
+  },
+  {
+   "front": "Abducens (VI)",
+   "back": "Motor; moves the eyeball (abduction)."
+  },
+  {
+   "front": "Hypoglossal (XII)",
+   "back": "Motor; tongue movements."
+  },
+  {
+   "front": "Lacrimal gland",
+   "back": "Produces tears."
+  },
+  {
+   "front": "Sclera / cornea",
+   "back": "White outer layer / its transparent front."
+  },
+  {
+   "front": "Retina",
+   "back": "Innermost layer with rods and cones."
+  },
+  {
+   "front": "Iris",
+   "back": "Controls how much light enters the pupil."
+  },
+  {
+   "front": "Rods / cones",
+   "back": "Dim light, no color / color, need lots of light."
+  },
+  {
+   "front": "Optic disk",
+   "back": "Where the optic nerve leaves; the blind spot."
+  },
+  {
+   "front": "Tympanic membrane",
+   "back": "Eardrum; vibrates with sound."
+  },
+  {
+   "front": "Encephalitis",
+   "back": "Inflammation of brain tissue."
+  },
+  {
+   "front": "Multiple sclerosis",
+   "back": "Progressive demyelination in the brain and spinal cord."
+  },
+  {
+   "front": "Aneurysm",
+   "back": "Ballooning of a blood vessel wall."
+  }
+ ],
+ "quiz": [
+  {
+   "q": "The _______________________ functions as a reflex center in coordinating complex skeletal muscular movements.",
+   "o": [
+    "cerebrum",
+    "corpus callosum",
+    "diencephalon",
+    "cerebellum"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 11 says the cerebellum functions as a reflex center in coordinating complex skeletal muscular movements. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The ____________________ gland produces tears.",
+   "o": [
+    "trigeminal",
+    "choroid",
+    "lacrimal",
+    "orbital"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says tears are produced by the lacrimal gland. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _______________________ is the innermost layer of the eye and contains the photosensitive cells.",
+   "o": [
+    "sclera",
+    "iris",
+    "conjunctiva",
+    "retina"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 11 says the retina is the innermost layer of the eye and contains the photosensitive cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "Inflammation of brain tissue is called _________________________ .",
+   "o": [
+    "meningitis",
+    "tetanus",
+    "epilepsy",
+    "encephalitis"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 11 says encephalitis is an inflammation of brain tissue. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The ___________________ gland is a pinecone-shaped gland that secretes melatonin.",
+   "o": [
+    "pituitary",
+    "parathyroid",
+    "thyroid",
+    "pineal"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 11 says the pineal gland is a pinecone-shaped endocrine gland that secretes melatonin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The middle of the three spinal meninges is called the ____________________ mater.",
+   "o": [
+    "dura",
+    "arachnoid",
+    "pia",
+    "subdural"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. The meninges are the dura mater (outer), arachnoid mater (middle) and pia mater (inner). Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The ______________________ fissure separates the cerebrum into right and left halves (cerebral hemispheres).",
+   "o": [
+    "central",
+    "optic",
+    "longitudinal",
+    "transverse"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says the longitudinal fissure separates the cerebrum into right and left halves. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The ______________________ division of the autonomic nervous system prepares the body for stressful situations.",
+   "o": [
+    "sympathetic",
+    "parasympathetic",
+    "peripheral",
+    "central"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says the sympathetic division prepares the body for stressful situations. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ nerve is the largest of the cranial nerves.",
+   "o": [
+    "abducens",
+    "trigeminal",
+    "trochlear",
+    "hypoglossal"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 11 says the trigeminal nerve (V) is the largest of the cranial nerves. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The symptoms of _________________ are caused by progressive demyelination of nerve cells in the brain and spinal cord.",
+   "o": [
+    "multiple sclerosis",
+    "epilepsy",
+    "encephalitis",
+    "meningitis"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says multiple sclerosis is caused by progressive demyelination of nerve cells in the brain and spinal cord. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ attaches the hypothalamus to the pituitary gland.",
+   "o": [
+    "infundibulum",
+    "mammillary bodies",
+    "thalamus",
+    "pineal gland"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says the infundibulum attaches to the pituitary gland. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ formation is the area that functions in maintaining consciousness and arousal.",
+   "o": [
+    "reticular",
+    "cerebellar",
+    "limbic",
+    "cerebral"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says the reticular formation functions in maintaining consciousness and arousal. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ lobe functions in receiving and interpreting visual input.",
+   "o": [
+    "temporal",
+    "sphenoid",
+    "parietal",
+    "occipital"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 11 says the occipital lobe functions in receiving and interpreting visual input. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The photosensitive cells that produce colour and require lots of light are the _________________.",
+   "o": [
+    "rods",
+    "cones",
+    "bipolar cells",
+    "ganglia"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 11 says cones produce color and require lots of light. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "Typically affecting the older population, _________________ results in severe mental deterioration.",
+   "o": [
+    "Alzheimer’s disease",
+    "Parkinson’s disease",
+    "meningitis",
+    "cerebral palsy"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says Alzheimer’s disease results in severe mental deterioration and usually affects older people. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ regulates the amount of light that enters through the diameter of the pupil.",
+   "o": [
+    "cornea",
+    "iris",
+    "retina",
+    "sclera"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 11 says the iris regulates the amount of light that enters through the diameter of the pupil. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ division of the autonomic nervous system operates under normal, nonstressful conditions.",
+   "o": [
+    "sympathetic",
+    "parasympathetic",
+    "peripheral",
+    "central"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 11 says the parasympathetic division operates under normal nonstressful conditions. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The numerous folds on the surface of the cerebral hemispheres are called _________________.",
+   "o": [
+    "sulci",
+    "fissures",
+    "gyri",
+    "callosi"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says the numerous folds on the surface of each hemisphere are called gyri. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ fluid serves as a shock absorber for the central nervous system.",
+   "o": [
+    "interstitial",
+    "intercellular",
+    "cerebrospinal",
+    "subdural"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says cerebrospinal fluid serves as a shock absorber for the central nervous system. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ nerve is a motor nerve that controls tongue movements.",
+   "o": [
+    "abducens",
+    "trigeminal",
+    "vestibulocochlear",
+    "hypoglossal"
+   ],
+   "a": 3,
+   "e": "Checked answer, not from an official key. Chapter 11 says the hypoglossal nerve (XII) is a motor nerve that controls tongue movements. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "Sound waves that enter the ear canal are directed to the _________________, causing it to vibrate.",
+   "o": [
+    "oval window",
+    "round window",
+    "tympanic membrane",
+    "eustachian tube"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says the ear canal directs sound waves to the tympanic membrane, which vibrates. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "Cerebrovascular accident, more commonly called _________________, can be caused by a blood vessel clot.",
+   "o": [
+    "encephalitis",
+    "stroke",
+    "meningitis",
+    "Parkinson’s"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Chapter 11 says a cerebrovascular accident, or stroke, can be caused by a clot in a blood vessel. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "An enlargement or dilation of a blood vessel wall is called a(n) _________________.",
+   "o": [
+    "embolism",
+    "thrombus",
+    "aneurysm",
+    "cephalalgia"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says an aneurysm is an enlargement or dilation of a blood vessel wall. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The _________________ nerve is a motor nerve that controls movement of the eyeball.",
+   "o": [
+    "abducens",
+    "trigeminal",
+    "vestibulocochlear",
+    "hypoglossal"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says the abducens nerve (VI) is a motor nerve that controls movement of the eyeball. The oculomotor and trochlear nerves also move the eye, but they aren’t options here. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "Nerve fibers leave the eye as the optic nerve at the _________________.",
+   "o": [
+    "fovea centralis",
+    "ciliary body",
+    "optic disk",
+    "retinal tract"
+   ],
+   "a": 2,
+   "e": "Checked answer, not from an official key. Chapter 11 says nerve fibers leave the eye as the optic nerve at the optic disk. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The cornea is the transparent part of the outermost layer of the eye.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says the cornea is the transparent part of the outermost layer that lets light into the eye. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The medulla oblongata contains all the ascending and descending tracts that connect the spinal cord and various parts of the brain.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 0,
+   "e": "Checked answer, not from an official key. Chapter 11 says the medulla oblongata contains all the ascending and descending tracts that connect the spinal cord and parts of the brain. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The somatic nervous system regulates the functions of internal organs by controlling glands, smooth muscles, and cardiac muscle.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. That describes the autonomic nervous system. The somatic nervous system controls skeletal muscle. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "The cerebellum controls intellectual processes and emotions.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. Intellectual processes and emotions are controlled by the cerebrum. The cerebellum handles coordination, posture and balance. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  },
+  {
+   "q": "Cones are sensitive to light and function in dim light but do not produce colour vision.",
+   "o": [
+    "True",
+    "False"
+   ],
+   "a": 1,
+   "e": "Checked answer, not from an official key. That describes rods. Cones produce color vision and need lots of light. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 11."
+  }
+ ]
+}
