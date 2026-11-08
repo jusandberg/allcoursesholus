@@ -1,0 +1,48 @@
+const {P,C,rbc,src}=require('../lens.js');
+const fl=(x,y,w=12)=>P(x,y,w,w,{bg:'#9fc0cf'});
+const lym=(x,y,w=30)=>P(x,y,w,w,{bg:'#f4f0f8',border:'3px solid #6f91a2'});
+module.exports={
+  id:'ap-15',after:2,
+  title:'Follow lymph back to the blood',
+  token:'#6f91a2',hideCore:true,dim:0.3,
+  stops:[
+    {short:'Tissues',place:'Leg tissues',view:'legs',organs:['tissues','vessels'],label:[226,660,'start'],
+     title:'Plasma leaks out and becomes lymph.',
+     body:'Blood pressure pushes some plasma out of capillaries; between the cells it’s interstitial fluid. What isn’t reabsorbed enters blind-ended lymphatic capillaries and is now called lymph.',
+     analogy:'Like a drain that catches water the pipes leak.',
+     lensCaption:'Fluid entering a lymphatic capillary',scene:'none',path:[[194,660]],
+     lens:[P(50,74,180,30,{r:'40px',bg:'#dde8ed',border:'3px solid #6f91a2'}),fl(24,30),fl(44,22),fl(64,34),fl(80,24),fl(36,48),fl(58,52),rbc(20,54,22)]},
+    {short:'Vessels',place:'Lymphatic vessels',view:'legs',organs:['lymphnodes'],label:[226,560,'start'],
+     title:'Valves keep lymph moving one way.',
+     body:'Lymphatics look like veins but have thinner walls and more valves. Skeletal muscle contractions, breathing and smooth muscle in the walls push the lymph along. A blockage causes edema.',
+     lensCaption:'Lymph flowing past a valve',scene:'vessel',path:[[200,600],[212,520]],
+     lens:[fl(18,50),fl(36,44),fl(54,56),fl(72,48),P(88,38,20,6,{r:'3px',bg:'#6f91a2'}),P(88,62,20,6,{r:'3px',bg:'#6f91a2'})]},
+    {short:'Node',place:'Lymph node',view:'pelvis',organs:['lymphnodes'],label:[226,522,'start'],
+     title:'Lymph nodes filter it.',
+     body:'Nodes cluster in the groin, armpits and neck. Inside, macrophages clean up microbes by phagocytosis and germinal centres make lymphocytes. Swollen nodes usually mean an infection.',
+     lensCaption:'Macrophages and lymphocytes at work',scene:'none',path:[[212,520]],
+     lens:[P(50,50,200,150,{r:'50%',bg:'#e6eef2',border:'4px solid #9fb6c2'}),lym(30,40),lym(50,34),lym(70,44),lym(40,64),P(64,66,40,36,{r:'40% 60% 50% 50%',bg:'#c8d9e0',border:'3px solid #6f91a2'}),P(76,62,10,6,{r:'999px',bg:'#8fa48a'})]},
+    {short:'Lacteals',place:'Small intestine',view:'gut',organs:['intestine','lymph'],label:[300,440,'start'],
+     title:'Lacteals pick up fats.',
+     body:'In the small intestine, special lymphatic vessels called lacteals absorb fats. The milky, fat-filled lymph there is called chyle.',
+     lensCaption:'Fat drops entering a lacteal',scene:'villi',path:[[240,440],[262,440]],
+     lens:[P(30,30,16,16,{bg:'#d3a84b'}),P(50,24,16,16,{bg:'#d3a84b'}),P(70,32,16,16,{bg:'#d3a84b'}),P(40,50,12,12,{bg:'#d3a84b'}),P(60,52,12,12,{bg:'#d3a84b'})]},
+    {short:'Thoracic duct',place:'Thoracic duct',view:'torso',organs:['lymph','vessels'],label:[226,330,'end'],
+     title:'The thoracic duct returns lymph to the blood.',
+     body:'Lymph from most of the body collects in the thoracic duct, which empties into the left subclavian vein. The right lymphatic duct empties into the right subclavian vein.',
+     lensCaption:'Lymph rejoining the bloodstream',scene:'vessel',path:[[250,430],[240,400],[238,330],[236,250],[252,214]],
+     lens:[fl(16,50),fl(32,46),fl(48,54),rbc(70,48,26),rbc(88,54,26)]},
+    {short:'Spleen',place:'Spleen',view:'torso',organs:['spleen'],label:[350,302,'start'],
+     title:'The spleen filters the blood.',
+     body:'The spleen, in the upper left abdomen, is the largest mass of lymphatic tissue. It destroys bacteria and worn-out red cells and platelets, makes lymphocytes and stores blood.',
+     lensCaption:'Old red cells being cleared',scene:'none',path:[[300,230],[336,300]],
+     lens:[P(50,50,200,160,{r:'50%',bg:'#ead1d8'}),rbc(36,40,28),P(62,56,32,20,{r:'40%',bg:'#b98a84',o:.7}),lym(70,34,26),P(30,68,40,36,{r:'40% 60% 50% 50%',bg:'#d6b5bd',border:'3px solid #8e5a6a'})]},
+    {short:'Thymus',place:'Thymus',view:'neck',organs:['thymus'],label:[268,192,'start'],
+     title:'T cells mature in the thymus.',
+     body:'The two-lobed thymus in the mediastinum is where T lymphocytes mature. T cells give cellular immunity; B cells make antibodies. The thymus is largest at puberty, then shrinks.',
+     lensCaption:'T cells maturing',scene:'none',path:[[300,240],[250,196]],
+     lens:[lym(26,36),lym(50,28),lym(74,38),lym(36,62),lym(62,64),lym(50,84,26)]}
+  ],
+  sources:src(15,'The Lymphatic Circulatory System','Chapter 21: The Lymphatic and Immune System'),
+  scope:'A simplified picture. Only a few lymph nodes and vessels are drawn, and the route jumps between organs to show each one’s job.'
+};

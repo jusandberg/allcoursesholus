@@ -1,0 +1,47 @@
+const {P,C,src}=require('../lens.js');
+const sp=(x,y)=>P(x,y,10,10,{bg:'#b07aa0'});
+const egg=(x,y,s=70)=>P(x,y,s,s,{bg:'#f6e3a6',border:'6px solid #f3f0e6'});
+module.exports={
+  id:'ap-19',after:6,
+  title:'From sperm and egg to birth',
+  token:'#d98aa8',hideCore:true,dim:0.15,
+  stops:[
+    {short:'Testes',place:'Testes',view:'pelvis',organs:['testes'],label:[268,598,'start'],
+     title:'Sperm are made in the testes.',
+     body:'Seminiferous tubules make sperm by meiosis (spermatogenesis), about 300 million a day. Sertoli cells nourish them; interstitial cells of Leydig make testosterone.',
+     lensCaption:'Sperm forming in a seminiferous tubule',scene:'follicle',path:[[258,590]],
+     lens:[sp(30,40),sp(50,30),sp(70,40),sp(40,62),sp(60,66),P(50,50,26,26,{bg:'#f4e6c8'})]},
+    {short:'Duct path',place:'Epididymis and vas deferens',view:'pelvis',organs:['testes'],label:[272,540,'start'],
+     title:'They mature and travel up the ducts.',
+     body:'Sperm mature for about 20 days in the epididymis, then travel up the ductus (vas) deferens, inside the spermatic cord, to the ejaculatory duct.',
+     lensCaption:'Sperm swimming through the duct',scene:'vessel',path:[[262,580],[270,540],[262,508],[250,516]],
+     lens:[sp(20,46),sp(40,54),sp(60,44),sp(80,52)]},
+    {short:'Semen',place:'Prostate and glands',view:'pelvis',organs:['prostate','urethra'],label:[264,540,'start'],
+     title:'Glands add the fluid of semen.',
+     body:'Seminal vesicles add about 60% of the volume, rich in fructose. The prostate adds an alkaline fluid, and the bulbourethral glands add mucus. Semen’s pH of 7.2 to 7.6 protects sperm.',
+     lensCaption:'Sperm in fructose-rich fluid',scene:'none',path:[[250,540]],
+     lens:[sp(30,40),sp(60,34),sp(44,66),P(70,62,12,12,{r:'30%',bg:'#d8c35a'}),P(20,64,12,12,{r:'30%',bg:'#d8c35a'}),P(52,20,12,12,{r:'30%',bg:'#d8c35a'})]},
+    {short:'Ovulation',place:'Ovary',view:'pelvis',organs:['ovaries'],label:[300,520,'start'],
+     title:'An ovary releases an egg.',
+     body:'FSH from the anterior pituitary starts follicles growing. One becomes a graafian follicle and ruptures on about day 14 of a 28-day cycle: ovulation. The follicle then becomes the corpus luteum.',
+     lensCaption:'An egg leaving the graafian follicle',scene:'follicle',path:[[286,508]],
+     lens:[egg(50,50)]},
+    {short:'Fertilization',place:'Fallopian tube',view:'pelvis',organs:['ovaries','uterus'],label:[302,496,'start'],
+     title:'Fertilization happens in the uterine tube.',
+     body:'Fimbriae sweep the egg into the fallopian tube. Of the sperm that reach it, only one penetrates the egg, forming a zygote. This usually happens in the upper part of the tube.',
+     lensCaption:'One sperm entering the egg',scene:'none',path:[[276,502],[264,500]],
+     lens:[egg(50,50,90),sp(76,26),sp(80,50),sp(72,74),sp(24,30),sp(56,40)]},
+    {short:'Implantation',place:'Uterus',view:'pelvis',organs:['uterus'],label:[274,512,'start'],
+     title:'The embryo implants in the endometrium.',
+     body:'Dividing by mitosis, the zygote becomes a blastocyst. By about day 7 after ovulation it embeds in the endometrium, and the placenta begins to form.',
+     lensCaption:'A blastocyst settling into the lining',scene:'none',path:[[254,504]],
+     lens:[P(50,80,200,60,{r:'30px 30px 0 0',bg:'#e9a9bc'}),P(50,52,60,60,{bg:'#f6e3a6',border:'4px solid #f3d6a0'}),P(50,52,24,24,{bg:'#e8c77a'})]},
+    {short:'Birth',place:'Uterus',view:'pelvis',organs:['uterus'],label:[274,520,'start'],
+     title:'Birth is called parturition.',
+     body:'By week 9 the embryo is a fetus. At birth, oxytocin and prostaglandins drive uterine contractions through three stages of labour: dilation, expulsion and placental.',
+     lensCaption:'Strong contractions of the myometrium',scene:'muscle',path:[[250,520],[250,550]],
+     lens:[P(50,50,150,150,{r:'50% 50% 44% 44%',bg:'#f2c9d5',border:'10px solid #d98aa8'})]}
+  ],
+  sources:src(19,'The Reproductive System','Chapters 27 and 28: The Reproductive System; Development and Inheritance'),
+  scope:'A simplified picture that shows male and female organs on one body map. Sizes and positions are drawn to show the route, not true anatomy.'
+};

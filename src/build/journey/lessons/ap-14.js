@@ -1,0 +1,42 @@
+const {P,C,rbc,o2,co2,src}=require('../lens.js');
+const dark=(x,y,w=30)=>P(x,y,w,w*0.62,{bg:'#8e3b37',border:'3px solid #b5605a'});
+module.exports={
+  id:'ap-14',after:5,
+  title:'One trip around the circulation',
+  token:'#c8524a',hideCore:true,
+  stops:[
+    {short:'Veins',place:'Vena cava',view:'torso',organs:['vessels','heart'],label:[236,300,'end'],
+     title:'Blood returns through the venae cavae.',
+     body:'Deoxygenated blood from the lower body comes up the inferior vena cava; from the head and arms, the superior vena cava. Both empty into the right atrium.',
+     lensCaption:'Darker, oxygen-poor blood heading home',scene:'vessel',path:[[244,470],[244,380],[246,250]],
+     lens:[dark(20,46),dark(42,56),dark(64,44),dark(86,54),co2(30,30),co2(70,66)]},
+    {short:'Right side',place:'Right atrium and ventricle',view:'chest',organs:['heart'],label:[296,206,'start'],
+     title:'The right side pumps blood to the lungs.',
+     body:'From the right atrium, blood passes the tricuspid valve into the right ventricle, then out through the pulmonary semilunar valve into the pulmonary arteries.',
+     analogy:'Valves are one-way doors.',
+     lensCaption:'Blood through the tricuspid valve',scene:'none',path:[[262,232],[262,222]],
+     lens:[P(50,30,150,60,{r:'40px',bg:'#e9b5a8'}),P(50,72,150,60,{r:'40px',bg:'#e09c88'}),P(36,52,40,8,{r:'4px',bg:'#fff'}),P(64,52,40,8,{r:'4px',bg:'#fff'}),dark(50,70,28)]},
+    {short:'Lungs',place:'Lungs',view:'chest',organs:['lungs'],label:[318,262,'start'],
+     title:'In the lungs, blood swaps gases.',
+     body:'Pulmonary circulation runs from the right ventricle to the lungs and back to the left atrium. In the lungs, blood drops carbon dioxide and picks up oxygen.',
+     lensCaption:'Carbon dioxide out, oxygen in',scene:'alveoli',path:[[280,236],[298,250]],
+     lens:[rbc(40,60,50),o2(30,58),o2(46,52),co2(70,30),co2(80,44),o2(18,26,12)]},
+    {short:'Left side',place:'Left atrium and ventricle',view:'chest',organs:['heart'],label:[296,236,'start'],
+     title:'The left side pumps to the whole body.',
+     body:'Four pulmonary veins bring oxygenated blood to the left atrium. It passes the bicuspid (mitral) valve into the left ventricle, which has the thickest wall because it pumps at high pressure.',
+     lensCaption:'Bright red blood in the left ventricle',scene:'none',path:[[286,240],[276,232]],
+     lens:[P(50,50,160,120,{r:'50px',bg:'#c86d56'}),P(50,50,110,74,{r:'40px',bg:'#f6e1da'}),rbc(40,46,30),rbc(60,56,30)]},
+    {short:'Aorta',place:'Aorta and arteries',view:'torso',organs:['vessels'],label:[276,380,'start'],
+     title:'The aorta sends blood out to the organs.',
+     body:'The left ventricle pumps through the aortic semilunar valve into the aorta, the largest artery. Systemic circulation takes oxygenated blood to every organ.',
+     lensCaption:'Oxygen-rich blood under pressure',scene:'blood',path:[[262,244],[262,330],[258,400],[256,470]],
+     lens:[rbc(16,44),rbc(38,58),rbc(60,42),rbc(82,56),o2(28,30,10),o2(70,70,10)]},
+    {short:'Capillaries',place:'Capillaries in the leg',view:'legs',organs:['vessels','tissues'],label:[226,660,'start'],
+     title:'Capillaries are where the exchange happens.',
+     body:'Arterioles feed capillaries, which are one cell thick. Nutrients, gases and wastes pass between blood and tissues there. Venules then carry blood into veins, whose valves keep it moving toward the heart.',
+     lensCaption:'Red cells passing single file',scene:'vessel',path:[[240,540],[214,620],[196,660]],
+     lens:[rbc(20,50,26),rbc(42,50,26),rbc(64,50,26),dark(86,50,26),o2(40,20,10),o2(60,80,10),co2(80,22,10)]}
+  ],
+  sources:src(14,'The Cardiovascular Circulatory System','Chapters 19 and 20: The Heart; Blood Vessels and Circulation'),
+  scope:'A simplified loop. The heart is drawn as one shape, so the chambers are described rather than shown, and the vessels are single lines.'
+};

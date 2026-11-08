@@ -1,0 +1,42 @@
+const {P,C,rbc,src}=require('../lens.js');
+const ca=(x,y,w=12)=>P(x,y,w,w,{bg:'#e8dcb8',border:'2px solid #cfc4a6'});
+module.exports={
+  id:'ap-7',after:0,
+  title:'Inside the skeleton: support, storage and blood cells',
+  token:'#cfc4a6',hideCore:true,
+  stops:[
+    {short:'Framework',place:'Skeleton',view:'body',organs:['skeleton','bones'],label:[312,180,'start'],
+     title:'206 bones hold you up.',
+     body:'The adult skeleton has 206 named bones. It supports the body, protects organs, moves with the muscles, makes blood cells and stores minerals.',
+     lensCaption:'Living bone tissue',scene:'osteon',path:[[250,180]],
+     lens:[]},
+    {short:'Calcium',place:'Blood to bone',view:'legs',organs:['vessels','bones'],label:[226,640,'start'],
+     title:'Calcium is stored in the bone matrix.',
+     body:'Bones are living tissue. Their hardness comes from mineral salts like calcium phosphate, and they release minerals back to the blood when the body needs them.',
+     analogy:'Like a savings account for calcium.',
+     lensCaption:'Calcium moving from blood into bone',scene:'blood',path:[[256,470],[230,560],[210,640]],
+     lens:[ca(16,40),ca(30,56),ca(46,42),ca(60,58),ca(76,44),ca(88,60),rbc(24,74,26),rbc(66,30,26)]},
+    {short:'Bone cells',place:'Compact bone',view:'legs',organs:['bones'],label:[226,690,'start'],
+     title:'Osteoblasts build; osteoclasts remove.',
+     body:'Osteoblasts lay down bone and become osteocytes once surrounded by matrix. Osteoclasts reabsorb bone during remodelling. In compact bone the unit is the osteon, rings of lamellae around a central canal.',
+     lensCaption:'An osteon: rings around a central canal',scene:'osteon',path:[[209,690]],
+     lens:[P(50,50,30,30,{bg:C.coral,border:'4px solid #fff'}),P(50,20,12,8,{bg:'#8a7a54'}),P(76,40,12,8,{bg:'#8a7a54'}),P(70,74,12,8,{bg:'#8a7a54'}),P(28,74,12,8,{bg:'#8a7a54'}),P(22,38,12,8,{bg:'#8a7a54'})]},
+    {short:'Marrow',place:'Red marrow',view:'torso',organs:['marrow','skeleton'],label:[300,236,'start'],
+     title:'Red marrow makes the blood cells.',
+     body:'Spongy bone is a mesh of trabeculae with marrow in the spaces. In adults, red marrow in the ribs, vertebrae, sternum and pelvis makes red and white blood cells and platelets (hematopoiesis).',
+     lensCaption:'New blood cells inside spongy bone',scene:'osteon',path:[[220,560],[250,470],[250,300],[250,236]],
+     lens:[rbc(24,28,28),rbc(60,22,28),rbc(78,50,28),rbc(36,58,28),P(58,62,26,26,{bg:'#f4f0f8',border:'3px solid #b07aa0'}),P(22,80,8,8,{bg:'#b07aa0'}),P(70,82,8,8,{bg:'#b07aa0'}),P(46,86,8,8,{bg:'#b07aa0'})]},
+    {short:'Protection',place:'Skull and ribs',view:'torso',organs:['skeleton','heart','lungs'],label:[340,210,'start'],
+     title:'Bones protect the vital organs.',
+     body:'The cranium protects the brain, and the rib cage (sternum, ribs and thoracic vertebrae) protects the heart and lungs.',
+     lensCaption:'Ribs around the lungs',scene:'none',path:[[262,228]],
+     lens:[P(50,20,180,10,{r:'5px',bg:'#e8dcb8'}),P(50,40,190,10,{r:'5px',bg:'#e8dcb8'}),P(50,60,190,10,{r:'5px',bg:'#e8dcb8'}),P(50,80,180,10,{r:'5px',bg:'#e8dcb8'}),P(50,50,60,52,{r:'50% 50% 46% 46%',bg:C.coral})]},
+    {short:'Movement',place:'Bones and muscles',view:'arm',organs:['skeleton','tissues'],label:[150,330,'start'],
+     title:'Muscles pull on bones as levers.',
+     body:'Muscles attach to bones by tendons. When they contract, bones act as levers and the body moves.',
+     lensCaption:'A muscle pulling on bone',scene:'muscle',path:[[230,240],[146,280],[132,330]],
+     lens:[P(50,34,180,26,{r:'14px',bg:'#e8dcb8',border:'3px solid #cfc4a6'}),P(50,70,150,40,{r:'40px',bg:'#8fa48a'})]}
+  ],
+  sources:src(7,'The Skeletal System','Chapter 6: Bone Tissue and the Skeletal System'),
+  scope:'A simplified skeleton. Only some bones are drawn, and the lens views are cartoons of tissue, not to scale.'
+};

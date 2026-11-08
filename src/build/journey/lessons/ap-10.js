@@ -1,0 +1,41 @@
+const {P,C,src}=require('../lens.js');
+const sig=(x,o=1)=>P(x,50,16,16,{bg:C.plum,o});
+module.exports={
+  id:'ap-10',after:8,
+  title:'A reflex arc: pulling your finger off a thorn',
+  token:'#b07aa0',hideCore:true,
+  stops:[
+    {short:'Receptor',place:'Fingertip',view:'arm',organs:['skin','nerves'],label:[112,520,'start'],
+     title:'A receptor picks up the stimulus.',
+     body:'You touch a thorn. Receptors in the skin turn the stimulus into a nerve impulse.',
+     lensCaption:'Receptor firing in the skin',scene:'skin',path:[[98,528]],
+     lens:[P(50,10,8,40,{r:'2px',bg:'#5b4636'}),P(50,52,26,26,{bg:'#fff',border:'5px solid '+C.plum}),P(50,80,8,40,{r:'3px',bg:C.plum})]},
+    {short:'Sensory',place:'Sensory neuron',view:'body',organs:['nerves','spine'],label:[164,262,'start'],
+     title:'A sensory neuron carries it in.',
+     body:'The sensory (afferent) neuron carries the impulse to the spinal cord, entering through the dorsal root. Most sensory neurons are unipolar.',
+     lensCaption:'Depolarization moving along the axon',scene:'nerve',path:[[104,440],[146,296],[200,232],[250,222]],
+     lens:[sig(20,.3),sig(44,.6),sig(68,1),P(88,50,14,14,{bg:'#e0b46a'})]},
+    {short:'Spinal cord',place:'Spinal cord',view:'torso',organs:['spine'],label:[262,222,'start'],
+     title:'An association neuron passes it on.',
+     body:'In the gray matter of the spinal cord, an association (internuncial) neuron links the sensory neuron to a motor neuron. The impulse crosses each synapse in one direction only.',
+     lensCaption:'A neurotransmitter crossing the synapse',scene:'none',path:[[250,226]],
+     lens:[P(30,50,70,40,{r:'0 30px 30px 0',bg:'#e8d3e2'}),P(74,50,50,40,{r:'30px 0 0 30px',bg:'#e8d3e2'}),P(52,40,8,8,{bg:C.plum}),P(56,52,8,8,{bg:C.plum}),P(50,62,8,8,{bg:C.plum})]},
+    {short:'Motor',place:'Motor neuron',view:'body',organs:['nerves','spine'],label:[164,300,'start'],
+     title:'A motor neuron carries the command out.',
+     body:'The motor (efferent) neuron leaves through the ventral root and carries the response back out along the spinal nerve. Spinal nerves are mixed: sensory and motor.',
+     lensCaption:'The response heading back out',scene:'nerve',path:[[250,230],[200,240],[146,296]],
+     lens:[sig(80,.3),sig(56,.6),sig(32,1)]},
+    {short:'Effector',place:'Arm muscle',view:'arm',organs:['tissues','nerves'],label:[146,340,'start'],
+     title:'The muscle pulls your hand away.',
+     body:'The effector organ, here a muscle, contracts. A reflex is involuntary and faster than a thought-out response.',
+     lensCaption:'Muscle fibres contracting',scene:'muscle',path:[[124,330]],
+     lens:[P(50,50,130,60,{r:'40px',bg:'#8fa48a'}),P(24,50,10,10,{bg:C.plum})]},
+    {short:'Brain',place:'Up to the brain',view:'body',organs:['spine','brain'],label:[276,62,'start'],
+     title:'Then the brain finds out.',
+     body:'The spinal cord also carries sensory impulses up to the brain, so you also become aware of the prick.',
+     lensCaption:'The message arriving in the brain',scene:'none',path:[[146,296],[250,222],[250,84],[250,62]],
+     lens:[P(50,50,150,110,{r:'46% 54% 50% 50%',bg:'#e3b9b0'}),P(40,40,16,16,{bg:C.plum})]}
+  ],
+  sources:src(10,'The Nervous System','Chapter 13: Anatomy of the Nervous System'),
+  scope:'A simplified reflex arc. One nerve line stands for many neurons, and the dorsal and ventral roots are not drawn separately.'
+};

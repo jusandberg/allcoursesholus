@@ -1,0 +1,48 @@
+const {P,C,rbc,o2,co2,src}=require('../lens.js');
+const dust=(x,y)=>P(x,y,8,8,{bg:'#9a8f7e'});
+const cil=(x)=>P(x,86,4,30,{r:'2px',bg:'#e3a68c'});
+module.exports={
+  id:'ap-17',after:0,
+  title:'Follow a breath of air in and out',
+  token:'#6f91a2',hideCore:true,
+  stops:[
+    {short:'Nose',place:'Nose',view:'head',organs:['nose'],label:[268,100,'start'],
+     title:'The nose warms, moistens and filters.',
+     body:'Air enters the nostrils. Hairs in the vestibules filter large particles, and the conchae and mucous lining warm and moisten the air. Olfactory receptors detect smells.',
+     lensCaption:'Hairs and mucus catching dust',scene:'none',path:[[250,104]],
+     lens:[P(20,50,4,80,{r:'2px',bg:'#7a6a5a'}),P(40,50,4,90,{r:'2px',bg:'#7a6a5a'}),P(60,50,4,80,{r:'2px',bg:'#7a6a5a'}),P(80,50,4,90,{r:'2px',bg:'#7a6a5a'}),dust(30,30),dust(50,60),dust(70,40),o2(28,72),o2(64,24),o2(84,70)]},
+    {short:'Larynx',place:'Pharynx and larynx',view:'head',organs:['trachea','mouth'],label:[264,140,'start'],
+     title:'Air passes the larynx, the voice box.',
+     body:'The pharynx carries both air and food. In the larynx, the epiglottis covers the glottis when you swallow. Air passing the true vocal cords makes them vibrate and produce sound.',
+     lensCaption:'Air between the vocal cords',scene:'none',path:[[250,124],[250,140]],
+     lens:[P(32,50,20,120,{r:'10px',bg:'#e7b3a3'}),P(68,50,20,120,{r:'10px',bg:'#e7b3a3'}),o2(50,30),o2(50,52),o2(50,74)]},
+    {short:'Trachea',place:'Trachea',view:'neck',organs:['trachea'],label:[264,176,'start'],
+     title:'The trachea carries only air.',
+     body:'The 4.5-inch windpipe is held open by 16 to 20 C-shaped rings of cartilage. Its cilia sweep mucus and dust up toward the throat.',
+     analogy:'Like a vacuum hose with rings to stop it collapsing.',
+     lensCaption:'Cilia sweeping mucus upward',scene:'none',path:[[250,152],[250,198]],
+     lens:[cil(16),cil(30),cil(44),cil(58),cil(72),cil(86),P(40,60,60,14,{r:'8px',bg:'#e6d8a6'}),dust(46,58),o2(30,26),o2(70,30)]},
+    {short:'Bronchi',place:'Bronchial tree',view:'chest',organs:['trachea','lungs'],label:[300,230,'start'],
+     title:'Air branches into the bronchial tree.',
+     body:'The trachea splits into right and left primary bronchi, then lobar bronchi (three on the right, two on the left), segmental bronchi and bronchioles. Cartilage disappears as the branches shrink.',
+     lensCaption:'Branches getting smaller and smaller',scene:'none',path:[[250,202],[236,216],[218,236]],
+     lens:[P(50,20,20,40,{r:'8px',bg:'#e7c9b6'}),P(30,52,14,40,{r:'7px',bg:'#e7c9b6'}),P(70,52,14,40,{r:'7px',bg:'#e7c9b6'}),P(18,80,8,24,{r:'4px',bg:'#e7c9b6'}),P(40,82,8,24,{r:'4px',bg:'#e7c9b6'}),P(60,82,8,24,{r:'4px',bg:'#e7c9b6'}),P(82,80,8,24,{r:'4px',bg:'#e7c9b6'}),o2(50,40,10)]},
+    {short:'Alveoli',place:'Alveoli',view:'chest',organs:['lungs'],label:[226,262,'end'],
+     title:'Gases cross into the blood in the alveoli.',
+     body:'Over 300 million alveoli give about 70 square metres of surface, each wrapped in capillaries. Oxygen diffuses from the air into the blood; carbon dioxide moves the other way. This is external respiration.',
+     lensCaption:'Oxygen in, carbon dioxide out',scene:'alveoli',path:[[210,250]],
+     lens:[o2(30,32),o2(44,40),o2(66,28),co2(60,60),co2(76,52),rbc(30,70,28),rbc(54,82,28),rbc(78,76,28)]},
+    {short:'Diaphragm',place:'Diaphragm',view:'torso',organs:['diaphragm','lungs'],label:[350,282,'start'],
+     title:'The diaphragm drives each breath.',
+     body:'Breathing in, the diaphragm contracts and moves down while the external intercostals lift the ribs. The chest gets bigger, pressure drops and air rushes in. Breathing out is mostly passive.',
+     lensCaption:'The diaphragm contracting',scene:'muscle',path:[[226,262],[250,270]],
+     lens:[]},
+    {short:'Cells',place:'Body cells',view:'body',organs:['heart','vessels','tissues'],label:[140,340,'start'],
+     title:'Blood carries oxygen to the cells.',
+     body:'The cardiovascular system carries the gases between the lungs and the cells. Internal respiration is the exchange between the blood and body cells.',
+     lensCaption:'Oxygen reaching a muscle cell',scene:'muscle',path:[[262,230],[300,236],[180,250],[140,300],[124,340]],
+     lens:[rbc(24,46,30),o2(44,40),o2(56,52),co2(40,66),P(76,50,60,60,{r:'30%',bg:'#8fa48a'})]}
+  ],
+  sources:src(17,'The Respiratory System','Chapter 22: The Respiratory System'),
+  scope:'A simplified picture. The airway and lungs are drawn as simple shapes, and one breath is followed rather than the mix of air in the lungs.'
+};

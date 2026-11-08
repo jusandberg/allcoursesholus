@@ -409,3 +409,7 @@ button.mn[aria-expanded=true] small{display:none}
 .upnext .un-k{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
 .upnext b{font-size:1.1rem;line-height:1.3}
 .upnext .un-go{font-size:.9rem;font-weight:600;opacity:.9}
+/* body tour scene */
+.bj-inner{width:min(1180px,100%)}
+.bj-card .bj-intro{margin:-4px 0 18px;color:#596166;font-size:15px}
+@media (max-width:600px){.bj-card{padding:16px 10px}.bj-card .h2{font-size:22px}}

@@ -1,0 +1,43 @@
+const {P,C,cell,src}=require('../lens.js');
+const blob=(x,y,w,h,bg)=>P(x,y,w,h,{r:'46% 54% 50% 50%',bg});
+module.exports={
+  id:'ap-1',after:6,
+  title:'A tour of the body cavities',
+  token:'#71836d',hideCore:true,
+  stops:[
+    {short:'Cranial',place:'Cranial cavity',view:'head',organs:['brain'],label:[298,52,'start'],
+     title:'The cranial cavity holds the brain.',
+     body:'The dorsal cavity holds the organs of the nervous system that coordinate the body. Its first part, the cranial cavity, holds the brain.',
+     lensCaption:'The brain, protected inside the skull',scene:'none',path:[[250,60]],
+     lens:[blob(50,50,150,110,'#e3b9b0'),P(50,50,6,96,{r:'3px',bg:'#cf9a8e'}),P(32,40,40,6,{r:'3px',bg:'#cf9a8e'}),P(68,40,40,6,{r:'3px',bg:'#cf9a8e'}),P(34,62,36,6,{r:'3px',bg:'#cf9a8e'}),P(66,62,36,6,{r:'3px',bg:'#cf9a8e'})]},
+    {short:'Spinal',place:'Spinal cavity',view:'torso',organs:['spine'],label:[262,300,'start'],
+     title:'The spinal cavity holds the spinal cord.',
+     body:'The second part of the dorsal cavity runs down the back inside the vertebrae and holds the spinal cord.',
+     lensCaption:'The spinal cord inside a vertebra',scene:'none',path:[[250,90],[250,190],[250,300]],
+     lens:[P(50,50,150,150,{bg:'#f4efe1',border:'10px solid #cfc4a6'}),P(50,50,62,62,{bg:'#d9bfd2'}),P(50,50,26,26,{r:'40%',bg:'#b07aa0'})]},
+    {short:'Thoracic',place:'Thoracic cavity',view:'chest',organs:['heart','lungs','thymus','trachea'],label:[330,190,'start'],
+     title:'The thoracic cavity sits inside the rib cage.',
+     body:'It’s the first part of the ventral cavity. The heart sits in the pericardial cavity and each lung in a pleural cavity. Between them, the mediastinum holds the heart, thymus, trachea, esophagus and vessels.',
+     analogy:'Like a cabinet with a separate drawer for each lung and one in the middle for the heart.',
+     lensCaption:'Heart between the two lungs',scene:'none',path:[[250,240],[262,230]],
+     lens:[blob(24,50,70,110,'#e7a9a0'),blob(76,50,70,110,'#e7a9a0'),P(50,54,56,50,{r:'50% 50% 46% 46%',bg:C.coral})]},
+    {short:'Diaphragm',place:'Diaphragm',view:'torso',organs:['diaphragm'],label:[350,280,'start'],
+     title:'The diaphragm divides the ventral cavity.',
+     body:'This dome-shaped muscle separates the thoracic cavity above from the abdominopelvic cavity below.',
+     lensCaption:'A sheet of muscle between the two cavities',scene:'muscle',path:[[250,262]],
+     lens:[]},
+    {short:'Abdominal',place:'Abdominopelvic cavity',view:'torso',organs:['stomach','liver','gallbladder','intestine','colon','spleen','pancreas','kidneys'],label:[352,420,'start'],
+     title:'The abdominopelvic cavity holds the digestive organs.',
+     body:'It holds the kidneys, stomach, liver and gallbladder, small and large intestines, spleen and pancreas. The parietal peritoneum lines its wall; the visceral peritoneum covers the organs.',
+     analogy:'Parietal is the wallpaper; visceral is the gift wrap on each organ.',
+     lensCaption:'Organs wrapped in visceral peritoneum',scene:'none',path:[[252,300],[262,350],[252,420]],
+     lens:[blob(30,36,64,52,'#9a5d50'),blob(68,34,58,50,'#e09c88'),blob(46,70,80,50,'#e3a68c'),P(50,50,200,200,{bg:'transparent',border:'4px dashed #71836d'})]},
+    {short:'Pelvic organs',place:'Pelvic part',view:'pelvis',organs:['uterus','ovaries'],label:[300,486,'start'],
+     title:'In women, it also holds the ovaries and uterus.',
+     body:'The lower, pelvic part of the abdominopelvic cavity holds the reproductive organs in women.',
+     lensCaption:'Uterus with an ovary on each side',scene:'none',path:[[250,470],[250,504]],
+     lens:[P(50,50,74,90,{r:'46% 46% 40% 40%',bg:'#d98aa8'}),P(16,52,30,20,{bg:'#d98aa8'}),P(84,52,30,20,{bg:'#d98aa8'})]}
+  ],
+  sources:src(1,'The Human Body','Chapter 1: An Introduction to the Human Body'),
+  scope:'A simplified map. Organs are drawn to show which cavity they sit in, not their exact size or position, and the membranes lining each cavity aren’t drawn.'
+};

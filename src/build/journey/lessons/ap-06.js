@@ -1,0 +1,43 @@
+const {P,C,src}=require('../lens.js');
+const layerCell=(x,y,bg,w=26)=>P(x,y,w,w*0.7,{r:'40%',bg,border:'2px solid rgba(255,255,255,.7)'});
+module.exports={
+  id:'ap-6',after:1,
+  title:'What your skin does, layer by layer',
+  token:'#e0b46a',hideCore:true,
+  stops:[
+    {short:'Covering',place:'Skin',view:'body',organs:['skin'],label:[132,262,'start'],
+     title:'The skin is the body’s covering.',
+     body:'An adult’s skin covers over 3,000 square inches and weighs about 6 pounds. With the hair, nails and glands, it makes up the integumentary system.',
+     lensCaption:'Skin over the arm',scene:'skin',path:[[114,262]],
+     lens:[]},
+    {short:'Epidermis',place:'Epidermis',view:'arm',organs:['skin'],label:[128,300,'start'],
+     title:'The epidermis renews itself from the bottom up.',
+     body:'New cells form in the stratum germinativum and move up, filling with keratin. By the stratum corneum they’re dead, flat and constantly shed. The epidermis has no blood vessels.',
+     analogy:'Like a conveyor belt that pushes new tiles up to replace the worn ones on top.',
+     lensCaption:'Cells moving up through the layers',scene:'skin',path:[[110,282],[106,300]],
+     lens:[layerCell(30,12,'#e8c6ad'),layerCell(62,12,'#e8c6ad'),layerCell(22,40,'#f2d2bc'),layerCell(50,40,'#f2d2bc'),layerCell(78,40,'#f2d2bc'),layerCell(36,62,'#f7dcc8',24),layerCell(64,62,'#f7dcc8',24),P(26,84,22,22,{bg:'#e3a07e'}),P(52,84,22,22,{bg:'#e3a07e'}),P(78,84,22,22,{bg:'#8a5a3c'})]},
+    {short:'Melanin',place:'Skin in the sun',view:'arm',organs:['skin'],label:[118,176,'start'],
+     title:'Melanin shields against UV rays.',
+     body:'Melanocytes in the stratum germinativum make melanin, the pigment that colours skin. Sunlight stimulates them, which is a suntan. Everyone has about the same number; genes control how much melanin they make.',
+     lensCaption:'Melanin granules around the cells',scene:'skin',path:[[100,240]],
+     lens:[P(20,14,10,40,{r:'4px',bg:'#f0c75a',o:.8}),P(50,10,10,40,{r:'4px',bg:'#f0c75a',o:.8}),P(80,14,10,40,{r:'4px',bg:'#f0c75a',o:.8}),P(30,56,12,12,{bg:'#7a4a2e'}),P(44,62,10,10,{bg:'#7a4a2e'}),P(60,58,12,12,{bg:'#7a4a2e'}),P(72,66,10,10,{bg:'#7a4a2e'}),P(50,84,40,28,{r:'40%',bg:'#8a5a3c'})]},
+    {short:'Dermis',place:'Dermis',view:'arm',organs:['skin','vessels','nerves'],label:[140,360,'start'],
+     title:'The dermis holds the working parts.',
+     body:'Below the epidermis, the dermis is dense connective tissue with collagen and elastin. It holds blood vessels, nerves, sweat glands, hair follicles and sebaceous glands. The hypodermis below it stores fat.',
+     lensCaption:'Vessels, a nerve and a sweat gland',scene:'skin',path:[[104,330],[110,360]],
+     lens:[P(30,52,70,8,{r:'4px',bg:C.coral}),P(64,60,70,8,{r:'4px',bg:C.blue}),P(46,74,60,5,{r:'3px',bg:C.plum}),P(78,40,24,24,{bg:'#fff',border:'5px solid #9fc0cf'}),P(78,24,6,20,{r:'3px',bg:'#9fc0cf'}),P(20,30,6,50,{r:'3px',bg:'#5b4636'})]},
+    {short:'Cooling',place:'Sweat glands',view:'arm',organs:['skin','vessels'],label:[124,410,'start'],
+     title:'Sweat and blood flow control heat.',
+     body:'Normal temperature is about 37°C. In heat, dermal vessels dilate and eccrine sweat glands release sweat that evaporates. In cold, the vessels narrow to hold heat in.',
+     analogy:'Like opening the windows on a hot day.',
+     lensCaption:'Sweat droplets rising to the surface',scene:'skin',path:[[98,400]],
+     lens:[P(26,10,16,20,{r:'50% 50% 50% 50% / 60% 60% 40% 40%',bg:'#9fc0cf'}),P(54,6,14,18,{r:'50% 50% 50% 50% / 60% 60% 40% 40%',bg:'#9fc0cf'}),P(78,12,16,20,{r:'50% 50% 50% 50% / 60% 60% 40% 40%',bg:'#9fc0cf'}),P(40,34,10,12,{bg:'#9fc0cf'}),P(66,36,10,12,{bg:'#9fc0cf'}),P(50,68,120,10,{r:'5px',bg:C.coral})]},
+    {short:'Sensation',place:'Nerves to the brain',view:'body',organs:['skin','nerves','spine','brain'],label:[276,62,'start'],
+     title:'Receptors report touch and temperature.',
+     body:'Receptors in the skin for temperature and pressure send signals along nerves to the spinal cord and brain.',
+     lensCaption:'A nerve carrying the signal',scene:'nerve',path:[[104,440],[146,296],[250,222],[250,84],[250,62]],
+     lens:[P(14,50,18,18,{bg:'#fff',border:'4px solid '+C.plum}),P(40,50,16,16,{bg:C.plum}),P(64,50,16,16,{bg:C.plum,o:.6}),P(88,50,16,16,{bg:C.plum,o:.3})]}
+  ],
+  sources:src(6,'The Integumentary System','Chapter 5: The Integumentary System'),
+  scope:'A simplified picture. The lens shows layers in cartoon form, and the nerve route to the brain is drawn as one line rather than the real chain of neurons.'
+};

@@ -31,11 +31,13 @@ try{const s=JSON.parse(localStorage.getItem(store)||'null');if(s)st=Object.assig
 if(num===0&&mode==='quiz')st.quiz=null;
 /* scenes */
 const scenes=[{t:'intro'}];
+const JR=!mode&&window.HolusJourney&&(window.HOLUS_JOURNEYS||{})[cid+'-'+num]||null;
 steps.forEach((s,k)=>{
   if(s.chapter||L.perStepChapter)scenes.push({t:'chapter',s,k});
   if((s.teach&&s.teach.length)||s.html)scenes.push({t:'teach',s,k});
   if(s.visual||s.mnemonic||(s.keyPoints&&s.keyPoints.length)||(s.blocksHtml&&s.blocksHtml.length))scenes.push({t:'see',s,k});
   if(s.act)scenes.push({t:'act',s,k});
+  if(JR&&k===Math.min(JR.after||0,steps.length-1))scenes.push({t:'journey'});
 });
 if(L.caseStudy)scenes.push({t:'case'});
 if(L.flashcards&&L.flashcards.length)scenes.push({t:'cards'});
@@ -93,6 +95,7 @@ function chunks(html){const t=document.createElement('template');t.innerHTML=htm
     const h=nd.outerHTML;if(/^H[1-6]$/.test(nd.tagName)){flush();buf.push(h);}else{buf.push(h);flush();}});flush();return out.join('');}
 function render(sc){
   const s=sc.s;
+  if(sc.t==='journey')return `<div class="inner bj-inner"><div class="card bj-card"><div class="step-k"><i>◎</i>Body tour</div><h2 class="h2">${esc(JR.title)}</h2><p class="bj-intro">Follow along stop by stop, or press Play. Tap any lit organ to jump to it.</p><div class="bj-host"></div></div></div>`;
   if(sc.t==='intro'){
     const t=L.title.split(' ');const mid=Math.ceil(t.length/2);
     const checks=steps.filter(x=>x.act&&x.act.type!=='explore').length;
@@ -165,6 +168,7 @@ function homeHref(){return window.HOLUS_ROUTED?'#'+cid:L.courseHome;}
 function goHref(h){if(h.charAt(0)==='#'){try{history.pushState(null,'',h);}catch(e){}if(window.holusRoute)window.holusRoute(h);else location.hash=h;}else location.href=h;}
 function wire(sc,n){
   const s=sc.s;
+  if(sc.t==='journey'){try{window.HolusJourney.mount(n.querySelector('.bj-host'),JR);}catch(e){console.error(e);}}
   next.textContent=sc.t==='intro'?(st.completed?'Review lesson':st.i>0?'Start over':'Begin'):sc.t==='finish'?(L.nextTitle?'Next lesson →':'Back to course'):'Continue';
   next.disabled=false;
   if(sc.t==='intro'){const r=n.querySelector('[data-resume]');if(r)r.addEventListener('click',()=>go(+r.dataset.resume));}
@@ -287,7 +291,8 @@ function openSheet(){
       const here=cur>=e.i&&cur<=endI;const seen=(st.max||0)>=e.i;
       const kind=s.act?({choice:'Check',sort:s.act.variant==='match'?'Match':'Sort',order:'Order',explore:'Explore',number:'Calculate'}[s.act.type]||'Activity'):(s.visual?'Diagram':'Read');
       html+='<li><button class="mo-i'+(here?' here':'')+(actDone||(!s.act&&seen)?' done':seen?' seen':'')+'" data-go="'+e.i+'"><i>'+(actDone||(!s.act&&seen&&!here)?'✓':e.k+1)+'</i><span><b>'+esc(s.title)+'</b><small>'+kind+(here?' · You are here':'')+'</small></span></button></li>';}
-    else{const lab={case:'Case study',cards:'Flashcards',quiz:'Lesson test practice'}[e.kind]||e.kind;const here=cur===e.i;const done=e.kind==='quiz'?st.quiz&&st.quiz.done:(st.max||0)>e.i;
+    else{if(e.kind==='journey'){const here=cur===e.i,done=(st.max||0)>e.i;html+='<li><button class="mo-i'+(here?' here':'')+(done?' done':'')+'" data-go="'+e.i+'"><i>'+(done&&!here?'✓':'◎')+'</i><span><b>Body tour</b><small>'+esc(JR.title)+(here?' · You are here':'')+'</small></span></button></li>';return;}
+      const lab={case:'Case study',cards:'Flashcards',quiz:'Lesson test practice'}[e.kind]||e.kind;const here=cur===e.i;const done=e.kind==='quiz'?st.quiz&&st.quiz.done:(st.max||0)>e.i;
       html+='<li class="mo-part">Review</li>'.repeat(lastChap!=='__rev'?1:0);lastChap='__rev';
       html+='<li><button class="mo-i'+(here?' here':'')+(done?' done':'')+'" data-go="'+e.i+'"><i>'+(done?'✓':'★')+'</i><span><b>'+lab+'</b><small>'+(e.kind==='cards'?L.flashcards.length+' cards':e.kind==='quiz'?L.quiz.length+' questions':'Apply it')+(here?' · You are here':'')+'</small></span></button></li>';}
   });
@@ -301,7 +306,7 @@ menuBtn.addEventListener('click',openSheet,sig);
 sheet.addEventListener('click',e=>{if(e.target===sheet||e.target.closest('.sheet-x')){closeSheet();return;}const b=e.target.closest('[data-go]');if(b){sheet.classList.remove('open');sheet.hidden=true;go(+b.dataset.go);}},sig);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!sheet.hidden)closeSheet();},sig);
 const track=bar.parentNode;track.querySelectorAll('.mk').forEach(x=>x.remove());track.classList.add('marks');
-const markList=entries.map(e=>({i:e.i,label:e.kind==='step'?e.s.title:({case:'Case study',cards:'Flashcards',quiz:'Test practice'}[e.kind]||e.kind),part:e.kind==='step'&&e.s.chapter&&!L.perStepChapter}));
+const markList=entries.map(e=>({i:e.i,label:e.kind==='step'?e.s.title:({case:'Case study',cards:'Flashcards',quiz:'Test practice',journey:'Body tour'}[e.kind]||e.kind),part:e.kind==='step'&&e.s.chapter&&!L.perStepChapter}));
 markList.forEach((m,j)=>{const b=document.createElement('button');b.type='button';b.className='mk'+(m.part?' part':'');b.style.left=(m.i/(scenes.length-1)*100)+'%';b.setAttribute('aria-label','Go to '+m.label);b.title=m.label;b.dataset.go=m.i;b.addEventListener('click',e=>{e.stopPropagation();go(m.i);},sig);track.appendChild(b);});
 function paintMarks(){track.querySelectorAll('.mk').forEach(b=>{const i=+b.dataset.go;b.classList.toggle('past',i<=cur);b.classList.toggle('now',i<=cur&&(()=>{const nx=[...track.querySelectorAll('.mk')].map(x=>+x.dataset.go).filter(x=>x>i)[0];return nx==null||cur<nx;})());});}
 track.addEventListener('click',e=>{if(e.target.closest('.mk'))return;const r=track.getBoundingClientRect();const f=(e.clientX-r.left)/r.width;let best=markList[0];markList.forEach(m=>{if(Math.abs(m.i/(scenes.length-1)-f)<Math.abs(best.i/(scenes.length-1)-f))best=m;});if(best)go(best.i);},sig);

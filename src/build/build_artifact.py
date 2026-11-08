@@ -2,7 +2,7 @@ import re,os
 SRC=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT=os.path.dirname(SRC)
 P=os.path.join(SRC,'dist','courses','player')+'/'
-css=open(P+'player.css').read();js=open(P+'player.js').read();ad=open(P+'adapters.js').read()
+css=open(P+'player.css').read()+'\n'+open(P+'journey.css').read();js=open(P+'player.js').read();ad=open(P+'adapters.js').read()
 data=''.join('<script>'+open(P+'data/'+i+'.js').read()+'</script>\n' for i in ['nh','ns','sf','sh','nc','ap','vn'])
 
 js=js.replace('href="?course=${cid}&lesson=${L.nextN||num+1}"','href="#${cid}-${L.nextN||num+1}"')
@@ -73,6 +73,7 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 window.addEventListener('popstate',function(){holusRoute();});
 window.addEventListener('DOMContentLoaded',function(){holusRoute();});
 </script>'''
+jdata=open(P+'data/journeys.js').read();jeng=open(P+'journey.js').read()
 html=f'''<title>hōlus. Study</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,7 +94,9 @@ html,body{{background:#16212b}}
   <nav class="hp-dock" aria-label="Lesson navigation"><div class="row"><button class="hp-btn ghost" id="back" type="button">Back</button><button class="hp-btn primary" id="next" type="button">Begin</button></div></nav>
   <p class="sr" id="live" aria-live="polite"></p>
 </div>
-{data}<script>{ad}</script>
+{data}<script>{jdata}</script>
+<script>{jeng}</script>
+<script>{ad}</script>
 <script>window.HOLUS_ROUTED=true;</script>
 <script>{js}</script>
 '''
