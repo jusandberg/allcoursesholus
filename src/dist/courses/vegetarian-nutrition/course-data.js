@@ -1,12 +1,12 @@
-/* Generated from 14 supplied printer-version lesson tests. Original wording is preserved except for obvious PDF text-extraction artifacts. Answers distinguish evidence-checked, confirmed graded-course keys, likely course-intended keys, and unresolved items. The user supplied a graded Lesson 3 key on 2 November 2026; no full-course official answer key was supplied. */
+/* Generated from 14 supplied printer-version lesson tests. Original wording is preserved except for obvious PDF text-extraction artifacts. Answers distinguish evidence-checked, confirmed graded-course keys, likely course-intended keys, and unresolved items. The user supplied graded Lesson 3 and Lesson 12 keys on 2 November 2026; no full-course official answer key was supplied. */
 window.VN_COURSE = {
   "title": "Vegetarian Nutrition",
   "subtitle": "A source-aware, evidence-corroborated study course",
   "description": "Learn vegetarian nutrition from foundations and nutrient science through life stages and practical application.",
   "officialAnswerKeyAvailable": true,
-  "officialAnswerKeyScope": "Graded Lesson 3 only, supplied 2 November 2026",
+  "officialAnswerKeyScope": "Graded Lessons 3 and 12, supplied 2 and 8 November 2026",
   "finalExamAvailable": false,
-  "answerLayer": "evidence checked, confirmed graded Lesson 3 key, and likely course-intended keys",
+  "answerLayer": "evidence checked, confirmed graded Lesson 3 and 12 keys, and likely course-intended keys",
   "evidenceReviewDate": "2026-11-01",
   "blocks": [
     {
@@ -1729,232 +1729,232 @@ window.VN_COURSE = {
       "questionCount": 15,
       "sourceFile": "Vegetarian Nutrition - 10282026 - 303 PM (1)__Lesson 8 Test.txt",
       "questions": [
-          {
-            "number": 1,
-            "prompt": "The first ever recommended dietary allowances were announced over the radio in 1941.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0,
-            "answerStatus": "course-confirmed",
-            "rationale": "True. The first Recommended Dietary Allowances came out in 1941, and the course teaches that they were announced over the radio.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 2,
-            "prompt": "Which statement is false:",
-            "options": [
-              "The Dietary Guidelines suggest that half of grain intake should be from whole, unrefined grains.",
-              "Refined grains such as white rice and pasta play important roles in some cultures.",
-              "Sea vegetables - alaria, kelp, and nori are included in the Protein section of Vegetarian Food Groups",
-              "Legumes are a good source of iron",
-              "All statements are True"
-            ],
-            "answer": 2,
-            "answerStatus": "course-confirmed",
-            "rationale": "Sea vegetables such as alaria, kelp and nori are grouped with vegetables, not in the protein section.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 3,
-            "prompt": "Which milk (s) are high in protein?",
-            "options": [
-              "Oat",
-              "Cashew and Almond",
-              "Soy and Pea",
-              "All of the above"
-            ],
-            "answer": 2,
-            "answerStatus": "course-confirmed",
-            "rationale": "Soy and pea milks have much more protein than oat, cashew or almond milk.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 4,
-            "prompt": "Most nondairy cheeses are high in protein.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1,
-            "answerStatus": "course-confirmed",
-            "rationale": "False. Most nondairy cheeses are made mainly from starch or oil and have little protein.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 5,
-            "prompt": "Which statement about B12 is true?",
-            "options": [
-              "All nutritional yeast provides an excellent source of B12.",
-              "Found in baking yeast",
-              "Bound in brewer's yeast",
-              "Not all nutritional yeast provides B12."
-            ],
-            "answer": 3,
-            "answerStatus": "course-confirmed",
-            "rationale": "Nutritional yeast only has B12 when it has been fortified, so check the label.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 6,
-            "prompt": "A food included in the fat category is:",
-            "options": [
-              "peanut butter.",
-              "refined grain products.",
-              "sour cream.",
-              "avocado."
-            ],
-            "answer": 2,
-            "answerStatus": "course-confirmed",
-            "rationale": "Sour cream is in the fat category. Peanut butter and avocado are rich in fat too, but the food guide places them in other groups.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 7,
-            "prompt": "Blackstrap molasses is a valuable addition to the vegan diet because it is rich in calcium.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0,
-            "answerStatus": "course-confirmed",
-            "rationale": "True. Blackstrap molasses is one of the calcium-rich foods listed in Becoming Vegetarian, with about 176 mg of calcium per tablespoon.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 8,
-            "prompt": "Eating a variety of foods helps diversify nutrients in a person's diet.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0,
-            "answerStatus": "course-confirmed",
-            "rationale": "True. Eating a wide range of foods gives you a wider range of nutrients.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 9,
-            "prompt": "The most efficient way to get omega-3 fatty acids is from:",
-            "options": [
-              "eggs.",
-              "beats.",
-              "flaxseed oil.",
-              "ground almonds."
-            ],
-            "answer": 2,
-            "answerStatus": "course-confirmed",
-            "rationale": "Flaxseed oil is the richest source of omega-3 fat (ALA) among these choices.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 10,
-            "prompt": "Aside from in supplements, vitamin B12 can be found in:",
-            "options": [
-              "meat.",
-              "dairy.",
-              "eggs.",
-              "All of the above."
-            ],
-            "answer": 3,
-            "answerStatus": "course-confirmed",
-            "rationale": "Meat, dairy and eggs all contain B12. Vegans need fortified foods or a supplement.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 11,
-            "prompt": "Fruit drinks and fruit juice can be equally counted as daily fruit servings.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1,
-            "answerStatus": "course-confirmed",
-            "rationale": "False. Fruit drinks can contain very little juice, so they don't count the same as fruit juice.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 12,
-            "prompt": "Dried fruits can contribute a significant amount of iron to the diet.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0,
-            "answerStatus": "course-confirmed",
-            "rationale": "True. Dried fruits such as apricots, raisins and figs add a useful amount of iron.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 13,
-            "prompt": "Grains contain which of the following nutrients?",
-            "options": [
-              "Fibre.",
-              "Protein.",
-              "Iron.",
-              "All of the above."
-            ],
-            "answer": 3,
-            "answerStatus": "course-confirmed",
-            "rationale": "Grains provide fibre, protein and iron, especially whole grains.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 14,
-            "prompt": "All soymilk is a good source of vitamin D and calcium.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1,
-            "answerStatus": "course-confirmed",
-            "rationale": "False. Only fortified soymilk is a good source of vitamin D and calcium. Check the label.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          },
-          {
-            "number": 15,
-            "prompt": "A serving of veggie \"meat\" counts as a serving of \"beans and alternates\" in the \"Vegetarian Food Guide\".",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0,
-            "answerStatus": "course-confirmed",
-            "rationale": "True. The Vegetarian Food Guide counts one serving of veggie meat as a serving of beans and alternates.",
-            "correction": "",
-            "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
-            "sourceUrl": null
-          }
-        ]
+        {
+          "number": 1,
+          "prompt": "The first ever recommended dietary allowances were announced over the radio in 1941.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "True. The first Recommended Dietary Allowances came out in 1941, and the course teaches that they were announced over the radio.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 2,
+          "prompt": "Which statement is false:",
+          "options": [
+            "The Dietary Guidelines suggest that half of grain intake should be from whole, unrefined grains.",
+            "Refined grains such as white rice and pasta play important roles in some cultures.",
+            "Sea vegetables - alaria, kelp, and nori are included in the Protein section of Vegetarian Food Groups",
+            "Legumes are a good source of iron",
+            "All statements are True"
+          ],
+          "answer": 2,
+          "answerStatus": "course-confirmed",
+          "rationale": "Sea vegetables such as alaria, kelp and nori are grouped with vegetables, not in the protein section.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 3,
+          "prompt": "Which milk (s) are high in protein?",
+          "options": [
+            "Oat",
+            "Cashew and Almond",
+            "Soy and Pea",
+            "All of the above"
+          ],
+          "answer": 2,
+          "answerStatus": "course-confirmed",
+          "rationale": "Soy and pea milks have much more protein than oat, cashew or almond milk.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 4,
+          "prompt": "Most nondairy cheeses are high in protein.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "answerStatus": "course-confirmed",
+          "rationale": "False. Most nondairy cheeses are made mainly from starch or oil and have little protein.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 5,
+          "prompt": "Which statement about B12 is true?",
+          "options": [
+            "All nutritional yeast provides an excellent source of B12.",
+            "Found in baking yeast",
+            "Bound in brewer's yeast",
+            "Not all nutritional yeast provides B12."
+          ],
+          "answer": 3,
+          "answerStatus": "course-confirmed",
+          "rationale": "Nutritional yeast only has B12 when it has been fortified, so check the label.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 6,
+          "prompt": "A food included in the fat category is:",
+          "options": [
+            "peanut butter.",
+            "refined grain products.",
+            "sour cream.",
+            "avocado."
+          ],
+          "answer": 2,
+          "answerStatus": "course-confirmed",
+          "rationale": "Sour cream is in the fat category. Peanut butter and avocado are rich in fat too, but the food guide places them in other groups.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 7,
+          "prompt": "Blackstrap molasses is a valuable addition to the vegan diet because it is rich in calcium.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "True. Blackstrap molasses is one of the calcium-rich foods listed in Becoming Vegetarian, with about 176 mg of calcium per tablespoon.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 8,
+          "prompt": "Eating a variety of foods helps diversify nutrients in a person's diet.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "True. Eating a wide range of foods gives you a wider range of nutrients.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 9,
+          "prompt": "The most efficient way to get omega-3 fatty acids is from:",
+          "options": [
+            "eggs.",
+            "beats.",
+            "flaxseed oil.",
+            "ground almonds."
+          ],
+          "answer": 2,
+          "answerStatus": "course-confirmed",
+          "rationale": "Flaxseed oil is the richest source of omega-3 fat (ALA) among these choices.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 10,
+          "prompt": "Aside from in supplements, vitamin B12 can be found in:",
+          "options": [
+            "meat.",
+            "dairy.",
+            "eggs.",
+            "All of the above."
+          ],
+          "answer": 3,
+          "answerStatus": "course-confirmed",
+          "rationale": "Meat, dairy and eggs all contain B12. Vegans need fortified foods or a supplement.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 11,
+          "prompt": "Fruit drinks and fruit juice can be equally counted as daily fruit servings.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "answerStatus": "course-confirmed",
+          "rationale": "False. Fruit drinks can contain very little juice, so they don't count the same as fruit juice.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 12,
+          "prompt": "Dried fruits can contribute a significant amount of iron to the diet.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "True. Dried fruits such as apricots, raisins and figs add a useful amount of iron.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 13,
+          "prompt": "Grains contain which of the following nutrients?",
+          "options": [
+            "Fibre.",
+            "Protein.",
+            "Iron.",
+            "All of the above."
+          ],
+          "answer": 3,
+          "answerStatus": "course-confirmed",
+          "rationale": "Grains provide fibre, protein and iron, especially whole grains.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 14,
+          "prompt": "All soymilk is a good source of vitamin D and calcium.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "answerStatus": "course-confirmed",
+          "rationale": "False. Only fortified soymilk is a good source of vitamin D and calcium. Check the label.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        },
+        {
+          "number": 15,
+          "prompt": "A serving of veggie \"meat\" counts as a serving of \"beans and alternates\" in the \"Vegetarian Food Guide\".",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "True. The Vegetarian Food Guide counts one serving of veggie meat as a serving of beans and alternates.",
+          "correction": "",
+          "sourceNote": "Answer from the graded Lesson 8 test (6 November 2026).",
+          "sourceUrl": null
+        }
+      ]
     },
     {
       "id": "lesson-9",
@@ -2666,58 +2666,64 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "The course chapter presents adolescents as an expanding vegetarian demographic, so True is the likely intended textbook answer.",
           "correction": "Treat this as a historical demographic statement. The proportion varies by location, survey definition, and year and should not be presented as a timeless prevalence fact.",
-          "sourceNote": "The Dietitian's Guide to Vegetarian Diets (2011), chapter 14 demographic framing.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. The Dietitian's Guide to Vegetarian Diets (2011), chapter 14 demographic framing.",
           "sourceUrl": null,
-          "confidence": "medium"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026"
         },
         {
           "number": 2,
-          "prompt": "Vegetarian teens tend to have diets that are beEer than those of their non vegetarian peers.",
+          "prompt": "Vegetarian teens tend to have diets that are better than those of their non vegetarian peers.",
           "options": [
             "True",
             "False"
           ],
           "answer": 0,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "The source summarizes studies in which vegetarian teens ate less junk food and fat and more fibre, fruit, and vegetables than meat-eating peers, so True is the intended key.",
           "correction": "This is an average observational pattern, not a guarantee that any vegetarian teenager has a higher-quality diet.",
-          "sourceNote": "Becoming Vegetarian (2003), chapter 10, pp. 301–302; Canadian Paediatric Society vegetarian guidance.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Becoming Vegetarian (2003), chapter 10, pp. 301–302; Canadian Paediatric Society vegetarian guidance.",
           "sourceUrl": "https://caringforkids.cps.ca/handouts/preteens-and-teens/vegetarian_diets_for_children_and_teens",
-          "confidence": "high"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026"
         },
         {
           "number": 3,
-          "prompt": "Which statement is False regarding zinc and adolescents?",
+          "prompt": "Which statement is false regarding zinc and adolescents?",
           "options": [
             "Zinc is absorbed somewhat less well from vegetarian diets than from omnivore diets",
             "Dairy products can significantly contribute to the zinc intake of LOVs.",
             "Vegetarians may need up to 50% more zinc.",
-            "Plant sources of zinc suitable for teenagers can include nuts, legumes and whole grains",
-            "All of the above"
+            "Plant sources of zinc suitable for teenagers can include nuts, legumes and whole grains.",
+            "None of the above"
           ],
-          "answer": 2,
-          "answerStatus": "verified",
-          "rationale": "A blanket 50% higher zinc requirement is not a current universal recommendation; needs depend on food pattern and bioavailability.",
+          "answer": 4,
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks \"None of the above\": all four statements are true. Zinc from plant foods is absorbed less well because of phytates, so vegetarians may need up to 50% more than the RDA (NIH Office of Dietary Supplements). Dairy adds zinc for lacto-ovo vegetarians, and nuts, legumes and whole grains are good plant sources.",
           "correction": "",
           "sourceNote": "NIH Office of Dietary Supplements: Zinc fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 4,
-          "prompt": "The growth spurt of an adolescent is faster than at any other ,me of life.",
+          "prompt": "The growth spurt of an adolescent is faster than at any other time of life.",
           "options": [
             "True",
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Growth is most rapid in infancy; adolescence is a second major growth period.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 5,
@@ -2727,11 +2733,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Active adolescents need more total energy and often more protein grams, but not necessarily a higher percentage of energy from protein.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 6,
@@ -2741,11 +2749,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "A modestly higher protein intake can account for lower average digestibility of some plant proteins.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 7,
@@ -2755,25 +2765,29 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "A substantial fraction of adult bone mineral is accrued during the adolescent growth spurt.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 8,
-          "prompt": "Vegetarian diets seem to increase the likeliness of eating disorders in teenagers. True or False?",
+          "prompt": "Vegetarian diets seem to increase the likeliness of eating disorders in teenagers.",
           "options": [
             "True",
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Vegetarianism does not itself cause eating disorders; associations are confounded and require sensitive assessment.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 9,
@@ -2783,11 +2797,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Soy intake in youth is not associated with increased breast-cancer risk and may be neutral or protective in observational research.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 10,
@@ -2797,11 +2813,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "A vegetarian label can sometimes conceal food restriction, but most vegetarian teens do not have eating disorders.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 11,
@@ -2811,11 +2829,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "The B12 RDA is about 1.2 µg at ages 4–8 and 2.4 µg at ages 14–18, so it is lower, not twice as high, in younger children.",
           "correction": "",
-          "sourceNote": "NIH Office of Dietary Supplements: Vitamin B12 fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. NIH Office of Dietary Supplements: Vitamin B12 fact sheet for health professionals.",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 12,
@@ -2824,28 +2844,32 @@ window.VN_COURSE = {
             "tempeh",
             "beans",
             "tofu",
-            "all of the above"
+            "All of the above"
           ],
           "answer": 3,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Tempeh, beans, and tofu can all replace meat in mixed dishes.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 13,
-          "prompt": "Almond buEer can be a good alternative to milk products.",
+          "prompt": "Almond butter can be a good alternative to milk products.",
           "options": [
             "True",
             "False"
           ],
-          "answer": 1,
-          "answerStatus": "verified",
-          "rationale": "Almond butter is a food, not a nutritionally equivalent beverage replacement for milk; fortified soy beverage is generally closer.",
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks True. The course lists almond butter among calcium-containing alternatives to milk products. It isn’t a one-for-one nutritional swap for milk, so it works best alongside other calcium sources like fortified soy beverage, tofu made with calcium and leafy greens.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed by your graded Lesson 12 result.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 14,
@@ -2855,29 +2879,32 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "The textbook states that the vegetarian teens in the cited studies consumed more fibre than meat-eating peers, making True the expected answer.",
           "correction": "The size of the difference depends on the actual foods eaten. High fibre is not automatically beneficial if it crowds out energy in a rapidly growing adolescent.",
-          "sourceNote": "Becoming Vegetarian (2003), chapter 10, pp. 301–302; Canadian Paediatric Society vegetarian guidance.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 12 result. Becoming Vegetarian (2003), chapter 10, pp. 301–302; Canadian Paediatric Society vegetarian guidance.",
           "sourceUrl": "https://caringforkids.cps.ca/handouts/preteens-and-teens/vegetarian_diets_for_children_and_teens",
-          "confidence": "high"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026"
         },
         {
           "number": 15,
-          "prompt": "Which is a True statement regarding Iron.",
+          "prompt": "Which is a true statement regarding Iron?",
           "options": [
-            "Excessive use of dairy as it inhibits iron absorption",
-            "Non vegetarians have a higher intake of iron than vegetarians",
-            "Including a vitamin C source with high iron meals promotes iron absorption",
-            "Both A and C",
-            "None of the above"
+            "Excessive use of dairy as it inhibits iron absorption.",
+            "Non vegetarians have a higher intake of iron than vegetarians.",
+            "Including a vitamin C source with high iron meals promotes iron absorption.",
+            "Both A and C.",
+            "None of the above."
           ],
-          "answer": null,
-          "answerStatus": "ambiguous",
-          "rationale": "Vitamin C improves nonheme-iron absorption, while “dairy inhibits” is context dependent; options C and D therefore depend on how A is interpreted.",
-          "correction": "Rewrite A as displacement or separate the two concepts.",
+          "answer": 3,
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks \"Both A and C\". Calcium in large amounts of dairy can reduce iron absorption, and vitamin C eaten with iron-rich foods increases absorption of nonheme (plant) iron. B is false: vegetarians usually take in as much iron as non-vegetarians or more; it’s absorption, not intake, that is lower.",
+          "correction": "",
           "sourceNote": "NIH Office of Dietary Supplements: Iron fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 12 result, 8 November 2026",
+          "confidence": "confirmed-course-result"
         }
       ]
     },
