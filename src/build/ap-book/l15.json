@@ -7,7 +7,7 @@
    "id": "ap15-1",
    "title": "What the lymphatic system does",
    "teach": [
-    "The lymphatic system is closely linked to the blood. It’s made of lymph, lymph vessels, lymph nodes and organs (tonsils, spleen, thymus, appendix and Peyer’s patches).",
+    "The lymphatic system works alongside the blood. It moves a fluid called lymph through its own vessels, returns it to the blood, and helps destroy microorganisms.",
     "Its primary function is to drain protein-containing fluid that escapes from blood capillaries out of the tissue spaces. It also carries fats from the digestive tract to the blood, produces lymphocytes and develops immunity."
    ],
    "act": {
@@ -15,19 +15,19 @@
     "prompt": "What is the primary function of the lymphatic system?",
     "options": [
      {
-      "label": "To drain protein-containing fluid that escapes from blood capillaries out of tissue spaces",
+      "label": "Draining protein-containing fluid that escapes from blood capillaries",
       "correct": true,
       "feedback": "Right."
      },
      {
-      "label": "To pump blood",
+      "label": "Pumping blood to the lungs",
       "correct": false,
-      "feedback": "That’s the heart."
+      "feedback": "That’s the right ventricle."
      },
      {
-      "label": "To make red blood cells",
+      "label": "Making red blood cells",
       "correct": false,
-      "feedback": "Red cells come from red bone marrow."
+      "feedback": "Red marrow makes red cells."
      }
     ]
    }
@@ -36,25 +36,25 @@
    "id": "ap15-2",
    "title": "From plasma to lymph",
    "teach": [
-    "Blood pressure pushes some plasma out of capillaries into the spaces between cells, where it’s called interstitial fluid. Most is reabsorbed, but the rest must be drained or swelling (edema) results.",
-    "Once interstitial fluid enters a lymphatic capillary, it’s called lymph: mostly water, with ions, gases, nutrients, some proteins, hormones, enzymes and wastes.",
-    "In the villi of the small intestine, special lymphatic vessels called lacteals absorb fats. Lymph in the lacteals looks milky and is called chyle."
+    "Blood pressure pushes some plasma out of capillaries into the spaces between cells, where it’s called interstitial fluid. Most is reabsorbed, but the rest must be drained or swelling (edema) develops.",
+    "Once interstitial fluid enters a lymphatic capillary, it’s called lymph: mostly water with ions, gases, nutrients, some proteins, hormones, enzymes and wastes.",
+    "In the small intestine, special lymphatic vessels called lacteals absorb fats. The milky, fat-filled lymph there is chyle."
    ],
    "act": {
     "type": "order",
-    "prompt": "Put the names of the fluid in order.",
+    "prompt": "Put the fluid’s names in order.",
     "items": [
      {
       "label": "Plasma",
-      "detail": "In the blood capillary"
+      "detail": "In the blood"
      },
      {
       "label": "Interstitial fluid",
-      "detail": "In the spaces between cells"
+      "detail": "Between tissue cells"
      },
      {
       "label": "Lymph",
-      "detail": "In the lymphatic capillary"
+      "detail": "In a lymphatic capillary"
      }
     ]
    }
@@ -63,10 +63,10 @@
    "id": "ap15-3",
    "title": "Lymphatic vessels",
    "teach": [
-    "Lymphatic capillaries start as blind-end tubes between cells. They’re much larger and more permeable than blood capillaries. They aren’t found in the central nervous system, red bone marrow or parts of the spleen.",
-    "They join into larger lymphatics, which look like veins but have thinner walls and more valves, so lymph flows one way.",
-    "Lymphatics of the skin run in loose subcutaneous tissue and follow the veins. Lymphatics of the organs follow the arteries.",
-    "Lymph is moved along by skeletal muscle contraction, breathing movements and smooth muscle in the vessel walls."
+    "Lymphatic capillaries start as blind-ended tubes between cells. They’re much larger and more permeable than blood capillaries. They’re absent from the central nervous system, red marrow and some other tissues.",
+    "They join into lymphatics, which look like veins but have thinner walls and more valves, so lymph flows one way.",
+    "Lymphatics of the skin run in loose subcutaneous tissue and follow the veins; lymphatics of the organs follow the arteries.",
+    "Lymph keeps moving thanks to skeletal muscle contractions, breathing movements and smooth muscle in the vessel walls. A blockage causes edema; in elephantiasis, parasitic worms block the vessels."
    ],
    "act": {
     "type": "choice",
@@ -94,22 +94,20 @@
    "id": "ap15-4",
    "title": "Lymph nodes",
    "teach": [
-    "Lymph nodes (lymph glands) are oval to bean-shaped structures along the lymphatics, 1 to 25 mm long. They cluster in three regions: the groin, armpits and neck.",
-    "Afferent lymphatic vessels enter the node at various points. Efferent vessels leave at the hilum, a small dent where a nodal artery enters and a vein leaves. A fibrous capsule sends trabeculae inward to make compartments.",
-    "Inside, lymphatic nodules have germinal centers that produce lymphocytes, and sinuses with macrophages that destroy microorganisms. The bulk of the body’s lymphoid tissue is in the lymph nodes."
+    "Lymph nodes (lymph glands) are oval or bean-shaped structures along the lymphatics, 1 to 25 mm long. They cluster in three regions: the groin, armpits and neck.",
+    "Afferent lymphatic vessels enter a node at several points. Efferent vessels leave at the hilum, the dent on one side. A fibrous capsule sends trabeculae inward, creating compartments with lymph nodules (with germinal centers that make lymphocytes) and sinuses lined with macrophages.",
+    "When lymph enters, microbes trigger lymphocyte production, and macrophages clean up by phagocytosis. Swollen nodes usually mean an infection."
    ],
    "mnemonic": {
     "cue": "Afferent Arrives, Efferent Exits",
-    "explanation": "Afferent vessels bring lymph into the node; efferent vessels carry it out at the hilum."
+    "explanation": "Afferent vessels bring lymph into the node; efferent vessels carry it out."
    },
    "act": {
     "type": "sort",
-    "prompt": "Match each part of a lymph node.",
+    "prompt": "Afferent or efferent lymphatic vessels?",
     "categories": [
-     "Afferent vessels",
-     "Efferent vessels",
-     "Hilum",
-     "Germinal center"
+     "Afferent",
+     "Efferent"
     ],
     "items": [
      {
@@ -118,19 +116,14 @@
       "feedback": "Afferent."
      },
      {
-      "label": "Leave the node",
+      "label": "Leave at the hilum",
       "category": 1,
       "feedback": "Efferent."
      },
      {
-      "label": "Dent where efferent vessels leave",
-      "category": 2,
-      "feedback": "Hilum."
-     },
-     {
-      "label": "Produces lymphocytes",
-      "category": 3,
-      "feedback": "Germinal center."
+      "label": "Eventually unite to form lymphatic trunks",
+      "category": 1,
+      "feedback": "Efferent."
      }
     ]
    }
@@ -139,35 +132,9 @@
    "id": "ap15-5",
    "title": "Lymphatic trunks and ducts",
    "teach": [
-    "Efferent vessels unite into lymphatic trunks. The textbook names six principal trunks: lumbar (legs, pelvis, kidneys, abdominal wall), intestinal (stomach, intestines, pancreas, spleen), bronchomediastinal (thorax, lungs, heart, diaphragm and part of the liver), intercostal (parts of the thorax), subclavian (arms) and jugular (head and neck).",
-    "The trunks drain into two ducts. The thoracic duct (left lymphatic duct) is the main collecting duct and empties into the left subclavian vein. The right lymphatic duct empties into the right subclavian vein."
+    "Efferent vessels unite into six principal lymphatic trunks: lumbar (legs, pelvis, kidneys), intestinal (stomach, intestines, pancreas, spleen), bronchomediastinal (thorax, lungs, heart, diaphragm and part of the liver), intercostal (part of the thorax), subclavian (arms) and jugular (head and neck).",
+    "The trunks drain into two ducts. The thoracic duct (left lymphatic duct) is the main collecting duct and empties into the left subclavian vein. The right lymphatic duct empties into the right subclavian vein. That returns lymph to the blood."
    ],
-   "visual": {
-    "kind": "flow",
-    "title": "Path of lymph",
-    "items": [
-     {
-      "label": "Lymphatic capillaries",
-      "detail": "Blind-end tubes."
-     },
-     {
-      "label": "Lymphatics",
-      "detail": "With valves; pass through nodes."
-     },
-     {
-      "label": "Lymphatic trunks",
-      "detail": "Six principal trunks."
-     },
-     {
-      "label": "Thoracic duct / right lymphatic duct",
-      "detail": "Two collecting ducts."
-     },
-     {
-      "label": "Subclavian veins",
-      "detail": "Lymph rejoins the blood."
-     }
-    ]
-   },
    "act": {
     "type": "sort",
     "prompt": "Which trunk drains each area?",
@@ -181,22 +148,22 @@
      {
       "label": "Legs and pelvis",
       "category": 0,
-      "feedback": "Lumbar trunk."
+      "feedback": "Lumbar."
      },
      {
-      "label": "Thorax, lungs, heart and diaphragm",
+      "label": "Thorax, lungs and heart",
       "category": 1,
-      "feedback": "Bronchomediastinal trunk."
+      "feedback": "Bronchomediastinal."
      },
      {
-      "label": "Arms",
+      "label": "Arms and hands",
       "category": 2,
-      "feedback": "Subclavian trunk."
+      "feedback": "Subclavian."
      },
      {
       "label": "Head and neck",
       "category": 3,
-      "feedback": "Jugular trunk."
+      "feedback": "Jugular."
      }
     ]
    }
@@ -205,8 +172,8 @@
    "id": "ap15-6",
    "title": "Tonsils",
    "teach": [
-    "Tonsils are masses of lymphoid tissue in mucous membrane, forming a protective ring around the openings of the nose and mouth.",
-    "The palatine tonsils, at the back of the mouth, are the ones usually removed in a tonsillectomy. The pharyngeal tonsils (adenoids) are near the inside of the nasal cavity. The lingual tonsils are on the back surface of the tongue at its base."
+    "Tonsils are masses of lymphoid tissue in mucous membrane, forming a protective ring around the nose and mouth.",
+    "The palatine tonsils, at the back of the mouth, are the ones commonly removed in a tonsillectomy. The pharyngeal tonsils (adenoids) are near the back of the nasal cavity. The lingual tonsils are on the back surface of the tongue at its base."
    ],
    "act": {
     "type": "sort",
@@ -218,12 +185,12 @@
     ],
     "items": [
      {
-      "label": "Removed in a tonsillectomy",
+      "label": "Commonly removed in a tonsillectomy",
       "category": 0,
       "feedback": "Palatine."
      },
      {
-      "label": "Near the nasal cavity opening",
+      "label": "Near the back of the nasal cavity",
       "category": 1,
       "feedback": "Pharyngeal."
      },
@@ -239,13 +206,13 @@
    "id": "ap15-7",
    "title": "Spleen, thymus, Peyer’s patches and appendix",
    "teach": [
-    "The spleen, in the upper left abdomen, is the single largest mass of lymphatic tissue. It filters blood, removes worn-out red cells and platelets, makes lymphocytes and plasma cells, and stores blood to release in a hemorrhage.",
-    "The thymus, a two-lobed gland in the mediastinum along the trachea, is the site where lymphocytes (T cells) are produced and mature. It’s largest at puberty and shrinks afterward.",
+    "The spleen, in the upper left abdomen, is the single largest mass of lymphatic tissue. It filters blood, destroys bacteria and worn-out red cells and platelets, makes lymphocytes and stores blood as a reservoir.",
+    "The thymus is a two-lobed mass in the mediastinum along the trachea. It’s the site of lymphocyte production and maturation, especially T cells. It’s largest at puberty and then shrinks.",
     "Peyer’s patches in the wall of the small intestine have macrophages that destroy bacteria. The appendix helps B cells mature and makes IgA."
    ],
    "act": {
     "type": "sort",
-    "prompt": "Which organ?",
+    "prompt": "Which lymphatic organ?",
     "categories": [
      "Spleen",
      "Thymus",
@@ -253,31 +220,35 @@
     ],
     "items": [
      {
-      "label": "Largest mass of lymphatic tissue; filters blood",
+      "label": "Filters blood and destroys worn-out red cells",
       "category": 0,
       "feedback": "Spleen."
      },
      {
-      "label": "Where T lymphocytes mature",
+      "label": "Site of lymphocyte maturation",
       "category": 1,
       "feedback": "Thymus."
      },
      {
-      "label": "In the small intestine wall; macrophages destroy bacteria",
+      "label": "In the small intestine wall",
       "category": 2,
       "feedback": "Peyer’s patches."
+     },
+     {
+      "label": "Acts as a blood reservoir",
+      "category": 0,
+      "feedback": "Spleen."
      }
     ]
    }
   },
   {
    "id": "ap15-8",
-   "title": "B cells, T cells and antibodies",
+   "title": "B cells and T cells",
    "teach": [
-    "Immunity is the body’s ability to resist pathogens and harmful substances. Lymphoid tissue holds two kinds of lymphocytes.",
-    "B lymphocytes produce antibodies and give humoral immunity, which works well against circulating bacteria and viruses. In tissues, B cells become plasma cells.",
-    "T lymphocytes come from the thymus and give cellular immunity, which works against fungi, parasites, viruses inside cells, cancer cells and transplants.",
-    "Antigens are foreign proteins. Antibodies (immunoglobulins) are Y-shaped proteins that bind antigens so they clump and can be eaten by phagocytes."
+    "Immunity is the body’s ability to resist pathogens, foreign substances and harmful chemicals. The bulk of our lymphoid tissue is in the lymph nodes.",
+    "B lymphocytes produce antibodies and give humoral immunity, which works against circulating bacteria and viruses. B cells that enter tissue become plasma cells, which make huge amounts of one antibody.",
+    "T lymphocytes, from the thymus, give cellular immunity, effective against fungi, parasites, viruses inside cells, cancer cells and transplanted tissue."
    ],
    "act": {
     "type": "sort",
@@ -290,37 +261,36 @@
      {
       "label": "Produce antibodies",
       "category": 0,
-      "feedback": "Humoral immunity."
+      "feedback": "B cells (through plasma cells)."
      },
      {
-      "label": "Mature in the thymus",
+      "label": "Cellular immunity",
       "category": 1,
-      "feedback": "Cellular immunity."
+      "feedback": "T cells."
      },
      {
-      "label": "Become plasma cells",
+      "label": "Humoral immunity",
       "category": 0,
       "feedback": "B cells."
      },
      {
-      "label": "Attack cancer cells and transplants",
+      "label": "Attacked by HIV",
       "category": 1,
-      "feedback": "Cellular immunity."
+      "feedback": "HIV infects T cells."
      }
     ]
    }
   },
   {
    "id": "ap15-9",
-   "title": "The five antibody classes",
+   "title": "Antigens and antibodies",
    "teach": [
-    "IgG is in tissue fluids and plasma and attacks viruses, bacteria and toxins; it also activates complement.",
-    "IgA is in secretions: tears, nasal fluid, saliva, gut juices, breast milk. IgM forms in plasma in response to bacteria or food antigens. IgD sits on B cells and helps activate them. IgE is associated with allergic reactions.",
-    "The most abundant are IgG, IgA and IgM."
+    "Antigens are foreign proteins (on bacteria, viruses, protozoa or fungal spores). They trigger antibodies, or immunoglobulins: Y-shaped proteins of two heavy and two light chains, with antigen-binding sites at the tips. Binding makes invaders clump so phagocytes can eat them.",
+    "Five types: IgG (tissue fluid and plasma; attacks viruses, bacteria and toxins; activates complement), IgA (secretions like tears, saliva and breast milk), IgM (plasma; response to bacteria and food antigens), IgD (on B cells; B-cell activation) and IgE (allergic reactions)."
    ],
    "mnemonic": {
     "cue": "GAMED",
-    "explanation": "The five classes: IgG, IgA, IgM, IgE, IgD. IgE = allergies; IgG = the general fighter in plasma."
+    "explanation": "The five immunoglobulins: G, A, M, E, D. IgE = allergies (think \"E\" for \"eek, pollen!\")."
    },
    "act": {
     "type": "sort",
@@ -333,17 +303,17 @@
     ],
     "items": [
      {
-      "label": "In plasma; attacks viruses, bacteria and toxins",
+      "label": "Attacks viruses, bacteria and toxins in plasma",
       "category": 0,
       "feedback": "IgG."
      },
      {
-      "label": "In tears and breast milk",
+      "label": "In tears, saliva and breast milk",
       "category": 1,
       "feedback": "IgA."
      },
      {
-      "label": "Allergic reactions",
+      "label": "Associated with allergic reactions",
       "category": 2,
       "feedback": "IgE."
      },
@@ -359,34 +329,34 @@
    "id": "ap15-10",
    "title": "Active and passive immunity",
    "teach": [
-    "Active immunity is when your own B cells make antibodies. It’s natural after an infection or artificial after a vaccine (killed or weakened pathogens), and it creates immunologic memory.",
-    "Passive immunity is receiving ready-made antibodies. It’s natural when a fetus gets its mother’s antibodies through the placenta (lasting several months after birth), or artificial with gamma globulin or immune serum (lasting 2 to 3 weeks)."
+    "Active immunity: your own B cells make antibodies. Natural active: getting the infection. Artificial active: a vaccine with killed or weakened pathogens, which builds memory without the full illness.",
+    "Passive immunity: you receive someone else’s antibodies. Natural passive: antibodies cross the placenta to the fetus and last months. Artificial passive: gamma globulin, immune serum or antivenom; immediate but lasting only 2 to 3 weeks."
    ],
    "act": {
     "type": "sort",
-    "prompt": "Active or passive?",
+    "prompt": "Active or passive immunity?",
     "categories": [
      "Active",
      "Passive"
     ],
     "items": [
      {
-      "label": "Getting a vaccine",
+      "label": "A flu vaccine",
       "category": 0,
-      "feedback": "Your body makes the antibodies."
+      "feedback": "Artificial active."
      },
      {
       "label": "Recovering from chickenpox",
       "category": 0,
-      "feedback": "Natural active immunity."
+      "feedback": "Natural active."
      },
      {
-      "label": "A fetus receiving its mother’s antibodies",
+      "label": "Mother’s antibodies crossing the placenta",
       "category": 1,
       "feedback": "Natural passive."
      },
      {
-      "label": "An injection of gamma globulin",
+      "label": "Antivenom for a snakebite",
       "category": 1,
       "feedback": "Artificial passive."
      }
@@ -395,41 +365,41 @@
   },
   {
    "id": "ap15-11",
-   "title": "Cells of the immune response",
+   "title": "Cells and chemicals of the immune response",
    "teach": [
-    "T cells can’t bind free antigens. Macrophages first engulf and digest the antigen and present it on their surface to T cells. This antigen presentation is essential.",
-    "Helper T cells stimulate killer T cells and B cells. Killer T cells kill virus-invaded and cancerous body cells. Suppressor T cells slow things down once the infection is controlled. Memory cells, descendants of activated T and B cells from the first response, last for years and allow a fast response next time. Plasma cells pour out antibodies.",
-    "Chemicals: interleukin-2 stimulates T and B cells to multiply; gamma interferon helps cells resist viruses; interleukin-1 causes fever; tumor necrosis factor kills tumor cells."
+    "Macrophages engulf antigens and present them on their surface; T cells can only bind antigens presented this way.",
+    "Helper T cells stimulate killer T cells and more B cells. Killer T cells kill virus-invaded cells and cancer cells. Suppressor T cells slow the response once the infection is controlled. Memory cells are descendants of activated T and B cells from the first response; they last for years and speed up future responses.",
+    "Lymphokines from T cells include interleukin-2 (stimulates proliferation of T and B cells), gamma interferon and perforin. Macrophages release interleukin-1 (fever) and tumor necrosis factor. Complement proteins break down microbes."
    ],
    "act": {
     "type": "sort",
-    "prompt": "Match the cell.",
+    "prompt": "Match the cell or chemical.",
     "categories": [
-     "Macrophage",
-     "Helper T",
-     "Killer T",
-     "Memory cell"
+     "Killer T cells",
+     "Memory cells",
+     "Interleukin-2",
+     "Macrophages"
     ],
     "items": [
      {
-      "label": "Presents antigens to T cells",
+      "label": "Kill virus-invaded and cancer cells",
       "category": 0,
-      "feedback": "Macrophage."
+      "feedback": "Killer T cells."
      },
      {
-      "label": "Stimulates killer T cells and B cells",
+      "label": "Last for years after an infection",
       "category": 1,
-      "feedback": "Helper T cell."
+      "feedback": "Memory cells."
      },
      {
-      "label": "Kills virus-invaded and cancer cells",
+      "label": "Stimulates T and B cell proliferation",
       "category": 2,
-      "feedback": "Killer T cell."
+      "feedback": "Interleukin-2."
      },
      {
-      "label": "Allows a fast response to the same pathogen later",
+      "label": "Present antigens to T cells",
       "category": 3,
-      "feedback": "Memory cell."
+      "feedback": "Macrophages."
      }
     ]
    }
@@ -438,9 +408,9 @@
    "id": "ap15-12",
    "title": "Lymphatic and immune disorders",
    "teach": [
-    "Lymphangitis is inflammation of lymphatic vessels with red streaks visible in the skin. Splenomegaly is an abnormal enlargement of the spleen, which can follow infections.",
-    "AIDS is caused by HIV, which invades and destroys T lymphocytes, leaving the body open to opportunistic infections.",
-    "Systemic lupus erythematosus (SLE) is a chronic inflammatory disease in which the immune system damages the body’s own tissues; a red butterfly-shaped rash over the nose and cheeks is a sign. Bone marrow transplants treat leukemia, lymphomas and immune deficiencies. Elephantiasis is severe swelling from parasitic worms blocking the lymphatics."
+    "Lymphangitis is inflammation of lymphatic vessels with red streaks in the skin. Lymphadenitis is inflammation of lymph nodes. Lymphoma is a tumor of lymphatic tissue (Hodgkin’s and non-Hodgkin’s). Splenomegaly is an abnormal enlargement of the spleen, which can follow infections.",
+    "AIDS is caused by HIV infecting T lymphocytes. Systemic lupus erythematosus (SLE) is a chronic inflammatory disease with a red butterfly-shaped rash over the nose and cheeks. Allergies involve IgE; anaphylaxis is a severe, life-threatening reaction.",
+    "Bone marrow transplants are used to treat disorders such as leukemia, lymphomas and immune deficiencies."
    ],
    "act": {
     "type": "sort",
@@ -453,7 +423,7 @@
     ],
     "items": [
      {
-      "label": "Red streaks along inflamed lymph vessels",
+      "label": "Inflamed lymphatic vessels with red streaks",
       "category": 0,
       "feedback": "Lymphangitis."
      },
@@ -463,12 +433,12 @@
       "feedback": "Splenomegaly."
      },
      {
-      "label": "HIV destroys T lymphocytes",
+      "label": "HIV infecting T cells",
       "category": 2,
       "feedback": "AIDS."
      },
      {
-      "label": "Butterfly-shaped rash over the nose and cheeks",
+      "label": "Butterfly rash over the nose and cheeks",
       "category": 3,
       "feedback": "SLE."
      }
@@ -477,29 +447,28 @@
   },
   {
    "id": "ap15-13",
-   "title": "Other defenses and aging",
+   "title": "Immunity and aging",
    "teach": [
-    "The skin is a mechanical barrier with an acid mantle; sebum fights bacteria and fungi; tears and saliva contain lysozyme; mucous membranes and cilia trap and move out dust and microbes; stomach acid kills most pathogens.",
-    "With age, the thymus is replaced with fat, T and B cells respond less, infections and cancers become more likely, and old infections like chickenpox can reactivate as shingles. Vaccines before 60 and yearly flu shots are recommended."
+    "The thymus shrinks and is replaced by fat, so fewer new T cells mature. T and B cells respond less, so older adults get more infections and more autoimmune problems. Vaccines and yearly flu shots are recommended. Latent viruses can reactivate, like chickenpox returning as shingles."
    ],
    "act": {
     "type": "choice",
-    "prompt": "Why are older adults more prone to infections?",
+    "prompt": "Why can shingles appear later in life?",
     "options": [
      {
-      "label": "T and B cells respond less, so the immune response weakens",
+      "label": "Weaker immunity lets the latent chickenpox virus reactivate",
       "correct": true,
       "feedback": "Right."
      },
      {
-      "label": "The spleen grows larger",
+      "label": "A new infection with a different virus",
       "correct": false,
-      "feedback": "That isn’t the textbook’s reason."
+      "feedback": "It’s the same chickenpox virus reactivating."
      },
      {
-      "label": "They make more IgE",
+      "label": "Too many T cells",
       "correct": false,
-      "feedback": "The textbook points to weaker T and B cell responses."
+      "feedback": "T-cell responses decrease with age."
      }
     ]
    }
@@ -507,40 +476,36 @@
  ],
  "flashcards": [
   {
-   "front": "Lymphatic system organs",
-   "back": "Tonsils, spleen, thymus, Peyer’s patches (and the appendix)."
-  },
-  {
-   "front": "Interstitial fluid / lymph",
-   "back": "Fluid between cells / the same fluid once inside a lymphatic."
+   "front": "Lymph",
+   "back": "Interstitial fluid once it enters a lymphatic capillary."
   },
   {
    "front": "Lacteals",
-   "back": "Lymphatics in the intestinal villi that absorb fats."
+   "back": "Lymphatic vessels in intestinal villi that absorb fats."
   },
   {
    "front": "Chyle",
-   "back": "Milky, fat-rich lymph in the lacteals."
+   "back": "Milky, fat-filled lymph in the lacteals."
   },
   {
-   "front": "Lymphatic capillaries",
-   "back": "Blind-end tubes; larger and more permeable than blood capillaries."
+   "front": "Lymphatic vs blood capillaries",
+   "back": "Lymphatic ones are larger and more permeable."
   },
   {
-   "front": "Lymph nodes",
-   "back": "Oval structures along lymphatics; clusters in groin, armpits and neck."
+   "front": "Lymphatics of the skin",
+   "back": "Run in subcutaneous tissue and follow the veins."
   },
   {
-   "front": "Afferent / efferent lymphatic vessels",
-   "back": "Enter / leave the lymph node."
+   "front": "Lymph node regions",
+   "back": "Groin, armpits, neck."
   },
   {
-   "front": "Hilum",
-   "back": "Dent in a node where efferent vessels leave."
+   "front": "Afferent / efferent lymphatics",
+   "back": "Enter the node / leave at the hilum."
   },
   {
-   "front": "Six principal trunks",
-   "back": "Lumbar, intestinal, bronchomediastinal, intercostal, subclavian, jugular."
+   "front": "Lymphatic trunks",
+   "back": "Six: lumbar, intestinal, bronchomediastinal, intercostal, subclavian, jugular."
   },
   {
    "front": "Thoracic duct",
@@ -548,47 +513,51 @@
   },
   {
    "front": "Palatine tonsils",
-   "back": "Removed in a tonsillectomy."
+   "back": "Commonly removed in a tonsillectomy."
   },
   {
    "front": "Lingual tonsils",
-   "back": "At the base of the tongue."
+   "back": "Back surface of the tongue at its base."
   },
   {
    "front": "Spleen",
-   "back": "Largest mass of lymphatic tissue; filters blood; stores blood."
+   "back": "Largest single mass of lymphatic tissue; filters blood."
   },
   {
    "front": "Thymus",
-   "back": "In the mediastinum; site of T lymphocyte maturation."
+   "back": "In the mediastinum; site of lymphocyte maturation."
   },
   {
    "front": "Peyer’s patches",
    "back": "In the small intestine wall; macrophages destroy bacteria."
   },
   {
-   "front": "B lymphocytes",
+   "front": "Bulk of lymphoid tissue",
+   "back": "In the lymph nodes."
+  },
+  {
+   "front": "B cells",
    "back": "Produce antibodies; humoral immunity."
   },
   {
-   "front": "T lymphocytes",
+   "front": "T cells",
    "back": "Cellular immunity; from the thymus."
   },
   {
    "front": "Antigen / antibody",
-   "back": "Foreign protein / Y-shaped protein that binds it."
+   "back": "Foreign protein / immunoglobulin that binds it."
   },
   {
    "front": "IgG",
-   "back": "Plasma and tissue fluid; attacks viruses, bacteria and toxins."
+   "back": "Tissue fluid and plasma; attacks viruses, bacteria, toxins."
   },
   {
    "front": "IgE",
    "back": "Allergic reactions."
   },
   {
-   "front": "Active vs passive immunity",
-   "back": "Your body makes antibodies / you receive ready-made antibodies."
+   "front": "Active / passive immunity",
+   "back": "You make the antibodies / you receive them."
   },
   {
    "front": "Killer T cells",
@@ -596,27 +565,27 @@
   },
   {
    "front": "Memory cells",
-   "back": "Descendants of activated T and B cells; fast future response."
+   "back": "From activated T and B cells; last for years."
   },
   {
    "front": "Interleukin-2",
-   "back": "Stimulates T and B cells to multiply."
+   "back": "Stimulates proliferation of T and B cells."
   },
   {
    "front": "Lymphangitis",
-   "back": "Inflamed lymph vessels with red streaks in the skin."
+   "back": "Inflamed lymphatic vessels with red streaks."
   },
   {
    "front": "Splenomegaly",
-   "back": "Abnormally enlarged spleen."
+   "back": "Abnormal enlargement of the spleen."
+  },
+  {
+   "front": "SLE",
+   "back": "Chronic inflammatory disease; butterfly rash."
   },
   {
    "front": "AIDS",
    "back": "HIV infection of T lymphocytes."
-  },
-  {
-   "front": "SLE (lupus)",
-   "back": "Chronic inflammatory disease; butterfly rash over nose and cheeks."
   }
  ],
  "quiz": [
@@ -640,7 +609,7 @@
     "afferent"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 15 says lymphatic vessels that enter the lymph node at various sites are called afferent lymphatic vessels. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says lymphatic vessels that enter the lymph node at various sites are afferent lymphatic vessels. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "The ______________ gland is a bilobed mass of tissue in the mediastinum along the trachea.",
@@ -651,7 +620,7 @@
     "thymus"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 15 says the thymus is a bilobed mass of tissue in the mediastinum along the trachea. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says the thymus gland is a bilobed mass of tissue in the mediastinum along the trachea. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Inflammation of the lymphatic vessels with accompanying red streaks visible in the skin is called ____________________.",
@@ -695,7 +664,7 @@
     "Systemic lupus erythematosus"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Chapter 15 says splenomegaly is an abnormal enlargement of the spleen that can develop from infections. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Splenomegaly is the medical term for an abnormally enlarged spleen, which can follow infections. The other options don’t mean an enlarged spleen. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Virus-invaded body cells and cancerous body cells are targeted by _______________ T cells.",
@@ -739,7 +708,7 @@
     "adenoidal"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Chapter 15 says the lingual tonsils are on the back surface of the tongue at its base. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says the lingual tonsils are located on the back surface of the tongue at its base. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "The efferent vessels unite to form lymphatic __________________________.",
@@ -794,7 +763,7 @@
     "B lymphocytes"
    ],
    "a": 2,
-   "e": "Checked answer, not from an official key. Chapter 15 says HIV invades and destroys the T cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says HIV attacks the T cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Efferent lymphatics unite to form ___________ lymphatic trunks.",
@@ -849,7 +818,7 @@
     "systemic lupus erythematosus"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 15 says a red butterfly-shaped rash over the nose and cheeks is a symptom of systemic lupus erythematosus. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says systemic lupus erythematosus is a chronic inflammatory disease with a red butterfly-shaped rash over the nose and cheeks. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Immunoglobulin _______ is associated with allergic reactions, attacking allergy-causing antigens.",
@@ -860,7 +829,7 @@
     "M"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 15 says immunoglobulin E is associated with allergic reactions. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says immunoglobulin E is associated with allergic reactions, attacking allergy-causing antigens. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "These oval-shaped structures are found along the length of lymphatics.",
@@ -893,7 +862,7 @@
     "pharyngeal"
    ],
    "a": 2,
-   "e": "Checked answer, not from an official key. Chapter 15 says the thoracic duct empties all its lymph into the left subclavian vein. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says the thoracic duct empties all of its lymph into the left subclavian vein. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "The primary function of the lymphatic system is to drain tissue spaces of protein-containing fluid that escapes from the blood capillaries.",
@@ -902,7 +871,7 @@
     "False"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 15 states this as the primary function of the lymphatic system. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says this is the primary function of the lymphatic system. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Memory cells are descendants of activated T and B cells produced during an initial immune response.",
@@ -911,7 +880,7 @@
     "False"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 15 says memory cells are descendants of activated T and B cells produced during an initial immune response. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 defines memory cells as descendants of activated T and B cells produced during an initial immune response. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Leukemia is a disorder of the lymphatic system tissue that can be treated by a bone marrow transplant.",
@@ -920,7 +889,7 @@
     "False"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 15 says bone marrow transplants are done to treat disorders of the lymphatic system such as leukemia. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 lists leukemia among the disorders treated with bone marrow transplants. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "The pharyngeal tonsils are the ones commonly removed in a tonsillectomy.",
@@ -929,7 +898,7 @@
     "False"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. The palatine tonsils are the ones commonly removed in a tonsillectomy. The pharyngeal tonsils are the adenoids. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
+   "e": "Checked answer, not from an official key. Chapter 15 says the palatine tonsils are the ones commonly removed in a tonsillectomy. The pharyngeal tonsils are the adenoids. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 15."
   },
   {
    "q": "Lymphatic capillaries are much smaller and less permeable than blood capillaries.",
