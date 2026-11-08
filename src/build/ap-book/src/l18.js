@@ -163,5 +163,5 @@ answers:{
  27:['True','Chapter 18 says the average capacity of the bladder is approximately 500 mL.'],
  28:['True','Chapter 18 says that as long as at least one-third of the kidney is functional, a person can survive.'],
  29:['True','Chapter 18 says the male urethra is 20 cm (8 inches) long.'],
- 30:['True','Chapter 18 says each afferent arteriole takes blood from the renal artery to Bowman’s glomerular capsule. The test question says "efferent", so check this one against your graded result: if your instructor marked it False, the reason is that it’s the afferent arteriole.']
+ 30:['False','Chapter 18 says it is the afferent arteriole that takes blood from the renal artery to Bowman\u2019s glomerular capsule. The efferent arteriole carries blood away from the glomerulus.']
 }};
