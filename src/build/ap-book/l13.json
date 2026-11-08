@@ -5,45 +5,61 @@
  "steps": [
   {
    "id": "ap13-1",
-   "title": "What blood is",
+   "title": "What blood is made of",
    "teach": [
-    "Blood is a specialized connective tissue with two parts: formed elements (red cells, white cells and platelets) and the fluid plasma. Plasma is about 55% of blood; formed elements about 45%.",
-    "An average woman has about 5 liters of blood and a man about 6. Blood is about 8% of body weight."
+    "Blood is a specialized connective tissue with two parts: the formed elements (blood cells) and the fluid plasma.",
+    "Plasma is about 55% of blood; the formed elements are about 45%. Women have about 5 liters of blood and men about 6. Blood is about 8% of body weight.",
+    "The formed elements are erythrocytes (red blood cells), leukocytes (white blood cells) and thrombocytes (platelets). Red blood cells are about 95% of the volume of blood cells. There are 700 times more red cells than white cells."
    ],
+   "visual": {
+    "kind": "flow",
+    "title": "Blood by volume",
+    "items": [
+     {
+      "label": "Plasma, about 55%",
+      "detail": "91% water, 7% proteins, 2% solutes."
+     },
+     {
+      "label": "Formed elements, about 45%",
+      "detail": "Red cells, white cells, platelets."
+     }
+    ]
+   },
    "act": {
     "type": "number",
-    "prompt": "About what percent of blood is plasma?",
+    "prompt": "About what percentage of blood is plasma?",
     "answer": 55,
     "tolerance": 2,
     "unit": "%",
-    "explanation": "Plasma is about 55% of blood; the formed elements are about 45%."
+    "explanation": "Plasma is about 55% of blood; the formed elements make up about 45%."
    }
   },
   {
    "id": "ap13-2",
    "title": "What blood does",
    "teach": [
-    "Blood carries oxygen from the lungs to the cells and carbon dioxide back; nutrients, ions and water from the gut; wastes to the kidneys and sweat glands; hormones to target organs; and enzymes.",
-    "It helps regulate pH (normally slightly basic, 7.35 to 7.45), body temperature (thanks to all the water in plasma) and cell water content. It prevents fluid loss by clotting and protects the body with white blood cells."
+    "Blood transports oxygen to cells and carbon dioxide to the lungs; carries nutrients, water and ions from the gut and wastes to the kidneys and sweat glands; and carries hormones and enzymes.",
+    "It regulates pH with buffers; normal blood pH is slightly basic at 7.35 to 7.45. Its water helps control body temperature, and its sodium helps control water in cells.",
+    "It prevents fluid loss by clotting, and protects against microbes and toxins with leukocytes."
    ],
    "act": {
     "type": "choice",
     "prompt": "What is the normal pH of blood?",
     "options": [
      {
-      "label": "7.35 to 7.45",
+      "label": "7.35 to 7.45, slightly basic",
       "correct": true,
-      "feedback": "Right, slightly basic."
+      "feedback": "Right."
      },
      {
-      "label": "6.8 to 7.0",
+      "label": "7.0, neutral",
       "correct": false,
-      "feedback": "That would be too acidic."
+      "feedback": "Blood is slightly basic."
      },
      {
-      "label": "8.0 to 8.5",
+      "label": "6.5, slightly acidic",
       "correct": false,
-      "feedback": "That would be too basic."
+      "feedback": "Blood is slightly basic."
      }
     ]
    }
@@ -52,9 +68,9 @@
    "id": "ap13-3",
    "title": "Plasma",
    "teach": [
-    "Plasma is 91% water. About 7% is proteins: albumin (keeps osmotic pressure and water balance), globulins (antibodies, complement and transport molecules) and fibrinogen (clotting). The other 2% is ions, nutrients, wastes, gases, enzymes and hormones.",
-    "Serum is plasma without the clotting factors: the clear yellow liquid left after a clot forms.",
-    "Dr. Charles Drew’s work on preserving plasma led to the first blood banks."
+    "Plasma is 91% water. About 7% is protein: albumin (keeps osmotic pressure and water balance), globulins (antibodies, complement and transport molecules) and fibrinogen (needed for clotting). The last 2% is ions, nutrients, wastes, gases, enzymes and hormones.",
+    "Serum is plasma without the clotting factors: the clear yellow liquid left after blood clots.",
+    "Dr. Charles Drew developed blood storage methods that led to the first blood banks and directed the first American Red Cross blood bank."
    ],
    "act": {
     "type": "sort",
@@ -66,7 +82,7 @@
     ],
     "items": [
      {
-      "label": "Maintains osmotic pressure",
+      "label": "Osmotic pressure and water balance",
       "category": 0,
       "feedback": "Albumin."
      },
@@ -85,19 +101,82 @@
   },
   {
    "id": "ap13-4",
-   "title": "Classifying blood cells",
+   "title": "Making blood cells",
    "teach": [
-    "Erythrocytes (red blood cells) make up about 95% of the volume of blood cells.",
-    "Leukocytes (white blood cells) are granular or agranular, depending on whether granules show with Wright’s stain. Granular: neutrophils (60–70% of white cells), eosinophils (2–4%), basophils (0.5–1%). Agranular: monocytes (3–8%) and lymphocytes (20–25%).",
-    "Thrombocytes (platelets) are cell fragments. There are about 700 times more red cells than white cells."
+    "Making blood cells is hematopoiesis. It happens in red bone marrow (myeloid tissue). The spleen, tonsils and lymph nodes also help make lymphocytes and monocytes.",
+    "All blood cells come from stem cells called hematocytoblasts. Some become red cells (losing their nuclei), some become the granular white cells, some become lymphocytes or monocytes, and megakaryoblasts become megakaryocytes, which break up into platelets."
+   ],
+   "act": {
+    "type": "choice",
+    "prompt": "Megakaryoblasts mature into:",
+    "options": [
+     {
+      "label": "Platelets",
+      "correct": true,
+      "feedback": "Right, through megakaryocytes."
+     },
+     {
+      "label": "Red blood cells",
+      "correct": false,
+      "feedback": "Red cells come from proerythroblasts."
+     },
+     {
+      "label": "Lymphocytes",
+      "correct": false,
+      "feedback": "Lymphocytes come from lymphoblasts."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap13-5",
+   "title": "Red blood cells and hemoglobin",
+   "teach": [
+    "Erythrocytes are biconcave disks with no nucleus, so they can’t divide. They last about 120 days.",
+    "Hemoglobin makes up about a third (33%) of the cell’s volume. It has two parts: heme, a pigment with four iron atoms that bind oxygen in the lungs, and globin, a protein that carries carbon dioxide back to the lungs.",
+    "Oxygen-carrying hemoglobin is bright red; without oxygen it’s darker red. Men have about 5.4 million red cells per cubic millimeter, women about 4.8 million. Iron in the diet supports hemoglobin."
+   ],
+   "act": {
+    "type": "sort",
+    "prompt": "Heme or globin?",
+    "categories": [
+     "Heme",
+     "Globin"
+    ],
+    "items": [
+     {
+      "label": "Pigment with four iron atoms",
+      "category": 0,
+      "feedback": "Heme."
+     },
+     {
+      "label": "Binds oxygen in the lungs",
+      "category": 0,
+      "feedback": "The iron in heme."
+     },
+     {
+      "label": "Protein that carries carbon dioxide",
+      "category": 1,
+      "feedback": "Globin."
+     }
+    ]
+   }
+  },
+  {
+   "id": "ap13-6",
+   "title": "White blood cells",
+   "teach": [
+    "Leukocytes have nuclei and no pigment. They fight inflammation and infection, move into tissues by ameboid movement and eat debris and microbes by phagocytosis. There are 5,000 to 9,000 per cubic millimeter.",
+    "Granular leukocytes (granules show with Wright’s stain): neutrophils (60% to 70%, the most numerous), eosinophils (2% to 4%) and basophils (0.5% to 1%).",
+    "Agranular leukocytes: monocytes (3% to 8%) and lymphocytes (20% to 25%)."
    ],
    "mnemonic": {
     "cue": "Never Let Monkeys Eat Bananas",
-    "explanation": "White cells from most to least common: Neutrophils, Lymphocytes, Monocytes, Eosinophils, Basophils."
+    "explanation": "Neutrophils, Lymphocytes, Monocytes, Eosinophils, Basophils: most to least common."
    },
    "act": {
     "type": "sort",
-    "prompt": "Granular or agranular leukocyte?",
+    "prompt": "Granular or agranular?",
     "categories": [
      "Granular",
      "Agranular"
@@ -132,45 +211,14 @@
    }
   },
   {
-   "id": "ap13-5",
-   "title": "Red blood cells and hemoglobin",
+   "id": "ap13-7",
+   "title": "What each white blood cell does",
    "teach": [
-    "Erythrocytes are biconcave disks with no nucleus, so they can’t divide. They live about 120 days.",
-    "About one-third of their volume is hemoglobin (about 280 million molecules per cell). Hemoglobin is globin (a protein) plus heme (a pigment with four iron atoms). The iron binds oxygen in the lungs; globin carries carbon dioxide back. Oxygenated blood is bright red.",
-    "A healthy man has about 5.4 million red cells per mm³ and a woman about 4.8 million."
-   ],
-   "act": {
-    "type": "sort",
-    "prompt": "Heme or globin?",
-    "categories": [
-     "Heme",
-     "Globin"
-    ],
-    "items": [
-     {
-      "label": "Pigment with four iron atoms",
-      "category": 0,
-      "feedback": "Heme."
-     },
-     {
-      "label": "Binds oxygen in the lungs",
-      "category": 0,
-      "feedback": "Through its iron."
-     },
-     {
-      "label": "Protein that carries carbon dioxide",
-      "category": 1,
-      "feedback": "Globin."
-     }
-    ]
-   }
-  },
-  {
-   "id": "ap13-6",
-   "title": "White blood cells",
-   "teach": [
-    "Leukocytes have nuclei and no pigment. They fight inflammation and infection, squeeze out of blood vessels by ameboid movement, and eat invaders by phagocytosis.",
-    "Neutrophils are the most common and most active against bacteria; dead neutrophils make up pus. Monocytes are the largest; in tissues they enlarge into macrophages. Eosinophils fight allergens and, with their secretions, some worm parasites. Basophils release heparin, histamine and serotonin. Lymphocytes are the smallest and make antibodies (B and T cells)."
+    "Neutrophils are the most common and respond first to bacteria; they make lysozyme. Pus is largely dead neutrophils.",
+    "Monocytes are the largest; they become macrophages in tissues and eat bacteria and debris.",
+    "Eosinophils fight allergy triggers (pollen, cat hair), make antihistamines and attack some worm parasites.",
+    "Basophils join allergic reactions and secrete heparin (anticoagulant), histamine (inflammatory) and serotonin (vasoconstrictor).",
+    "Lymphocytes are the smallest; they make antibodies and drive the immune response (B and T cells)."
    ],
    "act": {
     "type": "sort",
@@ -184,107 +232,73 @@
     ],
     "items": [
      {
-      "label": "Most common white cell",
+      "label": "60–70% of white cells",
       "category": 0,
-      "feedback": "60–70%."
+      "feedback": "Neutrophils."
      },
      {
       "label": "Becomes a macrophage in tissues",
       "category": 1,
-      "feedback": "Monocyte."
+      "feedback": "Monocytes."
      },
      {
-      "label": "Attacks some worm parasites",
+      "label": "Attacks worm parasites",
       "category": 2,
-      "feedback": "Eosinophil."
+      "feedback": "Eosinophils."
      },
      {
-      "label": "Releases heparin, histamine and serotonin",
+      "label": "Secretes heparin, histamine and serotonin",
       "category": 3,
-      "feedback": "Basophil."
+      "feedback": "Basophils."
      },
      {
       "label": "Produces antibodies",
       "category": 4,
-      "feedback": "Lymphocyte."
-     }
-    ]
-   }
-  },
-  {
-   "id": "ap13-7",
-   "title": "Platelets",
-   "teach": [
-    "Thrombocytes (platelets) are disk-shaped cell fragments, 2 to 4 micrometers across, that live about a week. They start the chain of reactions that clots blood.",
-    "They come from large megakaryocytes in red bone marrow."
-   ],
-   "act": {
-    "type": "choice",
-    "prompt": "Platelets develop from:",
-    "options": [
-     {
-      "label": "Megakaryocytes in red bone marrow",
-      "correct": true,
-      "feedback": "Right. Megakaryoblasts mature into platelets."
-     },
-     {
-      "label": "Lymphoblasts",
-      "correct": false,
-      "feedback": "Those become lymphocytes."
-     },
-     {
-      "label": "Proerythroblasts",
-      "correct": false,
-      "feedback": "Those become red blood cells."
+      "feedback": "Lymphocytes."
      }
     ]
    }
   },
   {
    "id": "ap13-8",
-   "title": "Making blood cells",
+   "title": "Platelets",
    "teach": [
-    "Hematopoiesis, blood cell formation, happens in red bone marrow (myeloid tissue). The spleen, tonsils and lymph nodes help make lymphocytes and monocytes.",
-    "All blood cells start as stem cells (hematocytoblasts). Proerythroblasts lose their nuclei and become red cells. Myeloblasts become neutrophils, eosinophils and basophils. Lymphoblasts become lymphocytes, monoblasts become monocytes, and megakaryoblasts become platelets."
+    "Thrombocytes, or platelets, are tiny disk-shaped cell fragments (2 to 4 micrometers) made from megakaryocytes in red marrow. They live about a week.",
+    "They start the chain of reactions that clots blood when a vessel is damaged."
    ],
    "act": {
-    "type": "sort",
-    "prompt": "What does each cell mature into?",
-    "categories": [
-     "Red blood cell",
-     "Lymphocyte",
-     "Platelets"
-    ],
-    "items": [
+    "type": "choice",
+    "prompt": "Platelets are also called:",
+    "options": [
      {
-      "label": "Proerythroblast",
-      "category": 0,
-      "feedback": "Loses its nucleus."
+      "label": "Thrombocytes",
+      "correct": true,
+      "feedback": "Right."
      },
      {
-      "label": "Lymphoblast",
-      "category": 1,
-      "feedback": "Lymphocyte."
+      "label": "Erythrocytes",
+      "correct": false,
+      "feedback": "Those are red blood cells."
      },
      {
-      "label": "Megakaryoblast",
-      "category": 2,
-      "feedback": "Platelets."
+      "label": "Leukocytes",
+      "correct": false,
+      "feedback": "Those are white blood cells."
      }
     ]
    }
   },
   {
    "id": "ap13-9",
-   "title": "Blood clotting",
+   "title": "How blood clots",
    "teach": [
-    "Small vessels can stop bleeding just by constricting. Larger ones need clotting (coagulation), which has three stages.",
-    "Stage 1: platelets clump at the rough, damaged site, and damaged tissue releases thromboplastin, which leads to prothrombin activator (calcium needed). Stage 2: prothrombin activator, with calcium ions, converts prothrombin (made by the liver) into thrombin. Stage 3: thrombin converts soluble fibrinogen into insoluble fibrin threads, which trap blood cells and platelets: the clot.",
-    "Clot retraction, or syneresis, tightens the clot. Once the vessel heals, fibrinolysis dissolves the clot. Vitamin K is needed for many clotting factors."
+    "Small damaged vessels constrict. In larger ones, clotting (coagulation) takes over in three stages.",
+    "Stage 1: platelets clump at the rough cut surface, and damaged tissue releases thromboplastin, leading to prothrombin activator (calcium needed). Stage 2: prothrombin activator, with calcium ions, converts prothrombin (made by the liver) into thrombin. Stage 3: thrombin converts soluble fibrinogen into insoluble fibrin threads, which trap blood cells and platelets: the clot.",
+    "Clot retraction, or syneresis, tightens the clot. Serum is left behind. After repair, fibrinolysis dissolves the clot. Vitamin K is needed for many clotting factors."
    ],
    "visual": {
     "kind": "flow",
-    "title": "Three stages of clotting",
+    "title": "Clotting cascade",
     "items": [
      {
       "label": "Platelets clump; thromboplastin released",
@@ -296,7 +310,15 @@
      },
      {
       "label": "Fibrinogen → fibrin",
-      "detail": "Thrombin makes the fibrin threads of the clot."
+      "detail": "Thrombin catalyzes it."
+     },
+     {
+      "label": "Fibrin threads trap cells",
+      "detail": "The clot."
+     },
+     {
+      "label": "Syneresis, then fibrinolysis",
+      "detail": "Clot tightens, later dissolves."
      }
     ]
    },
@@ -305,24 +327,24 @@
     "prompt": "Put the clotting steps in order.",
     "items": [
      {
-      "label": "Platelets clump at the injury",
-      "detail": "Thromboplastin is released"
-     },
-     {
-      "label": "Prothrombin activator forms",
-      "detail": "Calcium needed"
+      "label": "Platelets clump and thromboplastin is released",
+      "detail": "Stage 1"
      },
      {
       "label": "Prothrombin becomes thrombin",
-      "detail": "Stage 2"
+      "detail": "Stage 2, with calcium"
      },
      {
-      "label": "Fibrinogen becomes fibrin threads",
-      "detail": "The clot"
+      "label": "Fibrinogen becomes fibrin",
+      "detail": "Stage 3"
      },
      {
       "label": "Clot retraction (syneresis)",
       "detail": "Clot tightens"
+     },
+     {
+      "label": "Fibrinolysis",
+      "detail": "Clot dissolves after repair"
      }
     ]
    }
@@ -331,39 +353,39 @@
    "id": "ap13-10",
    "title": "Unwanted clots",
    "teach": [
-    "Plaque, a cholesterol-containing mass stuck to a vessel wall, roughens it and can start clotting in an unbroken vessel. That’s thrombosis, and the clot is a thrombus.",
-    "A piece of clot that breaks loose and travels is an embolus; when it lodges and blocks a vessel, that’s an embolism. Tissue killed by a blocked blood supply is an infarction.",
-    "Exercise helps prevent unwanted clots. Smoking raises fibrinogen, making clots more likely."
+    "Plaque, a cholesterol-containing mass, roughens a vessel wall and can start clotting where it isn’t needed.",
+    "Thrombosis is clotting in an unbroken vessel; the clot is a thrombus. A piece that breaks off and travels in the blood is an embolus; when it lodges and blocks a vessel, that’s an embolism. Tissue killed by lost blood supply is an infarction.",
+    "Exercise helps prevent unwanted clots; smoking increases fibrinogen and raises the risk."
    ],
    "act": {
     "type": "sort",
     "prompt": "Match the term.",
     "categories": [
      "Plaque",
-     "Thrombosis",
+     "Thrombus",
      "Embolus",
-     "Infarction"
+     "Embolism"
     ],
     "items": [
      {
-      "label": "Cholesterol mass on a vessel wall",
+      "label": "Cholesterol mass on the vessel wall",
       "category": 0,
       "feedback": "Plaque."
      },
      {
-      "label": "Clotting in an unbroken vessel",
+      "label": "Clot in an unbroken vessel",
       "category": 1,
-      "feedback": "Thrombosis."
+      "feedback": "Thrombus."
      },
      {
-      "label": "A travelling piece of clot",
+      "label": "Piece of clot traveling in the blood",
       "category": 2,
       "feedback": "Embolus."
      },
      {
-      "label": "Tissue death from a blocked supply",
+      "label": "The traveling clot lodges and blocks a vessel",
       "category": 3,
-      "feedback": "Infarction."
+      "feedback": "Embolism."
      }
     ]
    }
@@ -372,8 +394,8 @@
    "id": "ap13-11",
    "title": "ABO blood groups",
    "teach": [
-    "Mismatched blood causes agglutination (clumping of red cells), a transfusion reaction between antibodies in plasma and antigens on red cells.",
-    "Type A has A antigens and anti-B antibodies. Type B has B antigens and anti-A. Type AB has both antigens and neither antibody, so it’s the universal recipient. Type O has neither antigen and both antibodies, so it’s the universal donor."
+    "Mismatched blood causes agglutination, the clumping of red cells: a transfusion reaction between plasma antibodies and red cell antigens.",
+    "Type A has antigen A and anti-B antibodies. Type B has antigen B and anti-A. Type AB has both antigens and no antibodies: the universal recipient. Type O has neither antigen and both antibodies: the universal donor."
    ],
    "act": {
     "type": "sort",
@@ -398,42 +420,42 @@
      {
       "label": "Universal recipient",
       "category": 2,
-      "feedback": "No ABO antibodies."
+      "feedback": "Type AB."
      },
      {
       "label": "Universal donor",
       "category": 3,
-      "feedback": "No A or B antigens."
+      "feedback": "Type O."
      }
     ]
    }
   },
   {
    "id": "ap13-12",
-   "title": "The Rh group",
+   "title": "The Rh blood group",
    "teach": [
-    "The Rh group is named after the Rhesus monkey, where antigen D (the first Rh antigen identified and studied) was found. Blood with Rh antigens is Rh positive; most Americans are.",
-    "Anti-Rh antibodies don’t form on their own; an Rh-negative person makes them after exposure to Rh-positive blood.",
-    "An Rh-negative mother carrying an Rh-positive baby can become sensitized, and in a later pregnancy her antibodies can destroy the baby’s red cells: erythroblastosis fetalis (hemolytic disease of the newborn). RhoGAM prevents this."
+    "The Rh group is named after Rhesus monkeys, where antigen D was first identified and studied. Red cells with antigen D are Rh positive (most Americans); without it, Rh negative.",
+    "Anti-Rh antibodies form only after an Rh-negative person is exposed to Rh-positive blood. A second exposure causes agglutination.",
+    "An Rh-negative mother carrying an Rh-positive baby can become sensitized; in later pregnancies her antibodies can destroy the baby’s red cells (erythroblastosis fetalis). RhoGAM prevents this."
    ],
    "act": {
     "type": "choice",
-    "prompt": "Which antigen defines the Rh group?",
+    "prompt": "Which antigen was first identified in the Rh group?",
     "options": [
      {
-      "label": "Antigen D",
+      "label": "D",
       "correct": true,
-      "feedback": "Right, first identified in Rhesus monkeys."
+      "feedback": "Right, also called agglutinogen D."
      },
      {
-      "label": "Antigen A",
+      "label": "A",
       "correct": false,
-      "feedback": "That’s the ABO group."
+      "feedback": "A belongs to the ABO group."
      },
      {
-      "label": "Antigen O",
+      "label": "O",
       "correct": false,
-      "feedback": "Type O has no A or B antigens."
+      "feedback": "Type O means no A or B antigen."
      }
     ]
    }
@@ -442,9 +464,9 @@
    "id": "ap13-13",
    "title": "Blood disorders",
    "teach": [
-    "Anemia means less oxygen-carrying capacity. Sickle-cell anemia: inherited; erythrocytes (red cells) are sickle-shaped with abnormal hemoglobin. Iron-deficiency anemia: from nutrient deficiency or blood loss. Hemolytic anemia: inherited (or caused by drugs, autoimmunity or venom); red cells break down faster than normal. Thalassemia: inherited; hemoglobin production is suppressed.",
-    "Hemophilia is an inherited clotting disorder linked to a recessive gene on the X chromosome. Leukemia is cancer with abnormal production of white cells. Thrombocytopenia is a serious drop in platelets. Erythrocytosis (polycythemia) is too many red cells.",
-    "Septicemia (blood poisoning) is infection in the blood. Malaria is caused by Plasmodium from a mosquito. Mononucleosis is caused by the Epstein-Barr virus."
+    "Anemia means the blood carries too little oxygen. Sickle-cell anemia: inherited; red blood cells (erythrocytes) are sickle-shaped with abnormal hemoglobin. Hemolytic anemia: red cells rupture or are destroyed faster than normal. Thalassemia: inherited; hemoglobin production is suppressed. Iron-deficiency anemia: low red cell production.",
+    "Hemophilia: an inherited clotting disorder from a recessive gene on the X chromosome. Thrombocytopenia: a serious drop in platelets. Erythrocytosis (polycythemia): too many red cells. Leukemia: cancer with abnormal white cell production.",
+    "Septicemia is blood poisoning from microbes and toxins. Malaria is a parasite in red cells spread by mosquitoes. Mononucleosis is caused by the Epstein-Barr virus."
    ],
    "act": {
     "type": "sort",
@@ -457,12 +479,12 @@
     ],
     "items": [
      {
-      "label": "X-linked recessive clotting disorder",
+      "label": "Recessive gene on the X chromosome",
       "category": 0,
       "feedback": "Hemophilia."
      },
      {
-      "label": "Serious decrease in platelets",
+      "label": "Too few platelets",
       "category": 1,
       "feedback": "Thrombocytopenia."
      },
@@ -481,30 +503,29 @@
   },
   {
    "id": "ap13-14",
-   "title": "Blood and aging, smoking and carbon monoxide",
+   "title": "Blood and aging",
    "teach": [
-    "In the fetus, blood cells are made in the spleen, liver and yolk sac; by the third trimester, red marrow takes over for life.",
-    "Carbon monoxide (from cigarette smoke, exhaust or a faulty furnace) binds to hemoglobin’s iron, forming carboxyhemoglobin, which can’t carry oxygen. Smokers can have 5% to 15%.",
-    "With age, clotting disorders, anemias and chronic leukemias become more common."
+    "Before birth, blood cells are made in the spleen, liver and yolk sac; by the third trimester the red marrow takes over.",
+    "Smoking adds carbon monoxide, which binds hemoglobin (carboxyhemoglobin) and reduces oxygen transport. Long antibiotic courses can kill the gut bacteria that make vitamin K and cause bleeding problems. Anemias, clotting problems and chronic leukemias become more common with age."
    ],
    "act": {
     "type": "choice",
-    "prompt": "Why is carbon monoxide dangerous?",
+    "prompt": "Why can carbon monoxide be deadly?",
     "options": [
      {
-      "label": "It binds to hemoglobin’s iron so red cells can’t carry oxygen",
+      "label": "It binds to hemoglobin and blocks oxygen transport",
       "correct": true,
-      "feedback": "Right: carboxyhemoglobin."
+      "feedback": "Right, forming carboxyhemoglobin."
      },
      {
       "label": "It destroys platelets",
       "correct": false,
-      "feedback": "It affects hemoglobin."
+      "feedback": "It binds hemoglobin."
      },
      {
-      "label": "It thins the plasma",
+      "label": "It thins the blood",
       "correct": false,
-      "feedback": "It blocks oxygen transport."
+      "feedback": "It stops red cells from carrying oxygen."
      }
     ]
    }
@@ -516,20 +537,32 @@
    "back": "About 55% / about 45% of blood."
   },
   {
-   "front": "Normal blood pH",
-   "back": "7.35 to 7.45 (slightly basic)."
+   "front": "Red cells share of blood cells",
+   "back": "About 95% of the volume of blood cells."
   },
   {
-   "front": "Plasma composition",
-   "back": "91% water, 7% proteins, 2% other solutes."
+   "front": "Blood pH",
+   "back": "7.35 to 7.45, slightly basic."
+  },
+  {
+   "front": "Plasma proteins",
+   "back": "Albumin, globulins, fibrinogen."
   },
   {
    "front": "Serum",
    "back": "Plasma without the clotting factors."
   },
   {
+   "front": "Hematopoiesis",
+   "back": "Blood cell formation in red bone marrow."
+  },
+  {
+   "front": "Hematocytoblasts",
+   "back": "Stem cells that give rise to all blood cells."
+  },
+  {
    "front": "Erythrocytes",
-   "back": "Red cells; about 95% of blood cell volume; live ~120 days."
+   "back": "Biconcave, no nucleus, about 120 days."
   },
   {
    "front": "Hemoglobin",
@@ -537,55 +570,47 @@
   },
   {
    "front": "Leukocytes",
-   "back": "White blood cells."
+   "back": "White blood cells; fight infection."
   },
   {
    "front": "Neutrophils",
-   "back": "Most common white cell (60–70%); fight bacteria."
+   "back": "60–70% of white cells; most numerous."
   },
   {
    "front": "Monocytes",
-   "back": "Largest white cell; become macrophages in tissue."
+   "back": "Largest; become macrophages in tissues."
   },
   {
    "front": "Eosinophils",
-   "back": "Allergies; attack some worm parasites."
+   "back": "Allergies and worm parasites."
   },
   {
    "front": "Basophils",
-   "back": "Release heparin, histamine and serotonin."
+   "back": "Secrete heparin, histamine and serotonin."
   },
   {
    "front": "Lymphocytes",
-   "back": "Smallest white cell; produce antibodies."
+   "back": "Produce antibodies; B and T cells."
   },
   {
    "front": "Agranular leukocytes",
    "back": "Monocytes and lymphocytes."
   },
   {
-   "front": "Thrombocytes",
-   "back": "Platelets; from megakaryocytes."
+   "front": "Platelets",
+   "back": "Thrombocytes; from megakaryocytes; start clotting."
   },
   {
-   "front": "Hematopoiesis",
-   "back": "Blood cell formation in red bone marrow."
-  },
-  {
-   "front": "Clotting stages",
-   "back": "Thromboplastin → prothrombin activator; prothrombin → thrombin (calcium); fibrinogen → fibrin."
+   "front": "Prothrombin → thrombin",
+   "back": "Prothrombin activator plus calcium ions."
   },
   {
    "front": "Fibrin",
-   "back": "Threads that form the clot."
+   "back": "Threads of the clot, formed from fibrinogen by thrombin."
   },
   {
    "front": "Syneresis",
    "back": "Clot retraction."
-  },
-  {
-   "front": "Plaque",
-   "back": "Cholesterol mass on a vessel wall."
   },
   {
    "front": "Thrombosis / thrombus",
@@ -593,7 +618,7 @@
   },
   {
    "front": "Embolus",
-   "back": "A dislodged, travelling piece of clot."
+   "back": "A piece of clot traveling in the blood."
   },
   {
    "front": "Agglutination",
@@ -608,16 +633,8 @@
    "back": "Antigen D."
   },
   {
-   "front": "Erythroblastosis fetalis",
-   "back": "Hemolytic disease of the newborn from Rh incompatibility."
-  },
-  {
    "front": "Hemophilia",
-   "back": "X-linked recessive clotting disorder."
-  },
-  {
-   "front": "Hemolytic anemia",
-   "back": "Red cells destroyed faster than normal."
+   "back": "Clotting disorder; recessive gene on the X chromosome."
   },
   {
    "front": "Thrombocytopenia",
@@ -642,7 +659,7 @@
     "neutrophils"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 13 says neutrophils make up 60% to 70% of white blood cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says neutrophils make up 60% to 70% of white blood cells, the most common leukocytes. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Heparin, histamine, and serotonin are secreted by______________________.",
@@ -653,7 +670,7 @@
     "eosinophils"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Chapter 13 says basophils release heparin, histamine and serotonin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says basophils release heparin, histamine and serotonin into tissues. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "A piece of a blood clot that dislodges and is transported by the bloodstream is called a(n) _________________.",
@@ -664,7 +681,7 @@
     "stroke"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 13 says a dislodged piece of clot transported by the bloodstream is called an embolus. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says a piece of a blood clot that dislodges and is transported by the bloodstream is an embolus. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "White blood cells as a group are called ____________________________.",
@@ -686,7 +703,7 @@
     "mismatched"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 13 says agglutination of red cells results from a transfusion reaction caused by mismatched blood. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says agglutination is the result of a transfusion reaction caused by mismatched blood. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Hematopoiesis occurs in the __________________________.",
@@ -708,7 +725,7 @@
     "monocytes"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Chapter 13 says eosinophils’ chemical secretions attack some worm parasites. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says the chemical secretions of eosinophils attack some worm parasites. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Prothrombin activator, with the assistance of ______________ ions, converts prothrombin to thrombin.",
@@ -752,7 +769,7 @@
     "embolus"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 13 says plaque is a cholesterol-containing mass that adheres to the smooth walls of blood vessels. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says a cholesterol-containing mass that adheres to the walls of blood vessels is called plaque. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Blood poisoning is also known as __________________________.",
@@ -785,7 +802,7 @@
     "D"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 13 says antigen D was the Rh antigen first identified and studied in Rhesus monkeys. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says antigen D was the first Rh antigen identified and studied. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Blood plasma without clotting factors is called __________________________.",
@@ -807,7 +824,7 @@
     "monocytes"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 13 says monocytes enlarge into macrophages after they leave the blood and enter tissues. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says monocytes increase in size after entering tissues and are then called macrophages. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "An excessive amount of red blood cells can cause __________________________.",
@@ -862,7 +879,7 @@
     "malaria"
    ],
    "a": 2,
-   "e": "Checked answer, not from an official key. Chapter 13 says hemolytic anemia is an inherited condition in which red cells rupture or are destroyed faster than normal. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says hemolytic anemia is an inherited condition in which erythrocytes rupture or are destroyed faster than normal. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Approximately one third of the erythrocyte cell volume is composed of ________________________.",
@@ -873,7 +890,7 @@
     "fibrinogen"
    ],
    "a": 2,
-   "e": "Checked answer, not from an official key. Chapter 13 says hemoglobin makes up 33% of the red cell’s volume. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says hemoglobin constitutes 33% of the red blood cell’s volume. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Smoking increases __________________________ levels in the blood, thus increasing the possibility of unwanted clotting.",
@@ -884,7 +901,7 @@
     "thrombin"
    ],
    "a": 2,
-   "e": "Checked answer, not from an official key. Chapter 13 says smoking increases fibrinogen levels, raising the chance of unwanted clotting. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says smoking increases fibrinogen levels in the blood, increasing the possibility of unwanted clotting. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "The serious decrease in the number of thrombocytes or blood platelets is a condition known as __________________________.",
@@ -906,7 +923,7 @@
     "thalassemia"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Chapter 13 says hemophilia is an inherited clotting disorder linked to a recessive gene on the X chromosome. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says hemophilia is an inherited clotting disorder associated with a recessive gene on the X chromosome. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Plasma accounts for about 55% of blood.",
@@ -924,7 +941,7 @@
     "False"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 13 gives the normal pH of blood as 7.35 to 7.45. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Chapter 13 says the normal pH of blood is 7.35 to 7.45. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Sickle-cell anemia is a hereditary disease in which leukocytes have an abnormal sickle shape due to abnormal hemoglobin.",
@@ -933,7 +950,7 @@
     "False"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. In sickle-cell anemia it’s the erythrocytes (red cells), not leukocytes, that are sickle-shaped. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. In sickle-cell anemia it’s the erythrocytes (red blood cells), not leukocytes, that are sickle-shaped. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   },
   {
    "q": "Hemoglobin has five iron atoms that combine with oxygen gas in the lungs.",
@@ -951,7 +968,7 @@
     "False"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Fibrin, not thrombin, forms the threads of the clot. Thrombin converts fibrinogen into fibrin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
+   "e": "Checked answer, not from an official key. Fibrin forms the threads of the clot. Thrombin is the enzyme that converts fibrinogen into fibrin. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 13."
   }
  ]
 }
