@@ -5,29 +5,29 @@
  "steps": [
   {
    "id": "ap14-1",
-   "title": "The heart’s job and position",
+   "title": "The heart and where it sits",
    "teach": [
-    "The cardiovascular system is the heart and thousands of miles of blood vessels. The heart beats about 72 times a minute for a lifetime, and valves keep blood from flowing backward.",
-    "The heart sits at an angle between the lungs in the mediastinum, with about two-thirds of it left of the midline. It’s a blunt cone about the size of a closed fist."
+    "The cardiovascular system is the heart plus thousands of miles of blood vessels. The heart beats about 72 times a minute for a whole lifetime.",
+    "The heart sits obliquely between the lungs in the mediastinum, with about two-thirds of it left of the midline. It’s about the size of a closed fist: roughly 5 inches long, 3.5 inches wide and 2.5 inches thick."
    ],
    "act": {
     "type": "choice",
-    "prompt": "Where is the heart?",
+    "prompt": "Where is the heart located?",
     "options": [
      {
-      "label": "In the mediastinum, between the lungs, surrounded by the pericardial sac",
+      "label": "In the mediastinum, between the lungs",
       "correct": true,
       "feedback": "Right."
      },
      {
       "label": "In the pleural cavity",
       "correct": false,
-      "feedback": "The lungs are in the pleural cavities."
+      "feedback": "The pleural cavities hold the lungs."
      },
      {
       "label": "In the peritoneum",
       "correct": false,
-      "feedback": "That lines the abdominal cavity."
+      "feedback": "That lines the abdomen."
      }
     ]
    }
@@ -37,8 +37,8 @@
    "title": "The pericardial sac",
    "teach": [
     "The heart is enclosed in the pericardial sac (parietal pericardium), which has two layers.",
-    "The outermost layer is the fibrous pericardium: tough connective tissue that anchors the heart to the great vessels, diaphragm and sternum and stops it overstretching. The innermost layer of the sac is the thin serous pericardium.",
-    "Between the sac and the heart is the pericardial cavity, holding pericardial fluid that reduces friction. Inflammation here is pericarditis."
+    "The outermost layer is the fibrous pericardium: tough fibrous connective tissue that anchors the heart and stops it overstretching. The inner layer is the thin serous pericardium.",
+    "Between the serous pericardium and the heart’s surface (epicardium) is the pericardial cavity, filled with pericardial fluid to reduce friction. Inflammation here is pericarditis."
    ],
    "act": {
     "type": "choice",
@@ -47,7 +47,7 @@
      {
       "label": "Fibrous pericardium",
       "correct": true,
-      "feedback": "Right. The serous pericardium is the inner layer of the sac."
+      "feedback": "Right."
      },
      {
       "label": "Serous pericardium",
@@ -66,21 +66,21 @@
    "id": "ap14-3",
    "title": "Layers of the heart wall",
    "teach": [
-    "The epicardium (visceral pericardium) is the thin outer layer of the heart wall.",
-    "The myocardium is the middle layer and makes up the bulk of the heart: involuntary, striated, branched cardiac muscle that contracts.",
+    "The epicardium (visceral pericardium) is the thin outer layer of serous tissue.",
+    "The myocardium is the second layer and makes up the bulk of the heart: involuntary, striated, branched cardiac muscle that contracts.",
     "The endocardium is the thin inner lining of endothelium. It covers the valves and the chordae tendineae."
    ],
    "mnemonic": {
-    "cue": "Epi = upon, Myo = muscle, Endo = inside",
+    "cue": "Epi = on, Myo = muscle, Endo = inside",
     "explanation": "Epicardium is on the outside, myocardium is the muscle, endocardium lines the inside."
    },
    "act": {
     "type": "order",
-    "prompt": "Put the heart wall layers in order, outside in.",
+    "prompt": "Put the heart wall layers in order, outside to inside.",
     "items": [
      {
       "label": "Epicardium",
-      "detail": "Outer, serous"
+      "detail": "Outer serous layer"
      },
      {
       "label": "Myocardium",
@@ -95,57 +95,52 @@
   },
   {
    "id": "ap14-4",
-   "title": "The four chambers",
+   "title": "Chambers and great vessels",
    "teach": [
-    "The two upper chambers are the right and left atria, separated by the interatrial septum. Each has an ear-like auricle. The two lower chambers are the right and left ventricles, separated by the interventricular septum.",
-    "The right atrium receives blood from the whole body except the lungs: from the superior vena cava (head, neck and arms), the inferior vena cava (legs and abdomen) and the coronary sinus. The left atrium receives oxygenated blood from the lungs through four pulmonary veins.",
-    "Ventricles have thicker walls than atria, and the left ventricle’s walls are thickest because it pumps blood through the whole body."
+    "The two upper chambers are the right and left atria; each has an ear-like auricle. The two lower chambers are the right and left ventricles. Septa separate left from right.",
+    "The right atrium receives blood from the superior vena cava (head, neck and arms), the inferior vena cava (lower body) and the coronary sinus. The right ventricle pumps it into the pulmonary trunk and pulmonary arteries to the lungs.",
+    "Four pulmonary veins bring oxygenated blood from the lungs to the left atrium. The left ventricle pumps it into the ascending aorta.",
+    "The left ventricle has the thickest walls because it pumps blood at high pressure to the whole body."
    ],
    "act": {
     "type": "sort",
-    "prompt": "Which chamber?",
+    "prompt": "Which chamber receives blood from each vessel?",
     "categories": [
      "Right atrium",
-     "Right ventricle",
-     "Left atrium",
-     "Left ventricle"
+     "Left atrium"
     ],
     "items": [
      {
-      "label": "Receives blood from the venae cavae",
+      "label": "Superior vena cava",
       "category": 0,
       "feedback": "Right atrium."
      },
      {
-      "label": "Pumps blood into the pulmonary trunk",
-      "category": 1,
-      "feedback": "Right ventricle."
+      "label": "Inferior vena cava",
+      "category": 0,
+      "feedback": "Right atrium."
      },
      {
-      "label": "Receives blood from four pulmonary veins",
-      "category": 2,
+      "label": "Pulmonary veins",
+      "category": 1,
       "feedback": "Left atrium."
      },
      {
-      "label": "Thickest walls; pumps into the aorta",
-      "category": 3,
-      "feedback": "Left ventricle."
+      "label": "Coronary sinus",
+      "category": 0,
+      "feedback": "Right atrium."
      }
     ]
    }
   },
   {
    "id": "ap14-5",
-   "title": "The valves",
+   "title": "Heart valves",
    "teach": [
-    "Valves keep blood from flowing back into the chamber that pumped it.",
-    "Atrioventricular valves: the tricuspid (three cusps) between the right atrium and ventricle, and the bicuspid or mitral (two cusps, the only two-cusp valve) between the left atrium and ventricle. Chordae tendineae connect their cusps to the papillary muscles.",
-    "Semilunar valves: the pulmonary semilunar valve where the pulmonary trunk leaves the right ventricle, and the aortic semilunar valve where the aorta leaves the left ventricle."
+    "Valves keep blood from flowing backward.",
+    "Atrioventricular valves: the tricuspid valve (three cusps) is between the right atrium and right ventricle; the bicuspid, or mitral, valve (two cusps, the only two-cusp valve) is between the left atrium and left ventricle. Chordae tendineae attach the cusps to papillary muscles.",
+    "Semilunar valves: the pulmonary semilunar valve sits where the pulmonary trunk leaves the right ventricle; the aortic semilunar valve sits where the aorta leaves the left ventricle."
    ],
-   "mnemonic": {
-    "cue": "Try before you Buy",
-    "explanation": "Blood passes the TRIcuspid (right side) before the BIcuspid (left side)."
-   },
    "act": {
     "type": "sort",
     "prompt": "Where is each valve?",
@@ -155,24 +150,24 @@
     ],
     "items": [
      {
-      "label": "Tricuspid",
+      "label": "Tricuspid valve",
       "category": 0,
       "feedback": "Right atrium to right ventricle."
      },
      {
-      "label": "Pulmonary semilunar",
-      "category": 0,
-      "feedback": "Right ventricle to pulmonary trunk."
-     },
-     {
-      "label": "Bicuspid (mitral)",
+      "label": "Bicuspid (mitral) valve",
       "category": 1,
       "feedback": "Left atrium to left ventricle."
      },
      {
-      "label": "Aortic semilunar",
+      "label": "Pulmonary semilunar valve",
+      "category": 0,
+      "feedback": "Right ventricle exit."
+     },
+     {
+      "label": "Aortic semilunar valve",
       "category": 1,
-      "feedback": "Left ventricle to aorta."
+      "feedback": "Left ventricle exit."
      }
     ]
    }
@@ -181,44 +176,36 @@
    "id": "ap14-6",
    "title": "Blood flow through the heart",
    "teach": [
-    "Deoxygenated blood enters the right atrium from the venae cavae, passes the tricuspid valve into the right ventricle, then the pulmonary semilunar valve into the pulmonary trunk and pulmonary arteries to the lungs.",
-    "In the lungs it drops carbon dioxide and picks up oxygen, returns through four pulmonary veins to the left atrium, passes the bicuspid valve into the left ventricle, then the aortic semilunar valve into the aorta and out to the body."
+    "Deoxygenated blood comes in through the venae cavae to the right atrium, passes the tricuspid valve into the right ventricle, then goes through the pulmonary semilunar valve into the pulmonary arteries to the lungs.",
+    "In the lungs it drops carbon dioxide and picks up oxygen, then returns through the pulmonary veins to the left atrium, through the bicuspid valve to the left ventricle, and out through the aortic semilunar valve to the aorta."
    ],
    "act": {
     "type": "order",
-    "prompt": "Put the path of blood in order, starting from the body.",
+    "prompt": "Trace blood through the heart.",
     "items": [
      {
-      "label": "Venae cavae",
-      "detail": "Deoxygenated blood returns"
+      "label": "Venae cavae → right atrium",
+      "detail": "Deoxygenated blood in"
      },
      {
-      "label": "Right atrium",
+      "label": "Tricuspid valve → right ventricle",
       "detail": ""
      },
      {
-      "label": "Tricuspid valve",
-      "detail": ""
-     },
-     {
-      "label": "Right ventricle",
-      "detail": ""
-     },
-     {
-      "label": "Pulmonary semilunar valve and pulmonary arteries",
+      "label": "Pulmonary semilunar valve → pulmonary arteries",
       "detail": "To the lungs"
      },
      {
-      "label": "Pulmonary veins and left atrium",
-      "detail": "Oxygenated blood returns"
+      "label": "Pulmonary veins → left atrium",
+      "detail": "Oxygenated blood back"
      },
      {
-      "label": "Bicuspid valve and left ventricle",
+      "label": "Bicuspid valve → left ventricle",
       "detail": ""
      },
      {
-      "label": "Aortic semilunar valve and aorta",
-      "detail": "To the body"
+      "label": "Aortic semilunar valve → aorta",
+      "detail": "Out to the body"
      }
     ]
    }
@@ -227,13 +214,13 @@
    "id": "ap14-7",
    "title": "The conduction system",
    "teach": [
-    "The autonomic nervous system speeds up or slows down the heart, but the heart starts each beat itself through its conduction system.",
-    "The sinoatrial (SA) node in the right atrium wall is the pacemaker: it starts each cycle and sets the rate. The impulse spreads over both atria, which contract, and reaches the atrioventricular (AV) node in the lower right atrium.",
-    "From the AV node, the atrioventricular bundle (bundle of His) runs down the interventricular septum and splits into right and left branches, distributing the charge over the medial ventricle walls. Purkinje fibers carry it into the ventricle muscle, which contracts."
+    "The autonomic nervous system only speeds up or slows down the heart; the heart has its own conduction system that starts each beat.",
+    "The sinoatrial (SA) node in the right atrium wall is the pacemaker. It starts each cycle and sets the rate. The impulse spreads over both atria and reaches the atrioventricular (AV) node in the lower right atrium.",
+    "From the AV node, the bundle of His (atrioventricular bundle) runs down the septum and splits into right and left bundle branches, distributing the charge over the inner surfaces of the ventricles. Purkinje fibers carry it into the ventricle muscle, making the ventricles contract."
    ],
    "act": {
     "type": "order",
-    "prompt": "Put the conduction system in order.",
+    "prompt": "Put the conduction pathway in order.",
     "items": [
      {
       "label": "SA node (pacemaker)",
@@ -248,6 +235,10 @@
       "detail": "Down the septum"
      },
      {
+      "label": "Bundle branches",
+      "detail": "Right and left"
+     },
+     {
       "label": "Purkinje fibers",
       "detail": "Into the ventricle muscle"
      }
@@ -259,56 +250,56 @@
    "title": "The cardiac cycle",
    "teach": [
     "Systole is contraction; diastole is relaxation. A cardiac cycle is the systole and diastole of both atria and both ventricles.",
-    "At about 72 beats a minute, each cycle takes about 0.8 second: the atria contract for 0.1 second, the ventricles contract for 0.3 second, and all chambers rest for 0.4 second. So the heart rests for half of each cycle."
+    "At about 72 beats a minute, each cycle takes about 0.8 seconds: 0.1 s atria contract; 0.3 s ventricles contract; 0.4 s everything rests. So the heart muscle rests for half of every cycle."
    ],
    "mnemonic": {
-    "cue": "Systole = Squeeze, Diastole = Dilate",
-    "explanation": "Systole is contraction; diastole is relaxation and filling."
+    "cue": "Systole Squeezes; Diastole Dilates",
+    "explanation": "Systole is contraction; diastole is relaxation."
    },
    "act": {
     "type": "number",
-    "prompt": "About how long does one cardiac cycle take?",
+    "prompt": "How long does an average cardiac cycle take, in seconds?",
     "answer": 0.8,
-    "tolerance": 0.05,
+    "tolerance": 0,
     "unit": "seconds",
-    "explanation": "At about 72 beats per minute: 0.1 s atrial systole + 0.3 s ventricular systole + 0.4 s rest = 0.8 s."
+    "explanation": "0.1 s atrial contraction + 0.3 s ventricular contraction + 0.4 s rest = 0.8 s."
    }
   },
   {
    "id": "ap14-9",
    "title": "Circulation routes",
    "teach": [
-    "Systemic circulation carries oxygenated blood from the left ventricle to all the body’s organs and back to the right atrium. Two subdivisions: the coronary circulation supplies the myocardium of the heart, and the hepatic portal circulation runs from the digestive tract to the liver.",
-    "Pulmonary circulation runs from the right ventricle to the lungs and back to the left atrium.",
-    "Cerebral circulation supplies the brain through the carotid and vertebral arteries, which form the Circle of Willis. Fetal circulation exists only between the fetus and mother."
+    "Systemic circulation: oxygenated blood leaves the left ventricle through the aorta to all body organs and returns through the venae cavae.",
+    "Coronary circulation supplies the myocardium (the coronary arteries branch off the ascending aorta). Hepatic portal circulation runs from the digestive tract to the liver; the hepatic portal vein drains the digestive organs into the liver.",
+    "Pulmonary circulation runs from the right ventricle to the lungs and back to the left atrium. Cerebral circulation supplies the brain through the carotid and vertebral arteries and the Circle of Willis. Fetal circulation is a temporary route between fetus and mother."
    ],
    "act": {
     "type": "sort",
-    "prompt": "Which circulation?",
+    "prompt": "Which circulation route?",
     "categories": [
      "Coronary",
-     "Pulmonary",
      "Cerebral",
+     "Pulmonary",
      "Hepatic portal"
     ],
     "items": [
      {
-      "label": "Supplies the heart muscle",
+      "label": "Supplies the myocardium",
       "category": 0,
       "feedback": "Coronary."
      },
      {
-      "label": "Right ventricle to the lungs and back",
-      "category": 1,
-      "feedback": "Pulmonary."
-     },
-     {
       "label": "Supplies the brain",
-      "category": 2,
+      "category": 1,
       "feedback": "Cerebral."
      },
      {
-      "label": "Digestive tract to the liver",
+      "label": "Right ventricle to lungs and back",
+      "category": 2,
+      "feedback": "Pulmonary."
+     },
+     {
+      "label": "Digestive tract to liver",
       "category": 3,
       "feedback": "Hepatic portal."
      }
@@ -319,21 +310,21 @@
    "id": "ap14-10",
    "title": "Blood vessels",
    "teach": [
-    "Arteries and veins have three layers: the tunica intima (one layer of endothelium), the tunica media (smooth muscle) and the tunica adventitia (fibrous connective tissue). The hollow core is the lumen.",
-    "Arteries are thick, elastic and contractile. Where branches join, it’s an anastomosis. Arterioles are small arteries that deliver blood to capillaries.",
-    "Capillaries are microscopic vessels one cell thick (simple squamous endothelium) where nutrients, oxygen, wastes and carbon dioxide are exchanged. Venules connect capillaries to veins. Veins have thinner walls and valves that keep blood flowing toward the heart."
+    "Arteries and veins have three layers: the tunica intima (a single layer of endothelial cells), the tunica media (smooth muscle) and the tunica adventitia (white fibrous connective tissue). The hollow core is the lumen.",
+    "Arteries are thicker, elastic and contractile. Where branches join, that’s an anastomosis. Arterioles deliver blood to capillaries.",
+    "Capillaries are microscopic vessels of simple squamous epithelium, one cell thick, where nutrients, gases and wastes are exchanged. Venules connect capillaries to veins. Veins have thinner walls and valves that keep blood moving toward the heart."
    ],
    "act": {
     "type": "order",
-    "prompt": "Put the vessels in the order blood flows through them.",
+    "prompt": "Put the vessels in the order blood travels from the heart and back.",
     "items": [
      {
       "label": "Artery",
-      "detail": ""
+      "detail": "Away from the heart"
      },
      {
       "label": "Arteriole",
-      "detail": ""
+      "detail": "Small artery"
      },
      {
       "label": "Capillary",
@@ -341,7 +332,7 @@
      },
      {
       "label": "Venule",
-      "detail": ""
+      "detail": "Small vein"
      },
      {
       "label": "Vein",
@@ -354,17 +345,18 @@
    "id": "ap14-11",
    "title": "Major arteries",
    "teach": [
-    "The aorta is the largest artery: ascending aorta, aortic arch, thoracic aorta, then abdominal aorta. The coronary arteries branch first and supply the heart.",
-    "The arch gives off the brachiocephalic, left common carotid and left subclavian arteries. In the thorax, 10 pairs of intercostal arteries supply the chest muscles. In the abdomen: the celiac trunk, mesenteric arteries (intestines), renal arteries (kidneys) and gonadal arteries. The common iliac arteries lead to the femoral arteries of the legs."
+    "The aorta is the largest artery: ascending aorta, aortic arch, thoracic aorta and abdominal aorta. The coronary arteries come off the ascending aorta.",
+    "From the arch: the brachiocephalic artery (right common carotid and right subclavian), the left common carotid and the left subclavian.",
+    "Thoracic branches include 10 pairs of intercostal arteries to the muscles of the thorax. Abdominal branches include the celiac trunk (stomach, spleen, liver), the superior and inferior mesenteric arteries (intestines), the renal arteries (kidneys) and the gonadal arteries. The common iliac arteries lead to the femoral, popliteal and tibial arteries of the leg."
    ],
    "act": {
     "type": "sort",
     "prompt": "What does each artery supply?",
     "categories": [
      "Heart",
-     "Thorax muscles",
      "Kidneys",
-     "Small intestine and colon"
+     "Thoracic muscles",
+     "Brain"
     ],
     "items": [
      {
@@ -373,19 +365,19 @@
       "feedback": "Heart."
      },
      {
-      "label": "Intercostal arteries",
-      "category": 1,
-      "feedback": "Thorax muscles."
-     },
-     {
       "label": "Renal arteries",
-      "category": 2,
+      "category": 1,
       "feedback": "Kidneys."
      },
      {
-      "label": "Superior mesenteric artery",
+      "label": "Intercostal arteries",
+      "category": 2,
+      "feedback": "Muscles of the thorax."
+     },
+     {
+      "label": "Internal carotid artery",
       "category": 3,
-      "feedback": "Intestines."
+      "feedback": "Brain."
      }
     ]
    }
@@ -395,95 +387,68 @@
    "title": "Major veins",
    "teach": [
     "Veins from the head and arms drain into the superior vena cava; veins from the lower body drain into the inferior vena cava.",
-    "The median cubital vein at the elbow is used to draw blood. The great saphenous veins are the longest in the body. The hepatic portal vein drains the digestive organs and goes to the liver; the hepatic veins drain the liver. The renal veins drain the kidneys."
+    "The median cubital vein at the elbow is usually used for drawing blood. The jugular veins drain the head. The great saphenous veins, the longest veins in the body, drain the legs. The renal veins drain the kidneys; the hepatic portal vein carries blood from the digestive organs to the liver; the hepatic veins drain the liver."
    ],
    "act": {
-    "type": "sort",
-    "prompt": "Superior or inferior vena cava?",
-    "categories": [
-     "Superior vena cava",
-     "Inferior vena cava"
-    ],
-    "items": [
+    "type": "choice",
+    "prompt": "Which vein is usually used to draw blood?",
+    "options": [
      {
-      "label": "Blood from the head, neck and arms",
-      "category": 0,
-      "feedback": "Superior."
+      "label": "Median cubital vein",
+      "correct": true,
+      "feedback": "Right, at the elbow."
      },
      {
-      "label": "Blood from the legs and abdomen",
-      "category": 1,
-      "feedback": "Inferior."
+      "label": "Great saphenous vein",
+      "correct": false,
+      "feedback": "That’s the long leg vein."
+     },
+     {
+      "label": "Jugular vein",
+      "correct": false,
+      "feedback": "That drains the head."
      }
     ]
    }
   },
   {
    "id": "ap14-13",
-   "title": "Heart disorders",
+   "title": "Heart disease",
    "teach": [
-    "Atherosclerosis is plaque building up inside arteries. In the coronary arteries it reduces blood flow and causes angina pectoris (chest pain). A myocardial infarction (heart attack) is the death of heart muscle; the damaged area is an infarct.",
-    "An arrhythmia is any deviation from a normal heartbeat rhythm (bradycardia is under 60 beats a minute, tachycardia over 100). A heart murmur is an abnormal fluttering or humming sound. Stenosis is a narrowed valve opening; an incompetent valve leaks.",
-    "Angioplasty inserts a small balloon through the aorta into a coronary artery to flatten plaque; a stent may be added. Bypass surgery uses healthy vessels to go around blockages."
+    "Atherosclerosis: plaque builds up inside arteries, narrowing them. Coronary heart disease reduces blood flow to the myocardium and causes angina pectoris (chest pain). A myocardial infarction (heart attack) is death of heart muscle; the damaged area is an infarct.",
+    "An arrhythmia is any abnormal rhythm: bradycardia is under 60 beats a minute; tachycardia is over 100. A heart murmur is an abnormal fluttering or humming sound, often from a valve problem. Stenosis is a narrowed valve opening; an incompetent valve leaks backward.",
+    "Others: rheumatic heart disease, endocarditis, myocarditis, pericarditis, congestive heart failure, mitral valve prolapse and congenital septal defects.",
+    "Treatments include bypass surgery and angioplasty: a balloon is threaded into a coronary artery and inflated to flatten plaque, sometimes followed by a stent."
    ],
    "act": {
     "type": "sort",
     "prompt": "Match the term.",
     "categories": [
      "Arrhythmia",
-     "Stenosis",
      "Murmur",
+     "Stenosis",
      "Angioplasty"
     ],
     "items": [
      {
-      "label": "Any deviation from normal rhythm",
+      "label": "Any deviation from a normal heart rhythm",
       "category": 0,
       "feedback": "Arrhythmia."
      },
      {
-      "label": "Narrowed valve opening",
+      "label": "Abnormal fluttering or humming heart sound",
       "category": 1,
-      "feedback": "Stenosis."
-     },
-     {
-      "label": "Fluttering or humming heart sound",
-      "category": 2,
       "feedback": "Murmur."
      },
      {
-      "label": "A balloon opens a coronary artery",
+      "label": "Narrowed valve opening",
+      "category": 2,
+      "feedback": "Stenosis."
+     },
+     {
+      "label": "Balloon used to open a coronary artery",
       "category": 3,
       "feedback": "Angioplasty."
-     }
-    ]
-   }
-  },
-  {
-   "id": "ap14-14",
-   "title": "The heart and aging",
-   "teach": [
-    "Maximum heart rate drops with age; by 70, cardiac output can fall by as much as 75%. Stiffer arteries make the left ventricle work harder and enlarge.",
-    "Valves stiffen with calcium deposits, and arrhythmias become more common. Regular aerobic exercise, like daily walking, keeps the heart working well."
-   ],
-   "act": {
-    "type": "choice",
-    "prompt": "Why can the left ventricle enlarge with age?",
-    "options": [
-     {
-      "label": "Less elastic arteries raise pressure, so it works harder",
-      "correct": true,
-      "feedback": "Right."
-     },
-     {
-      "label": "It stops contracting",
-      "correct": false,
-      "feedback": "It works harder, not less."
-     },
-     {
-      "label": "The SA node moves into it",
-      "correct": false,
-      "feedback": "The SA node stays in the right atrium."
      }
     ]
    }
@@ -491,24 +456,24 @@
  ],
  "flashcards": [
   {
-   "front": "Mediastinum",
-   "back": "Where the heart sits, between the lungs."
+   "front": "Heart location",
+   "back": "Mediastinum, between the lungs; two-thirds left of midline."
   },
   {
    "front": "Fibrous pericardium",
    "back": "Outermost layer of the pericardial sac."
   },
   {
+   "front": "Pericardial cavity",
+   "back": "Fluid-filled space that reduces friction."
+  },
+  {
    "front": "Epicardium / myocardium / endocardium",
    "back": "Outer layer / muscle (bulk) / inner lining."
   },
   {
-   "front": "Superior vena cava",
-   "back": "Brings blood from the head, neck and arms."
-  },
-  {
-   "front": "Inferior vena cava",
-   "back": "Brings blood from the lower body."
+   "front": "Superior / inferior vena cava",
+   "back": "Upper body / lower body blood to the right atrium."
   },
   {
    "front": "Pulmonary veins",
@@ -531,36 +496,32 @@
    "back": "Pulmonary (right ventricle exit) and aortic (left ventricle exit)."
   },
   {
-   "front": "Chordae tendineae",
-   "back": "Cords linking valve cusps to papillary muscles."
-  },
-  {
    "front": "SA node",
    "back": "The pacemaker, in the right atrium."
   },
   {
    "front": "Bundle of His",
-   "back": "Carries the impulse down the septum to the ventricles."
+   "back": "Distributes the charge over the inner surfaces of the ventricles."
   },
   {
    "front": "Purkinje fibers",
-   "back": "Stimulate the ventricle muscle to contract."
+   "back": "Stimulate the ventricles to contract."
   },
   {
    "front": "Systole / diastole",
    "back": "Contraction / relaxation."
   },
   {
-   "front": "Cardiac cycle",
-   "back": "About 0.8 second."
+   "front": "Cardiac cycle length",
+   "back": "About 0.8 seconds."
   },
   {
    "front": "Coronary circulation",
-   "back": "Supplies the heart muscle."
+   "back": "Supplies the myocardium."
   },
   {
    "front": "Cerebral circulation",
-   "back": "Supplies the brain."
+   "back": "Supplies the brain; Circle of Willis."
   },
   {
    "front": "Hepatic portal vein",
@@ -568,7 +529,7 @@
   },
   {
    "front": "Tunica intima / media / adventitia",
-   "back": "Endothelium / smooth muscle / connective tissue."
+   "back": "Endothelium / smooth muscle / fibrous connective tissue."
   },
   {
    "front": "Lumen",
@@ -596,19 +557,19 @@
   },
   {
    "front": "Arrhythmia",
-   "back": "Any deviation from a normal heartbeat rhythm."
+   "back": "Any deviation from a normal rhythm."
   },
   {
-   "front": "Stenosis",
-   "back": "Narrowed valve opening."
+   "front": "Murmur",
+   "back": "Abnormal fluttering or humming heart sound."
   },
   {
    "front": "Infarct",
-   "back": "Area of damaged heart tissue from inadequate blood flow."
+   "back": "Area of damaged cardiac tissue from poor blood flow."
   },
   {
    "front": "Angioplasty",
-   "back": "Balloon inserted to open a coronary artery."
+   "back": "Balloon reconstruction of a diseased coronary artery."
   }
  ],
  "quiz": [
@@ -621,7 +582,7 @@
     "fibrous pericardium"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 14 says the outermost layer of the pericardial sac is the fibrous pericardium. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the outermost layer of the pericardial sac is the fibrous layer, or fibrous pericardium. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The ______________________ circulation supplies the brain with oxygen and nutrients and disposes of waste.",
@@ -643,7 +604,7 @@
     "intercostal"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 14 says 10 pairs of intercostal arteries supply the muscles of the thorax. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says there are 10 pairs of intercostal arteries that supply muscles of the thorax. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "Any deviation from a normal heartbeat rhythm is called ______________________________.",
@@ -676,7 +637,7 @@
     "angioplasty"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 14 describes angioplasty as reconstructing a diseased coronary artery with a small balloon inserted through the aorta. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 describes angioplasty as reconstructing a diseased coronary artery by inserting a small balloon through the aorta into the artery. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The hollow core of a blood vessel is called the ______________________.",
@@ -709,7 +670,7 @@
     "lymphatics"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 14 says venules connect capillaries to veins. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says venules are small vessels that connect capillaries to veins. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The coronary arteries supply blood to the _____________________.",
@@ -720,7 +681,7 @@
     "liver"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 14 says the coronary arteries supply the heart. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the coronary arteries branch off the ascending aorta and supply the heart. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The bundle of _________________ distributes the electrical charge over the medial surfaces of the ventricles.",
@@ -753,7 +714,7 @@
     "renal"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. Chapter 14 says the coronary circulation supplies the myocardium of the heart. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the coronary circulation route supplies the myocardium of the heart. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "Microscopic vessels composed of simple squamous epithelial cells are called ______________________.",
@@ -775,7 +736,7 @@
     "saphenous"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 14 says the hepatic portal vein drains the digestive organs and goes to the liver. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the hepatic portal vein drains the organs of the digestive tract and goes to the liver. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The presence of ______________________ keeps blood from backflowing in the heart.",
@@ -786,7 +747,7 @@
     "septa"
    ],
    "a": 2,
-   "e": "Checked answer, not from an official key. Chapter 14 says the heart’s valves prevent blood from flowing back into the pumping chamber. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the valves prevent blood from flowing back into the pumping chamber. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "A _______________________ is an abnormal heart sound akin to a fluttering or a humming sound.",
@@ -797,7 +758,7 @@
     "murmur"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 14 says a heart murmur is an abnormal heart sound like a fluttering or humming. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says a heart murmur is an abnormal heart sound like a fluttering or humming sound. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The tunica _________________________ of arteries and veins is composed of a single layer of endothelial cells.",
@@ -808,7 +769,7 @@
     "intima"
    ],
    "a": 3,
-   "e": "Checked answer, not from an official key. Chapter 14 says the tunica intima is a single layer of endothelial cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the tunica intima is composed of a single layer of endothelial cells. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "Oxygenated blood returns to the heart from the lungs via four pulmonary ______________________.",
@@ -894,7 +855,7 @@
     "False"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 14 places the pulmonary semilunar valve at the opening where the pulmonary trunk leaves the right ventricle. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 places the pulmonary semilunar valve in the opening where the pulmonary trunk exits the right ventricle, so it belongs to the right ventricle. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The left ventricle has walls that are thicker than the right ventricle.",
@@ -903,7 +864,7 @@
     "False"
    ],
    "a": 0,
-   "e": "Checked answer, not from an official key. Chapter 14 says the left ventricle’s walls are thicker than the right ventricle’s. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. Chapter 14 says the left ventricle has thicker walls than the right because it pumps blood at high pressure to the whole body. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "Systole is the term used to refer to the phase of relaxation.",
@@ -921,7 +882,7 @@
     "False"
    ],
    "a": 1,
-   "e": "Checked answer, not from an official key. The sinoatrial (SA) node is the pacemaker, not the AV node. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
+   "e": "Checked answer, not from an official key. The sinoatrial (SA) node is the pacemaker, not the atrioventricular node. Source: Fundamentals of Anatomy and Physiology (Rizzo), Chapter 14."
   },
   {
    "q": "The outermost layer of the pericardial sac is the serous pericardium.",
