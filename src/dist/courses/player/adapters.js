@@ -11,7 +11,8 @@ ORDER.forEach(id=>{COURSES[id]={
     const i=C.lessons.findIndex(l=>l.n===n);if(i<0)return null;const L=C.lessons[i];if(L.comingSoon)return null;
     const nx=C.lessons[i+1];
     return Object.assign({courseName:C.name,courseHome:HOME[id],total:C.lessons.length,nextTitle:nx&&!nx.comingSoon?nx.title:null,nextN:nx&&nx.n,flashcards:[],quiz:[]},L);},
-  async getAll(mode){await load(id);const C=(window.HOLUS_DATA||{})[id];if(!C)return null;
+  async getAll(mode,exam){await load(id);const C=(window.HOLUS_DATA||{})[id];if(!C)return null;
+    if(exam){const E=(C.exams||[])[exam-1];if(!E)return null;return {courseName:C.name,courseHome:HOME[id],title:C.name,examTitle:E.title,examKicker:E.kicker,total:C.lessons.length,steps:[],flashcards:[],quiz:E.quiz.slice(),allQuizCount:E.quiz.length};}
     const cards=[],qs=[];C.lessons.forEach(l=>{(l.flashcards||[]).forEach(c=>cards.push(c));(l.quiz||[]).forEach(q=>qs.push(Object.assign({},q,{q:q.q})));});
     let quiz=qs;if(mode==='quiz'&&qs.length>20){const idx=qs.map((_,i)=>i);for(let i=idx.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]];}quiz=idx.slice(0,20).map(i=>qs[i]);}
     return {courseName:C.name,courseHome:HOME[id],title:C.name,total:C.lessons.length,steps:[],flashcards:cards,quiz,allQuizCount:qs.length};}

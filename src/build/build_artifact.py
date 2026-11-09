@@ -53,6 +53,7 @@ function holusRoute(forced){
   var h=(typeof forced==='string'?forced:(location.hash||'')).replace(/^#/,'');
   var m=h.match(/^([a-z]{2})-(\\d+)(?:-(cards|quiz))?$/)||h.match(/^([a-z]{2})-()(cards|quiz)$/);
   if(m){pk.hidden=true;hp.hidden=false;window.HOLUS_START(m[1],m[2]?+m[2]:0,{closeHref:'#'+m[1],mode:m[3]||null});return;}
+  var mx=h.match(/^([a-z]{2})-exam(\\d+)$/);if(mx){pk.hidden=true;hp.hidden=false;window.HOLUS_START(mx[1],0,{closeHref:'#'+mx[1],mode:'quiz',exam:+mx[2]});return;}
   hp.hidden=true;pk.hidden=false;pk.scrollTop=0;
   if(D[h]){var C=D[h];var done=0;var last='';
     var allCards=0,allQ=0;C.lessons.forEach(function(L){allCards+=(L.flashcards||[]).length;allQ+=(L.quiz||[]).length;});
@@ -61,7 +62,7 @@ function holusRoute(forced){
       var acts=(fc||qz)?'<div class="pk-acts">'+(fc?'<a href="#'+h+'-'+L.n+'-cards">Flashcards <em>'+fc+'</em></a>':'')+(qz?'<a href="#'+h+'-'+L.n+'-quiz">Test practice <em>'+qz+'</em></a>':'')+'</div>':'';
       return part+'<div class="pk-card'+(L.comingSoon?' off':'')+'"><a class="pk-main" href="#'+h+'-'+L.n+'"'+(L.comingSoon?' aria-disabled="true" tabindex="-1"':'')+'><small>Lesson '+L.n+(L.steps&&L.steps.length?' · '+L.steps.length+' moments':'')+'</small><b>'+esc(L.title)+'</b>'+
       (L.comingSoon?'<span>Coming soon</span>':p?'<span class="pk-p"><i style="width:'+Math.max(4,p.pct||0)+'%"></i></span><span>'+(p.pct>=100?'Complete':(p.pct||0)+'% done')+'</span>':'<span>Not started</span>')+'</a>'+acts+'</div>';}).join('');
-    var courseActs=(allCards||allQ)?'<div class="pk-course-acts">'+(allCards?'<a href="#'+h+'-cards"><b>All flashcards</b><span>'+allCards+' cards from every lesson</span></a>':'')+(allQ?'<a href="#'+h+'-quiz"><b>Mixed test practice</b><span>'+Math.min(20,allQ)+' random questions from '+allQ+'</span></a>':'')+'</div>':'';
+    var courseActs=(allCards||allQ)?'<div class="pk-course-acts">'+(allCards?'<a href="#'+h+'-cards"><b>All flashcards</b><span>'+allCards+' cards from every lesson</span></a>':'')+(allQ?'<a href="#'+h+'-quiz"><b>Mixed test practice</b><span>'+Math.min(20,allQ)+' random questions from '+allQ+'</span></a>':'')+(C.exams||[]).map(function(E,k){return '<a href="#'+h+'-exam'+(k+1)+'"><b>'+esc(E.title)+'</b><span>'+E.quiz.length+' new questions, not from your lesson tests</span></a>';}).join('')+'</div>':'';
     root.innerHTML='<a class="pk-back" href="#">← All courses</a><p class="eyebrow">Course '+String(C.num).padStart(2,'0')+' · '+esc(C.area)+'</p><h1 class="pk-h">'+esc(C.name)+'</h1><p class="pk-l">'+(C.companion?'This is your reading companion for the book. Its chapters are listed below. Lessons will be built once the chapter material is added.':C.lessons.length+' lessons. Open a lesson, or jump straight to its flashcards or test practice.')+'</p>'+courseActs+'<div class="pk-g pk-l2">'+items+'</div>';
     document.title=C.name+' · hōlus. study';return;}
   var tiles=O.map(function(id){var C=D[id];if(!C)return '';var n=C.lessons.length,started=C.lessons.filter(function(L){return prog[id+'-'+L.n]}).length;

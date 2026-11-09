@@ -20,15 +20,15 @@ const params={has:k=>k==='scene'&&opts.scene!=null,get:()=>opts.scene};
 const C=(window.HOLUS_COURSES||{})[cid];
 let L=null;
 const mode=opts.mode||null;
-try{L=C&&(num===0?await C.getAll(mode):await C.get(num));}catch(e){console.error(e);}
-if(L&&mode){L=Object.assign({},L,{title:(mode==='cards'?'Flashcards':'Test practice')+(num?': '+L.title:''),steps:[],caseStudy:null,mode,flashcards:mode==='cards'?L.flashcards:[],quiz:mode==='quiz'?L.quiz:[],nextTitle:null,kicker:mode==='cards'?'Flip each card, then mark whether you knew it. Cards you miss come back until you know them.':'Questions from your course tests, one at a time, with the answer explained.'});if(!(L.flashcards.length||L.quiz.length))L=null;}
+try{L=C&&(num===0?await C.getAll(mode,opts.exam):await C.get(num));}catch(e){console.error(e);}
+if(L&&mode){L=Object.assign({},L,{title:L.examTitle||(mode==='cards'?'Flashcards':'Test practice')+(num?': '+L.title:''),steps:[],caseStudy:null,mode,flashcards:mode==='cards'?L.flashcards:[],quiz:mode==='quiz'?L.quiz:[],nextTitle:null,kicker:L.examKicker||(mode==='cards'?'Flip each card, then mark whether you knew it. Cards you miss come back until you know them.':'Questions from your course tests, one at a time, with the answer explained.')});if(!(L.flashcards.length||L.quiz.length))L=null;}
 if(!L){stage.innerHTML='<section class="scene on dark"><div class="inner"><h1 class="h2">This lesson isn’t available yet.</h1><p class="lede" style="opacity:1;animation:none">Go back to your course and pick another lesson.</p></div></section>';next.style.display='none';back.style.display='none';return;}
 close.href=opts.closeHref||L.courseHome;
 const steps=L.steps;
-const store='holus-player-'+cid+'-'+num+(mode?'-'+mode:'');
+const store='holus-player-'+cid+'-'+num+(mode?'-'+mode:'')+(opts.exam?'-exam'+opts.exam:'');
 let st={i:0,xp:0,res:{},cards:{}};
 try{const s=JSON.parse(localStorage.getItem(store)||'null');if(s)st=Object.assign(st,s);}catch(e){}
-if(num===0&&mode==='quiz')st.quiz=null;
+if(num===0&&mode==='quiz'&&!opts.exam)st.quiz=null;
 /* scenes */
 const scenes=[{t:'intro'}];
 const JRS=!mode&&window.HolusJourney?Object.values(window.HOLUS_JOURNEYS||{}).filter(j=>j.id===cid+'-'+num||String(j.id).indexOf(cid+'-'+num+'.')===0):[];const JR=JRS[0]||null;
@@ -121,7 +121,7 @@ function render(sc){
     return `<div class="inner"><div class="card">${stepK(sc.k,'See it')}<h2 class="h2">${esc(s.title)}</h2>${visual(s.visual)}${kp?`<ul class="kp">${kp}</ul>`:''}${mn}${s.goodToKnow?`<p class="gtk"><b>Good to know</b> ${esc(s.goodToKnow)}</p>`:''}${(s.blocksHtml||[]).length?`<div class="rich blocks">${s.blocksHtml.join('')}</div>`:''}</div></div>`;
   }
   if(sc.t==='quiz'){
-    return `<div class="inner"><div class="card"><div class="step-k"><i>✓</i>Lesson test practice</div><h2 class="h2">Test yourself.</h2><p class="hint">${L.quiz.length} questions from your course test, one at a time. <button class="qz-skip" type="button">Skip for now</button></p><div class="qz"></div></div></div>`;
+    return `<div class="inner"><div class="card"><div class="step-k"><i>✓</i>${L.examTitle?esc(L.examTitle):'Lesson test practice'}</div><h2 class="h2">Test yourself.</h2><p class="hint">${L.examTitle?L.quiz.length+' new questions from your lesson content, one at a time. Your place is saved.':L.quiz.length+' questions from your course test, one at a time.'} <button class="qz-skip" type="button">Skip for now</button></p><div class="qz"></div></div></div>`;
   }
   if(sc.t==='act'){
     const a=s.act;let body='';
@@ -292,7 +292,7 @@ function openSheet(){
       const kind=s.act?({choice:'Check',sort:s.act.variant==='match'?'Match':'Sort',order:'Order',explore:'Explore',number:'Calculate'}[s.act.type]||'Activity'):(s.visual?'Diagram':'Read');
       html+='<li><button class="mo-i'+(here?' here':'')+(actDone||(!s.act&&seen)?' done':seen?' seen':'')+'" data-go="'+e.i+'"><i>'+(actDone||(!s.act&&seen&&!here)?'✓':e.k+1)+'</i><span><b>'+esc(s.title)+'</b><small>'+kind+(here?' · You are here':'')+'</small></span></button></li>';}
     else{if(e.kind==='journey'){const here=cur===e.i,done=(st.max||0)>e.i;html+='<li><button class="mo-i'+(here?' here':'')+(done?' done':'')+'" data-go="'+e.i+'"><i>'+(done&&!here?'✓':'◎')+'</i><span><b>'+esc(e.J.kind||'Body tour')+'</b><small>'+esc(e.J.title)+(here?' · You are here':'')+'</small></span></button></li>';return;}
-      const lab={case:'Case study',cards:'Flashcards',quiz:'Lesson test practice'}[e.kind]||e.kind;const here=cur===e.i;const done=e.kind==='quiz'?st.quiz&&st.quiz.done:(st.max||0)>e.i;
+      const lab={case:'Case study',cards:'Flashcards',quiz:L.examTitle||'Lesson test practice'}[e.kind]||e.kind;const here=cur===e.i;const done=e.kind==='quiz'?st.quiz&&st.quiz.done:(st.max||0)>e.i;
       html+='<li class="mo-part">Review</li>'.repeat(lastChap!=='__rev'?1:0);lastChap='__rev';
       html+='<li><button class="mo-i'+(here?' here':'')+(done?' done':'')+'" data-go="'+e.i+'"><i>'+(done?'✓':'★')+'</i><span><b>'+lab+'</b><small>'+(e.kind==='cards'?L.flashcards.length+' cards':e.kind==='quiz'?L.quiz.length+' questions':'Apply it')+(here?' · You are here':'')+'</small></span></button></li>';}
   });
