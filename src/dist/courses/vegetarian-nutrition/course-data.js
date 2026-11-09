@@ -1,12 +1,12 @@
-/* Generated from 14 supplied printer-version lesson tests. Original wording is preserved except for obvious PDF text-extraction artifacts. Answers distinguish evidence-checked, confirmed graded-course keys, likely course-intended keys, and unresolved items. The user supplied graded Lesson 3, 12 and 13 keys on 2 November 2026; no full-course official answer key was supplied. */
+/* Generated from 14 supplied printer-version lesson tests. Original wording is preserved except for obvious PDF text-extraction artifacts. Answers distinguish evidence-checked, confirmed graded-course keys, likely course-intended keys, and unresolved items. The user supplied graded Lesson 3, 12, 13 and 14 keys on 2 November 2026; no full-course official answer key was supplied. */
 window.VN_COURSE = {
   "title": "Vegetarian Nutrition",
   "subtitle": "A source-aware, evidence-corroborated study course",
   "description": "Learn vegetarian nutrition from foundations and nutrient science through life stages and practical application.",
   "officialAnswerKeyAvailable": true,
-  "officialAnswerKeyScope": "Graded Lessons 3, 12 and 13, supplied 2, 8 and 9 November 2026",
+  "officialAnswerKeyScope": "Graded Lessons 3, 12, 13 and 14, supplied 2, 8 and 9 November 2026",
   "finalExamAvailable": false,
-  "answerLayer": "evidence checked, confirmed graded Lesson 3, 12 and 13 keys, and likely course-intended keys",
+  "answerLayer": "evidence checked, confirmed graded Lesson 3, 12, 13 and 14 keys, and likely course-intended keys",
   "evidenceReviewDate": "2026-11-01",
   "blocks": [
     {
@@ -3176,11 +3176,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Vegetarian staples are available in ordinary supermarkets and do not require specialty stores.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 2,
@@ -3190,11 +3192,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Natural-food stores commonly stock foods as well as supplements.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 3,
@@ -3204,11 +3208,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Farmers’ market prices vary and are not always significantly higher.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 4,
@@ -3218,25 +3224,29 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Farmers’ market produce is not automatically certified organic.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 5,
-          "prompt": "It is advisable to store grains, beans and flours in jars instead of their store-provided bags. True or False?",
+          "prompt": "It is advisable to store grains, beans and flours in jars instead of their store-provided bags. True or false?",
           "options": [
             "True",
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Airtight jars can protect dry staples from moisture and pests after purchase.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 6,
@@ -3245,13 +3255,14 @@ window.VN_COURSE = {
             "True",
             "False"
           ],
-          "answer": 0,
-          "answerStatus": "course-intended",
-          "rationale": "The practical-applications chapter assumes greater preparation time for soaking, cooking, chopping, and batch preparation, so True is the likely course key.",
-          "correction": "This is not inherent to vegetarian cooking: canned beans, frozen produce, prepared tofu, and other convenience foods can make it equally fast or faster.",
-          "sourceNote": "Older vegetarian food-preparation text; course-intended practical generalization.",
+          "answer": 1,
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks False. Vegetarian cooking doesn’t have to take longer than other cooking. Canned beans, quick-cooking grains, tofu and simple meals make it as fast as any other way of eating; soaking dry beans is hands-off time you can plan ahead.",
+          "correction": "",
+          "sourceNote": "Confirmed by your graded Lesson 14 result.",
           "sourceUrl": null,
-          "confidence": "medium"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026"
         },
         {
           "number": 7,
@@ -3261,25 +3272,29 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "About 60 mL (¼ cup) mashed ripe banana can replace one egg in some baked recipes, with texture and flavour changes.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 8,
-          "prompt": "When cooking, one cup of cow’s milk should be substituted with two cups of fortified soymilk.",
+          "prompt": "When cooking, one cup of cow's milk should be substituted with two cups of fortified soymilk.",
           "options": [
             "True",
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Milk substitution is generally one-for-one by volume, not two cups for one.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 9,
@@ -3289,12 +3304,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "A 4–8 hour soak is the range taught in the source for many dried beans, with timing adjusted for size, so True is the intended key.",
           "correction": "Actual soaking time varies with bean type, size, age, water temperature, and method; quick-soak and no-soak methods also exist.",
-          "sourceNote": "Vegetarian food-preparation chapter; source-method answer rather than a universal cooking rule.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Vegetarian food-preparation chapter; source-method answer rather than a universal cooking rule.",
           "sourceUrl": null,
-          "confidence": "high"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026"
         },
         {
           "number": 10,
@@ -3304,11 +3320,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Soaking, discarding soak water, gradual intake increases, and thorough cooking may improve tolerance for some people.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 11,
@@ -3318,12 +3336,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "The source teaches dry-toasting grains as a technique that develops flavour and promotes more even cooking, so True is the intended answer.",
           "correction": "Toasting reliably changes flavour; even cooking still depends on the grain, liquid ratio, heat, and cooking method.",
-          "sourceNote": "Vegetarian food-preparation chapter; course-technique answer.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Vegetarian food-preparation chapter; course-technique answer.",
           "sourceUrl": null,
-          "confidence": "medium"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026"
         },
         {
           "number": 12,
@@ -3333,11 +3352,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Blended tofu can provide moisture and binding in some recipes.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 13,
@@ -3347,15 +3368,17 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
-          "rationale": "Some white sugar is processed with animal bone char, so some vegans avoid it; practices vary by manufacturer and country.",
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks True. Some white sugar is filtered through bone char (charred animal bones), so many vegans avoid it or choose sugar labelled vegan or organic. Practices vary by brand and country.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 14,
-          "prompt": "Extra nutritional yeast that will not be used for at least a month should be stored in _________to preserve the B vitamins",
+          "prompt": "Extra nutritional yeast that will not be used for at least a month should be stored in _________to preserve the B vitamins.",
           "options": [
             "A cupboard",
             "The freezer",
@@ -3363,12 +3386,13 @@ window.VN_COURSE = {
             "The cellar"
           ],
           "answer": 1,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "The source says nutritional yeast can remain in a cool, dry place for a few months but recommends keeping larger quantities in the freezer and leaving out only about one month's supply.",
           "correction": "Follow the product label and keep the container dry and tightly sealed; storage advice varies by fortification, packaging, humidity, and expected duration.",
-          "sourceNote": "Becoming Vegetarian (2003), chapter 13, pp. 386–387.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Becoming Vegetarian (2003), chapter 13, pp. 386–387.",
           "sourceUrl": null,
-          "confidence": "high"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026"
         },
         {
           "number": 15,
@@ -3378,14 +3402,16 @@ window.VN_COURSE = {
             "can be used to replace eggs in meringue",
             "liquid from strained beans",
             "can be used as a substitute for scrambled eggs",
-            "both A and B"
+            "Both A and B"
           ],
           "answer": 4,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Aquafaba is commonly the liquid from cooked or canned chickpeas and can replace egg white in meringue.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 14 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 14 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         }
       ]
     }
