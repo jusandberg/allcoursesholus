@@ -88,3 +88,9 @@
 @keyframes churn{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
 @keyframes ripple{to{stroke-dashoffset:-36}}
 @media (prefers-reduced-motion:reduce){.bj *{animation:none!important;transition:none!important}}
+
+.bj-foods{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 14px}.bj-foods .bj-k{margin:0 4px 0 0}
+.bj-food{display:inline-flex;align-items:center;gap:7px;min-height:36px;padding:0 13px;border:1px solid #dfe4de;border-radius:999px;background:#fff;color:#243341;font:600 13px/1 Manrope,sans-serif;cursor:pointer}
+.bj-food i{width:10px;height:10px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.7)}
+.bj-food[aria-pressed=true]{background:#243341;border-color:#243341;color:#fff}
+.bj-food:focus-visible{outline:3px solid #a9b8a5;outline-offset:2px}

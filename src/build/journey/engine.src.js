@@ -43,6 +43,7 @@ function mount(host,J,opt){
     <p class="bj-hint">Tap any organ to jump there</p>
   </div>
   <div class="bj-side">
+    ${(J.foods||[]).length?`<div class="bj-foods"><span class="bj-k">Pick a food</span>${J.foods.map((f,k)=>`<button type="button" class="bj-food" data-food="${k}" aria-pressed="${k===0}"><i style="background:${esc(f.colors[0])}"></i>${esc(f.name)}</button>`).join('')}</div>`:''}
     <div class="bj-lensrow">${lensHTML('bj-big')}<div class="bj-cap"><p class="bj-k">Up close</p><p class="bj-capt"></p></div></div>
     <div class="bj-text">
       <div class="bj-pillrow"><span class="bj-pill"><i></i><span></span></span><span class="bj-dots">${J.stops.map((s,k)=>`<button type="button" data-go="${k}" aria-label="${esc(s.short)}"></button>`).join('')}</span></div>
@@ -67,7 +68,7 @@ function mount(host,J,opt){
   J.stops.forEach(s=>{(s.path||[[250,122]]).forEach(p=>{const l=pts[pts.length-1];if(l)d+=Math.hypot(p[0]-l[0],p[1]-l[1]);pts.push(p);cum.push(d);});stopDist.push(d);});
   route.setAttribute('d','M'+pts.map(p=>p.join(' ')).join(' L'));
   const used=new Set(J.stops.flatMap(s=>s.organs));const dim=J.dim==null?0.5:J.dim;
-  let i=0,dist=0,vb=CAMS.body.slice(),raf=0,timer=0,playing=false;
+  let fi=0,i=0,dist=0,vb=CAMS.body.slice(),raf=0,timer=0,playing=false;
   const reduce=()=>window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   function place(){
     let k=1;while(k<cum.length-1&&cum[k]<dist)k++;
@@ -91,13 +92,18 @@ function mount(host,J,opt){
     raf=requestAnimationFrame(step);
   }
   function paint(){
-    const s=J.stops[i];
+    const fd=(J.foods||[])[fi]||null;
+    const fill=t=>typeof t!=='string'?t:fd?t.replace(/\{food\}/g,fd.food).replace(/\{bite\}/g,fd.bite).replace(/\{note\}/g,fd.note):t.replace(/\s*\{(food|bite|note)\}/g,'');
+    const s0=J.stops[i],v=(fd&&s0.variants&&s0.variants[fd.id])||{};
+    const s=Object.assign({},s0,{title:fill(v.title||s0.title),body:fill(v.body||s0.body),analogy:fill(v.analogy!==undefined?v.analogy:s0.analogy)});
+    const tint=c=>c==='food1'?(fd?fd.colors[0]:'#c86d56'):c==='food2'?(fd?fd.colors[1]:'#71836d'):c;
+    $$('.bj-food').forEach((b,k)=>b.setAttribute('aria-pressed',String(k===fi)));
     $$('.bj-o').forEach(g=>{const k=g.dataset.o,on=s.organs.includes(k),op=on?1:used.has(k)?(LINEY.has(k)?Math.min(dim,0.25):dim):CORE.has(k)&&!J.hideCore?0.3:0;
       g.style.opacity=op;g.style.visibility=op>0?'visible':'hidden';g.classList.toggle('on',on);g.style.cursor=used.has(k)?'pointer':'default';});
     const fk=s.form||'single';$$('.bj-f').forEach(g=>g.style.opacity=g.dataset.f===fk?1:0);
     $$('.bj-sc').forEach(e=>e.style.opacity=e.dataset.sc===s.scene?1:0);
     const lens=(s.lens||[]).slice(0,10);while(lens.length<10)lens.push(H);
-    $$('.bj-lens').forEach(L=>[...L.querySelectorAll('.bj-p')].forEach((el,k)=>{const p=Object.assign({},H,lens[k]);
+    $$('.bj-lens').forEach(L=>[...L.querySelectorAll('.bj-p')].forEach((el,k)=>{const p=Object.assign({},H,lens[k]);p.bg=tint(p.bg);
       el.style.left=p.x+'%';el.style.top=p.y+'%';el.style.width=p.w+'px';el.style.height=p.h+'px';el.style.opacity=p.o==null?1:p.o;
       const ii=el.firstChild;ii.style.borderRadius=p.r||'50%';ii.style.background=soft(p);ii.style.border=p.border||'none';ii.style.animationDelay=-(k*.37).toFixed(2)+'s';}));
     lab.textContent=s.place;lab.classList.toggle('end',(s.label||[])[2]==='end');
@@ -113,6 +119,7 @@ function mount(host,J,opt){
   function stop(){playing=false;clearInterval(timer);paint();}
   function play(){if(playing)return stop();if(i===total-1)go(0);playing=true;paint();timer=setInterval(()=>{if(!root.isConnected){clearInterval(timer);return;}if(i>=total-1)return stop();go(i+1);},6500);}
   root.addEventListener('click',e=>{
+    const fb=e.target.closest('[data-food]');if(fb){stop();fi=+fb.dataset.food;go(0);return;}
     const g=e.target.closest('[data-go]');if(g){stop();go(+g.dataset.go);return;}
     const o=e.target.closest('.bj-o');if(o){const t=J.stops.findIndex(s=>s.organs.includes(o.dataset.o));if(t>=0){stop();go(t);}return;}
     if(e.target.closest('.bj-prev')){stop();if(i>0)go(i-1);}
