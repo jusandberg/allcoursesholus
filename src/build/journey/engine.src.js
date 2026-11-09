@@ -11,6 +11,9 @@ const FORMS=['drop','small','bundle','folded','chain','short','single','strand']
 const SCENES=['swirl','villi','vessel','muscle','blood','colon','alveoli','osteon','nerve','skin','follicle'];
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const H={x:50,y:50,w:0,h:0,r:'50%',bg:'#d3a84b',border:'none',o:0};
+/* close-up pieces shaded like the website fruit: lighter on top, a small round shine on round pieces */
+const mixc=(a,b,t)=>{const h=x=>[1,3,5].map(i=>parseInt(x.slice(i,i+2),16));const A=h(a),B=h(b);return '#'+A.map((v,i)=>Math.round(v+(B[i]-v)*t).toString(16).padStart(2,'0')).join('');};
+function soft(p){const c=p.bg;if(!/^#[0-9a-f]{6}$/i.test(c||''))return c;const g='linear-gradient(180deg,'+mixc(c,'#ffffff',.38)+','+mixc(c,'#3a3226',.12)+')';return (p.w>=14&&(p.r||'50%')==='50%'?'radial-gradient(circle at 34% 30%,rgba(255,255,255,.4) 0 12%,rgba(255,255,255,0) 13%),':'')+g;}
 function lensHTML(cls){
   return `<div class="bj-lens ${cls}" aria-hidden="true">
   <div class="bj-sc" data-sc="swirl" style="inset:10%;border-radius:50%;border:3px dashed #e6b1a2;animation:bjspin 10s linear infinite"></div>
@@ -96,7 +99,7 @@ function mount(host,J,opt){
     const lens=(s.lens||[]).slice(0,10);while(lens.length<10)lens.push(H);
     $$('.bj-lens').forEach(L=>[...L.querySelectorAll('.bj-p')].forEach((el,k)=>{const p=Object.assign({},H,lens[k]);
       el.style.left=p.x+'%';el.style.top=p.y+'%';el.style.width=p.w+'px';el.style.height=p.h+'px';el.style.opacity=p.o==null?1:p.o;
-      const ii=el.firstChild;ii.style.borderRadius=p.r||'50%';ii.style.background=p.bg;ii.style.border=p.border||'none';ii.style.animationDelay=-(k*.37).toFixed(2)+'s';}));
+      const ii=el.firstChild;ii.style.borderRadius=p.r||'50%';ii.style.background=soft(p);ii.style.border=p.border||'none';ii.style.animationDelay=-(k*.37).toFixed(2)+'s';}));
     lab.textContent=s.place;lab.classList.toggle('end',(s.label||[])[2]==='end');
     $('.bj-pill span').textContent=s.place;$('.bj-title').textContent=s.title;$('.bj-body').textContent=s.body;
     const an=$('.bj-an');an.textContent=s.analogy||'';an.hidden=!s.analogy;$('.bj-capt').textContent=s.lensCaption||'';

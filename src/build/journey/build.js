@@ -7,6 +7,7 @@ const route='<path class="bj-route" d="" style="fill:none;stroke:#71836d;stroke-
 let svg=parts.sil+X.BACK+parts.org1+route+parts.org2+X.FRONT+parts.tok;
 const anim=['beat','breathe','churn','flow','pulse','ripple'];
 anim.forEach(a=>{svg=svg.split('animation:'+a+' ').join('animation:bj'+a+' ');});
+svg=require('./style.js').restyle(svg);
 let css=fs.readFileSync(path.join(__dirname,'journey.css'),'utf8');
 anim.forEach(a=>{css=css.split('@keyframes '+a+'{').join('@keyframes bj'+a+'{');});
 let js=fs.readFileSync(path.join(__dirname,'engine.src.js'),'utf8').replace("'__SVG__'",JSON.stringify(svg));
