@@ -49,7 +49,7 @@ function mount(host,J,opt){
     <p class="bj-hint">Tap any ${ST?'part':'organ'} to jump there</p>
   </div>
   <div class="bj-side">
-    ${(J.foods||[]).length?`<div class="bj-foods"><span class="bj-k">Pick a food</span>${J.foods.map((f,k)=>`<button type="button" class="bj-food" data-food="${k}" aria-pressed="${k===0}"><i style="background:${esc(f.colors[0])}"></i>${esc(f.name)}</button>`).join('')}</div>`:''}
+    ${(J.foods||[]).length?`<div class="bj-foods"><span class="bj-k">${esc(J.pickLabel||'Pick a food')}</span>${J.foods.map((f,k)=>`<button type="button" class="bj-food" data-food="${k}" aria-pressed="${k===0}"><i style="background:${esc(f.colors[0])}"></i>${esc(f.name)}</button>`).join('')}</div>`:''}
     <div class="bj-lensrow">${lensHTML('bj-big')}<div class="bj-cap"><p class="bj-k">Up close</p><p class="bj-capt"></p></div></div>
     <div class="bj-text">
       <div class="bj-pillrow"><span class="bj-pill"><i></i><span></span></span><span class="bj-dots">${J.stops.map((s,k)=>`<button type="button" data-go="${k}" aria-label="${esc(s.short)}"></button>`).join('')}</span></div>
