@@ -1,12 +1,12 @@
-/* Generated from 14 supplied printer-version lesson tests. Original wording is preserved except for obvious PDF text-extraction artifacts. Answers distinguish evidence-checked, confirmed graded-course keys, likely course-intended keys, and unresolved items. The user supplied graded Lesson 3 and Lesson 12 keys on 2 November 2026; no full-course official answer key was supplied. */
+/* Generated from 14 supplied printer-version lesson tests. Original wording is preserved except for obvious PDF text-extraction artifacts. Answers distinguish evidence-checked, confirmed graded-course keys, likely course-intended keys, and unresolved items. The user supplied graded Lesson 3, 12 and 13 keys on 2 November 2026; no full-course official answer key was supplied. */
 window.VN_COURSE = {
   "title": "Vegetarian Nutrition",
   "subtitle": "A source-aware, evidence-corroborated study course",
   "description": "Learn vegetarian nutrition from foundations and nutrient science through life stages and practical application.",
   "officialAnswerKeyAvailable": true,
-  "officialAnswerKeyScope": "Graded Lessons 3 and 12, supplied 2 and 8 November 2026",
+  "officialAnswerKeyScope": "Graded Lessons 3, 12 and 13, supplied 2, 8 and 9 November 2026",
   "finalExamAvailable": false,
-  "answerLayer": "evidence checked, confirmed graded Lesson 3 and 12 keys, and likely course-intended keys",
+  "answerLayer": "evidence checked, confirmed graded Lesson 3, 12 and 13 keys, and likely course-intended keys",
   "evidenceReviewDate": "2026-11-01",
   "blocks": [
     {
@@ -2923,11 +2923,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Energy needs often fall with age, but vitamin D needs rise and vitamin B6 remains important.",
           "correction": "",
-          "sourceNote": "NIH Office of Dietary Supplements: Vitamin D fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. NIH Office of Dietary Supplements: Vitamin D fact sheet for health professionals.",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 2,
@@ -2936,28 +2938,32 @@ window.VN_COURSE = {
             "calcium",
             "zinc",
             "iron",
-            "all of the above"
+            "All of the above."
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Calcium recommendations increase for many older adults; iron needs generally do not rise after menopause.",
           "correction": "",
-          "sourceNote": "NIH Office of Dietary Supplements: Calcium fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. NIH Office of Dietary Supplements: Calcium fact sheet for health professionals.",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 3,
-          "prompt": "One of the most important factors in maintaining one’s health in old age is exercise.",
+          "prompt": "One of the most important factors in maintaining one's health in old age is exercise",
           "options": [
             "True",
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Regular physical activity is a major determinant of function and healthy aging.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 4,
@@ -2967,26 +2973,29 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "With lower energy intake, adequate protein requires a higher protein-to-calorie density.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 5,
-          "prompt": "Antioxidants help protect people’s brains from functional deterioration.",
+          "prompt": "Antioxidants help protect people's brains from functional deterioration.",
           "options": [
             "True",
             "False"
           ],
           "answer": 0,
-          "answerStatus": "course-intended",
+          "answerStatus": "course-confirmed",
           "rationale": "The course text says antioxidants seem to protect brain function from deterioration, so True is the intended answer.",
           "correction": "Current evidence supports antioxidant-rich dietary patterns more than isolated antioxidant supplements; supplements as a class have not been proven to prevent cognitive decline.",
-          "sourceNote": "Becoming Vegetarian (2003), chapter 10, p. 314; National Institute on Aging evidence review.",
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Becoming Vegetarian (2003), chapter 10, p. 314; National Institute on Aging evidence review.",
           "sourceUrl": "https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease",
-          "confidence": "high"
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026"
         },
         {
           "number": 6,
@@ -2996,11 +3005,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Soy beverage contributes to fluid intake.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 7,
@@ -3009,13 +3020,14 @@ window.VN_COURSE = {
             "True",
             "False"
           ],
-          "answer": 0,
-          "answerStatus": "course-intended",
-          "rationale": "The older course material uses approximately age 50 as the reference point for age-related changes in energy needs, so True is the likely expected key.",
-          "correction": "Energy expenditure changes gradually and is strongly affected by lean mass, activity, health, and menopause; age 50 is a teaching approximation, not a biological switch.",
-          "sourceNote": "Older life-stage nutrition course framing; retain as the course-intended answer with a current-context caveat.",
-          "sourceUrl": null,
-          "confidence": "medium"
+          "answer": 1,
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks False. Large studies of energy expenditure (Pontzer and colleagues, 2021) found it stays fairly steady through midlife and starts to decline after about age 60, not 50.",
+          "correction": "",
+          "sourceNote": "Pontzer H, et al. Daily energy expenditure through the human life course. Science, 2021.",
+          "sourceUrl": "https://www.science.org/doi/10.1126/science.abe5017",
+          "confidence": "confirmed-course-result",
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026"
         },
         {
           "number": 8,
@@ -3025,11 +3037,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Bone loss commonly accelerates in the early years after menopause.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 9,
@@ -3039,15 +3053,17 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Reduced food intake, medication effects, and impaired absorption can increase B12-deficiency risk regardless of diet pattern.",
           "correction": "",
-          "sourceNote": "NIH Office of Dietary Supplements: Vitamin B12 fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. NIH Office of Dietary Supplements: Vitamin B12 fact sheet for health professionals.",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 10,
-          "prompt": "The effects of vitamin B12 deficiency on older people may include",
+          "prompt": "The effects of vitamin B12 deficiency on older people may include:",
           "options": [
             "memory loss.",
             "irritability.",
@@ -3055,11 +3071,13 @@ window.VN_COURSE = {
             "All of the above"
           ],
           "answer": 3,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "B12 deficiency can produce cognitive, mood, sleep, and other neurologic symptoms, although they are nonspecific.",
           "correction": "",
-          "sourceNote": "NIH Office of Dietary Supplements: Vitamin B12 fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. NIH Office of Dietary Supplements: Vitamin B12 fact sheet for health professionals.",
+          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 11,
@@ -3069,11 +3087,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Vitamin B6 remains important in older adulthood.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 12,
@@ -3082,12 +3102,14 @@ window.VN_COURSE = {
             "True",
             "False"
           ],
-          "answer": 1,
-          "answerStatus": "verified",
-          "rationale": "Vitamin D supplementation or fortification is often needed, but calcium can frequently be met with food; “most require both supplements” is too absolute.",
+          "answer": 0,
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks True. The course says most older people need fortified foods or supplements to get enough vitamin D and calcium, since needs go up with age while skin makes less vitamin D and appetite often drops.",
           "correction": "",
-          "sourceNote": "NIH Office of Dietary Supplements: Vitamin D fact sheet for health professionals.",
-          "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+          "sourceNote": "Confirmed by your graded Lesson 13 result.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 13,
@@ -3097,25 +3119,29 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Older adults generally need to preserve or increase protein density, not reduce protein solely because of age.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 14,
-          "prompt": "People’s need for caloric intake reduces with age because of a loss of muscle mass.",
+          "prompt": "People's need for caloric intake reduces with age because of a loss of muscle mass.",
           "options": [
             "True",
             "False"
           ],
           "answer": 0,
-          "answerStatus": "verified",
-          "rationale": "Loss of lean mass and lower activity contribute to reduced energy needs with age.",
+          "answerStatus": "course-confirmed",
+          "rationale": "Your graded test marks True. Muscle burns more energy than fat, so as muscle mass is lost with age (along with lower activity), calorie needs go down.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         },
         {
           "number": 15,
@@ -3125,11 +3151,13 @@ window.VN_COURSE = {
             "False"
           ],
           "answer": 1,
-          "answerStatus": "verified",
+          "answerStatus": "course-confirmed",
           "rationale": "Resistance and other physical activity help maintain muscle mass and function.",
           "correction": "",
-          "sourceNote": "Current nutrition science and the supplied course sources support this answer.",
-          "sourceUrl": null
+          "sourceNote": "Confirmed course marking comes from your graded Lesson 13 result. Current nutrition science and the supplied course sources support this answer.",
+          "sourceUrl": null,
+          "courseKeySource": "User-supplied graded Lesson 13 result, 9 November 2026",
+          "confidence": "confirmed-course-result"
         }
       ]
     },
