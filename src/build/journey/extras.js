@@ -3,6 +3,7 @@
 const o = (k, inner) => `<g class="bj-o" data-o="${k}">${inner}</g>`;
 const line = (d, c, w, extra = '') => `<path d="${d}" style="fill:none;stroke:${c};stroke-width:${w};stroke-linecap:round;stroke-linejoin:round;${extra}"></path>`;
 const BONE = '#cfc4a6', BONEIN = '#f4efe1';
+const jt = (x, y, r) => `<circle cx="${x}" cy="${y}" r="${r}" style="fill:#d9c49a"></circle><circle cx="${x}" cy="${y}" r="${r * .5}" style="fill:#c9d6de;opacity:.9"></circle>`;
 const bone = d => line(d, BONE, 11) + line(d, BONEIN, 6);
 exports.BACK = [
   o('skeleton',
@@ -50,6 +51,17 @@ exports.FRONT = [
   o('uterus', '<path d="M239 486 C233 486 232 494 234 504 C236 516 243 524 247 532 L253 532 C257 524 264 516 266 504 C268 494 267 486 261 486 C256 486 254 490 250 490 C246 490 244 486 239 486 Z" style="fill:#d98aa8"></path>' + line('M247 532 L247 552 M253 532 L253 552', '#d98aa8', 3)),
   o('prostate', '<ellipse cx="250" cy="540" rx="9" ry="6" style="fill:#b98a74"></ellipse>'),
   o('testes', '<ellipse cx="242" cy="590" rx="7" ry="9" style="fill:#c98fa0"></ellipse><ellipse cx="258" cy="590" rx="7" ry="9" style="fill:#c98fa0"></ellipse>' + line('M240 582 C232 560 226 530 236 510 C242 500 250 502 250 516', '#c98fa0', 2.5) + line('M260 582 C268 560 274 530 264 510 C258 500 250 502 250 516', '#c98fa0', 2.5)),
-  o('urethra', line('M250 529 L250 572', '#d8b86a', 4))
+  o('urethra', line('M250 529 L250 572', '#d8b86a', 4)),
+  // joints for the articular system: a soft cartilage-coloured bead at each joint
+  o('j_suture', line('M214 52 l7 -6 l7 6 l7 -6 l7 6 l7 -6 l7 6 l7 -6 l7 6 l7 -6 l7 6', '#c9a66b', 3)),
+  o('j_pivot', jt(250, 150, 8)),
+  o('j_vertebra', jt(250, 300, 6) + jt(250, 330, 6) + jt(250, 360, 6)),
+  o('j_shoulder', jt(152, 236, 11) + jt(348, 236, 11)),
+  o('j_elbow', jt(124, 375, 9) + jt(376, 375, 9)),
+  o('j_wrist', jt(100, 516, 8) + jt(400, 516, 8)),
+  o('j_thumb', jt(115, 552, 6) + jt(385, 552, 6)),
+  o('j_symphysis', '<rect x="244" y="498" width="12" height="18" rx="5" style="fill:#c9d6de"></rect>'),
+  o('j_hip', jt(205, 588, 10) + jt(295, 588, 10)),
+  o('j_knee', jt(212, 750, 11) + jt(288, 750, 11) + '<ellipse cx="212" cy="738" rx="6" ry="7" style="fill:#e9dcc0"></ellipse><ellipse cx="288" cy="738" rx="6" ry="7" style="fill:#e9dcc0"></ellipse>')
 ].join('');
-exports.KEYS = ['skeleton', 'spine', 'nerves', 'vessels', 'ureters', 'diaphragm', 'nose', 'salivary', 'pituitary', 'trachea', 'thyroid', 'thymus', 'spleen', 'lymphnodes', 'marrow', 'uterus', 'prostate', 'testes', 'urethra'];
+exports.KEYS = ['skeleton', 'spine', 'nerves', 'vessels', 'ureters', 'diaphragm', 'nose', 'salivary', 'pituitary', 'trachea', 'thyroid', 'thymus', 'spleen', 'lymphnodes', 'marrow', 'uterus', 'prostate', 'testes', 'urethra', 'j_suture', 'j_pivot', 'j_vertebra', 'j_shoulder', 'j_elbow', 'j_wrist', 'j_thumb', 'j_symphysis', 'j_hip', 'j_knee'];
