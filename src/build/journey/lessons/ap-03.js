@@ -1,0 +1,57 @@
+const {P,C}=require('../lens.js');
+const AA=['#c86d56','#6f91a2','#d3a84b','#71836d'];
+const aa=(x,y,k,o)=>P(x,y,14,14,Object.assign({bg:AA[k%4]},o||{}));
+const base=(x,y,k)=>P(x,y,10,16,{r:'3px',bg:['#7a6a9a','#b07aa0','#6f91a2','#d3a84b'][k%4]});
+const mrna=(y,n,x0=14,o)=>Array.from({length:n},(_,k)=>P(x0+k*11,y,9,14,Object.assign({r:'3px',bg:'#b07aa0'},o||{})));
+module.exports={
+  id:'ap-3',after:8,stage:'cell',kind:'Inside a cell',
+  title:'How a cell makes and ships a protein',
+  token:'#b07aa0',
+  stops:[
+    {short:'Gene',place:'Nucleus',view:'nucleus',organs:['nucleus','dna'],label:[250,92,'start'],form:'spark',
+     title:'The recipe is a gene in the nucleus.',
+     body:'The nucleus is the control centre of the cell. The code for each protein is a gene on the DNA inside it.',
+     analogy:'Remove the nucleus and the cell loses its functions.',
+     lensCaption:'A stretch of DNA (two strands)',scene:'nucleus',path:[[250,196]],
+     lens:[...[0,1,2,3,4].map(k=>base(22+k*14,38,k)),...[0,1,2,3,4].map(k=>base(22+k*14,62,k+2))]},
+    {short:'Transcription',place:'Nucleus',view:'nucleus',organs:['nucleus','dna'],label:[250,92,'start'],form:'mrna',
+     title:'Transcription: mRNA copies the code.',
+     body:'Messenger RNA (mRNA) copies the gene’s code with the help of the enzyme RNA polymerase.',
+     lensCaption:'mRNA (pink) copied from one DNA strand',scene:'nucleus',path:[[230,196],[270,184]],
+     lens:[...[0,1,2,3].map(k=>base(26+k*14,34,k)),...mrna(62,5,24),P(84,48,18,18,{bg:'#71836d'})]},
+    {short:'Nuclear pore',place:'Nuclear pore',view:'nucleus',organs:['nucleus','pore'],label:[330,140,'start'],form:'mrna',
+     title:'mRNA leaves the nucleus.',
+     body:'The mRNA leaves through a nuclear pore and heads to a ribosome.',
+     lensCaption:'mRNA slipping through a pore',scene:'nucleus',path:[[270,184],[316,170],[338,166]],
+     lens:[...mrna(50,6,26)]},
+    {short:'Ribosome',place:'Ribosomes on rough ER',view:'er',organs:['rer','ribo'],label:[450,104,'start'],form:'mrna',
+     title:'Ribosomes are where proteins are made.',
+     body:'Ribosomes are tiny granules of ribosomal RNA and protein, with no membrane. Some float in the cytoplasm and some sit on rough ER, which makes proteins the cell will secrete.',
+     lensCaption:'mRNA reaching a ribosome',scene:'none',path:[[338,166],[356,150],[372,140]],
+     lens:[P(50,42,60,34,{r:'30px 30px 14px 14px',bg:'#9a5d50'}),P(50,66,70,40,{r:'30px',bg:'#b97f72'}),...mrna(80,6,24)]},
+    {short:'Translation',place:'Ribosome',view:'er',organs:['rer'],label:[450,104,'start'],form:'beads',
+     title:'Translation: tRNA brings the amino acids.',
+     body:'Transfer RNA (tRNA) brings amino acids from the cytoplasm. Each tRNA has three bases, an anticodon, that match three bases on the mRNA, a codon. The ribosome links the amino acids into a polypeptide chain.',
+     lensCaption:'tRNA matching codons; the chain grows',scene:'none',path:[[372,140],[404,138],[430,144]],
+     lens:[P(50,54,70,40,{r:'30px',bg:'#b97f72'}),...mrna(80,4,32),aa(30,30,0),aa(42,24,1),aa(54,28,2),aa(66,22,3),P(80,36,12,22,{r:'4px',bg:'#71836d'})]},
+    {short:'ER',place:'Rough ER',view:'er',organs:['rer'],label:[450,104,'start'],form:'beads',
+     title:'The ER stores and transports.',
+     body:'The endoplasmic reticulum is a network of membrane channels called cisternae, used to store and transport what the cell makes. It connects to the nuclear membrane and the cell membrane.',
+     lensCaption:'A new protein moving through the ER',scene:'none',path:[[430,144],[446,152],[470,140]],
+     lens:[P(50,50,150,40,{r:'20px',bg:'#f1d6c8'}),aa(24,50,0),aa(36,46,1),aa(48,50,2),aa(60,46,3),aa(72,50,0)]},
+    {short:'Golgi',place:'Golgi apparatus',view:'golgi',organs:['golgi','vesicle'],label:[600,58,'start'],form:'vesicle',
+     title:'The Golgi collects and packs.',
+     body:'The Golgi apparatus is a stack of flat sacs. Compounds the cell will secrete are collected and concentrated here, and carbohydrates are added to proteins. Lysosomes can form here too.',
+     analogy:'Like pancakes stacked in a warehouse.',
+     lensCaption:'A finished protein packed in a vesicle',scene:'none',path:[[470,140],[500,118],[534,110],[600,104]],
+     lens:[P(50,30,120,16,{r:'10px',bg:'#e3d0ea'}),P(50,48,110,16,{r:'10px',bg:'#e3d0ea'}),P(50,66,100,16,{r:'10px',bg:'#e3d0ea'}),P(82,84,26,26,{bg:'#e3d0ea'}),aa(80,84,2)]},
+    {short:'Membrane',place:'Cell membrane',view:'golgi',organs:['vesicle','membrane'],label:[680,60,'start'],form:'vesicle',
+     title:'Out through the cell membrane.',
+     body:'The protein is secreted at the cell membrane: a double layer of phospholipids with proteins embedded. Each phospholipid has a water-attracting head and water-repelling tails. This is the fluid mosaic model.',
+     analogy:'Membrane proteins act as channels, pumps, receptors, identity markers and anchors.',
+     lensCaption:'The phospholipid bilayer with a protein embedded',scene:'membrane',path:[[612,96],[636,74],[650,52]],
+     lens:[P(50,50,20,40,{r:'10px',bg:'#c9a96a'}),aa(30,20,2),aa(70,22,1)]}
+  ],
+  sources:[{label:'Your course: Anatomy & Physiology, Lesson 3 (Rizzo, Fundamentals of Anatomy and Physiology, Chapter 3)'},{label:'OpenStax Biology 2e, Chapter 15: Genes and Proteins',url:'https://openstax.org/books/biology-2e/pages/15-introduction'}],
+  scope:'A simplified picture. Real cells make many proteins at once, and only some are secreted.'
+};

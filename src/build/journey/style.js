@@ -26,9 +26,10 @@ const PAIRS = {
 };
 const KEEP = new Set(['#e7b3a3', '#f4efe1']); // cheeks, bone centres
 
-exports.restyle = function (svg) {
+exports.restyle = function (svg, opts) {
+  opts = opts || {}; const PF = opts.prefix || 'bjg';
   const used = new Map();
-  const id = c => { if (!used.has(c)) used.set(c, 'bjg' + used.size); return used.get(c); };
+  const id = c => { if (!used.has(c)) used.set(c, PF + used.size); return used.get(c); };
   svg = svg.replace(/fill:(#[0-9a-f]{6})/gi, (m, c) => {
     c = c.toLowerCase();
     if (KEEP.has(c)) return m;
@@ -43,13 +44,13 @@ exports.restyle = function (svg) {
     return 'stroke:' + mix(c, '#ffffff', .14) + rest;
   });
   // token: shaded with the lesson's own colour
-  svg = svg.split('fill:var(--tok);stroke:#fff;stroke-width:2.5').join('fill:url(#bjgtok)')
-           .split('fill:var(--tok);stroke:#fff;stroke-width:2').join('fill:url(#bjgtok)')
-           .split('fill:var(--tok);stroke:#fff;stroke-width:1.5').join('fill:url(#bjgtok)')
-           .split('fill:var(--tok);stroke:#fff').join('fill:url(#bjgtok);stroke:#fff');
+  svg = svg.split('fill:var(--tok);stroke:#fff;stroke-width:2.5').join('fill:url(#'+PF+'tok)')
+           .split('fill:var(--tok);stroke:#fff;stroke-width:2').join('fill:url(#'+PF+'tok)')
+           .split('fill:var(--tok);stroke:#fff;stroke-width:1.5').join('fill:url(#'+PF+'tok)')
+           .split('fill:var(--tok);stroke:#fff').join('fill:url(#'+PF+'tok);stroke:#fff');
   // small white shines on rounded organs
   const shine = (cx, cy, rx, ry) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" style="fill:#fff;opacity:.35;pointer-events:none"></ellipse>`;
-  const S = {
+  const S = opts.shines ? Object.fromEntries(Object.entries(opts.shines).map(([k, v]) => [k, shine(...v)])) : {
     stomach: shine(298, 300, 7, 4), liver: shine(206, 272, 8, 3.5), heart: shine(262, 214, 3, 2.4),
     bladder: shine(244, 510, 4.5, 3), kidneys: shine(183, 342, 2.6, 4) + shine(317, 342, 2.6, 4),
     gallbladder: shine(211, 309, 2.4, 3.4), spleen: shine(334, 294, 2.4, 4), thyroid: shine(239, 158, 2, 3) + shine(257, 158, 2, 3)
@@ -61,6 +62,6 @@ exports.restyle = function (svg) {
     const [a, b] = PAIRS[c] || [mix(c, '#ffffff', .3), mix(c, '#2b2420', .1)];
     defs += `<linearGradient id="${n}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"></stop><stop offset="1" stop-color="${b}"></stop></linearGradient>`;
   }
-  defs += '<linearGradient id="bjgtok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:color-mix(in srgb,var(--tok) 60%,#fff)"></stop><stop offset="1" style="stop-color:var(--tok)"></stop></linearGradient>';
+  defs += `<linearGradient id="${PF}tok" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:color-mix(in srgb,var(--tok) 60%,#fff)"></stop><stop offset="1" style="stop-color:var(--tok)"></stop></linearGradient>`;
   return '<defs>' + defs + '</defs>' + svg;
 };

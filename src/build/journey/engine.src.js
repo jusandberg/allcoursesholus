@@ -4,11 +4,12 @@
 (function(){
 'use strict';
 const SVG='__SVG__';
+const STAGES='__STAGES__';
 const LINEY=new Set(['vessels','nerves','spine','skeleton','lymphnodes','ureters']);
 const CORE=new Set(['mouth','esophagus','stomach','liver','gallbladder','pancreas','intestine','colon','heart','tissues']);
 const CAMS={body:[60,30,380,950],gut:[150,190,200,310],torso:[120,170,260,390],head:[170,30,160,200],chest:[140,130,220,260],pelvis:[160,420,180,210],legs:[120,420,260,560],arm:[60,160,240,440],neck:[170,90,160,210]};
-const FORMS=['drop','small','bundle','folded','chain','short','single','strand'];
-const SCENES=['swirl','villi','vessel','muscle','blood','colon','alveoli','osteon','nerve','skin','follicle'];
+const FORMS=['drop','small','bundle','folded','chain','short','single','strand','hex','pieces','atp','electron','mrna','beads','vesicle','spark'];
+const SCENES=['swirl','villi','vessel','muscle','blood','colon','alveoli','osteon','nerve','skin','follicle','mito','membrane','nucleus','synapse'];
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const H={x:50,y:50,w:0,h:0,r:'50%',bg:'#d3a84b',border:'none',o:0};
 /* close-up pieces shaded like the website fruit: lighter on top, a small round shine on round pieces */
@@ -27,20 +28,25 @@ function lensHTML(cls){
   <div class="bj-sc" data-sc="nerve" style="left:-5%;right:-5%;top:43%;height:14%;background:repeating-linear-gradient(90deg,#e8d3e2 0 34px,#b07aa0 34px 38px);border-radius:8px"></div>
   <div class="bj-sc" data-sc="skin" style="inset:0;background:linear-gradient(#f3d9c6 0 18%,#ebc8b1 18% 26%,#f4e1d0 26% 70%,#f6ecd6 70%)"></div>
   <div class="bj-sc" data-sc="follicle" style="inset:0;background:radial-gradient(circle at 50% 50%,#fbe4ea 0 30%,#f3c9d4 31% 34%,#fbf0f2 35%)"></div>
+  <div class="bj-sc" data-sc="mito" style="inset:0;background:repeating-linear-gradient(90deg,#f9e7da 0 26px,#e9bfa6 26px 31px),#f9e7da"></div>
+  <div class="bj-sc" data-sc="membrane" style="inset:0;background:linear-gradient(#f3f6f2 0 38%,#e8d3a0 38% 43%,#f4e8c8 43% 57%,#e8d3a0 57% 62%,#fbf4ea 62%)"></div>
+  <div class="bj-sc" data-sc="nucleus" style="inset:0;background:radial-gradient(circle at 50% 50%,#f6ecf0 0 46%,#e2cad6 47% 50%,#fbf4ea 51%)"></div>
+  <div class="bj-sc" data-sc="synapse" style="inset:0;background:radial-gradient(circle at -10% 50%,#efcfc7 0 52%,transparent 53%),radial-gradient(circle at 115% 50%,#d6e0e6 0 48%,transparent 49%),#fbf7f2"></div>
   ${'<div class="bj-p"><i></i></div>'.repeat(10)}
 </div>`;
 }
 function mount(host,J,opt){
   opt=opt||{};
   const total=J.stops.length;
+  const ST=J.stage?STAGES[J.stage]:null,CM=ST?ST.cams:CAMS,HOME=ST?ST.home:'body',BASE=CM[HOME];
   host.innerHTML=`<div class="bj" tabindex="0" style="--tok:${esc(J.token||'#d3a84b')}" aria-label="Body tour: ${esc(J.title)}. Use the left and right arrow keys to move between stops.">
   <div class="bj-map">
     <div class="bj-stage">
-      <svg viewBox="60 30 380 950" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Body map for ${esc(J.title)}">${SVG}</svg>
+      <svg viewBox="${BASE.join(' ')}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${ST?'Diagram':'Body map'} for ${esc(J.title)}">${ST?ST.svg:SVG}</svg>
       <span class="bj-label"></span>
       ${lensHTML('bj-mini')}
     </div>
-    <p class="bj-hint">Tap any organ to jump there</p>
+    <p class="bj-hint">Tap any ${ST?'part':'organ'} to jump there</p>
   </div>
   <div class="bj-side">
     ${(J.foods||[]).length?`<div class="bj-foods"><span class="bj-k">Pick a food</span>${J.foods.map((f,k)=>`<button type="button" class="bj-food" data-food="${k}" aria-pressed="${k===0}"><i style="background:${esc(f.colors[0])}"></i>${esc(f.name)}</button>`).join('')}</div>`:''}
@@ -68,15 +74,15 @@ function mount(host,J,opt){
   J.stops.forEach(s=>{(s.path||[[250,122]]).forEach(p=>{const l=pts[pts.length-1];if(l)d+=Math.hypot(p[0]-l[0],p[1]-l[1]);pts.push(p);cum.push(d);});stopDist.push(d);});
   route.setAttribute('d','M'+pts.map(p=>p.join(' ')).join(' L'));
   const used=new Set(J.stops.flatMap(s=>s.organs));const dim=J.dim==null?0.5:J.dim;
-  let fi=0,i=0,dist=0,vb=CAMS.body.slice(),raf=0,timer=0,playing=false;
+  let fi=0,i=0,dist=0,vb=BASE.slice(),raf=0,timer=0,playing=false;
   const reduce=()=>window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   function place(){
     let k=1;while(k<cum.length-1&&cum[k]<dist)k++;
     const a=pts[k-1]||pts[0],b=pts[k]||a,span=(cum[k]-cum[k-1])||1,t=Math.max(0,Math.min(1,(dist-(cum[k-1]||0))/span));
-    const z=Math.max(0.5,Math.min(1,vb[2]/380));
+    const z=Math.max(0.5,Math.min(1,vb[2]/BASE[2]))*(ST?ST.tok:1);
     tok.setAttribute('transform',`translate(${a[0]+(b[0]-a[0])*t} ${a[1]+(b[1]-a[1])*t}) scale(${z})`);
     svg.setAttribute('viewBox',vb.join(' '));
-    const W=stage.clientWidth,Hh=stage.clientHeight,[vx,vy,vw,vh]=vb,sc=Math.min(W/vw,Hh/vh),ox=(W-vw*sc)/2,oy=(Hh-vh*sc)/2,L=J.stops[i].label||[250,100,'start'];
+    const W=stage.clientWidth,Hh=stage.clientHeight,[vx,vy,vw,vh]=vb,sc=Math.min(W/vw,Hh/vh),ox=(W-vw*sc)/2,oy=(Hh-vh*sc)/2,L=J.stops[i].label||[BASE[0]+BASE[2]/2,BASE[1]+40,'start'];
     let x=ox+(L[0]-vx)*sc,y=oy+(L[1]-vy)*sc;
     const lw=lab.offsetWidth||0;
     if(L[2]==='end')x=Math.max(lw+6,x);else x=Math.min(W-lw-6,x);
@@ -84,7 +90,7 @@ function mount(host,J,opt){
   }
   function animateTo(k){
     cancelAnimationFrame(raf);
-    const from=dist,to=stopDist[k],v0=vb.slice(),v1=CAMS[J.stops[k].view||'body']||CAMS.body;
+    const from=dist,to=stopDist[k],v0=vb.slice(),v1=CM[J.stops[k].view||HOME]||BASE;
     const camMove=v0.some((v,j)=>Math.abs(v-v1[j])>.5);
     const dur=reduce()?0:Math.min(2400,Math.max(camMove?1400:700,Math.abs(to-from)*7));
     const t0=performance.now();
@@ -98,7 +104,7 @@ function mount(host,J,opt){
     const s=Object.assign({},s0,{title:fill(v.title||s0.title),body:fill(v.body||s0.body),analogy:fill(v.analogy!==undefined?v.analogy:s0.analogy)});
     const tint=c=>c==='food1'?(fd?fd.colors[0]:'#c86d56'):c==='food2'?(fd?fd.colors[1]:'#71836d'):c;
     $$('.bj-food').forEach((b,k)=>b.setAttribute('aria-pressed',String(k===fi)));
-    $$('.bj-o').forEach(g=>{const k=g.dataset.o,on=s.organs.includes(k),op=on?1:used.has(k)?(LINEY.has(k)?Math.min(dim,0.25):dim):CORE.has(k)&&!J.hideCore?0.3:0;
+    $$('.bj-o').forEach(g=>{const k=g.dataset.o,on=s.organs.includes(k),op=ST?(on?1:(J.dim==null?ST.dim:J.dim)):on?1:used.has(k)?(LINEY.has(k)?Math.min(dim,0.25):dim):CORE.has(k)&&!J.hideCore?0.3:0;
       g.style.opacity=op;g.style.visibility=op>0?'visible':'hidden';g.classList.toggle('on',on);g.style.cursor=used.has(k)?'pointer':'default';});
     const fk=s.form||'single';$$('.bj-f').forEach(g=>g.style.opacity=g.dataset.f===fk?1:0);
     $$('.bj-sc').forEach(e=>e.style.opacity=e.dataset.sc===s.scene?1:0);
@@ -137,7 +143,7 @@ function mount(host,J,opt){
   if(window.ResizeObserver){const ro=new ResizeObserver(()=>{if(!root.isConnected){ro.disconnect();return;}fit();});ro.observe(root);ro.observe(stage);}
   window.addEventListener('resize',fit);
   if(!document.fullscreenEnabled)$('.bj-fs').hidden=true;
-  fit();paint();dist=stopDist[0];vb=(CAMS[J.stops[0].view||'body']||CAMS.body).slice();place();
+  fit();paint();dist=stopDist[0];vb=(CM[J.stops[0].view||HOME]||BASE).slice();place();
   return {go,get i(){return i}};
 }
 /* lens particle helpers for lesson data files */
