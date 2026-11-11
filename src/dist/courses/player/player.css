@@ -430,3 +430,21 @@ button.mn[aria-expanded=true] small{display:none}
 @media (max-width:600px){.v-fig{padding:14px 12px}.v-fig .fg-art svg{max-height:40vh}.fg-chips .vn{font-size:12.5px;padding:7px 11px}}
 .fg-tap .fg-p text{opacity:0;transition:opacity .3s}
 .fg-tap .fg-p.on text{opacity:1}
+/* start screen: chips that jump to each picture in the lesson */
+.pix{margin:0 0 22px;opacity:0;animation:rise .9s .5s var(--ease) forwards}
+.pix-h{margin:0 0 10px;font:800 12px/1.2 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--light)}
+.pix-c{display:flex;flex-wrap:wrap;gap:8px}
+.pix-b{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);color:#fff;font:700 14px/1.2 Manrope,sans-serif;text-align:left;transition:background .2s,transform .2s var(--ease)}
+.pix-b i{font-style:normal;color:var(--light)}
+.pix-b:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+.pix-b:focus-visible{outline:3px solid var(--light);outline-offset:3px}
+@media (max-width:600px){.pix-b{font-size:13px;padding:8px 12px}}
+.mo-pix{margin:0 0 14px}
+.mo-pix p{margin:0 0 8px;font:800 12px/1.2 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
+.mo-pix div{display:flex;flex-wrap:wrap;gap:8px}
+.mo-pb{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:99px;border:2px solid var(--line);background:#fff;color:var(--ink);font:700 13.5px/1.2 Manrope,sans-serif;text-align:left}
+.mo-pb i{font-style:normal;color:var(--sage)}
+.mo-pb:hover{border-color:var(--sage)}
+.mo-pb.here{background:var(--deep);border-color:var(--deep);color:#fff}
+.mo-pb.here i{color:var(--light)}
+.mo-pb:focus-visible{outline:3px solid var(--sage);outline-offset:3px}

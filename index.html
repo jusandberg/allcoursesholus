@@ -440,6 +440,24 @@ button.mn[aria-expanded=true] small{display:none}
 @media (max-width:600px){.v-fig{padding:14px 12px}.v-fig .fg-art svg{max-height:40vh}.fg-chips .vn{font-size:12.5px;padding:7px 11px}}
 .fg-tap .fg-p text{opacity:0;transition:opacity .3s}
 .fg-tap .fg-p.on text{opacity:1}
+/* start screen: chips that jump to each picture in the lesson */
+.pix{margin:0 0 22px;opacity:0;animation:rise .9s .5s var(--ease) forwards}
+.pix-h{margin:0 0 10px;font:800 12px/1.2 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--light)}
+.pix-c{display:flex;flex-wrap:wrap;gap:8px}
+.pix-b{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);color:#fff;font:700 14px/1.2 Manrope,sans-serif;text-align:left;transition:background .2s,transform .2s var(--ease)}
+.pix-b i{font-style:normal;color:var(--light)}
+.pix-b:hover{background:rgba(255,255,255,.2);transform:translateY(-1px)}
+.pix-b:focus-visible{outline:3px solid var(--light);outline-offset:3px}
+@media (max-width:600px){.pix-b{font-size:13px;padding:8px 12px}}
+.mo-pix{margin:0 0 14px}
+.mo-pix p{margin:0 0 8px;font:800 12px/1.2 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--sage)}
+.mo-pix div{display:flex;flex-wrap:wrap;gap:8px}
+.mo-pb{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:99px;border:2px solid var(--line);background:#fff;color:var(--ink);font:700 13.5px/1.2 Manrope,sans-serif;text-align:left}
+.mo-pb i{font-style:normal;color:var(--sage)}
+.mo-pb:hover{border-color:var(--sage)}
+.mo-pb.here{background:var(--deep);border-color:var(--deep);color:#fff}
+.mo-pb.here i{color:var(--light)}
+.mo-pb:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
 
 /* Body journey visual (ported from Body Explorer) */
 .bj{--ink:#243341;--deep:#16191c;--mut:#596166;--sage:#71836d;--dsage:#4b5d49;--tint:#eef2ed;--ln:#dfe4de;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:stretch;color:var(--ink);font:400 16px/1.55 Inter,"Segoe UI",sans-serif;outline:none;background:#fff;border-radius:22px}
@@ -921,7 +939,7 @@ function render(sc){
     <h1 class="title"><span>${esc(t.slice(0,mid).join(' '))}</span>${t.length>1?`<span>${esc(t.slice(mid).join(' '))}</span>`:''}</h1>
     <p class="lede">${esc(L.kicker||'')}</p>
     <div class="meta">${L.mode?`<span>${L.mode==='cards'?L.flashcards.length+' flashcards':L.quiz.length+' questions'}</span>`:`<span>${steps.length} moments</span>`}${L.mode?'':`<span>${esc(mins)}</span><span>${checks} checks</span>${L.flashcards.length?`<span>${L.flashcards.length} flashcards</span>`:''}`}</div>
-    ${st.completed?`<p class="resume done">✓ Completed. Every screen is open, so you can move through freely.</p>`:''}${st.i>0&&!st.completed?`<p class="resume">You were ${Math.round(st.i/(scenes.length-1)*100)}% through. <button class="link" data-resume="${st.i}">Pick up where you left off →</button></p>`:''}</div>`;
+    ${(()=>{const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:null).filter(Boolean);return px.length?`<div class="pix"><p class="pix-h">Jump to a picture</p><div class="pix-c">${px.map(x=>`<button class="pix-b" type="button" data-pic="${x.i}"><i aria-hidden="true">${x.k}</i>${esc(x.l)}</button>`).join('')}</div></div>`:'';})()}${st.completed?`<p class="resume done">✓ Completed. Every screen is open, so you can move through freely.</p>`:''}${st.i>0&&!st.completed?`<p class="resume">You were ${Math.round(st.i/(scenes.length-1)*100)}% through. <button class="link" data-resume="${st.i}">Pick up where you left off →</button></p>`:''}</div>`;
   }
   if(sc.t==='chapter'){
     const title=s.chapter||s.title;
@@ -988,7 +1006,7 @@ function wire(sc,n){
   if(sc.t==='journey'){try{window.HolusJourney.mount(n.querySelector('.bj-host'),sc.J);}catch(e){console.error(e);}}
   next.textContent=sc.t==='intro'?(st.completed?'Review lesson':st.i>0?'Start over':'Begin'):sc.t==='finish'?(L.nextTitle?'Next lesson →':'Back to course'):'Continue';
   next.disabled=false;
-  if(sc.t==='intro'){const r=n.querySelector('[data-resume]');if(r)r.addEventListener('click',()=>go(+r.dataset.resume));}
+  if(sc.t==='intro'){n.querySelectorAll('[data-pic]').forEach(b=>b.addEventListener('click',()=>go(+b.dataset.pic)));const r=n.querySelector('[data-resume]');if(r)r.addEventListener('click',()=>go(+r.dataset.resume));}
   if(sc.t==='chapter'){auto=setTimeout(()=>go(cur+1),2200);ac._auto=auto;}
   if(sc.t==='teach'){const rs=[...n.querySelectorAll('.reveal')];const first=rs[0]&&rs[0].classList.contains('hy')?2:1;rs.slice(0,first).forEach((p,j)=>setTimeout(()=>p.classList.add('in'),200+j*380));
     n._pending=rs.slice(first);const lab=()=>{next.textContent=n._pending.length?'Next idea':'Continue';};
@@ -1099,7 +1117,10 @@ const entries=[];scenes.forEach((sc,i)=>{
   if(sc.s){const prev=entries[entries.length-1];if(prev&&prev.k===sc.k&&prev.kind==='step')return;entries.push({kind:'step',k:sc.k,i,s:sc.s});}
   else entries.push({kind:sc.t,i,J:sc.J});});
 function openSheet(){
-  let html='<div class="sheet-in"><div class="sheet-h"><div><p class="eyebrow">'+esc(L.courseName)+' · Lesson '+num+'</p><h2>'+esc(L.title)+'</h2></div><button class="sheet-x" type="button" aria-label="Close">×</button></div><ol class="mo">';
+  let html='<div class="sheet-in"><div class="sheet-h"><div><p class="eyebrow">'+esc(L.courseName)+' · Lesson '+num+'</p><h2>'+esc(L.title)+'</h2></div><button class="sheet-x" type="button" aria-label="Close">×</button></div>';
+  {const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:null).filter(Boolean);
+   if(px.length)html+='<div class="mo-pix"><p>Pictures</p><div>'+px.map(x=>'<button type="button" class="mo-pb'+(cur===x.i?' here':'')+'" data-go="'+x.i+'"><i aria-hidden="true">'+x.k+'</i>'+esc(x.l)+'</button>').join('')+'</div></div>';}
+  html+='<ol class="mo">';
   let lastChap=null;
   entries.forEach(e=>{
     if(e.kind==='step'){const s=e.s;const chap=s.chapter&&!L.perStepChapter?s.chapter:null;if(chap&&chap!==lastChap){lastChap=chap;html+='<li class="mo-part">'+esc(chap)+'</li>';}

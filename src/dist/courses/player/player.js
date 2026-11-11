@@ -109,7 +109,7 @@ function render(sc){
     <h1 class="title"><span>${esc(t.slice(0,mid).join(' '))}</span>${t.length>1?`<span>${esc(t.slice(mid).join(' '))}</span>`:''}</h1>
     <p class="lede">${esc(L.kicker||'')}</p>
     <div class="meta">${L.mode?`<span>${L.mode==='cards'?L.flashcards.length+' flashcards':L.quiz.length+' questions'}</span>`:`<span>${steps.length} moments</span>`}${L.mode?'':`<span>${esc(mins)}</span><span>${checks} checks</span>${L.flashcards.length?`<span>${L.flashcards.length} flashcards</span>`:''}`}</div>
-    ${st.completed?`<p class="resume done">✓ Completed. Every screen is open, so you can move through freely.</p>`:''}${st.i>0&&!st.completed?`<p class="resume">You were ${Math.round(st.i/(scenes.length-1)*100)}% through. <button class="link" data-resume="${st.i}">Pick up where you left off →</button></p>`:''}</div>`;
+    ${(()=>{const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:null).filter(Boolean);return px.length?`<div class="pix"><p class="pix-h">Jump to a picture</p><div class="pix-c">${px.map(x=>`<button class="pix-b" type="button" data-pic="${x.i}"><i aria-hidden="true">${x.k}</i>${esc(x.l)}</button>`).join('')}</div></div>`:'';})()}${st.completed?`<p class="resume done">✓ Completed. Every screen is open, so you can move through freely.</p>`:''}${st.i>0&&!st.completed?`<p class="resume">You were ${Math.round(st.i/(scenes.length-1)*100)}% through. <button class="link" data-resume="${st.i}">Pick up where you left off →</button></p>`:''}</div>`;
   }
   if(sc.t==='chapter'){
     const title=s.chapter||s.title;
@@ -176,7 +176,7 @@ function wire(sc,n){
   if(sc.t==='journey'){try{window.HolusJourney.mount(n.querySelector('.bj-host'),sc.J);}catch(e){console.error(e);}}
   next.textContent=sc.t==='intro'?(st.completed?'Review lesson':st.i>0?'Start over':'Begin'):sc.t==='finish'?(L.nextTitle?'Next lesson →':'Back to course'):'Continue';
   next.disabled=false;
-  if(sc.t==='intro'){const r=n.querySelector('[data-resume]');if(r)r.addEventListener('click',()=>go(+r.dataset.resume));}
+  if(sc.t==='intro'){n.querySelectorAll('[data-pic]').forEach(b=>b.addEventListener('click',()=>go(+b.dataset.pic)));const r=n.querySelector('[data-resume]');if(r)r.addEventListener('click',()=>go(+r.dataset.resume));}
   if(sc.t==='chapter'){auto=setTimeout(()=>go(cur+1),2200);ac._auto=auto;}
   if(sc.t==='teach'){const rs=[...n.querySelectorAll('.reveal')];const first=rs[0]&&rs[0].classList.contains('hy')?2:1;rs.slice(0,first).forEach((p,j)=>setTimeout(()=>p.classList.add('in'),200+j*380));
     n._pending=rs.slice(first);const lab=()=>{next.textContent=n._pending.length?'Next idea':'Continue';};
@@ -287,7 +287,10 @@ const entries=[];scenes.forEach((sc,i)=>{
   if(sc.s){const prev=entries[entries.length-1];if(prev&&prev.k===sc.k&&prev.kind==='step')return;entries.push({kind:'step',k:sc.k,i,s:sc.s});}
   else entries.push({kind:sc.t,i,J:sc.J});});
 function openSheet(){
-  let html='<div class="sheet-in"><div class="sheet-h"><div><p class="eyebrow">'+esc(L.courseName)+' · Lesson '+num+'</p><h2>'+esc(L.title)+'</h2></div><button class="sheet-x" type="button" aria-label="Close">×</button></div><ol class="mo">';
+  let html='<div class="sheet-in"><div class="sheet-h"><div><p class="eyebrow">'+esc(L.courseName)+' · Lesson '+num+'</p><h2>'+esc(L.title)+'</h2></div><button class="sheet-x" type="button" aria-label="Close">×</button></div>';
+  {const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:null).filter(Boolean);
+   if(px.length)html+='<div class="mo-pix"><p>Pictures</p><div>'+px.map(x=>'<button type="button" class="mo-pb'+(cur===x.i?' here':'')+'" data-go="'+x.i+'"><i aria-hidden="true">'+x.k+'</i>'+esc(x.l)+'</button>').join('')+'</div></div>';}
+  html+='<ol class="mo">';
   let lastChap=null;
   entries.forEach(e=>{
     if(e.kind==='step'){const s=e.s;const chap=s.chapter&&!L.perStepChapter?s.chapter:null;if(chap&&chap!==lastChap){lastChap=chap;html+='<li class="mo-part">'+esc(chap)+'</li>';}
