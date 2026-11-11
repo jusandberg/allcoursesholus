@@ -109,7 +109,7 @@ function render(sc){
     <h1 class="title"><span>${esc(t.slice(0,mid).join(' '))}</span>${t.length>1?`<span>${esc(t.slice(mid).join(' '))}</span>`:''}</h1>
     <p class="lede">${esc(L.kicker||'')}</p>
     <div class="meta">${L.mode?`<span>${L.mode==='cards'?L.flashcards.length+' flashcards':L.quiz.length+' questions'}</span>`:`<span>${steps.length} moments</span>`}${L.mode?'':`<span>${esc(mins)}</span><span>${checks} checks</span>${L.flashcards.length?`<span>${L.flashcards.length} flashcards</span>`:''}`}</div>
-    ${(()=>{const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:null).filter(Boolean);return px.length?`<div class="pix"><p class="pix-h">Jump to a picture</p><div class="pix-c">${px.map(x=>`<button class="pix-b" type="button" data-pic="${x.i}"><i aria-hidden="true">${x.k}</i>${esc(x.l)}</button>`).join('')}</div></div>`:'';})()}${st.completed?`<p class="resume done">✓ Completed. Every screen is open, so you can move through freely.</p>`:''}${st.i>0&&!st.completed?`<p class="resume">You were ${Math.round(st.i/(scenes.length-1)*100)}% through. <button class="link" data-resume="${st.i}">Pick up where you left off →</button></p>`:''}</div>`;
+    ${(()=>{const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:x.t==='see'&&x.s.visual&&x.s.visual.items&&x.s.visual.items.length?{i,l:x.s.visual.title||x.s.title,k:'◇'}:null).filter(Boolean);return px.length?`<div class="pix"><p class="pix-h">Jump to a ${px.some(x=>x.k==='◇')?(px.some(x=>x.k!=='◇')?'picture or diagram':'diagram'):'picture'}</p><div class="pix-c">${px.map(x=>`<button class="pix-b" type="button" data-pic="${x.i}"><i aria-hidden="true">${x.k}</i>${esc(x.l)}</button>`).join('')}</div></div>`:'';})()}${st.completed?`<p class="resume done">✓ Completed. Every screen is open, so you can move through freely.</p>`:''}${st.i>0&&!st.completed?`<p class="resume">You were ${Math.round(st.i/(scenes.length-1)*100)}% through. <button class="link" data-resume="${st.i}">Pick up where you left off →</button></p>`:''}</div>`;
   }
   if(sc.t==='chapter'){
     const title=s.chapter||s.title;
@@ -288,8 +288,8 @@ const entries=[];scenes.forEach((sc,i)=>{
   else entries.push({kind:sc.t,i,J:sc.J});});
 function openSheet(){
   let html='<div class="sheet-in"><div class="sheet-h"><div><p class="eyebrow">'+esc(L.courseName)+' · Lesson '+num+'</p><h2>'+esc(L.title)+'</h2></div><button class="sheet-x" type="button" aria-label="Close">×</button></div>';
-  {const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:null).filter(Boolean);
-   if(px.length)html+='<div class="mo-pix"><p>Pictures</p><div>'+px.map(x=>'<button type="button" class="mo-pb'+(cur===x.i?' here':'')+'" data-go="'+x.i+'"><i aria-hidden="true">'+x.k+'</i>'+esc(x.l)+'</button>').join('')+'</div></div>';}
+  {const px=scenes.map((x,i)=>x.t==='see'&&FIG(x.s)?{i,l:FIG(x.s).title,k:'▦'}:x.t==='journey'?{i,l:x.J.title,k:'◎'}:x.t==='see'&&x.s.visual&&x.s.visual.items&&x.s.visual.items.length?{i,l:x.s.visual.title||x.s.title,k:'◇'}:null).filter(Boolean);
+   if(px.length)html+='<div class="mo-pix"><p>Pictures and diagrams</p><div>'+px.map(x=>'<button type="button" class="mo-pb'+(cur===x.i?' here':'')+'" data-go="'+x.i+'"><i aria-hidden="true">'+x.k+'</i>'+esc(x.l)+'</button>').join('')+'</div></div>';}
   html+='<ol class="mo">';
   let lastChap=null;
   entries.forEach(e=>{

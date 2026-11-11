@@ -74,3 +74,12 @@ const neuron = (x, y, k) => { k = k || 1; const X = v => f(x + v * k), Y = v => 
   return { den, body, nucleus, axon, myelin, ends };
 };
 module.exports.neuron = neuron;
+// a small person: head and rounded body, standing at (x, y) = feet
+const person = (x, y, k, c, o) => { k = k || 1; c = c || '#c7d2c4'; o = o || {};
+  return module.exports.circ(x, y - 150 * k, 26 * k, o.head || '#f4e3d6') + module.exports.sh(`M${f(x - 40 * k)} ${f(y)} L${f(x - 40 * k)} ${f(y - 80 * k)} C${f(x - 40 * k)} ${f(y - 120 * k)} ${f(x + 40 * k)} ${f(y - 120 * k)} ${f(x + 40 * k)} ${f(y - 80 * k)} L${f(x + 40 * k)} ${f(y)} Z`, c); };
+// a smooth path through points (Catmull-Rom)
+const smooth = pts => { let d = `M${f(pts[0][0])} ${f(pts[0][1])}`; for (let i = 0; i < pts.length - 1; i++) { const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+  d += ` C${f(p1[0] + (p2[0] - p0[0]) / 6)} ${f(p1[1] + (p2[1] - p0[1]) / 6)} ${f(p2[0] - (p3[0] - p1[0]) / 6)} ${f(p2[1] - (p3[1] - p1[1]) / 6)} ${f(p2[0])} ${f(p2[1])}`; } return d; };
+// a rounded label box with text, for diagram nodes
+const box = (x, y, w, h, c, s, tc, sz) => module.exports.rect(x - w / 2, y - h / 2, w, h, Math.min(18, h / 2), c) + (Array.isArray(s) ? s : [s]).map((t, i, a) => module.exports.T(x, y + (sz || 22) * .36 + (i - (a.length - 1) / 2) * (sz || 22) * 1.2, t, { s: sz || 22, c: tc || '#243341', halo: false })).join('');
+Object.assign(module.exports, { person, smooth, box });
