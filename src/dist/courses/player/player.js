@@ -3,6 +3,7 @@
 const $=(s,r=document)=>r.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let ctl=null;
+const FIG=s=>s&&s.id&&(window.HOLUS_FIGS||{})[s.id];
 async function start(cid,num,opts){
 opts=opts||{};
 if(ctl){ctl.abort();clearTimeout(ctl._auto);}
@@ -35,7 +36,7 @@ const JRS=!mode&&window.HolusJourney?Object.values(window.HOLUS_JOURNEYS||{}).fi
 steps.forEach((s,k)=>{
   if(s.chapter||L.perStepChapter)scenes.push({t:'chapter',s,k});
   if((s.teach&&s.teach.length)||s.html)scenes.push({t:'teach',s,k});
-  if(s.visual||s.mnemonic||(s.keyPoints&&s.keyPoints.length)||(s.blocksHtml&&s.blocksHtml.length))scenes.push({t:'see',s,k});
+  if(FIG(s)||s.visual||s.mnemonic||(s.keyPoints&&s.keyPoints.length)||(s.blocksHtml&&s.blocksHtml.length))scenes.push({t:'see',s,k});
   if(s.act)scenes.push({t:'act',s,k});
   JRS.forEach(J=>{if(k===Math.min(J.after||0,steps.length-1))scenes.push({t:'journey',J});});
 });
@@ -67,6 +68,10 @@ function go(i){
   back.disabled=i===0;
   wire(sc,n);
   const h=n.querySelector('h1,h2');if(h){h.setAttribute('tabindex','-1');setTimeout(()=>h.focus({preventScroll:true}),90);}
+}
+function figure(f){
+  const N=f.items.length;
+  return `<figure class="vis v-fig${f.tap?' fg-tap':''}" data-n="${N}"><figcaption><span>${esc(f.title||'')}</span><em class="vcount" aria-live="polite">Tap to explore · 0/${N}</em></figcaption><div class="fg-art"><svg viewBox="${f.vb}" role="img" aria-label="${esc(f.alt||f.title||'')}">${f.svg}</svg></div><div class="fg-chips">${f.items.map((it,j)=>`<button class="vn" data-j="${j}" style="--d:${j*80}ms">${it.c?`<i style="background:${it.c}"></i>`:''}${esc(it.label)}</button>`).join('')}</div><div class="vd" aria-live="polite"><p class="vd-h">${esc(f.hint||'Tap a label, or tap the picture.')}</p></div><template>${f.items.map(it=>`<div><b>${esc(it.label)}</b><p>${esc(it.detail)}</p></div>`).join('')}</template></figure>`;
 }
 const stepK=(k,lab)=>`<div class="step-k"><i>${k+1}</i>${lab}</div>`;
 const fam=k=>{k=k||'';if(/cycle/.test(k))return 'cycle';if(/flow|sequence|process|timeline|pathway|chain|route|path|daymap|bridge|vertical|ladder|equation/.test(k))return 'flow';if(/hub|map|concept|radial|network|connection|system|framework|toolkit|contribution|triad|venn/.test(k))return 'hub';if(/layer|stack|depth|nested|hierarch|rings|scale/.test(k))return 'layers';return 'tiles';};
@@ -118,7 +123,7 @@ function render(sc){
   if(sc.t==='see'){
     const kp=(s.keyPoints||[]).map((p,j)=>`<li style="--d:${j*120}ms">${esc(p)}</li>`).join('');
     const mn=s.mnemonic?`<button class="mn" aria-expanded="false"><span>Remember it</span><b>${esc(s.mnemonic.cue||s.mnemonic.title)}</b><p>${esc(s.mnemonic.explanation||'')}</p><small>Tap to see why it works</small></button>`:'';
-    return `<div class="inner"><div class="card">${stepK(sc.k,'See it')}<h2 class="h2">${esc(s.title)}</h2>${visual(s.visual)}${kp?`<ul class="kp">${kp}</ul>`:''}${mn}${s.goodToKnow?`<p class="gtk"><b>Good to know</b> ${esc(s.goodToKnow)}</p>`:''}${(s.blocksHtml||[]).length?`<div class="rich blocks">${s.blocksHtml.join('')}</div>`:''}</div></div>`;
+    return `<div class="inner"><div class="card">${stepK(sc.k,'See it')}<h2 class="h2">${esc(s.title)}</h2>${FIG(s)?figure(FIG(s))+(FIG(s).keep?visual(s.visual):''):visual(s.visual)}${kp?`<ul class="kp">${kp}</ul>`:''}${mn}${s.goodToKnow?`<p class="gtk"><b>Good to know</b> ${esc(s.goodToKnow)}</p>`:''}${(s.blocksHtml||[]).length?`<div class="rich blocks">${s.blocksHtml.join('')}</div>`:''}</div></div>`;
   }
   if(sc.t==='quiz'){
     return `<div class="inner"><div class="card"><div class="step-k"><i>✓</i>${L.examTitle?esc(L.examTitle):'Lesson test practice'}</div><h2 class="h2">Test yourself.</h2><p class="hint">${L.examTitle?L.quiz.length+' new questions from your lesson content, one at a time. Your place is saved.':L.quiz.length+' questions from your course test, one at a time.'} <button class="qz-skip" type="button">Skip for now</button></p><div class="qz"></div></div></div>`;
@@ -178,7 +183,7 @@ function wire(sc,n){
     n._more=()=>{const p=n._pending.shift();if(!p)return false;p.classList.add('in');p.classList.add('now');setTimeout(()=>p.classList.remove('now'),1200);p.scrollIntoView({behavior:'smooth',block:'nearest'});lab();return true;};
     lab();n.querySelector('.card').addEventListener('click',e=>{if(!e.target.closest('a,button'))n._more();});
     if(n._pending.length){const h=document.createElement('p');h.className='tap-more';h.textContent='Tap anywhere on the card, or press Next idea, to keep reading.';n.querySelector('.card').appendChild(h);}}
-  if(sc.t==='see'){const fig=n.querySelector('.vis');const mnb=n.querySelector('.mn');if(mnb)mnb.addEventListener('click',()=>{mnb.setAttribute('aria-expanded',String(mnb.getAttribute('aria-expanded')!=='true'));});
+  if(sc.t==='see'){n.querySelectorAll('.v-fig').forEach(f=>{const sel=j=>{f.classList.add('sel');f.querySelectorAll('.fg-p').forEach(g=>g.classList.toggle('on',(' '+g.dataset.p+' ').includes(' '+j+' ')));};f.querySelectorAll('.vn').forEach(b=>b.addEventListener('click',()=>sel(b.dataset.j)));f.querySelectorAll('.fg-p').forEach(g=>{g.addEventListener('click',()=>{const b=f.querySelector('.vn[data-j="'+g.dataset.p.split(' ')[0]+'"]');if(b)b.click();});});});const fig=n.querySelector('.vis');const mnb=n.querySelector('.mn');if(mnb)mnb.addEventListener('click',()=>{mnb.setAttribute('aria-expanded',String(mnb.getAttribute('aria-expanded')!=='true'));});
     if(fig){const N=+fig.dataset.n,seen=new Set(),cnt=fig.querySelector('.vcount'),tpl=fig.querySelector('template'),vd=fig.querySelector('.vd');
       const mark=j=>{if(!seen.has(j)){seen.add(j);addXP(2);}cnt.textContent=seen.size===N?'All explored ✓':'Tap to explore · '+seen.size+'/'+N;fig.classList.toggle('done',seen.size===N);fig.style.setProperty('--prog',(seen.size/N*100)+'%');};
       fig.querySelectorAll('.vn').forEach(b=>b.addEventListener('click',()=>{const j=+b.dataset.j;

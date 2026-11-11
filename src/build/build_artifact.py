@@ -74,7 +74,7 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 window.addEventListener('popstate',function(){holusRoute();});
 window.addEventListener('DOMContentLoaded',function(){holusRoute();});
 </script>'''
-jdata=open(P+'data/journeys.js').read();jeng=open(P+'journey.js').read()
+jdata=open(P+'data/journeys.js').read()+'\n'+open(P+'data/figures.js').read();jeng=open(P+'journey.js').read()
 html=f'''<title>hōlus. Study</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

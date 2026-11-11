@@ -413,3 +413,20 @@ button.mn[aria-expanded=true] small{display:none}
 .bj-inner{width:min(1180px,100%)}
 .bj-card .bj-intro{margin:-4px 0 18px;color:#596166;font-size:15px}
 @media (max-width:600px){.bj-card{padding:16px 10px}.bj-card .h2{font-size:22px}}
+/* picture diagrams (figures.js): a drawing where each label lights up its part */
+.v-fig .fg-art{position:relative;margin:2px auto 12px;max-width:520px}
+.v-fig .fg-art svg{display:block;width:100%;height:auto;max-height:52vh;overflow:hidden}
+.v-fig text{font-family:Manrope,sans-serif;font-weight:700;pointer-events:none}
+.v-fig .fg-p{transition:opacity .35s var(--ease);cursor:pointer}
+.v-fig.sel .fg-p{opacity:.14}
+.v-fig.sel .fg-p.on{opacity:1;filter:drop-shadow(0 0 5px rgba(75,93,73,.45))}
+.v-fig .fg-p.on .fg-pop{animation:fgpop .5s var(--ease)}
+@keyframes fgpop{40%{opacity:.5}}
+.fg-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 12px}
+.fg-chips .vn{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:99px;background:#fff;border:2px solid var(--line);font:700 13.5px/1.2 Manrope,sans-serif;color:var(--ink);opacity:0;animation:rise .45s var(--ease) forwards;animation-delay:var(--d);transition:border-color .2s,background .2s}
+.fg-chips .vn i{width:10px;height:10px;border-radius:50%;flex:none}
+.fg-chips .vn:hover{border-color:var(--sage)}
+.fg-chips .vn.on{background:var(--deep);border-color:var(--deep);color:#fff}
+@media (max-width:600px){.v-fig{padding:14px 12px}.v-fig .fg-art svg{max-height:40vh}.fg-chips .vn{font-size:12.5px;padding:7px 11px}}
+.fg-tap .fg-p text{opacity:0;transition:opacity .3s}
+.fg-tap .fg-p.on text{opacity:1}
