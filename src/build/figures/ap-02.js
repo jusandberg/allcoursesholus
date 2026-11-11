@@ -23,6 +23,22 @@ const X = ph => 60 + ph * 55.71;
 const PH = ['#c0574a', '#c96a4a', '#d07f4c', '#d6964f', '#d9ab57', '#d6bd63', '#c5c36f', '#a9bd7a', '#8fb08a', '#7fa598', '#7398a6', '#6889a8', '#5f7ba3', '#596d98'];
 const pin = (ph, up, y, s, c) => line(`M${f(X(ph))} ${up ? 160 : 200} L${f(X(ph))} ${y}`, c, 3) + dot(X(ph), y, c, 7) + T(X(ph), up ? y - 16 : y + 36, s, { s: 24, c });
 
+// a CO2 molecule: carbon in the middle, an oxygen each side
+const co2 = (x, y, k) => { k = k || 1; return circ(x - 20 * k, y, 12 * k, C.rose) + circ(x + 20 * k, y, 12 * k, C.rose) + circ(x, y, 14 * k, '#596166') + T(x, y + 5 * k, 'C', { s: 13 * k, c: '#fff', w: 800, halo: false }); };
+// DNA ladder (5 rungs) and an RNA strand; BASES(letter) draws every block of that base
+const BCOL = { A: C.sage, T: C.blue, G: C.gold, C: C.clay, U: C.plum }, PUR = { A: 1, G: 1 };
+const DNA = [['A', 'T'], ['C', 'G'], ['T', 'A'], ['G', 'C'], ['A', 'T']];
+const RNA = ['A', 'C', 'U', 'G', 'A'];
+const PW = 118, YW = 84; // purine and pyrimidine block widths (118 + 84 fills a rung)
+const block = (x, y, w, b, dir) => rect(dir > 0 ? x : x - w, y - 22, w, 44, 12, BCOL[b]) + T(dir > 0 ? x + w / 2 : x - w / 2, y + 9, b, { s: 26, c: '#fff', w: 800, halo: false });
+const BASES = b => {
+  let s = '';
+  DNA.forEach(([l, r], i) => { const y = 110 + i * 85, wl = PUR[l] ? PW : YW, wr = PUR[r] ? PW : YW;
+    if (l === b) s += block(179, y, wl, l, 1);
+    if (r === b) s += block(381, y, wr, r, -1); });
+  RNA.forEach((x, i) => { if (x === b) s += block(629, 110 + i * 85, PUR[x] ? PW : YW, x, 1); });
+  return s;
+};
 module.exports = {
   'ap2-2': fig('Inside an atom (carbon)', '0 0 620 460',
     ring(310, 230, 92, 92, '#c7d2c4', 3, 'stroke-dasharray="6 7"') + ring(310, 230, 176, 176, '#c7d2c4', 3, 'stroke-dasharray="6 7"'),
@@ -87,5 +103,39 @@ module.exports = {
       { label: 'Urine, about 6', c: '#c5c36f', detail: 'Slightly acidic.', svg: pin(6, true, 110, 'Urine ~6', '#78772e') },
       { label: 'Pure water, 7', c: C.sage, detail: 'Neutral: equal H⁺ and OH⁻. Saliva is just under 7.', svg: pin(7, true, 70, 'Water 7', C.deep) },
       { label: 'Blood, 7.4', c: '#6889a8', detail: 'Slightly basic. Buffers like carbonic acid and bicarbonate keep it in a narrow range.', svg: pin(7.4, true, 110, 'Blood 7.4', C.blueD).replace(/x="(\d+\.?\d*)" y="94"/, (m, x) => `x="${+x + 70}" y="94"`) }
-    ], { hint: 'Below 7 is acidic, above 7 is basic.' })
+    ], { hint: 'Below 7 is acidic, above 7 is basic.' }),
+  // CO2: made in cells, meets water (carbonic acid), breathed out, used by plants, becomes the carbon in food
+  'ap2-8': fig('Where carbon dioxide goes', '0 -40 900 630',
+    arrow(250, 250, 335, 250, C.light, { w: 4 }) + arrow(565, 220, 650, 165, C.light, { w: 4 })
+      + dash('M750 285 C752 305 752 318 750 330', C.light, 4) + arrow(750, 322, 750, 345, C.light, { w: 4 })
+      + arrow(680, 450, 575, 462, C.light, { w: 4 }) + arrow(335, 470, 230, 360, C.light, { w: 4 }),
+    [
+      { label: 'Made in your cells', c: C.clay, detail: 'Carbon dioxide (CO₂) is a waste product of cellular respiration, when cells turn the energy in glucose into ATP.',
+        svg: circ(150, 250, 98, '#f4e8df') + ell(130, 235, 46, 24, C.clay) + line('M98 235 q10 -12 20 0 t20 0 t20 0 t20 0', '#f4e8df', 3) + circ(170, 290, 18, C.plumD) + shine(116, 205, 22, 12)
+          + co2(205, 190, .8) + co2(230, 225, .65) + T(150, 390, 'Body cell', { s: 24, c: C.ink, w: 700 }) },
+      { label: 'Meets water: carbonic acid', c: C.rose, detail: 'If CO₂ builds up, it reacts with water to form carbonic acid, which is toxic.',
+        svg: rect(340, 200, 230, 100, 50, '#f6e3df') + T(455, 240, 'CO₂ + H₂O', { s: 26, c: C.ink, w: 700, halo: false }) + T(455, 278, '→ carbonic acid', { s: 22, c: C.rose, w: 700, halo: false }) + T(455, 335, 'toxic if it builds up', { s: 20, c: C.muted }) },
+      { label: 'Breathed out', c: C.blueD, detail: 'Because it would turn to acid, we breathe CO₂ out quickly through the lungs.',
+        svg: sh('M700 70 C670 70 655 110 655 160 C655 205 672 230 700 230 C718 230 724 215 724 195 L724 95 C724 80 714 70 700 70 Z', '#e7a9a0') + sh('M800 70 C830 70 845 110 845 160 C845 205 828 230 800 230 C782 230 776 215 776 195 L776 95 C776 80 786 70 800 70 Z', '#e7a9a0')
+          + line('M750 30 L750 120 M750 120 L728 140 M750 120 L772 140', '#c98a80', 7) + shine(682, 110, 14, 22) + shine(818, 110, 14, 22)
+          + arrow(750, 26, 750, -2, C.blueD, { w: 4 }) + co2(800, 30, .7) + T(750, 268, 'Lungs', { s: 24, c: C.ink, w: 700 }) },
+      { label: 'Used by plants', c: C.sage, detail: 'Plants take in CO₂ and use it in photosynthesis.',
+        svg: circ(855, 395, 26, '#ebd08c') + line('M760 500 L760 395', C.deep, 6) + sh('M760 430 C720 430 700 400 702 372 C735 370 758 392 760 430 Z', C.sage) + sh('M760 405 C800 405 822 375 818 346 C786 346 762 368 760 405 Z', '#8ea086')
+          + rect(722, 496, 76, 30, 8, C.clay) + co2(690, 360, .65) + T(760, 560, 'Plant', { s: 24, c: C.ink, w: 700 }) },
+      { label: 'The carbon in all organic compounds', c: C.goldD, detail: 'CO₂ is the source of the carbon in all organic compounds, like the sugars, fats and proteins in food.',
+        svg: sh('M455 405 L500 430 L500 480 L455 505 L410 480 L410 430 Z', '#ebd08c') + T(455, 465, 'C', { s: 30, c: C.goldD, w: 800, halo: false }) + T(455, 534, 'Carbon in food', { s: 22, c: C.ink, w: 700 }) }
+    ], { keep: true, hint: 'Follow the arrows: from your cells, out through your lungs, into plants, and back as food.' }),
+
+  // DNA vs RNA bases: A pairs with T, C pairs with G; RNA swaps U in for T
+  'ap2-13': fig('DNA and RNA bases', '0 0 900 560',
+    T(280, 40, 'DNA · double strand', { s: 24, c: C.ink, w: 700 }) + T(720, 40, 'RNA · single strand', { s: 24, c: C.ink, w: 700 }),
+    [
+      { label: 'Adenine (A)', c: C.sage, detail: 'A purine: double ring. In DNA, A pairs with T.', svg: BASES('A') },
+      { label: 'Thymine (T)', c: C.blue, detail: 'A pyrimidine: single ring. Found in DNA. RNA uses uracil instead.', svg: BASES('T') },
+      { label: 'Guanine (G)', c: C.gold, detail: 'A purine: double ring. In DNA, G pairs with C.', svg: BASES('G') },
+      { label: 'Cytosine (C)', c: C.clay, detail: 'A pyrimidine: single ring. In DNA, C pairs with G.', svg: BASES('C') },
+      { label: 'Uracil (U)', c: C.plum, detail: 'A pyrimidine: single ring. RNA swaps uracil in for thymine.', svg: BASES('U') },
+      { label: 'Sugar and phosphate backbone', c: C.ink, detail: 'Each nucleotide is a sugar, a base and a phosphate. The sugar is deoxyribose in DNA and ribose in RNA. DNA is a double helix; RNA is single-stranded.',
+        svg: [170, 390, 620].map(x => rect(x - 9, 70, 18, 450, 9, '#596166') + [0, 1, 2, 3, 4].map(i => circ(x, 110 + i * 85, 8, '#ebd08c')).join('')).join('') }
+    ], { hint: 'Longer blocks are purines (double ring); shorter ones are pyrimidines (single ring).' })
 };
