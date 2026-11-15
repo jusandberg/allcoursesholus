@@ -28,7 +28,44 @@ const seg = (y0, y1, n, c, w) => { const h = (y1 - y0) / n; return Array.from({ 
 const disks = (y0, y1, n) => { const h = (y1 - y0) / n; return Array.from({ length: n - 1 }, (_, i) => { const y = y0 + (i + 1) * h; return rect(xAt(y) - 20, y - 3, 40, 4, 2, '#8fb0c0'); }).join(''); };
 const lab = (y, s, sub, c) => T(170, y, s, { s: 26, c, a: 'end' }) + T(170, y + 26, sub, { s: 18, c: C.muted, a: 'end' }) + line(`M180 ${y - 8} L${f(xAt(y - 8) - 30)} ${y - 8}`, c, 2);
 
+
+// skull from the left side (face to the left), for the cranial bones
+const SK = {
+  frontal: 'M122 262 C112 214 122 150 160 112 C196 78 240 60 286 56 C276 120 252 200 226 274 C206 268 186 252 168 246 C150 244 132 250 122 262 Z',
+  parietal: 'M286 56 C340 50 400 66 458 104 C452 180 448 260 450 330 C430 300 410 280 382 262 C350 236 300 224 270 246 C258 254 246 266 236 278 L226 274 C252 200 276 120 286 56 Z',
+  occipital: 'M458 104 C500 132 532 182 544 240 C552 296 534 350 498 388 C486 398 474 404 462 404 C456 380 452 356 450 330 C448 260 452 180 458 104 Z',
+  temporal: 'M236 278 C246 266 258 254 270 246 C300 224 350 236 382 262 C410 280 430 300 450 330 C452 356 456 380 462 404 C440 406 420 400 404 392 L300 372 C286 360 266 346 250 334 L244 300 Z',
+  sphenoid: 'M226 274 L236 278 L244 300 L250 334 C236 336 218 334 206 328 C204 306 210 286 226 274 Z',
+  face: 'M122 262 C114 280 108 300 98 318 C94 330 104 340 112 344 C106 360 108 380 118 392 C132 404 150 404 168 400 L236 396 C250 392 264 384 274 372 L300 372 C286 360 266 346 250 334 C236 336 218 334 206 328 C186 324 172 318 162 316 C150 314 140 300 134 286 Z',
+  jaw: 'M118 404 C112 424 114 450 128 466 C142 478 168 478 196 470 L290 446 C304 440 312 426 314 410 L322 372 C324 362 316 356 308 360 L300 372 C298 390 292 404 282 412 L236 420 C200 426 160 420 132 410 Z'
+};
+const SKART = sh(SK.face, '#efe6cf') + sh(SK.jaw, '#efe6cf')
+  + ell(168, 290, 36, 32, '#5d5348') + ell(120, 320, 10, 16, '#5d5348')
+  + line('M190 322 C220 330 262 340 304 346', '#d9c79c', 10)
+  + Array.from({ length: 8 }, (_, i) => rect(132 + i * 14, 392, 11, 16, 4, '#fbf7ef')).join('')
+  + Array.from({ length: 8 }, (_, i) => rect(134 + i * 14, 410, 11, 14, 4, '#fbf7ef')).join('');
+const SUT = 'M286 56 C276 120 252 200 226 274 M458 104 C452 180 448 260 450 330 M236 278 C246 266 258 254 270 246 C300 224 350 236 382 262 C410 280 430 300 450 330';
+
 module.exports = {
+  'ap7-10': fig('The cranial bones (left side)', '20 20 600 480',
+    SKART + line(SUT, '#c9b27c', 3),
+    [
+      { label: 'Frontal', c: C.deep, detail: 'The forehead and the roof of the eye sockets (orbits). It joins the parietals at the coronal suture.',
+        svg: sh(SK.frontal, '#a3b795') + shine(180, 140, 22, 12) + T(200, 170, 'Frontal', { s: 24, c: C.deep }) },
+      { label: 'Parietals (2)', c: C.blueD, detail: 'The upper sides and roof of the skull. The two parietals meet along the top at the sagittal suture. You see the left one here.',
+        svg: sh(SK.parietal, '#a3bcc8') + shine(340, 110, 26, 12) + T(360, 160, 'Parietal', { s: 24, c: C.blueD }) },
+      { label: 'Temporals (2)', c: C.goldD, detail: 'The lower sides. Each one encloses an ear and has the mastoid process (the bump behind the ear) and the styloid process (a thin spike below it).',
+        svg: sh(SK.temporal, '#e8d197') + ell(352, 336, 13, 11, '#5d5348') + sh('M408 392 C414 412 426 428 438 432 C446 420 448 404 444 396 Z', '#e8d197') + line('M380 384 L362 446', '#d9b979', 6) + T(330, 296, 'Temporal', { s: 24, c: '#8a6f35' }) + T(452, 452, 'Mastoid', { s: 18, c: '#8a6f35' }) + T(352, 470, 'Styloid', { s: 18, c: '#8a6f35' }) },
+      { label: 'Occipital', c: C.plumD, detail: 'The back and base of the skull. It joins the parietals at the lambdoid suture. Underneath is the foramen magnum, the large opening where the spinal cord connects to the brain.',
+        svg: sh(SK.occipital, '#c4b4ca') + shine(508, 200, 10, 20) + T(500, 300, 'Occipital', { s: 22, c: C.plumD }) },
+      { label: 'Sphenoid', c: C.rose, detail: 'Shaped like a butterfly and anchors all the cranial bones together. From the side you only see the tip of one wing, just behind the eye socket.',
+        svg: sh(SK.sphenoid, '#dd9886') + T(150, 470, 'Sphenoid', { s: 22, c: C.rose, a: 'middle' }) + line('M170 450 L222 316', C.rose, 2.5) },
+      { label: 'Ethmoid', c: '#8a6f35', detail: 'The lightest cranial bone. It sits between the eye sockets and supports the nasal cavities. From the side you only see a sliver of it inside the eye socket.',
+        svg: sh('M140 280 C146 270 156 268 160 276 L162 306 C154 312 144 310 140 302 Z', '#d8c39a') + T(60, 214, 'Ethmoid', { s: 22, c: '#8a6f35', a: 'middle' }) + line('M70 222 L146 286', '#8a6f35', 2.5) },
+      { label: 'Sutures', c: C.ink, detail: 'Immovable joints between the cranial bones. Here you can see the coronal suture (frontal and parietal) and the lambdoid suture (parietal and occipital).',
+        svg: line(SUT, C.ink, 5) + T(236, 44, 'Coronal', { s: 20, c: C.ink }) + T(504, 92, 'Lambdoid', { s: 20, c: C.ink }) }
+    ], { tap: true, hint: 'The cranium has 8 bones: 1 frontal, 2 parietals, 2 temporals, 1 occipital, 1 sphenoid and 1 ethmoid. The face is left plain.' }),
+
   'ap7-4': fig('The osteon (haversian system)', '0 0 640 500',
     circ(250, 250, 150, BONE) + [130, 105, 80, 55].map(r => ring(250, 250, r, r, BONED, 4)).join('') + lacunae + line(canaliculi, '#c9b27c', 1.5),
     [
